@@ -1,0 +1,114 @@
+export default {
+  // Navigation
+  'nav.lessons': 'Уроки',
+  'nav.flashcards': 'Картки',
+  'nav.progress': 'Прогрес',
+  'nav.logout': 'Вийти',
+  'nav.menu': 'Меню',
+  'nav.mobileMenu': 'Мобільне меню',
+  'nav.theme': 'Перемкнути тему',
+
+  // Auth
+  'auth.password': 'Пароль',
+  'auth.passwordPlaceholder': 'Мінімум 6 символів',
+  'auth.login': 'Увійти',
+  'auth.register': 'Зареєструватися',
+  'auth.noAccount': 'Немає акаунту?',
+  'auth.hasAccount': 'Вже є акаунт?',
+  'auth.wrongCredentials': 'Невірний email або пароль',
+  'auth.userExists': 'Користувач вже існує',
+  'auth.genericError': 'Помилка авторизації',
+
+  // Dashboard
+  'dashboard.subtitle': '20 уроків за книгою «Basic Portuguese: A Grammar and Workbook»',
+  'dashboard.lessonsCompleted': 'Уроків пройдено',
+  'dashboard.avgScore': 'Середній бал',
+  'dashboard.dueCards': 'Карток на повторення',
+  'dashboard.streakDays': 'Днів поспіль',
+  'dashboard.lessons': 'Уроки',
+  'dashboard.lesson': 'Урок {id}',
+
+  // Lesson
+  'lesson.breadcrumbHome': 'Уроки',
+  'lesson.unit': 'Урок {id}',
+  'lesson.prevUnit': 'Урок {id}',
+  'lesson.nextUnit': 'Урок {id}',
+  'lesson.tab.theory': 'Теорія',
+  'lesson.tab.exercises': 'Вправи',
+  'lesson.tab.vocabulary': 'Словник',
+  'lesson.tab.flashcards': 'Картки',
+  'lesson.exerciseCount': 'У цьому уроці <strong>{count}</strong> вправ',
+  'lesson.continue': 'Продовжити',
+  'lesson.retry': 'Пройти знову',
+  'lesson.start': 'Почати',
+  'lesson.question': 'Питання {current} з {total}',
+  'lesson.enterAnswer': 'Введіть відповідь...',
+  'lesson.translateToRu': 'Переклад українською...',
+  'lesson.translateToPt': 'Traduca para portugues...',
+  'lesson.translatePrompt': 'Перекладіть:',
+  'lesson.check': 'Перевірити',
+  'lesson.correct': 'Правильно!',
+  'lesson.wrong': 'Неправильно. Правильна відповідь:',
+  'lesson.next': 'Наступне питання',
+  'lesson.results': 'Результати',
+  'lesson.correctCount': 'Правильних: {correct} з {total}',
+  'lesson.toFlashcards': 'До карток',
+  'lesson.vocabTitle': 'Словник уроку {id}',
+  'lesson.flashcardsHint': 'Натисніть на картку щоб перевернути. Оцініть складність для інтервального повторення.',
+  'lesson.allFlashcards': 'Усі картки для повторення',
+  'lesson.cardCount': 'Картка {current} з {total}',
+  'lesson.noFlashcards': 'Картки для цього уроку поки відсутні.',
+  'lesson.notFound': 'Урок не знайдено',
+  'lesson.back': 'Повернутися',
+  'lesson.clickWords': 'Натискайте на слова нижче...',
+
+  // Flashcard ratings
+  'rating.again': 'Не пам\'ятаю',
+  'rating.hard': 'Складно',
+  'rating.good': 'Нормально',
+  'rating.easy': 'Легко',
+
+  // Result messages
+  'result.excellent': 'Чудово! Відмінний результат!',
+  'result.good': 'Добре! Ви на правильному шляху.',
+  'result.ok': 'Непогано, але варто повторити матеріал.',
+  'result.poor': 'Потрібно ще раз вивчити теорію.',
+
+  // Flashcards page
+  'flashcards.title': 'Картки для повторення',
+  'flashcards.subtitle': 'Інтервальне повторення (SM-2). Картки показуються за пріоритетом.',
+  'flashcards.due': 'До повторення',
+  'flashcards.reviewedToday': 'Повторено сьогодні',
+  'flashcards.totalCards': 'Усього карток',
+  'flashcards.filterLabel': 'Фільтр за уроком:',
+  'flashcards.allUnits': 'Усі уроки',
+  'flashcards.unitLabel': 'Урок {id}: {title}',
+  'flashcards.dueCount': '{current} з {total} до повторення',
+  'flashcards.allDone': 'Усі картки повторено!',
+  'flashcards.comeback': 'Немає карток для повторення зараз. Поверніться пізніше.',
+  'flashcards.toLessons': 'До уроків',
+
+  // Progress page
+  'progress.title': 'Мій прогрес',
+  'progress.lessonsCompleted': 'Уроків пройдено',
+  'progress.avgScore': 'Середній бал',
+  'progress.exercisesDone': 'Вправ виконано',
+  'progress.unitLabel': 'Урок {id}: {title}',
+  'progress.completed': '{pct}% завершено',
+  'progress.result': 'Результат: {score}%',
+  'progress.notStarted': 'Ще не розпочато',
+  'progress.badgeDone': 'Пройдено',
+  'progress.badgeInProgress': 'В процесі',
+  'progress.badgeNew': 'Новий',
+
+  // ProgressBar
+  'progressBar.completed': '{pct}% завершено',
+
+  // AudioButton
+  'audio.listen': 'Прослухати: {text}',
+  'audio.listenAria': 'Прослухати {text}',
+
+  // Browser fallback
+  'browser.unsupported': 'Браузер не підтримується',
+  'browser.update': 'Будь ласка, оновіть ваш браузер до останньої версії Chrome, Firefox, Safari або Edge.',
+};

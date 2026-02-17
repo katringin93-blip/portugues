@@ -1,0 +1,114 @@
+export default {
+  // Navigation
+  'nav.lessons': 'Lessons',
+  'nav.flashcards': 'Flashcards',
+  'nav.progress': 'Progress',
+  'nav.logout': 'Log out',
+  'nav.menu': 'Menu',
+  'nav.mobileMenu': 'Mobile menu',
+  'nav.theme': 'Toggle theme',
+
+  // Auth
+  'auth.password': 'Password',
+  'auth.passwordPlaceholder': 'Minimum 6 characters',
+  'auth.login': 'Log in',
+  'auth.register': 'Sign up',
+  'auth.noAccount': 'No account?',
+  'auth.hasAccount': 'Already have an account?',
+  'auth.wrongCredentials': 'Invalid email or password',
+  'auth.userExists': 'User already exists',
+  'auth.genericError': 'Authentication error',
+
+  // Dashboard
+  'dashboard.subtitle': '20 lessons based on «Basic Portuguese: A Grammar and Workbook»',
+  'dashboard.lessonsCompleted': 'Lessons completed',
+  'dashboard.avgScore': 'Average score',
+  'dashboard.dueCards': 'Cards due for review',
+  'dashboard.streakDays': 'Day streak',
+  'dashboard.lessons': 'Lessons',
+  'dashboard.lesson': 'Lesson {id}',
+
+  // Lesson
+  'lesson.breadcrumbHome': 'Lessons',
+  'lesson.unit': 'Lesson {id}',
+  'lesson.prevUnit': 'Lesson {id}',
+  'lesson.nextUnit': 'Lesson {id}',
+  'lesson.tab.theory': 'Theory',
+  'lesson.tab.exercises': 'Exercises',
+  'lesson.tab.vocabulary': 'Vocabulary',
+  'lesson.tab.flashcards': 'Flashcards',
+  'lesson.exerciseCount': 'This lesson has <strong>{count}</strong> exercises',
+  'lesson.continue': 'Continue',
+  'lesson.retry': 'Retake',
+  'lesson.start': 'Start',
+  'lesson.question': 'Question {current} of {total}',
+  'lesson.enterAnswer': 'Enter your answer...',
+  'lesson.translateToRu': 'Translate to English...',
+  'lesson.translateToPt': 'Traduca para portugues...',
+  'lesson.translatePrompt': 'Translate:',
+  'lesson.check': 'Check',
+  'lesson.correct': 'Correct!',
+  'lesson.wrong': 'Incorrect. The correct answer is:',
+  'lesson.next': 'Next question',
+  'lesson.results': 'Results',
+  'lesson.correctCount': 'Correct: {correct} out of {total}',
+  'lesson.toFlashcards': 'To flashcards',
+  'lesson.vocabTitle': 'Lesson {id} vocabulary',
+  'lesson.flashcardsHint': 'Click on a card to flip it. Rate the difficulty for spaced repetition.',
+  'lesson.allFlashcards': 'All cards for review',
+  'lesson.cardCount': 'Card {current} of {total}',
+  'lesson.noFlashcards': 'No flashcards for this lesson yet.',
+  'lesson.notFound': 'Lesson not found',
+  'lesson.back': 'Go back',
+  'lesson.clickWords': 'Click on the words below...',
+
+  // Flashcard ratings
+  'rating.again': 'Again',
+  'rating.hard': 'Hard',
+  'rating.good': 'Good',
+  'rating.easy': 'Easy',
+
+  // Result messages
+  'result.excellent': 'Excellent! Outstanding result!',
+  'result.good': 'Good job! You\'re on the right track.',
+  'result.ok': 'Not bad, but you should review the material.',
+  'result.poor': 'You need to study the theory again.',
+
+  // Flashcards page
+  'flashcards.title': 'Flashcards for review',
+  'flashcards.subtitle': 'Spaced repetition (SM-2). Cards are shown by priority.',
+  'flashcards.due': 'Due for review',
+  'flashcards.reviewedToday': 'Reviewed today',
+  'flashcards.totalCards': 'Total cards',
+  'flashcards.filterLabel': 'Filter by lesson:',
+  'flashcards.allUnits': 'All lessons',
+  'flashcards.unitLabel': 'Lesson {id}: {title}',
+  'flashcards.dueCount': '{current} of {total} due for review',
+  'flashcards.allDone': 'All cards reviewed!',
+  'flashcards.comeback': 'No cards due for review right now. Come back later.',
+  'flashcards.toLessons': 'To lessons',
+
+  // Progress page
+  'progress.title': 'My progress',
+  'progress.lessonsCompleted': 'Lessons completed',
+  'progress.avgScore': 'Average score',
+  'progress.exercisesDone': 'Exercises completed',
+  'progress.unitLabel': 'Lesson {id}: {title}',
+  'progress.completed': '{pct}% completed',
+  'progress.result': 'Score: {score}%',
+  'progress.notStarted': 'Not started yet',
+  'progress.badgeDone': 'Done',
+  'progress.badgeInProgress': 'In progress',
+  'progress.badgeNew': 'New',
+
+  // ProgressBar
+  'progressBar.completed': '{pct}% completed',
+
+  // AudioButton
+  'audio.listen': 'Listen: {text}',
+  'audio.listenAria': 'Listen to {text}',
+
+  // Browser fallback
+  'browser.unsupported': 'Browser not supported',
+  'browser.update': 'Please update your browser to the latest version of Chrome, Firefox, Safari or Edge.',
+};

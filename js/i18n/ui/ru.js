@@ -1,0 +1,114 @@
+export default {
+  // Navigation
+  'nav.lessons': 'Уроки',
+  'nav.flashcards': 'Карточки',
+  'nav.progress': 'Прогресс',
+  'nav.logout': 'Выйти',
+  'nav.menu': 'Меню',
+  'nav.mobileMenu': 'Мобильное меню',
+  'nav.theme': 'Переключить тему',
+
+  // Auth
+  'auth.password': 'Пароль',
+  'auth.passwordPlaceholder': 'Минимум 6 символов',
+  'auth.login': 'Войти',
+  'auth.register': 'Зарегистрироваться',
+  'auth.noAccount': 'Нет аккаунта?',
+  'auth.hasAccount': 'Уже есть аккаунт?',
+  'auth.wrongCredentials': 'Неверный email или пароль',
+  'auth.userExists': 'Пользователь уже существует',
+  'auth.genericError': 'Ошибка авторизации',
+
+  // Dashboard
+  'dashboard.subtitle': '20 уроков по книге «Basic Portuguese: A Grammar and Workbook»',
+  'dashboard.lessonsCompleted': 'Уроков пройдено',
+  'dashboard.avgScore': 'Средний балл',
+  'dashboard.dueCards': 'Карточек на повторение',
+  'dashboard.streakDays': 'Дней подряд',
+  'dashboard.lessons': 'Уроки',
+  'dashboard.lesson': 'Урок {id}',
+
+  // Lesson
+  'lesson.breadcrumbHome': 'Уроки',
+  'lesson.unit': 'Урок {id}',
+  'lesson.prevUnit': 'Урок {id}',
+  'lesson.nextUnit': 'Урок {id}',
+  'lesson.tab.theory': 'Теория',
+  'lesson.tab.exercises': 'Упражнения',
+  'lesson.tab.vocabulary': 'Словарь',
+  'lesson.tab.flashcards': 'Карточки',
+  'lesson.exerciseCount': 'В этом уроке <strong>{count}</strong> упражнений',
+  'lesson.continue': 'Продолжить',
+  'lesson.retry': 'Пройти заново',
+  'lesson.start': 'Начать',
+  'lesson.question': 'Вопрос {current} из {total}',
+  'lesson.enterAnswer': 'Введите ответ...',
+  'lesson.translateToRu': 'Перевод на русский...',
+  'lesson.translateToPt': 'Traduca para portugues...',
+  'lesson.translatePrompt': 'Переведите:',
+  'lesson.check': 'Проверить',
+  'lesson.correct': 'Правильно!',
+  'lesson.wrong': 'Неправильно. Правильный ответ:',
+  'lesson.next': 'Следующий вопрос',
+  'lesson.results': 'Результаты',
+  'lesson.correctCount': 'Правильных: {correct} из {total}',
+  'lesson.toFlashcards': 'К карточкам',
+  'lesson.vocabTitle': 'Словарь урока {id}',
+  'lesson.flashcardsHint': 'Нажмите на карточку чтобы перевернуть. Оцените сложность для интервального повторения.',
+  'lesson.allFlashcards': 'Все карточки для повторения',
+  'lesson.cardCount': 'Карточка {current} из {total}',
+  'lesson.noFlashcards': 'Карточки для этого урока пока отсутствуют.',
+  'lesson.notFound': 'Урок не найден',
+  'lesson.back': 'Вернуться',
+  'lesson.clickWords': 'Нажимайте на слова ниже...',
+
+  // Flashcard ratings
+  'rating.again': 'Не помню',
+  'rating.hard': 'Сложно',
+  'rating.good': 'Нормально',
+  'rating.easy': 'Легко',
+
+  // Result messages
+  'result.excellent': 'Отлично! Превосходный результат!',
+  'result.good': 'Хорошо! Вы на правильном пути.',
+  'result.ok': 'Неплохо, но стоит повторить материал.',
+  'result.poor': 'Нужно ещё раз изучить теорию.',
+
+  // Flashcards page
+  'flashcards.title': 'Карточки для повторения',
+  'flashcards.subtitle': 'Интервальное повторение (SM-2). Карточки показываются в порядке приоритета.',
+  'flashcards.due': 'К повторению',
+  'flashcards.reviewedToday': 'Повторено сегодня',
+  'flashcards.totalCards': 'Всего карточек',
+  'flashcards.filterLabel': 'Фильтр по уроку:',
+  'flashcards.allUnits': 'Все уроки',
+  'flashcards.unitLabel': 'Урок {id}: {title}',
+  'flashcards.dueCount': '{current} из {total} к повторению',
+  'flashcards.allDone': 'Все карточки повторены!',
+  'flashcards.comeback': 'Нет карточек для повторения прямо сейчас. Возвращайтесь позже.',
+  'flashcards.toLessons': 'К урокам',
+
+  // Progress page
+  'progress.title': 'Мой прогресс',
+  'progress.lessonsCompleted': 'Уроков пройдено',
+  'progress.avgScore': 'Средний балл',
+  'progress.exercisesDone': 'Упражнений решено',
+  'progress.unitLabel': 'Урок {id}: {title}',
+  'progress.completed': '{pct}% завершено',
+  'progress.result': 'Результат: {score}%',
+  'progress.notStarted': 'Ещё не начато',
+  'progress.badgeDone': 'Пройдено',
+  'progress.badgeInProgress': 'В процессе',
+  'progress.badgeNew': 'Новый',
+
+  // ProgressBar
+  'progressBar.completed': '{pct}% завершено',
+
+  // AudioButton
+  'audio.listen': 'Прослушать: {text}',
+  'audio.listenAria': 'Прослушать {text}',
+
+  // Browser fallback
+  'browser.unsupported': 'Браузер не поддерживается',
+  'browser.update': 'Пожалуйста, обновите ваш браузер до последней версии Chrome, Firefox, Safari или Edge.',
+};

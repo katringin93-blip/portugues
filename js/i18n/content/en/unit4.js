@@ -1,0 +1,132 @@
+export default {
+  title: "Subject pronouns and regular verbs",
+  description: "Subject pronouns and conjugation of regular verbs (-ar, -er, -ir) in the present tense",
+  theory: [
+    {
+      heading: "Subject pronouns (Pronomes pessoais sujeitos)",
+      text: "In European Portuguese, the pronoun system differs from the Brazilian variant. Pay attention to the polite forms of address."
+    },
+    {
+      table: {
+        headers: ["Person", "Singular", "Plural"],
+        rows: [
+          ["1st person", "eu (I)", "nós (we)"],
+          ["2nd person (informal)", "tu (you)", "vós (you, archaic)"],
+          ["3rd person / polite", "ele/ela (he/she), você (you, formal)", "eles/elas (they), vocês (you, pl.)"]
+        ]
+      }
+    },
+    {
+      heading: "Regular -ar verbs (1st conjugation)",
+      text: "The first conjugation is the most common. The verb stem is obtained by removing the -ar ending."
+    },
+    {
+      table: {
+        headers: ["Person", "falar (to speak)"],
+        rows: [
+          ["eu", "falo"],
+          ["tu", "falas"],
+          ["ele/ela/você", "fala"],
+          ["nós", "falamos"],
+          ["eles/elas/vocês", "falam"]
+        ]
+      }
+    },
+    {
+      heading: "Regular -er verbs (2nd conjugation)",
+      text: "The second conjugation — verbs ending in -er."
+    },
+    {
+      table: {
+        headers: ["Person", "comer (to eat)"],
+        rows: [
+          ["eu", "como"],
+          ["tu", "comes"],
+          ["ele/ela/você", "come"],
+          ["nós", "comemos"],
+          ["eles/elas/vocês", "comem"]
+        ]
+      }
+    },
+    {
+      heading: "Regular -ir verbs (3rd conjugation)",
+      text: "The third conjugation — verbs ending in -ir."
+    },
+    {
+      table: {
+        headers: ["Person", "partir (to leave)"],
+        rows: [
+          ["eu", "parto"],
+          ["tu", "partes"],
+          ["ele/ela/você", "parte"],
+          ["nós", "partimos"],
+          ["eles/elas/vocês", "partem"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "I speak Portuguese." },
+        { ru: "You eat a lot." },
+        { ru: "We leave tomorrow." },
+        { ru: "They work every day." }
+      ]
+    },
+    {
+      note: "In European Portuguese, «tu» is widely used in informal communication, unlike in Brazil. «Você» is used in more formal contexts or when addressing strangers."
+    }
+  ],
+  vocabulary: [
+    { ru: "to speak" },
+    { ru: "to eat" },
+    { ru: "to leave, to depart" },
+    { ru: "to work" },
+    { ru: "to live, to reside" },
+    { ru: "to drink" },
+    { ru: "to open" },
+    { ru: "to study" },
+    { ru: "to write" },
+    { ru: "to live" }
+  ],
+  flashcards: [
+    { ru: "to speak", hint: "1st conjugation (-ar)" },
+    { ru: "to eat", hint: "2nd conjugation (-er)" },
+    { ru: "to leave", hint: "3rd conjugation (-ir)" },
+    { ru: "to work", hint: "eu trabalho, tu trabalhas" },
+    { ru: "to live, to reside", hint: "eu moro, tu moras" },
+    { ru: "to drink", hint: "eu bebo, tu bebes" },
+    { ru: "to study", hint: "eu estudo, tu estudas" },
+    { ru: "to write", hint: "eu escrevo, tu escreves" }
+  ],
+  exercises: [
+    { question: "Conjugate the verb «morar» (to live) for «nós»: Nós ___ em Lisboa." },
+    { question: "Choose the correct form: Tu ___ água? (beber)", explanation: "For «tu», -er verbs take the ending -es: bebes." },
+    { answer: ["She speaks English and Portuguese.", "She speaks in English and Portuguese."] },
+    { question: "Conjugate the verb «abrir» (to open) for «eu»: Eu ___ a porta." },
+    { question: "Which pronoun is used for polite address in European Portuguese?", options: ["tu", "eu", "você / o senhor / a senhora", "nós"], explanation: "In Portugal, «você», «o senhor» (to a man) or «a senhora» (to a woman) are used for polite address." },
+    { question: "Conjugate the verb «falar» (to speak) for «eu»: Eu ___ português." },
+    { question: "Choose the correct form: Eles ___ na universidade. (estudar)", explanation: "For «eles» (they), -ar verbs take the ending -am: estudam." },
+    { question: "Conjugate the verb «trabalhar» (to work) for «ela»: Ela ___ num banco." },
+    { question: "Match the pronouns with the forms of «falar»:", pairs: [{ left: "eu", right: "falo" }, { left: "tu", right: "falas" }, { left: "nós", right: "falamos" }, { left: "eles", right: "falam" }] },
+    { question: "What is the ending for -ar verbs with «nós»?", explanation: "-ar verbs in the «nós» form take the ending -amos: falamos, moramos, trabalhamos." },
+    { question: "Conjugate the verb «comer» (to eat) for «eu»: Eu ___ peixe." },
+    { source: "We work every day." },
+    { question: "Choose the correct form: Você ___ em Portugal? (morar)", explanation: "«Você» is conjugated as the 3rd person singular, so the ending is -a for -ar verbs: mora." },
+    { question: "Conjugate the verb «viver» (to live) for «nós»: Nós ___ no Porto." },
+    { question: "Arrange the sentence: «Do you speak Portuguese?»" },
+    { question: "Which pronoun means «we»?", options: ["eu", "vós", "nós", "eles"], explanation: "«Nós» is the pronoun for «we». «Eu» — I, «vós» — you (pl., archaic), «eles» — they." },
+    { question: "Conjugate the verb «partir» (to leave) for «tu»: Tu ___ amanhã?" },
+    { question: "Match the verb endings with their conjugation groups for «eu»:", pairs: [{ left: "-ar (falar)", right: "-o (falo)" }, { left: "-er (comer)", right: "-o (como)" }, { left: "-ir (partir)", right: "-o (parto)" }] },
+    { source: "They live in Lisbon." },
+    { question: "Choose the correct form: Nós ___ o livro. (ler — to read, -er verb)", explanation: "For «nós», -er verbs take the ending -emos: lemos." },
+    { question: "Conjugate the verb «comprar» (to buy) for «vocês»: Vocês ___ pão todos os dias?" },
+    { question: "What is the form of «escrever» (to write) for «ele»?", explanation: "For «ele», -er verbs take the ending -e: escreve." },
+    { question: "Conjugate the verb «cantar» (to sing) for «tu»: Tu ___ muito bem!" },
+    { question: "Arrange the sentence: «We learn Portuguese»." },
+    { question: "Which verb is correctly conjugated? Eu ___ a janela. (abrir)", explanation: "For «eu», -ir verbs take the ending -o: abro." },
+    { source: "Do you study or work?" },
+    { question: "Conjugate the verb «gostar» (to like) for «ela»: Ela ___ de música." },
+    { question: "Which pronoun is NOT conjugated as the 3rd person singular?", explanation: "«Tu» has its own conjugation (2nd person sg.). «Você», «ele», and «a senhora» are all conjugated the same way — as the 3rd person singular." },
+    { question: "Conjugate the verb «beber» (to drink) for «eles»: Eles ___ café de manhã." }
+  ]
+};
