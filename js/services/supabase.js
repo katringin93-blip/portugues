@@ -1,7 +1,7 @@
 // Supabase client initialization
 // Replace these with your Supabase project credentials
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://ndgvtjnatfcvawwnlaxa.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5kZ3Z0am5hdGZjdmF3d25sYXhhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEzNjI0OTksImV4cCI6MjA4NjkzODQ5OX0.Ixc15_m5Nlp8tXYPKoFzJXX0hvxjcHp8GQKECZKFIc4';
 
 let supabaseClient = null;
 let useLocalStorage = true;
