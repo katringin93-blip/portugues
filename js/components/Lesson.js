@@ -560,7 +560,25 @@ export const Lesson = {
         .replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ');
     },
 
+    saveCurrentProgress(finished) {
+      var attempted = this.currentExerciseIdx + (this.answered ? 1 : 0);
+      var total = this.unit.exercises.length;
+      var score = attempted > 0 ? Math.round((this.correctCount / attempted) * 100) : 0;
+      this.$emit('update-progress', {
+        unitNumber: this.unit.id,
+        data: {
+          exercisesCompleted: attempted,
+          exercisesTotal: total,
+          score: score,
+          completed: finished && (this.correctCount / total) >= 0.7,
+        },
+      });
+    },
+
     nextExercise() {
+      // Save progress after each answered exercise
+      this.saveCurrentProgress(false);
+
       if (this.currentExerciseIdx + 1 < this.unit.exercises.length) {
         this.currentExerciseIdx++;
         this.answered = false;
@@ -575,15 +593,8 @@ export const Lesson = {
       } else {
         this.exerciseFinished = true;
         this.exerciseStarted = false;
-        this.$emit('update-progress', {
-          unitNumber: this.unit.id,
-          data: {
-            exercisesCompleted: this.correctCount,
-            exercisesTotal: this.unit.exercises.length,
-            score: Math.round((this.correctCount / this.unit.exercises.length) * 100),
-            completed: (this.correctCount / this.unit.exercises.length) >= 0.7,
-          },
-        });
+        // Save final progress with completed flag
+        this.saveCurrentProgress(true);
       }
     },
 
