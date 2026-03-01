@@ -137,24 +137,30 @@ export async function createApp() {
                 <router-link to="/flashcards">{{ t('nav.flashcards') }}</router-link>
                 <router-link to="/progress">{{ t('nav.progress') }}</router-link>
               </nav>
-              <div class="user-menu">
-                <button class="theme-btn" @click="toggleTheme" :aria-label="t('nav.theme')">{{ theme === 'dark' ? '\u2600' : '\u263E' }}</button>
+              <div class="header-actions">
                 <lang-switcher></lang-switcher>
+                <button class="icon-btn theme-btn" @click="toggleTheme" :aria-label="t('nav.theme')">{{ theme === 'dark' ? '\u2600' : '\u263E' }}</button>
                 <span class="user-name">{{ user.email }}</span>
                 <button class="btn btn-sm btn-outline" @click="logout">{{ t('nav.logout') }}</button>
               </div>
-              <button class="mobile-menu-btn" @click="mobileMenuOpen = !mobileMenuOpen"
+              <button class="mobile-menu-btn" :class="{ open: mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen"
                 :aria-label="t('nav.menu')" :aria-expanded="mobileMenuOpen ? 'true' : 'false'">
                 <span></span><span></span><span></span>
               </button>
             </div>
-            <nav class="mobile-nav" :class="{ open: mobileMenuOpen }" @click="mobileMenuOpen = false" role="navigation" :aria-label="t('nav.mobileMenu')">
-              <router-link to="/">{{ t('nav.lessons') }}</router-link>
-              <router-link to="/flashcards">{{ t('nav.flashcards') }}</router-link>
-              <router-link to="/progress">{{ t('nav.progress') }}</router-link>
-              <lang-switcher></lang-switcher>
-              <button class="theme-btn" @click.stop="toggleTheme" :aria-label="t('nav.theme')" style="align-self:center">{{ theme === 'dark' ? '\u2600' : '\u263E' }}</button>
-              <button class="btn btn-sm" @click="logout">{{ t('nav.logout') }}</button>
+            <nav class="mobile-nav" :class="{ open: mobileMenuOpen }" role="navigation" :aria-label="t('nav.mobileMenu')">
+              <div class="mobile-nav-links" @click="mobileMenuOpen = false">
+                <router-link to="/">{{ t('nav.lessons') }}</router-link>
+                <router-link to="/flashcards">{{ t('nav.flashcards') }}</router-link>
+                <router-link to="/progress">{{ t('nav.progress') }}</router-link>
+              </div>
+              <div class="mobile-nav-settings">
+                <div class="mobile-nav-row">
+                  <lang-switcher></lang-switcher>
+                  <button class="icon-btn theme-btn" @click.stop="toggleTheme" :aria-label="t('nav.theme')">{{ theme === 'dark' ? '\u2600' : '\u263E' }}</button>
+                </div>
+                <button class="btn btn-sm btn-danger-outline mobile-logout" @click="logout">{{ t('nav.logout') }}</button>
+              </div>
             </nav>
           </header>
           <main class="app-main">
