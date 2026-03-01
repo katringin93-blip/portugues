@@ -74,7 +74,20 @@ export default {
     { ru: "in the old days", hint: "Imperfeito marker" },
     { ru: "while", hint: "conjunction, Imperfeito marker" },
     { ru: "to play", hint: "eu brincava (Imperf.)" },
-    { ru: "child", hint: "pl.: as crian\u00e7as" }
+    { ru: "child", hint: "pl.: as crian\u00e7as" },
+    { ru: "to open to the public", hint: "expression" },
+    { ru: "out of order, broken", hint: "adjective" },
+    { ru: "noisy", hint: "adjective" },
+    { ru: "noise", hint: "masculine" },
+    { ru: "context", hint: "masculine" },
+    { ru: "difference", hint: "feminine" },
+    { ru: "duality", hint: "feminine" },
+    { ru: "wrong", hint: "adjective" },
+    { ru: "restless, fidgety", hint: "adjective" },
+    { ru: "high school", hint: "masculine" },
+    { ru: "plans", hint: "m. plural" },
+    { ru: "watch, clock", hint: "masculine" },
+    { ru: "remaining", hint: "adjective" },
   ],
   exercises: [
     // 1. choice: Quando era criança, eu ___ muito (brincar)
