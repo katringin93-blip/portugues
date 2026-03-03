@@ -73,6 +73,31 @@ export const units = [
       },
       {
         note: "Внимание: некоторые слова-исключения не подчиняются общим правилам рода. Например, o dia (день) оканчивается на -a, но мужского рода. A tribo (племя) оканчивается на -o, но женского рода."
+      },
+      {
+        heading: "Уменьшительные и увеличительные формы",
+        text: "В португальском языке широко используются уменьшительные (diminutivos) и увеличительные (aumentativos) формы существительных. Они изменяют значение слова, выражая размер, интенсивность или эмоции."
+      },
+      {
+        table: {
+          headers: ["Форма", "Суффикс", "Примеры"],
+          rows: [
+            ["Уменьшительная", "-inho/-inha", "casa → casinha (домик), filho → filhinho (сынок)"],
+            ["Уменьшительная", "-zinho/-zinha", "pão → pãozinho (булочка), João → Joãozinho"],
+            ["Увеличительная", "-ão", "livro → livrão (огромная книга), carro → carrão (большая машина)"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Vamos tomar um cafezinho.", ru: "Давай выпьем кофейку." },
+          { pt: "Bom dia, mãezinha!", ru: "Доброе утро, мамочка!" },
+          { pt: "O Pedrinho só tem três anos.", ru: "Маленькому Педру всего три года." },
+          { pt: "Que livrão enorme!", ru: "Какая огромная книжища!" }
+        ]
+      },
+      {
+        note: "Уменьшительные формы чаще всего выражают ласку и нежность, а не только маленький размер. Они очень распространены в неформальном общении, особенно между родителями и детьми."
       }
     ],
     exercises: ex1,
@@ -173,6 +198,27 @@ export const units = [
       },
       {
         note: "В европейском португальском артикль часто используется перед именами собственными: O João, a Maria. Также артикль ставится перед притяжательными: o meu livro (моя книга)."
+      },
+      {
+        heading: "Слияние неопределённых артиклей с предлогами",
+        text: "Неопределённые артикли также сливаются с предлогами em и de. Формы с de (dum, duma) чаще встречаются в разговорной речи."
+      },
+      {
+        table: {
+          headers: ["Предлог", "um", "uma", "uns", "umas"],
+          rows: [
+            ["em", "num", "numa", "nuns", "numas"],
+            ["de", "dum", "duma", "duns", "dumas"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Ela mora numa casa grande.", ru: "Она живёт в одном большом доме." },
+          { pt: "Ele trabalha numa firma portuguesa.", ru: "Он работает в одной португальской фирме." },
+          { pt: "É o filho dum amigo meu.", ru: "Это сын одного моего друга." },
+          { pt: "Preciso dum livro de gramática.", ru: "Мне нужна одна книга по грамматике." }
+        ]
       }
     ],
     exercises: ex2,
@@ -295,12 +341,80 @@ export const units = [
         ]
       },
       {
+        heading: "Дни недели (Os dias da semana)",
+        text: "В португальском языке дни недели от понедельника до пятницы — женского рода и образованы с числительным + feira. Суббота и воскресенье — мужского рода. Дни недели НЕ пишутся с заглавной буквы (кроме начала предложения)."
+      },
+      {
+        table: {
+          headers: ["Португальский", "Русский", "Род", "Предлог «в»"],
+          rows: [
+            ["a segunda-feira", "понедельник", "ж.р.", "na segunda-feira"],
+            ["a terça-feira", "вторник", "ж.р.", "na terça-feira"],
+            ["a quarta-feira", "среда", "ж.р.", "na quarta-feira"],
+            ["a quinta-feira", "четверг", "ж.р.", "na quinta-feira"],
+            ["a sexta-feira", "пятница", "ж.р.", "na sexta-feira"],
+            ["o sábado", "суббота", "м.р.", "no sábado"],
+            ["o domingo", "воскресенье", "м.р.", "no domingo"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Ele tem folga na segunda e terça-feira.", ru: "У него выходной в понедельник и вторник." },
+          { pt: "Ela trabalha terça, quarta e sexta-feira.", ru: "Она работает во вторник, среду и пятницу." },
+          { pt: "Ao(s) sábado(s) vou ao mercado.", ru: "По субботам я хожу на рынок." },
+          { pt: "À(s) quarta(s)-feira(s) tenho aula de português.", ru: "По средам у меня урок португальского." }
+        ]
+      },
+      {
+        note: "В разговорной речи слово «feira» часто опускается: na sexta = na sexta-feira (в пятницу), na terça e na quinta = na terça-feira e na quinta-feira (во вторник и четверг). При перечислении нескольких дней «feira» ставится только после последнего: terça, quarta e sexta-feira."
+      },
+      {
+        heading: "Месяцы, времена года и века",
+        text: "После орфографической реформы 1990 года месяцы и времена года пишутся с маленькой буквы. Для обозначения «в» (каком месяце) используется предлог «em»."
+      },
+      {
+        table: {
+          headers: ["Португальский", "Русский", "Португальский", "Русский"],
+          rows: [
+            ["janeiro", "январь", "julho", "июль"],
+            ["fevereiro", "февраль", "agosto", "август"],
+            ["março", "март", "setembro", "сентябрь"],
+            ["abril", "апрель", "outubro", "октябрь"],
+            ["maio", "май", "novembro", "ноябрь"],
+            ["junho", "июнь", "dezembro", "декабрь"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Em dezembro faz frio.", ru: "В декабре холодно." },
+          { pt: "O inverno é de dezembro a março.", ru: "Зима — с декабря по март." },
+          { pt: "A primavera começa em março.", ru: "Весна начинается в марте." },
+          { pt: "Estamos no século XXI.", ru: "Мы в XXI веке." }
+        ]
+      },
+      {
+        note: "Времена года: o inverno (зима), a primavera (весна), o verão (лето), o outono (осень). Века обозначаются римскими цифрами: o século XX (20-й век), o século XXI (21-й век)."
+      },
+      {
         heading: "Даты (As datas)",
-        text: "Даты выражаются количественными числительными: dia dois de março (2 марта). Месяцы пишутся с маленькой буквы: janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro."
+        text: "Даты выражаются количественными числительными: dia dois de março (2 марта). В числовом формате порядок: год-месяц-день (2014-01-03). В письменном: день + «de» + месяц + «de» + год."
+      },
+      {
+        examples: [
+          { pt: "Três de janeiro de dois mil e catorze.", ru: "Третье января две тысячи четырнадцатого года." },
+          { pt: "Sexta-feira, três de janeiro de 2014.", ru: "Пятница, 3 января 2014 года." }
+        ]
       },
       {
         note: "Обратите внимание на европейские формы: dezasseis (16), dezassete (17), dezanove (19) — в бразильском варианте они пишутся с двойным «s»: dezesseis, dezessete, dezenove."
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Числа и время", theoryRange: [0, 6] },
+      { title: "Часть 2: Дни недели и месяцы", theoryRange: [6, 14] },
+      { title: "Часть 3: Даты", theoryRange: [14, 17] }
     ],
     exercises: ex3,
     vocabulary: [
@@ -421,8 +535,37 @@ export const units = [
         ]
       },
       {
-        note: "В европейском португальском «tu» широко используется в неформальном общении, в отличие от Бразилии. «Você» используется в более формальном контексте или при обращении к незнакомым людям."
+        note: "В европейском португальском «tu» широко используется в неформальном общении, в отличие от Бразилии. «Você» используется в более формальном контексте или при обращении к незнакомым людям. Помните, что в португальском подлежащее-местоимение часто опускается, так как окончание глагола указывает на лицо."
+      },
+      {
+        heading: "Глаголы от pôr (4-я группа)",
+        text: "Помимо трёх основных спряжений (-ar, -er, -ir), существует четвёртая группа — глаголы, образованные от pôr (класть, ставить). Сюда входят: compor (составлять), decompor (разлагать), repor (возвращать), propor (предлагать), supor (предполагать), expor (выставлять), dispor (располагать)."
+      },
+      {
+        table: {
+          headers: ["Лицо", "pôr (класть)"],
+          rows: [
+            ["eu", "ponho"],
+            ["tu", "pões"],
+            ["ele/ela/você", "põe"],
+            ["nós", "pomos"],
+            ["eles/elas/vocês", "põem"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Eu ponho a mesa todos os dias.", ru: "Я накрываю на стол каждый день." },
+          { pt: "Ela propõe uma solução diferente.", ru: "Она предлагает другое решение." },
+          { pt: "Nós dispomos de pouco tempo.", ru: "Мы располагаем малым временем." },
+          { pt: "Eles compõem músicas juntos.", ru: "Они вместе сочиняют музыку." }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Местоимения", theoryRange: [0, 2] },
+      { title: "Часть 2: Глаголы -ar, -er, -ir", theoryRange: [2, 10] },
+      { title: "Часть 3: Глаголы от pôr", theoryRange: [10, 13] }
     ],
     exercises: ex4,
     vocabulary: [
@@ -587,7 +730,64 @@ export const units = [
       },
       {
         note: "В европейском португальском используется «comboio» (поезд) вместо бразильского «trem», «autocarro» (автобус) вместо «ônibus»."
+      },
+      {
+        heading: "Saber и conhecer: два глагола «знать»",
+        text: "В португальском языке есть два глагола со значением «знать». Saber — знать факты, информацию или уметь что-то делать. Conhecer — знать людей, места, быть знакомым с чем-то. Также saber может означать «иметь вкус»."
+      },
+      {
+        table: {
+          headers: ["Глагол", "Значение", "Пример"],
+          rows: [
+            ["saber", "знать факт", "Eu sei onde ela mora. (Я знаю, где она живёт.)"],
+            ["saber", "уметь", "Tu sabes falar inglês? (Ты умеешь говорить по-английски?)"],
+            ["saber", "иметь вкус", "O café sabe bem. (Кофе вкусный.)"],
+            ["conhecer", "знать человека", "Conheces o Pedro? (Ты знаешь Педру?)"],
+            ["conhecer", "знать место", "Eu conheço Lisboa muito bem. (Я очень хорошо знаю Лиссабон.)"]
+          ]
+        }
+      },
+      {
+        heading: "Ter de / ter que: обязанность",
+        text: "Конструкции ter de + инфинитив и ter que + инфинитив выражают необходимость или обязанность. Ter de подчёркивает более строгую обязанность (то, чего нельзя не сделать)."
+      },
+      {
+        examples: [
+          { pt: "Eu tenho que comprar um carro.", ru: "Мне надо купить машину." },
+          { pt: "Tu tens de comprar o bilhete para a viagem.", ru: "Тебе необходимо купить билет на поездку." },
+          { pt: "Nós temos de estudar mais.", ru: "Нам необходимо учиться больше." },
+          { pt: "Eles têm que trabalhar amanhã.", ru: "Им надо работать завтра." }
+        ]
+      },
+      {
+        heading: "Ir + инфинитив: ближайшее будущее",
+        text: "Конструкция ir (в настоящем времени) + инфинитив глагола используется для выражения намерения или ближайшего будущего, аналогично английскому «going to»."
+      },
+      {
+        examples: [
+          { pt: "Eu vou telefonar à Ana.", ru: "Я позвоню Ане." },
+          { pt: "Nós vamos mudar de casa.", ru: "Мы собираемся переехать." },
+          { pt: "A Josefina vai dar aulas na universidade.", ru: "Жозефина будет вести занятия в университете." },
+          { pt: "Eles vão viajar no verão.", ru: "Они поедут путешествовать летом." }
+        ]
+      },
+      {
+        heading: "Формулирование вопросов (Perguntas)",
+        text: "В португальском языке можно задать вопрос, просто используя основной глагол — без вспомогательного «do/does» как в английском. Интонация повышается в конце. Для утвердительного ответа «sim» может стоять в начале или в конце (Tenho, sim — более вежливо). В разговорной речи глагол часто повторяется вместо «sim»."
+      },
+      {
+        examples: [
+          { pt: "Gostas de viajar? — Gosto, sim.", ru: "Ты любишь путешествовать? — Да, люблю." },
+          { pt: "Tem troco de 100 euros? — Tenho, sim.", ru: "У Вас есть сдача со 100 евро? — Да, есть." },
+          { pt: "Sabes que horas são? — Sei, sei.", ru: "Ты знаешь, который час? — Да-да, знаю." },
+          { pt: "Conheces o Porto? — Conheço, conheço.", ru: "Ты знаешь Порту? — Да-да, знаю." }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Основные неправильные глаголы", theoryRange: [0, 5] },
+      { title: "Часть 2: Saber, conhecer, ir, ter de", theoryRange: [5, 11] },
+      { title: "Часть 3: Вопросы и спряжения", theoryRange: [11, 14] }
     ],
     exercises: ex5,
     vocabulary: [
@@ -805,6 +1005,18 @@ export const units = [
       },
       {
         note: "Обратите внимание на двойное отрицание в португальском: «Não quero nada» (букв.: «Не хочу ничего»). Это нормально для португальского, когда отрицательное слово стоит после глагола."
+      },
+      {
+        heading: "Nem и nem sequer: усиление отрицания",
+        text: "Для усиления отрицания используется nem (ни, даже не) и nem sequer (даже не). Конструкция nem...nem соответствует русскому «ни...ни»."
+      },
+      {
+        examples: [
+          { pt: "Nem eu nem a Ana gostamos de festas grandes.", ru: "Ни я, ни Ана не любим большие праздники." },
+          { pt: "Eu não tenho dinheiro, nem sequer para um café.", ru: "У меня нет денег, даже на кофе." },
+          { pt: "O João gosta de qualquer filme, mas nem sequer ele gosta deste.", ru: "Жуау нравится любой фильм, но даже ему не нравится этот." },
+          { pt: "Ela não fala nem português nem espanhol.", ru: "Она не говорит ни по-португальски, ни по-испански." }
+        ]
       }
     ],
     exercises: ex7,
@@ -1630,6 +1842,18 @@ export const units = [
       },
       {
         note: "Обратите внимание: в форме «nós» буква -s глагола отпадает перед -nos: levantamos + nos → levantamo-nos, divertimos + nos → divertimo-nos."
+      },
+      {
+        heading: "Взаимные действия (Ações recíprocas)",
+        text: "Возвратные глаголы также используются для описания взаимных действий, когда два или более субъекта действуют друг на друга. Для уточнения можно добавить um ao outro (друг другу), uma à outra или uns aos outros."
+      },
+      {
+        examples: [
+          { pt: "Eles amam-se.", ru: "Они любят друг друга." },
+          { pt: "Nós vemo-nos todos os dias.", ru: "Мы видимся каждый день." },
+          { pt: "Eles cumprimentam-se um ao outro.", ru: "Они здороваются друг с другом." },
+          { pt: "As irmãs telefonam-se uma à outra todas as noites.", ru: "Сёстры звонят друг другу каждый вечер." }
+        ]
       }
     ],
     exercises: ex14,
@@ -1845,6 +2069,42 @@ export const units = [
       },
       {
         note: "Внимание! В европейском португальском Pretérito Perfeito Composto НЕ соответствует английскому Present Perfect. Оно означает повторяющееся или продолжающееся действие, а не однократное завершённое. Для однократного завершённого действия используется Pretérito Perfeito Simples (следующий урок)."
+      },
+      {
+        heading: "Глаголы с двойным причастием",
+        text: "Некоторые глаголы имеют две формы причастия: правильную (с ter/haver) и неправильную (с ser/estar, как прилагательное). С вспомогательным глаголом ter всегда используется правильная форма."
+      },
+      {
+        table: {
+          headers: ["Глагол", "С ter (правильная)", "С ser/estar (неправильная)"],
+          rows: [
+            ["aceitar (принять)", "aceitado", "aceite"],
+            ["entregar (доставить)", "entregado", "entregue"],
+            ["ganhar (выиграть)", "ganhado", "ganho"],
+            ["gastar (потратить)", "gastado", "gasto"],
+            ["limpar (очистить)", "limpado", "limpo"],
+            ["pagar (заплатить)", "pagado", "pago"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Eu tenho aceitado todas as propostas.", ru: "Я принимаю все предложения (в последнее время)." },
+          { pt: "A proposta foi aceite pelo diretor.", ru: "Предложение было принято директором." },
+          { pt: "Ele tem pagado as contas a tempo.", ru: "Он оплачивает счета вовремя (регулярно)." },
+          { pt: "A conta está paga.", ru: "Счёт оплачен." }
+        ]
+      },
+      {
+        heading: "Позиция местоимений с Pretérito Perfeito Composto",
+        text: "Местоимения (прямые, косвенные, возвратные) присоединяются через дефис к вспомогательному глаголу ter, а не к причастию. При отрицании — ставятся перед ter."
+      },
+      {
+        examples: [
+          { pt: "Tenho-lhe telefonado todos os dias.", ru: "Я звоню ему/ей каждый день." },
+          { pt: "Não lhe tenho telefonado.", ru: "Я не звоню ему/ей." },
+          { pt: "Temo-nos levantado cedo.", ru: "Мы встаём рано (в последнее время)." }
+        ]
       }
     ],
     exercises: ex16,
@@ -2304,6 +2564,27 @@ export const units = [
       },
       {
         note: "В разговорной речи почти всегда используется составная форма (tinha + причастие). Простая форма (falara, comera) встречается в литературе, газетах и формальных текстах. Обе формы имеют одинаковое значение."
+      },
+      {
+        heading: "Вспомогательный глагол haver",
+        text: "В литературном и историческом стиле вместо ter может использоваться haver как вспомогательный глагол: havia falado = tinha falado. Эта форма встречается в классической литературе и формальных текстах."
+      },
+      {
+        examples: [
+          { pt: "Ele havia partido antes de nós chegarmos.", ru: "Он уехал до того, как мы приехали. (литерат.)" },
+          { pt: "Quando chegámos, eles já haviam saído.", ru: "Когда мы приехали, они уже ушли. (литерат.)" }
+        ]
+      },
+      {
+        heading: "Позиция местоимений в Mais-que-Perfeito Composto",
+        text: "Как и в Pretérito Perfeito Composto, местоимения присоединяются к вспомогательному глаголу (tinha), а не к причастию. При отрицании — ставятся перед вспомогательным глаголом."
+      },
+      {
+        examples: [
+          { pt: "Ele tinha-me telefonado antes do jantar.", ru: "Он позвонил мне перед ужином." },
+          { pt: "Nós não lhe tínhamos dito nada.", ru: "Мы ему/ей ничего не сказали." },
+          { pt: "Ela já se tinha levantado quando cheguei.", ru: "Она уже встала, когда я пришёл." }
+        ]
       }
     ],
     exercises: ex20,

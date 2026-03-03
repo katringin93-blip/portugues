@@ -1,204 +1,296 @@
 export const exercises = [
-      {
-        type: "choice",
-        question: "Выберите правильный перевод «Я никогда не ем рыбу»:",
-        options: [
-          "Eu nunca não como peixe.",
-          "Eu não como nunca peixe.",
-          "Eu nunca como peixe.",
-          "Eu não nunca como peixe."
-        ],
-        correct: 2,
-        explanation: "Когда «nunca» стоит перед глаголом, «não» не нужно: «Eu nunca como peixe»."
-      },
-      {
-        type: "fill",
-        question: "Не знаю ___ (ничего) sobre isso. → Não sei ___ sobre isso.",
-        answer: "nada"
-      },
-      {
-        type: "translate",
-        source: "Никто не говорит по-русски.",
-        direction: "ru-pt",
-        answer: ["Ninguém fala russo.", "Não fala ninguém russo."]
-      },
-      {
-        type: "choice",
-        question: "Какое слово означает «никогда»?",
-        options: ["nada", "ninguém", "nunca", "nenhum"],
-        correct: 2,
-        explanation: "«Nunca» означает «никогда». Nada = ничего, ninguém = никто, nenhum = никакой."
-      },
-      {
-        type: "fill",
-        question: "Она ещё не приехала: Ela ___ ___ chegou.",
-        answer: ["ainda", "não"]
-      },
-      {
-        type: "choice",
-        question: "Как правильно сказать «Я ничего не хочу»?",
-        options: [
-          "Eu não quero nada.",
-          "Eu nada quero não.",
-          "Eu não nada quero.",
-          "Eu quero não nada."
-        ],
-        correct: 0,
-        explanation: "Двойное отрицание в португальском: «Não» перед глаголом + «nada» после: «Não quero nada»."
-      },
-      {
-        type: "fill",
-        question: "___ sabe a resposta. (Никто не знает ответ.)",
-        answer: "Ninguém"
-      },
-      {
-        type: "translate",
-        source: "Я не понимаю ничего.",
-        direction: "ru-pt",
-        answer: ["Não percebo nada.", "Não compreendo nada.", "Eu não percebo nada.", "Eu não compreendo nada."]
-      },
-      {
-        type: "match",
-        question: "Соотнесите отрицательные слова с переводом:",
-        pairs: [
-          { left: "nada", right: "ничего" },
-          { left: "ninguém", right: "никто" },
-          { left: "nunca", right: "никогда" },
-          { left: "nenhum", right: "никакой" },
-          { left: "nem...nem", right: "ни...ни" }
-        ]
-      },
-      {
-        type: "order",
-        question: "Составьте отрицательное предложение: «Я не говорю по-французски.»",
-        words: ["Eu", "não", "falo", "francês", "."],
-        answer: "Eu não falo francês."
-      },
-      {
-        type: "choice",
-        question: "«Não tenho ___ amigos aqui.» (У меня нет никаких друзей здесь.)",
-        options: ["nenhum", "nenhuns", "nenhumas", "nenhuma"],
-        correct: 1,
-        explanation: "«Amigos» — м.р. мн.ч., поэтому «nenhuns». (Но в разговорной речи часто используют «nenhum».)"
-      },
-      {
-        type: "fill",
-        question: "Ele não come ___ carne ___ peixe. (Он не ест ни мясо, ни рыбу.)",
-        answer: ["nem", "nem"]
-      },
-      {
-        type: "translate",
-        source: "Я никогда не был в Лиссабоне.",
-        direction: "ru-pt",
-        answer: ["Nunca estive em Lisboa.", "Eu nunca estive em Lisboa.", "Não estive nunca em Lisboa."]
-      },
-      {
-        type: "choice",
-        question: "Где ставится «não» в предложении?",
-        options: [
-          "После глагола",
-          "Перед глаголом",
-          "В конце предложения",
-          "Перед подлежащим"
-        ],
-        correct: 1,
-        explanation: "«Não» всегда ставится непосредственно перед глаголом: «Eu não falo»."
-      },
-      {
-        type: "fill",
-        question: "Não há ___ problema. (Нет никакой проблемы.)",
-        answer: "nenhum"
-      },
-      {
-        type: "translate",
-        source: "Мы ничего не знаем об этом.",
-        direction: "ru-pt",
-        answer: ["Não sabemos nada sobre isso.", "Nós não sabemos nada sobre isso.", "Não sabemos nada disso."]
-      },
-      {
-        type: "order",
-        question: "Составьте предложение: «Никто здесь не работает.»",
-        words: ["Ninguém", "trabalha", "aqui", "."],
-        answer: "Ninguém trabalha aqui."
-      },
-      {
-        type: "choice",
-        question: "Выберите правильное предложение с «nem...nem»:",
-        options: [
-          "Nem gosto de café nem de chá.",
-          "Não gosto nem de café nem de chá.",
-          "Não gosto de café nem chá.",
-          "Nem não gosto de café nem de chá."
-        ],
-        correct: 1,
-        explanation: "Правильная структура: «Não» + глагол + «nem...nem»: «Não gosto nem de café nem de chá»."
-      },
-      {
-        type: "fill",
-        question: "Eu ___ vou lá. (Я никогда туда не хожу. — «nunca» перед глаголом)",
-        answer: "nunca"
-      },
-      {
-        type: "translate",
-        source: "У неё нет ни братьев, ни сестёр.",
-        direction: "ru-pt",
-        answer: ["Ela não tem nem irmãos nem irmãs.", "Não tem nem irmãos nem irmãs."]
-      },
-      {
-        type: "choice",
-        question: "Как сказать «Ничего не случилось»?",
-        options: [
-          "Nada aconteceu.",
-          "Não aconteceu nada.",
-          "Оба варианта верны.",
-          "Ни один вариант не верен."
-        ],
-        correct: 2,
-        explanation: "Оба варианта верны: «Nada aconteceu» (nada перед глаголом) и «Não aconteceu nada» (двойное отрицание)."
-      },
-      {
-        type: "fill",
-        question: "Ele não gosta de ___ pessoa nesta sala. (Ему не нравится ни один человек в этой комнате.)",
-        answer: "nenhuma"
-      },
-      {
-        type: "order",
-        question: "Составьте предложение: «Я ничего не вижу.»",
-        words: ["Não", "vejo", "nada", "Eu", "."],
-        answer: "Eu não vejo nada."
-      },
-      {
-        type: "translate",
-        source: "Ты никогда не слушаешь?",
-        direction: "ru-pt",
-        answer: ["Nunca ouves?", "Tu nunca ouves?", "Não ouves nunca?"]
-      },
-      {
-        type: "choice",
-        question: "«___ me disse isso.» — Никто мне этого не говорил.",
-        options: ["Nada", "Nenhum", "Ninguém", "Nunca"],
-        correct: 2,
-        explanation: "«Ninguém» (никто) используется как подлежащее: «Ninguém me disse isso»."
-      },
-      {
-        type: "fill",
-        question: "Não temos ___ dinheiro. (У нас нет никаких денег.)",
-        answer: "nenhum"
-      },
-      {
-        type: "match",
-        question: "Соотнесите предложения с переводом:",
-        pairs: [
-          { left: "Não quero nada.", right: "Я ничего не хочу." },
-          { left: "Ninguém veio.", right: "Никто не пришёл." },
-          { left: "Nunca como carne.", right: "Я никогда не ем мясо." },
-          { left: "Não tenho nenhum livro.", right: "У меня нет ни одной книги." }
-        ]
-      },
-      {
-        type: "translate",
-        source: "Они ни с кем не разговаривают.",
-        direction: "ru-pt",
-        answer: ["Eles não falam com ninguém.", "Não falam com ninguém."]
-      }
-    ];
+  // Ex1: Rewrite in negative (12 items)
+  {
+    type: "translate",
+    source: "O Sr António viaja para Lisboa todas as semanas. → Перепишите в отрицательной форме.",
+    direction: "pt-ru",
+    answer: ["Господин Антониу не ездит в Лиссабон каждую неделю."]
+  },
+  {
+    type: "order",
+    question: "Перепишите в отрицательной форме: «O Sr António viaja para Lisboa todas as semanas.»",
+    words: ["O", "Sr", "António", "não", "viaja", "para", "Lisboa", "todas", "as", "semanas", "."],
+    answer: "O Sr António não viaja para Lisboa todas as semanas."
+  },
+  {
+    type: "choice",
+    question: "Как правильно написать в отрицательной форме: «A Ana e a Isabel sempre vão ao Porto.»?",
+    options: [
+      "A Ana e a Isabel não vão ao Porto.",
+      "A Ana e a Isabel nunca vão ao Porto.",
+      "A Ana e a Isabel ninguém vão ao Porto.",
+      "A Ana e a Isabel nada vão ao Porto."
+    ],
+    correct: 1,
+    explanation: "«Sempre» (всегда) заменяется на «nunca» (никогда): «A Ana e a Isabel nunca vão ao Porto.»"
+  },
+  {
+    type: "order",
+    question: "Перепишите в отрицательной форме: «Alguém trabalha hoje.» → Никто не работает сегодня.",
+    words: ["Ninguém", "trabalha", "hoje", "."],
+    answer: "Ninguém trabalha hoje."
+  },
+  {
+    type: "translate",
+    source: "Зал не полон людей.",
+    direction: "ru-pt",
+    answer: ["A sala não está cheia de gente."]
+  },
+  {
+    type: "choice",
+    question: "Перепишите в отрицательной форме: «Ela sempre chega atrasada ao trabalho.»",
+    options: [
+      "Ela não chega atrasada ao trabalho.",
+      "Ela nunca chega atrasada ao trabalho.",
+      "Ela ninguém chega atrasada ao trabalho.",
+      "Ela nada chega atrasada ao trabalho."
+    ],
+    correct: 1,
+    explanation: "«Sempre» (всегда) заменяется на «nunca» (никогда): «Ela nunca chega atrasada ao trabalho.»"
+  },
+  {
+    type: "translate",
+    source: "Он ничего не делает.",
+    direction: "ru-pt",
+    answer: ["Ele não faz nada."]
+  },
+  {
+    type: "order",
+    question: "Перепишите в отрицательной форме: «Alguém mora com o João.» → Никто не живёт с Жуаном.",
+    words: ["Ninguém", "mora", "com", "o", "João", "."],
+    answer: "Ninguém mora com o João."
+  },
+  {
+    type: "translate",
+    source: "Мы никогда не занимаемся гимнастикой в субботу.",
+    direction: "ru-pt",
+    answer: ["Nós nunca fazemos ginástica ao sábado.", "Nunca fazemos ginástica ao sábado."]
+  },
+  {
+    type: "fill",
+    question: "Перепишите в отрицательной форме: «Tu sabes tudo.» → Tu não sabes ___.",
+    answer: "nada"
+  },
+  {
+    type: "order",
+    question: "Перепишите в отрицательной форме: «Vocês estudam na universidade.»",
+    words: ["Vocês", "não", "estudam", "na", "universidade", "."],
+    answer: "Vocês não estudam na universidade."
+  },
+  {
+    type: "choice",
+    question: "Перепишите в отрицательной форме: «Todos entram à mesma hora.»",
+    options: [
+      "Ninguém entra à mesma hora.",
+      "Não entram à mesma hora.",
+      "Nada entra à mesma hora.",
+      "Nunca entram à mesma hora."
+    ],
+    correct: 0,
+    explanation: "«Todos» (все) заменяется на «Ninguém» (никто): «Ninguém entra à mesma hora.»"
+  },
+
+  // Ex2: Fill nenhum/nenhuma/nenhuns/nenhumas (12 items)
+  {
+    type: "choice",
+    question: "Não tenho ___ amigos aqui. (У меня нет никаких друзей здесь.)",
+    options: ["nenhum", "nenhuns", "nenhuma", "nenhumas"],
+    correct: 1,
+    explanation: "«Amigos» — м.р. мн.ч., поэтому «nenhuns»."
+  },
+  {
+    type: "fill",
+    question: "Não há ___ problema. (Нет никакой проблемы.)",
+    answer: "nenhum"
+  },
+  {
+    type: "fill",
+    question: "Não compro ___ livro hoje. (Я не покупаю ни одной книги сегодня.)",
+    answer: "nenhum"
+  },
+  {
+    type: "choice",
+    question: "Não conheço ___ pessoa nesta cidade. (Я не знаю ни одного человека в этом городе.)",
+    options: ["nenhum", "nenhuns", "nenhuma", "nenhumas"],
+    correct: 2,
+    explanation: "«Pessoa» — ж.р. ед.ч., поэтому «nenhuma»."
+  },
+  {
+    type: "fill",
+    question: "Não há ___ autocarros à noite. (Ночью нет никаких автобусов.)",
+    answer: "nenhuns"
+  },
+  {
+    type: "fill",
+    question: "Não tem ___ sentido. (Это не имеет никакого смысла.)",
+    answer: "nenhum"
+  },
+  {
+    type: "choice",
+    question: "Não existe ___ razão para isso. (Нет никакой причины для этого.)",
+    options: ["nenhum", "nenhuns", "nenhuma", "nenhumas"],
+    correct: 2,
+    explanation: "«Razão» — ж.р. ед.ч., поэтому «nenhuma»."
+  },
+  {
+    type: "fill",
+    question: "Não há ___ cartas para ti. (Нет никаких писем для тебя.)",
+    answer: "nenhumas"
+  },
+  {
+    type: "fill",
+    question: "Não tenho ___ sapatos novos. (У меня нет никаких новых туфель.)",
+    answer: "nenhuns"
+  },
+  {
+    type: "fill",
+    question: "Não recebi ___ recado. (Я не получил ни одного сообщения.)",
+    answer: "nenhum"
+  },
+  {
+    type: "choice",
+    question: "Não temos ___ ideia do que fazer. (Мы не имеем никакого понятия.)",
+    options: ["nenhum", "nenhuns", "nenhuma", "nenhumas"],
+    correct: 2,
+    explanation: "«Ideia» — ж.р. ед.ч., поэтому «nenhuma»."
+  },
+  {
+    type: "fill",
+    question: "Não há ___ alunas na sala. (В зале нет ни одной ученицы.)",
+    answer: "nenhumas"
+  },
+
+  // Ex3: Match sentence halves (10 pairs)
+  {
+    type: "match",
+    question: "Соотнесите начало и конец предложений:",
+    pairs: [
+      { left: "O João não come", right: "nada ao pequeno-almoço." },
+      { left: "Ninguém sabe", right: "onde fica a chave." },
+      { left: "Ela nunca vai", right: "ao cinema sozinha." },
+      { left: "Não temos nenhum", right: "dinheiro para as férias." },
+      { left: "Nem o Pedro nem a Ana", right: "querem ir à festa." }
+    ]
+  },
+  {
+    type: "match",
+    question: "Соотнесите начало и конец предложений:",
+    pairs: [
+      { left: "Não gosto de", right: "nenhuma destas cores." },
+      { left: "Tu nunca ouves", right: "o que eu digo." },
+      { left: "Ninguém quer", right: "trabalhar ao domingo." },
+      { left: "Não tenho nem tempo", right: "nem paciência." },
+      { left: "Eles não fazem", right: "nada à noite." }
+    ]
+  },
+
+  // Ex4: Fill negatives (nada/nunca/não/ninguém/nem sequer/nem)
+  {
+    type: "fill",
+    question: "___ sabe a resposta à pergunta. (Никто не знает ответа на вопрос.)",
+    answer: "Ninguém"
+  },
+  {
+    type: "fill",
+    question: "Não sei ___ sobre esse assunto. (Я ничего не знаю об этой теме.)",
+    answer: "nada"
+  },
+  {
+    type: "fill",
+    question: "Hoje ___ vou trabalhar. (Сегодня я не пойду работать.)",
+    answer: "não"
+  },
+  {
+    type: "fill",
+    question: "Eu ___ como peixe cru. (Я никогда не ем сырую рыбу.)",
+    answer: "nunca"
+  },
+  {
+    type: "choice",
+    question: "Eles ___ gostam de viajar de avião. (Они не любят путешествовать на самолёте.)",
+    options: ["nada", "nunca", "não", "ninguém"],
+    correct: 2,
+    explanation: "Простое отрицание: «não» перед глаголом."
+  },
+  {
+    type: "fill",
+    question: "Não como ___ de manhã. (Я ничего не ем утром.)",
+    answer: "nada"
+  },
+  {
+    type: "translate",
+    source: "Он не пьёт ни кофе, ни чай.",
+    direction: "ru-pt",
+    answer: ["Ele não bebe nem café nem chá.", "Não bebe nem café nem chá."]
+  },
+  {
+    type: "fill",
+    question: "Ele não fala ___ português! (Он даже не говорит по-португальски!)",
+    answer: "nem sequer"
+  },
+
+  // Ex6: Fill negatives in text
+  {
+    type: "fill",
+    question: "Não tenho ___ experiência com computadores. (Нет никакого опыта.)",
+    answer: "nenhuma"
+  },
+  {
+    type: "choice",
+    question: "Заполните пропуск: «Ela ___ quer sair.» (Она не хочет выходить.)",
+    options: ["nada", "ninguém", "não", "nunca"],
+    correct: 2,
+    explanation: "Простое отрицание: «não» перед глаголом."
+  },
+  {
+    type: "fill",
+    question: "Não gosta ___ de carne ___ de peixe. (Не любит ни мясо, ни рыбу.)",
+    answer: ["nem", "nem"]
+  },
+  {
+    type: "fill",
+    question: "___ me ajuda com este trabalho. (Никто мне не помогает с этой работой.)",
+    answer: "Ninguém"
+  },
+  {
+    type: "fill",
+    question: "Não percebo ___ do que dizes. (Я ничего не понимаю из того, что ты говоришь.)",
+    answer: "nada"
+  },
+  {
+    type: "choice",
+    question: "Eles ___ vão ao teatro. (Они не ходят в театр.)",
+    options: ["nada", "ninguém", "não", "nenhum"],
+    correct: 2,
+    explanation: "Простое отрицание: «não» перед глаголом."
+  },
+  {
+    type: "fill",
+    question: "Não temos ___ planos para o verão. (У нас нет никаких планов на лето.)",
+    answer: "nenhuns"
+  },
+  {
+    type: "fill",
+    question: "Ele ___ chega a horas. (Он никогда не приходит вовремя.)",
+    answer: "nunca"
+  },
+
+  // Additional mixed exercises
+  {
+    type: "match",
+    question: "Соотнесите отрицательные слова с их переводом:",
+    pairs: [
+      { left: "nada", right: "ничего" },
+      { left: "ninguém", right: "никто" },
+      { left: "nunca", right: "никогда" },
+      { left: "nenhum", right: "никакой" },
+      { left: "nem...nem", right: "ни...ни" }
+    ]
+  },
+  {
+    type: "order",
+    question: "Составьте отрицательное предложение: «Дети не плачут много.»",
+    words: ["As", "crianças", "não", "choram", "muito", "."],
+    answer: "As crianças não choram muito."
+  }
+];

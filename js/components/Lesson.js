@@ -16,241 +16,345 @@ export const Lesson = {
 
       <div class="lesson-tabs">
         <button class="lesson-tab" :class="{ active: tab === 'theory' }" @click="tab = 'theory'">{{ t('lesson.tab.theory') }}</button>
-        <button class="lesson-tab" :class="{ active: tab === 'exercises' }" @click="tab = 'exercises'">{{ t('lesson.tab.exercises') }}</button>
-        <button class="lesson-tab" :class="{ active: tab === 'vocabulary' }" @click="tab = 'vocabulary'">{{ t('lesson.tab.vocabulary') }}</button>
-        <button class="lesson-tab" :class="{ active: tab === 'flashcards' }" @click="tab = 'flashcards'">{{ t('lesson.tab.flashcards') }}</button>
+        <button class="lesson-tab" :class="{ active: tab === 'practice' }" @click="tab = 'practice'">{{ t('lesson.tab.practice') }}</button>
       </div>
 
       <!-- Theory Tab -->
-      <div v-if="tab === 'theory'" class="theory-content">
-        <div v-for="(section, i) in unit.theory" :key="i">
-          <h3 v-if="section.heading">{{ section.heading }}</h3>
-          <p v-if="section.text" v-html="section.text"></p>
-
-          <div v-if="section.note" class="grammar-note">{{ section.note }}</div>
-
-          <div v-if="section.table" class="grammar-table-wrap">
-            <table class="grammar-table">
-              <thead>
-                <tr><th v-for="h in section.table.headers" :key="h">{{ h }}</th></tr>
-              </thead>
-              <tbody>
-                <tr v-for="(row, ri) in section.table.rows" :key="ri">
-                  <td v-for="(cell, ci) in row" :key="ci">{{ cell }}</td>
-                </tr>
-              </tbody>
-            </table>
+      <div v-if="tab === 'theory'" class="lesson-body">
+        <div class="lesson-main">
+          <div class="theory-content">
+            <div v-if="unit.lessons && unit.lessons.length > 1" class="sub-lesson-nav">
+              <button v-for="(lesson, li) in unit.lessons" :key="li"
+                class="sub-lesson-btn" :class="{ active: currentLesson === li }"
+                @click="currentLesson = li">
+                {{ lesson.title }}
+              </button>
+            </div>
+            <div v-for="(section, i) in displayedTheory" :key="i">
+              <h3 v-if="section.heading">{{ section.heading }}</h3>
+              <p v-if="section.text" v-html="section.text"></p>
+              <div v-if="section.note" class="grammar-note">{{ section.note }}</div>
+              <div v-if="section.table" class="grammar-table-wrap">
+                <table class="grammar-table">
+                  <thead>
+                    <tr><th v-for="h in section.table.headers" :key="h">{{ h }}</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="(row, ri) in section.table.rows" :key="ri">
+                      <td v-for="(cell, ci) in row" :key="ci">{{ cell }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div v-if="section.examples" v-for="(ex, ei) in section.examples" :key="ei" class="example-sentence">
+                <audio-button :text="ex.pt"></audio-button>
+                <div>
+                  <div class="example-pt">{{ ex.pt }}</div>
+                  <div class="example-ru">{{ ex.ru }}</div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div v-if="section.examples" v-for="(ex, ei) in section.examples" :key="ei" class="example-sentence">
-            <audio-button :text="ex.pt"></audio-button>
-            <div>
-              <div class="example-pt">{{ ex.pt }}</div>
-              <div class="example-ru">{{ ex.ru }}</div>
+          <!-- Collapsible Vocabulary -->
+          <div v-if="unit.vocabulary && unit.vocabulary.length" class="vocab-collapse">
+            <button class="vocab-collapse-header" @click="vocabExpanded = !vocabExpanded"
+              :aria-expanded="vocabExpanded" aria-controls="vocab-body">
+              <span>{{ t('lesson.vocabInline', { count: vocabCount }) }}</span>
+              <span class="vocab-collapse-icon" :class="{ expanded: vocabExpanded }">&#9660;</span>
+            </button>
+            <div v-if="vocabExpanded" id="vocab-body" class="vocab-collapse-body">
+              <ul class="vocab-list">
+                <li v-for="(word, wi) in unit.vocabulary" :key="wi" class="vocab-item">
+                  <audio-button :text="word.pt"></audio-button>
+                  <span class="vocab-pt">{{ word.pt }}</span>
+                  <span class="vocab-ru">{{ word.ru }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- CTA: Go to Practice -->
+          <div class="theory-cta">
+            <button class="btn btn-primary btn-lg" @click="goToPractice">{{ t('lesson.goToPractice') }}</button>
+          </div>
+        </div>
+
+        <!-- Desktop Sidebar -->
+        <aside class="lesson-sidebar">
+          <div class="sidebar-card">
+            <div class="sidebar-title">{{ t('lesson.progressSidebar') }}</div>
+            <ul class="sidebar-checklist">
+              <li :class="{ done: theoryRead }">{{ t('lesson.tab.theory') }}</li>
+              <li :class="{ done: exercisesCompleted > 0 }">{{ t('lesson.tab.exercises') }} ({{ exercisesCompleted }}/{{ exerciseCount }})</li>
+              <li>{{ t('lesson.flashcardsSidebar') }} ({{ flashcardCount }})</li>
+            </ul>
+            <button class="sidebar-cta btn btn-primary" @click="goToPractice">{{ t('lesson.goToPractice') }}</button>
+          </div>
+          <div v-if="unit.vocabulary && unit.vocabulary.length" class="sidebar-card">
+            <div class="sidebar-title">{{ t('lesson.vocabInline', { count: vocabCount }) }}</div>
+            <ul class="vocab-list" style="margin:0;padding:0">
+              <li v-for="(word, wi) in unit.vocabulary.slice(0, vocabPreviewCount)" :key="wi" class="vocab-item" style="padding:.25rem 0;border:none">
+                <span class="vocab-pt">{{ word.pt }}</span>
+                <span class="vocab-ru">{{ word.ru }}</span>
+              </li>
+            </ul>
+            <button v-if="unit.vocabulary.length > vocabPreviewCount" class="btn btn-outline btn-sm mt-1"
+              @click="showAllVocab">
+              {{ t('lesson.vocabShowAll') }}
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Practice Tab -->
+      <div v-if="tab === 'practice'">
+
+        <!-- Practice Hub -->
+        <div v-if="practiceView === 'hub'" class="practice-hub">
+          <div class="practice-card" @click="practiceView = 'exercises'">
+            <div class="practice-card-icon">&#128221;</div>
+            <div class="practice-card-body">
+              <div class="practice-card-title">{{ t('lesson.tab.exercises') }}</div>
+              <div class="text-muted" style="font-size:.8125rem">{{ t('lesson.exerciseHubCount', { done: exercisesCompleted, total: exerciseCount }) }}</div>
+              <progress-bar :percent="exercisePercent" style="margin-top:.5rem"></progress-bar>
+            </div>
+            <div class="practice-card-action">
+              <span class="btn btn-primary btn-sm">{{ t('lesson.start') }}</span>
+            </div>
+          </div>
+          <div class="practice-card" @click="startFlashcards" v-if="unit.flashcards && unit.flashcards.length">
+            <div class="practice-card-icon">&#127183;</div>
+            <div class="practice-card-body">
+              <div class="practice-card-title">{{ t('lesson.flashcardsSidebar') }}</div>
+              <div class="text-muted" style="font-size:.8125rem">{{ t('lesson.flashcardHubCount', { count: flashcardCount }) }}</div>
+            </div>
+            <div class="practice-card-action">
+              <span class="btn btn-outline btn-sm">{{ t('lesson.startReview') }}</span>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Exercises Tab -->
-      <div v-if="tab === 'exercises'">
-        <div v-if="!exerciseStarted" class="text-center" style="padding:2rem 0">
-          <p v-html="t('lesson.exerciseCount', { count: unit.exercises.length })"></p>
-          <progress-bar :percent="exercisePercent" :show-text="true" class="mt-1 mb-2"></progress-bar>
-          <button class="btn btn-primary btn-lg" @click="startExercises">
-            {{ exercisePercent > 0 && exercisePercent < 100 ? t('lesson.continue') : exercisePercent >= 100 ? t('lesson.retry') : t('lesson.start') }}
+        <!-- Exercises View -->
+        <div v-if="practiceView === 'exercises'">
+          <button class="btn btn-outline btn-sm mb-2" @click="backToHub" v-if="!exerciseStarted">
+            &larr; {{ t('lesson.backToHub') }}
           </button>
-        </div>
 
-        <div v-else-if="currentExercise">
-          <div class="exercise-counter">
-            {{ t('lesson.question', { current: currentExerciseIdx + 1, total: unit.exercises.length }) }}
+          <!-- Exercise start screen -->
+          <div v-if="!exerciseStarted && !exerciseFinished" class="text-center" style="padding:2rem 0">
+            <p v-html="t('lesson.exerciseCount', { count: exerciseCount })"></p>
+            <p v-if="totalBatches > 1" class="text-muted" style="font-size:.875rem">
+              {{ totalBatches }} {{ totalBatches > 1 ? t('lesson.batchLabel', { current: 1, total: totalBatches }) : '' }}
+            </p>
+            <progress-bar :percent="exercisePercent" :show-text="true" class="mt-1 mb-2"></progress-bar>
+            <button class="btn btn-primary btn-lg" @click="startExercises">
+              {{ exercisePercent > 0 && exercisePercent < 100 ? t('lesson.continue') : exercisePercent >= 100 ? t('lesson.retry') : t('lesson.start') }}
+            </button>
           </div>
-          <progress-bar :percent="((currentExerciseIdx) / unit.exercises.length) * 100"></progress-bar>
 
-          <!-- Multiple Choice -->
-          <div v-if="currentExercise.type === 'choice'" class="exercise-container">
-            <div class="exercise-question" v-html="currentExercise.question"></div>
-            <div class="choice-grid">
-              <button v-for="(opt, oi) in currentExercise.options" :key="oi"
-                class="choice-btn"
-                :class="{
-                  correct: answered && oi === currentExercise.correct,
-                  wrong: answered && selectedAnswer === oi && oi !== currentExercise.correct,
-                  disabled: answered
-                }"
-                @click="answerChoice(oi)">
-                {{ opt }}
-              </button>
+          <!-- Active exercise -->
+          <div v-else-if="currentBatchExercise && !batchFinished">
+            <div v-if="totalBatches > 1" class="batch-label mb-1">
+              {{ t('lesson.batchLabel', { current: currentBatch + 1, total: totalBatches }) }}
             </div>
-          </div>
-
-          <!-- Fill in the blank -->
-          <div v-if="currentExercise.type === 'fill'" class="exercise-container">
-            <div class="exercise-question" v-html="currentExercise.question"></div>
-            <div class="exercise-input-row">
-              <input class="input" v-model="textAnswer" @keyup.enter="answerFill"
-                :disabled="answered" :placeholder="t('lesson.enterAnswer')" ref="fillInput"
-                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-              <button class="btn btn-primary" @click="answerFill" :disabled="answered || !textAnswer.trim()">
-                {{ t('lesson.check') }}
-              </button>
+            <div class="exercise-counter">
+              {{ t('lesson.overallQuestion', { current: overallExerciseIdx + 1, total: exerciseCount }) }}
             </div>
-          </div>
+            <progress-bar :percent="((overallExerciseIdx) / exerciseCount) * 100"></progress-bar>
 
-          <!-- Match -->
-          <div v-if="currentExercise.type === 'match'" class="exercise-container">
-            <div class="exercise-question" v-html="currentExercise.question"></div>
-            <div class="match-grid">
-              <div class="match-column">
-                <button v-for="(item, li) in matchLeft" :key="'l'+li"
-                  class="match-item"
+            <!-- Multiple Choice -->
+            <div v-if="currentBatchExercise.type === 'choice'" class="exercise-container">
+              <div class="exercise-question" v-html="currentBatchExercise.question"></div>
+              <div class="choice-grid">
+                <button v-for="(opt, oi) in currentBatchExercise.options" :key="oi"
+                  class="choice-btn"
                   :class="{
-                    selected: matchSelectedLeft === li,
-                    matched: matchPairs[li] !== undefined,
-                    correct: answered && matchPairs[li] !== undefined && isMatchPairCorrect(li),
-                    wrong: answered && matchPairs[li] !== undefined && !isMatchPairCorrect(li)
+                    correct: answered && oi === currentBatchExercise.correct,
+                    wrong: answered && selectedAnswer === oi && oi !== currentBatchExercise.correct,
+                    disabled: answered
                   }"
-                  @click="selectMatchLeft(li)" :disabled="answered">
-                  {{ item }}
-                </button>
-              </div>
-              <div class="match-column">
-                <button v-for="(item, ri) in matchRight" :key="'r'+ri"
-                  class="match-item"
-                  :class="{
-                    selected: matchSelectedRight === ri,
-                    matched: matchRightUsed[ri],
-                    correct: answered && matchRightUsed[ri] && isMatchRightCorrect(ri),
-                    wrong: answered && matchRightUsed[ri] && !isMatchRightCorrect(ri)
-                  }"
-                  @click="selectMatchRight(ri)" :disabled="answered">
-                  {{ item }}
+                  @click="answerChoice(oi)">
+                  {{ opt }}
                 </button>
               </div>
             </div>
-            <button v-if="Object.keys(matchPairs).length === (currentExercise.pairs || []).length && !answered"
-              class="btn btn-primary mt-1" @click="answerMatch">
-              {{ t('lesson.check') }}
-            </button>
-          </div>
 
-          <!-- Order -->
-          <div v-if="currentExercise.type === 'order'" class="exercise-container">
-            <div class="exercise-question" v-html="currentExercise.question"></div>
-            <div class="order-answer" :class="{ empty: !orderedWords.length }">
-              <span v-if="!orderedWords.length" class="text-muted">{{ t('lesson.clickWords') }}</span>
-              <button v-for="(word, wi) in orderedWords" :key="'o'+wi"
-                class="order-word placed" @click="removeOrderWord(wi)" :disabled="answered">
-                {{ word }}
-              </button>
+            <!-- Fill in the blank -->
+            <div v-if="currentBatchExercise.type === 'fill'" class="exercise-container">
+              <div class="exercise-question" v-html="currentBatchExercise.question"></div>
+              <div class="exercise-input-row">
+                <input class="input" v-model="textAnswer" @keyup.enter="answerFill"
+                  :disabled="answered" :placeholder="t('lesson.enterAnswer')" ref="fillInput"
+                  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <button class="btn btn-primary" @click="answerFill" :disabled="answered || !textAnswer.trim()">
+                  {{ t('lesson.check') }}
+                </button>
+              </div>
             </div>
-            <div class="order-bank">
-              <button v-for="(word, wi) in orderBank" :key="'b'+wi"
-                class="order-word"
-                :class="{ used: orderUsed[wi] }"
-                @click="placeOrderWord(wi)" :disabled="answered || orderUsed[wi]">
-                {{ word }}
-              </button>
-            </div>
-            <button v-if="orderedWords.length === (orderBank || []).length && !answered"
-              class="btn btn-primary mt-1" @click="answerOrder">
-              {{ t('lesson.check') }}
-            </button>
-          </div>
 
-          <!-- Translation -->
-          <div v-if="currentExercise.type === 'translate'" class="exercise-container">
-            <div class="exercise-question">
-              {{ t('lesson.translatePrompt') }} <strong>{{ currentExercise.source }}</strong>
-              <audio-button :text="currentExercise.direction === 'pt-ru' ? currentExercise.source : ''" v-if="currentExercise.direction === 'pt-ru'"></audio-button>
-            </div>
-            <div class="exercise-input-row">
-              <input class="input" v-model="textAnswer" @keyup.enter="answerTranslate"
-                :disabled="answered" :placeholder="currentExercise.direction === 'pt-ru' ? t('lesson.translateToRu') : t('lesson.translateToPt')" ref="translateInput"
-                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-              <button class="btn btn-primary" @click="answerTranslate" :disabled="answered || !textAnswer.trim()">
+            <!-- Match -->
+            <div v-if="currentBatchExercise.type === 'match'" class="exercise-container">
+              <div class="exercise-question" v-html="currentBatchExercise.question"></div>
+              <div class="match-grid">
+                <div class="match-column">
+                  <button v-for="(item, li) in matchLeft" :key="'l'+li"
+                    class="match-item"
+                    :class="{
+                      selected: matchSelectedLeft === li,
+                      matched: matchPairs[li] !== undefined,
+                      correct: answered && matchPairs[li] !== undefined && isMatchPairCorrect(li),
+                      wrong: answered && matchPairs[li] !== undefined && !isMatchPairCorrect(li)
+                    }"
+                    @click="selectMatchLeft(li)" :disabled="answered">
+                    {{ item }}
+                  </button>
+                </div>
+                <div class="match-column">
+                  <button v-for="(item, ri) in matchRight" :key="'r'+ri"
+                    class="match-item"
+                    :class="{
+                      selected: matchSelectedRight === ri,
+                      matched: matchRightUsed[ri],
+                      correct: answered && matchRightUsed[ri] && isMatchRightCorrect(ri),
+                      wrong: answered && matchRightUsed[ri] && !isMatchRightCorrect(ri)
+                    }"
+                    @click="selectMatchRight(ri)" :disabled="answered">
+                    {{ item }}
+                  </button>
+                </div>
+              </div>
+              <button v-if="Object.keys(matchPairs).length === (currentBatchExercise.pairs || []).length && !answered"
+                class="btn btn-primary mt-1" @click="answerMatch">
                 {{ t('lesson.check') }}
               </button>
             </div>
-          </div>
 
-          <!-- Feedback -->
-          <div v-if="answered" class="exercise-feedback" :class="lastCorrect ? 'correct' : 'wrong'">
-            <template v-if="lastCorrect">{{ t('lesson.correct') }}</template>
-            <template v-else>
-              {{ t('lesson.wrong') }} <strong>{{ correctAnswer }}</strong>
-              <div v-if="currentExercise.explanation" style="margin-top:.25rem;font-size:.8125rem">
-                {{ currentExercise.explanation }}
+            <!-- Order -->
+            <div v-if="currentBatchExercise.type === 'order'" class="exercise-container">
+              <div class="exercise-question" v-html="currentBatchExercise.question"></div>
+              <div class="order-answer" :class="{ empty: !orderedWords.length }">
+                <span v-if="!orderedWords.length" class="text-muted">{{ t('lesson.clickWords') }}</span>
+                <button v-for="(word, wi) in orderedWords" :key="'o'+wi"
+                  class="order-word placed" @click="removeOrderWord(wi)" :disabled="answered">
+                  {{ word }}
+                </button>
               </div>
-            </template>
-          </div>
-
-          <div v-if="answered" class="mt-2">
-            <button class="btn btn-primary" @click="nextExercise">
-              {{ currentExerciseIdx + 1 < unit.exercises.length ? t('lesson.next') : t('lesson.results') }}
-            </button>
-          </div>
-        </div>
-
-        <!-- Results -->
-        <div v-else-if="exerciseFinished" class="exercise-results card">
-          <div class="results-score">{{ Math.round((correctCount / unit.exercises.length) * 100) }}%</div>
-          <div class="results-label">{{ resultMessage }}</div>
-          <div class="results-detail">
-            {{ t('lesson.correctCount', { correct: correctCount, total: unit.exercises.length }) }}
-          </div>
-          <div class="flex gap-1" style="justify-content:center">
-            <button class="btn btn-outline" @click="startExercises">{{ t('lesson.retry') }}</button>
-            <button class="btn btn-primary" @click="tab = 'flashcards'">{{ t('lesson.toFlashcards') }}</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Vocabulary Tab -->
-      <div v-if="tab === 'vocabulary'">
-        <h2 class="mb-2">{{ t('lesson.vocabTitle', { id: unit.id }) }}</h2>
-        <ul class="vocab-list">
-          <li v-for="(word, wi) in unit.vocabulary" :key="wi" class="vocab-item">
-            <audio-button :text="word.pt"></audio-button>
-            <span class="vocab-pt">{{ word.pt }}</span>
-            <span class="vocab-ru">{{ word.ru }}</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Flashcards Tab -->
-      <div v-if="tab === 'flashcards'">
-        <p class="text-muted mb-2">{{ t('lesson.flashcardsHint') }}</p>
-        <div class="text-center mb-2">
-          <router-link to="/flashcards" class="btn btn-outline btn-sm">{{ t('lesson.allFlashcards') }}</router-link>
-        </div>
-        <div class="flashcard-container" v-if="unit.flashcards && unit.flashcards.length">
-          <div class="flashcard-stats">
-            <span>{{ t('lesson.cardCount', { current: fcIndex + 1, total: unit.flashcards.length }) }}</span>
-          </div>
-          <div class="flashcard-wrapper" @click="fcFlipped = !fcFlipped">
-            <div class="flashcard" :class="{ flipped: fcFlipped }">
-              <div class="flashcard-face flashcard-front">
-                <audio-button :text="currentFlashcard.pt" @click.stop></audio-button>
-                <div class="flashcard-word mt-1">{{ currentFlashcard.pt }}</div>
-                <div class="flashcard-hint" v-if="currentFlashcard.hint">{{ currentFlashcard.hint }}</div>
+              <div class="order-bank">
+                <button v-for="(word, wi) in orderBank" :key="'b'+wi"
+                  class="order-word"
+                  :class="{ used: orderUsed[wi] }"
+                  @click="placeOrderWord(wi)" :disabled="answered || orderUsed[wi]">
+                  {{ word }}
+                </button>
               </div>
-              <div class="flashcard-face flashcard-back">
-                <div class="flashcard-translation">{{ currentFlashcard.ru }}</div>
-                <div class="flashcard-example" v-if="currentFlashcard.example">{{ currentFlashcard.example }}</div>
+              <button v-if="orderedWords.length === (orderBank || []).length && !answered"
+                class="btn btn-primary mt-1" @click="answerOrder">
+                {{ t('lesson.check') }}
+              </button>
+            </div>
+
+            <!-- Translation -->
+            <div v-if="currentBatchExercise.type === 'translate'" class="exercise-container">
+              <div class="exercise-question">
+                {{ t('lesson.translatePrompt') }} <strong>{{ currentBatchExercise.source }}</strong>
+                <audio-button :text="currentBatchExercise.direction === 'pt-ru' ? currentBatchExercise.source : ''" v-if="currentBatchExercise.direction === 'pt-ru'"></audio-button>
+              </div>
+              <div class="exercise-input-row">
+                <input class="input" v-model="textAnswer" @keyup.enter="answerTranslate"
+                  :disabled="answered" :placeholder="currentBatchExercise.direction === 'pt-ru' ? t('lesson.translateToRu') : t('lesson.translateToPt')" ref="translateInput"
+                  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                <button class="btn btn-primary" @click="answerTranslate" :disabled="answered || !textAnswer.trim()">
+                  {{ t('lesson.check') }}
+                </button>
               </div>
             </div>
+
+            <!-- Feedback -->
+            <div v-if="answered" class="exercise-feedback" :class="lastCorrect ? 'correct' : 'wrong'">
+              <template v-if="lastCorrect">{{ t('lesson.correct') }}</template>
+              <template v-else>
+                {{ t('lesson.wrong') }} <strong>{{ correctAnswer }}</strong>
+                <div v-if="currentBatchExercise && currentBatchExercise.explanation" style="margin-top:.25rem;font-size:.8125rem">
+                  {{ currentBatchExercise.explanation }}
+                </div>
+              </template>
+            </div>
+
+            <div v-if="answered" class="mt-2">
+              <button class="btn btn-primary" @click="nextExercise">
+                {{ overallExerciseIdx + 1 >= exerciseCount ? t('lesson.results') : t('lesson.next') }}
+              </button>
+            </div>
           </div>
-          <div v-if="fcFlipped" class="flashcard-rating">
-            <button class="rating-btn again" @click="rateCard(0)">{{ t('rating.again') }}</button>
-            <button class="rating-btn hard" @click="rateCard(1)">{{ t('rating.hard') }}</button>
-            <button class="rating-btn good" @click="rateCard(2)">{{ t('rating.good') }}</button>
-            <button class="rating-btn easy" @click="rateCard(3)">{{ t('rating.easy') }}</button>
+
+          <!-- Batch Complete (intermediate results) -->
+          <div v-else-if="batchFinished && !exerciseFinished" class="batch-complete card">
+            <h3>{{ t('lesson.batchComplete') }}</h3>
+            <div class="results-score">{{ batchExercises.length > 0 ? Math.round((batchCorrectCount / batchExercises.length) * 100) : 0 }}%</div>
+            <p class="text-muted">
+              {{ t('lesson.batchScore', { correct: batchCorrectCount, total: batchExercises.length }) }}
+            </p>
+            <div class="flex gap-1" style="justify-content:center">
+              <button v-if="currentBatch + 1 < totalBatches" class="btn btn-primary" @click="nextBatch">
+                {{ t('lesson.batchNext', { next: currentBatch + 2 }) }}
+              </button>
+              <button class="btn btn-outline" @click="finishExercises">
+                {{ currentBatch + 1 >= totalBatches ? t('lesson.results') : t('lesson.batchFinish') }}
+              </button>
+            </div>
+          </div>
+
+          <!-- Final Results -->
+          <div v-else-if="exerciseFinished" class="exercise-results card">
+            <div class="results-score">{{ attemptedCount > 0 ? Math.round((correctCount / attemptedCount) * 100) : 0 }}%</div>
+            <div class="results-label">{{ resultMessage }}</div>
+            <div class="results-detail">
+              {{ t('lesson.correctCount', { correct: correctCount, total: attemptedCount }) }}
+            </div>
+            <div class="flex gap-1" style="justify-content:center">
+              <button class="btn btn-outline" @click="startExercises">{{ t('lesson.retry') }}</button>
+              <button class="btn btn-primary" @click="startFlashcards" v-if="unit.flashcards && unit.flashcards.length">{{ t('lesson.toFlashcards') }}</button>
+            </div>
           </div>
         </div>
-        <div v-else class="flashcard-empty">
-          <p>{{ t('lesson.noFlashcards') }}</p>
+
+        <!-- Flashcards View -->
+        <div v-if="practiceView === 'flashcards'">
+          <button class="btn btn-outline btn-sm mb-2" @click="backToHub">
+            &larr; {{ t('lesson.backToHub') }}
+          </button>
+          <div class="text-center mb-2">
+            <router-link to="/flashcards" class="btn btn-outline btn-sm">{{ t('lesson.allFlashcards') }}</router-link>
+          </div>
+          <div class="flashcard-container" v-if="unit.flashcards && unit.flashcards.length">
+            <div class="flashcard-stats">
+              <span>{{ t('lesson.cardCount', { current: fcIndex + 1, total: unit.flashcards.length }) }}</span>
+            </div>
+            <div class="flashcard-wrapper" @click="fcFlipped = !fcFlipped">
+              <div class="flashcard" :class="{ flipped: fcFlipped }">
+                <div class="flashcard-face flashcard-front">
+                  <audio-button :text="currentFlashcard.pt" @click.stop></audio-button>
+                  <div class="flashcard-word mt-1">{{ currentFlashcard.pt }}</div>
+                  <div class="flashcard-hint" v-if="currentFlashcard.hint">{{ currentFlashcard.hint }}</div>
+                </div>
+                <div class="flashcard-face flashcard-back">
+                  <div class="flashcard-translation">{{ currentFlashcard.ru }}</div>
+                  <div class="flashcard-example" v-if="currentFlashcard.example">{{ currentFlashcard.example }}</div>
+                </div>
+              </div>
+            </div>
+            <p v-if="!fcFlipped" class="flashcard-tap-hint">{{ t('lesson.flashcardsHint') }}</p>
+            <div v-if="fcFlipped" class="flashcard-rating">
+              <button class="rating-btn again" @click="rateCard(0)">{{ t('rating.again') }}</button>
+              <button class="rating-btn hard" @click="rateCard(1)">{{ t('rating.hard') }}</button>
+              <button class="rating-btn good" @click="rateCard(2)">{{ t('rating.good') }}</button>
+              <button class="rating-btn easy" @click="rateCard(3)">{{ t('rating.easy') }}</button>
+            </div>
+          </div>
+          <div v-else class="flashcard-empty">
+            <p>{{ t('lesson.noFlashcards') }}</p>
+          </div>
         </div>
       </div>
 
@@ -286,6 +390,10 @@ export const Lesson = {
     return {
       translatedUnit: null,
       tab: 'theory',
+      currentLesson: 0,
+      vocabExpanded: false,
+      vocabPreviewCount: 5,
+      practiceView: 'hub',
       // Exercises
       exerciseStarted: false,
       exerciseFinished: false,
@@ -296,6 +404,12 @@ export const Lesson = {
       lastCorrect: false,
       correctAnswer: '',
       correctCount: 0,
+      attemptedCount: 0,
+      // Batching
+      batchSize: 10,
+      currentBatch: 0,
+      batchFinished: false,
+      batchCorrectCount: 0,
       // Match exercise
       matchSelectedLeft: null,
       matchSelectedRight: null,
@@ -317,9 +431,52 @@ export const Lesson = {
     unit() {
       return this.translatedUnit;
     },
-    currentExercise() {
-      if (!this.unit || !this.exerciseStarted || this.exerciseFinished) return null;
-      return this.unit.exercises[this.currentExerciseIdx] || null;
+    displayedTheory() {
+      if (!this.unit) return [];
+      if (this.unit.lessons && this.unit.lessons.length > 1) {
+        var lesson = this.unit.lessons[this.currentLesson];
+        if (lesson && lesson.theoryRange) {
+          return this.unit.theory.slice(lesson.theoryRange[0], lesson.theoryRange[1]);
+        }
+      }
+      return this.unit.theory;
+    },
+    exerciseCount() {
+      return this.unit && this.unit.exercises ? this.unit.exercises.length : 0;
+    },
+    vocabCount() {
+      return this.unit && this.unit.vocabulary ? this.unit.vocabulary.length : 0;
+    },
+    flashcardCount() {
+      return this.unit && this.unit.flashcards ? this.unit.flashcards.length : 0;
+    },
+    exercisesCompleted() {
+      const p = (this.progress || {})[this.unit && this.unit.id];
+      return p ? (p.exercisesCompleted || 0) : 0;
+    },
+    theoryRead() {
+      return this.exercisesCompleted > 0;
+    },
+    totalBatches() {
+      if (!this.exerciseCount) return 0;
+      return Math.ceil(this.exerciseCount / this.batchSize);
+    },
+    batchExercises() {
+      if (!this.unit || !this.unit.exercises) return [];
+      return this.unit.exercises.slice(
+        this.currentBatch * this.batchSize,
+        (this.currentBatch + 1) * this.batchSize
+      );
+    },
+    batchStartIdx() {
+      return this.currentBatch * this.batchSize;
+    },
+    overallExerciseIdx() {
+      return this.batchStartIdx + this.currentExerciseIdx;
+    },
+    currentBatchExercise() {
+      if (!this.unit || !this.exerciseStarted || this.exerciseFinished || this.batchFinished) return null;
+      return this.batchExercises[this.currentExerciseIdx] || null;
     },
     exercisePercent() {
       const p = (this.progress || {})[this.unit && this.unit.id];
@@ -338,7 +495,8 @@ export const Lesson = {
       return used;
     },
     resultMessage() {
-      const pct = (this.correctCount / this.unit.exercises.length) * 100;
+      if (!this.attemptedCount) return '';
+      const pct = (this.correctCount / this.attemptedCount) * 100;
       if (pct >= 90) return this.t('result.excellent');
       if (pct >= 70) return this.t('result.good');
       if (pct >= 50) return this.t('result.ok');
@@ -351,6 +509,21 @@ export const Lesson = {
       this.resetState();
       this.loadTranslatedUnit();
     },
+    tab() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+  },
+
+  beforeRouteLeave(to, from, next) {
+    if (this.exerciseStarted && !this.exerciseFinished) {
+      if (confirm(this.t('lesson.leaveConfirm'))) {
+        next();
+      } else {
+        next(false);
+      }
+    } else {
+      next();
+    }
   },
 
   async created() {
@@ -372,25 +545,84 @@ export const Lesson = {
 
     resetState() {
       this.tab = 'theory';
+      this.currentLesson = 0;
+      this.vocabExpanded = false;
+      this.practiceView = 'hub';
       this.exerciseStarted = false;
       this.exerciseFinished = false;
       this.currentExerciseIdx = 0;
       this.correctCount = 0;
+      this.attemptedCount = 0;
       this.answered = false;
+      this.currentBatch = 0;
+      this.batchFinished = false;
+      this.batchCorrectCount = 0;
       this.fcIndex = 0;
       this.fcFlipped = false;
     },
 
+    goToPractice() {
+      this.tab = 'practice';
+      this.practiceView = 'hub';
+    },
+
+    startFlashcards() {
+      this.practiceView = 'flashcards';
+      this.fcIndex = 0;
+      this.fcFlipped = false;
+    },
+
+    backToHub() {
+      this.practiceView = 'hub';
+      this.exerciseFinished = false;
+      this.batchFinished = false;
+    },
+
+    showAllVocab() {
+      this.vocabExpanded = true;
+      this.$nextTick(() => {
+        const el = document.querySelector('.vocab-collapse');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      });
+    },
+
     startExercises() {
+      this.practiceView = 'exercises';
       this.exerciseStarted = true;
       this.exerciseFinished = false;
+      this.currentBatch = 0;
       this.currentExerciseIdx = 0;
       this.correctCount = 0;
+      this.attemptedCount = 0;
+      this.batchCorrectCount = 0;
+      this.batchFinished = false;
       this.answered = false;
       this.selectedAnswer = null;
       this.textAnswer = '';
       this.resetMatchOrder();
       this.initExerciseType();
+    },
+
+    nextBatch() {
+      this.currentBatch++;
+      this.currentExerciseIdx = 0;
+      this.batchFinished = false;
+      this.batchCorrectCount = 0;
+      this.answered = false;
+      this.selectedAnswer = null;
+      this.textAnswer = '';
+      this.resetMatchOrder();
+      this.$nextTick(() => {
+        this.initExerciseType();
+      });
+    },
+
+    finishExercises() {
+      this.attemptedCount = this.currentBatch * this.batchSize + this.batchExercises.length;
+      this.exerciseFinished = true;
+      this.exerciseStarted = false;
+      this.batchFinished = false;
+      this.saveCurrentProgress(true);
     },
 
     resetMatchOrder() {
@@ -406,19 +638,17 @@ export const Lesson = {
     },
 
     initExerciseType() {
-      const ex = this.unit.exercises[this.currentExerciseIdx];
+      const ex = this.batchExercises[this.currentExerciseIdx];
       if (!ex) return;
       if (ex.type === 'match' && ex.pairs) {
         this.matchLeft = ex.pairs.map(p => p.left);
         const rights = ex.pairs.map(p => p.right);
-        // Shuffle right column
         const shuffled = [...rights];
         for (let i = shuffled.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
         this.matchRight = shuffled;
-        // Map: shuffled index -> original index
         this.matchRightMap = {};
         shuffled.forEach((val, si) => {
           const origIdx = rights.indexOf(val);
@@ -427,7 +657,6 @@ export const Lesson = {
       }
       if (ex.type === 'order' && ex.words) {
         const shuffled = [...ex.words];
-        // Ensure shuffled differs from correct order
         let attempts = 0;
         do {
           for (let i = shuffled.length - 1; i > 0; i--) {
@@ -446,36 +675,44 @@ export const Lesson = {
       if (this.answered) return;
       this.selectedAnswer = idx;
       this.answered = true;
-      this.lastCorrect = idx === this.currentExercise.correct;
-      this.correctAnswer = this.currentExercise.options[this.currentExercise.correct];
-      if (this.lastCorrect) this.correctCount++;
+      this.lastCorrect = idx === this.currentBatchExercise.correct;
+      this.correctAnswer = this.currentBatchExercise.options[this.currentBatchExercise.correct];
+      if (this.lastCorrect) {
+        this.correctCount++;
+        this.batchCorrectCount++;
+      }
     },
 
     answerFill() {
       if (this.answered || !this.textAnswer.trim()) return;
       this.answered = true;
       const userAnswer = this.textAnswer.trim().toLowerCase();
-      const accepts = Array.isArray(this.currentExercise.answer)
-        ? this.currentExercise.answer
-        : [this.currentExercise.answer];
+      const accepts = Array.isArray(this.currentBatchExercise.answer)
+        ? this.currentBatchExercise.answer
+        : [this.currentBatchExercise.answer];
       this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer));
       this.correctAnswer = accepts[0];
-      if (this.lastCorrect) this.correctCount++;
+      if (this.lastCorrect) {
+        this.correctCount++;
+        this.batchCorrectCount++;
+      }
     },
 
     answerTranslate() {
       if (this.answered || !this.textAnswer.trim()) return;
       this.answered = true;
       const userAnswer = this.textAnswer.trim().toLowerCase();
-      const accepts = Array.isArray(this.currentExercise.answer)
-        ? this.currentExercise.answer
-        : [this.currentExercise.answer];
+      const accepts = Array.isArray(this.currentBatchExercise.answer)
+        ? this.currentBatchExercise.answer
+        : [this.currentBatchExercise.answer];
       this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer));
       this.correctAnswer = accepts[0];
-      if (this.lastCorrect) this.correctCount++;
+      if (this.lastCorrect) {
+        this.correctCount++;
+        this.batchCorrectCount++;
+      }
     },
 
-    // Match methods
     selectMatchLeft(idx) {
       if (this.answered || this.matchPairs[idx] !== undefined) return;
       this.matchSelectedLeft = idx;
@@ -518,11 +755,13 @@ export const Lesson = {
         if (!this.isMatchPairCorrect(i)) { allCorrect = false; break; }
       }
       this.lastCorrect = allCorrect;
-      this.correctAnswer = this.currentExercise.pairs.map(p => p.left + ' \u2192 ' + p.right).join(', ');
-      if (this.lastCorrect) this.correctCount++;
+      this.correctAnswer = this.currentBatchExercise.pairs.map(p => p.left + ' \u2192 ' + p.right).join(', ');
+      if (this.lastCorrect) {
+        this.correctCount++;
+        this.batchCorrectCount++;
+      }
     },
 
-    // Order methods
     placeOrderWord(bankIdx) {
       if (this.answered || this.orderUsed[bankIdx]) return;
       this.orderedWords = [...this.orderedWords, this.orderBank[bankIdx]];
@@ -532,7 +771,6 @@ export const Lesson = {
     removeOrderWord(answerIdx) {
       if (this.answered) return;
       const word = this.orderedWords[answerIdx];
-      // Find the bank index for this word
       const bankIdx = this.orderBank.findIndex((w, i) => w === word && this.orderUsed[i]);
       if (bankIdx !== -1) {
         const newUsed = { ...this.orderUsed };
@@ -546,12 +784,15 @@ export const Lesson = {
       if (this.answered) return;
       this.answered = true;
       const userAnswer = this.orderedWords.join(' ');
-      const accepts = Array.isArray(this.currentExercise.answer)
-        ? this.currentExercise.answer
-        : [this.currentExercise.answer];
+      const accepts = Array.isArray(this.currentBatchExercise.answer)
+        ? this.currentBatchExercise.answer
+        : [this.currentBatchExercise.answer];
       this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer));
       this.correctAnswer = accepts[0];
-      if (this.lastCorrect) this.correctCount++;
+      if (this.lastCorrect) {
+        this.correctCount++;
+        this.batchCorrectCount++;
+      }
     },
 
     normalize(str) {
@@ -561,7 +802,7 @@ export const Lesson = {
     },
 
     saveCurrentProgress(finished) {
-      var attempted = this.currentExerciseIdx + (this.answered ? 1 : 0);
+      var attempted = this.overallExerciseIdx + (this.answered ? 1 : 0);
       var total = this.unit.exercises.length;
       var score = attempted > 0 ? Math.round((this.correctCount / attempted) * 100) : 0;
       this.$emit('update-progress', {
@@ -576,10 +817,9 @@ export const Lesson = {
     },
 
     nextExercise() {
-      // Save progress after each answered exercise
       this.saveCurrentProgress(false);
 
-      if (this.currentExerciseIdx + 1 < this.unit.exercises.length) {
+      if (this.currentExerciseIdx + 1 < this.batchExercises.length) {
         this.currentExerciseIdx++;
         this.answered = false;
         this.selectedAnswer = null;
@@ -591,10 +831,17 @@ export const Lesson = {
           if (input) input.focus();
         });
       } else {
-        this.exerciseFinished = true;
-        this.exerciseStarted = false;
-        // Save final progress with completed flag
-        this.saveCurrentProgress(true);
+        // End of batch
+        if (this.totalBatches <= 1 || this.currentBatch + 1 >= this.totalBatches) {
+          // Last batch or single batch — final results
+          this.attemptedCount = this.exerciseCount;
+          this.exerciseFinished = true;
+          this.exerciseStarted = false;
+          this.saveCurrentProgress(true);
+        } else {
+          // Show batch summary
+          this.batchFinished = true;
+        }
       }
     },
 

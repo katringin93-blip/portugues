@@ -1,223 +1,213 @@
 export const exercises = [
-  // === Existing exercises ===
+  // === Ex1: Добавьте косвенное местоимение ===
   {
-    type: "choice",
-    question: "Eu dou o livro ao João. → Eu ___-___ o livro.",
-    options: ["dou-o", "dou-lhe", "dou-lo", "lhe dou"],
-    correct: 1,
-    explanation: "«Ao João» заменяется на «lhe» (косвенное дополнение). В утвердительном — энклиза: dou-lhe."
+    type: "fill",
+    question: "Добавьте косвенное местоимение: Quero ___ (a ela) um presente. (подарить ей)",
+    answer: "oferecer-lhe"
   },
   {
     type: "fill",
-    question: "Она мне звонит: Ela telefona-___.",
-    answer: "me"
+    question: "O pai ___ (a eles) que não podem sair. (говорит им)",
+    answer: "diz-lhes"
   },
+  {
+    type: "fill",
+    question: "Vou ___ (a ele) o meu carro. (продать ему)",
+    answer: "vender-lhe"
+  },
+  {
+    type: "fill",
+    question: "A mãe ___ (a ela) o almoço. (готовит ей обед)",
+    answer: "faz-lhe"
+  },
+  {
+    type: "choice",
+    question: "Замените «a nós»: Ele traz ___ (a nós) flores.",
+    options: ["traz-lhes", "traz-nos", "traz-lhe", "traz-vos"],
+    correct: 1,
+    explanation: "«A nós» заменяется на «nos»: traz-nos."
+  },
+  {
+    type: "fill",
+    question: "A avó ___ (a eles) presentes. (бабушка им даёт подарки — проклиза после союза)",
+    answer: "lhes dá"
+  },
+  {
+    type: "fill",
+    question: "A professora ___ (a ele) uma história. (читает ему)",
+    answer: "lê-lhe"
+  },
+  {
+    type: "fill",
+    question: "Ela ___ (a eles) bolos. (делает им)",
+    answer: "faz-lhes"
+  },
+  {
+    type: "fill",
+    question: "Ele ___ (a vocês) sapatos novos. (покупает вам)",
+    answer: "compra-vos"
+  },
+  {
+    type: "fill",
+    question: "O professor ___ (a ela) português. (преподаёт ей)",
+    answer: "ensina-lhe"
+  },
+  // === Ex2: Контракция прямого + косвенного местоимения ===
+  {
+    type: "choice",
+    question: "Как объединяются «me» + «o» в контракции? Eu digo + o livro + a ti = Eu ___",
+    options: ["digo-te-o", "digo-to", "digo-lho", "te-o digo"],
+    correct: 1,
+    explanation: "Te + o = to. «Eu digo-to» (Я тебе это говорю)."
+  },
+  {
+    type: "fill",
+    question: "Контракция: Ela dá as flores a nós. → Ela ___ (nos + as)",
+    answer: "dá-no-las"
+  },
+  {
+    type: "fill",
+    question: "Контракция с отрицанием: Ele nunca dá o livro a ela. → Ele nunca ___ (lhe + o)",
+    answer: "lho dá"
+  },
+  {
+    type: "fill",
+    question: "Контракция: Eu levo a mala a ela. → Eu ___ (lhe + a)",
+    answer: "levo-lha"
+  },
+  {
+    type: "fill",
+    question: "Контракция: Ele entrega os documentos a mim. → Ele ___ (me + os)",
+    answer: "entrega-mos"
+  },
+  {
+    type: "choice",
+    question: "Как будет контракция nos + as?",
+    options: ["no-as", "no-las", "nos-as", "nassas"],
+    correct: 1,
+    explanation: "Nos + as = no-las. Пример: Ela faz-no-las (Она нам их делает)."
+  },
+  {
+    type: "fill",
+    question: "Контракция: Ela leva o livro a ele. → Ela ___ (lhe + o)",
+    answer: "leva-lho"
+  },
+  {
+    type: "fill",
+    question: "Контракция: Eles limpam a casa a ti. → Eles ___ (te + a)",
+    answer: "limpam-ta"
+  },
+  {
+    type: "fill",
+    question: "Контракция: Eu empresto o dinheiro a ele. → Eu ___ (lhe + o)",
+    answer: "empresto-lho"
+  },
+  {
+    type: "fill",
+    question: "Контракция: Ele traz as revistas a mim. → Ele ___ (me + as)",
+    answer: "traz-mas"
+  },
+  // === Ex3: Перестановка местоимения при наречиях/отрицании ===
+  {
+    type: "fill",
+    question: "Перепишите с отрицанием: Ele leva-to. → Ele não ___",
+    answer: "to leva"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «também»: Tu levas-lhas. → Tu também ___",
+    answer: "lhas levas"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «nunca»: Eles dizem-lhe. → Eles nunca ___",
+    answer: "lhe dizem"
+  },
+  {
+    type: "choice",
+    question: "Перепишите с «só»: Ela lê-lhe. → Ela só ___",
+    options: ["lhe lê", "lê-lhe", "lhe-lê", "só lê-lhe"],
+    correct: 0,
+    explanation: "«Só» вызывает проклизу: só lhe lê (только ему/ей читает)."
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «não»: Ele autoriza-me. → Ele não ___",
+    answer: "me autoriza"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «também»: Ela telefona-lhe. → Ela também ___",
+    answer: "lhe telefona"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «nem»: Ele envia-me emails. → Ele nem ___",
+    answer: "me envia"
+  },
+  // === Ex5: Перевод предложений с косвенным дополнением ===
   {
     type: "translate",
     source: "Я хочу тебе кое-что сказать.",
     direction: "ru-pt",
-    answer: ["Quero dizer-te uma coisa.", "Quero-te dizer uma coisa."]
+    answer: ["Quero dizer-te uma coisa.", "Eu quero dizer-te uma coisa."]
   },
   {
-    type: "choice",
-    question: "Não ___ digo nada. (ей)",
-    options: ["a", "lhe", "la", "lha"],
-    correct: 1,
-    explanation: "«Ей» — косвенное дополнение, используется «lhe». После «não» — проклиза."
+    type: "translate",
+    source: "Она ему даёт подарок.",
+    direction: "ru-pt",
+    answer: ["Ela dá-lhe um presente."]
   },
+  {
+    type: "translate",
+    source: "Мы им всегда пишем.",
+    direction: "ru-pt",
+    answer: ["Sempre lhes escrevemos.", "Nós sempre lhes escrevemos."]
+  },
+  {
+    type: "translate",
+    source: "Никто мне не отвечает.",
+    direction: "ru-pt",
+    answer: ["Ninguém me responde."]
+  },
+  {
+    type: "translate",
+    source: "Профессор нам объясняет урок.",
+    direction: "ru-pt",
+    answer: ["O professor explica-nos a lição."]
+  },
+  // === Ex6: Текст о фаду ===
   {
     type: "fill",
-    question: "Мы им пишем: Nós escrevemos-___.",
-    answer: "lhes"
+    question: "Os portugueses ___ (considerar + o fado) a alma do país. (считают его)",
+    answer: "o consideram"
   },
-  // === New exercises: Indirect Object Pronoun Forms ===
+  {
+    type: "order",
+    question: "Составьте: «Поэт пишет поэзию и завершает её.» (O poeta escreve-a e a finaliza.)",
+    words: ["O", "poeta", "escreve", "-a", "e", "a", "finaliza"],
+    answer: "O poeta escreve-a e a finaliza."
+  },
   {
     type: "match",
-    question: "Соотнесите личные местоимения с косвенными дополнениями:",
+    question: "Соотнесите косвенные местоимения:",
     pairs: [
-      ["eu", "me"],
-      ["tu", "te"],
-      ["ele/ela/você", "lhe"],
-      ["nós", "nos"],
-      ["eles/elas/vocês", "lhes"]
+      ["a mim", "me"],
+      ["a ti", "te"],
+      ["a ele/ela", "lhe"],
+      ["a nós", "nos"],
+      ["a eles/elas", "lhes"]
     ]
   },
   {
-    type: "choice",
-    question: "Какой предлог указывает на косвенное дополнение в португальском?",
-    options: ["de", "em", "a", "com"],
-    correct: 2,
-    explanation: "Предлог «a» (ao/à) указывает на косвенное дополнение: dar algo A alguém."
-  },
-  {
-    type: "fill",
-    question: "Я ему даю подарок: Eu dou-___ um presente.",
-    answer: "lhe"
-  },
-  {
-    type: "fill",
-    question: "Профессор нам объясняет: O professor explica-___.",
-    answer: "nos"
-  },
-  // === Verbs that take indirect objects ===
-  {
-    type: "choice",
-    question: "Какой из этих глаголов требует косвенное дополнение?",
-    options: ["ver (видеть)", "comer (есть)", "telefonar (звонить)", "comprar (покупать)"],
-    correct: 2,
-    explanation: "«Telefonar» требует косвенное дополнение: telefonar A alguém (звонить кому-либо)."
-  },
-  {
-    type: "fill",
-    question: "Она мне отвечает: Ela responde-___.",
-    answer: "me"
-  },
-  {
-    type: "translate",
-    source: "Мы вам пишем.",
-    direction: "ru-pt",
-    answer: ["Escrevemos-lhes.", "Nós escrevemos-lhes."]
-  },
-  {
-    type: "choice",
-    question: "«Peço-___ um favor.» (Прошу вас об услуге.)",
-    options: ["o", "a", "lhe", "lo"],
-    correct: 2,
-    explanation: "«Pedir a alguém» — просить у кого-то. Косвенное дополнение → lhe."
-  },
-  // === Proclisis with indirect objects ===
-  {
-    type: "fill",
-    question: "Я ему ничего не говорю: Não ___ digo nada.",
-    answer: "lhe"
-  },
-  {
-    type: "choice",
-    question: "«Quem ___ telefonou?» (Кто тебе позвонил?)",
-    options: ["te", "ti", "tu", "lhe"],
-    correct: 0,
-    explanation: "«Тебе» как косвенное дополнение = te. После «quem» — проклиза."
-  },
-  {
-    type: "translate",
-    source: "Никто ему не отвечает.",
-    direction: "ru-pt",
-    answer: ["Ninguém lhe responde."]
-  },
-  {
-    type: "fill",
-    question: "Мать всегда нам говорит правду: A mãe sempre ___ diz a verdade.",
-    answer: "nos"
-  },
-  // === Combined direct + indirect pronouns ===
-  {
-    type: "choice",
-    question: "Как объединяются «me» + «o» в одно слово?",
-    options: ["mo", "me-o", "lho", "meo"],
-    correct: 0,
-    explanation: "Комбинация me + o = mo. Пример: «Ele dá-mo» (Он мне это даёт)."
-  },
-  {
-    type: "fill",
-    question: "Он мне это даёт (o livro): Ele dá-___.",
-    answer: "mo"
-  },
-  {
-    type: "choice",
-    question: "Как объединяются «lhe» + «o»?",
-    options: ["lo", "lho", "le-o", "lheo"],
-    correct: 1,
-    explanation: "Комбинация lhe + o = lho. «Eu dou-lho» (Я ему/ей это даю)."
-  },
-  {
-    type: "fill",
-    question: "Я тебе это дам (a resposta): Eu dou-___.",
-    answer: "ta"
-  },
-  {
     type: "match",
-    question: "Соотнесите комбинированные местоимения:",
+    question: "Соотнесите контракции прямого + косвенного местоимений:",
     pairs: [
       ["me + o", "mo"],
       ["te + o", "to"],
       ["lhe + o", "lho"],
       ["nos + o", "no-lo"],
-      ["lhes + o", "lho"]
+      ["me + a", "ma"]
     ]
-  },
-  // === Position with infinitive ===
-  {
-    type: "translate",
-    source: "Я хочу ей сказать правду.",
-    direction: "ru-pt",
-    answer: ["Quero dizer-lhe a verdade.", "Eu quero dizer-lhe a verdade."]
-  },
-  {
-    type: "fill",
-    question: "Мы можем тебе помочь: Podemos ajudar-___.",
-    answer: "te"
-  },
-  {
-    type: "choice",
-    question: "«Vou ___-lhe amanhã.» (Я позвоню ей завтра.)",
-    options: ["telefonar", "telefona", "telefonando", "telefonou"],
-    correct: 0,
-    explanation: "После «ir» (вспомогательный) идёт инфинитив: Vou telefonar-lhe."
-  },
-  // === Practice: direct vs indirect ===
-  {
-    type: "choice",
-    question: "«Eu vejo ___» (Я вижу его) — прямое или косвенное дополнение?",
-    options: ["Прямое: vejo-o", "Косвенное: vejo-lhe", "Прямое: vejo-lhe", "Косвенное: vejo-o"],
-    correct: 0,
-    explanation: "«Ver» принимает прямое дополнение: vejo-o (его вижу). Прямое дополнение отвечает на вопрос «кого?/что?»."
-  },
-  {
-    type: "choice",
-    question: "«Eu telefono ___» (Я ему звоню) — прямое или косвенное?",
-    options: ["Прямое: telefono-o", "Косвенное: telefono-lhe", "Прямое: telefono-lo", "Косвенное: telefono-le"],
-    correct: 1,
-    explanation: "«Telefonar» требует косвенное дополнение (telefonar A alguém): telefono-lhe."
-  },
-  {
-    type: "translate",
-    source: "Он нам объясняет урок.",
-    direction: "ru-pt",
-    answer: ["Ele explica-nos a lição."]
-  },
-  {
-    type: "fill",
-    question: "Врач ей прописывает лекарство: O médico receita-___ o medicamento.",
-    answer: "lhe"
-  },
-  {
-    type: "translate",
-    source: "Я тебе не верю.",
-    direction: "ru-pt",
-    answer: ["Não te acredito.", "Eu não te acredito."]
-  },
-  {
-    type: "order",
-    question: "Составьте предложение: «Мы хотим им послать письмо.»",
-    words: ["Queremos", "enviar", "-lhes", "uma", "carta"],
-    answer: "Queremos enviar-lhes uma carta."
-  },
-  {
-    type: "fill",
-    question: "Она часто им пишет: Ela escreve-___ muitas vezes.",
-    answer: "lhes"
-  },
-  {
-    type: "choice",
-    question: "Где стоит местоимение: «Também ___ telefono todos os dias.»?",
-    options: ["После глагола (энклиза)", "Перед глаголом (проклиза)", "В конце предложения", "Между подлежащим и глаголом"],
-    correct: 1,
-    explanation: "«Também» вызывает проклизу (местоимение перед глаголом): Também lhe telefono."
-  },
-  {
-    type: "translate",
-    source: "Кто тебе это сказал?",
-    direction: "ru-pt",
-    answer: ["Quem te disse isso?", "Quem é que te disse isso?"]
   }
 ];

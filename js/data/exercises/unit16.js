@@ -1,237 +1,343 @@
 export const exercises = [
-  // === Existing exercises ===
+  // === Ex1: Перепишите в Pretérito Perfeito Composto (10 items) ===
   {
-    type: "choice",
-    question: "Nós ___ muito. (estudar — повторяющееся действие)",
-    options: ["temos estudado", "temos estudando", "tem estudado", "temos estudo"],
-    correct: 0,
-    explanation: "Для «nós» — «temos» + причастие «estudado»: temos estudado."
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Eles não têm tempo. → Eles ___",
+    answer: "não têm estado"
   },
   {
     type: "fill",
-    question: "Причастие от «fazer»: ___",
-    answer: "feito"
+    question: "Перепишите в Pretérito Perfeito Composto: Eu vou ao cinema. → Eu ___",
+    answer: "tenho ido"
   },
   {
-    type: "translate",
-    source: "В последнее время я много читал.",
-    direction: "ru-pt",
-    answer: ["Tenho lido muito ultimamente.", "Ultimamente tenho lido muito."]
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Tu ouves música? → Tu ___?",
+    answer: "tens ouvido"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Eles estão bem. → Eles ___",
+    answer: "têm estado"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Nós não temos sorte. → Nós ___",
+    answer: "não temos tido"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Tu adoras viajar. → Tu ___",
+    answer: "tens adorado"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Nós chegamos cedo. → Nós ___",
+    answer: "temos chegado"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Eles não pensam nisso. → Eles ___",
+    answer: "não têm pensado"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Ele traz flores. → Ele ___",
+    answer: "tem trazido"
+  },
+  {
+    type: "fill",
+    question: "Перепишите в Pretérito Perfeito Composto: Eu ponho a mesa. → Eu ___",
+    answer: "tenho posto"
+  },
+
+  // === Ex2: Впишите правильную форму Pret. Perf. Composto (12 items) ===
+  {
+    type: "fill",
+    question: "Eu ___ ___ o João frequentemente. (ver — Pret. Perf. Composto)",
+    answer: ["tenho", "visto"]
+  },
+  {
+    type: "fill",
+    question: "Ela ___ ___ doente ultimamente. (estar — Pret. Perf. Composto)",
+    answer: ["tem", "estado"]
+  },
+  {
+    type: "fill",
+    question: "O Pedro ___ ___ em Lisboa há muitos anos. (viver — Pret. Perf. Composto)",
+    answer: ["tem", "vivido"]
+  },
+  {
+    type: "fill",
+    question: "Nós ___ ___ muito dinheiro. (gastar — Pret. Perf. Composto)",
+    answer: ["temos", "gastado"]
+  },
+  {
+    type: "fill",
+    question: "Eles ___ ___ sobre o assunto. (falar — Pret. Perf. Composto)",
+    answer: ["têm", "falado"]
+  },
+  {
+    type: "fill",
+    question: "A Maria ___ ___ o confronto. (evitar — Pret. Perf. Composto)",
+    answer: ["tem", "evitado"]
+  },
+  {
+    type: "fill",
+    question: "O governo ___ ___ para melhorar a situação. (trabalhar — Pret. Perf. Composto)",
+    answer: ["tem", "trabalhado"]
+  },
+  {
+    type: "fill",
+    question: "A crise ___ ___ muitas famílias. (afetar — Pret. Perf. Composto)",
+    answer: ["tem", "afetado"]
+  },
+  {
+    type: "fill",
+    question: "O tempo ___ ___ bom. (estar — Pret. Perf. Composto)",
+    answer: ["tem", "estado"]
+  },
+  {
+    type: "fill",
+    question: "O presidente ___ ___ as suas promessas. (cumprir — Pret. Perf. Composto)",
+    answer: ["tem", "cumprido"]
+  },
+  {
+    type: "fill",
+    question: "Tu ___ ___ as contas a tempo? (pagar — Pret. Perf. Composto)",
+    answer: ["tens", "pagado"]
+  },
+  {
+    type: "fill",
+    question: "O que é que o João ___ ___? (fazer — Pret. Perf. Composto)",
+    answer: ["tem", "feito"]
+  },
+
+  // === Ex3: Выберите правильное причастие (choice, 12 items) ===
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: pagar → ___",
+    options: ["pago", "pagado", "pagdo", "pagido"],
+    correct: 1,
+    explanation: "С «ter» в Pretérito Perfeito Composto используется «pagado» (правильная форма)."
   },
   {
     type: "choice",
-    question: "Какое причастие неправильное?",
-    options: ["falado", "comido", "escrito", "partido"],
+    question: "Выберите правильное причастие для Pret. Perf. Composto: ter → ___",
+    options: ["tido", "tendo", "terido", "tedo"],
+    correct: 0,
+    explanation: "Причастие от «ter» — «tido»."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: tocar → ___",
+    options: ["tocido", "toco", "tocado", "toquido"],
     correct: 2,
-    explanation: "«Escrito» — неправильное причастие от «escrever» (вместо ожидаемого *escrevido)."
-  },
-  {
-    type: "fill",
-    question: "Ela tem ___ muitas cartas. (escrever)",
-    answer: "escrito"
-  },
-  // === New exercises ===
-  {
-    type: "fill",
-    question: "Eu ___ ___ muito ultimamente. (trabalhar — Pret. Perf. Composto)",
-    answer: ["tenho", "trabalhado"]
+    explanation: "Глаголы на -ar образуют причастие с -ado: tocar → tocado."
   },
   {
     type: "choice",
-    question: "Tu ___ ___ bem? (dormir — Pret. Perf. Composto)",
-    options: ["tens dormido", "tem dormido", "tenho dormido", "temos dormido"],
-    correct: 0,
-    explanation: "Для «tu» — «tens» + причастие «dormido»: tens dormido."
-  },
-  {
-    type: "fill",
-    question: "Причастие от «dizer»: ___",
-    answer: "dito"
-  },
-  {
-    type: "fill",
-    question: "Причастие от «ver»: ___",
-    answer: "visto"
-  },
-  {
-    type: "fill",
-    question: "Причастие от «abrir»: ___",
-    answer: "aberto"
-  },
-  {
-    type: "fill",
-    question: "Причастие от «pôr»: ___",
-    answer: "posto"
-  },
-  {
-    type: "fill",
-    question: "Причастие от «vir»: ___",
-    answer: "vindo"
-  },
-  {
-    type: "choice",
-    question: "Eles ___ ___ cá todos os dias. (vir)",
-    options: ["têm vindo", "tem vindo", "tens vindo", "temos vindo"],
-    correct: 0,
-    explanation: "Для «eles» — «têm» (с циркумфлексом!) + причастие «vindo»."
-  },
-  {
-    type: "fill",
-    question: "Ela ___ ___ muito em casa. (cozinhar — Pret. Perf. Composto)",
-    answer: ["tem", "cozinhado"]
-  },
-  {
-    type: "translate",
-    source: "Мы делаем успехи в последнее время.",
-    direction: "ru-pt",
-    answer: ["Temos feito progressos ultimamente.", "Ultimamente temos feito progressos."]
-  },
-  {
-    type: "choice",
-    question: "Что обозначает Pretérito Perfeito Composto в европейском португальском?",
-    options: [
-      "Однократное завершённое действие",
-      "Повторяющееся/продолжающееся действие от прошлого до настоящего",
-      "Будущее действие",
-      "Привычное действие в прошлом"
-    ],
+    question: "Выберите правильное причастие для Pret. Perf. Composto: abrir → ___",
+    options: ["abrido", "aberto", "abrto", "abrindo"],
     correct: 1,
-    explanation: "В европейском португальском это время обозначает действие, которое началось в прошлом и повторяется/продолжается до настоящего момента."
-  },
-  {
-    type: "fill",
-    question: "Nós ___ ___ muitos livros este mês. (ler)",
-    answer: ["temos", "lido"]
-  },
-  {
-    type: "translate",
-    source: "Она работает дома (уже какое-то время).",
-    direction: "ru-pt",
-    answer: ["Ela tem trabalhado em casa."]
+    explanation: "Abrir имеет неправильное причастие: aberto."
   },
   {
     type: "choice",
-    question: "Причастие от «falar»:",
-    options: ["falado", "falido", "faledo", "falando"],
-    correct: 0,
-    explanation: "Глаголы на -ar образуют причастие с окончанием -ado: falar → falado."
+    question: "Выберите правильное причастие для Pret. Perf. Composto: prender → ___",
+    options: ["preso", "prendido", "prendo", "prindido"],
+    correct: 1,
+    explanation: "С «ter» используется правильная форма причастия: prendido."
   },
   {
     type: "choice",
-    question: "Причастие от «comer»:",
-    options: ["comado", "comedo", "comido", "comindo"],
+    question: "Выберите правильное причастие для Pret. Perf. Composto: emigrar → ___",
+    options: ["emigrido", "emigrado", "emigrdo", "emigrindo"],
+    correct: 1,
+    explanation: "Глаголы на -ar: emigrar → emigrado."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: ver → ___",
+    options: ["vido", "vendo", "visto", "verido"],
     correct: 2,
-    explanation: "Глаголы на -er образуют причастие с окончанием -ido: comer → comido."
+    explanation: "Ver имеет неправильное причастие: visto."
   },
   {
     type: "choice",
-    question: "Причастие от «partir»:",
-    options: ["partado", "partido", "partedo", "partindo"],
+    question: "Выберите правильное причастие для Pret. Perf. Composto: fazer → ___",
+    options: ["fazido", "fazedo", "feito", "fazio"],
+    correct: 2,
+    explanation: "Fazer имеет неправильное причастие: feito."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: cobrir → ___",
+    options: ["cobrido", "coberto", "cobrdo", "cobrindo"],
     correct: 1,
-    explanation: "Глаголы на -ir образуют причастие с окончанием -ido: partir → partido."
+    explanation: "Cobrir имеет неправильное причастие: coberto."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: vir → ___",
+    options: ["vido", "virado", "vindo", "virido"],
+    correct: 2,
+    explanation: "Vir имеет неправильное причастие: vindo."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: concorrer → ___",
+    options: ["concorrido", "concorredo", "concorrdo", "concorrendo"],
+    correct: 0,
+    explanation: "Глаголы на -er: concorrer → concorrido."
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное причастие для Pret. Perf. Composto: escrever → ___",
+    options: ["escrevido", "escrito", "escrevdo", "escrevedo"],
+    correct: 1,
+    explanation: "Escrever имеет неправильное причастие: escrito."
+  },
+
+  // === Ex4: Объедините местоимения с Pret. Perf. Composto (match/fill, 8 items) ===
+  {
+    type: "fill",
+    question: "Nós prometemos-lha → Nós ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "temos-lha prometido"
   },
   {
     type: "fill",
-    question: "Vocês ___ ___ muitas perguntas. (fazer — Pret. Perf. Composto)",
-    answer: ["têm", "feito"]
+    question: "Ele faz-lhos → Ele ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "tem-lhos feito"
+  },
+  {
+    type: "fill",
+    question: "Ela dá-no-lo → Ela ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "tem-no-lo dado"
+  },
+  {
+    type: "fill",
+    question: "Tu ofereces-lhos → Tu ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "tens-lhos oferecido"
+  },
+  {
+    type: "fill",
+    question: "Eles enviam-no-las → Eles ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "têm-no-las enviado"
+  },
+  {
+    type: "fill",
+    question: "Eu digo-lho → Eu ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "tenho-lho dito"
+  },
+  {
+    type: "fill",
+    question: "Eu ofereço-lhos → Eu ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "tenho-lhos oferecido"
+  },
+  {
+    type: "fill",
+    question: "Eles entregam-lhas → Eles ___. (Pret. Perf. Composto с местоимениями)",
+    answer: "têm-lhas entregado"
+  },
+
+  // === Ex5: Переведите на португальский (6 items) ===
+  {
+    type: "translate",
+    source: "Жуана покупала слишком много платьев (в последнее время).",
+    direction: "ru-pt",
+    answer: ["A Joana tem comprado demasiados vestidos."]
   },
   {
     type: "translate",
-    source: "Ты видел Жуау в последнее время?",
+    source: "Я работал до поздна (в последнее время).",
     direction: "ru-pt",
-    answer: ["Tens visto o João ultimamente?", "Tens visto o João?"]
+    answer: ["Eu tenho trabalhado até tarde.", "Tenho trabalhado até tarde."]
   },
   {
-    type: "choice",
-    question: "Какое из следующих предложений использует Pretérito Perfeito Composto правильно?",
-    options: [
-      "Ontem tenho comido peixe.",
-      "Tenho comido muito peixe ultimamente.",
-      "Amanhã tenho comido peixe.",
-      "Tenho comido peixe ontem."
-    ],
-    correct: 1,
-    explanation: "Pret. Perf. Composto обозначает повторяющееся действие до настоящего момента. «Ultimamente» — правильный маркер. «Ontem» и «amanhã» не подходят."
+    type: "translate",
+    source: "Он оплачивал все мои расходы (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Ele tem pagado todas as minhas despesas."]
   },
+  {
+    type: "translate",
+    source: "У них было много проблем (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Eles têm tido muitos problemas."]
+  },
+  {
+    type: "translate",
+    source: "Мой отец не много путешествовал (в последнее время).",
+    direction: "ru-pt",
+    answer: ["O meu pai não tem viajado muito."]
+  },
+  {
+    type: "translate",
+    source: "Его брат занимался каждый день (в последнее время).",
+    direction: "ru-pt",
+    answer: ["O seu irmão tem estudado todos os dias."]
+  },
+
+  // === Ex6: Заполните текст о португальской эмиграции (7 items) ===
+  {
+    type: "fill",
+    question: "A emigração ___ ___ um tema importante na sociedade portuguesa. (ser — Pret. Perf. Composto)",
+    answer: ["tem", "sido"]
+  },
+  {
+    type: "fill",
+    question: "Os investigadores ___ ___ novas tendências migratórias. (observar — Pret. Perf. Composto)",
+    answer: ["têm", "observado"]
+  },
+  {
+    type: "fill",
+    question: "O fluxo migratório ___ ___ ___ nos últimos anos. (intensificar-se — Pret. Perf. Composto)",
+    answer: ["se tem intensificado"]
+  },
+  {
+    type: "fill",
+    question: "Ultimamente ___ ___ ___ um aumento de jovens a emigrar. (ver-se — Pret. Perf. Composto)",
+    answer: ["se tem visto"]
+  },
+  {
+    type: "fill",
+    question: "Muitos portugueses ___ ___ países europeus como destino. (escolher — Pret. Perf. Composto)",
+    answer: ["têm", "escolhido"]
+  },
+  {
+    type: "fill",
+    question: "Os emigrantes ___ ___ consigo a cultura portuguesa. (levar — Pret. Perf. Composto)",
+    answer: ["têm", "levado"]
+  },
+  {
+    type: "fill",
+    question: "A diáspora portuguesa ___-___ ___ cada vez mais ativa. (revelar-se — Pret. Perf. Composto)",
+    answer: "tem-se revelado"
+  },
+
+  // === Дополнительные упражнения: match, order, choice ===
   {
     type: "match",
     question: "Соотнесите глагол с его неправильным причастием:",
     pairs: [
       ["fazer", "feito"],
-      ["dizer", "dito"],
       ["ver", "visto"],
       ["escrever", "escrito"],
       ["abrir", "aberto"],
+      ["cobrir", "coberto"],
       ["pôr", "posto"]
     ]
   },
   {
-    type: "fill",
-    question: "O Pedro tem ___ a verdade. (dizer)",
-    answer: "dito"
-  },
-  {
-    type: "translate",
-    source: "Они приходят сюда каждый день (уже какое-то время).",
-    direction: "ru-pt",
-    answer: ["Eles têm vindo cá todos os dias.", "Têm vindo cá todos os dias."]
-  },
-  {
-    type: "choice",
-    question: "Eu ___ ___ muitos filmes este mês. (ver)",
-    options: ["tenho visto", "tenho vido", "tenho vendo", "tenho ver"],
-    correct: 0,
-    explanation: "Ver имеет неправильное причастие: visto. Tenho visto."
-  },
-  {
-    type: "fill",
-    question: "Tu ___ ___ muitas horas extra? (trabalhar — Pret. Perf. Composto)",
-    answer: ["tens", "trabalhado"]
-  },
-  {
     type: "order",
-    question: "Составьте предложение: «В последнее время погода была хорошей.»",
-    words: ["O", "tempo", "tem", "estado", "bom", "ultimamente"],
-    answer: "O tempo tem estado bom ultimamente."
-  },
-  {
-    type: "choice",
-    question: "Какая форма «ter» используется с «vocês»?",
-    options: ["tem", "tens", "temos", "têm"],
-    correct: 3,
-    explanation: "С «vocês» (и «eles/elas») используется «têm» (с циркумфлексом), а не «tem»."
-  },
-  {
-    type: "fill",
-    question: "Nós não ___ ___ bem. (comer — Pret. Perf. Composto, отрицание)",
-    answer: ["temos", "comido"]
-  },
-  {
-    type: "translate",
-    source: "Я написал много писем в последнее время.",
-    direction: "ru-pt",
-    answer: ["Tenho escrito muitas cartas ultimamente.", "Ultimamente tenho escrito muitas cartas."]
-  },
-  {
-    type: "choice",
-    question: "Как правильно сказать «Я много учился в последнее время»?",
-    options: [
-      "Eu estudei muito ultimamente.",
-      "Eu tenho estudado muito ultimamente.",
-      "Eu estudo muito ultimamente.",
-      "Eu tinha estudado muito ultimamente."
-    ],
-    correct: 1,
-    explanation: "Для повторяющегося действия от прошлого до настоящего используется Pret. Perf. Composto: tenho estudado."
-  },
-  {
-    type: "fill",
-    question: "A Maria tem ___ muito bem na escola. (ir — Pret. Perf. Composto)",
-    answer: "ido"
+    question: "Составьте предложение: «В последнее время мы много путешествовали.»",
+    words: ["Nós", "temos", "viajado", "muito", "ultimamente"],
+    answer: "Nós temos viajado muito ultimamente."
   },
   {
     type: "match",
-    question: "Соотнесите местоимение с формой «ter»:",
+    question: "Соотнесите местоимение с формой «ter» в Presente (для Pret. Perf. Composto):",
     pairs: [
       ["eu", "tenho"],
       ["tu", "tens"],
@@ -239,5 +345,23 @@ export const exercises = [
       ["nós", "temos"],
       ["eles/elas/vocês", "têm"]
     ]
+  },
+  {
+    type: "choice",
+    question: "Что обозначает Pretérito Perfeito Composto в европейском португальском?",
+    options: [
+      "Однократное завершённое действие в прошлом",
+      "Повторяющееся или продолжающееся действие от прошлого до настоящего",
+      "Действие, предшествующее другому в прошлом",
+      "Привычное действие в далёком прошлом"
+    ],
+    correct: 1,
+    explanation: "В европейском португальском Pret. Perf. Composto обозначает действие, которое началось в прошлом и повторяется или продолжается до настоящего момента."
+  },
+  {
+    type: "order",
+    question: "Составьте предложение: «Она много работала в последнее время.»",
+    words: ["Ela", "tem", "trabalhado", "muito", "ultimamente"],
+    answer: "Ela tem trabalhado muito ultimamente."
   }
 ];

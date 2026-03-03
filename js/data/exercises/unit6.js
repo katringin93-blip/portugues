@@ -1,198 +1,245 @@
 export const exercises = [
-      {
-        type: "choice",
-        question: "Какое вопросительное слово подходит? ___ custa o bilhete?",
-        options: ["Quando", "Quanto", "Como", "Qual"],
-        correct: 1,
-        explanation: "«Quanto» (сколько) используется для вопросов о цене и количестве."
-      },
-      {
-        type: "fill",
-        question: "Переведите вопросительное слово: Кто? = ___",
-        answer: "Quem"
-      },
-      {
-        type: "translate",
-        source: "Где ты работаешь?",
-        direction: "ru-pt",
-        answer: ["Onde trabalhas?", "Onde é que trabalhas?", "Onde é que tu trabalhas?"]
-      },
-      {
-        type: "choice",
-        question: "Какая конструкция характерна для европейского португальского?",
-        options: ["что это", "é que", "o que é", "quem está"],
-        correct: 1,
-        explanation: "Конструкция «é que» — типичная черта европейского португальского, используемая после вопросительного слова."
-      },
-      {
-        type: "fill",
-        question: "___ é o teu nome? (Какое)",
-        answer: "Qual"
-      },
-      {
-        type: "choice",
-        question: "___ é que tu moras? (Где ты живёшь?)",
-        options: ["Quem", "O que", "Onde", "Quando"],
-        correct: 2,
-        explanation: "«Onde» (где) используется для вопросов о месте."
-      },
-      {
-        type: "fill",
-        question: "___ é que aconteceu? (Что случилось?)",
-        answer: "O que"
-      },
-      {
-        type: "match",
-        question: "Соотнесите вопросительные слова с их переводом:",
-        pairs: [
-          { left: "Quem", right: "Кто" },
-          { left: "Onde", right: "Где" },
-          { left: "Quando", right: "Когда" },
-          { left: "Como", right: "Как" },
-          { left: "Porquê", right: "Почему" }
-        ]
-      },
-      {
-        type: "translate",
-        source: "Кто этот мужчина?",
-        direction: "ru-pt",
-        answer: ["Quem é aquele homem?", "Quem é esse homem?", "Quem é este homem?"]
-      },
-      {
-        type: "choice",
-        question: "___ livros tens? (Сколько у тебя книг?)",
-        options: ["Quanto", "Quantas", "Quantos", "Quais"],
-        correct: 2,
-        explanation: "«Quantos» — мужской род множественного числа, согласуется с «livros»."
-      },
-      {
-        type: "fill",
-        question: "___ pessoas estão na sala? (Сколько людей в зале?)",
-        answer: "Quantas"
-      },
-      {
-        type: "translate",
-        source: "Когда начинается урок?",
-        direction: "ru-pt",
-        answer: ["Quando começa a aula?", "Quando é que começa a aula?"]
-      },
-      {
-        type: "choice",
-        question: "Выберите правильный вопрос: «___ é que vocês vão de férias?» — «Em agosto.»",
-        options: ["Onde", "Como", "Quando", "Quem"],
-        correct: 2,
-        explanation: "Ответ «Em agosto» (В августе) указывает на время, поэтому нужно «Quando» (когда)."
-      },
-      {
-        type: "order",
-        question: "Составьте вопрос: «Как тебя зовут?»",
-        words: ["é", "Como", "que", "te", "chamas", "?"],
-        answer: "Como é que te chamas?"
-      },
-      {
-        type: "fill",
-        question: "___ é que não vieste à festa? (Почему ты не пришёл на вечеринку?)",
-        answer: "Porque"
-      },
-      {
-        type: "choice",
-        question: "Какая форма «porquê» используется в начале вопроса (перед «é que»)?",
-        options: ["porquê", "porque", "por quê", "por que"],
-        correct: 1,
-        explanation: "В начале вопроса перед «é que» используется «porque» (слитно, без ударения): «Porque é que...?»"
-      },
-      {
-        type: "translate",
-        source: "Как ты добираешься до работы?",
-        direction: "ru-pt",
-        answer: ["Como é que vais para o trabalho?", "Como vais para o trabalho?"]
-      },
-      {
-        type: "match",
-        question: "Соотнесите формы «quanto» с родом и числом:",
-        pairs: [
-          { left: "quanto", right: "м.р. ед.ч." },
-          { left: "quanta", right: "ж.р. ед.ч." },
-          { left: "quantos", right: "м.р. мн.ч." },
-          { left: "quantas", right: "ж.р. мн.ч." }
-        ]
-      },
-      {
-        type: "choice",
-        question: "«___ são os teus pais?» — «São o João e a Maria.»",
-        options: ["O que", "Quem", "Qual", "Como"],
-        correct: 1,
-        explanation: "«Quem» (кто) — вопрос о людях. «Quem são os teus pais?» — Кто твои родители?"
-      },
-      {
-        type: "fill",
-        question: "___ é o teu carro — o azul ou o vermelho? (Какой)",
-        answer: "Qual"
-      },
-      {
-        type: "translate",
-        source: "Какие фильмы ты любишь?",
-        direction: "ru-pt",
-        answer: ["Quais filmes é que gostas?", "De quais filmes é que gostas?", "De que filmes gostas?"]
-      },
-      {
-        type: "order",
-        question: "Составьте вопрос: «Где находится банк?»",
-        words: ["é", "Onde", "que", "o", "banco", "fica", "?"],
-        answer: "Onde é que fica o banco?"
-      },
-      {
-        type: "choice",
-        question: "«___ água queres?» — Сколько воды ты хочешь?",
-        options: ["Quanto", "Quantos", "Quanta", "Quantas"],
-        correct: 2,
-        explanation: "«Água» — женский род единственного числа, поэтому «quanta»."
-      },
-      {
-        type: "fill",
-        question: "___ são as chaves? (Чьи это ключи? / Кому принадлежат ключи?)",
-        answer: "De quem"
-      },
-      {
-        type: "translate",
-        source: "Что ты делаешь?",
-        direction: "ru-pt",
-        answer: ["O que é que fazes?", "O que fazes?", "O que é que tu fazes?"]
-      },
-      {
-        type: "choice",
-        question: "Какой вопрос правильно построен?",
-        options: [
-          "Onde tu é que moras?",
-          "Onde é que tu moras?",
-          "Onde é tu que moras?",
-          "Tu onde é que moras?"
-        ],
-        correct: 1,
-        explanation: "Конструкция «é que» ставится сразу после вопросительного слова: «Onde é que tu moras?»"
-      },
-      {
-        type: "fill",
-        question: "___ horas são? (Который час?)",
-        answer: "Que"
-      },
-      {
-        type: "translate",
-        source: "Почему ты учишь португальский?",
-        direction: "ru-pt",
-        answer: ["Porque é que aprendes português?", "Porque é que estudas português?", "Porque aprendes português?"]
-      },
-      {
-        type: "order",
-        question: "Составьте вопрос: «Сколько это стоит?»",
-        words: ["é", "Quanto", "que", "custa", "isto", "?"],
-        answer: "Quanto é que custa isto?"
-      },
-      {
-        type: "choice",
-        question: "«___ preferes — café ou chá?» (Что ты предпочитаешь?)",
-        options: ["Quem", "Qual", "O que", "Como"],
-        correct: 1,
-        explanation: "«Qual» (какой/который) используется при выборе из конкретных вариантов."
-      }
-    ];
+  // Ex1: Fill correct interrogative (12 items)
+  {
+    type: "fill",
+    question: "___ se chama o seu amigo? (Как зовут вашего друга?)",
+    answer: "Como"
+  },
+  {
+    type: "fill",
+    question: "___ é aquela rapariga? (Кто та девушка?)",
+    answer: "Quem"
+  },
+  {
+    type: "fill",
+    question: "___ há para o jantar? (Что на ужин?)",
+    answer: "Que"
+  },
+  {
+    type: "fill",
+    question: "___ estuda o Paulo? (Что изучает Пауло?)",
+    answer: "Que"
+  },
+  {
+    type: "fill",
+    question: "___ é que chegam os teus pais? (Когда приедут твои родители?)",
+    answer: "Quando"
+  },
+  {
+    type: "fill",
+    question: "___ é o director da escola? (Кто директор школы?)",
+    answer: "Quem"
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное вопросительное слово: ___ fazem no fim-de-semana?",
+    options: ["Quando", "Quem", "Que", "Onde"],
+    correct: 2,
+    explanation: "«Que» (что) используется для вопросов о действиях: «Что они делают в выходные?»"
+  },
+  {
+    type: "fill",
+    question: "___ é que vocês convidam para a festa? (Кого вы приглашаете на праздник?)",
+    answer: "Quem"
+  },
+  {
+    type: "fill",
+    question: "___ é que fica a farmácia? (Где находится аптека?)",
+    answer: "Onde"
+  },
+  {
+    type: "fill",
+    question: "___ é que a Ana traz na mala? (Что Ана несёт в сумке?)",
+    answer: "Que"
+  },
+  {
+    type: "choice",
+    question: "Выберите правильное вопросительное слово: ___ fala ao telefone?",
+    options: ["Que", "Onde", "Quem", "Quando"],
+    correct: 2,
+    explanation: "«Quem» (кто) — вопрос о человеке: «Кто говорит по телефону?»"
+  },
+  {
+    type: "fill",
+    question: "___ é que ela vai para o trabalho — de carro ou de autocarro? (Как она едет на работу?)",
+    answer: "Como"
+  },
+
+  // Ex2: Full answers using elements (8 items)
+  {
+    type: "translate",
+    source: "Onde está a Idalina?",
+    direction: "pt-ru",
+    answer: ["Идалина в школе.", "Идалина находится в школе."]
+  },
+  {
+    type: "order",
+    question: "Составьте полный ответ на вопрос «Onde está a Idalina?» — Она в школе.",
+    words: ["A", "Idalina", "está", "na", "escola", "."],
+    answer: "A Idalina está na escola."
+  },
+  {
+    type: "order",
+    question: "Составьте ответ: «В выходные мы едем в Виана-ду-Каштелу.»",
+    words: ["No", "fim-de-semana", "nós", "vamos", "a", "Viana do Castelo", "."],
+    answer: "No fim-de-semana nós vamos a Viana do Castelo."
+  },
+  {
+    type: "translate",
+    source: "Я сажусь на автобус в 17:30.",
+    direction: "ru-pt",
+    answer: ["Apanho o autocarro às 17h30.", "Eu apanho o autocarro às 17h30."]
+  },
+  {
+    type: "translate",
+    source: "Я иду в кино с Патрисией.",
+    direction: "ru-pt",
+    answer: ["Vou ao cinema com a Patrícia.", "Eu vou ao cinema com a Patrícia."]
+  },
+  {
+    type: "order",
+    question: "Составьте ответ: «Я собираюсь навестить маму завтра после обеда.»",
+    words: ["Vou", "visitar", "a", "mãe", "amanhã", "de", "tarde", "."],
+    answer: "Vou visitar a mãe amanhã de tarde."
+  },
+  {
+    type: "translate",
+    source: "По воскресеньям мы гуляем в парке.",
+    direction: "ru-pt",
+    answer: ["Ao domingo nós passeamos no parque.", "Ao domingo passeamos no parque."]
+  },
+  {
+    type: "choice",
+    question: "Как правильно ответить на «Quanto custa o bilhete?» — Билет стоит десять евро.",
+    options: [
+      "O bilhete é dez euros.",
+      "O bilhete custa dez euros.",
+      "O bilhete está dez euros.",
+      "O bilhete tem dez euros."
+    ],
+    correct: 1,
+    explanation: "«O bilhete custa dez euros» — правильный ответ с глаголом «custar» (стоить)."
+  },
+
+  // Ex3: Write full questions for given answers (10 items)
+  {
+    type: "translate",
+    source: "Как тебя зовут? (ответ: Chamo-me Maria.)",
+    direction: "ru-pt",
+    answer: ["Como se chama?", "Como é que se chama?", "Como te chamas?"]
+  },
+  {
+    type: "fill",
+    question: "Вопрос к ответу «O Paulo é de Coimbra»: ___ é o Paulo?",
+    answer: "Donde"
+  },
+  {
+    type: "translate",
+    source: "Что они отправляют? (ответ: Enviam uma encomenda.)",
+    direction: "ru-pt",
+    answer: ["O que enviam?", "O que é que enviam?", "Que enviam?"]
+  },
+  {
+    type: "fill",
+    question: "Вопрос к ответу «Falamos da professora»: De ___ falam?",
+    answer: "quem"
+  },
+  {
+    type: "translate",
+    source: "О чём эта книга? (ответ: O livro trata de história.)",
+    direction: "ru-pt",
+    answer: ["De que trata o livro?", "De que é que trata o livro?"]
+  },
+  {
+    type: "fill",
+    question: "Вопрос к ответу «Vou de férias em agosto»: Em ___ mês vais de férias?",
+    answer: "que"
+  },
+  {
+    type: "translate",
+    source: "Во сколько приходит поезд?",
+    direction: "ru-pt",
+    answer: ["A que horas chega o comboio?", "A que horas é que chega o comboio?"]
+  },
+  {
+    type: "order",
+    question: "Составьте вопрос: «Когда Ана выходит замуж за Педро?»",
+    words: ["Quando", "casa", "a", "Ana", "com", "o", "Pedro", "?"],
+    answer: "Quando casa a Ana com o Pedro?"
+  },
+
+  // Ex4: Build questions from elements (5 items)
+  {
+    type: "order",
+    question: "Составьте вопрос: «Где живут друзья Катарины?»",
+    words: ["Onde", "vivem", "os", "amigos", "da", "Catarina", "?"],
+    answer: "Onde vivem os amigos da Catarina?"
+  },
+  {
+    type: "order",
+    question: "Составьте вопрос: «Во сколько приходит следующий поезд до Порту?»",
+    words: ["A", "que", "horas", "chega", "o", "próximo", "comboio", "para", "o", "Porto", "?"],
+    answer: "A que horas chega o próximo comboio para o Porto?"
+  },
+  {
+    type: "translate",
+    source: "Сколько человек работает на вашей фабрике?",
+    direction: "ru-pt",
+    answer: ["Quantas pessoas trabalham na sua fábrica?", "Quantas pessoas é que trabalham na sua fábrica?"]
+  },
+  {
+    type: "translate",
+    source: "Куда вы едете в отпуск?",
+    direction: "ru-pt",
+    answer: ["Para onde vão nas férias?", "Para onde é que vão nas férias?"]
+  },
+  {
+    type: "order",
+    question: "Составьте вопрос: «С кем Луиза проводит выходные?»",
+    words: ["Com", "quem", "é", "que", "a", "Luísa", "passa", "os", "fins-de-semana", "?"],
+    answer: "Com quem é que a Luísa passa os fins-de-semana?"
+  },
+
+  // Ex5: Mixed exercises on interrogatives
+  {
+    type: "match",
+    question: "Соотнесите вопросительные слова с их переводом:",
+    pairs: [
+      { left: "Como", right: "Как" },
+      { left: "Onde", right: "Где" },
+      { left: "Quando", right: "Когда" },
+      { left: "Quem", right: "Кто" },
+      { left: "Quanto", right: "Сколько" }
+    ]
+  },
+  {
+    type: "match",
+    question: "Соотнесите вопрос с подходящим ответом:",
+    pairs: [
+      { left: "Onde mora?", right: "Em Lisboa." },
+      { left: "Quando chega?", right: "Amanhã." },
+      { left: "Quem é?", right: "O professor." },
+      { left: "Como vai?", right: "De autocarro." },
+      { left: "Que faz?", right: "Estudo português." }
+    ]
+  },
+  {
+    type: "choice",
+    question: "Какой вопрос подходит к ответу «O Natal em Portugal é no dia 25 de dezembro»?",
+    options: [
+      "Onde é o Natal em Portugal?",
+      "Quando é o Natal em Portugal?",
+      "Como é o Natal em Portugal?",
+      "Quem celebra o Natal?"
+    ],
+    correct: 1,
+    explanation: "Ответ содержит дату (25 de dezembro), поэтому вопрос должен быть с «Quando» (когда)."
+  },
+  {
+    type: "choice",
+    question: "Какая конструкция характерна для европейского португальского в вопросах?",
+    options: ["что это", "é que", "o que é", "quem está"],
+    correct: 1,
+    explanation: "Конструкция «é que» — типичная черта европейского португальского, ставится после вопросительного слова."
+  }
+];

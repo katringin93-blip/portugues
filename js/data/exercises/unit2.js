@@ -1,185 +1,277 @@
 export const exercises = [
-      // === EXISTING 5 EXERCISES ===
-      {
-        type: "choice",
-        question: "Выберите правильное слияние: Eu vou ___ supermercado. (a + o)",
-        options: ["no", "do", "ao", "pelo"],
-        correct: 2,
-        explanation: "Предлог «a» сливается с артиклем «o» и образует «ao». Ir ao supermercado — идти в супермаркет."
-      },
-      {
-        type: "fill",
-        question: "Заполните: Ela mora ___ Lisboa. (em + a = ...)",
-        answer: "na"
-      },
-      {
-        type: "choice",
-        question: "Какой артикль подходит? ___ carro é novo.",
-        options: ["A", "O", "Uma", "As"],
-        correct: 1,
-        explanation: "Carro (машина) — мужского рода, поэтому определённый артикль — «o»."
-      },
-      {
-        type: "translate",
-        source: "Eu gosto da comida portuguesa.",
-        direction: "pt-ru",
-        answer: ["Мне нравится португальская еда.", "Я люблю португальскую еду."]
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние предлога «de» с артиклем: O livro ___ professor. (de + o)",
-        answer: "do"
-      },
-      // === NEW EXERCISES ===
-      {
-        type: "choice",
-        question: "Какой неопределённый артикль у слова «casa» (дом)?",
-        options: ["um", "uma", "uns", "umas"],
-        correct: 1,
-        explanation: "Casa — женского рода, поэтому неопределённый артикль — «uma»: uma casa."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: Ele está ___ escola. (em + a = ...)",
-        answer: "na"
-      },
-      {
-        type: "choice",
-        question: "Какое слияние правильное? Ele saiu ___ restaurante. (de + o)",
-        options: ["da", "do", "no", "ao"],
-        correct: 1,
-        explanation: "Предлог «de» + артикль «o» = «do». Sair do restaurante — выйти из ресторана."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: A chave ___ carro está aqui. (de + o = ...)",
-        answer: "do"
-      },
-      {
-        type: "match",
-        question: "Соотнесите слияния предлогов с артиклями:",
-        pairs: [
-          { left: "de + a", right: "da" },
-          { left: "em + o", right: "no" },
-          { left: "a + os", right: "aos" },
-          { left: "por + a", right: "pela" }
-        ]
-      },
-      {
-        type: "choice",
-        question: "Выберите правильное слияние: Nós passámos ___ parque. (por + o)",
-        options: ["polo", "pelo", "pro", "no"],
-        correct: 1,
-        explanation: "Предлог «por» + артикль «o» = «pelo». Passar pelo parque — проходить через парк."
-      },
-      {
-        type: "fill",
-        question: "Вставьте артикль: ___ meninas estão na escola. (определённый, ж.р., мн.ч.)",
-        answer: "As"
-      },
-      {
-        type: "choice",
-        question: "Когда НЕ используется определённый артикль?",
-        options: ["Перед именами стран: a Portugal", "Перед названиями языков: o português", "С притяжательными: o meu livro", "После глагола «falar»: Falo português"],
-        correct: 3,
-        explanation: "После глагола «falar» артикль перед языком обычно опускается: Falo português (Я говорю по-португальски)."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: Vou ___ praia. (a + a = ...)",
-        answer: "à"
-      },
-      {
-        type: "translate",
-        source: "Книга ученика на столе.",
-        direction: "ru-pt",
-        answer: ["O livro do aluno está na mesa."]
-      },
-      {
-        type: "choice",
-        question: "Какой артикль используется? ___ crianças brincam ___ jardim. (определённый + em + o)",
-        options: ["As ... no", "Os ... no", "As ... na", "Umas ... no"],
-        correct: 0,
-        explanation: "Crianças (дети) — женского рода мн.ч., поэтому «as». «Em + o» = «no»: As crianças brincam no jardim."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: Ela vem ___ Estados Unidos. (de + os = ...)",
-        answer: "dos"
-      },
-      {
-        type: "match",
-        question: "Соотнесите слияния предлога «em» с артиклями:",
-        pairs: [
-          { left: "em + o", right: "no" },
-          { left: "em + a", right: "na" },
-          { left: "em + os", right: "nos" },
-          { left: "em + as", right: "nas" }
-        ]
-      },
-      {
-        type: "choice",
-        question: "Выберите правильный вариант: Há ___ livros na estante.",
-        options: ["os", "uns", "o", "um"],
-        correct: 1,
-        explanation: "С глаголом «há» (есть, имеется) используется неопределённый артикль «uns» (некоторые): Há uns livros na estante."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: Ele pensa ___ filhos. (em + os = ...)",
-        answer: "nos"
-      },
-      {
-        type: "order",
-        question: "Составьте предложение: «Я иду в библиотеку».",
-        words: ["à", "Eu", "vou", "biblioteca"],
-        answer: "Eu vou à biblioteca"
-      },
-      {
-        type: "choice",
-        question: "Какое слияние правильное для «por + as»?",
-        options: ["pas", "polas", "pelas", "pras"],
-        correct: 2,
-        explanation: "Предлог «por» + артикль «as» = «pelas». Например: pelas ruas (по улицам)."
-      },
-      {
-        type: "fill",
-        question: "Вставьте слияние: Ela gosta ___ flores. (de + as = ...)",
-        answer: "das"
-      },
-      {
-        type: "translate",
-        source: "Мы живём в Португалии.",
-        direction: "ru-pt",
-        answer: ["Nós moramos em Portugal.", "Moramos em Portugal.", "Nós vivemos em Portugal.", "Vivemos em Portugal."]
-      },
-      {
-        type: "choice",
-        question: "Какой артикль перед «água» (вода)?",
-        options: ["o", "a", "os", "um"],
-        correct: 1,
-        explanation: "Água — женского рода: a água. Хотя слово начинается с ударного «а», артикль всё равно «a»."
-      },
-      {
-        type: "fill",
-        question: "Вставьте неопределённый артикль: Ele comprou ___ carro novo. (м.р., ед.ч.)",
-        answer: "um"
-      },
-      {
-        type: "match",
-        question: "Соотнесите слияния предлога «a» с артиклями:",
-        pairs: [
-          { left: "a + o", right: "ao" },
-          { left: "a + a", right: "à" },
-          { left: "a + os", right: "aos" },
-          { left: "a + as", right: "às" }
-        ]
-      },
-      {
-        type: "choice",
-        question: "Выберите правильный вариант: ___ alunos estudam ___ universidade. (определённый + em + a)",
-        options: ["Os ... na", "Os ... no", "As ... na", "Uns ... em a"],
-        correct: 0,
-        explanation: "Alunos (ученики) — мужской род мн.ч., поэтому «os». «Em + a» = «na»: Os alunos estudam na universidade."
-      }
-    ];
+  // === Ex2: Fill a/o/um/uma (12 items) ===
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ casa é grande. (определённый)",
+    answer: "A"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ carro é novo. (определённый)",
+    answer: "O"
+  },
+  {
+    type: "choice",
+    question: "Какой артикль подходит? Eu tenho ___ livro. (неопределённый)",
+    options: ["o", "a", "um", "uma"],
+    correct: 2,
+    explanation: "Livro — мужского рода, неопределённый артикль мужского рода — «um»: um livro."
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: Ela comprou ___ mesa. (неопределённый)",
+    answer: "uma"
+  },
+  {
+    type: "choice",
+    question: "Какие артикли подходят? ___ João tem ___ carro novo. (определённый + неопределённый)",
+    options: ["A ... um", "O ... um", "O ... uma", "Um ... o"],
+    correct: 1,
+    explanation: "Перед мужскими именами используется «O»: O João. Carro — мужского рода, неопределённый артикль — «um»."
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: Há ___ escola perto daqui. (неопределённый)",
+    answer: "uma"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: Ele tem ___ irmã mais nova. (неопределённый)",
+    answer: "uma"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ tempo está bom. (определённый)",
+    answer: "O"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ Maria é professora. (определённый)",
+    answer: "A"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ Porto é uma cidade bonita. (определённый)",
+    answer: "O"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ Rio Tejo é longo. (определённый)",
+    answer: "O"
+  },
+  {
+    type: "fill",
+    question: "Вставьте правильный артикль: ___ comida está pronta. (определённый)",
+    answer: "A"
+  },
+
+  // === Ex3: Match (8 items — converted to match exercises) ===
+  {
+    type: "match",
+    question: "Соотнесите выражения с правильным артиклем (определённый или неопределённый):",
+    pairs: [
+      { left: "___ menino (конкретный мальчик)", right: "o menino" },
+      { left: "___ casa (какой-то дом)", right: "uma casa" },
+      { left: "___ livros (конкретные книги)", right: "os livros" },
+      { left: "___ cidade (какой-то город)", right: "uma cidade" }
+    ]
+  },
+  {
+    type: "match",
+    question: "Соотнесите существительные с правильным определённым артиклем:",
+    pairs: [
+      { left: "professor", right: "o" },
+      { left: "escola", right: "a" },
+      { left: "carros", right: "os" },
+      { left: "cidades", right: "as" }
+    ]
+  },
+
+  // === Ex4: Fill contractions (11 items) ===
+  {
+    type: "fill",
+    question: "Вставьте слияние: Ele mora ___ cidade pequena. (em + uma)",
+    answer: "numa"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Ela trabalha ___ hospital. (em + um)",
+    answer: "num"
+  },
+  {
+    type: "choice",
+    question: "Какое слияние правильное? O livro está ___ mesa. (em + a)",
+    options: ["na", "no", "numa", "da"],
+    correct: 0,
+    explanation: "Предлог «em» + определённый артикль «a» = «na»: na mesa (на столе)."
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Estou ___ cozinha. (em + a)",
+    answer: "na"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: O carro ___ Pedro é vermelho. (de + o)",
+    answer: "do"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Ele saiu ___ casa velha. (de + uma)",
+    answer: "duma"
+  },
+  {
+    type: "choice",
+    question: "Какое слияние правильное? Passámos ___ parque. (por + o)",
+    options: ["polo", "pelo", "pro", "poro"],
+    correct: 1,
+    explanation: "Предлог «por» + определённый артикль «o» = «pelo»: pelo parque (через парк)."
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: As crianças brincam ___ ruas. (em + as)",
+    answer: "nas"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Estamos ___ centro da cidade. (em + o)",
+    answer: "no"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Vivemos ___ arredores de Lisboa. (em + os)",
+    answer: "nos"
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Andámos ___ cidade toda. (por + a)",
+    answer: "pela"
+  },
+
+  // === Ex5: Fill article/contraction in text (partial set, mixed types) ===
+  {
+    type: "fill",
+    question: "Заполните: ___ Pedro é estudante. (определённый артикль м.р.)",
+    answer: "O"
+  },
+  {
+    type: "choice",
+    question: "Какой артикль/слияние подходит? Ele é ___ Brasil. (de + o)",
+    options: ["do", "da", "no", "de o"],
+    correct: 0,
+    explanation: "«De» + «o» сливаются в «do»: Ele é do Brasil (Он из Бразилии)."
+  },
+  {
+    type: "fill",
+    question: "Заполните: Ele estuda ___ Universidade de Lisboa. (em + a)",
+    answer: "na"
+  },
+  {
+    type: "fill",
+    question: "Заполните: ___ curso é interessante. (определённый артикль м.р.)",
+    answer: "O"
+  },
+  {
+    type: "fill",
+    question: "Заполните: As aulas ___ Pedro começam às nove. (de + o)",
+    answer: "do"
+  },
+  {
+    type: "fill",
+    question: "Заполните: Ele gosta ___ cidade. (de + a)",
+    answer: "da"
+  },
+
+  // === Additional mixed exercises to reach ~30 ===
+  {
+    type: "match",
+    question: "Соотнесите слияния предлогов с артиклями:",
+    pairs: [
+      { left: "de + o", right: "do" },
+      { left: "em + a", right: "na" },
+      { left: "por + o", right: "pelo" },
+      { left: "a + a", right: "à" }
+    ]
+  },
+  {
+    type: "match",
+    question: "Соотнесите слияния предлога «em» с неопределёнными артиклями:",
+    pairs: [
+      { left: "em + um", right: "num" },
+      { left: "em + uma", right: "numa" },
+      { left: "em + uns", right: "nuns" },
+      { left: "em + umas", right: "numas" }
+    ]
+  },
+  {
+    type: "order",
+    question: "Составьте предложение: «Книга преподавателя на столе».",
+    words: ["na", "do", "O", "professor", "livro", "mesa", "está"],
+    answer: "O livro do professor está na mesa"
+  },
+  {
+    type: "translate",
+    source: "Дети играют в парке.",
+    direction: "ru-pt",
+    answer: ["As crianças brincam no parque."]
+  },
+  {
+    type: "choice",
+    question: "Когда НЕ используется определённый артикль в португальском?",
+    options: ["Перед именами: O João é alto", "С днями недели: na segunda-feira", "После глагола falar с языком: Falo português", "Перед странами: O Brasil é grande"],
+    correct: 2,
+    explanation: "После глагола «falar» артикль перед языком обычно опускается: Falo português (Я говорю по-португальски)."
+  },
+  {
+    type: "translate",
+    source: "Мы живём в Португалии.",
+    direction: "ru-pt",
+    answer: ["Nós moramos em Portugal.", "Moramos em Portugal.", "Nós vivemos em Portugal.", "Vivemos em Portugal."]
+  },
+  {
+    type: "order",
+    question: "Составьте предложение: «Я иду в университет».",
+    words: ["à", "Eu", "vou", "universidade"],
+    answer: "Eu vou à universidade"
+  },
+  {
+    type: "choice",
+    question: "Какое слияние правильное для «de + as»?",
+    options: ["dos", "das", "nas", "pas"],
+    correct: 1,
+    explanation: "Предлог «de» + артикль «as» = «das». Например: das flores (цветов)."
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Vou ___ praia amanhã. (a + a)",
+    answer: "à"
+  },
+  {
+    type: "choice",
+    question: "Какое слияние правильное для «a + os»?",
+    options: ["os", "dos", "nos", "aos"],
+    correct: 3,
+    explanation: "Предлог «a» + артикль «os» = «aos». Например: aos domingos (по воскресеньям)."
+  },
+  {
+    type: "match",
+    question: "Соотнесите слияния предлога «de» с артиклями:",
+    pairs: [
+      { left: "de + o", right: "do" },
+      { left: "de + a", right: "da" },
+      { left: "de + os", right: "dos" },
+      { left: "de + as", right: "das" }
+    ]
+  },
+  {
+    type: "fill",
+    question: "Вставьте слияние: Ele vem ___ escola. (de + a)",
+    answer: "da"
+  },
+  {
+    type: "translate",
+    source: "Она работает в больнице.",
+    direction: "ru-pt",
+    answer: ["Ela trabalha no hospital.", "Ela trabalha num hospital."]
+  }
+];

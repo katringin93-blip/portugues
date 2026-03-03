@@ -1,7 +1,15 @@
-// Web Speech API TTS wrapper for European Portuguese (pt-PT)
+// TTS for European Portuguese (pt-PT)
+// Primary: Edge TTS via Netlify Function (neural pt-PT-RaquelNeural voice)
+// Fallback: Web Speech API (system voices)
 
-let ptVoice = null;
-let voicesLoaded = false;
+var webVoice = null;
+var anyPtVoice = null;
+var hasPtPTVoice = false;
+
+// In-memory audio cache: "text|rate" → blobURL
+var audioCache = {};
+
+// ---- Web Speech API setup ----
 
 function loadVoices() {
   return new Promise(function(resolve) {
@@ -10,8 +18,6 @@ function loadVoices() {
       resolve(voices);
       return;
     }
-    // Some browsers (especially iOS Safari) may not fire voiceschanged,
-    // so add a timeout to prevent hanging forever
     var resolved = false;
     var timer = setTimeout(function() {
       if (!resolved) {
@@ -30,48 +36,84 @@ function loadVoices() {
 }
 
 export async function initTTS() {
-  if (!('speechSynthesis' in window)) {
-    console.warn('Web Speech API not supported');
-    return false;
+  if ('speechSynthesis' in window) {
+    var voices = await loadVoices();
+
+    // Best: pt-PT voice
+    var ptPT = voices.filter(function(v) { return v.lang === 'pt-PT'; });
+    var ptName = voices.filter(function(v) {
+      return v.lang.startsWith('pt') && /portugal|european|portugu.s.*europeu/i.test(v.name);
+    });
+    webVoice = ptPT[0] || ptName[0] || null;
+    hasPtPTVoice = !!webVoice;
+
+    // Any Portuguese voice (including pt-BR) as last-resort fallback
+    if (!webVoice) {
+      anyPtVoice = voices.find(function(v) { return v.lang.startsWith('pt'); }) || null;
+    }
+
+    console.log('TTS:', hasPtPTVoice ? 'pt-PT voice: ' + webVoice.name : 'no pt-PT system voice',
+      anyPtVoice ? ', fallback: ' + anyPtVoice.name + ' (' + anyPtVoice.lang + ')' : '');
   }
-
-  const voices = await loadVoices();
-  voicesLoaded = true;
-
-  // Prefer pt-PT, fall back to any Portuguese voice
-  ptVoice = voices.find(v => v.lang === 'pt-PT')
-    || voices.find(v => v.lang.startsWith('pt-'))
-    || voices.find(v => v.lang.startsWith('pt'))
-    || null;
-
-  if (ptVoice) {
-    console.log('TTS voice:', ptVoice.name, ptVoice.lang);
-  } else {
-    console.warn('No Portuguese voice found. Available:', voices.map(v => v.lang));
-  }
-  return !!ptVoice;
+  return true;
 }
 
-export function speak(text, rate) {
-  if (rate === undefined || rate === null) rate = 0.9;
-  if (!voicesLoaded || !ptVoice) {
-    console.warn('TTS not ready');
-    return Promise.resolve();
-  }
+// ---- Edge TTS via Netlify Function ----
 
+function speakWithEdgeTTS(text, rate) {
+  return new Promise(function(resolve, reject) {
+    var cacheKey = text + '|' + rate;
+
+    function playBlob(blobUrl) {
+      var audio = new Audio(blobUrl);
+      var done = false;
+      function finish() { if (!done) { done = true; resolve(); } }
+      function fail(e) { if (!done) { done = true; reject(e); } }
+      audio.onended = finish;
+      audio.onerror = fail;
+      audio.play().catch(fail);
+      setTimeout(finish, 15000);
+    }
+
+    // Serve from cache if available
+    if (audioCache[cacheKey]) {
+      playBlob(audioCache[cacheKey]);
+      return;
+    }
+
+    // Fetch from Netlify Function
+    var apiUrl = '/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
+
+    fetch(apiUrl).then(function(res) {
+      if (!res.ok) throw new Error('TTS API ' + res.status);
+      return res.blob();
+    }).then(function(blob) {
+      if (blob.size < 100) throw new Error('TTS response too small');
+      var blobUrl = URL.createObjectURL(blob);
+      audioCache[cacheKey] = blobUrl;
+      playBlob(blobUrl);
+    }).catch(function(err) {
+      console.warn('Edge TTS failed:', err.message);
+      reject(err);
+    });
+  });
+}
+
+// ---- Web Speech API ----
+
+function speakWithWebAPI(text, rate, voice) {
   return new Promise(function(resolve) {
     speechSynthesis.cancel();
     var utterance = new SpeechSynthesisUtterance(text);
-    utterance.voice = ptVoice;
-    utterance.lang = ptVoice.lang;
-    utterance.rate = rate;
+    utterance.voice = voice;
+    utterance.lang = 'pt-PT';
+    utterance.rate = rate || 0.9;
     utterance.pitch = 1;
     utterance.onend = function() { clearInterval(resumeTimer); resolve(); };
     utterance.onerror = function() { clearInterval(resumeTimer); resolve(); };
     speechSynthesis.speak(utterance);
 
-    // iOS Safari workaround: speechSynthesis can pause unexpectedly.
-    // Periodically call resume() to keep it going.
+    // iOS Safari workaround
     var resumeTimer = setInterval(function() {
       if (!speechSynthesis.speaking) {
         clearInterval(resumeTimer);
@@ -80,11 +122,32 @@ export function speak(text, rate) {
       }
     }, 5000);
 
-    // Safety timeout: resolve after 15s even if onend/onerror never fires
     setTimeout(function() { clearInterval(resumeTimer); resolve(); }, 15000);
   });
 }
 
+// ---- Public API ----
+
+export function speak(text, rate) {
+  if (rate === undefined || rate === null) rate = 0.9;
+  if (!text) return Promise.resolve();
+
+  // 1. If system has a real pt-PT voice — use it (lowest latency, correct accent)
+  if (hasPtPTVoice && webVoice) {
+    return speakWithWebAPI(text, rate, webVoice);
+  }
+
+  // 2. Try Edge TTS neural voice (pt-PT-RaquelNeural via Netlify Function)
+  // 3. If Edge TTS fails — fall back to any system Portuguese voice
+  return speakWithEdgeTTS(text, rate).catch(function() {
+    var fallback = anyPtVoice || webVoice;
+    if (fallback) {
+      console.log('TTS: falling back to Web Speech API:', fallback.name);
+      return speakWithWebAPI(text, rate, fallback);
+    }
+  });
+}
+
 export function isTTSAvailable() {
-  return voicesLoaded && !!ptVoice;
+  return true;
 }

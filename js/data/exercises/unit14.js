@@ -1,235 +1,248 @@
 export const exercises = [
-  // === Existing exercises ===
+  // === Ex1: Спряжение возвратных глаголов ===
   {
     type: "fill",
-    question: "Как тебя зовут? = Como ___ chamas?",
-    answer: "te"
+    question: "Спрягайте возвратный глагол: Eu (pentear-se) todos os dias. → Eu ___",
+    answer: "penteio-me"
+  },
+  {
+    type: "fill",
+    question: "Спрягайте: Eles (deitar-se) tarde. → Eles ___",
+    answer: "deitam-se"
+  },
+  {
+    type: "fill",
+    question: "Спрягайте: Ele (despedir-se) dos amigos. → Ele ___",
+    answer: "despede-se"
+  },
+  {
+    type: "fill",
+    question: "Спрягайте: Tu (ofender-se) facilmente. → Tu ___",
+    answer: "ofendes-te"
   },
   {
     type: "choice",
-    question: "Eu ___ às oito horas. (levantar-se)",
-    options: ["levanto-me", "me levanto", "levanto-se", "se levanto"],
+    question: "Как спрягается «aborrecer-se» в 1-м лице мн.ч.?",
+    options: ["aborrecemo-nos", "aborrecemos-nos", "nos aborrecemos", "aborrece-nos"],
     correct: 0,
-    explanation: "В утвердительном предложении (без «притягивающих» слов) — энклиза: levanto-me."
+    explanation: "Nós aborrecemo-nos. Буква -s в «aborrecemos» отпадает перед «nos»."
   },
   {
-    type: "translate",
-    source: "Они ложатся спать поздно.",
-    direction: "ru-pt",
-    answer: ["Eles deitam-se tarde.", "Eles deitam-se muito tarde."]
+    type: "fill",
+    question: "Спрягайте: Eles (interrogar-se) sobre o futuro. → Eles ___",
+    answer: "interrogam-se"
+  },
+  {
+    type: "fill",
+    question: "Спрягайте с проклизой: Eu não (sentir-se) bem. → Eu não ___",
+    answer: "me sinto"
+  },
+  {
+    type: "fill",
+    question: "Спрягайте: A Maria (zangar-se) facilmente. → A Maria ___",
+    answer: "zanga-se"
   },
   {
     type: "choice",
-    question: "Отрицательная форма «Eu levanto-me cedo» →",
-    options: ["Eu levanto-me não cedo", "Eu não levanto-me cedo", "Eu não me levanto cedo", "Eu me não levanto cedo"],
-    correct: 2,
-    explanation: "При отрицании местоимение переходит перед глагол: «Eu não me levanto cedo»."
-  },
-  {
-    type: "fill",
-    question: "Мы веселимся: Nós divertimo-___.",
-    answer: "nos"
-  },
-  // === New exercises: Reflexive Pronoun Forms ===
-  {
-    type: "match",
-    question: "Соотнесите личные местоимения с возвратными:",
-    pairs: [
-      ["eu", "me"],
-      ["tu", "te"],
-      ["ele/ela/você", "se"],
-      ["nós", "nos"],
-      ["eles/elas/vocês", "se"]
-    ]
-  },
-  {
-    type: "fill",
-    question: "Он моется: Ele lava-___.",
-    answer: "se"
-  },
-  {
-    type: "fill",
-    question: "Вы садитесь: Vocês sentam-___.",
-    answer: "se"
-  },
-  {
-    type: "choice",
-    question: "Как спрягается «vestir-se» (одеваться) в 1-м лице ед.ч.?",
-    options: ["Eu visto-me.", "Eu me visto.", "Eu vesto-me.", "Eu visto-se."],
+    question: "Как спрягается «vestir-se» в 3-м лице ед.ч.?",
+    options: ["veste-se", "viste-se", "vesta-se", "vestir-se"],
     correct: 0,
-    explanation: "Vestir — eu visto (неправильный глагол, e→i). В утвердительном — энклиза: visto-me."
+    explanation: "Vestir — ele veste (e→e в 3-м лице). В утвердительном — энклиза: veste-se."
   },
-  // === Common reflexive verbs ===
   {
     type: "fill",
-    question: "Я просыпаюсь рано: Eu acordo-___ cedo.",
-    answer: "me"
+    question: "Спрягайте: O João (achar-se) inteligente. → O João ___",
+    answer: "acha-se"
   },
   {
-    type: "translate",
-    source: "Она ложится спать в десять часов.",
-    direction: "ru-pt",
-    answer: ["Ela deita-se às dez horas.", "Ela deita-se às dez."]
+    type: "fill",
+    question: "Спрягайте с проклизой: Ela não (ver-se) no espelho. → Ela não ___",
+    answer: "se vê"
   },
+  {
+    type: "fill",
+    question: "Спрягайте: Tu (comprometer-se) a ajudar. → Tu ___",
+    answer: "comprometes-te"
+  },
+  // === Ex2: Определите возвратные предложения ===
   {
     type: "choice",
-    question: "Какой глагол означает «причёсываться»?",
-    options: ["lavar-se", "pentear-se", "vestir-se", "barbear-se"],
+    question: "Какое из предложений содержит возвратный глагол?\n1) Eu lavo o carro.\n2) Eu lavo-me todas as manhãs.\n3) Eu vejo o João.\n4) Eu leio o jornal.",
+    options: ["1", "2", "3", "4"],
     correct: 1,
-    explanation: "Pentear-se = причёсываться. Lavar-se = мыться, vestir-se = одеваться, barbear-se = бриться."
+    explanation: "«Lavo-me» — возвратный глагол (мою себя). «Lavo o carro» — переходный (мою машину)."
   },
   {
-    type: "fill",
-    question: "Он бреется каждое утро: Ele barbeia-___ todas as manhãs.",
-    answer: "se"
-  },
-  {
-    type: "translate",
-    source: "Мы садимся за стол.",
-    direction: "ru-pt",
-    answer: ["Sentamo-nos à mesa.", "Nós sentamo-nos à mesa."]
+    type: "choice",
+    question: "Какие глаголы являются возвратными?\n1) Ele come o bolo.\n2) Ele deita-se cedo.\n3) Ela penteia a filha.\n4) Ela penteia-se.",
+    options: ["1 и 3", "2 и 4", "1 и 4", "2 и 3"],
+    correct: 1,
+    explanation: "Возвратные глаголы: deita-se (ложится) и penteia-se (причёсывается). Остальные — переходные."
   },
   {
     type: "match",
     question: "Соотнесите возвратные глаголы с их значениями:",
     pairs: [
-      ["levantar-se", "вставать"],
-      ["deitar-se", "ложиться"],
-      ["vestir-se", "одеваться"],
-      ["lavar-se", "мыться"],
-      ["sentar-se", "садиться"],
-      ["chamar-se", "зваться"]
+      ["zangar-se", "злиться"],
+      ["lembrar-se", "вспоминать"],
+      ["esquecer-se", "забывать"],
+      ["apaixonar-se", "влюбляться"],
+      ["enganar-se", "ошибаться"],
+      ["sentir-se", "чувствовать себя"]
     ]
   },
-  // === Proclisis with reflexive verbs ===
+  // === Ex3: Перестановка местоимения ===
   {
     type: "fill",
-    question: "Я не ложусь поздно: Eu não ___ deito tarde.",
-    answer: "me"
-  },
-  {
-    type: "choice",
-    question: "«Ela nunca ___ levanta cedo.» Какое местоимение?",
-    options: ["me", "te", "se", "nos"],
-    correct: 2,
-    explanation: "Подлежащее «ela» → возвратное «se». После «nunca» — проклиза: nunca se levanta."
+    question: "Перепишите с «nunca»: Ele zanga-se. → Ele nunca ___",
+    answer: "se zanga"
   },
   {
     type: "translate",
-    source: "Ты не одеваешься быстро.",
+    source: "Она всегда причёсывается. (está sempre a pentear-se)",
     direction: "ru-pt",
-    answer: ["Tu não te vestes depressa.", "Não te vestes depressa."]
+    answer: ["Ela está sempre a pentear-se."]
+  },
+  {
+    type: "translate",
+    source: "Они обманывают друг друга. (enganar-se uns aos outros)",
+    direction: "ru-pt",
+    answer: ["Enganam-se uns aos outros.", "Eles enganam-se uns aos outros."]
   },
   {
     type: "fill",
-    question: "Кто там сидит? Quem ___ senta ali?",
-    answer: "se"
+    question: "Перепишите с «Ninguém»: Eles lembram-se. → Ninguém ___",
+    answer: "se lembra"
   },
   {
     type: "choice",
-    question: "«Também ___ levanto às sete.» (Я тоже встаю в семь.)",
-    options: ["me", "se", "te", "nos"],
+    question: "Как правильно: «Como ___ chamam?» (Как их зовут?)",
+    options: ["se chamam", "chamam-se", "se-chamam", "chamam se"],
     correct: 0,
-    explanation: "Подлежащее «eu» (подразумевается) → me. «Também» вызывает проклизу."
+    explanation: "«Como» — вопросительное слово, вызывает проклизу: Como se chamam?"
   },
-  // === Reflexive with infinitive ===
   {
     type: "translate",
-    source: "Я хочу помыться.",
+    source: "Они забывают. (estão a esquecer-se)",
     direction: "ru-pt",
-    answer: ["Quero lavar-me.", "Eu quero lavar-me."]
+    answer: ["Estão a esquecer-se.", "Eles estão a esquecer-se."]
   },
   {
     type: "fill",
-    question: "Мы собираемся одеться: Vamos vestir-___.",
-    answer: "nos"
+    question: "Перепишите: Ela (apaixonar-se) sempre. → Ela ___",
+    answer: "apaixona-se sempre"
+  },
+  {
+    type: "fill",
+    question: "Перепишите: Nós (ver-se) em casa. → Nós ___",
+    answer: "vemo-nos em casa"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «nunca»: Ele lava-se. → Ele nunca ___",
+    answer: "se lava"
+  },
+  // === Ex4: Вставьте правильную форму возвратного глагола ===
+  {
+    type: "fill",
+    question: "Onde é que tu ___ (sentar-se)? (Где ты садишься?)",
+    answer: "te sentas"
+  },
+  {
+    type: "fill",
+    question: "Eu ___ (aborrecer-se) com filmes longos. (Я скучаю на длинных фильмах.)",
+    answer: "aborreço-me"
   },
   {
     type: "choice",
-    question: "«Preciso de ___-me cedo.» (Мне нужно рано встать.)",
-    options: ["levantar", "levanto", "levantando", "levante"],
+    question: "Заполните: Ele ___ (chatear-se) com o irmão.",
+    options: ["chateia-se", "se chateia", "chateia-me", "chateia-te"],
     correct: 0,
-    explanation: "После предлога «de» используется инфинитив: Preciso de levantar-me."
-  },
-  {
-    type: "translate",
-    source: "Она может сесть здесь.",
-    direction: "ru-pt",
-    answer: ["Ela pode sentar-se aqui."]
-  },
-  // === Reciprocal meaning ===
-  {
-    type: "choice",
-    question: "Что значит «Eles abraçam-se»?",
-    options: ["Они обнимают себя", "Они обнимаются (друг друга)", "Они обнимают нас", "Они обнимают их"],
-    correct: 1,
-    explanation: "Возвратное местоимение «se» с мн.ч. может означать взаимное действие: «обнимаются» (друг друга)."
-  },
-  {
-    type: "translate",
-    source: "Мы видимся каждый день.",
-    direction: "ru-pt",
-    answer: ["Vemo-nos todos os dias.", "Nós vemo-nos todos os dias."]
+    explanation: "В утвердительном предложении — энклиза: chateia-se."
   },
   {
     type: "fill",
-    question: "Они любят друг друга: Eles amam-___.",
-    answer: "se"
+    question: "Ela nunca ___ (irritar-se). (Она никогда не раздражается.)",
+    answer: "se irrita"
   },
-  // === Daily routine exercises ===
+  {
+    type: "fill",
+    question: "Quem ___ (lembrar-se) do nome? (Кто помнит имя?)",
+    answer: "se lembra"
+  },
+  {
+    type: "choice",
+    question: "Заполните: O avô ___ (sentir-se) cansado.",
+    options: ["sente-se", "se sente", "sento-se", "sinta-se"],
+    correct: 0,
+    explanation: "В утвердительном предложении — энклиза: O avô sente-se cansado."
+  },
+  {
+    type: "fill",
+    question: "Eles ___ (enganar-se) muitas vezes. (Они часто ошибаются.)",
+    answer: "enganam-se"
+  },
+  // === Ex5: Порядок действий ===
   {
     type: "order",
-    question: "Составьте предложение: «Я встаю в семь часов.»",
-    words: ["Eu", "levanto", "-me", "às", "sete", "horas"],
-    answer: "Eu levanto-me às sete horas."
-  },
-  {
-    type: "translate",
-    source: "Утром я просыпаюсь, встаю и моюсь.",
-    direction: "ru-pt",
-    answer: ["De manhã acordo-me, levanto-me e lavo-me."]
-  },
-  {
-    type: "fill",
-    question: "Дети одеваются: As crianças vestem-___.",
-    answer: "se"
-  },
-  {
-    type: "choice",
-    question: "Как сказать «Мне пора вставать» с возвратным глаголом?",
-    options: ["Tenho de me levantar.", "Tenho de levantar-me.", "Оба варианта правильные.", "Tenho de se levantar."],
-    correct: 2,
-    explanation: "При двух глаголах возвратное местоимение может стоять при любом из них: «Tenho de me levantar» или «Tenho de levantar-me»."
-  },
-  // === Reflexive vs non-reflexive ===
-  {
-    type: "choice",
-    question: "Какая разница между «Eu lavo» и «Eu lavo-me»?",
-    options: ["Нет разницы", "«Lavo» = мою что-то, «lavo-me» = моюсь", "«Lavo» = моюсь, «lavo-me» = мою что-то", "«Lavo-me» — будущее время"],
-    correct: 1,
-    explanation: "Без «-me» — глагол переходный (мою что-то/кого-то). С «-me» — возвратный (мою себя, моюсь)."
-  },
-  {
-    type: "translate",
-    source: "Она причёсывает дочь. / Она причёсывается.",
-    direction: "ru-pt",
-    answer: ["Ela penteia a filha. / Ela penteia-se."]
-  },
-  {
-    type: "fill",
-    question: "Мы забавляемся на вечеринке: Nós divertimo-___ na festa.",
-    answer: "nos"
+    question: "Составьте: «Я встаю, моюсь и одеваюсь.»",
+    words: ["Levanto", "-me", ",", "lavo", "-me", "e", "visto", "-me"],
+    answer: "Levanto-me, lavo-me e visto-me."
   },
   {
     type: "order",
-    question: "Составьте отрицательное предложение: «Я не ложусь поздно.»",
-    words: ["Eu", "não", "me", "deito", "tarde"],
-    answer: "Eu não me deito tarde."
+    question: "Составьте отрицательное: «Он никогда не злится.»",
+    words: ["Ele", "nunca", "se", "zanga"],
+    answer: "Ele nunca se zanga."
+  },
+  {
+    type: "match",
+    question: "Соотнесите возвратные глаголы с действиями утреннего распорядка:",
+    pairs: [
+      ["acordar-se", "просыпаться"],
+      ["levantar-se", "вставать"],
+      ["lavar-se", "мыться"],
+      ["vestir-se", "одеваться"],
+      ["pentear-se", "причёсываться"]
+    ]
+  },
+  // === Ex6: Текст о фадиштах ===
+  {
+    type: "fill",
+    question: "Os fadistas ___ (orgulhar-se) da tradição. (Фадишты гордятся традицией.)",
+    answer: "orgulham-se"
+  },
+  {
+    type: "fill",
+    question: "A fadista ___ (vestir-se) de negro. (Фадистка одевается в чёрное.)",
+    answer: "veste-se"
+  },
+  {
+    type: "choice",
+    question: "Как будет «Музыканты одеваются элегантно» (vestir-se)?",
+    options: ["vestem-se elegantemente", "se vestem elegantemente", "vistam-se elegantemente", "vestam-se elegantemente"],
+    correct: 0,
+    explanation: "В утвердительном предложении — энклиза: Os músicos vestem-se elegantemente."
+  },
+  {
+    type: "fill",
+    question: "Os artistas ___ (apresentar-se) no palco. (Артисты представляются на сцене.)",
+    answer: "apresentam-se"
+  },
+  {
+    type: "fill",
+    question: "Quando ___ (vestir-se) de negro, parecem sombras. (Когда одеваются в чёрное... — проклиза)",
+    answer: "se vestem"
+  },
+  {
+    type: "fill",
+    question: "O fado ___ (acompanhar-se) de guitarra portuguesa. (Фаду аккомпанируется португальской гитарой.)",
+    answer: "acompanha-se"
   },
   {
     type: "translate",
-    source: "Как вас зовут?",
+    source: "Этот стиль музыки называется «фаду». (chamar-se)",
     direction: "ru-pt",
-    answer: ["Como é que se chama?", "Como se chama?"]
+    answer: ["Este estilo de música chama-se fado."]
   }
 ];

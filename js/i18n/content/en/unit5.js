@@ -69,6 +69,46 @@ export default {
     },
     {
       note: "In European Portuguese, «comboio» (train) is used instead of the Brazilian «trem», and «autocarro» (bus) instead of «ônibus»."
+    },
+    {
+      heading: "Saber and conhecer: two verbs meaning 'to know'",
+      text: "Portuguese has two verbs meaning 'to know'. Saber means knowing facts, information, or knowing how to do something. Conhecer means knowing people, places, being acquainted with something. Saber can also mean 'to taste'."
+    },
+    {
+      table: {
+        headers: ["Verb", "Meaning", "Example"],
+        rows: [
+          ["saber", "know a fact", "Eu sei onde ela mora. (I know where she lives.)"],
+          ["saber", "know how to", "Tu sabes falar inglês? (Can you speak English?)"],
+          ["saber", "to taste", "O café sabe bem. (The coffee tastes good.)"],
+          ["conhecer", "know a person", "Conheces o Pedro? (Do you know Pedro?)"],
+          ["conhecer", "know a place", "Eu conheço Lisboa muito bem. (I know Lisbon very well.)"]
+        ]
+      }
+    },
+    {
+      heading: "Ter de / ter que: obligation",
+      text: "The constructions ter de + infinitive and ter que + infinitive express necessity or obligation. Ter de emphasizes a stronger obligation (something you cannot fail to do)."
+    },
+    {
+      examples: [
+        { ru: "I have to buy a car." },
+        { ru: "You have to buy the ticket for the trip." },
+        { ru: "We need to study more." },
+        { ru: "They have to work tomorrow." }
+      ]
+    },
+    {
+      heading: "Ir + infinitive: near future",
+      text: "The construction ir (in present tense) + verb infinitive is used to express intention or the near future, similar to English 'going to'."
+    },
+    {
+      examples: [
+        { ru: "I'm going to call Ana." },
+        { ru: "We're going to move house." },
+        { ru: "Josefina is going to teach at the university." },
+        { ru: "They're going to travel in the summer." }
+      ]
     }
   ],
   vocabulary: [

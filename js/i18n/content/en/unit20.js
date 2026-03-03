@@ -43,6 +43,27 @@ export default {
     },
     {
       note: "In spoken language, the compound form (tinha + participle) is almost always used. The simple form (falara, comera) is found in literature, newspapers, and formal texts. Both forms have the same meaning."
+    },
+    {
+      heading: "The auxiliary verb haver",
+      text: "In literary and historical style, haver may be used instead of ter as an auxiliary verb: havia falado = tinha falado. This form is found in classical literature and formal texts."
+    },
+    {
+      examples: [
+        { ru: "He had left before we arrived. (literary)" },
+        { ru: "When we arrived, they had already left. (literary)" }
+      ]
+    },
+    {
+      heading: "Pronoun position in Mais-que-Perfeito Composto",
+      text: "As with Pretérito Perfeito Composto, pronouns attach to the auxiliary verb (tinha), not to the participle. With negation, they are placed before the auxiliary verb."
+    },
+    {
+      examples: [
+        { ru: "He had called me before dinner." },
+        { ru: "We hadn't told him/her anything." },
+        { ru: "She had already gotten up when I arrived." }
+      ]
     }
   ],
   vocabulary: [

@@ -34,6 +34,18 @@ export default {
     },
     {
       note: "Note: in the \u00abn\u00f3s\u00bb form, the -s of the verb drops before -nos: levantamos + nos \u2192 levantamo-nos, divertimos + nos \u2192 divertimo-nos."
+    },
+    {
+      heading: "Reciprocal actions (A\u00e7\u00f5es rec\u00edprocas)",
+      text: "Reflexive verbs are also used to describe reciprocal actions, when two or more subjects act upon each other. For clarity, you can add um ao outro (to each other), uma \u00e0 outra or uns aos outros."
+    },
+    {
+      examples: [
+        { ru: "They love each other." },
+        { ru: "We see each other every day." },
+        { ru: "They greet each other." },
+        { ru: "The sisters call each other every evening." }
+      ]
     }
   ],
   vocabulary: [

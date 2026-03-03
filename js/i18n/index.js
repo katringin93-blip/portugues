@@ -87,6 +87,15 @@ export function applyContentOverlay(unit, overlay) {
   if (overlay.title) result.title = overlay.title;
   if (overlay.description) result.description = overlay.description;
 
+  // Lessons overlay (sub-lesson titles)
+  if (overlay.lessons && unit.lessons) {
+    result.lessons = unit.lessons.map(function(lesson, i) {
+      var over = overlay.lessons[i];
+      if (!over) return lesson;
+      return Object.assign({}, lesson, over);
+    });
+  }
+
   // Theory overlay
   if (overlay.theory && unit.theory) {
     result.theory = unit.theory.map(function(section, i) {

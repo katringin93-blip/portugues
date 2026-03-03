@@ -41,6 +41,18 @@ export default {
     },
     {
       note: "Note the double negation in Portuguese: «Não quero nada» (lit.: «I don't want nothing»). This is normal in Portuguese when the negative word comes after the verb."
+    },
+    {
+      heading: "Nem and nem sequer: emphasizing negation",
+      text: "To emphasize negation, use nem (neither, not even) and nem sequer (not even). The construction nem...nem corresponds to English 'neither...nor'."
+    },
+    {
+      examples: [
+        { ru: "Neither I nor Ana like big parties." },
+        { ru: "I don't have any money, not even for a coffee." },
+        { ru: "João likes any film, but not even he likes this one." },
+        { ru: "She speaks neither Portuguese nor Spanish." }
+      ]
     }
   ],
   vocabulary: [

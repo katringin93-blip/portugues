@@ -49,6 +49,31 @@ export default {
     },
     {
       note: "Note: some exception words do not follow the general gender rules. For example, o dia (day) ends in -a but is masculine. A tribo (tribe) ends in -o but is feminine."
+    },
+    {
+      heading: "Diminutives and augmentatives",
+      text: "Portuguese makes extensive use of diminutive (diminutivos) and augmentative (aumentativos) forms of nouns. They modify the meaning of a word, expressing size, intensity or emotion."
+    },
+    {
+      table: {
+        headers: ["Form", "Suffix", "Examples"],
+        rows: [
+          ["Diminutive", "-inho/-inha", "casa → casinha (small house), filho → filhinho (little son)"],
+          ["Diminutive", "-zinho/-zinha", "pão → pãozinho (bread roll), João → Joãozinho"],
+          ["Augmentative", "-ão", "livro → livrão (huge book), carro → carrão (big car)"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "Let's go have a (nice little) coffee." },
+        { ru: "Good morning, mummy!" },
+        { ru: "Little Pedro is only three years old." },
+        { ru: "What an enormous book!" }
+      ]
+    },
+    {
+      note: "Diminutives most often express affection and endearment, not just small size. They are very common in informal speech, especially between parents and children."
     }
   ],
   vocabulary: [

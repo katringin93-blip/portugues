@@ -53,6 +53,27 @@ export default {
     },
     {
       note: "In European Portuguese, the article is often used before proper names: O João, a Maria. The article is also placed before possessives: o meu livro (my book)."
+    },
+    {
+      heading: "Contraction of the indefinite article",
+      text: "Indefinite articles also contract with the prepositions em and de. The forms with de (dum, duma) are more common in spoken Portuguese."
+    },
+    {
+      table: {
+        headers: ["Preposition", "um", "uma", "uns", "umas"],
+        rows: [
+          ["em", "num", "numa", "nuns", "numas"],
+          ["de", "dum", "duma", "duns", "dumas"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "She lives in a big house." },
+        { ru: "He works at a Portuguese company." },
+        { ru: "He's the son of a friend of mine." },
+        { ru: "I need a grammar book." }
+      ]
     }
   ],
   vocabulary: [

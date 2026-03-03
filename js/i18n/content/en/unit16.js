@@ -53,6 +53,42 @@ export default {
     },
     {
       note: "Attention! In European Portuguese, the Pret\u00e9rito Perfeito Composto does NOT correspond to the English Present Perfect. It denotes a repeated or ongoing action, not a single completed one. For a single completed action, the Pret\u00e9rito Perfeito Simples is used (next lesson)."
+    },
+    {
+      heading: "Verbs with dual past participles",
+      text: "Some verbs have two participle forms: regular (used with ter/haver) and irregular (used with ser/estar, as an adjective). The regular form is always used with the auxiliary verb ter."
+    },
+    {
+      table: {
+        headers: ["Verb", "With ter (regular)", "With ser/estar (irregular)"],
+        rows: [
+          ["aceitar (accept)", "aceitado", "aceite"],
+          ["entregar (deliver)", "entregado", "entregue"],
+          ["ganhar (win)", "ganhado", "ganho"],
+          ["gastar (spend)", "gastado", "gasto"],
+          ["limpar (clean)", "limpado", "limpo"],
+          ["pagar (pay)", "pagado", "pago"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "I have been accepting all the proposals (lately)." },
+        { ru: "The proposal was accepted by the director." },
+        { ru: "He has been paying the bills on time (regularly)." },
+        { ru: "The bill is paid." }
+      ]
+    },
+    {
+      heading: "Pronoun position with Pret\u00e9rito Perfeito Composto",
+      text: "Pronouns (direct, indirect, reflexive) attach with a hyphen to the auxiliary verb ter, not to the participle. With negation, they are placed before ter."
+    },
+    {
+      examples: [
+        { ru: "I have been calling him/her every day." },
+        { ru: "I haven't been calling him/her." },
+        { ru: "We have been getting up early (lately)." }
+      ]
     }
   ],
   vocabulary: [

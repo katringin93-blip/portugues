@@ -1,225 +1,330 @@
 export const exercises = [
-  // === Existing exercises ===
+  // === Ex1: Выберите Pretérito Perfeito или Imperfeito (12 items) ===
   {
-    type: "choice",
-    question: "Enquanto eu ___ (dormir), o telefone ___ (tocar).",
-    options: [
-      "dormi / tocou",
-      "dormia / tocava",
-      "dormia / tocou",
-      "dormi / tocava"
-    ],
-    correct: 2,
-    explanation: "Фоновое действие (спал) — Imperfeito: dormia. Прервавшее событие (зазвонил) — Perfeito: tocou."
-  },
-  {
-    type: "choice",
-    question: "Quando era criança, todos os verões ___ à praia. (ir)",
-    options: ["fui", "ia", "iria", "vou"],
-    correct: 1,
-    explanation: "Привычное действие в прошлом — Imperfeito: «ia» (ходил каждое лето)."
-  },
-  {
-    type: "translate",
-    source: "Я смотрел телевизор, когда она позвонила.",
-    direction: "ru-pt",
-    answer: ["Eu via televisão quando ela telefonou.", "Eu estava a ver televisão quando ela telefonou."]
+    type: "fill",
+    question: "Quando ele ___ (chegar) a casa, a Maria ___ (estar) a dormir. (Perfeito / Imperfeito)",
+    answer: ["chegou", "estava"]
   },
   {
     type: "fill",
-    question: "Ontem eu ___ ao médico. (ir — завершённое действие)",
-    answer: "fui"
-  },
-  {
-    type: "choice",
-    question: "Какое предложение описывает фон/обстановку?",
-    options: [
-      "Comi um bolo.",
-      "Chovia muito.",
-      "Ele chegou.",
-      "Comprei um carro."
-    ],
-    correct: 1,
-    explanation: "«Chovia muito» (Шёл сильный дождь) — описание обстановки, фон. Используется Imperfeito."
-  },
-  // === New exercises: выбор времени ===
-  {
-    type: "choice",
-    question: "Ontem ___ muito frio. (fazer — описание погоды/обстановки)",
-    options: ["fez", "fazia", "fiz", "faziam"],
-    correct: 1,
-    explanation: "Описание погоды/обстановки — Imperfeito: «fazia muito frio»."
-  },
-  {
-    type: "choice",
-    question: "Ela ___ um café e ___ de casa. (tomar / sair — последовательность завершённых действий)",
-    options: [
-      "tomava / saía",
-      "tomou / saiu",
-      "tomava / saiu",
-      "tomou / saía"
-    ],
-    correct: 1,
-    explanation: "Последовательность завершённых действий — обе формы в Perfeito: tomou, saiu."
-  },
-  {
-    type: "choice",
-    question: "Enquanto ela ___ (cozinhar), ele ___ (chegar).",
-    options: [
-      "cozinhou / chegou",
-      "cozinhava / chegava",
-      "cozinhava / chegou",
-      "cozinhou / chegava"
-    ],
-    correct: 2,
-    explanation: "Фоновое действие (готовила) — Imperfeito: cozinhava. Прервавшее событие (приехал) — Perfeito: chegou."
-  },
-  {
-    type: "choice",
-    question: "Todos os dias ele ___ às sete horas. (levantar-se — привычное действие)",
-    options: ["levantou-se", "levantava-se", "levanta-se", "levantara-se"],
-    correct: 1,
-    explanation: "Привычное действие в прошлом — Imperfeito: levantava-se."
-  },
-  {
-    type: "choice",
-    question: "___ sol e os pássaros ___. (fazer / cantar — описание обстановки)",
-    options: [
-      "Fez / cantaram",
-      "Fazia / cantavam",
-      "Fez / cantavam",
-      "Fazia / cantaram"
-    ],
-    correct: 1,
-    explanation: "Описание обстановки — обе формы в Imperfeito: fazia sol, cantavam."
-  },
-  // === Fill-in с выбором времени ===
-  {
-    type: "fill",
-    question: "Ontem eu ___ às oito horas. (chegar — завершённое действие с точным временем)",
-    answer: "cheguei"
+    question: "Eles ___ (estar) no jardim quando ___ (ver) o acidente. (Imperfeito / Perfeito)",
+    answer: ["estavam", "viram"]
   },
   {
     type: "fill",
-    question: "Quando eu ___ de casa, começou a chover. (sair — фоновое действие)",
-    answer: "saía"
+    question: "Eu ___ (caminhar) na rua quando ___ (encontrar) o Pedro. (Imperfeito / Perfeito)",
+    answer: ["caminhava", "encontrei"]
   },
   {
     type: "fill",
-    question: "Eu ___ um livro quando o telefone ___. (ler / tocar)",
-    answer: ["lia", "tocou"]
+    question: "Tu ___ (ter) fome quando ___ (comprar) o pão? (Imperfeito / Perfeito)",
+    answer: ["tinhas", "compraste"]
   },
   {
     type: "fill",
-    question: "Eu ___ cansado e ___ ir para casa. (estar / decidir — состояние + решение)",
-    answer: ["estava", "decidi"]
+    question: "Ela ___ (sentir-se) mal e ___ (ir) ao médico. (Imperfeito / Perfeito)",
+    answer: ["sentia", "foi"]
   },
   {
     type: "fill",
-    question: "Eles ___ no Porto, mas ___ para Lisboa. (viver / mudar-se — фон + новое действие)",
-    answer: ["viviam", "mudaram-se"]
+    question: "O tempo ___ (estar) bom quando nós ___ (sair). (Imperfeito / Perfeito)",
+    answer: ["estava", "saímos"]
   },
-  // === Определение типа действия ===
+  {
+    type: "fill",
+    question: "Eu ___ (estar) a ler quando ___ (começar) a chover. (Imperfeito / Perfeito)",
+    answer: ["estava", "começou"]
+  },
+  {
+    type: "fill",
+    question: "Eu ___ (acordar) e ___ (estar) sol. (Perfeito / Imperfeito)",
+    answer: ["acordei", "estava"]
+  },
+  {
+    type: "fill",
+    question: "O telefone ___ (tocar) enquanto eu ___ (fazer) o jantar. (Perfeito / Imperfeito)",
+    answer: ["tocou", "fazia"]
+  },
+  {
+    type: "fill",
+    question: "O professor ___ (expulsar) o aluno porque ele não ___ (pagar) as propinas. (Perfeito / Imperfeito)",
+    answer: ["expulsou", "pagava"]
+  },
+  {
+    type: "fill",
+    question: "Eu ___ (estar) no café quando ___ (ver) a Ana. (Imperfeito / Perfeito)",
+    answer: ["estava", "vi"]
+  },
+  {
+    type: "fill",
+    question: "Tu ___ (desligar) a televisão? — Sim, ___ (estar) ligada. (Perfeito / Imperfeito)",
+    answer: ["desligaste", "estava"]
+  },
+
+  // === Ex2: Впишите правильное время (10 items) ===
   {
     type: "choice",
-    question: "Какое предложение описывает привычное действие?",
-    options: [
-      "Ontem comprei um livro.",
-      "Todos os dias ia à escola a pé.",
-      "Cheguei às oito.",
-      "Ele deu-me um presente."
-    ],
+    question: "Ela ___ comprar um carro novo. (querer — состояние/желание в прошлом)",
+    options: ["quis", "queria", "quer", "quererá"],
     correct: 1,
-    explanation: "«Todos os dias ia à escola a pé» — повторяющееся привычное действие, поэтому Imperfeito."
+    explanation: "Состояние или желание в прошлом — Imperfeito: queria."
   },
   {
     type: "choice",
-    question: "Какое предложение описывает завершённое однократное действие?",
-    options: [
-      "Chovia muito.",
-      "Eu estudava todos os dias.",
-      "O João telefonou às cinco.",
-      "Ela era muito bonita."
-    ],
-    correct: 2,
-    explanation: "«O João telefonou às cinco» — завершённое однократное действие с точным временем — Perfeito."
-  },
-  // === Правило: замена ===
-  {
-    type: "choice",
-    question: "Ключевое правило: если можно заменить на «обычно делал» или «в тот момент делал», используется...",
-    options: ["Perfeito", "Imperfeito", "Mais-que-Perfeito", "Futuro"],
+    question: "Eles ___ de praia. (gostar — привычка/характеристика в прошлом)",
+    options: ["gostaram", "gostavam", "gostam", "gostarão"],
     correct: 1,
-    explanation: "Если можно заменить на «обычно делал» или «в тот момент делал» — Imperfeito. Если «сделал» — Perfeito."
-  },
-  // === Переводы ===
-  {
-    type: "translate",
-    source: "Когда я выходил из дома, начался дождь.",
-    direction: "ru-pt",
-    answer: ["Quando eu saía de casa, começou a chover.", "Quando saía de casa, começou a chover."]
-  },
-  {
-    type: "translate",
-    source: "Я читал книгу, когда зазвонил телефон.",
-    direction: "ru-pt",
-    answer: ["Eu lia um livro quando o telefone tocou.", "Estava a ler um livro quando o telefone tocou."]
-  },
-  {
-    type: "translate",
-    source: "Вчера я поел рыбу.",
-    direction: "ru-pt",
-    answer: ["Ontem comi peixe.", "Ontem eu comi peixe."]
-  },
-  {
-    type: "translate",
-    source: "Он встал, принял душ и вышел.",
-    direction: "ru-pt",
-    answer: ["Ele levantou-se, tomou banho e saiu.", "Levantou-se, tomou banho e saiu."]
-  },
-  {
-    type: "translate",
-    source: "Раньше она была очень стеснительной.",
-    direction: "ru-pt",
-    answer: ["Antigamente ela era muito tímida.", "Antes ela era muito tímida."]
-  },
-  // === Сложные предложения ===
-  {
-    type: "choice",
-    question: "Quando ___ (chegar) a casa, a minha mãe ___ (cozinhar).",
-    options: [
-      "cheguei / cozinhava",
-      "chegava / cozinhava",
-      "cheguei / cozinhou",
-      "chegava / cozinhou"
-    ],
-    correct: 0,
-    explanation: "«Cheguei» — завершённое событие (приехал). «Cozinhava» — фоновое действие (готовила)."
+    explanation: "Привычка или характеристика — Imperfeito: gostavam."
   },
   {
     type: "choice",
-    question: "Ela ___ (estar) doente e por isso não ___ (ir) trabalhar.",
-    options: [
-      "estava / foi",
-      "esteve / ia",
-      "estava / ia",
-      "esteve / foi"
-    ],
-    correct: 0,
-    explanation: "«Estava doente» — состояние (Imperfeito). «Não foi trabalhar» — завершённое решение/действие (Perfeito)."
+    question: "O tempo ___ sempre bom naquela região. (ser — описание)",
+    options: ["foi", "era", "é", "será"],
+    correct: 1,
+    explanation: "Описание постоянного состояния в прошлом — Imperfeito: era."
+  },
+  {
+    type: "choice",
+    question: "No domingo passado nós ___ ao museu. (ir — завершённое действие)",
+    options: ["íamos", "fomos", "imos", "vamos"],
+    correct: 1,
+    explanation: "Завершённое действие с конкретным маркером (no domingo passado) — Perfeito: fomos."
   },
   {
     type: "fill",
-    question: "O tempo ___ bom e nós ___ ir à praia. (estar / decidir)",
-    answer: ["estava", "decidimos"]
+    question: "A Maria ___ o avô no hospital. (visitar — однократное действие в прошлом)",
+    answer: "visitou"
   },
+  {
+    type: "fill",
+    question: "Eles ___ a comida para a festa. (fazer — завершённое действие)",
+    answer: "fizeram"
+  },
+  {
+    type: "choice",
+    question: "Tu ___ em casa ontem? (estar — состояние/обстановка)",
+    options: ["estiveste", "estavas", "estás", "estarás"],
+    correct: 1,
+    explanation: "Вопрос об обстановке/состоянии — Imperfeito: estavas."
+  },
+  {
+    type: "choice",
+    question: "Eles não ___ nada sobre o assunto. (saber — состояние)",
+    options: ["souberam", "sabiam", "sabem", "saberão"],
+    correct: 1,
+    explanation: "Состояние незнания в прошлом — Imperfeito: sabiam."
+  },
+  {
+    type: "fill",
+    question: "A aula ___ às nove da manhã. (começar — конкретное событие)",
+    answer: "começou"
+  },
+  {
+    type: "fill",
+    question: "Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)",
+    answer: ["comeu", "estava"]
+  },
+
+  // === Ex3: Расставьте события в правильном порядке ===
   {
     type: "order",
-    question: "Составьте предложение: «Пока она готовила, он приехал.»",
-    words: ["Enquanto", "ela", "cozinhava", "ele", "chegou"],
-    answer: "Enquanto ela cozinhava, ele chegou."
+    question: "Расставьте предложения в хронологическом порядке рассказа о дне:\n1. Saí de casa.\n2. Voltei para casa.\n3. Tomei o pequeno-almoço.\n4. Jantei.\n5. Fui trabalhar.\n6. Acordei cedo.\n7. Trabalhei o dia todo.\n8. Fui para a cama.",
+    words: ["6", "3", "1", "5", "7", "2", "4", "8"],
+    answer: "6 3 1 5 7 2 4 8"
   },
-  // === Маркеры: к какому времени? ===
+
+  // === Ex4: Заполните нарратив о поездке (12 items) ===
+  {
+    type: "fill",
+    question: "No mês passado ___ férias. (ter — Perfeito, 1 л. ед.ч.)",
+    answer: "tive"
+  },
+  {
+    type: "fill",
+    question: "Antes das férias ___ muito. (trabalhar — Perfeito, 1 л. ед.ч.)",
+    answer: "trabalhei"
+  },
+  {
+    type: "fill",
+    question: "Eu ___ exausto. (estar — Imperfeito)",
+    answer: "estava"
+  },
+  {
+    type: "fill",
+    question: "Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)",
+    answer: "decidimos"
+  },
+  {
+    type: "fill",
+    question: "___ as malas e partimos. (fazer — Perfeito, 1 л. мн.ч.)",
+    answer: "Fizemos"
+  },
+  {
+    type: "fill",
+    question: "As praias ___ lindas. (estar — Imperfeito)",
+    answer: "estavam"
+  },
+  {
+    type: "fill",
+    question: "Os dias ___ longos e quentes. (ser — Imperfeito)",
+    answer: "eram"
+  },
+  {
+    type: "fill",
+    question: "___ com muita gente interessante. (conversar — Perfeito, 1 л. мн.ч.)",
+    answer: "Conversámos"
+  },
+  {
+    type: "fill",
+    question: "Nós ___ a um restaurante típico. (ir — Perfeito)",
+    answer: "fomos"
+  },
+  {
+    type: "fill",
+    question: "___ toda a costa algarvia. (percorrer — Perfeito, 1 л. мн.ч.)",
+    answer: "Percorremos"
+  },
+  {
+    type: "fill",
+    question: "___ de descanso. (precisar — Imperfeito, 1 л. мн.ч.)",
+    answer: "Precisávamos"
+  },
+  {
+    type: "fill",
+    question: "___ um hotel tranquilo. (escolher — Perfeito, 1 л. мн.ч.)",
+    answer: "Escolhemos"
+  },
+
+  // === Ex5: Переведите вопросы (5 items) ===
+  {
+    type: "translate",
+    source: "Что ты делал, когда я позвонил?",
+    direction: "ru-pt",
+    answer: ["O que fazias quando eu telefonei?", "O que é que tu fazias quando eu telefonei?"]
+  },
+  {
+    type: "translate",
+    source: "Где они жили раньше?",
+    direction: "ru-pt",
+    answer: ["Onde é que eles viviam antes?", "Onde viviam antes?"]
+  },
+  {
+    type: "translate",
+    source: "Ты купил подарок вчера?",
+    direction: "ru-pt",
+    answer: ["Compraste o presente ontem?", "Tu compraste o presente ontem?"]
+  },
+  {
+    type: "translate",
+    source: "Шёл дождь, когда вы вышли?",
+    direction: "ru-pt",
+    answer: ["Chovia quando vocês saíram?", "Estava a chover quando vocês saíram?"]
+  },
+  {
+    type: "translate",
+    source: "Что он сказал, когда пришёл?",
+    direction: "ru-pt",
+    answer: ["O que é que ele disse quando chegou?", "O que disse quando chegou?"]
+  },
+
+  // === Ex6: Переведите предложения (8 items) ===
+  {
+    type: "translate",
+    source: "Когда я проснулся, светило солнце.",
+    direction: "ru-pt",
+    answer: ["Quando acordei, fazia sol.", "Quando eu acordei, fazia sol."]
+  },
+  {
+    type: "translate",
+    source: "Она читала книгу, когда зазвонил телефон.",
+    direction: "ru-pt",
+    answer: ["Ela lia um livro quando o telefone tocou.", "Estava a ler um livro quando o telefone tocou."]
+  },
+  {
+    type: "translate",
+    source: "Мы пошли в ресторан и поели рыбу.",
+    direction: "ru-pt",
+    answer: ["Fomos ao restaurante e comemos peixe.", "Nós fomos ao restaurante e comemos peixe."]
+  },
+  {
+    type: "translate",
+    source: "Раньше он жил в Порту, но потом переехал в Лиссабон.",
+    direction: "ru-pt",
+    answer: ["Antes vivia no Porto, mas depois mudou-se para Lisboa.", "Antigamente ele vivia no Porto, mas depois mudou-se para Lisboa."]
+  },
+  {
+    type: "translate",
+    source: "Дети играли во дворе, когда начался дождь.",
+    direction: "ru-pt",
+    answer: ["As crianças brincavam no quintal quando começou a chover."]
+  },
+  {
+    type: "translate",
+    source: "Я был уставшим и решил остаться дома.",
+    direction: "ru-pt",
+    answer: ["Estava cansado e decidi ficar em casa.", "Eu estava cansado e decidi ficar em casa."]
+  },
+  {
+    type: "translate",
+    source: "Каждый день он покупал газету в киоске.",
+    direction: "ru-pt",
+    answer: ["Todos os dias ele comprava o jornal no quiosque.", "Todos os dias comprava o jornal no quiosque."]
+  },
+  {
+    type: "translate",
+    source: "Вчера мы посетили музей.",
+    direction: "ru-pt",
+    answer: ["Ontem visitámos o museu.", "Ontem nós visitámos o museu."]
+  },
+
+  // === Ex7: Заполните исторический текст (9 items) ===
+  {
+    type: "fill",
+    question: "Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)",
+    answer: "tiveram"
+  },
+  {
+    type: "fill",
+    question: "Eles ___ grande parte do território. (ocupar — Perfeito)",
+    answer: "ocuparam"
+  },
+  {
+    type: "fill",
+    question: "As cidades ___ centros de cultura e comércio. (ser — Imperfeito)",
+    answer: "eram"
+  },
+  {
+    type: "fill",
+    question: "Os mouros ___ na península durante séculos. (permanecer — Perfeito)",
+    answer: "permaneceram"
+  },
+  {
+    type: "fill",
+    question: "Eles ___ a arquitetura e a língua. (influenciar — Perfeito)",
+    answer: "influenciaram"
+  },
+  {
+    type: "fill",
+    question: "A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)",
+    answer: "revelou"
+  },
+  {
+    type: "fill",
+    question: "A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)",
+    answer: "contribuiu"
+  },
+  {
+    type: "fill",
+    question: "Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)",
+    answer: "introduziram"
+  },
+  {
+    type: "fill",
+    question: "As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)",
+    answer: "contrastavam"
+  },
+
+  // === Дополнительные упражнения: match, order, choice ===
   {
     type: "match",
     question: "Соотнесите маркер с временем (Perfeito или Imperfeito):",
@@ -234,38 +339,20 @@ export const exercises = [
   },
   {
     type: "choice",
-    question: "Vivi em Lisboa ___ dois anos. (жил два года — определённый период)",
-    options: ["durante", "enquanto", "sempre", "normalmente"],
-    correct: 0,
-    explanation: "«Durante dois anos» — определённый период; используется Perfeito: «Vivi em Lisboa durante dois anos.»"
-  },
-  {
-    type: "fill",
-    question: "A criança ___ e a mãe ___. (chorar — фон / entrar — событие)",
-    answer: ["chorava", "entrou"]
-  },
-  {
-    type: "choice",
-    question: "Как правильно: «Когда я был молодым, я много путешествовал»?",
+    question: "Ключевое правило: фоновое действие — ___, а прервавшее событие — ___.",
     options: [
-      "Quando fui jovem, viajei muito.",
-      "Quando era jovem, viajava muito.",
-      "Quando era jovem, viajei muito.",
-      "Quando fui jovem, viajava muito."
+      "Perfeito / Imperfeito",
+      "Imperfeito / Perfeito",
+      "Imperfeito / Imperfeito",
+      "Perfeito / Perfeito"
     ],
     correct: 1,
-    explanation: "«Когда я был молодым» — длительное состояние (Imperfeito: era). «Много путешествовал» — привычное действие (Imperfeito: viajava)."
+    explanation: "Фоновое/длительное действие — Imperfeito, прервавшее его конкретное событие — Perfeito."
   },
   {
-    type: "choice",
-    question: "___ (estar) a chover quando eu ___ (sair) do escritório.",
-    options: [
-      "Estava / saí",
-      "Esteve / saía",
-      "Estava / saía",
-      "Esteve / saí"
-    ],
-    correct: 0,
-    explanation: "«Estava a chover» — фон, длительное действие (Imperfeito). «Saí» — конкретное событие (Perfeito)."
+    type: "order",
+    question: "Составьте предложение: «Пока она готовила, он вернулся домой.»",
+    words: ["Enquanto", "ela", "cozinhava", "ele", "voltou", "para", "casa"],
+    answer: "Enquanto ela cozinhava, ele voltou para casa."
   }
 ];
