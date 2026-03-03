@@ -641,19 +641,24 @@ export const Lesson = {
       const ex = this.batchExercises[this.currentExerciseIdx];
       if (!ex) return;
       if (ex.type === 'match' && ex.pairs) {
-        this.matchLeft = ex.pairs.map(p => p.left);
-        const rights = ex.pairs.map(p => p.right);
-        const shuffled = [...rights];
-        for (let i = shuffled.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        this.matchLeft = ex.pairs.map(function(p) { return Array.isArray(p) ? p[0] : p.left; });
+        var rights = ex.pairs.map(function(p) { return Array.isArray(p) ? p[1] : p.right; });
+        var shuffled = [].concat(rights);
+        for (var i = shuffled.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = shuffled[i]; shuffled[i] = shuffled[j]; shuffled[j] = tmp;
         }
         this.matchRight = shuffled;
         this.matchRightMap = {};
-        shuffled.forEach((val, si) => {
-          const origIdx = rights.indexOf(val);
+        var usedOrigIndices = {};
+        shuffled.forEach(function(val, si) {
+          var origIdx = -1;
+          for (var k = 0; k < rights.length; k++) {
+            if (rights[k] === val && !usedOrigIndices[k]) { origIdx = k; break; }
+          }
+          usedOrigIndices[origIdx] = true;
           this.matchRightMap[si] = origIdx;
-        });
+        }.bind(this));
       }
       if (ex.type === 'order' && ex.words) {
         const shuffled = [...ex.words];
@@ -687,11 +692,12 @@ export const Lesson = {
       if (this.answered || !this.textAnswer.trim()) return;
       this.answered = true;
       const userAnswer = this.textAnswer.trim().toLowerCase();
-      const accepts = Array.isArray(this.currentBatchExercise.answer)
-        ? this.currentBatchExercise.answer
-        : [this.currentBatchExercise.answer];
-      this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer));
-      this.correctAnswer = accepts[0];
+      const answer = this.currentBatchExercise.answer;
+      const accepts = Array.isArray(answer) ? answer : [answer];
+      const joined = Array.isArray(answer) ? answer.join(' ') : null;
+      this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer))
+        || (joined && this.normalize(joined) === this.normalize(userAnswer));
+      this.correctAnswer = joined || accepts[0];
       if (this.lastCorrect) {
         this.correctCount++;
         this.batchCorrectCount++;
@@ -702,11 +708,12 @@ export const Lesson = {
       if (this.answered || !this.textAnswer.trim()) return;
       this.answered = true;
       const userAnswer = this.textAnswer.trim().toLowerCase();
-      const accepts = Array.isArray(this.currentBatchExercise.answer)
-        ? this.currentBatchExercise.answer
-        : [this.currentBatchExercise.answer];
-      this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer));
-      this.correctAnswer = accepts[0];
+      const answer = this.currentBatchExercise.answer;
+      const accepts = Array.isArray(answer) ? answer : [answer];
+      const joined = Array.isArray(answer) ? answer.join(' ') : null;
+      this.lastCorrect = accepts.some(a => this.normalize(a) === this.normalize(userAnswer))
+        || (joined && this.normalize(joined) === this.normalize(userAnswer));
+      this.correctAnswer = joined || accepts[0];
       if (this.lastCorrect) {
         this.correctCount++;
         this.batchCorrectCount++;
@@ -735,14 +742,17 @@ export const Lesson = {
     },
 
     isMatchPairCorrect(leftIdx) {
-      const rightIdx = this.matchPairs[leftIdx];
+      var rightIdx = this.matchPairs[leftIdx];
       if (rightIdx === undefined) return false;
-      return this.matchRightMap[rightIdx] === leftIdx;
+      var selectedRight = this.matchRight[rightIdx];
+      var pair = this.currentBatchExercise.pairs[leftIdx];
+      var correctRight = Array.isArray(pair) ? pair[1] : pair.right;
+      return selectedRight === correctRight;
     },
 
     isMatchRightCorrect(rightIdx) {
-      for (const [l, r] of Object.entries(this.matchPairs)) {
-        if (parseInt(r) === rightIdx) return this.matchRightMap[rightIdx] === parseInt(l);
+      for (var l in this.matchPairs) {
+        if (parseInt(this.matchPairs[l]) === rightIdx) return this.isMatchPairCorrect(parseInt(l));
       }
       return false;
     },
@@ -755,7 +765,11 @@ export const Lesson = {
         if (!this.isMatchPairCorrect(i)) { allCorrect = false; break; }
       }
       this.lastCorrect = allCorrect;
-      this.correctAnswer = this.currentBatchExercise.pairs.map(p => p.left + ' \u2192 ' + p.right).join(', ');
+      this.correctAnswer = this.currentBatchExercise.pairs.map(function(p) {
+        var l = Array.isArray(p) ? p[0] : p.left;
+        var r = Array.isArray(p) ? p[1] : p.right;
+        return l + ' \u2192 ' + r;
+      }).join(', ');
       if (this.lastCorrect) {
         this.correctCount++;
         this.batchCorrectCount++;
