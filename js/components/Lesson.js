@@ -590,16 +590,35 @@ export const Lesson = {
       this.practiceView = 'exercises';
       this.exerciseStarted = true;
       this.exerciseFinished = false;
-      this.currentBatch = 0;
-      this.currentExerciseIdx = 0;
-      this.correctCount = 0;
-      this.attemptedCount = 0;
-      this.batchCorrectCount = 0;
       this.batchFinished = false;
       this.answered = false;
       this.selectedAnswer = null;
       this.textAnswer = '';
       this.resetMatchOrder();
+
+      // Check saved progress to resume from where user left off
+      var p = (this.progress || {})[this.unit && this.unit.id];
+      var done = p ? (p.exercisesCompleted || 0) : 0;
+      var total = this.exerciseCount;
+
+      if (done > 0 && done < total) {
+        // Resume: calculate batch and position
+        this.currentBatch = Math.floor(done / this.batchSize);
+        this.currentExerciseIdx = done % this.batchSize;
+        // Restore correctCount from saved score
+        var score = p.score || 0;
+        this.correctCount = Math.round(score * done / 100);
+        this.attemptedCount = done;
+        this.batchCorrectCount = 0;
+      } else {
+        // Start fresh (new or retry after 100%)
+        this.currentBatch = 0;
+        this.currentExerciseIdx = 0;
+        this.correctCount = 0;
+        this.attemptedCount = 0;
+        this.batchCorrectCount = 0;
+      }
+
       this.initExerciseType();
     },
 
@@ -612,6 +631,8 @@ export const Lesson = {
       this.selectedAnswer = null;
       this.textAnswer = '';
       this.resetMatchOrder();
+      // Save progress so resuming works if user leaves mid-batch
+      this.saveCurrentProgress(false);
       this.$nextTick(() => {
         this.initExerciseType();
       });
@@ -816,7 +837,13 @@ export const Lesson = {
     },
 
     saveCurrentProgress(finished) {
-      var attempted = this.overallExerciseIdx + (this.answered ? 1 : 0);
+      var attempted;
+      if (this.exerciseFinished) {
+        // Final save — use attemptedCount set by finishExercises/nextExercise
+        attempted = this.attemptedCount;
+      } else {
+        attempted = this.overallExerciseIdx + (this.answered ? 1 : 0);
+      }
       var total = this.unit.exercises.length;
       var score = attempted > 0 ? Math.round((this.correctCount / attempted) * 100) : 0;
       this.$emit('update-progress', {
