@@ -30,7 +30,18 @@ export default {
     },
     {
       heading: "Contractions of articles with prepositions",
-      text: "In European Portuguese, definite articles contract with the prepositions de, em, a, por."
+      text: "In European Portuguese, definite articles contract with the prepositions de, em, a, por. Each preposition has its own meanings:"
+    },
+    {
+      table: {
+        headers: ["Preposition", "Meaning", "English equivalents"],
+        rows: [
+          ["de", "possession, origin, description", "of, from, in"],
+          ["em", "location, time, topic", "in, on, at, about"],
+          ["a", "direction, time, recipient", "to, at, on"],
+          ["por", "cause, agent, route", "for, by, through, along"]
+        ]
+      }
     },
     {
       table: {
@@ -45,10 +56,17 @@ export default {
     },
     {
       examples: [
-        { ru: "The boy is at school." },
-        { ru: "A girl arrived." },
-        { ru: "I like coffee." },
-        { ru: "I'm going to the cinema." }
+        { ru: "Portugal is the most western country in the European continent. (de — possession)" },
+        { ru: "London is the capital city of England. (de — possession)" },
+        { ru: "They come from the Azores. (de — origin)" },
+        { ru: "He lives on the second floor. (em — location)" },
+        { ru: "There are always nice people at Isabel's parties. (em — location; de — possession)" },
+        { ru: "Paulo is going to the cinema. (a — direction)" },
+        { ru: "Ana arrives at one o'clock. (a — time)" },
+        { ru: "José only rests on Sundays. (a — time)" },
+        { ru: "I'll wait for João. (por — waiting for someone)" },
+        { ru: "This recipe was created by Sandra. (por — agent)" },
+        { ru: "The two students walk through the city parks. (por — route)" }
       ]
     },
     {
@@ -56,7 +74,7 @@ export default {
     },
     {
       heading: "Contraction of the indefinite article",
-      text: "Indefinite articles also contract with the prepositions em and de. The forms with de (dum, duma) are more common in spoken Portuguese."
+      text: "Indefinite articles also contract with the prepositions em and de. The meanings are the same: em — location (in, on, at), de — possession (of), origin (from). The forms with de (dum, duma) are more common in spoken Portuguese; in written language the separate form is preferred: de uma."
     },
     {
       table: {
@@ -69,10 +87,10 @@ export default {
     },
     {
       examples: [
-        { ru: "She lives in a big house." },
-        { ru: "He works at a Portuguese company." },
-        { ru: "He's the son of a friend of mine." },
-        { ru: "I need a grammar book." }
+        { ru: "She is on a plane to New York. (em — location)" },
+        { ru: "He is at an awkward age. (em — state)" },
+        { ru: "She's the daughter of a teacher. (de — possession)" },
+        { ru: "He comes from a distant land. (de — origin)" }
       ]
     }
   ],
