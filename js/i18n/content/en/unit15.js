@@ -36,6 +36,18 @@ export default {
     },
     {
       note: "In European Portuguese, the article before the possessive is mandatory: \u00abo meu livro\u00bb (my book), not just \u00abmeu livro\u00bb (as in Brazilian). Exception \u2014 exclamations: \u00abMeu Deus!\u00bb (My God!)."
+    },
+    {
+      heading: "Omitting the possessive pronoun",
+      text: "The possessive pronoun is usually omitted (and replaced with the definite article) when it is clear who possesses the item. This is especially common with parts of the body, clothing and footwear."
+    },
+    {
+      examples: [
+        { pt: "Vou cortar o cabelo.", ru: "I'm going to have my hair cut. (= my hair)" },
+        { pt: "Doem-me as costas.", ru: "My back hurts." },
+        { pt: "Vou cal\u00e7ar os sapatos e j\u00e1 saio.", ru: "I'm going to put my shoes on and will be out shortly." },
+        { pt: "Ela n\u00e3o diz nada \u00e0 irm\u00e3.", ru: "She doesn't tell her sister anything. (= her own sister)" }
+      ]
     }
   ],
   vocabulary: [

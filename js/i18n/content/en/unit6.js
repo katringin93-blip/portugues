@@ -37,7 +37,47 @@ export default {
     },
     {
       note: "The construction «é que» is a characteristic feature of European Portuguese. It is inserted after the interrogative word and is not translated: «Onde é que moras?» = «Onde moras?» (Where do you live?)."
+    },
+    {
+      heading: "Reinforcing questions with «é que»",
+      text: "In European Portuguese, the construction «é que» is often added after the interrogative word to reinforce the question. It doesn't change the meaning but sounds more natural in spoken Portuguese."
+    },
+    {
+      examples: [
+        { pt: "Que horas é que são?", ru: "What time is it?" },
+        { pt: "Quanto tempo é que demora a viagem?", ru: "How long does the journey take?" },
+        { pt: "Como é que se chama?", ru: "What is your name?" },
+        { pt: "Porque é que fazem tantas perguntas?", ru: "Why do you ask so many questions?" }
+      ]
+    },
+    {
+      heading: "Prepositions with interrogative words",
+      text: "The interrogative words que, onde and quem can be used with prepositions. The preposition is placed before the interrogative word."
+    },
+    {
+      table: {
+        headers: ["Construction", "Example", "Translation"],
+        rows: [
+          ["a que", "A que horas começas a trabalhar?", "What time do you start work?"],
+          ["de que", "De que falas?", "What are you talking about?"],
+          ["em que", "Em que cidade vives?", "In which city do you live?"],
+          ["aonde (a + onde)", "Aonde vais?", "Where are you going?"],
+          ["donde (de + onde)", "Donde vem o João?", "Where does João come from?"],
+          ["para onde", "Para onde vais viver?", "Where are you going to live?"],
+          ["a quem", "A quem dizes isso?", "To whom do you say that?"],
+          ["com quem", "Com quem estás a falar?", "Who are you talking to?"],
+          ["de quem", "De quem estás a falar?", "Who are you talking about?"],
+          ["para quem", "Para quem trabalha a Isabel?", "Who does Isabel work for?"]
+        ]
+      }
+    },
+    {
+      note: "Unlike in English, in Portuguese the preposition is placed at the beginning of the question, before the interrogative word: «De que falas?» (What are you talking about?), not *«Que de falas?»."
     }
+  ],
+  lessons: [
+    { title: "Part 1: Interrogative words" },
+    { title: "Part 2: «É que» and prepositions" }
   ],
   vocabulary: [
     { ru: "who" },

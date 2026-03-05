@@ -121,7 +121,14 @@ export function applyContentOverlay(unit, overlay) {
     });
   }
 
-  // Exercise overlay — skip (overlays are stale after session 7 rewrite)
+  // Exercise overlay
+  if (overlay.exercises && unit.exercises) {
+    result.exercises = unit.exercises.map(function(ex, i) {
+      var over = overlay.exercises[i];
+      if (!over) return ex;
+      return Object.assign({}, ex, over);
+    });
+  }
 
   // Vocabulary overlay (translations)
   if (overlay.vocabulary && unit.vocabulary) {

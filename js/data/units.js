@@ -903,7 +903,47 @@ export const units = [
       },
       {
         note: "Конструкция «é que» — характерная черта европейского португальского. Она вставляется после вопросительного слова и не переводится: «Onde é que moras?» = «Onde moras?» (Где ты живёшь?)."
+      },
+      {
+        heading: "Усиление вопроса с «é que»",
+        text: "В европейском португальском часто добавляют конструкцию «é que» после вопросительного слова для усиления вопроса. Это не меняет значение, но звучит естественнее в разговорной речи."
+      },
+      {
+        examples: [
+          { pt: "Que horas é que são?", ru: "Который час?" },
+          { pt: "Quanto tempo é que demora a viagem?", ru: "Сколько времени занимает путешествие?" },
+          { pt: "Como é que se chama?", ru: "Как вас зовут?" },
+          { pt: "Porque é que fazem tantas perguntas?", ru: "Почему вы задаёте столько вопросов?" }
+        ]
+      },
+      {
+        heading: "Предлоги с вопросительными словами",
+        text: "Вопросительные слова que, onde и quem могут использоваться с предлогами. Предлог ставится перед вопросительным словом."
+      },
+      {
+        table: {
+          headers: ["Конструкция", "Пример", "Перевод"],
+          rows: [
+            ["a que", "A que horas começas a trabalhar?", "Во сколько ты начинаешь работать?"],
+            ["de que", "De que falas?", "О чём ты говоришь?"],
+            ["em que", "Em que cidade vives?", "В каком городе ты живёшь?"],
+            ["aonde (a + onde)", "Aonde vais?", "Куда ты идёшь?"],
+            ["donde (de + onde)", "Donde vem o João?", "Откуда Жуау?"],
+            ["para onde", "Para onde vais viver?", "Куда ты переезжаешь?"],
+            ["a quem", "A quem dizes isso?", "Кому ты это говоришь?"],
+            ["com quem", "Com quem estás a falar?", "С кем ты разговариваешь?"],
+            ["de quem", "De quem estás a falar?", "О ком ты говоришь?"],
+            ["para quem", "Para quem trabalha a Isabel?", "На кого работает Изабел?"]
+          ]
+        }
+      },
+      {
+        note: "В отличие от русского, в португальском предлог ставится в начале вопроса, перед вопросительным словом: «De que falas?» (О чём говоришь?), а не *«Que de falas?»."
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Вопросительные слова", theoryRange: [0, 5] },
+      { title: "Часть 2: «É que» и предлоги", theoryRange: [5, 10] }
     ],
     exercises: ex6,
     vocabulary: [
@@ -1017,7 +1057,23 @@ export const units = [
           { pt: "O João gosta de qualquer filme, mas nem sequer ele gosta deste.", ru: "Жуау нравится любой фильм, но даже ему не нравится этот." },
           { pt: "Ela não fala nem português nem espanhol.", ru: "Она не говорит ни по-португальски, ни по-испански." }
         ]
+      },
+      {
+        heading: "Отрицательные вопросы и ответы",
+        text: "Вопросы можно задавать в отрицательной форме. При отрицательном ответе não может стоять и в начале, и в конце предложения, помимо обязательного não перед глаголом."
+      },
+      {
+        examples: [
+          { pt: "Não tens medo de ficar em casa sozinha?", ru: "Тебе не страшно оставаться дома одной?" },
+          { pt: "Ninguém sabe que horas são?", ru: "Никто не знает, который час?" },
+          { pt: "Não, não tenho medo.", ru: "Нет, я не боюсь." },
+          { pt: "Não quero beber nada, não.", ru: "Нет, я не хочу ничего пить." }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Простое отрицание и отрицательные слова", theoryRange: [0, 6] },
+      { title: "Часть 2: Nem и отрицательные вопросы", theoryRange: [6, 10] }
     ],
     exercises: ex7,
     vocabulary: [
@@ -1144,7 +1200,39 @@ export const units = [
       },
       {
         note: "В европейском португальском «мобильный телефон» — telemóvel, а не celular (браз.). «Автобус» — autocarro, а не ônibus."
+      },
+      {
+        heading: "Ser и estar с прилагательными: изменение значения",
+        text: "Некоторые прилагательные меняют значение в зависимости от того, используются ли они с ser или estar."
+      },
+      {
+        table: {
+          headers: ["С ser", "Значение", "С estar", "Значение"],
+          rows: [
+            ["ser aborrecido", "быть скучным, нудным", "estar aborrecido", "быть в скуке, скучать"],
+            ["ser consciente", "быть сознательным, ответственным", "estar consciente", "быть в сознании"],
+            ["ser inconsciente", "быть безответственным", "estar inconsciente", "быть без сознания"],
+            ["ser atrasado", "быть отсталым, старомодным", "estar atrasado", "опаздывать"],
+            ["ser convencido", "быть самодовольным", "estar convencido", "быть убеждённым"]
+          ]
+        }
+      },
+      {
+        heading: "Настоящее длительное: estar a + инфинитив",
+        text: "Для описания действия, происходящего в данный момент, используется конструкция «estar a + инфинитив». Глагол estar спрягается, а основной глагол остаётся в инфинитиве. Это аналог английского Present Continuous."
+      },
+      {
+        examples: [
+          { pt: "Está a chover.", ru: "Идёт дождь (сейчас)." },
+          { pt: "A Joana está a ler o jornal.", ru: "Жуана читает газету (сейчас)." },
+          { pt: "Estamos a preparar o jantar.", ru: "Мы готовим ужин (сейчас)." },
+          { pt: "Estou a estudar na universidade.", ru: "Я учусь в университете (сейчас)." }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Ser и Estar — основы", theoryRange: [0, 8] },
+      { title: "Часть 2: Прилагательные и estar a + инфинитив", theoryRange: [8, 12] }
     ],
     exercises: ex8,
     vocabulary: [
@@ -1854,7 +1942,26 @@ export const units = [
           { pt: "Eles cumprimentam-se um ao outro.", ru: "Они здороваются друг с другом." },
           { pt: "As irmãs telefonam-se uma à outra todas as noites.", ru: "Сёстры звонят друг другу каждый вечер." }
         ]
+      },
+      {
+        heading: "Позиция возвратного местоимения: подробные правила",
+        text: "По умолчанию возвратное местоимение ставится после глагола через дефис (энклизис). Но в определённых случаях оно переходит перед глагол (проклизис): после отрицаний (não, nunca, ninguém), после вопросительных слов (como, onde, quando), после союзов (que, porque, quando, se), после наречий (já, ainda, sempre, também), после неопределённых местоимений (nenhum, tudo, alguém)."
+      },
+      {
+        examples: [
+          { pt: "Ela nunca se lembra do João.", ru: "Она никогда не вспоминает о Жуау." },
+          { pt: "Como te chamas?", ru: "Как тебя зовут?" },
+          { pt: "A que horas te levantas?", ru: "Во сколько ты встаёшь?" },
+          { pt: "Nenhum de vocês se levanta cedo ao domingo.", ru: "Никто из вас не встаёт рано в воскресенье." }
+        ]
+      },
+      {
+        note: "Возвратное «se» в 3-м лице может обозначать неопределённый субъект (аналог русского «-ся»): «Vende-se» (Продаётся), «Vendem-se carros» (Продаются машины), «No verão vai-se à praia» (Летом ходят на пляж)."
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Возвратные местоимения и глаголы", theoryRange: [0, 7] },
+      { title: "Часть 2: Взаимные действия и позиция местоимения", theoryRange: [7, 12] }
     ],
     exercises: ex14,
     vocabulary: [
@@ -1952,6 +2059,18 @@ export const units = [
       },
       {
         note: "В европейском португальском артикль перед притяжательным обязателен: «o meu livro» (моя книга), а не просто «meu livro» (как в бразильском). Исключение — обращения: «Meu Deus!» (Боже мой!)."
+      },
+      {
+        heading: "Опускание притяжательного местоимения",
+        text: "Притяжательное местоимение обычно опускается (вместо него используется определённый артикль), когда очевидно, кому принадлежит предмет. Это особенно характерно для частей тела, одежды и обуви."
+      },
+      {
+        examples: [
+          { pt: "Vou cortar o cabelo.", ru: "Я пойду подстричь волосы. (= мои волосы)" },
+          { pt: "Doem-me as costas.", ru: "У меня болит спина." },
+          { pt: "Vou calçar os sapatos e já saio.", ru: "Я надену ботинки и выхожу." },
+          { pt: "Ela não diz nada à irmã.", ru: "Она ничего не говорит сестре. (= своей сестре)" }
+        ]
       }
     ],
     exercises: ex15,
@@ -2349,7 +2468,33 @@ export const units = [
       },
       {
         note: "Imperfeito — одно из самых «удобных» времён, так как почти все глаголы правильные (кроме ser, ter, vir, pôr). Формы 1-го и 3-го лица ед.ч. совпадают."
+      },
+      {
+        heading: "Ir + инфинитив в Imperfeito: «собирался сделать»",
+        text: "Глагол ir в Imperfeito + инфинитив основного глагола описывает действие, которое «собирались сделать» в прошлом (аналог английского «was going to»)."
+      },
+      {
+        examples: [
+          { pt: "Eu ia telefonar à Ana, mas depois esqueci-me.", ru: "Я собирался позвонить Ане, но потом забыл." },
+          { pt: "Ela ia dar aulas este ano, mas desistiu.", ru: "Она собиралась вести уроки в этом году, но отказалась." },
+          { pt: "Nós íamos mudar de casa, mas mudámos de ideias.", ru: "Мы собирались переехать, но передумали." }
+        ]
+      },
+      {
+        heading: "Вежливые просьбы с Imperfeito",
+        text: "Imperfeito используется для вежливых просьб и пожеланий, смягчая прямое высказывание (аналог русского сослагательного «хотел бы», «мог бы»)."
+      },
+      {
+        examples: [
+          { pt: "Eu queria um café, por favor.", ru: "Я хотел бы кофе, пожалуйста." },
+          { pt: "Joana, podias fazer-me um favor?", ru: "Жуана, ты не могла бы мне помочь?" },
+          { pt: "O senhor podia dizer-me as horas?", ru: "Вы не могли бы подсказать время?" }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Imperfeito — формы и маркеры", theoryRange: [0, 9] },
+      { title: "Часть 2: Ir + инфинитив и вежливые просьбы", theoryRange: [9, 13] }
     ],
     exercises: ex18,
     vocabulary: [

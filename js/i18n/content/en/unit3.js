@@ -57,12 +57,80 @@ export default {
       ]
     },
     {
+      heading: "Days of the week (Os dias da semana)",
+      text: "In Portuguese, the days of the week from Monday to Friday are feminine and formed with a numeral + feira. Saturday and Sunday are masculine. Days of the week are NOT capitalized (except at the beginning of a sentence)."
+    },
+    {
+      table: {
+        headers: ["Portuguese", "English", "Gender", "Preposition «on»"],
+        rows: [
+          ["a segunda-feira", "Monday", "f.", "na segunda-feira"],
+          ["a terça-feira", "Tuesday", "f.", "na terça-feira"],
+          ["a quarta-feira", "Wednesday", "f.", "na quarta-feira"],
+          ["a quinta-feira", "Thursday", "f.", "na quinta-feira"],
+          ["a sexta-feira", "Friday", "f.", "na sexta-feira"],
+          ["o sábado", "Saturday", "m.", "no sábado"],
+          ["o domingo", "Sunday", "m.", "no domingo"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "He has a day off on Monday and Tuesday." },
+        { ru: "She works on Tuesday, Wednesday, and Friday." },
+        { ru: "On Saturdays I go to the market." },
+        { ru: "On Wednesdays I have a Portuguese class." }
+      ]
+    },
+    {
+      note: "In colloquial speech, the word «feira» is often dropped: na sexta = na sexta-feira (on Friday), na terça e na quinta = na terça-feira e na quinta-feira (on Tuesday and Thursday). When listing several days, «feira» is placed only after the last one: terça, quarta e sexta-feira."
+    },
+    {
+      heading: "Months, seasons, and centuries",
+      text: "After the 1990 spelling reform, months and seasons are written in lowercase. The preposition «em» is used to indicate «in» (which month)."
+    },
+    {
+      table: {
+        headers: ["Portuguese", "English", "Portuguese", "English"],
+        rows: [
+          ["janeiro", "January", "julho", "July"],
+          ["fevereiro", "February", "agosto", "August"],
+          ["março", "March", "setembro", "September"],
+          ["abril", "April", "outubro", "October"],
+          ["maio", "May", "novembro", "November"],
+          ["junho", "June", "dezembro", "December"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "In December it's cold." },
+        { ru: "Winter is from December to March." },
+        { ru: "Spring starts in March." },
+        { ru: "We are in the 21st century." }
+      ]
+    },
+    {
+      note: "Seasons: o inverno (winter), a primavera (spring), o verão (summer), o outono (autumn). Centuries are denoted with Roman numerals: o século XX (20th century), o século XXI (21st century)."
+    },
+    {
       heading: "Dates (As datas)",
-      text: "Dates are expressed with cardinal numbers: dia dois de março (March 2nd). Months are written in lowercase: janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro."
+      text: "Dates are expressed with cardinal numbers: dia dois de março (March 2nd). In numeric format, the order is: year-month-day (2014-01-03). In written form: day + «de» + month + «de» + year."
+    },
+    {
+      examples: [
+        { ru: "January third, two thousand and fourteen." },
+        { ru: "Friday, January 3rd, 2014." }
+      ]
     },
     {
       note: "Note the European forms: dezasseis (16), dezassete (17), dezanove (19) — in Brazilian Portuguese they are spelled with double «s»: dezesseis, dezessete, dezenove."
     }
+  ],
+  lessons: [
+    { title: "Part 1: Numbers and time" },
+    { title: "Part 2: Days of the week and months" },
+    { title: "Part 3: Dates" }
   ],
   vocabulary: [
     { ru: "hour" },

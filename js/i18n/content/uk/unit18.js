@@ -66,7 +66,33 @@ export default {
     },
     {
       note: "Imperfeito — один із найзручніших часів, оскільки майже всі дієслова правильні (окрім ser, ter, vir, pôr). Форми 1-ї та 3-ї особи однини збігаються."
+    },
+    {
+      heading: "Ir + інфінітив в Imperfeito: «збирався зробити»",
+      text: "Дієслово ir в Imperfeito + інфінітив основного дієслова описує дію, яку «збиралися зробити» в минулому (аналог англійського «was going to»)."
+    },
+    {
+      examples: [
+        { pt: "Eu ia telefonar à Ana, mas depois esqueci-me.", ru: "Я збирався зателефонувати Ані, але потім забув." },
+        { pt: "Ela ia dar aulas este ano, mas desistiu.", ru: "Вона збиралася вести уроки цього року, але відмовилась." },
+        { pt: "Nós íamos mudar de casa, mas mudámos de ideias.", ru: "Ми збиралися переїхати, але передумали." }
+      ]
+    },
+    {
+      heading: "Ввічливі прохання з Imperfeito",
+      text: "Imperfeito використовується для ввічливих прохань та побажань, пом'якшуючи пряме висловлювання (аналог українського умовного «хотів би», «міг би»)."
+    },
+    {
+      examples: [
+        { pt: "Eu queria um café, por favor.", ru: "Я хотів би каву, будь ласка." },
+        { pt: "Joana, podias fazer-me um favor?", ru: "Жуана, ти не могла б мені допомогти?" },
+        { pt: "O senhor podia dizer-me as horas?", ru: "Ви не могли б підказати час?" }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Частина 1: Imperfeito — форми і маркери" },
+    { title: "Частина 2: Ir + інфінітив і ввічливі прохання" }
   ],
   vocabulary: [
     { ru: "раніше, за колишніх часів" },

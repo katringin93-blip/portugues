@@ -74,7 +74,36 @@ export default {
     },
     {
       note: "In European Portuguese, «tu» is widely used in informal communication, unlike in Brazil. «Você» is used in more formal contexts or when addressing strangers."
+    },
+    {
+      heading: "Verbs from pôr (4th group)",
+      text: "In addition to the three main conjugations (-ar, -er, -ir), there is a fourth group — verbs derived from pôr (to put, to place). These include: compor (to compose), decompor (to decompose), repor (to replace), propor (to propose), supor (to suppose), expor (to exhibit), dispor (to arrange)."
+    },
+    {
+      table: {
+        headers: ["Person", "pôr (to put)"],
+        rows: [
+          ["eu", "ponho"],
+          ["tu", "pões"],
+          ["ele/ela/você", "põe"],
+          ["nós", "pomos"],
+          ["eles/elas/vocês", "põem"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "I set the table every day." },
+        { ru: "She proposes a different solution." },
+        { ru: "We have little time available." },
+        { ru: "They compose music together." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Pronouns" },
+    { title: "Part 2: Verbs -ar, -er, -ir" },
+    { title: "Part 3: Verbs from pôr" }
   ],
   vocabulary: [
     { ru: "to speak" },

@@ -45,7 +45,39 @@ export default {
     },
     {
       note: "In European Portuguese, «mobile phone» is telemóvel, not celular (Braz.). «Bus» is autocarro, not ônibus."
+    },
+    {
+      heading: "Ser and estar with adjectives: change of meaning",
+      text: "Some adjectives change meaning depending on whether they are used with ser or estar."
+    },
+    {
+      table: {
+        headers: ["With ser", "Meaning", "With estar", "Meaning"],
+        rows: [
+          ["ser aborrecido", "to be boring, tedious", "estar aborrecido", "to be bored"],
+          ["ser consciente", "to be conscientious, responsible", "estar consciente", "to be conscious"],
+          ["ser inconsciente", "to be irresponsible", "estar inconsciente", "to be unconscious"],
+          ["ser atrasado", "to be old-fashioned", "estar atrasado", "to be late"],
+          ["ser convencido", "to be conceited", "estar convencido", "to be convinced"]
+        ]
+      }
+    },
+    {
+      heading: "Present continuous: estar a + infinitive",
+      text: "To describe an action happening right now, use the construction «estar a + infinitive». The verb estar is conjugated while the main verb stays in the infinitive. This is the equivalent of the English Present Continuous."
+    },
+    {
+      examples: [
+        { pt: "Está a chover.", ru: "It's raining (right now)." },
+        { pt: "A Joana está a ler o jornal.", ru: "Joana is reading the newspaper (right now)." },
+        { pt: "Estamos a preparar o jantar.", ru: "We are making dinner (right now)." },
+        { pt: "Estou a estudar na universidade.", ru: "I am studying at university (right now)." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Ser and Estar — basics" },
+    { title: "Part 2: Adjectives and estar a + infinitive" }
   ],
   vocabulary: [
     { ru: "to be (permanently)" },

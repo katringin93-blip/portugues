@@ -52,7 +52,33 @@ export default {
     },
     {
       note: "The Imperfeito is one of the most \u00abconvenient\u00bb tenses, as almost all verbs are regular (except ser, ter, vir, p\u00f4r). The 1st and 3rd person singular forms are identical."
+    },
+    {
+      heading: "Ir + infinitive in the Imperfeito: 'was going to'",
+      text: "The verb ir in the Imperfeito + infinitive of the main verb describes an action that 'was going to happen' in the past (equivalent to English 'was going to')."
+    },
+    {
+      examples: [
+        { pt: "Eu ia telefonar \u00e0 Ana, mas depois esqueci-me.", ru: "I was going to phone Ana, but then I forgot." },
+        { pt: "Ela ia dar aulas este ano, mas desistiu.", ru: "She was going to teach this year, but she gave it up." },
+        { pt: "N\u00f3s \u00edamos mudar de casa, mas mud\u00e1mos de ideias.", ru: "We were going to move house, but we changed our minds." }
+      ]
+    },
+    {
+      heading: "Polite requests with the Imperfeito",
+      text: "The Imperfeito is used for polite requests and wishes, softening a direct statement (equivalent to English 'would like', 'could you')."
+    },
+    {
+      examples: [
+        { pt: "Eu queria um caf\u00e9, por favor.", ru: "I would like a coffee, please." },
+        { pt: "Joana, podias fazer-me um favor?", ru: "Joana, could you do me a favour?" },
+        { pt: "O senhor podia dizer-me as horas?", ru: "Could you tell me the time, sir?" }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Imperfeito — forms and markers" },
+    { title: "Part 2: Ir + infinitive and polite requests" }
   ],
   vocabulary: [
     { ru: "in the old days, formerly" },

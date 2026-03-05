@@ -53,7 +53,23 @@ export default {
         { ru: "João likes any film, but not even he likes this one." },
         { ru: "She speaks neither Portuguese nor Spanish." }
       ]
+    },
+    {
+      heading: "Negative questions and answers",
+      text: "Questions can be asked in the negative form. In negative answers, não can appear both at the beginning and at the end of the sentence, in addition to the mandatory não before the verb."
+    },
+    {
+      examples: [
+        { pt: "Não tens medo de ficar em casa sozinha?", ru: "Aren't you afraid of staying home alone?" },
+        { pt: "Ninguém sabe que horas são?", ru: "Doesn't anyone know what time it is?" },
+        { pt: "Não, não tenho medo.", ru: "No, I'm not afraid." },
+        { pt: "Não quero beber nada, não.", ru: "No, I don't want to drink anything." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Simple negation and negative words" },
+    { title: "Part 2: Nem and negative questions" }
   ],
   vocabulary: [
     { ru: "no; not" },

@@ -46,7 +46,26 @@ export default {
         { ru: "They greet each other." },
         { ru: "The sisters call each other every evening." }
       ]
+    },
+    {
+      heading: "Position of the reflexive pronoun: detailed rules",
+      text: "By default, the reflexive pronoun is placed after the verb and linked with a hyphen (enclisis). But in certain cases it moves before the verb (proclisis): after negations (não, nunca, ninguém), after interrogative words (como, onde, quando), after conjunctions (que, porque, quando, se), after adverbs (já, ainda, sempre, também), after indefinite pronouns (nenhum, tudo, alguém)."
+    },
+    {
+      examples: [
+        { pt: "Ela nunca se lembra do João.", ru: "She never remembers João." },
+        { pt: "Como te chamas?", ru: "What is your name?" },
+        { pt: "A que horas te levantas?", ru: "What time do you get up?" },
+        { pt: "Nenhum de vocês se levanta cedo ao domingo.", ru: "None of you gets up early on Sunday." }
+      ]
+    },
+    {
+      note: "The reflexive «se» in the 3rd person can indicate an unspecified subject (similar to English passive or 'one'): «Vende-se» (For sale), «Vendem-se carros» (Cars for sale), «No verão vai-se à praia» (In summer, one goes to the beach)."
     }
+  ],
+  lessons: [
+    { title: "Part 1: Reflexive pronouns and verbs" },
+    { title: "Part 2: Reciprocal actions and pronoun position" }
   ],
   vocabulary: [
     { ru: "to get up" },

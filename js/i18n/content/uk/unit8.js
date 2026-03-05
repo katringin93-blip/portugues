@@ -59,7 +59,39 @@ export default {
     },
     {
       note: "У європейській португальській «мобільний телефон» — telemóvel, а не celular (браз.). «Автобус» — autocarro, а не ônibus."
+    },
+    {
+      heading: "Ser та estar з прикметниками: зміна значення",
+      text: "Деякі прикметники змінюють значення залежно від того, вживаються вони з ser чи estar."
+    },
+    {
+      table: {
+        headers: ["З ser", "Значення", "З estar", "Значення"],
+        rows: [
+          ["ser aborrecido", "бути нудним", "estar aborrecido", "нудьгувати"],
+          ["ser consciente", "бути свідомим, відповідальним", "estar consciente", "бути при свідомості"],
+          ["ser inconsciente", "бути безвідповідальним", "estar inconsciente", "бути непритомним"],
+          ["ser atrasado", "бути відсталим, старомодним", "estar atrasado", "запізнюватися"],
+          ["ser convencido", "бути зарозумілим", "estar convencido", "бути переконаним"]
+        ]
+      }
+    },
+    {
+      heading: "Теперішній тривалий: estar a + інфінітив",
+      text: "Для опису дії, що відбувається в даний момент, використовується конструкція «estar a + інфінітив». Дієслово estar відмінюється, а основне дієслово залишається в інфінітиві. Це аналог англійського Present Continuous."
+    },
+    {
+      examples: [
+        { pt: "Está a chover.", ru: "Йде дощ (зараз)." },
+        { pt: "A Joana está a ler o jornal.", ru: "Жуана читає газету (зараз)." },
+        { pt: "Estamos a preparar o jantar.", ru: "Ми готуємо вечерю (зараз)." },
+        { pt: "Estou a estudar na universidade.", ru: "Я навчаюся в університеті (зараз)." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Частина 1: Ser і Estar — основи" },
+    { title: "Частина 2: Прикметники і estar a + інфінітив" }
   ],
   vocabulary: [
     { ru: "бути (постійно)" },

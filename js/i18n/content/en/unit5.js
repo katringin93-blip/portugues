@@ -109,7 +109,24 @@ export default {
         { ru: "Josefina is going to teach at the university." },
         { ru: "They're going to travel in the summer." }
       ]
+    },
+    {
+      heading: "Forming questions (Perguntas)",
+      text: "In Portuguese, you can ask a question simply by using the main verb — without an auxiliary 'do/does' as in English. The intonation rises at the end. For an affirmative answer, «sim» can go at the beginning or end (Tenho, sim — more polite). In colloquial speech, the verb is often repeated instead of «sim»."
+    },
+    {
+      examples: [
+        { ru: "Do you like to travel? — Yes, I do." },
+        { ru: "Do you have change for 100 euros? — Yes, I do." },
+        { ru: "Do you know what time it is? — Yes, yes, I do." },
+        { ru: "Do you know Porto? — Yes, yes, I do." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Main irregular verbs" },
+    { title: "Part 2: Saber, conhecer, ir, ter de" },
+    { title: "Part 3: Questions and conjugations" }
   ],
   vocabulary: [
     { ru: "to go" },
