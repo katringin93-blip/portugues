@@ -67,6 +67,7 @@ export default {
   'lesson.flashcardsSidebar': 'Картки',
   'lesson.exerciseHubCount': '{done} з {total} виконано',
   'lesson.flashcardHubCount': '{count} карток',
+  'lesson.flashcardHubLearned': '{learned} з {total} вивчено',
   'lesson.startReview': 'Почати повторення',
   'lesson.backToHub': 'Назад',
   'lesson.leaveConfirm': 'Вправи не завершені. Вийти?',

@@ -67,6 +67,7 @@ export default {
   'lesson.flashcardsSidebar': 'Flashcards',
   'lesson.exerciseHubCount': '{done} of {total} completed',
   'lesson.flashcardHubCount': '{count} cards',
+  'lesson.flashcardHubLearned': '{learned} of {total} learned',
   'lesson.startReview': 'Start review',
   'lesson.backToHub': 'Back',
   'lesson.leaveConfirm': 'Exercises not finished. Leave?',

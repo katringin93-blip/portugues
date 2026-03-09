@@ -2,6 +2,7 @@ import { units } from '../data/units.js';
 import { AudioButton } from './AudioButton.js';
 import { ProgressBar } from './ProgressBar.js';
 import { loadUnitContent, applyContentOverlay } from '../i18n/index.js';
+import { loadFlashcardStates, saveFlashcardState, sm2 } from '../services/flashcard-engine.js';
 
 export const Lesson = {
   template: `
@@ -84,11 +85,29 @@ export const Lesson = {
         <aside class="lesson-sidebar">
           <div class="sidebar-card">
             <div class="sidebar-title">{{ t('lesson.progressSidebar') }}</div>
-            <ul class="sidebar-checklist">
-              <li :class="{ done: theoryRead }">{{ t('lesson.tab.theory') }}</li>
-              <li :class="{ done: exercisesCompleted > 0 }">{{ t('lesson.tab.exercises') }} ({{ exercisesCompleted }}/{{ exerciseCount }})</li>
-              <li>{{ t('lesson.flashcardsSidebar') }} ({{ flashcardCount }})</li>
-            </ul>
+            <div class="sidebar-progress">
+              <div class="sidebar-progress-item">
+                <div class="sidebar-progress-label">
+                  <span>{{ t('lesson.tab.theory') }}</span>
+                  <span v-if="theoryRead" class="sidebar-progress-check">&#10003;</span>
+                </div>
+                <progress-bar :percent="theoryRead ? 100 : 0"></progress-bar>
+              </div>
+              <div class="sidebar-progress-item">
+                <div class="sidebar-progress-label">
+                  <span>{{ t('lesson.tab.exercises') }}</span>
+                  <span class="sidebar-progress-detail">{{ exercisesCompleted }} / {{ exerciseCount }}</span>
+                </div>
+                <progress-bar :percent="exercisePercent"></progress-bar>
+              </div>
+              <div class="sidebar-progress-item">
+                <div class="sidebar-progress-label">
+                  <span>{{ t('lesson.flashcardsSidebar') }}</span>
+                  <span class="sidebar-progress-detail">{{ flashcardsLearnedCount }} / {{ flashcardCount }}</span>
+                </div>
+                <progress-bar :percent="flashcardPercent"></progress-bar>
+              </div>
+            </div>
             <button class="sidebar-cta btn btn-primary" @click="goToPractice">{{ t('lesson.goToPractice') }}</button>
           </div>
           <div v-if="unit.vocabulary && unit.vocabulary.length" class="sidebar-card">
@@ -127,7 +146,8 @@ export const Lesson = {
             <div class="practice-card-icon">&#127183;</div>
             <div class="practice-card-body">
               <div class="practice-card-title">{{ t('lesson.flashcardsSidebar') }}</div>
-              <div class="text-muted" style="font-size:.8125rem">{{ t('lesson.flashcardHubCount', { count: flashcardCount }) }}</div>
+              <div class="text-muted" style="font-size:.8125rem">{{ flashcardsLearnedCount }} / {{ flashcardCount }}</div>
+              <progress-bar :percent="flashcardPercent" style="margin-top:.5rem"></progress-bar>
             </div>
             <div class="practice-card-action">
               <span class="btn btn-outline btn-sm">{{ t('lesson.startReview') }}</span>
@@ -424,6 +444,7 @@ export const Lesson = {
       // Flashcards
       fcIndex: 0,
       fcFlipped: false,
+      flashcardStates: {},
     };
   },
 
@@ -483,6 +504,19 @@ export const Lesson = {
       if (!p || !p.exercisesTotal) return 0;
       return Math.round((p.exercisesCompleted / p.exercisesTotal) * 100);
     },
+    flashcardsLearnedCount() {
+      if (!this.unit || !this.unit.flashcards) return 0;
+      var count = 0;
+      for (var i = 0; i < this.unit.flashcards.length; i++) {
+        var state = this.flashcardStates[this.unit.flashcards[i].id];
+        if (state && state.repetitions > 0) count++;
+      }
+      return count;
+    },
+    flashcardPercent() {
+      if (!this.flashcardCount) return 0;
+      return Math.round((this.flashcardsLearnedCount / this.flashcardCount) * 100);
+    },
     currentFlashcard() {
       if (!this.unit || !this.unit.flashcards || !this.unit.flashcards.length) return {};
       return this.unit.flashcards[this.fcIndex] || {};
@@ -528,6 +562,9 @@ export const Lesson = {
 
   async created() {
     await this.loadTranslatedUnit();
+    if (this.user && this.user.id) {
+      this.flashcardStates = await loadFlashcardStates(this.user.id);
+    }
   },
 
   methods: {
@@ -886,7 +923,14 @@ export const Lesson = {
       }
     },
 
-    rateCard(quality) {
+    async rateCard(quality) {
+      var card = this.currentFlashcard;
+      if (card && card.id && this.user && this.user.id) {
+        var current = this.flashcardStates[card.id] || {};
+        var next = sm2(current, quality);
+        this.flashcardStates = Object.assign({}, this.flashcardStates, { [card.id]: next });
+        await saveFlashcardState(this.user.id, card.id, next);
+      }
       this.fcFlipped = false;
       if (this.fcIndex + 1 < this.unit.flashcards.length) {
         this.fcIndex++;
