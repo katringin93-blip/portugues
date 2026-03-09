@@ -348,15 +348,71 @@ export const units = [
       },
       {
         heading: "Время (As horas)",
-        text: "В Португалии используется система «É uma hora» (час) и «São duas horas» (два часа). Минуты добавляются через «e»: São três e dez (3:10). «Menos» используется для обозначения «без»: São cinco menos um quarto (4:45)."
+        text: "Для обозначения времени используется глагол «ser»: É uma hora (час) — «é» для единицы, полудня и полуночи; São duas horas (два часа) — «são» для остальных. Слово «horas» часто опускается при добавлении минут. Минуты после часа добавляются через «e»: São quatro e dez (4:10)."
       },
       {
         examples: [
-          { pt: "Que horas são? — São duas e meia.", ru: "Который час? — Половина третьего (2:30)." },
-          { pt: "É uma e um quarto.", ru: "Четверть второго (1:15)." },
-          { pt: "São oito menos vinte.", ru: "Без двадцати восемь (7:40)." },
-          { pt: "Hoje é dia quinze de fevereiro.", ru: "Сегодня пятнадцатое февраля." }
+          { pt: "Que horas são? — São duas horas.", ru: "Который час? — Два часа." },
+          { pt: "É uma e vinte.", ru: "Час двадцать (1:20)." },
+          { pt: "São quatro e dez.", ru: "Четыре десять (4:10)." },
+          { pt: "São nove e cinco.", ru: "Девять ноль пять (9:05)." }
         ]
+      },
+      {
+        heading: "E meia и um quarto — половина и четверть",
+        text: "Для «половины» используется «e meia» (от «meia hora» — полчаса): São dez e meia (10:30). Для «четверти» — «e um quarto»: São três e um quarto (3:15). Полдень — «é meio-dia», полночь — «é meia-noite»."
+      },
+      {
+        examples: [
+          { pt: "São dez e meia.", ru: "Половина одиннадцатого (10:30)." },
+          { pt: "É uma e um quarto.", ru: "Четверть второго (1:15)." },
+          { pt: "É meio-dia.", ru: "Полдень." },
+          { pt: "É meia-noite.", ru: "Полночь." }
+        ]
+      },
+      {
+        heading: "Para и menos — время «без»",
+        text: "После половины время выражается через следующий час. Стандартная форма — «para as» (букв. «до»): São cinco para as três = без пяти три. На севере Португалии используется «menos»: São três menos cinco. Оба варианта правильны."
+      },
+      {
+        examples: [
+          { pt: "São cinco para as três.", ru: "Без пяти три (2:55)." },
+          { pt: "São dez para as oito.", ru: "Без десяти восемь (7:50)." },
+          { pt: "São quinze para a uma.", ru: "Без пятнадцати час (12:45)." },
+          { pt: "São três menos cinco.", ru: "Без пяти три — северный вариант (2:55)." }
+        ]
+      },
+      {
+        note: "Форма «para as» является стандартной для всей Португалии. «Menos» используется преимущественно на севере страны. В Бразилии обе формы употребляются."
+      },
+      {
+        heading: "Части дня и предлоги времени (da manhã, à/às, pela/pelas)",
+        text: "Чтобы уточнить время суток, добавьте: da manhã (утро), da tarde (день/вечер до темноты), da noite (после наступления темноты). Для «в» (точное время) — à/às: à uma hora, às duas horas. Для «около» — pela/pelas: pela uma, pelas seis. Для полудня — «ao meio-dia», для полуночи — «à meia-noite»."
+      },
+      {
+        table: {
+          headers: ["Выражение", "Перевод", "Пример"],
+          rows: [
+            ["da manhã", "утра", "às oito da manhã (в 8 утра)"],
+            ["da tarde", "дня / вечера", "às três da tarde (в 3 дня)"],
+            ["da noite", "ночи / вечера", "às dez da noite (в 10 вечера)"],
+            ["à / às", "в (точное время)", "às duas (в два часа)"],
+            ["ao meio-dia", "в полдень", "Ao meio-dia vou almoçar."],
+            ["à meia-noite", "в полночь", "À meia-noite tudo fecha."],
+            ["pela / pelas", "около", "pelas seis (около шести)"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Às três horas da tarde.", ru: "В три часа дня." },
+          { pt: "Pela uma da tarde.", ru: "Около часа дня." },
+          { pt: "Pelas seis da manhã.", ru: "Около шести утра." },
+          { pt: "Ao meio-dia vou almoçar.", ru: "В полдень я иду обедать." }
+        ]
+      },
+      {
+        note: "В СМИ, на транспорте и в официальных объявлениях используется 24-часовой формат: «O acidente ocorreu pelas dezasseis horas» (Авария произошла около 16:00)."
       },
       {
         heading: "Дни недели (Os dias da semana)",
@@ -386,6 +442,18 @@ export const units = [
       },
       {
         note: "В разговорной речи слово «feira» часто опускается: na sexta = na sexta-feira (в пятницу), na terça e na quinta = na terça-feira e na quinta-feira (во вторник и четверг). При перечислении нескольких дней «feira» ставится только после последнего: terça, quarta e sexta-feira."
+      },
+      {
+        heading: "По (дням недели): ao/aos и à/às",
+        text: "Чтобы сказать «по субботам», «по воскресеньям» (регулярно), используется предлог «a» + артикль. Суббота и воскресенье — мужской род → ao/aos: ao sábado, aos domingos. Остальные дни — женский род → à/às: à segunda-feira, às quartas-feiras. Форма с артиклем единственного числа (ao sábado) и множественного (aos sábados) равнозначны."
+      },
+      {
+        examples: [
+          { pt: "Ao sábado vou ao mercado.", ru: "По субботам я хожу на рынок." },
+          { pt: "Aos domingos descanso em casa.", ru: "По воскресеньям я отдыхаю дома." },
+          { pt: "À sexta-feira saio mais cedo.", ru: "По пятницам я ухожу раньше." },
+          { pt: "Às quartas tenho aula de português.", ru: "По средам у меня урок португальского." }
+        ]
       },
       {
         heading: "Месяцы, времена года и века",
@@ -430,9 +498,10 @@ export const units = [
       }
     ],
     lessons: [
-      { title: "Часть 1: Числа и время", theoryRange: [0, 6] },
-      { title: "Часть 2: Дни недели и месяцы", theoryRange: [6, 14] },
-      { title: "Часть 3: Даты", theoryRange: [14, 17] }
+      { title: "Часть 1: Числа", theoryRange: [0, 4] },
+      { title: "Часть 2: Время", theoryRange: [4, 15] },
+      { title: "Часть 3: Дни недели и месяцы", theoryRange: [15, 25] },
+      { title: "Часть 4: Даты", theoryRange: [25, 28] }
     ],
     exercises: ex3,
     vocabulary: [

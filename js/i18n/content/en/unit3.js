@@ -46,15 +46,71 @@ export default {
     },
     {
       heading: "Time (As horas)",
-      text: "In Portugal, the system uses «É uma hora» (one o'clock) and «São duas horas» (two o'clock). Minutes are added with «e»: São três e dez (3:10). «Menos» is used for «to»: São cinco menos um quarto (4:45)."
+      text: "To tell the time, Portuguese uses the verb «ser»: É uma hora (one o'clock) — «é» for one, midday and midnight; São duas horas (two o'clock) — «são» for all others. The word «horas» is often dropped when adding minutes. Minutes past the hour are added with «e»: São quatro e dez (4:10)."
     },
     {
       examples: [
-        { ru: "What time is it? — Half past two (2:30)." },
-        { ru: "Quarter past one (1:15)." },
-        { ru: "Twenty to eight (7:40)." },
-        { ru: "Today is February fifteenth." }
+        { ru: "What time is it? — It's two o'clock." },
+        { ru: "It's one twenty (1:20)." },
+        { ru: "It's four ten (4:10)." },
+        { ru: "It's nine oh five (9:05)." }
       ]
+    },
+    {
+      heading: "E meia and um quarto — half and quarter",
+      text: "For «half past», use «e meia» (from «meia hora» — half an hour): São dez e meia (10:30). For «quarter past» — «e um quarto»: São três e um quarto (3:15). Midday is «é meio-dia», midnight is «é meia-noite»."
+    },
+    {
+      examples: [
+        { ru: "Half past ten (10:30)." },
+        { ru: "Quarter past one (1:15)." },
+        { ru: "It's midday." },
+        { ru: "It's midnight." }
+      ]
+    },
+    {
+      heading: "Para and menos — time \"to\"",
+      text: "After half past, time is expressed in relation to the coming hour. The standard form is «para as» (lit. \"to\"): São cinco para as três = five to three. In northern Portugal, «menos» (lit. \"minus\") is also used: São três menos cinco. Both forms are correct."
+    },
+    {
+      examples: [
+        { ru: "Five to three (2:55)." },
+        { ru: "Ten to eight (7:50)." },
+        { ru: "Quarter to one (12:45)." },
+        { ru: "Five to three — northern variant (2:55)." }
+      ]
+    },
+    {
+      note: "The form «para as» is standard throughout Portugal. «Menos» is used mainly in the north. In Brazil, both forms are used."
+    },
+    {
+      heading: "Parts of the day and time prepositions (da manhã, à/às, pela/pelas)",
+      text: "To specify the time of day, add: da manhã (morning), da tarde (afternoon/evening until dark), da noite (after dark). For «at» (exact time) — à/às: à uma hora, às duas horas. For «about/around» — pela/pelas: pela uma, pelas seis. For midday — «ao meio-dia», for midnight — «à meia-noite»."
+    },
+    {
+      table: {
+        headers: ["Expression", "Translation", "Example"],
+        rows: [
+          ["da manhã", "in the morning", "às oito da manhã (at 8 a.m.)"],
+          ["da tarde", "in the afternoon", "às três da tarde (at 3 p.m.)"],
+          ["da noite", "at night / in the evening", "às dez da noite (at 10 p.m.)"],
+          ["à / às", "at (exact time)", "às duas (at two o'clock)"],
+          ["ao meio-dia", "at midday", "Ao meio-dia vou almoçar."],
+          ["à meia-noite", "at midnight", "À meia-noite tudo fecha."],
+          ["pela / pelas", "at about / around", "pelas seis (around six)"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "At three o'clock in the afternoon." },
+        { ru: "Around one in the afternoon." },
+        { ru: "Around six in the morning." },
+        { ru: "At midday I'm going to have lunch." }
+      ]
+    },
+    {
+      note: "In the media, transport and official announcements, the 24-hour clock is used: «O acidente ocorreu pelas dezasseis horas» (The accident occurred around 4 p.m.)."
     },
     {
       heading: "Days of the week (Os dias da semana)",
@@ -84,6 +140,18 @@ export default {
     },
     {
       note: "In colloquial speech, the word «feira» is often dropped: na sexta = na sexta-feira (on Friday), na terça e na quinta = na terça-feira e na quinta-feira (on Tuesday and Thursday). When listing several days, «feira» is placed only after the last one: terça, quarta e sexta-feira."
+    },
+    {
+      heading: "On (days of the week): ao/aos and à/às",
+      text: "To say «on Saturdays», «on Sundays» (regularly), use the preposition «a» + article. Saturday and Sunday are masculine → ao/aos: ao sábado, aos domingos. The other days are feminine → à/às: à segunda-feira, às quartas-feiras. The singular (ao sábado) and plural (aos sábados) forms are equivalent."
+    },
+    {
+      examples: [
+        { ru: "On Saturdays I go to the market." },
+        { ru: "On Sundays I rest at home." },
+        { ru: "On Fridays I leave earlier." },
+        { ru: "On Wednesdays I have a Portuguese class." }
+      ]
     },
     {
       heading: "Months, seasons, and centuries",
@@ -128,9 +196,10 @@ export default {
     }
   ],
   lessons: [
-    { title: "Part 1: Numbers and time" },
-    { title: "Part 2: Days of the week and months" },
-    { title: "Part 3: Dates" }
+    { title: "Part 1: Numbers" },
+    { title: "Part 2: Time" },
+    { title: "Part 3: Days of the week and months" },
+    { title: "Part 4: Dates" }
   ],
   vocabulary: [
     { ru: "hour" },

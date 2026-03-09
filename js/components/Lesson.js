@@ -37,7 +37,7 @@ export const Lesson = {
               <div v-if="section.table" class="grammar-table-wrap">
                 <table class="grammar-table">
                   <thead>
-                    <tr><th v-for="h in section.table.headers" :key="h">{{ h }}</th></tr>
+                    <tr><th v-for="(h, hi) in section.table.headers" :key="hi">{{ h }}</th></tr>
                   </thead>
                   <tbody>
                     <tr v-for="(row, ri) in section.table.rows" :key="ri">
