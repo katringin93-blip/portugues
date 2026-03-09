@@ -55,6 +55,33 @@ export default {
       ]
     },
     {
+      heading: "Nenhum/nenhuma, nenhuns/nenhumas",
+      text: "Nenhum/nenhuma (no, none) and their plural forms nenhuns/nenhumas are used with nouns and agree in gender and number. They can be placed before or after the noun. When they come after the verb, não or nunca is also placed before the verb."
+    },
+    {
+      table: {
+        headers: ["Form", "Gender/Number", "Example"],
+        rows: [
+          ["nenhum", "masc. sing.", "Nenhum aluno gosta do professor."],
+          ["nenhuma", "fem. sing.", "Não fala nenhuma língua estrangeira."],
+          ["nenhuns", "masc. pl.", "Não atende telefonemas nenhuns."],
+          ["nenhumas", "fem. pl.", "Não tem nenhumas amigas na universidade."]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "No student likes the maths teacher." },
+        { ru: "Ana never buys any sugar." },
+        { ru: "Carla doesn't speak any foreign language." },
+        { ru: "Pedro doesn't answer any phone calls on Sunday." },
+        { ru: "She doesn't have any female friends at university." }
+      ]
+    },
+    {
+      note: "Note: nenhum/nenhuma can be placed either before or after the noun. Compare: «Nenhum aluno gosta...» = «Aluno nenhum gosta...». The meaning is the same, but postposition can sound more emphatic."
+    },
+    {
       heading: "Negative questions and answers",
       text: "Questions can be asked in the negative form. In negative answers, não can appear both at the beginning and at the end of the sentence, in addition to the mandatory não before the verb."
     },
@@ -69,7 +96,7 @@ export default {
   ],
   lessons: [
     { title: "Part 1: Simple negation and negative words" },
-    { title: "Part 2: Nem and negative questions" }
+    { title: "Part 2: Nem, nenhum and negative questions" }
   ],
   vocabulary: [
     { ru: "no; not" },

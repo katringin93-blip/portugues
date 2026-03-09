@@ -1206,6 +1206,33 @@ export const units = [
         ]
       },
       {
+        heading: "Nenhum/nenhuma, nenhuns/nenhumas",
+        text: "Nenhum/nenhuma (никакой/никакая) и их множественные формы nenhuns/nenhumas используются с существительными и согласуются в роде и числе. Их можно ставить как перед, так и после существительного. Когда они стоят после глагола, перед глаголом также ставится não или nunca."
+      },
+      {
+        table: {
+          headers: ["Форма", "Род/Число", "Пример"],
+          rows: [
+            ["nenhum", "муж. ед.", "Nenhum aluno gosta do professor."],
+            ["nenhuma", "жен. ед.", "Não fala nenhuma língua estrangeira."],
+            ["nenhuns", "муж. мн.", "Não atende telefonemas nenhuns."],
+            ["nenhumas", "жен. мн.", "Não tem nenhumas amigas na universidade."]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Nenhum aluno gosta do professor de matemática.", ru: "Ни одному ученику не нравится учитель математики." },
+          { pt: "A Ana nunca compra açúcar nenhum.", ru: "Ана никогда не покупает никакой сахар." },
+          { pt: "A Carla não fala nenhuma língua estrangeira.", ru: "Карла не говорит ни на одном иностранном языке." },
+          { pt: "Ao domingo o Pedro não atende telefonemas nenhuns.", ru: "По воскресеньям Педру не отвечает ни на какие звонки." },
+          { pt: "Ela não tem nenhumas amigas na universidade.", ru: "У неё нет никаких подруг в университете." }
+        ]
+      },
+      {
+        note: "Обратите внимание: nenhum/nenhuma можно ставить и перед, и после существительного. Сравните: «Nenhum aluno gosta...» = «Aluno nenhum gosta...». Смысл одинаковый, но постпозиция может звучать более выразительно."
+      },
+      {
         heading: "Отрицательные вопросы и ответы",
         text: "Вопросы можно задавать в отрицательной форме. При отрицательном ответе não может стоять и в начале, и в конце предложения, помимо обязательного não перед глаголом."
       },
@@ -1220,7 +1247,7 @@ export const units = [
     ],
     lessons: [
       { title: "Часть 1: Простое отрицание и отрицательные слова", theoryRange: [0, 6] },
-      { title: "Часть 2: Nem и отрицательные вопросы", theoryRange: [6, 10] }
+      { title: "Часть 2: Nem, nenhum и отрицательные вопросы", theoryRange: [6, 14] }
     ],
     exercises: ex7,
     vocabulary: [
