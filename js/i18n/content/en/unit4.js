@@ -33,6 +33,24 @@ export default {
       }
     },
     {
+      table: {
+        headers: ["Verb", "Translation", "Verb", "Translation"],
+        rows: [
+          ["adorar", "to adore; to love", "gostar de", "to like; to enjoy"],
+          ["ajudar", "to help", "jogar", "to play (sports)"],
+          ["andar", "to walk; to move", "limpar", "to clean"],
+          ["apanhar", "to catch", "mandar", "to order"],
+          ["cantar", "to sing", "morar", "to reside"],
+          ["comprar", "to buy", "nadar", "to swim"],
+          ["desejar", "to wish", "olhar", "to look"],
+          ["detestar", "to hate", "pensar em", "to think about"],
+          ["entrar", "to enter", "sonhar", "to dream"],
+          ["escutar", "to listen to", "trabalhar", "to work"],
+          ["esperar", "to wait; to hope", "visitar", "to visit"]
+        ]
+      }
+    },
+    {
       heading: "Regular -er verbs (2nd conjugation)",
       text: "The second conjugation — verbs ending in -er."
     },
@@ -63,6 +81,29 @@ export default {
           ["eles/elas/vocês", "partem"]
         ]
       }
+    },
+    {
+      table: {
+        headers: ["-er verb", "Translation", "-ir verb", "Translation"],
+        rows: [
+          ["beber", "to drink", "abrir", "to open"],
+          ["comer", "to eat", "agir", "to act"],
+          ["compreender", "to comprehend", "assistir", "to assist; to watch"],
+          ["entender", "to understand", "cobrir", "to cover"],
+          ["escrever", "to write", "conseguir", "to manage to"],
+          ["fornecer", "to supply", "decidir", "to decide"],
+          ["oferecer", "to offer", "desistir", "to give up"],
+          ["perceber", "to understand", "dormir", "to sleep"],
+          ["querer", "to want", "preferir", "to prefer"],
+          ["responder", "to reply", "repartir", "to divide"],
+          ["vencer", "to win", "sentir", "to feel"],
+          ["vender", "to sell", "tossir", "to cough"],
+          ["viver", "to live", "partir", "to leave; to break"]
+        ]
+      }
+    },
+    {
+      note: "In -ir verbs, if the stem vowel is e or o, it changes to i or u in the first person: preferir → prefiro, sentir → sinto, dormir → durmo, tossir → tusso. If the ending consonant is c, g or g(+u), it changes to ç, j, g to maintain the original sound: vencer → venço, agir → ajo, conseguir → consigo."
     },
     {
       examples: [

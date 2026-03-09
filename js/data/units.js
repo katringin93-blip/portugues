@@ -582,6 +582,24 @@ export const units = [
         }
       },
       {
+        table: {
+          headers: ["Глагол", "Перевод", "Глагол", "Перевод"],
+          rows: [
+            ["adorar", "обожать", "gostar de", "нравиться"],
+            ["ajudar", "помогать", "jogar", "играть (спорт)"],
+            ["andar", "ходить, двигаться", "limpar", "чистить"],
+            ["apanhar", "ловить, поймать", "mandar", "приказывать"],
+            ["cantar", "петь", "morar", "жить, проживать"],
+            ["comprar", "покупать", "nadar", "плавать"],
+            ["desejar", "желать", "olhar", "смотреть"],
+            ["detestar", "ненавидеть", "pensar em", "думать о"],
+            ["entrar", "входить", "sonhar", "мечтать"],
+            ["escutar", "слушать", "trabalhar", "работать"],
+            ["esperar", "ждать; надеяться", "visitar", "посещать"]
+          ]
+        }
+      },
+      {
         heading: "Правильные глаголы на -er (2-е спряжение)",
         text: "Второе спряжение — глаголы, оканчивающиеся на -er."
       },
@@ -612,6 +630,29 @@ export const units = [
             ["eles/elas/vocês", "partem"]
           ]
         }
+      },
+      {
+        table: {
+          headers: ["-er глагол", "Перевод", "-ir глагол", "Перевод"],
+          rows: [
+            ["beber", "пить", "abrir", "открывать"],
+            ["comer", "есть", "agir", "действовать"],
+            ["compreender", "понимать", "assistir", "помогать; смотреть"],
+            ["entender", "понимать", "cobrir", "покрывать"],
+            ["escrever", "писать", "conseguir", "удаваться, суметь"],
+            ["fornecer", "поставлять", "decidir", "решать"],
+            ["oferecer", "предлагать (дар)", "desistir", "сдаваться"],
+            ["perceber", "понимать, осознавать", "dormir", "спать"],
+            ["querer", "хотеть", "preferir", "предпочитать"],
+            ["responder", "отвечать", "repartir", "делить, распределять"],
+            ["vencer", "побеждать", "sentir", "чувствовать"],
+            ["vender", "продавать", "tossir", "кашлять"],
+            ["viver", "жить", "partir", "уезжать; ломать"]
+          ]
+        }
+      },
+      {
+        note: "В глаголах на -ir, если гласная основы — e или o, она меняется на i или u в 1-м лице: preferir → prefiro, sentir → sinto, dormir → durmo, tossir → tusso. Если конечная согласная основы — c, g или g(u), она меняется на ç, j, g для сохранения звука: vencer → venço, agir → ajo, conseguir → consigo."
       },
       {
         examples: [
@@ -651,8 +692,8 @@ export const units = [
     ],
     lessons: [
       { title: "Часть 1: Местоимения", theoryRange: [0, 2] },
-      { title: "Часть 2: Глаголы -ar, -er, -ir", theoryRange: [2, 10] },
-      { title: "Часть 3: Глаголы от pôr", theoryRange: [10, 13] }
+      { title: "Часть 2: Глаголы -ar, -er, -ir", theoryRange: [2, 13] },
+      { title: "Часть 3: Глаголы от pôr", theoryRange: [13, 16] }
     ],
     exercises: ex4,
     vocabulary: [
