@@ -403,6 +403,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   overflow-wrap: break-word;
 }
 .grammar-table th { background: var(--gray-100); font-weight: 600; color: var(--gray-700); font-size: .8125rem; text-transform: uppercase; letter-spacing: .03em; }
+.grammar-table td:first-child { font-weight: 600; color: var(--primary); }
 .grammar-table tr:nth-child(even) td { background: var(--gray-50); }
 .example-sentence {
   display: -webkit-flex; display: flex; -webkit-align-items: flex-start; align-items: flex-start; gap: .5rem;

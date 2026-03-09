@@ -910,12 +910,31 @@ export const units = [
           { pt: "Sabes que horas são? — Sei, sei.", ru: "Ты знаешь, который час? — Да-да, знаю." },
           { pt: "Conheces o Porto? — Conheço, conheço.", ru: "Ты знаешь Порту? — Да-да, знаю." }
         ]
+      },
+      {
+        heading: "Сводная таблица спряжений неправильных глаголов",
+        text: "Все неправильные глаголы настоящего времени (Presente do Indicativo), изученные в этом разделе, в одной таблице для удобства:"
+      },
+      {
+        table: {
+          headers: ["Глагол", "eu", "tu", "ele/ela", "nós", "eles/elas"],
+          rows: [
+            ["ir", "vou", "vais", "vai", "vamos", "vão"],
+            ["ter", "tenho", "tens", "tem", "temos", "têm"],
+            ["fazer", "faço", "fazes", "faz", "fazemos", "fazem"],
+            ["poder", "posso", "podes", "pode", "podemos", "podem"],
+            ["querer", "quero", "queres", "quer", "queremos", "querem"],
+            ["saber", "sei", "sabes", "sabe", "sabemos", "sabem"],
+            ["dizer", "digo", "dizes", "diz", "dizemos", "dizem"],
+            ["dar", "dou", "dás", "dá", "damos", "dão"]
+          ]
+        }
       }
     ],
     lessons: [
-      { title: "Часть 1: Основные неправильные глаголы", theoryRange: [0, 5] },
-      { title: "Часть 2: Saber, conhecer, ir, ter de", theoryRange: [5, 11] },
-      { title: "Часть 3: Вопросы и спряжения", theoryRange: [11, 14] }
+      { title: "Часть 1: Спряжение неправильных глаголов", theoryRange: [0, 10] },
+      { title: "Часть 2: Конструкции и различия глаголов", theoryRange: [10, 16] },
+      { title: "Часть 3: Вопросы и сводка спряжений", theoryRange: [16, 20] }
     ],
     exercises: ex5,
     vocabulary: [

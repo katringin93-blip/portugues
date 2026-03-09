@@ -128,12 +128,31 @@ export default {
         { ru: "Ти знаєш, котра година? — Так-так, знаю." },
         { ru: "Ти знаєш Порту? — Так-так, знаю." }
       ]
+    },
+    {
+      heading: "Зведена таблиця відмінювання неправильних дієслів",
+      text: "Усі неправильні дієслова теперішнього часу (Presente do Indicativo), вивчені у цьому розділі, в одній таблиці для зручності:"
+    },
+    {
+      table: {
+        headers: ["Дієслово", "eu", "tu", "ele/ela", "nós", "eles/elas"],
+        rows: [
+          ["ir", "vou", "vais", "vai", "vamos", "vão"],
+          ["ter", "tenho", "tens", "tem", "temos", "têm"],
+          ["fazer", "faço", "fazes", "faz", "fazemos", "fazem"],
+          ["poder", "posso", "podes", "pode", "podemos", "podem"],
+          ["querer", "quero", "queres", "quer", "queremos", "querem"],
+          ["saber", "sei", "sabes", "sabe", "sabemos", "sabem"],
+          ["dizer", "digo", "dizes", "diz", "dizemos", "dizem"],
+          ["dar", "dou", "dás", "dá", "damos", "dão"]
+        ]
+      }
     }
   ],
   lessons: [
-    { title: "Частина 1: Основні неправильні дієслова" },
-    { title: "Частина 2: Saber, conhecer, ir, ter de" },
-    { title: "Частина 3: Питання і відмінювання" }
+    { title: "Частина 1: Відмінювання неправильних дієслів" },
+    { title: "Частина 2: Конструкції та відмінності дієслів" },
+    { title: "Частина 3: Питання та зведення відмінювань" }
   ],
   vocabulary: [
     { ru: "іти, їхати" },

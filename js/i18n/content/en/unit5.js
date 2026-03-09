@@ -56,7 +56,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "poder", "querer", "saber", "dizer", "dar"]
+        headers: ["Person", "poder", "querer", "saber", "dizer", "dar"],
+        rows: [
+          ["eu", "posso", "quero", "sei", "digo", "dou"],
+          ["tu", "podes", "queres", "sabes", "dizes", "dás"],
+          ["ele/ela", "pode", "quer", "sabe", "diz", "dá"],
+          ["nós", "podemos", "queremos", "sabemos", "dizemos", "damos"],
+          ["eles/elas", "podem", "querem", "sabem", "dizem", "dão"]
+        ]
       }
     },
     {
@@ -121,12 +128,31 @@ export default {
         { ru: "Do you know what time it is? — Yes, yes, I do." },
         { ru: "Do you know Porto? — Yes, yes, I do." }
       ]
+    },
+    {
+      heading: "Summary conjugation table for irregular verbs",
+      text: "All irregular verbs in the present tense (Presente do Indicativo) covered in this section, in one table for convenience:"
+    },
+    {
+      table: {
+        headers: ["Verb", "eu", "tu", "ele/ela", "nós", "eles/elas"],
+        rows: [
+          ["ir", "vou", "vais", "vai", "vamos", "vão"],
+          ["ter", "tenho", "tens", "tem", "temos", "têm"],
+          ["fazer", "faço", "fazes", "faz", "fazemos", "fazem"],
+          ["poder", "posso", "podes", "pode", "podemos", "podem"],
+          ["querer", "quero", "queres", "quer", "queremos", "querem"],
+          ["saber", "sei", "sabes", "sabe", "sabemos", "sabem"],
+          ["dizer", "digo", "dizes", "diz", "dizemos", "dizem"],
+          ["dar", "dou", "dás", "dá", "damos", "dão"]
+        ]
+      }
     }
   ],
   lessons: [
-    { title: "Part 1: Main irregular verbs" },
-    { title: "Part 2: Saber, conhecer, ir, ter de" },
-    { title: "Part 3: Questions and conjugations" }
+    { title: "Part 1: Conjugation of irregular verbs" },
+    { title: "Part 2: Constructions and verb distinctions" },
+    { title: "Part 3: Questions and conjugation summary" }
   ],
   vocabulary: [
     { ru: "to go" },
