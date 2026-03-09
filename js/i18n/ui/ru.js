@@ -20,7 +20,7 @@ export default {
   'auth.genericError': 'Ошибка авторизации',
 
   // Dashboard
-  'dashboard.subtitle': '20 уроков по книге «Basic Portuguese: A Grammar and Workbook»',
+  'dashboard.subtitle': 'Курс европейского португальского: 20 уроков с упражнениями',
   'dashboard.lessonsCompleted': 'Уроков пройдено',
   'dashboard.avgScore': 'Средний балл',
   'dashboard.dueCards': 'Карточек на повторение',

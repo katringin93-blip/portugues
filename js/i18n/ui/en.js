@@ -20,7 +20,7 @@ export default {
   'auth.genericError': 'Authentication error',
 
   // Dashboard
-  'dashboard.subtitle': '20 lessons based on «Basic Portuguese: A Grammar and Workbook»',
+  'dashboard.subtitle': 'European Portuguese course: 20 lessons with exercises',
   'dashboard.lessonsCompleted': 'Lessons completed',
   'dashboard.avgScore': 'Average score',
   'dashboard.dueCards': 'Cards due for review',
