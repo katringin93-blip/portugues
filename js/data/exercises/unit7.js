@@ -2,9 +2,9 @@ export const exercises = [
   // Ex1: Rewrite in negative (12 items)
   {
     type: "translate",
-    source: "O Sr António viaja para Lisboa todas as semanas. → Перепишите в отрицательной форме.",
-    direction: "pt-ru",
-    answer: ["Господин Антониу не ездит в Лиссабон каждую неделю."]
+    source: "Перепишите в отрицательной форме: O Sr António viaja para Lisboa todas as semanas.",
+    direction: "ru-pt",
+    answer: ["O Sr António não viaja para Lisboa todas as semanas."]
   },
   {
     type: "order",
