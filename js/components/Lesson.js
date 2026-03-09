@@ -445,6 +445,7 @@ export const Lesson = {
       fcIndex: 0,
       fcFlipped: false,
       flashcardStates: {},
+      visitedLessons: {},
     };
   },
 
@@ -476,7 +477,17 @@ export const Lesson = {
       return p ? (p.exercisesCompleted || 0) : 0;
     },
     theoryRead() {
-      return this.exercisesCompleted > 0;
+      // Check saved progress first
+      const p = (this.progress || {})[this.unit && this.unit.id];
+      if (p && p.theoryRead) return true;
+      // Check if all sub-lessons visited in this session
+      const totalLessons = (this.unit && this.unit.lessons && this.unit.lessons.length > 1)
+        ? this.unit.lessons.length : 1;
+      let visited = 0;
+      for (let k in this.visitedLessons) {
+        if (this.visitedLessons[k]) visited++;
+      }
+      return visited >= totalLessons;
     },
     totalBatches() {
       if (!this.exerciseCount) return 0;
@@ -539,12 +550,19 @@ export const Lesson = {
   },
 
   watch: {
-    '$route.params.id'() {
+    async '$route.params.id'() {
       this.resetState();
-      this.loadTranslatedUnit();
+      await this.loadTranslatedUnit();
+      this.markLessonVisited(this.currentLesson);
     },
     tab() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    currentLesson(val) {
+      this.markLessonVisited(val);
+    },
+    theoryRead(val) {
+      if (val) this.saveTheoryRead();
     },
   },
 
@@ -565,9 +583,26 @@ export const Lesson = {
     if (this.user && this.user.id) {
       this.flashcardStates = await loadFlashcardStates(this.user.id);
     }
+    // Mark initial sub-lesson as visited after unit is loaded
+    this.markLessonVisited(this.currentLesson);
   },
 
   methods: {
+    markLessonVisited(idx) {
+      if (!this.visitedLessons[idx]) {
+        this.visitedLessons = Object.assign({}, this.visitedLessons, { [idx]: true });
+      }
+    },
+
+    saveTheoryRead() {
+      if (!this.unit) return;
+      var p = (this.progress || {})[this.unit.id] || {};
+      this.$emit('update-progress', {
+        unitNumber: this.unit.id,
+        data: Object.assign({}, p, { theoryRead: true }),
+      });
+    },
+
     async loadTranslatedUnit() {
       const id = parseInt(this.$route.params.id);
       const baseUnit = units.find(u => u.id === id) || null;
@@ -583,6 +618,7 @@ export const Lesson = {
     resetState() {
       this.tab = 'theory';
       this.currentLesson = 0;
+      this.visitedLessons = {};
       this.vocabExpanded = false;
       this.practiceView = 'hub';
       this.exerciseStarted = false;
