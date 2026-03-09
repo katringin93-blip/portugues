@@ -168,9 +168,14 @@ export const Lesson = {
               {{ totalBatches }} {{ totalBatches > 1 ? t('lesson.batchLabel', { current: 1, total: totalBatches }) : '' }}
             </p>
             <progress-bar :percent="exercisePercent" :show-text="true" class="mt-1 mb-2"></progress-bar>
-            <button class="btn btn-primary btn-lg" @click="startExercises">
-              {{ exercisePercent > 0 && exercisePercent < 100 ? t('lesson.continue') : exercisePercent >= 100 ? t('lesson.retry') : t('lesson.start') }}
-            </button>
+            <div class="flex gap-1" style="justify-content:center">
+              <button v-if="exercisePercent > 0 && exercisePercent < 100" class="btn btn-primary btn-lg" @click="continueExercises">
+                {{ t('lesson.continue') }}
+              </button>
+              <button class="btn btn-lg" :class="exercisePercent > 0 && exercisePercent < 100 ? 'btn-outline' : 'btn-primary'" @click="startExercises">
+                {{ exercisePercent > 0 ? t('lesson.retry') : t('lesson.start') }}
+              </button>
+            </div>
           </div>
 
           <!-- Active exercise -->
@@ -669,28 +674,35 @@ export const Lesson = {
       this.textAnswer = '';
       this.resetMatchOrder();
 
-      // Check saved progress to resume from where user left off
+      // Always start fresh
+      this.currentBatch = 0;
+      this.currentExerciseIdx = 0;
+      this.correctCount = 0;
+      this.attemptedCount = 0;
+      this.batchCorrectCount = 0;
+
+      this.initExerciseType();
+    },
+
+    continueExercises() {
+      this.practiceView = 'exercises';
+      this.exerciseStarted = true;
+      this.exerciseFinished = false;
+      this.batchFinished = false;
+      this.answered = false;
+      this.selectedAnswer = null;
+      this.textAnswer = '';
+      this.resetMatchOrder();
+
+      // Resume from saved progress
       var p = (this.progress || {})[this.unit && this.unit.id];
       var done = p ? (p.exercisesCompleted || 0) : 0;
-      var total = this.exerciseCount;
-
-      if (done > 0 && done < total) {
-        // Resume: calculate batch and position
-        this.currentBatch = Math.floor(done / this.batchSize);
-        this.currentExerciseIdx = done % this.batchSize;
-        // Restore correctCount from saved score
-        var score = p.score || 0;
-        this.correctCount = Math.round(score * done / 100);
-        this.attemptedCount = done;
-        this.batchCorrectCount = 0;
-      } else {
-        // Start fresh (new or retry after 100%)
-        this.currentBatch = 0;
-        this.currentExerciseIdx = 0;
-        this.correctCount = 0;
-        this.attemptedCount = 0;
-        this.batchCorrectCount = 0;
-      }
+      this.currentBatch = Math.floor(done / this.batchSize);
+      this.currentExerciseIdx = done % this.batchSize;
+      var score = p.score || 0;
+      this.correctCount = Math.round(score * done / 100);
+      this.attemptedCount = done;
+      this.batchCorrectCount = 0;
 
       this.initExerciseType();
     },
