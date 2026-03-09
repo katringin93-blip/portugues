@@ -4,7 +4,7 @@ export default {
   theory: [
     {
       heading: "Simple negation",
-      text: "To form a negation in Portuguese, simply place «não» (no, not) before the verb. Unlike Russian, in Portuguese there is no double negation with «não» and another negative word before the verb."
+      text: "To form a negation in Portuguese, simply place «não» (no, not) before the verb. Unlike English, Portuguese uses double negation as standard grammar: «Não quero nada» (lit. 'I don't want nothing') is correct and required when a negative word follows the verb."
     },
     {
       examples: [

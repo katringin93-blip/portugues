@@ -4,7 +4,7 @@ export default {
   theory: [
     {
       heading: "Gender of nouns",
-      text: "In Portuguese, nouns have two genders: masculine (masculino) and feminine (feminino). Unlike Russian, there is no neuter gender. Gender can often be determined by the word ending."
+      text: "In Portuguese, nouns have two genders: masculine (masculino) and feminine (feminino). Unlike English, every noun has a grammatical gender, even inanimate objects (e.g. «a mesa» — the table — is feminine). Gender can often be determined by the word ending."
     },
     {
       table: {
