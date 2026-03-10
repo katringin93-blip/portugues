@@ -117,13 +117,22 @@ async function synthesizeEdgeTTS(text, rate) {
     '?TrustedClientToken=' + EDGE_TTS_TOKEN +
     '&ConnectionId=' + connectionId;
 
-  // In Cloudflare Workers, outgoing WebSocket connections use fetch() with Upgrade header
+  // In Cloudflare Workers, outgoing WebSocket connections use fetch() with Upgrade header.
+  // Edge TTS requires browser-like headers (Origin + User-Agent) or it rejects the connection.
   var resp = await fetch(wsUrl, {
-    headers: { Upgrade: 'websocket' },
+    headers: {
+      'Upgrade': 'websocket',
+      'Origin': 'chrome-extension://jdiccldimpdaibmpdkjnbmckianbfold',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Cache-Control': 'no-cache',
+      'Pragma': 'no-cache',
+    },
   });
 
   if (resp.status !== 101) {
-    throw new Error('WebSocket upgrade failed: ' + resp.status);
+    throw new Error('WebSocket upgrade failed: ' + resp.status + ' (check Origin/User-Agent headers)');
   }
 
   var ws = resp.webSocket;

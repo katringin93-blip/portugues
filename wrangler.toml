@@ -1,0 +1,5 @@
+# Cloudflare Pages configuration
+# compatibility_date enables modern APIs including outgoing WebSocket support
+
+name = "portugues"
+compatibility_date = "2024-01-01"
