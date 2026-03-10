@@ -113,7 +113,7 @@ function buildSsmlMessage(text, rate) {
 async function synthesizeEdgeTTS(text, rate) {
   var connectionId = uuid();
   var wsUrl =
-    'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1' +
+    'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1' +
     '?TrustedClientToken=' + EDGE_TTS_TOKEN +
     '&ConnectionId=' + connectionId;
 
