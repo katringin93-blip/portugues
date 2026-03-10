@@ -81,8 +81,8 @@ function speakWithEdgeTTS(text, rate) {
       return;
     }
 
-    // Fetch from Netlify Function (absolute URL — site hosted on Cloudflare Pages, function on Netlify)
-    var apiUrl = 'https://learn-portugues.netlify.app/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
+    // Fetch from Cloudflare Pages Function (relative URL works on any host)
+    var apiUrl = '/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
 
     fetch(apiUrl).then(function(res) {
       if (!res.ok) throw new Error('TTS API ' + res.status);
