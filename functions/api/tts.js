@@ -132,10 +132,13 @@ async function synthesizeEdgeTTS(text, rate) {
   });
 
   if (resp.status !== 101) {
-    throw new Error('WebSocket upgrade failed: ' + resp.status + ' (check Origin/User-Agent headers)');
+    throw new Error('WebSocket upgrade failed: status=' + resp.status);
   }
 
   var ws = resp.webSocket;
+  if (!ws) {
+    throw new Error('WebSocket object is null after upgrade');
+  }
   ws.accept();
 
   return new Promise(function(resolve, reject) {
@@ -178,10 +181,14 @@ async function synthesizeEdgeTTS(text, rate) {
         // Other text frames (turn.start, response, metadata) — ignore
       } else {
         // Binary frame: [2 bytes header length][header bytes][audio data]
+        // Only collect frames with Path:audio header (skip metadata frames)
         var data = event.data; // ArrayBuffer
         if (data.byteLength < 2) return;
         var view = new DataView(data);
-        var headerLen = view.getUint16(0); // big-endian
+        var headerLen = view.getUint16(0); // big-endian uint16 big-endian
+        if (2 + headerLen > data.byteLength) return;
+        var headerStr = new TextDecoder().decode(new Uint8Array(data, 2, headerLen));
+        if (!headerStr.includes('Path:audio')) return; // skip non-audio frames
         var audioStart = 2 + headerLen;
         if (audioStart < data.byteLength) {
           audioChunks.push(data.slice(audioStart));
@@ -189,11 +196,13 @@ async function synthesizeEdgeTTS(text, rate) {
       }
     });
 
-    ws.addEventListener('error', function() {
+    ws.addEventListener('error', function(err) {
       if (!done) {
         done = true;
         clearTimeout(timeout);
-        reject(new Error('WebSocket connection error'));
+        var msg = (err && err.message) ? err.message : 'WebSocket connection error';
+        console.error('Edge TTS WebSocket error:', msg);
+        reject(new Error(msg));
       }
     });
 
@@ -212,7 +221,9 @@ async function synthesizeEdgeTTS(text, rate) {
           });
           resolve(result.buffer);
         } else {
-          reject(new Error('WebSocket closed without audio (code ' + event.code + ')'));
+          var reason = 'WebSocket closed without audio (code=' + event.code + ')';
+          console.error('Edge TTS:', reason);
+          reject(new Error(reason));
         }
       }
     });
