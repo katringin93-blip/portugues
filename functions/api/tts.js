@@ -110,20 +110,32 @@ function buildSsmlMessage(text, rate) {
   return headers + ssml;
 }
 
-// Microsoft's anti-abuse check (added 2024): SHA-256 of timestamp rounded to 5 minutes.
-// See: https://github.com/rany2/edge-tts (Sec-MS-GEC implementation)
+// Microsoft's anti-abuse check: SHA-256 of rounded timestamp + token.
+// See: https://github.com/rany2/edge-tts (DRM.generate_sec_ms_gec)
+var CHROMIUM_FULL_VERSION = '143.0.3650.75';
+var CHROMIUM_MAJOR_VERSION = '143';
+var SEC_MS_GEC_VERSION = '1-' + CHROMIUM_FULL_VERSION;
+var WIN_EPOCH = 11644473600; // seconds between 1601-01-01 and 1970-01-01
+
 async function generateSecMsGec() {
-  // Windows file time: 100-nanosecond intervals since Jan 1, 1601
-  // Unix epoch offset = 116444736000000000 (hundred-nanosecond units)
-  var WINDOWS_EPOCH_OFFSET = 116444736000000000n;
-  var ticks = BigInt(Date.now()) * 10000n + WINDOWS_EPOCH_OFFSET;
-  // Round down to nearest 5 minutes (3,000,000,000 ticks = 5 min)
-  var roundedTicks = (ticks / 3000000000n) * 3000000000n;
-  var predata = new TextEncoder().encode('GEC_CLCK_TKN=' + roundedTicks.toString());
+  // Unix timestamp in seconds, rounded down to nearest 5 minutes
+  var ticks = Math.floor(Date.now() / 1000);
+  ticks += WIN_EPOCH;
+  ticks -= ticks % 300;
+  // Convert to 100-nanosecond intervals (multiply by 1e7)
+  ticks *= 1e7;
+  // Hash: "{ticks}{TRUSTED_CLIENT_TOKEN}"
+  var strToHash = Math.round(ticks).toString() + EDGE_TTS_TOKEN;
+  var predata = new TextEncoder().encode(strToHash);
   var hashBuffer = await crypto.subtle.digest('SHA-256', predata);
   return Array.from(new Uint8Array(hashBuffer))
     .map(function(b) { return b.toString(16).padStart(2, '0'); })
     .join('').toUpperCase();
+}
+
+function generateMuid() {
+  var bytes = crypto.getRandomValues(new Uint8Array(16));
+  return Array.from(bytes).map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
 }
 
 async function synthesizeEdgeTTS(text, rate) {
@@ -136,18 +148,20 @@ async function synthesizeEdgeTTS(text, rate) {
   var secMsGec = await generateSecMsGec();
 
   // In Cloudflare Workers, outgoing WebSocket connections use fetch() with Upgrade header.
-  // Edge TTS requires browser-like headers + Sec-MS-GEC (anti-abuse, added 2024).
+  // Edge TTS requires browser-like headers + Sec-MS-GEC (anti-abuse).
+  var muid = generateMuid();
   var resp = await fetch(wsUrl, {
     headers: {
       'Upgrade': 'websocket',
       'Origin': 'chrome-extension://jdiccldimpdaibmpdkjnbmckianbfold',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
-      'Accept-Encoding': 'gzip, deflate, br',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/' + CHROMIUM_MAJOR_VERSION + '.0.0.0 Safari/537.36 Edg/' + CHROMIUM_MAJOR_VERSION + '.0.0.0',
+      'Accept-Encoding': 'gzip, deflate, br, zstd',
       'Accept-Language': 'en-US,en;q=0.9',
       'Cache-Control': 'no-cache',
       'Pragma': 'no-cache',
       'Sec-MS-GEC': secMsGec,
-      'Sec-MS-GEC-Version': '1-130559784652233622',
+      'Sec-MS-GEC-Version': SEC_MS_GEC_VERSION,
+      'Cookie': 'muid=' + muid + ';',
     },
   });
 
