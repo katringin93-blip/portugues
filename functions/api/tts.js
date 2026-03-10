@@ -140,16 +140,18 @@ function generateMuid() {
 
 async function synthesizeEdgeTTS(text, rate) {
   var connectionId = uuid();
+  var secMsGec = await generateSecMsGec();
+  var muid = generateMuid();
+
+  // Sec-MS-GEC and version go in query string (as in rany2/edge-tts Python reference).
+  // Cloudflare Workers may strip custom headers during WebSocket upgrade.
   var wsUrl =
     'https://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1' +
     '?TrustedClientToken=' + EDGE_TTS_TOKEN +
-    '&ConnectionId=' + connectionId;
+    '&ConnectionId=' + connectionId +
+    '&Sec-MS-GEC=' + encodeURIComponent(secMsGec) +
+    '&Sec-MS-GEC-Version=' + encodeURIComponent(SEC_MS_GEC_VERSION);
 
-  var secMsGec = await generateSecMsGec();
-
-  // In Cloudflare Workers, outgoing WebSocket connections use fetch() with Upgrade header.
-  // Edge TTS requires browser-like headers + Sec-MS-GEC (anti-abuse).
-  var muid = generateMuid();
   var resp = await fetch(wsUrl, {
     headers: {
       'Upgrade': 'websocket',
