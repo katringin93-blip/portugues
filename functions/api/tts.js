@@ -46,7 +46,7 @@ export async function onRequest(context) {
     });
   } catch (err) {
     console.error('Edge TTS error:', err.message || err);
-    return new Response(JSON.stringify({ error: 'TTS synthesis failed' }), {
+    return new Response(JSON.stringify({ error: err.message || 'TTS synthesis failed' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
     });
