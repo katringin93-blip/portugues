@@ -1,5 +1,5 @@
 // TTS for European Portuguese (pt-PT)
-// Primary: Edge TTS via Cloudflare Pages Function /api/tts (neural pt-PT-RaquelNeural voice)
+// Primary: Edge TTS via Netlify Function (neural pt-PT-RaquelNeural voice)
 // Fallback: Web Speech API (system voices)
 
 var webVoice = null;
@@ -81,8 +81,8 @@ function speakWithEdgeTTS(text, rate) {
       return;
     }
 
-    // Fetch from Netlify Function
-    var apiUrl = '/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
+    // Fetch from Netlify Function (absolute URL — site hosted on Cloudflare Pages, function on Netlify)
+    var apiUrl = 'https://learn-portugues.netlify.app/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
 
     fetch(apiUrl).then(function(res) {
       if (!res.ok) throw new Error('TTS API ' + res.status);
@@ -137,7 +137,7 @@ export function speak(text, rate) {
     return speakWithWebAPI(text, rate, webVoice);
   }
 
-  // 2. Try Edge TTS neural voice (pt-PT-RaquelNeural via Cloudflare Pages Function)
+  // 2. Try Edge TTS neural voice (pt-PT-RaquelNeural via Netlify Function)
   // 3. If Edge TTS fails — fall back to any system Portuguese voice
   return speakWithEdgeTTS(text, rate).catch(function() {
     var fallback = anyPtVoice || webVoice;
