@@ -110,6 +110,22 @@ function buildSsmlMessage(text, rate) {
   return headers + ssml;
 }
 
+// Microsoft's anti-abuse check (added 2024): SHA-256 of timestamp rounded to 5 minutes.
+// See: https://github.com/rany2/edge-tts (Sec-MS-GEC implementation)
+async function generateSecMsGec() {
+  // Windows file time: 100-nanosecond intervals since Jan 1, 1601
+  // Unix epoch offset = 116444736000000000 (hundred-nanosecond units)
+  var WINDOWS_EPOCH_OFFSET = 116444736000000000n;
+  var ticks = BigInt(Date.now()) * 10000n + WINDOWS_EPOCH_OFFSET;
+  // Round down to nearest 5 minutes (3,000,000,000 ticks = 5 min)
+  var roundedTicks = (ticks / 3000000000n) * 3000000000n;
+  var predata = new TextEncoder().encode('GEC_CLCK_TKN=' + roundedTicks.toString());
+  var hashBuffer = await crypto.subtle.digest('SHA-256', predata);
+  return Array.from(new Uint8Array(hashBuffer))
+    .map(function(b) { return b.toString(16).padStart(2, '0'); })
+    .join('').toUpperCase();
+}
+
 async function synthesizeEdgeTTS(text, rate) {
   var connectionId = uuid();
   var wsUrl =
@@ -117,8 +133,10 @@ async function synthesizeEdgeTTS(text, rate) {
     '?TrustedClientToken=' + EDGE_TTS_TOKEN +
     '&ConnectionId=' + connectionId;
 
+  var secMsGec = await generateSecMsGec();
+
   // In Cloudflare Workers, outgoing WebSocket connections use fetch() with Upgrade header.
-  // Edge TTS requires browser-like headers (Origin + User-Agent) or it rejects the connection.
+  // Edge TTS requires browser-like headers + Sec-MS-GEC (anti-abuse, added 2024).
   var resp = await fetch(wsUrl, {
     headers: {
       'Upgrade': 'websocket',
@@ -128,6 +146,8 @@ async function synthesizeEdgeTTS(text, rate) {
       'Accept-Language': 'en-US,en;q=0.9',
       'Cache-Control': 'no-cache',
       'Pragma': 'no-cache',
+      'Sec-MS-GEC': secMsGec,
+      'Sec-MS-GEC-Version': '1-130559784652233622',
     },
   });
 
