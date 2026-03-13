@@ -44,7 +44,43 @@ export default {
     },
     {
       note: "In European Portuguese, the distinction between este/esse/aquele is observed more strictly than in the Brazilian variant. In Brazil, only esse and aquele are often used."
+    },
+    {
+      heading: "Adverbs of place: aqui, aí, ali, acolá",
+      text: "Demonstrative pronouns are often used together with adverbs of place that follow the same three-level distance system."
+    },
+    {
+      table: {
+        headers: ["Pronoun", "Adverb", "Meaning"],
+        rows: [
+          ["este / isto", "aqui", "here (near me)"],
+          ["esse / isso", "aí", "there (near you)"],
+          ["aquele / aquilo", "ali / acolá", "there / over there (far from both)"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "This here is mine." },
+        { ru: "What is that there in your hand?" },
+        { ru: "That garden over there is very English." },
+        { ru: "Those buildings over there at the end of the street are very modern." }
+      ]
+    },
+    {
+      heading: "Contraction with the preposition «a»",
+      text: "Unlike the prepositions «de» and «em», the preposition «a» only contracts with the forms aquele/aquela/aquilo."
+    },
+    {},
+    {
+      examples: [
+        { ru: "João always gives a coin to that beggar on the corner over there." }
+      ]
     }
+  ],
+  lessons: [
+    { title: "Part 1: Demonstrative pronouns" },
+    { title: "Part 2: Adverbs of place and contraction with «a»" }
   ],
   vocabulary: [
     { ru: "this (near me)" },

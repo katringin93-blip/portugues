@@ -1527,7 +1527,52 @@ export const units = [
       },
       {
         note: "В европейском португальском различие между este/esse/aquele соблюдается строже, чем в бразильском варианте. В Бразилии часто используют только esse и aquele."
+      },
+      {
+        heading: "Наречия места: aqui, aí, ali, acolá",
+        text: "Указательные местоимения часто используются вместе с наречиями места, которые соответствуют той же трёхступенчатой системе удалённости."
+      },
+      {
+        table: {
+          headers: ["Местоимение", "Наречие", "Значение"],
+          rows: [
+            ["este / isto", "aqui", "здесь (около меня)"],
+            ["esse / isso", "aí", "там (около тебя)"],
+            ["aquele / aquilo", "ali / acolá", "там / вон там (далеко от обоих)"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Isto aqui é meu.", ru: "Вот это (здесь) — моё." },
+          { pt: "O que é isso aí na tua mão?", ru: "Что это у тебя в руке?" },
+          { pt: "Aquele jardim acolá é muito inglês.", ru: "Тот сад вон там — очень английский." },
+          { pt: "Aqueles prédios ali ao fundo da rua são muito modernos.", ru: "Те здания там в конце улицы — очень современные." }
+        ]
+      },
+      {
+        heading: "Слияние с предлогом «a»",
+        text: "В отличие от предлогов «de» и «em», предлог «a» сливается только с формами aquele/aquela/aquilo."
+      },
+      {
+        table: {
+          headers: ["", "a + ..."],
+          rows: [
+            ["aquele(s)", "àquele(s)"],
+            ["aquela(s)", "àquela(s)"],
+            ["aquilo", "àquilo"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "O João dá sempre uma moeda àquele pedinte ali na esquina.", ru: "Жуан всегда даёт монету тому нищему вон там на углу." }
+        ]
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Указательные местоимения", theoryRange: [0, 8] },
+      { title: "Часть 2: Наречия места и слияние с «a»", theoryRange: [8, 14] }
     ],
     exercises: ex9,
     vocabulary: [
