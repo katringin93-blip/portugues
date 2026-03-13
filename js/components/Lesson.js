@@ -36,7 +36,7 @@ export const Lesson = {
               <p v-if="section.text" v-html="section.text"></p>
               <div v-if="section.note" class="grammar-note">{{ section.note }}</div>
               <div v-if="section.table" class="grammar-table-wrap">
-                <table class="grammar-table">
+                <table :class="['grammar-table', section.table.equalCols ? 'equal-cols' : '']">
                   <thead>
                     <tr><th v-for="(h, hi) in section.table.headers" :key="hi">{{ h }}</th></tr>
                   </thead>

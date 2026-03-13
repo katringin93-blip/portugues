@@ -1356,6 +1356,7 @@ export const units = [
       {
         table: {
           headers: ["SER (постоянное)", "ESTAR (временное)"],
+          equalCols: true,
           rows: [
             ["Ele é alto. (Он высокий.)", "Ele está cansado. (Он устал.)"],
             ["Ela é portuguesa. (Она португалка.)", "Ela está em casa. (Она дома.)"],
@@ -1382,6 +1383,7 @@ export const units = [
       {
         table: {
           headers: ["С ser", "Значение", "С estar", "Значение"],
+          equalCols: true,
           rows: [
             ["ser aborrecido", "быть скучным, нудным", "estar aborrecido", "быть в скуке, скучать"],
             ["ser consciente", "быть сознательным, ответственным", "estar consciente", "быть в сознании"],
