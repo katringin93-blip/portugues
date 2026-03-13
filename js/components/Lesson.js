@@ -165,7 +165,7 @@ export const Lesson = {
           <div v-if="!exerciseStarted && !exerciseFinished" class="text-center" style="padding:2rem 0">
             <p v-html="t('lesson.exerciseCount', { count: exerciseCount })"></p>
             <p v-if="totalBatches > 1" class="text-muted" style="font-size:.875rem">
-              {{ totalBatches }} {{ totalBatches > 1 ? t('lesson.batchLabel', { current: 1, total: totalBatches }) : '' }}
+              {{ t('lesson.batchLabel', { current: nextBatchNumber, total: totalBatches }) }}
             </p>
             <progress-bar :percent="exercisePercent" :show-text="true" class="mt-1 mb-2"></progress-bar>
             <div class="flex gap-1" style="justify-content:center">
@@ -497,6 +497,11 @@ export const Lesson = {
     totalBatches() {
       if (!this.exerciseCount) return 0;
       return Math.ceil(this.exerciseCount / this.batchSize);
+    },
+    nextBatchNumber() {
+      var done = this.exercisesCompleted;
+      if (done <= 0 || done >= this.exerciseCount) return 1;
+      return Math.floor(done / this.batchSize) + 1;
     },
     batchExercises() {
       if (!this.unit || !this.unit.exercises) return [];
