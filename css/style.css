@@ -768,7 +768,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   -webkit-transition: background var(--duration-fast); transition: background var(--duration-fast);
 }
 .vocab-item:hover { background: var(--gray-50); }
-.vocab-pt { font-weight: 600; -webkit-flex: 0 0 40%; flex: 0 0 40%; min-width: 80px; overflow-wrap: break-word; word-break: break-word; color: var(--gray-900); }
+.vocab-pt { font-weight: 600; -webkit-flex-shrink: 0; flex-shrink: 0; white-space: nowrap; color: var(--gray-900); }
 .vocab-ru { color: var(--gray-500); -webkit-flex: 1; flex: 1; min-width: 0; overflow-wrap: break-word; }
 
 /* ===== Responsive ===== */
@@ -858,7 +858,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 
   /* FIX: Vocab layout adjustments for narrow screens */
   .vocab-item { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-  .vocab-pt { min-width: 80px; }
+  .vocab-pt { white-space: nowrap; }
 
   /* FIX: Progress grid single column on mobile */
   .progress-grid { grid-template-columns: 1fr; }
