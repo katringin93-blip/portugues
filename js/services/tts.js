@@ -132,15 +132,10 @@ export function speak(text, rate) {
   if (rate === undefined || rate === null) rate = 0.9;
   if (!text) return Promise.resolve();
 
-  // 1. If system has a real pt-PT voice — use it (lowest latency, correct accent)
-  if (hasPtPTVoice && webVoice) {
-    return speakWithWebAPI(text, rate, webVoice);
-  }
-
-  // 2. Try Edge TTS neural voice (pt-PT-RaquelNeural via Netlify Function)
-  // 3. If Edge TTS fails — fall back to any system Portuguese voice
+  // 1. Always try Edge TTS first (pt-PT-RaquelNeural — guaranteed European Portuguese)
+  // 2. If Edge TTS fails — fall back to system pt-PT voice, then any Portuguese voice
   return speakWithEdgeTTS(text, rate).catch(function() {
-    var fallback = anyPtVoice || webVoice;
+    var fallback = webVoice || anyPtVoice;
     if (fallback) {
       console.log('TTS: falling back to Web Speech API:', fallback.name);
       return speakWithWebAPI(text, rate, fallback);
