@@ -29,10 +29,10 @@ export const exercises = [
   },
   {
     type: "choice",
-    question: "Мы живём ___ bairro. (Мы живём в этом районе — em + esse = ...)",
+    question: "Vivemos ___ bairro. (Мы живём в этом районе — em + este = ...)",
     options: ["neste", "nesse", "naquele", "desse"],
-    correct: 1,
-    explanation: "«Em» + «esse» = «nesse»: «Vivemos nesse bairro.»"
+    correct: 0,
+    explanation: "«Em» + «este» = «neste»: «Vivemos neste bairro.» — район рядом с говорящим."
   },
   {
     type: "fill",
@@ -48,9 +48,9 @@ export const exercises = [
   // Ex2: Rewrite with different noun (agreement changes)
   {
     type: "translate",
-    source: "«Esta caneta pertence àquela professora.» — Перепишите во мн.ч.: «Estas canetas pertencem àquela professora.»",
-    direction: "pt-ru",
-    answer: ["Эти ручки принадлежат той учительнице."]
+    source: "Перепишите во мн.ч.: «Esta caneta pertence àquela professora.»",
+    direction: "ru-pt",
+    answer: ["Estas canetas pertencem àquelas professoras."]
   },
   {
     type: "order",
