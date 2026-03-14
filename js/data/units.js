@@ -2291,6 +2291,30 @@ export const units = [
         text: "Правила позиции те же, что и для местоимений прямого дополнения: энклиза (после глагола) — по умолчанию, проклиза (перед) — после отрицания, вопросительных слов, союзов."
       },
       {
+        heading: "Энклиза с косвенными местоимениями",
+        text: "В утвердительных предложениях без «притягивающих» слов местоимение стоит после глагола через дефис (энклиза)."
+      },
+      {
+        examples: [
+          { pt: "A Filipa dá-me muitas canetas.", ru: "Филипа даёт мне много ручек." },
+          { pt: "(Eles) dão-te muito pouco carinho.", ru: "Они дают тебе очень мало ласки." },
+          { pt: "O Pedro precisa de orientação e o pai dá-lhe bons conselhos.", ru: "Педру нуждается в наставлении, и отец даёт ему хорошие советы." },
+          { pt: "A minha tia vende-nos o carro dela muito barato.", ru: "Моя тётя продаёт нам свою машину очень дёшево." },
+          { pt: "Eles gostam de coisas doces e tu ofereces-lhes sempre chocolates.", ru: "Они любят сладкое, и ты всегда даришь им шоколад." }
+        ]
+      },
+      {
+        heading: "Проклиза с косвенными местоимениями",
+        text: "После отрицания, вопросительных слов, союзов и наречий местоимение перемещается перед глагол (проклиза)."
+      },
+      {
+        examples: [
+          { pt: "A Filipa nunca me dá canetas.", ru: "Филипа никогда не даёт мне ручки. (проклиза после «nunca»)" },
+          { pt: "Quem te compra o material escolar?", ru: "Кто тебе покупает школьные принадлежности? (проклиза после вопросительного слова)" },
+          { pt: "Já que lhes levas artigos nacionais, leva pastéis de nata.", ru: "Раз уж ты везёшь им национальные товары, вези паштейш де ната. (проклиза после союза)" }
+        ]
+      },
+      {
         heading: "Сочетание прямого и косвенного дополнений",
         text: "Когда в предложении есть и прямое, и косвенное местоимение, они сливаются."
       },
@@ -2307,6 +2331,21 @@ export const units = [
         }
       },
       {
+        heading: "Правило контракции с «nos»",
+        text: "При сочетании «nos» с прямыми местоимениями o/a/os/as буква «s» отпадает, а прямое местоимение принимает форму -lo/-la/-los/-las (фонологическое правило). Результат: no-lo, no-la, no-los, no-las."
+      },
+      {
+        examples: [
+          { pt: "Os nossos pais dão-nos prendas, mas dão-no-las só no Natal.", ru: "Наши родители дарят нам подарки, но дарят нам их только на Рождество." },
+          { pt: "A professora diz-nos o que sai no teste, mas diz-no-lo indiretamente.", ru: "Учительница говорит нам, что будет на тесте, но говорит нам это косвенно." },
+          { pt: "O pai empresta-nos o carro, mas nunca no-lo empresta à noite.", ru: "Отец одалживает нам машину, но никогда не одалживает нам её ночью. (проклиза)" },
+          { pt: "A tia compra-nos muita roupa, mas só no-la compra na feira.", ru: "Тётя покупает нам много одежды, но покупает нам её только на ярмарке. (проклиза)" }
+        ]
+      },
+      {
+        note: "При проклизе контрактные формы также перемещаются перед глагол: nunca no-lo empresta, só no-la compra и т.д. Триггеры проклизы (отрицание, наречия, союзы) действуют на контрактные формы так же, как на одиночные местоимения."
+      },
+      {
         examples: [
           { pt: "Eu dou-lhe o livro.", ru: "Я даю ему/ей книгу." },
           { pt: "Não lhe digo nada.", ru: "Я ему/ей ничего не скажу." },
@@ -2319,8 +2358,8 @@ export const units = [
       }
     ],
     lessons: [
-      { title: "Часть 1: Формы и позиция", theoryRange: [0, 3] },
-      { title: "Часть 2: Контракция местоимений", theoryRange: [3, 7] }
+      { title: "Часть 1: Формы и позиция", theoryRange: [0, 7] },
+      { title: "Часть 2: Контракция местоимений", theoryRange: [7, 14] }
     ],
     exercises: ex13,
     vocabulary: [
@@ -2384,7 +2423,7 @@ export const units = [
     theory: [
       {
         heading: "Возвратные местоимения (Pronomes reflexos)",
-        text: "Возвратные местоимения указывают, что действие направлено на самого субъекта. В словаре возвратные глаголы обозначаются с «-se» на конце."
+        text: "Возвратные местоимения указывают, что действие направлено на самого субъекта — местоимение выступает прямым дополнением, ссылающимся на то же лицо, что и подлежащее. В португальском языке возвратные глаголы используются значительно шире, чем в большинстве других языков. В словаре возвратные глаголы обозначаются с «-se» на конце."
       },
       {
         table: {
@@ -2436,26 +2475,33 @@ export const units = [
             ["arrepender-se", "сожалеть, раскаиваться"],
             ["barbear-se", "бриться"],
             ["chamar-se", "зваться, называться"],
-            ["chatear-se", "раздражаться"],
-            ["comprometer-se", "обязываться"],
+            ["chatear-se", "злиться, обижаться"],
+            ["comprometer-se", "брать на себя обязательство"],
+            ["culpar-se", "винить себя"],
             ["deitar-se", "ложиться"],
             ["desculpar-se", "извиняться"],
             ["despedir-se", "прощаться"],
             ["despir-se", "раздеваться"],
+            ["encantar-se", "очаровываться"],
             ["enganar-se", "ошибаться"],
             ["esquecer-se", "забывать"],
+            ["interrogar-se", "задаваться вопросом"],
             ["irritar-se", "раздражаться"],
             ["lavar-se", "мыться, умываться"],
             ["lembrar-se", "вспоминать, помнить"],
             ["levantar-se", "вставать"],
             ["magoar-se", "пораниться"],
+            ["ofender-se", "обижаться"],
             ["pentear-se", "причёсываться"],
             ["preparar-se", "готовиться"],
+            ["repetir-se", "повторяться"],
             ["rir-se", "смеяться"],
             ["secar-se", "вытираться"],
             ["sentar-se", "садиться"],
             ["sentir-se", "чувствовать себя"],
+            ["ver-se", "видеть себя"],
             ["vestir-se", "одеваться"],
+            ["voltar-se", "оборачиваться"],
             ["zangar-se", "злиться"]
           ]
         }
@@ -2466,7 +2512,10 @@ export const units = [
           { pt: "O Pedro sente-se muito cansado hoje.", ru: "Педру чувствует себя очень уставшим сегодня." },
           { pt: "Nós deitamo-nos muito tarde à sexta-feira.", ru: "Мы ложимся очень поздно по пятницам." },
           { pt: "Os idosos lembram-se melhor dos tempos antigos.", ru: "Пожилые люди лучше помнят старые времена." },
-          { pt: "Vocês esquecem-se de tudo!", ru: "Вы всё забываете!" }
+          { pt: "Vocês esquecem-se de tudo!", ru: "Вы всё забываете!" },
+          { pt: "Tu levantas-te às sete e meia todas as manhãs.", ru: "Ты встаёшь в полвосьмого каждое утро." },
+          { pt: "(Você) chama-se Joana?", ru: "Вас зовут Жоана?" },
+          { pt: "As gémeas vestem-se com roupa igual.", ru: "Близняшки одеваются одинаково." }
         ]
       },
       {
@@ -2497,7 +2546,7 @@ export const units = [
         ]
       },
       {
-        note: "Возвратное «se» в 3-м лице может обозначать неопределённый субъект (аналог русского «-ся»): «Vende-se» (Продаётся), «Vendem-se carros» (Продаются машины), «No verão vai-se à praia» (Летом ходят на пляж)."
+        note: "Возвратное «se» в 3-м лице может обозначать неопределённый субъект (аналог русского «-ся»): «Vende-se» (Продаётся), «Vendem-se carros» (Продаются машины), «No verão vai-se à praia» (Летом ходят на пляж). Важно: в конструкции «Vendem-se carros» слово «carros» является подлежащим, поэтому глагол стоит во множественном числе. В разговорной речи допускается и единственное число: «Vende-se carros», но грамматически правильная форма — множественная."
       }
     ],
     lessons: [
@@ -3056,6 +3105,21 @@ export const units = [
         note: "Важно: глаголы dar, dizer, fazer, ir, saber, trazer, ver — неправильные в других временах, но в Imperfeito они спрягаются по обычным правилам: dava, dizia, fazia, ia, sabia, trazia, via."
       },
       {
+        text: "В учебнике pôr иногда относят к 4-й группе спряжения наряду с -ar/-er/-ir. В Imperfeito глагол pôr спрягается по своему собственному образцу (punha, punhas...), но это спряжение полностью предсказуемо."
+      },
+      {
+        heading: "Примеры с ser, ter, vir в Imperfeito",
+        text: "Примеры из учебника, демонстрирующие использование неправильных глаголов ser, ter и vir в Imperfeito."
+      },
+      {
+        examples: [
+          { pt: "O Fernando era muito gordo.", ru: "Фернанду был очень полным." },
+          { pt: "No ano passado tínhamos um automóvel muito velho.", ru: "В прошлом году у нас был очень старый автомобиль." },
+          { pt: "O meu tio tinha uma namorada alemã. Era muito simpática.", ru: "У моего дяди была немецкая подруга. Она была очень симпатичной." },
+          { pt: "Vinhas a nossa casa muitas vezes, quando vivias aqui perto.", ru: "Ты часто приходил к нам домой, когда жил здесь рядом." }
+        ]
+      },
+      {
         heading: "Маркеры Imperfeito",
         text: "Слова-маркеры, которые указывают на использование Imperfeito."
       },
@@ -3108,8 +3172,8 @@ export const units = [
       }
     ],
     lessons: [
-      { title: "Часть 1: Imperfeito — формы и маркеры", theoryRange: [0, 9] },
-      { title: "Часть 2: Ir + инфинитив и вежливые просьбы", theoryRange: [9, 13] }
+      { title: "Часть 1: Imperfeito — формы и маркеры", theoryRange: [0, 12] },
+      { title: "Часть 2: Ir + инфинитив и вежливые просьбы", theoryRange: [12, 17] }
     ],
     exercises: ex18,
     vocabulary: [
@@ -3122,7 +3186,13 @@ export const units = [
       { pt: "o jardim", ru: "сад" },
       { pt: "o campo", ru: "деревня; поле" },
       { pt: "a criança", ru: "ребёнок" },
-      { pt: "a televisão", ru: "телевизор, телевидение" }
+      { pt: "a televisão", ru: "телевизор, телевидение" },
+      { pt: "instância de férias", ru: "курорт, место отдыха" },
+      { pt: "micro climas", ru: "микроклиматы" },
+      { pt: "provenientes de", ru: "происходящие из" },
+      { pt: "em adolescentes", ru: "в подростковом возрасте" },
+      { pt: "todo", ru: "весь, все" },
+      { pt: "amostra de tecido", ru: "образец ткани" }
     ],
     flashcards: [
       { id: "u18_falava", pt: "falava", ru: "говорил (привычно)", hint: "Imperfeito от falar", example: "Eu falava português todos os dias." },
