@@ -766,18 +766,20 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 .batch-complete h3 { margin-bottom: .5rem; }
 
 /* ===== Vocab List ===== */
-.vocab-list { list-style: none; }
+.vocab-list { list-style: none; display: grid; grid-template-columns: auto auto 1fr; column-gap: .75rem; }
 .vocab-item {
-  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; gap: .75rem;
+  display: grid; grid-template-columns: subgrid; grid-column: 1 / -1;
+  align-items: center;
   padding: .75rem .5rem; border-bottom: 1px solid var(--gray-100);
-  /* FIX: Ensure touch target height for vocab items */
   min-height: 44px;
   border-radius: var(--radius);
   -webkit-transition: background var(--duration-fast); transition: background var(--duration-fast);
 }
 .vocab-item:hover { background: var(--gray-50); }
-.vocab-pt { font-weight: 600; -webkit-flex-shrink: 0; flex-shrink: 0; white-space: nowrap; color: var(--gray-900); }
-.vocab-ru { color: var(--gray-500); -webkit-flex: 1; flex: 1; min-width: 0; overflow-wrap: break-word; }
+.vocab-pt { font-weight: 600; white-space: nowrap; color: var(--gray-900); }
+.vocab-ru { color: var(--gray-500); min-width: 0; overflow-wrap: break-word; }
+/* Sidebar vocab: 2 columns (no audio button) */
+.sidebar-card .vocab-list { grid-template-columns: auto 1fr; }
 
 /* ===== Responsive ===== */
 @media (max-width: 640px) {
@@ -865,7 +867,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   .exercise-input-row .btn { width: 100%; }
 
   /* FIX: Vocab layout adjustments for narrow screens */
-  .vocab-item { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+  .vocab-list { grid-template-columns: auto auto 1fr; }
   .vocab-pt { white-space: nowrap; }
 
   /* FIX: Progress grid single column on mobile */
@@ -1214,8 +1216,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   .flashcard-rating { margin-left: -.25rem; margin-right: -.25rem; }
   .flashcard-rating > * { margin: .25rem; }
 
-  /* Vocab */
-  .vocab-item > * + * { margin-left: .75rem; }
+  /* Vocab — gap fallback no longer needed (grid handles it) */
 
   /* Practice hub & sidebar */
   .practice-hub > * + * { margin-top: 1rem; }
