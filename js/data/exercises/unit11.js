@@ -112,6 +112,22 @@ export const exercises = [
     question: "Образуйте абсолютную превосходную степень: inteligente → ___",
     answer: "inteligentíssimo"
   },
+  // --- Ex2 items 10–12 (из учебника) ---
+  {
+    type: "fill",
+    question: "Заполните пропуск: «Filha, essa tua camisa é ___. Tens de comprar uma nova.»",
+    answer: "velhíssima"
+  },
+  {
+    type: "fill",
+    question: "Заполните пропуск: «Vou acender a luz. Esta sala está ___.»",
+    answer: "escuríssima"
+  },
+  {
+    type: "fill",
+    question: "Заполните пропуск: «A quinta do meu avô fica ___.»",
+    answer: "longíssimo"
+  },
   // === Ex3: Сравнительные конструкции ===
   {
     type: "fill",
@@ -155,6 +171,27 @@ export const exercises = [
       ["o/a maior", "самый большой / наибольший"]
     ]
   },
+  // --- Ex3 items 3, 6, 7, 8 (из учебника) ---
+  {
+    type: "fill",
+    question: "Заполните: O Pedro tem muito dinheiro e o João tem pouco. O Pedro é ___ rico ___ o João.",
+    answer: ["mais", "do que"]
+  },
+  {
+    type: "fill",
+    question: "Заполните: A Maria tem dois filhos e a cunhada tem quatro. A Maria tem ___ filhos ___ a cunhada.",
+    answer: ["menos", "do que"]
+  },
+  {
+    type: "fill",
+    question: "Заполните: Portugal é um país ___ pequeno ___ a Inglaterra.",
+    answer: ["mais", "do que"]
+  },
+  {
+    type: "fill",
+    question: "Заполните: O Rui tem 30 anos, o Ricardo tem 20. O Rui é ___ velho ___ o Ricardo.",
+    answer: ["mais", "do que"]
+  },
   // === Ex4: Перевод предложений со сравнениями ===
   {
     type: "translate",
@@ -186,6 +223,37 @@ export const exercises = [
     direction: "ru-pt",
     answer: ["O cão da Sara é tão pequeno como o do Peter."]
   },
+  // --- Ex4 items 6–10 (из учебника) ---
+  {
+    type: "translate",
+    source: "Эта книга чрезвычайно интересная. (используйте абсолютную превосходную степень)",
+    direction: "ru-pt",
+    answer: ["Este livro é extremamente interessante.", "Este livro é interessantíssimo."]
+  },
+  {
+    type: "translate",
+    source: "Деревня Сары меньше, чем эта.",
+    direction: "ru-pt",
+    answer: ["A aldeia da Sara é mais pequena do que esta."]
+  },
+  {
+    type: "translate",
+    source: "Кэтрин — чрезвычайно грустная женщина.",
+    direction: "ru-pt",
+    answer: ["A Catherine é uma mulher extremamente triste.", "A Catherine é uma mulher tristíssima."]
+  },
+  {
+    type: "translate",
+    source: "У Джона более тёмные волосы, чем у Мэри.",
+    direction: "ru-pt",
+    answer: ["O John tem cabelo mais escuro do que a Mary."]
+  },
+  {
+    type: "translate",
+    source: "Те деревья такие же старые, как и высокие.",
+    direction: "ru-pt",
+    answer: ["Estas árvores são tão antigas como altas.", "Estas árvores são tão antigas quanto altas."]
+  },
   // === Ex5: Текст о португальской кухне (сравнения и превосходные степени) ===
   {
     type: "order",
@@ -214,5 +282,46 @@ export const exercises = [
       ["grande", "maior"],
       ["pequeno", "menor"]
     ]
+  },
+  // === Ex5b: Перепишите предложения, используя сравнения и превосходные степени (из учебника) ===
+  {
+    type: "fill",
+    question: "Усильте прилагательное: «A culinária dos países de expressão portuguesa é rica em ingredientes.» → «...é ___ em ingredientes.»",
+    answer: "riquíssima"
+  },
+  {
+    type: "fill",
+    question: "Сравните (равенство): «As tradições culinárias de Portugal e também as dos outros países de expressão portuguesa utilizam legumes e frutos frescos.» → «Tanto as tradições culinárias de Portugal ___ as dos outros países ... utilizam legumes e frutos frescos.»",
+    answer: "como"
+  },
+  {
+    type: "fill",
+    question: "Перепишите, используя «menos ... do que»: «A culinária das regiões costeiras de cada país usa muito mais peixe do que carne.» → «...usa muito ___ carne ___ peixe.»",
+    answer: ["menos", "do que"]
+  },
+  {
+    type: "fill",
+    question: "Усильте прилагательное: «As tradições culinárias de todos estes países favorecem o uso de legumes e frutos frescos.» → «...legumes e frutos ___.»",
+    answer: "fresquíssimos"
+  },
+  {
+    type: "fill",
+    question: "Сравните (равенство): «A culinária dos países africanos é muito exótica, mas a culinária do Brasil também é.» → «A culinária dos países africanos é ___ exótica ___ a culinária do Brasil.»",
+    answer: ["tão", "como"]
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «menos»: «As comidas desses países são mais tropicais que as comidas portuguesas.» → «As comidas portuguesas são as ___ tropicais.»",
+    answer: "menos"
+  },
+  {
+    type: "fill",
+    question: "Сравните (больше): «A culinária angolana é influenciada pela culinária moçambicana e pela portuguesa.» → «A culinária angolana é ___ influenciada pela culinária moçambicana ___ pela portuguesa.»",
+    answer: ["mais", "do que"]
+  },
+  {
+    type: "fill",
+    question: "Усильте наречие: «Ingredientes como o sorgo, painço, castanha de caju, mandioca, melancia, papaia e côco são muito usados em pratos angolanos e moçambicanos.» → «...são ___ usados...»",
+    answer: "muitíssimo"
   }
 ];

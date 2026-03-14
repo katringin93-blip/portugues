@@ -80,6 +80,34 @@ export const exercises = [
     explanation: "Возвратные глаголы: deita-se (ложится) и penteia-se (причёсывается). Остальные — переходные."
   },
   {
+    type: "choice",
+    question: "Какие из предложений содержат возвратные местоимения?\n1) Ela não sabe se vai trabalhar.\n2) O Pedro não se levanta cedo.\n3) Nós conhecemo-lo bem.\n4) Eles sabem-no melhor.",
+    options: ["1 и 3", "2 и 4", "Только 2", "Только 1"],
+    correct: 2,
+    explanation: "Только «O Pedro não se levanta cedo» — возвратный глагол (levantar-se). В (1) «se» — союз «если». В (3) «-lo» и (4) «-no» — прямые местоимения (его)."
+  },
+  {
+    type: "choice",
+    question: "Какие из предложений содержат возвратные местоимения?\n1) Eu sinto-me bem.\n2) Eu sento-me nesta cadeira.\n3) Elas penteiam-se de manhã.\n4) Eu não me rio muito.",
+    options: ["Все четыре", "1, 2 и 3", "1 и 4", "2 и 3"],
+    correct: 0,
+    explanation: "Все четыре предложения содержат возвратные глаголы: sentir-se, sentar-se, pentear-se, rir-se."
+  },
+  {
+    type: "choice",
+    question: "Какие из предложений содержат возвратные местоимения?\n1) Eles lavam-se frequentemente.\n2) Elas levam-nas frequentemente.\n3) Tu interrogas-te muito.\n4) Ela diz-lhe tudo.",
+    options: ["1 и 2", "1 и 3", "2 и 4", "3 и 4"],
+    correct: 1,
+    explanation: "Возвратные: «lavam-se» (lavar-se — мыться) и «interrogas-te» (interrogar-se — спрашивать себя). «Levam-nas» — «их берут» (прямое местоимение), «diz-lhe» — «говорит ему/ей» (косвенное местоимение)."
+  },
+  {
+    type: "choice",
+    question: "Какие из предложений содержат возвратные местоимения?\n1) Vocês não se lembram?\n2) Vocês não o libertam?\n3) Ela despede-se.\n4) Ela despede-o.",
+    options: ["1 и 3", "2 и 4", "1 и 4", "2 и 3"],
+    correct: 0,
+    explanation: "Возвратные: «se lembram» (lembrar-se — помнить) и «despede-se» (despedir-se — прощаться). «O libertam» и «despede-o» содержат прямое местоимение «o» (его)."
+  },
+  {
     type: "match",
     question: "Соотнесите возвратные глаголы с их значениями:",
     pairs: [
@@ -126,6 +154,12 @@ export const exercises = [
     source: "Они забывают. (estão a esquecer-se)",
     direction: "ru-pt",
     answer: ["Estão a esquecer-se.", "Eles estão a esquecer-se."]
+  },
+  {
+    type: "translate",
+    source: "Я одеваюсь после завтрака. (vestir-se, tomar o pequeno-almoço)",
+    direction: "ru-pt",
+    answer: ["Visto-me depois de tomar o pequeno-almoço.", "Eu visto-me depois de tomar o pequeno-almoço."]
   },
   {
     type: "fill",
@@ -182,6 +216,31 @@ export const exercises = [
     question: "Eles ___ (enganar-se) muitas vezes. (Они часто ошибаются.)",
     answer: "enganam-se"
   },
+  {
+    type: "fill",
+    question: "A Paula ___ (encantar-se) com todos os gatinhos que vê. (Паула очаровывается всеми котятами.)",
+    answer: "encanta-se"
+  },
+  {
+    type: "fill",
+    question: "(Nós) não ___ (achar-se) muito inteligentes. (Мы не считаем себя очень умными. — проклиза)",
+    answer: "nos achamos"
+  },
+  {
+    type: "fill",
+    question: "O Pedrinho já ___ (vestir-se) sozinho. (Педриньо уже одевается сам. — проклиза после «já»)",
+    answer: "se veste"
+  },
+  {
+    type: "fill",
+    question: "Vocês são muito desastrados e ___ (magoar-se) muitas vezes. (Вы очень неуклюжие и часто ушибаетесь.)",
+    answer: "magoam-se"
+  },
+  {
+    type: "fill",
+    question: "Ninguém ___ (enganar-se) tantas vezes como tu! (Никто не ошибается так часто, как ты! — проклиза)",
+    answer: "se engana"
+  },
   // === Ex5: Порядок действий ===
   {
     type: "order",
@@ -205,6 +264,12 @@ export const exercises = [
       ["vestir-se", "одеваться"],
       ["pentear-se", "причёсываться"]
     ]
+  },
+  {
+    type: "order",
+    question: "Расположите фразы в правильном порядке, чтобы получился рассказ об утреннем распорядке:",
+    words: ["Eu levanto-me às sete horas, lavo-me,", "visto-me, penteio-me e depois preparo o pequeno-almoço.", "Sento-me à mesa e tomo o pequeno-almoço enquanto ouço o noticiário das oito.", "Às vezes irrito-me com as notícias, porque acontecem muitas desgraças.", "Quando (eu) termino, levanto-me e preparo as coisas que tenho de levar para o", "escritório: os óculos, o telemóvel, o computador e algo para almoçar.", "Infelizmente, algumas vezes esqueço-me dos óculos ou do telemóvel. Quando", "isso acontece, irrito-me bastante e durante o dia sinto-me desorientada."],
+    answer: "Eu levanto-me às sete horas, lavo-me, visto-me, penteio-me e depois preparo o pequeno-almoço. Sento-me à mesa e tomo o pequeno-almoço enquanto ouço o noticiário das oito. Às vezes irrito-me com as notícias, porque acontecem muitas desgraças. Quando (eu) termino, levanto-me e preparo as coisas que tenho de levar para o escritório: os óculos, o telemóvel, o computador e algo para almoçar. Infelizmente, algumas vezes esqueço-me dos óculos ou do telemóvel. Quando isso acontece, irrito-me bastante e durante o dia sinto-me desorientada."
   },
   // === Ex6: Текст о фадиштах ===
   {
@@ -231,6 +296,11 @@ export const exercises = [
   },
   {
     type: "fill",
+    question: "Algumas fadistas tradicionais ___ (adornar-se) com um xaile típico. (Некоторые традиционные фадистки украшаются типичной шалью.)",
+    answer: "adornam-se"
+  },
+  {
+    type: "fill",
     question: "Quando ___ (vestir-se) de negro, parecem sombras. (Когда одеваются в чёрное... — проклиза)",
     answer: "se vestem"
   },
@@ -238,6 +308,11 @@ export const exercises = [
     type: "fill",
     question: "O fado ___ (acompanhar-se) de guitarra portuguesa. (Фаду аккомпанируется португальской гитарой.)",
     answer: "acompanha-se"
+  },
+  {
+    type: "fill",
+    question: "A guitarra portuguesa não ___ (parecer-se) nada com a guitarra clássica. (Португальская гитара совсем не похожа на классическую. — проклиза после «não»)",
+    answer: "se parece"
   },
   {
     type: "translate",

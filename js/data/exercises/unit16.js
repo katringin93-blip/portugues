@@ -237,7 +237,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Eles entregam-lhas → Eles ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Elas entregam-lhas → Elas ___. (Pret. Perf. Composto с местоимениями)",
     answer: "têm-lhas entregado"
   },
 

@@ -252,9 +252,9 @@ export const exercises = [
   },
   {
     type: "translate",
-    source: "Я вышел из дома рано.",
+    source: "Я вышел из дома рано в прошлое воскресенье.",
     direction: "ru-pt",
-    answer: ["Eu saí de casa cedo.", "Saí de casa cedo."]
+    answer: ["Eu saí de casa cedo no domingo passado.", "Saí de casa cedo no domingo passado."]
   },
   {
     type: "translate",
@@ -276,15 +276,15 @@ export const exercises = [
   },
   {
     type: "translate",
-    source: "Дядя купил газету.",
+    source: "Дядя Паулу купил газету.",
     direction: "ru-pt",
-    answer: ["O tio comprou o jornal."]
+    answer: ["O tio do Paulo comprou o jornal."]
   },
   {
     type: "translate",
-    source: "Я проснулся в шесть.",
+    source: "Я проснулся в шесть сегодня утром.",
     direction: "ru-pt",
-    answer: ["Acordei às seis.", "Eu acordei às seis."]
+    answer: ["Acordei às seis esta manhã.", "Eu acordei às seis esta manhã."]
   },
   {
     type: "translate",
@@ -300,9 +300,9 @@ export const exercises = [
   },
   {
     type: "translate",
-    source: "Мой дедушка остался дома.",
+    source: "Мой дедушка остался дома вчера вечером.",
     direction: "ru-pt",
-    answer: ["O meu avô ficou em casa."]
+    answer: ["O meu avô ficou em casa ontem à noite."]
   },
 
   // === Ex6: Заполните исторический текст (11 items) ===

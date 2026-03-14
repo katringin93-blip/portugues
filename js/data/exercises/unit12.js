@@ -97,6 +97,28 @@ export const exercises = [
     question: "Замените: Eles apreciam o vinho. → Eles ___",
     answer: "apreciam-no"
   },
+  {
+    type: "fill",
+    question: "Замените: Tu atendes muitos turistas na tua loja e ___ em língua estrangeira. (atende + os → ?)",
+    answer: "atende-los"
+  },
+  {
+    type: "choice",
+    question: "Замените: Vocês vêem muitos turistas e ___ sempre no verão.",
+    options: ["vêem-nos", "vêem-os", "vêem-las", "os vêem"],
+    correct: 0,
+    explanation: "После назальной формы «vêem» (дифтонг -em) местоимение «os» → «nos»: vêem-nos."
+  },
+  {
+    type: "fill",
+    question: "Замените: Ela prefere usar os transportes públicos e ___ todos os dias. (usa + os → ?)",
+    answer: "usa-os"
+  },
+  {
+    type: "fill",
+    question: "Замените: O teu vestido novo é muito lindo. Vais ___ na tua festa? (usar + o → ?)",
+    answer: "usá-lo"
+  },
   // === Ex3: Замена в повседневных действиях ===
   {
     type: "translate",
@@ -130,6 +152,28 @@ export const exercises = [
     type: "fill",
     question: "Замените: Ele organiza a festa. → Ele ___",
     answer: "organiza-a"
+  },
+  {
+    type: "fill",
+    question: "Ela faz um café e senta-se na sala a ___ (o café → местоимение). (выпить его — tomar + o → ?)",
+    answer: "tomá-lo"
+  },
+  {
+    type: "fill",
+    question: "Ela tira a roupa lavada da máquina e ___ (a roupa) na lavandaria. (развешивает её — estende + a → ?)",
+    answer: "estende-a"
+  },
+  {
+    type: "fill",
+    question: "A Isabel decide fazer uma salada de frango e ___ (a salada) com muito gosto. (готовит её — prepara + a → ?)",
+    answer: "prepara-a"
+  },
+  {
+    type: "choice",
+    question: "A Isabel prepara a salada e ___ (a salada) acompanhada de pão fresco. (ест её)",
+    options: ["come-a", "come-la", "come-na", "a come"],
+    correct: 0,
+    explanation: "Глагол «come» оканчивается на гласную, поэтому обычная энклиза: come-a."
   },
   // === Ex4: Позиция местоимения (проклиза/энклиза) ===
   {
@@ -166,6 +210,43 @@ export const exercises = [
       ["também", "Também a compra."]
     ]
   },
+  {
+    type: "fill",
+    question: "«O senhor toma o chá agora ou ___ mais tarde?» (энклиза — нет притягивающего слова)",
+    answer: "toma-o"
+  },
+  {
+    type: "fill",
+    question: "A minha mãe compra as prendas em outubro. Eu só ___ em dezembro. (проклиза после «só»)",
+    answer: "as compro"
+  },
+  {
+    type: "fill",
+    question: "O Pedro está a vender a casa. Tu sabes quem ___? (проклиза после «quem»)",
+    answer: "a compra"
+  },
+  {
+    type: "fill",
+    question: "A minha esposa ajuda-me em tudo, porque ___ . (проклиза после «porque»)",
+    answer: "me adora"
+  },
+  {
+    type: "choice",
+    question: "O teu filho usa o computador para estudar, mas também ___ para lazer. (проклиза после «também»)",
+    options: ["usa-o", "o usa", "usa-lo", "lo usa"],
+    correct: 1,
+    explanation: "После наречия «também» используется проклиза: também o usa."
+  },
+  {
+    type: "fill",
+    question: "O professor quer respostas corretas, mas nenhum aluno ___ . (проклиза после «nenhum»)",
+    answer: "as dá"
+  },
+  {
+    type: "fill",
+    question: "«Paula, você conhece o Francisco?» — «Sim, ___ muito bem.» (энклиза — утвердительное предложение)",
+    answer: "conheço-o"
+  },
   // === Ex5: Текст о производстве вина ===
   {
     type: "fill",
@@ -185,7 +266,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "As garrafas ficam nas prateleiras. Os turistas ___ (as garrafas, энклиза). (посещают их)",
+    question: "As caves são atrações turísticas. Os turistas ___ (as caves, энклиза). (посещают их)",
     answer: "visitam-nas"
   },
   {
@@ -193,5 +274,32 @@ export const exercises = [
     source: "Они продают его (вино) по всему миру.",
     direction: "ru-pt",
     answer: ["Vendem-no por todo o mundo.", "Eles vendem-no por todo o mundo."]
+  },
+  {
+    type: "fill",
+    question: "Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (проклиза после «não»)",
+    answer: "o transportam"
+  },
+  {
+    type: "choice",
+    question: "As barcas são muito bonitas e as companhias agora ___ (as barcas) no rio para efeitos turísticos. (expôr + as → ?)",
+    options: ["expôem-nas", "expôem-as", "expõe-nas", "as expôem"],
+    correct: 0,
+    explanation: "После назальной формы «expôem» (дифтонг -em) местоимение «as» → «nas»: expôem-nas."
+  },
+  {
+    type: "fill",
+    question: "As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)",
+    answer: "produzem-no"
+  },
+  {
+    type: "fill",
+    question: "Também ___ (o vinho) em barris de madeira. (проклиза после «também»: armazenar)",
+    answer: "o armazenam"
+  },
+  {
+    type: "fill",
+    question: "E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)",
+    answer: "protegem-no"
   }
 ];

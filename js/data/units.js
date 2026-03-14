@@ -2146,16 +2146,50 @@ export const units = [
         }
       },
       {
+        heading: "Проклиза после наречий",
+        text: "Местоимение ставится ПЕРЕД глаголом после наречий: ainda (ещё), tudo (всё), também (тоже), só (только)."
+      },
+      {
+        examples: [
+          { pt: "A Paula ainda te leva à estação.", ru: "Паула ещё отвезёт тебя на станцию." },
+          { pt: "Tudo me chateia hoje!", ru: "Сегодня всё меня раздражает!" },
+          { pt: "O João só me conhece desde o ano passado.", ru: "Жуау знает меня только с прошлого года." }
+        ]
+      },
+      {
+        note: "Внимание: «sempre» — особое слово. После глагола оно значит «всегда» (A Luísa ouve-nos sempre). Перед глаголом оно значит «всё-таки» (A Luísa sempre nos ouve). Позиция «sempre» влияет и на позицию местоимения."
+      },
+      {
+        heading: "Проклиза после местоимений и определителей",
+        text: "Местоимение ставится перед глаголом после слов: todos/as (все), muitos/as (многие), poucos/as (немногие), alguém (кто-то), algo (что-то)."
+      },
+      {
+        examples: [
+          { pt: "Todos a conhecem.", ru: "Все её знают." },
+          { pt: "Alguém me ajuda?", ru: "Кто-нибудь мне поможет?" },
+          { pt: "Algo me diz que ele está em apuros.", ru: "Что-то мне подсказывает, что у него проблемы." }
+        ]
+      },
+      {
         heading: "Изменение формы после глагола",
         text: "Когда глагол оканчивается на -r, -s, -z, местоимения o/a/os/as принимают форму lo/la/los/las. Когда глагол оканчивается на -m или носовой звук, они принимают форму no/na/nos/nas."
       },
       {
+        heading: "Ударения при образовании форм -lo/-la",
+        text: "При отпадении -r/-s/-z ударение зависит от гласной: после -ar, -az — acento agudo (á): comprá-lo, fá-la; после -er, -or, -ez — acento circunflexo (ê, ô): conhecê-la, expô-las, fê-lo; после -ir — без дополнительного ударения: abri-la."
+      },
+      {
         examples: [
-          { pt: "Eu vejo-o. (Я его вижу.)", ru: "Я его вижу." },
-          { pt: "Não o vejo. (Я его не вижу.)", ru: "Я его не вижу." },
-          { pt: "Vou comprá-lo. (Я его куплю.)", ru: "Я его куплю." },
-          { pt: "Eles viram-na. (Они её видели.)", ru: "Они её видели." }
+          { pt: "Eu vejo-o.", ru: "Я его вижу." },
+          { pt: "Não o vejo.", ru: "Я его не вижу." },
+          { pt: "Vou comprá-lo.", ru: "Я его куплю." },
+          { pt: "Eles viram-na.", ru: "Они её видели." },
+          { pt: "Quero conhecê-la.", ru: "Хочу с ней познакомиться." }
         ]
+      },
+      {
+        heading: "Местоимение при вспомогательном глаголе + инфинитив",
+        text: "При сочетании вспомогательного глагола с инфинитивом местоимение присоединяется к основному глаголу: «O João vai comprá-lo amanhã.» Однако в разговорной речи местоимение часто присоединяется к вспомогательному: «O João vai-o comprar amanhã.»"
       },
       {
         note: "Это одно из главных отличий европейского от бразильского португальского. В Бразилии местоимение почти всегда ставится перед глаголом. В Португалии энклиза (после глагола) — норма."
@@ -2284,6 +2318,10 @@ export const units = [
         note: "Глагол «telefonar» в португальском требует косвенного дополнения (telefonar a alguém), поэтому используется «lhe», а не «o/a». Также: «pedir a» (просить у), «dizer a» (говорить кому), «dar a» (давать кому)."
       }
     ],
+    lessons: [
+      { title: "Часть 1: Формы и позиция", theoryRange: [0, 3] },
+      { title: "Часть 2: Контракция местоимений", theoryRange: [3, 7] }
+    ],
     exercises: ex13,
     vocabulary: [
       { pt: "telefonar (a)", ru: "звонить (кому)" },
@@ -2389,6 +2427,49 @@ export const units = [
         ]
       },
       {
+        table: {
+          headers: ["Глагол", "Значение"],
+          rows: [
+            ["aborrecer-se", "скучать"],
+            ["achar-se", "считать себя"],
+            ["apaixonar-se", "влюбляться"],
+            ["arrepender-se", "сожалеть, раскаиваться"],
+            ["barbear-se", "бриться"],
+            ["chamar-se", "зваться, называться"],
+            ["chatear-se", "раздражаться"],
+            ["comprometer-se", "обязываться"],
+            ["deitar-se", "ложиться"],
+            ["desculpar-se", "извиняться"],
+            ["despedir-se", "прощаться"],
+            ["despir-se", "раздеваться"],
+            ["enganar-se", "ошибаться"],
+            ["esquecer-se", "забывать"],
+            ["irritar-se", "раздражаться"],
+            ["lavar-se", "мыться, умываться"],
+            ["lembrar-se", "вспоминать, помнить"],
+            ["levantar-se", "вставать"],
+            ["magoar-se", "пораниться"],
+            ["pentear-se", "причёсываться"],
+            ["preparar-se", "готовиться"],
+            ["rir-se", "смеяться"],
+            ["secar-se", "вытираться"],
+            ["sentar-se", "садиться"],
+            ["sentir-se", "чувствовать себя"],
+            ["vestir-se", "одеваться"],
+            ["zangar-se", "злиться"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Eu sento-me poucas vezes durante o dia.", ru: "Я редко сажусь в течение дня." },
+          { pt: "O Pedro sente-se muito cansado hoje.", ru: "Педру чувствует себя очень уставшим сегодня." },
+          { pt: "Nós deitamo-nos muito tarde à sexta-feira.", ru: "Мы ложимся очень поздно по пятницам." },
+          { pt: "Os idosos lembram-se melhor dos tempos antigos.", ru: "Пожилые люди лучше помнят старые времена." },
+          { pt: "Vocês esquecem-se de tudo!", ru: "Вы всё забываете!" }
+        ]
+      },
+      {
         note: "Обратите внимание: в форме «nós» буква -s глагола отпадает перед -nos: levantamos + nos → levantamo-nos, divertimos + nos → divertimo-nos."
       },
       {
@@ -2420,8 +2501,8 @@ export const units = [
       }
     ],
     lessons: [
-      { title: "Часть 1: Возвратные местоимения и глаголы", theoryRange: [0, 7] },
-      { title: "Часть 2: Взаимные действия и позиция местоимения", theoryRange: [7, 12] }
+      { title: "Часть 1: Возвратные местоимения и глаголы", theoryRange: [0, 9] },
+      { title: "Часть 2: Взаимные действия и позиция местоимения", theoryRange: [9, 14] }
     ],
     exercises: ex14,
     vocabulary: [
@@ -2490,13 +2571,24 @@ export const units = [
             ["tu", "o teu", "a tua", "os teus", "as tuas"],
             ["ele/ela/você", "o seu", "a sua", "os seus", "as suas"],
             ["nós", "o nosso", "a nossa", "os nossos", "as nossas"],
+            ["vós/vocês", "o vosso", "a vossa", "os vossos", "as vossas"],
             ["eles/elas/vocês", "o seu", "a sua", "os seus", "as suas"]
           ]
         }
       },
       {
+        heading: "Vosso/vossa с местоимением vocês",
+        text: "Хотя местоимение «vós» практически вышло из употребления (заменено на «vocês»), притяжательная форма «vosso/vossa» по-прежнему используется с «vocês»."
+      },
+      {
+        examples: [
+          { pt: "O vosso apartamento é muito grande.", ru: "Ваша квартира очень большая." },
+          { pt: "Este apartamento é vosso?", ru: "Эта квартира — ваша?" }
+        ]
+      },
+      {
         heading: "Уточнение «seu/sua»",
-        text: "Поскольку «seu/sua» может означать «его», «её», «Ваш» или «их», для уточнения используется конструкция с «dele/dela/deles/delas»."
+        text: "Поскольку «seu/sua» может означать «его», «её», «Ваш» или «их», для уточнения используется конструкция с предлогом «de» + личное местоимение: de + ele = dele, de + ela = dela, de + eles = deles, de + elas = delas. Эта конструкция ставится ПОСЛЕ существительного и согласуется в роде и числе с владельцем (а не с объектом владения)."
       },
       {
         table: {
@@ -2518,7 +2610,7 @@ export const units = [
         ]
       },
       {
-        note: "В европейском португальском артикль перед притяжательным обязателен: «o meu livro» (моя книга), а не просто «meu livro» (как в бразильском). Исключение — обращения: «Meu Deus!» (Боже мой!)."
+        note: "В европейском португальском артикль перед притяжательным обязателен: «o meu livro» (моя книга), а не просто «meu livro» (как в бразильском). Исключение — обращения: «Meu Deus!» (Боже мой!). Притяжательное может стоять после глагола (без артикля): «O automóvel velho é meu.» (Старая машина — моя.) / «Estas flores são minhas.» (Эти цветы — мои.)"
       },
       {
         heading: "Опускание притяжательного местоимения",
@@ -2648,6 +2740,40 @@ export const units = [
         ]
       },
       {
+        heading: "Три случая употребления Pretérito Perfeito Composto",
+        text: "Это время используется в трёх основных ситуациях."
+      },
+      {
+        heading: "1. Длительное действие от прошлого к настоящему",
+        text: "Действие, которое началось в прошлом, развивалось в течение какого-то времени и может продолжиться в будущем."
+      },
+      {
+        examples: [
+          { pt: "(Tu) não tens estudado nada.", ru: "Ты совсем не учился (всё это время)." },
+          { pt: "(Eu) tenho pensado muito em ti.", ru: "Я много думал о тебе (всё это время)." }
+        ]
+      },
+      {
+        heading: "2. Действие, показывающее непрерывность",
+        text: "Действие, начавшееся в прошлом, которое продолжается без перерыва."
+      },
+      {
+        examples: [
+          { pt: "O comboio tem partido a horas todos os dias.", ru: "Поезд отправлялся вовремя каждый день." },
+          { pt: "Ultimamente, tu tens estado muito triste.", ru: "В последнее время ты был очень грустным." }
+        ]
+      },
+      {
+        heading: "3. Повторяющееся действие",
+        text: "Действие, которое началось в прошлом и повторяется."
+      },
+      {
+        examples: [
+          { pt: "A Patrícia tem ido a Faro frequentemente.", ru: "Патрисия часто ездила в Фару (и продолжает)." },
+          { pt: "O José tem-me visitado muitas vezes.", ru: "Жозе навещал меня много раз (и продолжает)." }
+        ]
+      },
+      {
         note: "Внимание! В европейском португальском Pretérito Perfeito Composto НЕ соответствует английскому Present Perfect. Оно означает повторяющееся или продолжающееся действие, а не однократное завершённое. Для однократного завершённого действия используется Pretérito Perfeito Simples (следующий урок)."
       },
       {
@@ -2659,11 +2785,18 @@ export const units = [
           headers: ["Глагол", "С ter (правильная)", "С ser/estar (неправильная)"],
           rows: [
             ["aceitar (принять)", "aceitado", "aceite"],
+            ["acender (зажечь)", "acendido", "aceso"],
             ["entregar (доставить)", "entregado", "entregue"],
+            ["expulsar (исключить)", "expulsado", "expulso"],
+            ["extinguir (потушить)", "extinguido", "extinto"],
             ["ganhar (выиграть)", "ganhado", "ganho"],
             ["gastar (потратить)", "gastado", "gasto"],
+            ["imprimir (напечатать)", "imprimido", "impresso"],
             ["limpar (очистить)", "limpado", "limpo"],
-            ["pagar (заплатить)", "pagado", "pago"]
+            ["matar (убить)", "matado", "morto"],
+            ["morrer (умереть)", "morrido", "morto"],
+            ["pagar (заплатить)", "pagado", "pago"],
+            ["prender (арестовать)", "prendido", "preso"]
           ]
         }
       },

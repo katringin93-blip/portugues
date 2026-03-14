@@ -145,6 +145,76 @@ export const exercises = [
     question: "Перепишите с «nem»: Ele envia-me emails. → Ele nem ___",
     answer: "me envia"
   },
+  {
+    type: "fill",
+    question: "Перепишите с «só»: Tu dás-no-las hoje à noite. → Tu só ___",
+    answer: "no-las dás"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «também»: Ela fala-lhes todos os dias. → Ela também ___",
+    answer: "lhes fala"
+  },
+  {
+    type: "fill",
+    question: "Перепишите с «só»: Eu pergunto-lhe o que ela precisa. → Eu só ___",
+    answer: "lhe pergunto"
+  },
+  // === Ex4: Замена подчёркнутых частей (продвинутая перестановка местоимений) ===
+  {
+    type: "fill",
+    question: "Замените подчёркнутое на слово в скобках: Amanhã eles levam-te ao aeroporto? → (quando é que) ___ te levam ao aeroporto?",
+    answer: "Quando é que eles"
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: O meu pai autoriza-me a ir ao cinema. → (eu acho que ele) Eu acho que ele ___ a ir ao cinema logo à noite.",
+    answer: "me autoriza"
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: Você diz-lhe a verdade. → (ninguém) ___ lhe diz a verdade.",
+    answer: "Ninguém"
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: A avó escreve-nos muitas cartas. → (quem é que) Quem é que ___ muitas cartas?",
+    answer: "nos escreve"
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: Os alunos compreendem-te perfeitamente. → (todos) ___ te compreendem perfeitamente.",
+    answer: "Todos"
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: Só ao sábado é que a Filipa me telefona. → (em que dia) Em que dia é que a Filipa ___ para dar notícias?",
+    answer: "me telefona"
+  },
+  {
+    type: "choice",
+    question: "Замените «ninguém» на «alguém»: Ninguém te envia cartas agora. → ___ te envia cartas agora?",
+    options: ["Alguém te envia", "Alguém envia-te", "Te alguém envia", "Alguém te envia-te"],
+    correct: 0,
+    explanation: "«Alguém» — неопределённое местоимение, вызывающее проклизу: Alguém te envia."
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: O Pedro dá-no-las no fim-de-semana. → (quem) Quem ___ no fim-de-semana?",
+    answer: "no-las dá"
+  },
+  {
+    type: "choice",
+    question: "Замените подчёркнутое: A Maria faz-lhes muitos favores. → (ela ainda) Ela ainda ___?",
+    options: ["lhes faz muitos favores", "faz-lhes muitos favores", "lhes-faz muitos favores", "faz muitos lhes favores"],
+    correct: 0,
+    explanation: "«Ainda» вызывает проклизу: Ela ainda lhes faz muitos favores."
+  },
+  {
+    type: "fill",
+    question: "Замените подчёркнутое: À terça-feira eu empresto-lhes o meu automóvel. → (nunca) Eu nunca ___ o meu automóvel.",
+    answer: "lhes empresto"
+  },
   // === Ex5: Перевод предложений с косвенным дополнением ===
   {
     type: "translate",
@@ -176,6 +246,54 @@ export const exercises = [
     direction: "ru-pt",
     answer: ["O professor explica-nos a lição."]
   },
+  {
+    type: "translate",
+    source: "Я отправляю ей подарок.",
+    direction: "ru-pt",
+    answer: ["Eu envio-lhe um presente.", "Envio-lhe um presente."]
+  },
+  {
+    type: "translate",
+    source: "Он покупает мне цветы каждую субботу.",
+    direction: "ru-pt",
+    answer: ["Ele compra-me flores todos os sábados."]
+  },
+  {
+    type: "translate",
+    source: "Я даю им обед каждый вторник.",
+    direction: "ru-pt",
+    answer: ["Eu dou-lhes almoço à terça-feira.", "Dou-lhes almoço à terça-feira.", "Eu ofereço-lhes almoço à terça-feira."]
+  },
+  {
+    type: "translate",
+    source: "Он продаёт нам свежий хлеб каждое утро.",
+    direction: "ru-pt",
+    answer: ["Ele vende-nos pão fresco todas as manhãs."]
+  },
+  {
+    type: "translate",
+    source: "Он никогда её никому не представляет.",
+    direction: "ru-pt",
+    answer: ["Ele nunca a apresenta a ninguém."]
+  },
+  {
+    type: "translate",
+    source: "Вы не даёте им шоколадки.",
+    direction: "ru-pt",
+    answer: ["Você não lhes dá chocolates."]
+  },
+  {
+    type: "translate",
+    source: "Изабел звонит мне в воскресенье вечером.",
+    direction: "ru-pt",
+    answer: ["A Isabel telefona-me ao domingo à noite.", "Isabel telefona-me ao domingo à noite."]
+  },
+  {
+    type: "translate",
+    source: "Мы всегда говорим им правду.",
+    direction: "ru-pt",
+    answer: ["Nós dizemos-lhes sempre a verdade.", "Dizemos-lhes sempre a verdade."]
+  },
   // === Ex6: Текст о фаду ===
   {
     type: "fill",
@@ -187,6 +305,31 @@ export const exercises = [
     question: "Составьте: «Поэт пишет поэзию и завершает её.» (O poeta escreve-a e a finaliza.)",
     words: ["O", "poeta", "escreve", "-a", "e", "a", "finaliza"],
     answer: "O poeta escreve-a e a finaliza."
+  },
+  {
+    type: "fill",
+    question: "Текст о Камоэнше: Este poeta português é muito admirado. Muitos ___ (comparam + o poeta) a grandes poetas estrangeiros. (сравнивают его)",
+    answer: "comparam-no"
+  },
+  {
+    type: "fill",
+    question: "Текст о Камоэнше: A história da literatura portuguesa ___ (reservar + a ele) um lugar especial. (отводит ему)",
+    answer: "reserva-lhe"
+  },
+  {
+    type: "fill",
+    question: "Текст о Камоэнше: Camões apresenta Os Lusíadas ao Rei D. Sebastião, que ___ (oferecer + a ele) uma pensão. (проклиза после «que»: предлагает ему)",
+    answer: "lhe oferece"
+  },
+  {
+    type: "fill",
+    question: "Текст о Камоэнше: Camões sofre um naufrágio e a sua amante morre afogada, porque ele não ___ (dar + a ela) ajuda. (проклиза после «não»: не даёт ей)",
+    answer: "lhe dá"
+  },
+  {
+    type: "fill",
+    question: "Текст о Камоэнше: O poeta conta a história dos portugueses e ___ (dedicar + a eles) estes poemas épicos. (посвящает им)",
+    answer: "dedica-lhes"
   },
   {
     type: "match",
