@@ -36,16 +36,50 @@ export default {
       }
     },
     {
+      heading: "Proclisis after adverbs",
+      text: "The pronoun is placed BEFORE the verb after adverbs: ainda (still), tudo (everything), tamb\u00e9m (also), s\u00f3 (only)."
+    },
+    {
+      examples: [
+        { pt: "A Paula ainda te leva \u00e0 esta\u00e7\u00e3o.", ru: "Paula will still take you to the station." },
+        { pt: "Tudo me chateia hoje!", ru: "Everything annoys me today!" },
+        { pt: "O Jo\u00e3o s\u00f3 me conhece desde o ano passado.", ru: "Jo\u00e3o has only known me since last year." }
+      ]
+    },
+    {
+      note: "Note: \u00absempre\u00bb is a special word. After the verb it means \u00abalways\u00bb (A Lu\u00edsa ouve-nos sempre). Before the verb it means \u00abafter all\u00bb (A Lu\u00edsa sempre nos ouve). The position of \u00absempre\u00bb also affects pronoun placement."
+    },
+    {
+      heading: "Proclisis after pronouns and determiners",
+      text: "The pronoun is placed before the verb after words like: todos/as (all), muitos/as (many), poucos/as (few), algu\u00e9m (someone), algo (something)."
+    },
+    {
+      examples: [
+        { pt: "Todos a conhecem.", ru: "Everyone knows her." },
+        { pt: "Algu\u00e9m me ajuda?", ru: "Will someone help me?" },
+        { pt: "Algo me diz que ele est\u00e1 em apuros.", ru: "Something tells me he is in trouble." }
+      ]
+    },
+    {
       heading: "Form changes after the verb",
       text: "When the verb ends in -r, -s, -z, the pronouns o/a/os/as take the form lo/la/los/las. When the verb ends in -m or a nasal sound, they take the form no/na/nos/nas."
     },
     {
+      heading: "Accents when forming -lo/-la",
+      text: "When -r/-s/-z is dropped, the accent depends on the vowel: after -ar, -az \u2014 acute accent (\u00e1): compr\u00e1-lo, f\u00e1-la; after -er, -or, -ez \u2014 circumflex accent (\u00ea, \u00f4): conhec\u00ea-la, exp\u00f4-las, f\u00ea-lo; after -ir \u2014 no additional accent: abri-la."
+    },
+    {
       examples: [
-        { ru: "I see him." },
-        { ru: "I don't see him." },
-        { ru: "I'm going to buy it." },
-        { ru: "They saw her." }
+        { pt: "Eu vejo-o.", ru: "I see him." },
+        { pt: "N\u00e3o o vejo.", ru: "I don't see him." },
+        { pt: "Vou compr\u00e1-lo.", ru: "I'm going to buy it." },
+        { pt: "Eles viram-na.", ru: "They saw her." },
+        { pt: "Quero conhec\u00ea-la.", ru: "I want to meet her." }
       ]
+    },
+    {
+      heading: "Pronoun with auxiliary verb + infinitive",
+      text: "When combining an auxiliary verb with an infinitive, the pronoun attaches to the main verb: \u00abO Jo\u00e3o vai compr\u00e1-lo amanh\u00e3.\u00bb However, in colloquial speech the pronoun often attaches to the auxiliary: \u00abO Jo\u00e3o vai-o comprar amanh\u00e3.\u00bb"
     },
     {
       note: "This is one of the main differences between European and Brazilian Portuguese. In Brazil, the pronoun almost always comes before the verb. In Portugal, enclisis (after the verb) is the norm."

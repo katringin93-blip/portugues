@@ -51,16 +51,34 @@ export default {
       }
     },
     {
+      table: {
+        headers: ["Особа", "pôr", "trazer", "ver"],
+        rows: [
+          ["eu", "pus", "trouxe", "vi"],
+          ["tu", "puseste", "trouxeste", "viste"],
+          ["ele/ela/você", "pôs", "trouxe", "viu"],
+          ["nós", "pusemos", "trouxemos", "vimos"],
+          ["eles/elas/vocês", "puseram", "trouxeram", "viram"]
+        ]
+      }
+    },
+    {
       examples: [
         { pt: "Ontem falei com o João.", ru: "Учора я поговорив із Жуау." },
         { pt: "Eles foram ao cinema.", ru: "Вони пішли в кіно." },
         { pt: "Tu fizeste o trabalho?", ru: "Ти зробив роботу?" },
-        { pt: "Nós estivemos em Lisboa.", ru: "Ми були в Лісабоні." }
+        { pt: "Nós estivemos em Lisboa.", ru: "Ми були в Лісабоні." },
+        { pt: "Já puseste a mesa, filha?", ru: "Ти вже накрила на стіл, доню?" },
+        { pt: "Esta manhã vimos um acidente.", ru: "Сьогодні вранці ми бачили аварію." }
       ]
     },
     {
       note: "Зверніть увагу: у європейській португальській форма «nós» для -ar дієслів у Pretérito Perfeito має наголос: falámos (з акцентом!), на відміну від теперішнього часу: falamos (без акценту). У бразильській ця різниця не позначається."
     }
+  ],
+  lessons: [
+    { title: "Частина 1: Правильні дієслова" },
+    { title: "Частина 2: Неправильні дієслова" }
   ],
   vocabulary: [
     { ru: "учора" },

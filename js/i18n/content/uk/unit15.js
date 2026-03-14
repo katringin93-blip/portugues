@@ -14,13 +14,24 @@ export default {
           ["tu", "o teu", "a tua", "os teus", "as tuas"],
           ["ele/ela/você", "o seu", "a sua", "os seus", "as suas"],
           ["nós", "o nosso", "a nossa", "os nossos", "as nossas"],
+          ["vós/vocês", "o vosso", "a vossa", "os vossos", "as vossas"],
           ["eles/elas/vocês", "o seu", "a sua", "os seus", "as suas"]
         ]
       }
     },
     {
+      heading: "Vosso/vossa із займенником vocês",
+      text: "Хоча займенник «vós» практично вийшов з ужитку (замінений на «vocês»), присвійна форма «vosso/vossa» досі вживається з «vocês»."
+    },
+    {
+      examples: [
+        { pt: "O vosso apartamento é muito grande.", ru: "Ваша квартира дуже велика." },
+        { pt: "Este apartamento é vosso?", ru: "Ця квартира — ваша?" }
+      ]
+    },
+    {
       heading: "Уточнення «seu/sua»",
-      text: "Оскільки «seu/sua» може означати «його», «її», «Ваш» або «їхній», для уточнення вживається конструкція з «dele/dela/deles/delas»."
+      text: "Оскільки «seu/sua» може означати «його», «її», «Ваш» або «їхній», для уточнення вживається конструкція з прийменником «de» + особовий займенник: de + ele = dele, de + ela = dela, de + eles = deles, de + elas = delas. Ця конструкція ставиться ПІСЛЯ іменника і узгоджується в роді та числі з власником (а не з об'єктом володіння)."
     },
     {
       table: {
@@ -42,7 +53,7 @@ export default {
       ]
     },
     {
-      note: "У європейській португальській артикль перед присвійним обов'язковий: «o meu livro» (моя книжка), а не просто «meu livro» (як у бразильській). Виняток — звертання: «Meu Deus!» (Боже мій!)."
+      note: "У європейській португальській артикль перед присвійним обов'язковий: «o meu livro» (моя книжка), а не просто «meu livro» (як у бразильській). Виняток — звертання: «Meu Deus!» (Боже мій!). Присвійне може стояти після дієслова (без артикля): «O automóvel velho é meu.» (Старий автомобіль — мій.) / «Estas flores são minhas.» (Ці квіти — мої.)"
     },
     {
       heading: "Випускання присвійного займенника",

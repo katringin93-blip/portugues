@@ -1,14 +1,14 @@
 export default {
   title: "Present perfect tense",
-  description: "Pret\u00e9rito Perfeito Composto \u2014 repeated action from the past to the present",
+  description: "Pretérito Perfeito Composto — repeated action from the past to the present",
   theory: [
     {
-      heading: "Formation of Pret\u00e9rito Perfeito Composto",
-      text: "This tense is formed with the auxiliary verb \u00abter\u00bb in the present tense + past participle (partic\u00edpio passado). Important: in European Portuguese, this tense denotes an action that started in the past and has been repeating/continuing up to the present moment."
+      heading: "Formation of Pretérito Perfeito Composto",
+      text: "This tense is formed with the auxiliary verb «ter» in the present tense + past participle (particípio passado). Important: in European Portuguese, this tense denotes an action that started in the past and has been repeating/continuing up to the present moment."
     },
     {
       table: {
-        headers: ["Person", "ter + partic\u00edpio"]
+        headers: ["Person", "ter + particípio"]
       }
     },
     {
@@ -19,9 +19,9 @@ export default {
       table: {
         headers: ["Conjugation", "Ending", "Example"],
         rows: [
-          ["-ar", "-ado", "falar \u2192 falado"],
-          ["-er", "-ido", "comer \u2192 comido"],
-          ["-ir", "-ido", "partir \u2192 partido"]
+          ["-ar", "-ado", "falar → falado"],
+          ["-er", "-ido", "comer → comido"],
+          ["-ir", "-ido", "partir → partido"]
         ]
       }
     },
@@ -38,7 +38,8 @@ export default {
           ["ver", "visto", "seen"],
           ["escrever", "escrito", "written"],
           ["abrir", "aberto", "opened"],
-          ["p\u00f4r", "posto", "put/placed"],
+          ["cobrir", "coberto", "covered"],
+          ["pôr", "posto", "put/placed"],
           ["vir", "vindo", "come"]
         ]
       }
@@ -52,7 +53,41 @@ export default {
       ]
     },
     {
-      note: "Attention! In European Portuguese, the Pret\u00e9rito Perfeito Composto does NOT correspond to the English Present Perfect. It denotes a repeated or ongoing action, not a single completed one. For a single completed action, the Pret\u00e9rito Perfeito Simples is used (next lesson)."
+      heading: "Three cases of using Pretérito Perfeito Composto",
+      text: "This tense is used in three main situations."
+    },
+    {
+      heading: "1. Prolonged action from the past to the present",
+      text: "An action that started in the past, continued over a period of time, and may continue into the future."
+    },
+    {
+      examples: [
+        { pt: "(Tu) não tens estudado nada.", ru: "You haven't been studying at all (this whole time)." },
+        { pt: "(Eu) tenho pensado muito em ti.", ru: "I've been thinking about you a lot (all this time)." }
+      ]
+    },
+    {
+      heading: "2. Action showing continuity",
+      text: "An action that started in the past and continues without interruption."
+    },
+    {
+      examples: [
+        { pt: "O comboio tem partido a horas todos os dias.", ru: "The train has been departing on time every day." },
+        { pt: "Ultimamente, tu tens estado muito triste.", ru: "Lately, you have been very sad." }
+      ]
+    },
+    {
+      heading: "3. Repeated action",
+      text: "An action that started in the past and keeps repeating."
+    },
+    {
+      examples: [
+        { pt: "A Patrícia tem ido a Faro frequentemente.", ru: "Patrícia has been going to Faro frequently (and still does)." },
+        { pt: "O José tem-me visitado muitas vezes.", ru: "José has been visiting me many times (and continues to)." }
+      ]
+    },
+    {
+      note: "Attention! In European Portuguese, the Pretérito Perfeito Composto does NOT correspond to the English Present Perfect. It denotes a repeated or ongoing action, not a single completed one. For a single completed action, the Pretérito Perfeito Simples is used (next lesson)."
     },
     {
       heading: "Verbs with dual past participles",
@@ -63,11 +98,18 @@ export default {
         headers: ["Verb", "With ter (regular)", "With ser/estar (irregular)"],
         rows: [
           ["aceitar (accept)", "aceitado", "aceite"],
+          ["acender (light)", "acendido", "aceso"],
           ["entregar (deliver)", "entregado", "entregue"],
+          ["expulsar (expel)", "expulsado", "expulso"],
+          ["extinguir (extinguish)", "extinguido", "extinto"],
           ["ganhar (win)", "ganhado", "ganho"],
           ["gastar (spend)", "gastado", "gasto"],
+          ["imprimir (print)", "imprimido", "impresso"],
           ["limpar (clean)", "limpado", "limpo"],
-          ["pagar (pay)", "pagado", "pago"]
+          ["matar (kill)", "matado", "morto"],
+          ["morrer (die)", "morrido", "morto"],
+          ["pagar (pay)", "pagado", "pago"],
+          ["prender (arrest)", "prendido", "preso"]
         ]
       }
     },
@@ -80,7 +122,7 @@ export default {
       ]
     },
     {
-      heading: "Pronoun position with Pret\u00e9rito Perfeito Composto",
+      heading: "Pronoun position with Pretérito Perfeito Composto",
       text: "Pronouns (direct, indirect, reflexive) attach with a hyphen to the auxiliary verb ter, not to the participle. With negation, they are placed before ter."
     },
     {

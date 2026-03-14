@@ -8,7 +8,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "Pronoun"]
+        headers: ["Person", "Pronoun"],
+        rows: [
+          ["eu", "me"],
+          ["tu", "te"],
+          ["ele/ela/voc\u00ea", "se"],
+          ["n\u00f3s", "nos"],
+          ["eles/elas/voc\u00eas", "se"]
+        ]
       }
     },
     {
@@ -17,7 +24,14 @@ export default {
     },
     {
       table: {
-        headers: ["Affirmative", "Negative"]
+        headers: ["Affirmative", "Negative"],
+        rows: [
+          ["Eu levanto-me", "Eu n\u00e3o me levanto"],
+          ["Tu levantas-te", "Tu n\u00e3o te levantas"],
+          ["Ele levanta-se", "Ele n\u00e3o se levanta"],
+          ["N\u00f3s levantamo-nos", "N\u00f3s n\u00e3o nos levantamos"],
+          ["Eles levantam-se", "Eles n\u00e3o se levantam"]
+        ]
       }
     },
     {
@@ -26,10 +40,53 @@ export default {
     },
     {
       examples: [
-        { ru: "I get up at seven o'clock." },
-        { ru: "Her name is Maria." },
-        { ru: "We have a lot of fun." },
-        { ru: "They sit down at the table." }
+        { pt: "Eu levanto-me \u00e0s sete horas.", ru: "I get up at seven o'clock." },
+        { pt: "Ela chama-se Maria.", ru: "Her name is Maria." },
+        { pt: "N\u00f3s divertimo-nos muito.", ru: "We have a lot of fun." },
+        { pt: "Eles sentam-se \u00e0 mesa.", ru: "They sit down at the table." }
+      ]
+    },
+    {
+      table: {
+        headers: ["Verb", "Meaning"],
+        rows: [
+          ["aborrecer-se", "to get bored"],
+          ["achar-se", "to consider oneself"],
+          ["apaixonar-se", "to fall in love"],
+          ["arrepender-se", "to regret"],
+          ["barbear-se", "to shave"],
+          ["chamar-se", "to be called"],
+          ["chatear-se", "to get annoyed"],
+          ["comprometer-se", "to commit oneself"],
+          ["deitar-se", "to go to bed"],
+          ["desculpar-se", "to apologize"],
+          ["despedir-se", "to say goodbye"],
+          ["despir-se", "to undress"],
+          ["enganar-se", "to make a mistake"],
+          ["esquecer-se", "to forget"],
+          ["irritar-se", "to get irritated"],
+          ["lavar-se", "to wash oneself"],
+          ["lembrar-se", "to remember"],
+          ["levantar-se", "to get up"],
+          ["magoar-se", "to hurt oneself"],
+          ["pentear-se", "to comb one's hair"],
+          ["preparar-se", "to get ready"],
+          ["rir-se", "to laugh"],
+          ["secar-se", "to dry oneself"],
+          ["sentar-se", "to sit down"],
+          ["sentir-se", "to feel"],
+          ["vestir-se", "to get dressed"],
+          ["zangar-se", "to get angry"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { pt: "Eu sento-me poucas vezes durante o dia.", ru: "I rarely sit down during the day." },
+        { pt: "O Pedro sente-se muito cansado hoje.", ru: "Pedro feels very tired today." },
+        { pt: "N\u00f3s deitamo-nos muito tarde \u00e0 sexta-feira.", ru: "We go to bed very late on Fridays." },
+        { pt: "Os idosos lembram-se melhor dos tempos antigos.", ru: "Elderly people remember the old times better." },
+        { pt: "Voc\u00eas esquecem-se de tudo!", ru: "You forget everything!" }
       ]
     },
     {
@@ -41,26 +98,26 @@ export default {
     },
     {
       examples: [
-        { ru: "They love each other." },
-        { ru: "We see each other every day." },
-        { ru: "They greet each other." },
-        { ru: "The sisters call each other every evening." }
+        { pt: "Eles amam-se.", ru: "They love each other." },
+        { pt: "N\u00f3s vemo-nos todos os dias.", ru: "We see each other every day." },
+        { pt: "Eles cumprimentam-se um ao outro.", ru: "They greet each other." },
+        { pt: "As irm\u00e3s telefonam-se uma \u00e0 outra todas as noites.", ru: "The sisters call each other every evening." }
       ]
     },
     {
       heading: "Position of the reflexive pronoun: detailed rules",
-      text: "By default, the reflexive pronoun is placed after the verb and linked with a hyphen (enclisis). But in certain cases it moves before the verb (proclisis): after negations (não, nunca, ninguém), after interrogative words (como, onde, quando), after conjunctions (que, porque, quando, se), after adverbs (já, ainda, sempre, também), after indefinite pronouns (nenhum, tudo, alguém)."
+      text: "By default, the reflexive pronoun is placed after the verb and linked with a hyphen (enclisis). But in certain cases it moves before the verb (proclisis): after negations (n\u00e3o, nunca, ningu\u00e9m), after interrogative words (como, onde, quando), after conjunctions (que, porque, quando, se), after adverbs (j\u00e1, ainda, sempre, tamb\u00e9m), after indefinite pronouns (nenhum, tudo, algu\u00e9m)."
     },
     {
       examples: [
-        { pt: "Ela nunca se lembra do João.", ru: "She never remembers João." },
+        { pt: "Ela nunca se lembra do Jo\u00e3o.", ru: "She never remembers Jo\u00e3o." },
         { pt: "Como te chamas?", ru: "What is your name?" },
         { pt: "A que horas te levantas?", ru: "What time do you get up?" },
-        { pt: "Nenhum de vocês se levanta cedo ao domingo.", ru: "None of you gets up early on Sunday." }
+        { pt: "Nenhum de voc\u00eas se levanta cedo ao domingo.", ru: "None of you gets up early on Sunday." }
       ]
     },
     {
-      note: "The reflexive «se» in the 3rd person can indicate an unspecified subject (similar to English passive or 'one'): «Vende-se» (For sale), «Vendem-se carros» (Cars for sale), «No verão vai-se à praia» (In summer, one goes to the beach)."
+      note: "The reflexive \u00abse\u00bb in the 3rd person can indicate an unspecified subject (similar to English passive or 'one'): \u00abVende-se\u00bb (For sale), \u00abVendem-se carros\u00bb (Cars for sale), \u00abNo ver\u00e3o vai-se \u00e0 praia\u00bb (In summer, one goes to the beach)."
     }
   ],
   lessons: [

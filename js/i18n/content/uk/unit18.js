@@ -39,6 +39,9 @@ export default {
       }
     },
     {
+      note: "Важливо: дієслова dar, dizer, fazer, ir, saber, trazer, ver — неправильні в інших часах, але в Imperfeito вони відмінюються за звичайними правилами: dava, dizia, fazia, ia, sabia, trazia, via."
+    },
+    {
       heading: "Маркери Imperfeito",
       text: "Слова-маркери, які вказують на використання Imperfeito."
     },

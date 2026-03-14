@@ -47,6 +47,49 @@ export default {
       ]
     },
     {
+      table: {
+        headers: ["Дієслово", "Значення"],
+        rows: [
+          ["aborrecer-se", "нудьгувати"],
+          ["achar-se", "вважати себе"],
+          ["apaixonar-se", "закохуватися"],
+          ["arrepender-se", "шкодувати, каятися"],
+          ["barbear-se", "голитися"],
+          ["chamar-se", "зватися, називатися"],
+          ["chatear-se", "дратуватися"],
+          ["comprometer-se", "зобов'язуватися"],
+          ["deitar-se", "лягати"],
+          ["desculpar-se", "вибачатися"],
+          ["despedir-se", "прощатися"],
+          ["despir-se", "роздягатися"],
+          ["enganar-se", "помилятися"],
+          ["esquecer-se", "забувати"],
+          ["irritar-se", "дратуватися"],
+          ["lavar-se", "митися, вмиватися"],
+          ["lembrar-se", "згадувати, пам'ятати"],
+          ["levantar-se", "вставати"],
+          ["magoar-se", "поранитися"],
+          ["pentear-se", "зачісуватися"],
+          ["preparar-se", "готуватися"],
+          ["rir-se", "сміятися"],
+          ["secar-se", "витиратися"],
+          ["sentar-se", "сідати"],
+          ["sentir-se", "почуватися"],
+          ["vestir-se", "одягатися"],
+          ["zangar-se", "злитися"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { pt: "Eu sento-me poucas vezes durante o dia.", ru: "Я рідко сідаю протягом дня." },
+        { pt: "O Pedro sente-se muito cansado hoje.", ru: "Педру почувається дуже втомленим сьогодні." },
+        { pt: "Nós deitamo-nos muito tarde à sexta-feira.", ru: "Ми лягаємо дуже пізно по п'ятницях." },
+        { pt: "Os idosos lembram-se melhor dos tempos antigos.", ru: "Літні люди краще пам'ятають давні часи." },
+        { pt: "Vocês esquecem-se de tudo!", ru: "Ви все забуваєте!" }
+      ]
+    },
+    {
       note: "Зверніть увагу: у формі «nós» літера -s дієслова відпадає перед -nos: levantamos + nos → levantamo-nos, divertimos + nos → divertimo-nos."
     },
     {
@@ -55,10 +98,10 @@ export default {
     },
     {
       examples: [
-        { ru: "Вони кохають одне одного." },
-        { ru: "Ми бачимося щодня." },
-        { ru: "Вони вітаються один з одним." },
-        { ru: "Сестри телефонують одна одній щовечора." }
+        { pt: "Eles amam-se.", ru: "Вони кохають одне одного." },
+        { pt: "Nós vemo-nos todos os dias.", ru: "Ми бачимося щодня." },
+        { pt: "Eles cumprimentam-se um ao outro.", ru: "Вони вітаються один з одним." },
+        { pt: "As irmãs telefonam-se uma à outra todas as noites.", ru: "Сестри телефонують одна одній щовечора." }
       ]
     },
     {

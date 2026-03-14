@@ -45,6 +45,7 @@ export default {
           ["ver", "visto", "побачений"],
           ["escrever", "escrito", "написаний"],
           ["abrir", "aberto", "відкритий"],
+          ["cobrir", "coberto", "покритий"],
           ["pôr", "posto", "покладений"],
           ["vir", "vindo", "прибулий"]
         ]
@@ -59,6 +60,40 @@ export default {
       ]
     },
     {
+      heading: "Три випадки вживання Pretérito Perfeito Composto",
+      text: "Цей час використовується у трьох основних ситуаціях."
+    },
+    {
+      heading: "1. Тривала дія від минулого до теперішнього",
+      text: "Дія, яка почалася в минулому, тривала протягом якогось часу і може продовжитися в майбутньому."
+    },
+    {
+      examples: [
+        { pt: "(Tu) não tens estudado nada.", ru: "Ти зовсім не вчився (весь цей час)." },
+        { pt: "(Eu) tenho pensado muito em ti.", ru: "Я багато думав про тебе (весь цей час)." }
+      ]
+    },
+    {
+      heading: "2. Дія, що показує безперервність",
+      text: "Дія, що почалася в минулому і продовжується без перерви."
+    },
+    {
+      examples: [
+        { pt: "O comboio tem partido a horas todos os dias.", ru: "Потяг відправлявся вчасно щодня." },
+        { pt: "Ultimamente, tu tens estado muito triste.", ru: "Останнім часом ти був дуже сумний." }
+      ]
+    },
+    {
+      heading: "3. Дія, що повторюється",
+      text: "Дія, яка почалася в минулому і повторюється."
+    },
+    {
+      examples: [
+        { pt: "A Patrícia tem ido a Faro frequentemente.", ru: "Патрісія часто їздила до Фару (і продовжує)." },
+        { pt: "O José tem-me visitado muitas vezes.", ru: "Жозе навідував мене багато разів (і продовжує)." }
+      ]
+    },
+    {
       note: "Увага! У європейській португальській Pretérito Perfeito Composto НЕ відповідає англійському Present Perfect. Він означає дію, що повторюється або триває, а не одноразову завершену. Для одноразової завершеної дії використовується Pretérito Perfeito Simples (наступний урок)."
     },
     {
@@ -70,20 +105,27 @@ export default {
         headers: ["Дієслово", "З ter (правильна)", "З ser/estar (неправильна)"],
         rows: [
           ["aceitar (прийняти)", "aceitado", "aceite"],
+          ["acender (запалити)", "acendido", "aceso"],
           ["entregar (доставити)", "entregado", "entregue"],
+          ["expulsar (виключити)", "expulsado", "expulso"],
+          ["extinguir (погасити)", "extinguido", "extinto"],
           ["ganhar (виграти)", "ganhado", "ganho"],
           ["gastar (витратити)", "gastado", "gasto"],
+          ["imprimir (надрукувати)", "imprimido", "impresso"],
           ["limpar (очистити)", "limpado", "limpo"],
-          ["pagar (заплатити)", "pagado", "pago"]
+          ["matar (вбити)", "matado", "morto"],
+          ["morrer (померти)", "morrido", "morto"],
+          ["pagar (заплатити)", "pagado", "pago"],
+          ["prender (арештувати)", "prendido", "preso"]
         ]
       }
     },
     {
       examples: [
-        { ru: "Я приймаю всі пропозиції (останнім часом)." },
-        { ru: "Пропозиція була прийнята директором." },
-        { ru: "Він оплачує рахунки вчасно (регулярно)." },
-        { ru: "Рахунок оплачений." }
+        { pt: "Eu tenho aceitado todas as propostas.", ru: "Я приймаю всі пропозиції (останнім часом)." },
+        { pt: "A proposta foi aceite pelo diretor.", ru: "Пропозиція була прийнята директором." },
+        { pt: "Ele tem pagado as contas a tempo.", ru: "Він оплачує рахунки вчасно (регулярно)." },
+        { pt: "A conta está paga.", ru: "Рахунок оплачений." }
       ]
     },
     {
@@ -92,9 +134,9 @@ export default {
     },
     {
       examples: [
-        { ru: "Я дзвоню йому/їй щодня." },
-        { ru: "Я не дзвоню йому/їй." },
-        { ru: "Ми встаємо рано (останнім часом)." }
+        { pt: "Tenho-lhe telefonado todos os dias.", ru: "Я дзвоню йому/їй щодня." },
+        { pt: "Não lhe tenho telefonado.", ru: "Я не дзвоню йому/їй." },
+        { pt: "Temo-nos levantado cedo.", ru: "Ми встаємо рано (останнім часом)." }
       ]
     }
   ],

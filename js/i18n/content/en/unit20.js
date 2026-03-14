@@ -1,19 +1,19 @@
 export default {
   title: "Pluperfect tense (Mais-que-Perfeito)",
-  description: "Pret\u00e9rito Mais-que-Perfeito \u2014 simple and compound forms for actions preceding other past actions",
+  description: "Pretérito Mais-que-Perfeito — simple and compound forms for actions preceding other past actions",
   theory: [
     {
-      heading: "Pret\u00e9rito Mais-que-Perfeito Composto (compound form)",
-      text: "The most commonly used form. Formed as: tinha/tinhas/tinha/t\u00ednhamos/tinham + past participle. Denotes an action that happened before another action in the past."
+      heading: "Pretérito Mais-que-Perfeito Composto (compound form)",
+      text: "The most commonly used form. Formed as: tinha/tinhas/tinha/tínhamos/tinham + past participle. Denotes an action that happened before another action in the past."
     },
     {
       table: {
-        headers: ["Person", "ter (Imperfeito) + partic\u00edpio"]
+        headers: ["Person", "ter (Imperfeito) + particípio"]
       }
     },
     {
-      heading: "Pret\u00e9rito Mais-que-Perfeito Simples (simple form)",
-      text: "Used in literary language and formal written speech. Formed from the Pret\u00e9rito Perfeito stem (3rd person plural) with a replaced ending."
+      heading: "Pretérito Mais-que-Perfeito Simples (simple form)",
+      text: "Used in literary language and formal written speech. Formed from the Pretérito Perfeito stem (3rd person plural) with a replaced ending."
     },
     {
       table: {
@@ -31,7 +31,7 @@ export default {
     },
     {
       heading: "Usage of Mais-que-Perfeito",
-      text: "This tense is used to denote an action that happened before another action in the past. It is the equivalent of the English past perfect: \u00abI had already done (by that moment)\u00bb."
+      text: "This tense is used to denote an action that happened before another action in the past. It is the equivalent of the English past perfect: «I had already done (by that moment)»."
     },
     {
       examples: [
@@ -62,8 +62,12 @@ export default {
       examples: [
         { ru: "He had called me before dinner." },
         { ru: "We hadn't told him/her anything." },
-        { ru: "She had already gotten up when I arrived." }
+        { ru: "She had already gotten up when I arrived." },
+        { ru: "I had asked him/her for them (lhe + os = lhos)." }
       ]
+    },
+    {
+      note: "The 3rd person plural form of M-q-P Simples is identical to the Pretérito Perfeito (falaram = falaram). Therefore, for the 3rd person plural it is preferable to use the compound form (tinham falado) to avoid ambiguity."
     }
   ],
   vocabulary: [
@@ -85,7 +89,7 @@ export default {
     { ru: "had seen (before that)", hint: "M-q-P Composto of ver" },
     { ru: "already", hint: "M-q-P marker" },
     { ru: "before", hint: "antes de + infinitive" },
-    { ru: "to go out, to leave", hint: "eu saio, eu sa\u00ed, sa\u00eddo" },
+    { ru: "to go out, to leave", hint: "eu saio, eu saí, saído" },
     { ru: "to understand, to notice", hint: "eu percebi (Perf.)" },
     { ru: "ally", hint: "masculine" },
     { ru: "alliance", hint: "feminine" },

@@ -1,9 +1,9 @@
 export default {
-  title: "Pret\u00e9rito Perfeito vs Imperfeito",
-  description: "Comparing the simple past and the imperfect tense \u2014 when to use which",
+  title: "Pretérito Perfeito vs Imperfeito",
+  description: "Comparing the simple past and the imperfect tense — when to use which",
   theory: [
     {
-      heading: "When to use Pret\u00e9rito Perfeito Simples",
+      heading: "When to use Pretérito Perfeito Simples",
       text: "The simple past (Perfeito) is used for: 1) completed one-time actions, 2) sequences of actions, 3) actions with a specified exact time."
     },
     {
@@ -11,8 +11,8 @@ export default {
         headers: ["Situation", "Example"],
         rows: [
           ["Completed action", "Ontem comi peixe. (Yesterday I ate fish.)"],
-          ["Sequence", "Levantei-me, tomei banho e sa\u00ed. (I got up, took a shower, and left.)"],
-          ["Exact time", "Cheguei \u00e0s oito horas. (I arrived at eight o'clock.)"],
+          ["Sequence", "Levantei-me, tomei banho e saí. (I got up, took a shower, and left.)"],
+          ["Exact time", "Cheguei às oito horas. (I arrived at eight o'clock.)"],
           ["Defined period", "Vivi em Lisboa durante dois anos. (I lived in Lisbon for two years.)"]
         ]
       }
@@ -25,8 +25,8 @@ export default {
       table: {
         headers: ["Situation", "Example"],
         rows: [
-          ["Habit", "Todos os dias ia \u00e0 escola. (Every day I used to go to school.)"],
-          ["Background description", "Fazia sol e os p\u00e1ssaros cantavam. (The sun was shining and the birds were singing.)"],
+          ["Habit", "Todos os dias ia à escola. (Every day I used to go to school.)"],
+          ["Background description", "Fazia sol e os pássaros cantavam. (The sun was shining and the birds were singing.)"],
           ["Ongoing action", "Enquanto dormia, tocou o telefone. (While I was sleeping, the phone rang.)"],
           ["State", "Eu estava cansado. (I was tired.)"]
         ]
@@ -45,7 +45,19 @@ export default {
       ]
     },
     {
-      note: "Key rule: if you can substitute \u00abused to do\u00bb or \u00abwas doing\u00bb \u2014 use Imperfeito. If you can substitute \u00abdid\u00bb or \u00abhappened\u00bb \u2014 use Perfeito."
+      heading: "Estar a + infinitive for background description",
+      text: "Instead of the simple Imperfeito, the construction estar (in the Imperfeito) + a + infinitive is often used to describe a background action. This emphasises that the action was happening at that very moment."
+    },
+    {
+      examples: [
+        { pt: "Eu estava a ler quando ela chegou.", ru: "I was reading (at that moment) when she arrived." },
+        { pt: "Eles estavam a jantar quando o telefone tocou.", ru: "They were having dinner when the phone rang." },
+        { pt: "O que estavas a fazer quando te telefonei?", ru: "What were you doing when I called you?" },
+        { pt: "Estava a chover quando saímos do cinema.", ru: "It was raining when we left the cinema." }
+      ]
+    },
+    {
+      note: "Key rule: if you can substitute «used to do» or «was doing» — use Imperfeito. If you can substitute «did» or «happened» — use Perfeito."
     }
   ],
   vocabulary: [
@@ -68,7 +80,7 @@ export default {
     { ru: "to cook", hint: "eu cozinhava (Imperf.)" },
     { ru: "beach", hint: "feminine" },
     { ru: "sun", hint: "fazia sol = it was sunny" },
-    { ru: "bird", hint: "pl.: os p\u00e1ssaros" },
+    { ru: "bird", hint: "pl.: os pássaros" },
     { ru: "Arab, Arabic", hint: "m./f." },
     { ru: "countryside, field", hint: "masculine" },
     { ru: "characteristics", hint: "f. plural" },

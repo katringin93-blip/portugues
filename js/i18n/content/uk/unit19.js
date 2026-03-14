@@ -45,6 +45,18 @@ export default {
       ]
     },
     {
+      heading: "Estar a + інфінітив для опису тла",
+      text: "Замість простого Imperfeito для опису фонової дії часто використовується конструкція estar (в Imperfeito) + a + інфінітив. Це підкреслює, що дія відбувалася саме в той момент."
+    },
+    {
+      examples: [
+        { pt: "Eu estava a ler quando ela chegou.", ru: "Я читав (у той момент), коли вона приїхала." },
+        { pt: "Eles estavam a jantar quando o telefone tocou.", ru: "Вони вечеряли, коли зателефонували." },
+        { pt: "O que estavas a fazer quando te telefonei?", ru: "Що ти робив, коли я тобі зателефонував?" },
+        { pt: "Estava a chover quando saímos do cinema.", ru: "Ішов дощ, коли ми вийшли з кіно." }
+      ]
+    },
+    {
       note: "Ключове правило: якщо можна замінити на «зазвичай робив» або «у той момент робив» — вживайте Imperfeito. Якщо можна замінити на «зробив», «сталося» — вживайте Perfeito."
     }
   ],

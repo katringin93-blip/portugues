@@ -10,24 +10,41 @@ export default {
       table: {
         headers: ["Конструкція", "Значення", "Приклад"],
         rows: [
-          ["mais + прикм. + do que", "більш ... ніж", "Lisboa é mais grande do que o Porto."],
+          ["mais + прикм. + do que", "більш ... ніж", "Lisboa é maior do que o Porto."],
           ["menos + прикм. + do que", "менш ... ніж", "O Porto é menos quente do que Lisboa."],
-          ["tão + прикм. + como", "такий самий ... як", "Coimbra é tão bonita como o Porto."]
+          ["tão + прикм. + como/quanto", "такий самий ... як", "Coimbra é tão bonita como o Porto."],
+          ["tanto(s)/tanta(s) + імен. + como", "стільки ж ... скільки", "Tenho tanto vinho como sumo."]
         ]
       }
     },
     {
-      heading: "Неправильні форми порівняння",
-      text: "Деякі прикметники мають особливі форми вищого ступеня."
+      note: "Конструкція tão ... como вживається з прикметниками та прислівниками, а tanto(s)/tanta(s) ... como — з іменниками."
+    },
+    {
+      heading: "Підсилення порівнянь",
+      text: "Порівняльні конструкції можна підсилити прислівниками muito (набагато), bem (значно) та ainda (ще)."
+    },
+    {
+      examples: [
+        { pt: "A Ana é muito mais bonita do que a Paula.", ru: "Ана набагато красивіша за Паулу." },
+        { pt: "Eu acho o Porto bem mais interessante do que Lisboa.", ru: "Я вважаю Порту значно цікавішим за Лісабон." },
+        { pt: "A Sofia é ainda menos faladora do que a Suzana.", ru: "Софія ще менш балакуча, ніж Сузана." }
+      ]
+    },
+    {
+      heading: "Неправильні форми порівняння та найвищого ступеня",
+      text: "Деякі прикметники мають особливі форми вищого та найвищого ступеня."
     },
     {
       table: {
-        headers: ["Прикметник", "Вищий ступінь"],
+        headers: ["Прикметник", "Вищий ступінь", "Відносн. найвищий", "Абсолютн. найвищий"],
         rows: [
-          ["bom (гарний)", "melhor (кращий)"],
-          ["mau (поганий)", "pior (гірший)"],
-          ["grande (великий)", "maior (більший)"],
-          ["pequeno (маленький)", "menor (менший)"]
+          ["bom (гарний)", "melhor", "o melhor", "ótimo"],
+          ["mau (поганий)", "pior", "o pior", "péssimo"],
+          ["grande (великий)", "maior", "o maior", "máximo"],
+          ["pequeno (маленький)", "menor", "o menor", "mínimo"],
+          ["muito (дуже)", "mais", "o mais", "muitíssimo"],
+          ["pouco (мало)", "menos", "o menos", "pouquíssimo"]
         ]
       }
     },
@@ -39,24 +56,64 @@ export default {
       table: {
         headers: ["Тип", "Конструкція", "Приклад"],
         rows: [
-          ["Відносний", "o/a mais + прикм.", "Ela é a mais inteligente da turma."],
-          ["Відносний (неправ.)", "o/a melhor / pior", "Este é o melhor restaurante."],
-          ["Абсолютний (-íssimo)", "прикм. + -íssimo/a", "A comida está boníssima."],
+          ["Відносний (більш)", "o/a mais + прикм.", "Ela é a mais inteligente da turma."],
+          ["Відносний (менш)", "o/a menos + прикм.", "O José é o rapaz menos inteligente."],
+          ["Відносний (нерег.)", "o/a melhor / pior", "Este é o melhor restaurante."],
+          ["Абсолютний (-íssimo)", "прикм. + -íssimo/a", "A comida está ótima."],
           ["Абсолютний (muito)", "muito + прикм.", "A comida está muito boa."]
         ]
       }
+    },
+    {
+      heading: "Правила утворення абсолютного найвищого ступеня (-íssimo)",
+      text: "Суфікс -íssimo/-a/-os/-as додається до основи прикметника. При цьому графічні наголоси знімаються."
+    },
+    {
+      table: {
+        headers: ["Закінчення прикм.", "Правило", "Приклади"],
+        rows: [
+          ["-a, -e, -o", "Голосна відпадає + -íssimo", "lento → lentíssimo, triste → tristíssimo"],
+          ["-l, -r, -s", "Просто додається -íssimo", "original → originalíssimo, vulgar → vulgaríssimo"],
+          ["-co", "-c змінюється на -qu + íssimo", "fraco → fraquíssimo, rico → riquíssimo"]
+        ]
+      }
+    },
+    {
+      heading: "Неправильні абсолютні найвищі ступені",
+      text: "Деякі прикметники мають особливі форми абсолютного найвищого ступеня (латинського походження)."
+    },
+    {
+      table: {
+        headers: ["Прикметник", "Абсолютний найвищий ступінь"],
+        rows: [
+          ["amigo (дружній)", "amicíssimo"],
+          ["antigo (старовинний)", "antiquíssimo"],
+          ["difícil (важкий)", "dificílimo"],
+          ["pobre (бідний)", "paupérrimo"]
+        ]
+      }
+    },
+    {
+      heading: "Неформальні альтернативи",
+      text: "У розмовній португальській замість суфікса -íssimo часто вживаються прислівники muitíssimo, extremamente або super перед прикметником."
     },
     {
       examples: [
         { pt: "O Porto é mais frio do que Lisboa.", ru: "Порту холодніший за Лісабон." },
         { pt: "Este vinho é melhor do que aquele.", ru: "Це вино краще за те." },
         { pt: "Ela é a aluna mais inteligente da turma.", ru: "Вона — найрозумніша учениця в класі." },
-        { pt: "O exame foi facílimo.", ru: "Іспит був дуже легким." }
+        { pt: "O exame foi facílimo.", ru: "Іспит був дуже легким." },
+        { pt: "O Filipe está muitíssimo triste.", ru: "Філіпе надзвичайно сумний." },
+        { pt: "O apartamento dele é super moderno.", ru: "Його квартира суперсучасна." }
       ]
     },
     {
       note: "У європейській португальській «do que» часто скорочується до «que» в розмовній мові: «É mais alto que eu» (Він вищий за мене)."
     }
+  ],
+  lessons: [
+    { title: "Частина 1: Вищий ступінь порівняння" },
+    { title: "Частина 2: Найвищий ступінь" }
   ],
   vocabulary: [
     { ru: "більш" },

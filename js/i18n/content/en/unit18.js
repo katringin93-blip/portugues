@@ -1,10 +1,10 @@
 export default {
   title: "Imperfect tense (Imperfeito)",
-  description: "Pret\u00e9rito Imperfeito \u2014 describing past habits, states, and ongoing actions",
+  description: "Pretérito Imperfeito — describing past habits, states, and ongoing actions",
   theory: [
     {
-      heading: "Pret\u00e9rito Imperfeito",
-      text: "This tense is used to describe: 1) habitual actions in the past, 2) background/ongoing actions, 3) descriptions of settings and states in the past, 4) simultaneous actions in the past. It is the equivalent of the English past continuous or \u00abused to\u00bb construction."
+      heading: "Pretérito Imperfeito",
+      text: "This tense is used to describe: 1) habitual actions in the past, 2) background/ongoing actions, 3) descriptions of settings and states in the past, 4) simultaneous actions in the past. It is the equivalent of the English past continuous or «used to» construction."
     },
     {
       heading: "Regular verbs",
@@ -17,12 +17,15 @@ export default {
     },
     {
       heading: "Irregular verbs in Imperfeito",
-      text: "Only four verbs are irregular in this tense: ser, ter, vir, p\u00f4r."
+      text: "Only four verbs are irregular in this tense: ser, ter, vir, pôr."
     },
     {
       table: {
-        headers: ["Person", "ser", "ter", "vir", "p\u00f4r"]
+        headers: ["Person", "ser", "ter", "vir", "pôr"]
       }
+    },
+    {
+      note: "Important: the verbs dar, dizer, fazer, ir, saber, trazer, ver are irregular in other tenses, but in the Imperfeito they conjugate according to regular rules: dava, dizia, fazia, ia, sabia, trazia, via."
     },
     {
       heading: "Imperfeito markers",
@@ -36,8 +39,8 @@ export default {
           ["todos os dias", "every day"],
           ["normalmente", "usually"],
           ["antigamente", "in the old days, formerly"],
-          ["quando era crian\u00e7a", "when I was a child"],
-          ["naquela \u00e9poca", "in that era"],
+          ["quando era criança", "when I was a child"],
+          ["naquela época", "in that era"],
           ["enquanto", "while"]
         ]
       }
@@ -51,7 +54,7 @@ export default {
       ]
     },
     {
-      note: "The Imperfeito is one of the most \u00abconvenient\u00bb tenses, as almost all verbs are regular (except ser, ter, vir, p\u00f4r). The 1st and 3rd person singular forms are identical."
+      note: "The Imperfeito is one of the most «convenient» tenses, as almost all verbs are regular (except ser, ter, vir, pôr). The 1st and 3rd person singular forms are identical."
     },
     {
       heading: "Ir + infinitive in the Imperfeito: 'was going to'",
@@ -59,9 +62,9 @@ export default {
     },
     {
       examples: [
-        { pt: "Eu ia telefonar \u00e0 Ana, mas depois esqueci-me.", ru: "I was going to phone Ana, but then I forgot." },
+        { pt: "Eu ia telefonar à Ana, mas depois esqueci-me.", ru: "I was going to phone Ana, but then I forgot." },
         { pt: "Ela ia dar aulas este ano, mas desistiu.", ru: "She was going to teach this year, but she gave it up." },
-        { pt: "N\u00f3s \u00edamos mudar de casa, mas mud\u00e1mos de ideias.", ru: "We were going to move house, but we changed our minds." }
+        { pt: "Nós íamos mudar de casa, mas mudámos de ideias.", ru: "We were going to move house, but we changed our minds." }
       ]
     },
     {
@@ -70,7 +73,7 @@ export default {
     },
     {
       examples: [
-        { pt: "Eu queria um caf\u00e9, por favor.", ru: "I would like a coffee, please." },
+        { pt: "Eu queria um café, por favor.", ru: "I would like a coffee, please." },
         { pt: "Joana, podias fazer-me um favor?", ru: "Joana, could you do me a favour?" },
         { pt: "O senhor podia dizer-me as horas?", ru: "Could you tell me the time, sir?" }
       ]
@@ -100,7 +103,7 @@ export default {
     { ru: "in the old days", hint: "Imperfeito marker" },
     { ru: "while", hint: "conjunction, Imperfeito marker" },
     { ru: "to play", hint: "eu brincava (Imperf.)" },
-    { ru: "child", hint: "pl.: as crian\u00e7as" },
+    { ru: "child", hint: "pl.: as crianças" },
     { ru: "to open to the public", hint: "expression" },
     { ru: "out of order, broken", hint: "adjective" },
     { ru: "noisy", hint: "adjective" },

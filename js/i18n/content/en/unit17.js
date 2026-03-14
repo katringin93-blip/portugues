@@ -1,10 +1,10 @@
 export default {
-  title: "Simple past tense (Pret\u00e9rito Perfeito Simples)",
+  title: "Simple past tense (Pretérito Perfeito Simples)",
   description: "Conjugation of regular and irregular verbs in the simple past tense",
   theory: [
     {
-      heading: "Pret\u00e9rito Perfeito Simples",
-      text: "This tense is used to denote completed actions in the past. It is the equivalent of the English simple past: \u00abI did\u00bb, \u00abhe came\u00bb."
+      heading: "Pretérito Perfeito Simples",
+      text: "This tense is used to denote completed actions in the past. It is the equivalent of the English simple past: «I did», «he came»."
     },
     {
       heading: "Regular verbs",
@@ -16,7 +16,7 @@ export default {
       }
     },
     {
-      heading: "Irregular verbs in Pret\u00e9rito Perfeito",
+      heading: "Irregular verbs in Pretérito Perfeito",
       text: "The main irregular verbs have special forms."
     },
     {
@@ -30,16 +30,27 @@ export default {
       }
     },
     {
+      table: {
+        headers: ["Person", "pôr", "trazer", "ver"]
+      }
+    },
+    {
       examples: [
-        { ru: "Yesterday I spoke with Jo\u00e3o." },
+        { ru: "Yesterday I spoke with João." },
         { ru: "They went to the cinema." },
         { ru: "Did you do the work?" },
-        { ru: "We were in Lisbon." }
+        { ru: "We were in Lisbon." },
+        { ru: "Have you already set the table, daughter?" },
+        { ru: "This morning we saw an accident." }
       ]
     },
     {
-      note: "Note: in European Portuguese, the \u00abn\u00f3s\u00bb form for -ar verbs in the Pret\u00e9rito Perfeito has an accent: fal\u00e1mos (with accent!), unlike the present tense: falamos (without accent). In Brazilian Portuguese, this difference is not marked."
+      note: "Note: in European Portuguese, the «nós» form for -ar verbs in the Pretérito Perfeito has an accent: falámos (with accent!), unlike the present tense: falamos (without accent). In Brazilian Portuguese, this difference is not marked."
     }
+  ],
+  lessons: [
+    { title: "Part 1: Regular verbs" },
+    { title: "Part 2: Irregular verbs" }
   ],
   vocabulary: [
     { ru: "yesterday" },

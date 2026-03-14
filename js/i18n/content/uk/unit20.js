@@ -42,11 +42,14 @@ export default {
       table: {
         headers: ["Дієслово", "eu", "ele/ela", "eles/elas"],
         rows: [
-          ["ser", "fora", "fora", "foram"],
+          ["ser/ir", "fora", "fora", "foram"],
           ["ter", "tivera", "tivera", "tiveram"],
           ["estar", "estivera", "estivera", "estiveram"],
           ["fazer", "fizera", "fizera", "fizeram"],
           ["dizer", "dissera", "dissera", "disseram"],
+          ["dar", "dera", "dera", "deram"],
+          ["pôr", "pusera", "pusera", "puseram"],
+          ["trazer", "trouxera", "trouxera", "trouxeram"],
           ["vir", "viera", "viera", "vieram"]
         ]
       }
@@ -72,8 +75,8 @@ export default {
     },
     {
       examples: [
-        { ru: "Він поїхав до того, як ми приїхали. (літерат.)" },
-        { ru: "Коли ми приїхали, вони вже пішли. (літерат.)" }
+        { pt: "Ele havia partido antes de nós chegarmos.", ru: "Він поїхав до того, як ми приїхали. (літерат.)" },
+        { pt: "Quando chegámos, eles já haviam saído.", ru: "Коли ми приїхали, вони вже пішли. (літерат.)" }
       ]
     },
     {
@@ -82,10 +85,14 @@ export default {
     },
     {
       examples: [
-        { ru: "Він подзвонив мені перед вечерею." },
-        { ru: "Ми йому/їй нічого не сказали." },
-        { ru: "Вона вже встала, коли я прийшов." }
+        { pt: "Ele tinha-me telefonado antes do jantar.", ru: "Він подзвонив мені перед вечерею." },
+        { pt: "Nós não lhe tínhamos dito nada.", ru: "Ми йому/їй нічого не сказали." },
+        { pt: "Ela já se tinha levantado quando cheguei.", ru: "Вона вже встала, коли я прийшов." },
+        { pt: "Eu tinha-lhos pedido.", ru: "Я попросив у нього/неї їх (lhe + os = lhos)." }
       ]
+    },
+    {
+      note: "Форма 3-ї особи множини M-q-P Simples збігається з Pretérito Perfeito (falaram = falaram). Тому для 3-ї особи мн. краще використовувати складену форму (tinham falado), щоб уникнути двозначності."
     }
   ],
   vocabulary: [

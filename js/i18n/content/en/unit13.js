@@ -26,7 +26,18 @@ export default {
       heading: "Combining direct and indirect objects",
       text: "When a sentence has both a direct and an indirect pronoun, they merge."
     },
-    {},
+    {
+      table: {
+        headers: ["", "o", "a", "os", "as"],
+        rows: [
+          ["me +", "mo", "ma", "mos", "mas"],
+          ["te +", "to", "ta", "tos", "tas"],
+          ["lhe +", "lho", "lha", "lhos", "lhas"],
+          ["nos +", "no-lo", "no-la", "no-los", "no-las"],
+          ["lhes +", "lho", "lha", "lhos", "lhas"]
+        ]
+      }
+    },
     {
       examples: [
         { ru: "I give him/her the book." },
@@ -38,6 +49,10 @@ export default {
     {
       note: "The verb \u00abtelefonar\u00bb in Portuguese requires an indirect object (telefonar a algu\u00e9m), so \u00ablhe\u00bb is used, not \u00abo/a\u00bb. Also: \u00abpedir a\u00bb (to ask), \u00abdizer a\u00bb (to tell), \u00abdar a\u00bb (to give to)."
     }
+  ],
+  lessons: [
+    { title: "Part 1: Forms and position" },
+    { title: "Part 2: Pronoun contraction" }
   ],
   vocabulary: [
     { ru: "to call (someone)" },
