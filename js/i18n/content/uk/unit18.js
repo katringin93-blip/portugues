@@ -132,5 +132,106 @@ export default {
     { ru: "годинник", hint: "ч.р." },
     { ru: "решта", hint: "прикметник" },
   ],
+  exercises: [
+    // Вправа 1: Перепишіть в Imperfeito (0-9)
+    { question: "Перепишіть в Imperfeito: Eles não sabem a resposta. → Eles não ___" },
+    { question: "Перепишіть в Imperfeito: Ela quer ir embora. → Ela ___" },
+    { question: "Перепишіть в Imperfeito: Tu ouves música e fazes exercício. → Tu ___ música e ___ exercício." },
+    { question: "Перепишіть в Imperfeito: Nós vivemos em Lisboa e viajamos muito. → Nós ___ em Lisboa e ___ muito." },
+    { question: "Перепишіть в Imperfeito: Eles nunca têm tempo. → Eles nunca ___" },
+    { question: "Перепишіть в Imperfeito: Tu adoras dançar. → Tu ___" },
+    { question: "Перепишіть в Imperfeito: Tu tens tempo e chegas cedo. → Tu ___ tempo e ___ cedo." },
+    { question: "Перепишіть в Imperfeito: Eles pensam muito. → Eles ___" },
+    { question: "Перепишіть в Imperfeito: Nós fazemos tudo e pomos a mesa. → Nós ___ tudo e ___ a mesa." },
+    { question: "Перепишіть в Imperfeito: Eles sabem a verdade. → Eles ___" },
+    // Вправа 2: Заповніть Imperfeito (10-21) — португальські підказки, нічого не перекладати
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Вправа 3: Перекладіть португальською (22-29)
+    { source: "Раніше ми жили в маленькому будинку." },
+    { source: "Коли я був дитиною, я грався в парку." },
+    { source: "Вона завжди носила червону сукню." },
+    { source: "Кожного дня він вставав о шостій ранку." },
+    { source: "Погода була чудовою." },
+    { source: "Ми не знали його імені." },
+    { source: "Вони хотіли подорожувати Європою." },
+    { source: "Вулиці були тихими й темними." },
+    // Вправа 4: Діалог (30-43)
+    { question: "— Як тобі було на старій роботі? (estar — Imperfeito)", explanation: "З «tu» в Imperfeito: estavas. У цьому контексті також допускається «estava» (розмовна форма)." },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Вправа 5: Перекладіть португальською (44-53)
+    { source: "Мій дідусь завжди читав газету вранці." },
+    { source: "Коли я був молодим, я багато подорожував." },
+    { source: "Вона працювала в лікарні." },
+    { source: "Ми ходили до школи щодня." },
+    { source: "Діти гралися у дворі." },
+    { source: "Він не хотів вчитися." },
+    { source: "Раніше не було інтернету." },
+    { source: "У неї було багато друзів." },
+    { source: "Кожного літа ми їздили на пляж." },
+    { source: "Він завжди приходив пізно." },
+    // Вправа 6: Історичний текст (54-63) — португальські підказки, нічого не перекладати
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Додаткові вправи (64-69)
+    { question: "Зіставте неправильне дієслово з формою «eu» в Imperfeito:" },
+    { question: "Складіть речення: «Раніше він працював у банку.»" },
+    {
+      question: "Скільки неправильних дієслів в Imperfeito?",
+      options: ["Два (ser, ir)", "Три (ser, ter, vir)", "Чотири (ser, ter, vir, pôr)", "П'ять"],
+      explanation: "В Imperfeito рівно чотири неправильних дієслова: ser, ter, vir, pôr."
+    },
+    {
+      question: "В Imperfeito форми 1-ї та 3-ї особи однини...",
+      options: [
+        "завжди різняться",
+        "збігаються",
+        "різняться лише у неправильних дієслів",
+        "різняться лише у дієслів на -ar"
+      ],
+      explanation: "В Imperfeito форми «eu» і «ele/ela/você» завжди збігаються: eu falava = ele falava."
+    },
+    {
+      question: "Зіставте маркери Imperfeito з перекладом:",
+      pairs: [
+        { right: "завжди" },
+        { right: "щодня" },
+        { right: "зазвичай" },
+        { right: "раніше, за старих часів" },
+        { right: "поки, тоді як" }
+      ]
+    },
+    { question: "Складіть речення: «Діти зазвичай гралися в саду.»" }
+  ],
 
 };

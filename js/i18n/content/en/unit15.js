@@ -116,5 +116,69 @@ export default {
     { ru: "salt", hint: "masculine" },
     { ru: "earthquake", hint: "masculine" },
   ],
+  exercises: [
+    // Ex1: Insert the possessive pronoun
+    { question: "Insert the possessive: O ___ carro é novo. (my)" },
+    { question: "Insert: A casa ___ é grande. (their, fem.)" },
+    { question: "Insert: As ___ amigas são simpáticas. (your, informal)" },
+    { question: "Insert: O ___ jardim é bonito. (our)" },
+    { question: "Insert: A ___ casa fica no centro. (my, fem.)" },
+    {
+      question: "How do you say 'his car' specifying it is his (not hers)?",
+      explanation: "For clarification, use 'dele' (his): o carro dele."
+    },
+    { question: "Insert two possessives: Os ___ livros são diferentes dos ___. (her own; her friend's — dela)" },
+    { question: "Insert: A ___ mãe é professora. (his, formal — sua)" },
+    { question: "Insert: A ___ família é grande. (his, formal — sua)" },
+    { question: "Insert: O escritório ___ é moderno. (hers — dela)" },
+    { question: "Insert: As ___ irmãs vivem no Porto. (my)" },
+    { question: "Insert: Os ___ amigos são portugueses. (your, informal)" },
+    // Ex2: Rewrite with possessive forms (translate type — source only)
+    { source: "My house is in Lisbon." },
+    { source: "Our children study at school." },
+    { source: "Your sister is beautiful." },
+    { source: "Her husband works at the bank. (use 'dela')" },
+    // Ex3: Possessives in dialogue
+    { question: "— Onde estão os ___ livros? (your, informal) — O ___ está aqui. (my)" },
+    { question: "— A ___ casa é grande? (your, informal) — Sim, o ___ jardim também. (my)" },
+    {
+      question: "— De quem é este carro? — É o carro ___. (his — dele)",
+      explanation: "To specify 'his', use 'dele': É o carro dele."
+    },
+    { question: "— Os ___ pais moram aqui? (your, informal) — Sim, a ___ mãe está em casa. (my)" },
+    { question: "— O ___ carro é novo? (your, informal) — Não, a ___ bicicleta é que é nova. (my)" },
+    { question: "— Este é o ___ apartamento? (your, formal) — Sim, a cadeira ___ é bonita. (hers — dela)" },
+    { question: "— A ___ filha estuda em Coimbra? (my) — Sim, o ___ irmão também. (our)" },
+    { question: "— Os ___ amigos vêm à festa? (my) — Sim, a ___ amiga Ana também vem. (our)" },
+    // Ex4: Translate sentences with possessives (translate type — source only)
+    { source: "Where are your keys?" },
+    { source: "Our dog is bigger than yours." },
+    { source: "My mother is a doctor." },
+    { source: "Their (masc.) house is next to ours." },
+    // Ex5: seu/sua vs dele/dela
+    { question: "Context is clear (formal 'you'): A ___ encomenda chegou. (Your order has arrived.)" },
+    { question: "Clarification needed: A casa ___ é moderna. (hers, specifically hers)" },
+    { question: "Context is clear (formal 'you'): O ___ bilhete está aqui. (Your ticket is here.)" },
+    {
+      question: "When should you use 'dele/dela' instead of 'seu/sua'?",
+      explanation: "'Seu/sua' can mean his/her/your. 'Dele/dela' clarifies who is being referred to."
+    },
+    { question: "Formal: A ___ família é grande. (Your family is large.)" },
+    { question: "Formal: O ___ trabalho é interessante. (Your work is interesting.)" },
+    { question: "Formal: O ___ nome, por favor? (Your name, please?)" },
+    { question: "Plural: Os ___ filhos estudam bem. (Your children study well.)" },
+    {
+      question: "Match the possessive pronouns (fem. sg.):",
+      pairs: [
+        { right: "my" },
+        { right: "your (informal)" },
+        { right: "his / her / your (formal)" },
+        { right: "our" },
+        { right: "your (plural)" }
+      ]
+    },
+    { question: "Form a sentence: 'His wife works at the hospital.'" },
+    { question: "Form a sentence: 'Our house is next to yours.'" }
+  ],
 
 };

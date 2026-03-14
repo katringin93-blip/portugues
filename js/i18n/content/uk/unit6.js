@@ -91,6 +91,87 @@ export default {
     { ru: "квиток" },
     { ru: "професія" }
   ],
+  exercises: [
+    // Ex1: Fill correct interrogative (12 items)
+    { question: "___ se chama o seu amigo? (Як звати вашого друга?)" },
+    { question: "___ é aquela rapariga? (Хто та дівчина?)" },
+    { question: "___ há para o jantar? (Що на вечерю?)" },
+    { question: "___ estuda o Paulo? (Що вивчає Пауло?)" },
+    { question: "___ é que chegam os teus pais? (Коли приїдуть твої батьки?)" },
+    { question: "___ é o director da escola? (Хто директор школи?)" },
+    {
+      question: "Виберіть правильне питальне слово: ___ fazem no fim-de-semana?",
+      explanation: "«Que» (що) використовується для запитань про дії: «Що вони роблять у вихідні?»"
+    },
+    { question: "___ é que vocês convidam para a festa? (Кого ви запрошуєте на свято?)" },
+    { question: "___ é que fica a farmácia? (Де знаходиться аптека?)" },
+    { question: "___ é que a Ana traz na mala? (Що Ана несе в сумці?)" },
+    {
+      question: "Виберіть правильне питальне слово: ___ fala ao telefone?",
+      explanation: "«Quem» (хто) — запитання про людину: «Хто говорить по телефону?»"
+    },
+    { question: "___ é que ela vai para o trabalho — de carro ou de autocarro? (Як вона їде на роботу?)" },
+
+    // Ex2: Full answers using elements (8 items)
+    { source: "Де Ідаліна?" },
+    { question: "Складіть повну відповідь на питання «Onde está a Idalina?» — Вона в школі." },
+    { question: "Складіть відповідь: «У вихідні ми їдемо до Віана-ду-Каштелу.»" },
+    { source: "Я сідаю на автобус о 17:30." },
+    { source: "Я йду в кіно з Патрісією." },
+    { question: "Складіть відповідь: «Я збираюся провідати маму завтра вдень.»" },
+    { source: "По неділях ми гуляємо в парку." },
+    {
+      question: "Як правильно відповісти на «Quanto custa o bilhete?» — Квиток коштує десять євро.",
+      explanation: "«O bilhete custa dez euros» — правильна відповідь з дієсловом «custar» (коштувати)."
+    },
+
+    // Ex3: Write full questions for given answers (10 items)
+    { source: "Як тебе звати? (відповідь: Chamo-me Maria.)" },
+    { question: "Питання до відповіді «O Paulo é de Coimbra»: ___ é o Paulo?" },
+    { source: "Що вони надсилають? (відповідь: Enviam uma encomenda.)" },
+    { question: "Питання до відповіді «Falamos da professora»: De ___ falam?" },
+    { source: "Про що ця книга? (відповідь: O livro trata de história.)" },
+    { question: "Питання до відповіді «Vou de férias em agosto»: Em ___ mês vais de férias?" },
+    { source: "О котрій годині прибуває потяг?" },
+    { question: "Складіть питання: «Коли Ана виходить заміж за Педро?»" },
+
+    // Ex4: Build questions from elements (5 items)
+    { question: "Складіть питання: «Де живуть друзі Катаріни?»" },
+    { question: "Складіть питання: «О котрій годині прибуває наступний потяг до Порту?»" },
+    { source: "Скільки людей працює на вашій фабриці?" },
+    { source: "Куди ви їдете у відпустку?" },
+    { question: "Складіть питання: «З ким Луїза проводить вихідні?»" },
+
+    // Ex5: Mixed exercises on interrogatives
+    {
+      question: "Зіставте питальні слова з їх перекладом:",
+      pairs: [
+        { right: "Як" },
+        { right: "Де" },
+        { right: "Коли" },
+        { right: "Хто" },
+        { right: "Скільки" }
+      ]
+    },
+    {
+      question: "Зіставте питання з підходящою відповіддю:",
+      pairs: [
+        { right: "У Лісабоні." },
+        { right: "Завтра." },
+        { right: "Вчитель." },
+        { right: "На автобусі." },
+        { right: "Я вивчаю португальську." }
+      ]
+    },
+    {
+      question: "Яке питання підходить до відповіді «O Natal em Portugal é no dia 25 de dezembro»?",
+      explanation: "Відповідь містить дату (25 de dezembro), тому питання повинно бути з «Quando» (коли)."
+    },
+    {
+      question: "Яка конструкція характерна для європейської португальської у питаннях?",
+      explanation: "Конструкція «é que» — типова риса європейської португальської; ставиться після питального слова."
+    }
+  ],
   flashcards: [
     { ru: "Хто?", hint: "питальний займенник" },
     { ru: "Де?", hint: "питальний прислівник місця" },

@@ -114,5 +114,129 @@ export default {
     { ru: "disturbances, riots", hint: "m. plural" },
     { ru: "victory", hint: "feminine" },
   ],
+  exercises: [
+    // === Ex1: Write Mais-que-Perfeito Composto (tinha + particípio) (12 items) ===
+    { question: "He ___ ___ the work before leaving. (acabar — M-q-P Composto)" },
+    { question: "I ___ ___ with her yesterday. (falar — M-q-P Composto)" },
+    { question: "We ___ ___ about moving house. (pensar — M-q-P Composto)" },
+    { question: "The train ___ ___ when I arrived at the station. (partir — M-q-P Composto)" },
+    { question: "She ___ ___ dinner before eight. (comer — M-q-P Composto)" },
+    { question: "He ___ ___ the film before. (ver — M-q-P Composto)" },
+    { question: "I ___ ___ to help her. (prometer — M-q-P Composto)" },
+    { question: "Maria ___ ___ at home. (ficar — M-q-P Composto)" },
+    { question: "João ___ ___ many problems. (ter — M-q-P Composto)" },
+    { question: "They ___ ___ the books on the shelf. (pôr — M-q-P Composto)" },
+    { question: "Had you ___ ___ the letter? (escrever — M-q-P Composto)" },
+    { question: "You (pl.) ___ ___ very nervous. (estar — M-q-P Composto)" },
+
+    // === Ex2: Rewrite with pronouns + M-q-P Composto (10 items) ===
+    { question: "Eles levantaram-se → Eles ___. (M-q-P Composto)" },
+    { question: "Eu comprei-te um presente → Eu ___. (M-q-P Composto)" },
+    { question: "Eles observaram-se → Eles ___. (M-q-P Composto, inversion with negation: se tinham...)" },
+    { question: "Ela lembrou-se do nome → Ela ___. (M-q-P Composto)" },
+    { question: "Eles distraíram-se → Eles ___. (M-q-P Composto)" },
+    { question: "Tu enganaste-te → Tu ___. (M-q-P Composto)" },
+    { question: "Eu vi-o → Eu também ___. (M-q-P Composto, with «também»)" },
+    { question: "Nós vimos a Maria → Nós ___. (M-q-P Composto with pronoun -la)" },
+    { question: "Ele comprou o carro → Ele ___. (M-q-P Composto, without pronoun)" },
+    { question: "Ele aceitou o convite → Ele ___. (M-q-P Composto with pronoun -o)" },
+
+    // === Ex3: Rewrite in Mais-que-Perfeito Simples (10 items) ===
+    { question: "Nós tínhamo-nos levantado → Nós ___. (M-q-P Simples)" },
+    { question: "Tu tinhas recebido → Tu ___. (M-q-P Simples, receber)" },
+    { question: "Ele nunca se tinha esquecido → Ele nunca ___. (M-q-P Simples, esquecer-se)" },
+    { question: "Eu tinha visto → Eu ___. (M-q-P Simples, ver)" },
+    { question: "Ele tinha feito → Ele ___. (M-q-P Simples, fazer)" },
+    { question: "Tu tinhas esperado → Tu ___. (M-q-P Simples, esperar)" },
+    { question: "Ele tinha sido → Ele ___. (M-q-P Simples, ser)" },
+    { question: "Nós tínhamos conhecido → Nós ___. (M-q-P Simples, conhecer)" },
+    { question: "Ele tinha dito → Ele ___. (M-q-P Simples, dizer)" },
+    { question: "Ele tinha vindo → Ele ___. (M-q-P Simples, vir)" },
+
+    // === Ex4: Write questions in M-q-P Composto (10 items) ===
+    { source: "What had they bought?" },
+    { source: "Where had he taken the dog?" },
+    { source: "Who had they spoken with?" },
+    { source: "What time had he left?" },
+    { source: "What had the weather been like?" },
+    { source: "How many years had he lived in the Algarve?" },
+    { source: "Who had he greeted?" },
+    { source: "How had they got to the party?" },
+    { source: "Who had he told that to?" },
+    { source: "How much had he paid for the gift?" },
+
+    // === Ex5: Match sentence beginnings and endings ===
+    {
+      question: "Match the sentence beginnings with their endings:",
+      pairs: [
+        { left: "Quando cheguei ao aeroporto,", right: "the plane had already left." },
+        { left: "Ele disse que", right: "he had already read the book." },
+        { left: "Percebi que", right: "I had forgotten the keys." },
+        { left: "Quando voltámos para casa,", right: "someone had broken the window." },
+        { left: "A Maria contou-me que", right: "she had been to the doctor." }
+      ]
+    },
+
+    // === Ex6: Translate into Portuguese (both forms) (5 fill items) ===
+    { question: "Translate: 'You had seen' — duas formas: ___ / ___. (ver — M-q-P Composto / Simples)" },
+    { question: "Translate: 'He had gone' — duas formas: ___ / ___. (ir — M-q-P Composto / Simples)" },
+    { question: "Translate: 'We had visited' — duas formas: ___ / ___. (visitar — M-q-P Composto / Simples)" },
+    { question: "Translate: 'He had arrived' — duas formas: ___ / ___. (chegar — M-q-P Composto / Simples)" },
+    { question: "Translate: 'He had done' — duas formas: ___ / ___. (fazer — M-q-P Composto / Simples)" },
+
+    // === Ex6: Translate sentences (5 translate items) ===
+    { source: "She said that she had already read the book. (both forms)" },
+    { source: "When I arrived, he had already left." },
+    { source: "We had never been to Lisbon before that trip." },
+    { source: "I realised that I had forgotten the keys." },
+    { source: "They had already finished the work when the boss arrived." },
+
+    // === Ex7: Fill in the historical text (9 items) ===
+    { question: "In the 15th century, the court ___-___ in Lisbon. (estabelecer-se — M-q-P Simples)" },
+    { question: "The Discoveries ___ ___ possible thanks to navigation. (ser — M-q-P Composto)" },
+    { question: "The storms ___ ___ several vessels. (afetar — M-q-P Composto)" },
+    { question: "Ambition ___ Portugal to explore new territories. (levar — M-q-P Simples)" },
+    { question: "D. Manuel I ___ the throne in 1495. (assumir — M-q-P Simples)" },
+    { question: "Vasco da Gama ___ the expedition to India. (comandar — M-q-P Simples)" },
+    { question: "The navigators ___ ___ to find the sea route. (ajudar — M-q-P Composto)" },
+    { question: "The voyage ___ a success. (ser — M-q-P Simples)" },
+    { question: "The arrival in India ___ a new era of trade. (assinalar — M-q-P Simples)" },
+
+    // === Additional exercises ===
+    {
+      question: "Match the compound and simple forms of M-q-P:",
+      pairs: [
+        { left: "tinha falado", right: "falara" },
+        { left: "tinha comido", right: "comera" },
+        { left: "tinha partido", right: "partira" },
+        { left: "tinha feito", right: "fizera" },
+        { left: "tinha dito", right: "dissera" },
+        { left: "tinha vindo", right: "viera" }
+      ]
+    },
+    {
+      question: "How is M-q-P Composto formed?",
+      explanation: "M-q-P Composto = ter in Imperfeito (tinha, tinhas...) + past participle."
+    },
+    {
+      question: "The simple form of Mais-que-Perfeito is used...",
+      explanation: "The simple form (falara, comera) is found in literature, newspapers, and formal texts."
+    },
+    {
+      question: "Match the pronoun with the form of 'ter' in Imperfeito (for M-q-P Composto):",
+      pairs: [
+        { left: "eu", right: "tinha" },
+        { left: "tu", right: "tinhas" },
+        { left: "ele/ela/você", right: "tinha" },
+        { left: "nós", right: "tínhamos" },
+        { left: "eles/elas/vocês", right: "tinham" }
+      ]
+    },
+    { question: "Put the words in order: 'He had never been to Portugal before.'" },
+    {
+      question: "In the sentence 'Quando cheguei, ele já tinha saído', which happened first?",
+      explanation: "M-q-P (tinha saído) denotes an action that happened BEFORE another action in the past."
+    }
+  ],
 
 };

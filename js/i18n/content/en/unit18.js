@@ -118,5 +118,106 @@ export default {
     { ru: "watch, clock", hint: "masculine" },
     { ru: "remaining", hint: "adjective" },
   ],
+  exercises: [
+    // Ex1: Rewrite in Imperfeito (0-9)
+    { question: "Rewrite in Imperfeito: Eles não sabem a resposta. → Eles não ___" },
+    { question: "Rewrite in Imperfeito: Ela quer ir embora. → Ela ___" },
+    { question: "Rewrite in Imperfeito: Tu ouves música e fazes exercício. → Tu ___ música e ___ exercício." },
+    { question: "Rewrite in Imperfeito: Nós vivemos em Lisboa e viajamos muito. → Nós ___ em Lisboa e ___ muito." },
+    { question: "Rewrite in Imperfeito: Eles nunca têm tempo. → Eles nunca ___" },
+    { question: "Rewrite in Imperfeito: Tu adoras dançar. → Tu ___" },
+    { question: "Rewrite in Imperfeito: Tu tens tempo e chegas cedo. → Tu ___ tempo e ___ cedo." },
+    { question: "Rewrite in Imperfeito: Eles pensam muito. → Eles ___" },
+    { question: "Rewrite in Imperfeito: Nós fazemos tudo e pomos a mesa. → Nós ___ tudo e ___ a mesa." },
+    { question: "Rewrite in Imperfeito: Eles sabem a verdade. → Eles ___" },
+    // Ex2: Fill in Imperfeito (10-21) — Portuguese prompts, nothing to translate
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Ex3: Translate to Portuguese (22-29)
+    { source: "We used to live in a small house." },
+    { source: "When I was a child, I played in the park." },
+    { source: "She always wore a red dress." },
+    { source: "Every day he got up at six in the morning." },
+    { source: "The weather was wonderful." },
+    { source: "We didn't know his name." },
+    { source: "They wanted to travel around Europe." },
+    { source: "The streets were quiet and dark." },
+    // Ex4: Dialog (30-43)
+    { question: "— How were you doing at your old job? (estar — Imperfeito)", explanation: "With «tu» in the Imperfeito: estavas. In this context «estava» (colloquial form) is also accepted." },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Ex5: Translate to Portuguese (44-53)
+    { source: "My grandfather always read the newspaper in the morning." },
+    { source: "When I was young, I travelled a lot." },
+    { source: "She worked in a hospital." },
+    { source: "We went to school every day." },
+    { source: "The children played in the yard." },
+    { source: "He didn't want to study." },
+    { source: "In the old days there was no internet." },
+    { source: "She had many friends." },
+    { source: "Every summer we went to the beach." },
+    { source: "He always came late." },
+    // Ex6: Historical text (54-63) — Portuguese prompts, nothing to translate
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    // Extras (64-69)
+    { question: "Match the irregular verb with its «eu» form in the Imperfeito:" },
+    { question: "Build the sentence: 'In the old days he worked at a bank.'" },
+    {
+      question: "How many irregular verbs are there in the Imperfeito?",
+      options: ["Two (ser, ir)", "Three (ser, ter, vir)", "Four (ser, ter, vir, pôr)", "Five"],
+      explanation: "There are exactly four irregular verbs in the Imperfeito: ser, ter, vir, pôr."
+    },
+    {
+      question: "In the Imperfeito the 1st and 3rd person singular forms...",
+      options: [
+        "are always different",
+        "are identical",
+        "differ only for irregular verbs",
+        "differ only for -ar verbs"
+      ],
+      explanation: "In the Imperfeito «eu» and «ele/ela/você» forms are always identical: eu falava = ele falava."
+    },
+    {
+      question: "Match the Imperfeito markers with their translations:",
+      pairs: [
+        { right: "always" },
+        { right: "every day" },
+        { right: "usually" },
+        { right: "formerly, in the old days" },
+        { right: "while, whereas" }
+      ]
+    },
+    { question: "Build the sentence: 'The children usually played in the garden.'" }
+  ],
 
 };

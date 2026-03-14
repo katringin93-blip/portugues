@@ -105,5 +105,93 @@ export default {
     { ru: "щомісяця", hint: "вираз часу" },
     { ru: "Святвечір", hint: "ж.р." },
   ],
+  exercises: [
+    // Ex1: Додайте займенник непрямого додатка
+    { question: "Додайте займенник непрямого додатка: Quero ___ (a ela) um presente. (подарити їй)" },
+    { question: "O pai ___ (a eles) que não podem sair. (каже їм)" },
+    { question: "Vou ___ (a ele) o meu carro. (продати йому)" },
+    { question: "A mãe ___ (a ela) o almoço. (готує їй обід)" },
+    { question: "Замініть «a nós»: Ele traz ___ (a nós) flores.", explanation: "«A nós» замінюється на «nos»: traz-nos." },
+    { question: "A avó, que ___ (a eles) presentes, é muito generosa. (бабуся, яка їм дарує подарунки — прокліза після «que»)" },
+    { question: "A professora ___ (a ele) uma história. (читає йому)" },
+    { question: "Ela ___ (a eles) bolos. (робить їм)" },
+    { question: "Ele ___ (a vocês) sapatos novos. (купує вам)" },
+    { question: "O professor ___ (a ela) português. (викладає їй)" },
+    // Ex2: Контракція прямого + непрямого займенника
+    { question: "Як поєднуються «te» + «o» у контракції? Eu digo + o livro + a ti = Eu ___", explanation: "Te + o = to. «Eu digo-to» (Я тобі це кажу)." },
+    { question: "Контракція: Ela dá as flores a nós. → Ela ___ (nos + as)" },
+    { question: "Контракція з запереченням: Ele nunca dá o livro a ela. → Ele nunca ___ (lhe + o)" },
+    { question: "Контракція: Eu levo a mala a ela. → Eu ___ (lhe + a)" },
+    { question: "Контракція: Ele entrega os documentos a mim. → Ele ___ (me + os)" },
+    { question: "Якою буде контракція nos + as?", explanation: "Nos + as = no-las. Приклад: Ela faz-no-las (Вона нам їх робить)." },
+    { question: "Контракція: Ela leva o livro a ele. → Ela ___ (lhe + o)" },
+    { question: "Контракція: Eles limpam a casa a ti. → Eles ___ (te + a)" },
+    { question: "Контракція: Eu empresto o dinheiro a ele. → Eu ___ (lhe + o)" },
+    { question: "Контракція: Ele traz as revistas a mim. → Ele ___ (me + as)" },
+    // Ex3: Переміщення займенника при прислівниках/запереченні
+    { question: "Перепишіть із запереченням: Ele leva-to. → Ele não ___" },
+    { question: "Перепишіть із «também»: Tu levas-lhas. → Tu também ___" },
+    { question: "Перепишіть із «nunca»: Eles dizem-lhe. → Eles nunca ___" },
+    { question: "Перепишіть із «só»: Ela lê-lhe. → Ela só ___", explanation: "«Só» викликає проклізу: só lhe lê (лише йому/їй читає)." },
+    { question: "Перепишіть із «não»: Ele autoriza-me. → Ele não ___" },
+    { question: "Перепишіть із «também»: Ela telefona-lhe. → Ela também ___" },
+    { question: "Перепишіть із «nem»: Ele envia-me emails. → Ele nem ___" },
+    { question: "Перепишіть із «só»: Tu dás-no-las hoje à noite. → Tu só ___" },
+    { question: "Перепишіть із «também»: Ela fala-lhes todos os dias. → Ela também ___" },
+    { question: "Перепишіть із «só»: Eu pergunto-lhe o que ela precisa. → Eu só ___" },
+    // Ex4: Замініть підкреслені частини (розширене переміщення займенників)
+    { question: "Замініть підкреслене словом у дужках: Amanhã eles levam-te ao aeroporto? → (quando é que) ___ te levam ao aeroporto?" },
+    { question: "Замініть підкреслене: O meu pai autoriza-me a ir ao cinema. → (eu acho que ele) Eu acho que ele ___ a ir ao cinema logo à noite." },
+    { question: "Замініть підкреслене: Você diz-lhe a verdade. → (ninguém) ___ lhe diz a verdade." },
+    { question: "Замініть підкреслене: A avó escreve-nos muitas cartas. → (quem é que) Quem é que ___ muitas cartas?" },
+    { question: "Замініть підкреслене: Os alunos compreendem-te perfeitamente. → (todos) ___ te compreendem perfeitamente." },
+    { question: "Замініть підкреслене: Só ao sábado é que a Filipa me telefona. → (em que dia) Em que dia é que a Filipa ___ para dar notícias?" },
+    { question: "Замініть «ninguém» на «alguém»: Ninguém te envia cartas agora. → ___ te envia cartas agora?", explanation: "«Alguém» — неозначений займенник, що викликає проклізу: Alguém te envia." },
+    { question: "Замініть підкреслене: O Pedro dá-no-las no fim-de-semana. → (quem) Quem ___ no fim-de-semana?" },
+    { question: "Замініть підкреслене: A Maria faz-lhes muitos favores. → (ela ainda) Ela ainda ___?", explanation: "«Ainda» викликає проклізу: Ela ainda lhes faz muitos favores." },
+    { question: "Замініть підкреслене: À terça-feira eu empresto-lhes o meu automóvel. → (nunca) Eu nunca ___ o meu automóvel." },
+    // Ex5: Перекладіть речення з непрямим додатком
+    { source: "Я хочу тобі дещо сказати." },
+    { source: "Вона дарує йому подарунок." },
+    { source: "Ми їм завжди пишемо." },
+    { source: "Ніхто мені не відповідає." },
+    { source: "Професор нам пояснює урок." },
+    { source: "Я надсилаю їй подарунок." },
+    { source: "Він купує мені квіти кожної суботи." },
+    { source: "Я даю їм обід кожного вівторка." },
+    { source: "Він продає нам свіжий хліб щоранку." },
+    { source: "Він ніколи її нікому не представляє." },
+    { source: "Ви не даєте їм шоколадки." },
+    { source: "Ізабел телефонує мені в неділю ввечері." },
+    { source: "Ми завжди кажемо їм правду." },
+    // Ex6: Текст про фаду / Камоенш
+    { question: "Os portugueses ___ (considerar + o fado) a alma do país. (вважають його)" },
+    { question: "Складіть: «Поет пише поезію і завершує її.» (O poeta escreve-a e a finaliza.)" },
+    { question: "Текст про Камоенша: Este poeta português é muito admirado. Muitos ___ (comparam + o poeta) a grandes poetas estrangeiros. (порівнюють його)" },
+    { question: "Текст про Камоенша: A história da literatura portuguesa ___ (reservar + a ele) um lugar especial. (відводить йому)" },
+    { question: "Текст про Камоенша: Camões apresenta Os Lusíadas ao Rei D. Sebastião, que ___ (oferecer + a ele) uma pensão. (прокліза після «que»: пропонує йому)" },
+    { question: "Текст про Камоенша: Camões sofre um naufrágio e a sua amante morre afogada, porque ele não ___ (dar + a ela) ajuda. (прокліза після «não»: не дає їй)" },
+    { question: "Текст про Камоенша: O poeta conta a história dos portugueses e ___ (dedicar + a eles) estes poemas épicos. (присвячує їм)" },
+    {
+      question: "Зіставте займенники непрямого додатка:",
+      pairs: [
+        { right: "me" },
+        { right: "te" },
+        { right: "lhe" },
+        { right: "nos" },
+        { right: "lhes" }
+      ]
+    },
+    {
+      question: "Зіставте контракції прямого + непрямого займенників:",
+      pairs: [
+        { right: "mo" },
+        { right: "to" },
+        { right: "lho" },
+        { right: "no-lo" },
+        { right: "ma" }
+      ]
+    }
+  ],
 
 };

@@ -150,5 +150,123 @@ export default {
     { ru: "університет", hint: "жіночий рід" },
     { ru: "зона, район", hint: "жіночий рід" },
   ],
+  exercises: [
+    // === Ex2: Fill a/o/um/uma (12 items) ===
+    { question: "Вставте правильний артикль: ___ casa é grande. (означений)" },
+    { question: "Вставте правильний артикль: ___ carro é novo. (означений)" },
+    {
+      question: "Який артикль підходить? Eu tenho ___ livro. (неозначений)",
+      explanation: "Livro — чоловічого роду, неозначений артикль чоловічого роду — «um»: um livro."
+    },
+    { question: "Вставте правильний артикль: Ela comprou ___ mesa. (неозначений)" },
+    {
+      question: "Які артиклі підходять? ___ João tem ___ carro novo. (означений + неозначений)",
+      explanation: "Перед іменами чоловічого роду вживається «O»: O João. Carro — чоловічого роду, неозначений артикль — «um»."
+    },
+    { question: "Вставте правильний артикль: Há ___ escola perto daqui. (неозначений)" },
+    { question: "Вставте правильний артикль: Ele tem ___ irmã mais nova. (неозначений)" },
+    { question: "Вставте правильний артикль: ___ tempo está bom. (означений)" },
+    { question: "Вставте правильний артикль: ___ Maria é professora. (означений)" },
+    { question: "Вставте правильний артикль: ___ Porto é uma cidade bonita. (означений)" },
+    { question: "Вставте правильний артикль: ___ Rio Tejo é longo. (означений)" },
+    { question: "Вставте правильний артикль: ___ comida está pronta. (означений)" },
 
+    // === Ex3: Match (8 items) ===
+    {
+      question: "Зіставте вирази з правильним артиклем (означений або неозначений):",
+      pairs: [
+        { right: "o menino" },
+        { right: "uma casa" },
+        { right: "os livros" },
+        { right: "uma cidade" }
+      ]
+    },
+    {
+      question: "Зіставте іменники з правильним означеним артиклем:",
+      pairs: [
+        { right: "o" },
+        { right: "a" },
+        { right: "os" },
+        { right: "as" }
+      ]
+    },
+
+    // === Ex4: Fill contractions (11 items) ===
+    { question: "Вставте злиття: Ele mora ___ cidade pequena. (em + uma)" },
+    { question: "Вставте злиття: Ela trabalha ___ hospital. (em + um)" },
+    {
+      question: "Яке злиття правильне? O livro está ___ mesa. (em + a)",
+      explanation: "Прийменник «em» + означений артикль «a» = «na»: na mesa (на столі)."
+    },
+    { question: "Вставте злиття: Estou ___ cozinha. (em + a)" },
+    { question: "Вставте злиття: O carro ___ Pedro é vermelho. (de + o)" },
+    { question: "Вставте злиття: Ele saiu ___ casa velha. (de + uma)" },
+    {
+      question: "Яке злиття правильне? Passámos ___ parque. (por + o)",
+      explanation: "Прийменник «por» + означений артикль «o» = «pelo»: pelo parque (через парк)."
+    },
+    { question: "Вставте злиття: As crianças brincam ___ ruas. (em + as)" },
+    { question: "Вставте злиття: Estamos ___ centro da cidade. (em + o)" },
+    { question: "Вставте злиття: Vivemos ___ arredores de Lisboa. (em + os)" },
+    { question: "Вставте злиття: Andámos ___ cidade toda. (por + a)" },
+
+    // === Ex5: Fill article/contraction in text (partial set, mixed types) ===
+    { question: "Заповніть: ___ Pedro é estudante. (означений артикль ч.р.)" },
+    {
+      question: "Який артикль/злиття підходить? Ele é ___ Brasil. (de + o)",
+      explanation: "«De» + «o» зливаються в «do»: Ele é do Brasil (Він із Бразилії)."
+    },
+    { question: "Заповніть: Ele estuda ___ Universidade de Lisboa. (em + a)" },
+    { question: "Заповніть: ___ curso é interessante. (означений артикль ч.р.)" },
+    { question: "Заповніть: As aulas ___ Pedro começam às nove. (de + o)" },
+    { question: "Заповніть: Ele gosta ___ cidade. (de + a)" },
+
+    // === Additional mixed exercises ===
+    {
+      question: "Зіставте злиття прийменників з артиклями:",
+      pairs: [
+        { right: "do" },
+        { right: "na" },
+        { right: "pelo" },
+        { right: "à" }
+      ]
+    },
+    {
+      question: "Зіставте злиття прийменника «em» з неозначеними артиклями:",
+      pairs: [
+        { right: "num" },
+        { right: "numa" },
+        { right: "nuns" },
+        { right: "numas" }
+      ]
+    },
+    { question: "Складіть речення: «Книжка викладача лежить на столі»." },
+    { source: "Діти грають у парку." },
+    {
+      question: "Коли НЕ вживається означений артикль у португальській?",
+      explanation: "Після дієслова «falar» артикль перед назвою мови зазвичай опускається: Falo português (Я говорю португальською)."
+    },
+    { source: "Ми живемо в Португалії." },
+    { question: "Складіть речення: «Я йду в університет»." },
+    {
+      question: "Яке злиття правильне для «de + as»?",
+      explanation: "Прийменник «de» + артикль «as» = «das». Наприклад: das flores (квітів)."
+    },
+    { question: "Вставте злиття: Vou ___ praia amanhã. (a + a)" },
+    {
+      question: "Яке злиття правильне для «a + os»?",
+      explanation: "Прийменник «a» + артикль «os» = «aos». Наприклад: aos domingos (щонеділі)."
+    },
+    {
+      question: "Зіставте злиття прийменника «de» з артиклями:",
+      pairs: [
+        { right: "do" },
+        { right: "da" },
+        { right: "dos" },
+        { right: "das" }
+      ]
+    },
+    { question: "Вставте злиття: Ele vem ___ escola. (de + a)" },
+    { source: "Вона працює в лікарні." },
+  ],
 };

@@ -91,6 +91,87 @@ export default {
     { ru: "ticket" },
     { ru: "profession" }
   ],
+  exercises: [
+    // Ex1: Fill correct interrogative (12 items)
+    { question: "___ se chama o seu amigo? (What is your friend's name?)" },
+    { question: "___ é aquela rapariga? (Who is that girl?)" },
+    { question: "___ há para o jantar? (What is for dinner?)" },
+    { question: "___ estuda o Paulo? (What does Paulo study?)" },
+    { question: "___ é que chegam os teus pais? (When will your parents arrive?)" },
+    { question: "___ é o director da escola? (Who is the school director?)" },
+    {
+      question: "Choose the correct interrogative word: ___ fazem no fim-de-semana?",
+      explanation: "«Que» (what) is used for questions about actions: «What do they do at the weekend?»"
+    },
+    { question: "___ é que vocês convidam para a festa? (Who do you invite to the party?)" },
+    { question: "___ é que fica a farmácia? (Where is the pharmacy?)" },
+    { question: "___ é que a Ana traz na mala? (What does Ana carry in her bag?)" },
+    {
+      question: "Choose the correct interrogative word: ___ fala ao telefone?",
+      explanation: "«Quem» (who) — a question about a person: «Who is speaking on the phone?»"
+    },
+    { question: "___ é que ela vai para o trabalho — de carro ou de autocarro? (How does she get to work?)" },
+
+    // Ex2: Full answers using elements (8 items)
+    { source: "Where is Idalina?" },
+    { question: "Put the words in order to give a full answer to «Onde está a Idalina?» — She is at school." },
+    { question: "Put the words in order: «At the weekend we are going to Viana do Castelo.»" },
+    { source: "I take the bus at 17:30." },
+    { source: "I am going to the cinema with Patrícia." },
+    { question: "Put the words in order: «I am going to visit mum tomorrow afternoon.»" },
+    { source: "On Sundays we walk in the park." },
+    {
+      question: "How do you correctly answer «Quanto custa o bilhete?» — The ticket costs ten euros.",
+      explanation: "«O bilhete custa dez euros» — the correct answer using the verb «custar» (to cost)."
+    },
+
+    // Ex3: Write full questions for given answers (10 items)
+    { source: "What is your name? (answer: Chamo-me Maria.)" },
+    { question: "Question for the answer «O Paulo é de Coimbra»: ___ é o Paulo?" },
+    { source: "What are they sending? (answer: Enviam uma encomenda.)" },
+    { question: "Question for the answer «Falamos da professora»: De ___ falam?" },
+    { source: "What is this book about? (answer: O livro trata de história.)" },
+    { question: "Question for the answer «Vou de férias em agosto»: Em ___ mês vais de férias?" },
+    { source: "What time does the train arrive?" },
+    { question: "Put the words in order to make a question: «When is Ana marrying Pedro?»" },
+
+    // Ex4: Build questions from elements (5 items)
+    { question: "Put the words in order to make a question: «Where do Catarina's friends live?»" },
+    { question: "Put the words in order to make a question: «What time does the next train to Porto arrive?»" },
+    { source: "How many people work in your factory?" },
+    { source: "Where are you going on holiday?" },
+    { question: "Put the words in order to make a question: «Who does Luísa spend weekends with?»" },
+
+    // Ex5: Mixed exercises on interrogatives
+    {
+      question: "Match the interrogative words with their translations:",
+      pairs: [
+        { right: "How" },
+        { right: "Where" },
+        { right: "When" },
+        { right: "Who" },
+        { right: "How much" }
+      ]
+    },
+    {
+      question: "Match the question with the appropriate answer:",
+      pairs: [
+        { right: "In Lisbon." },
+        { right: "Tomorrow." },
+        { right: "The teacher." },
+        { right: "By bus." },
+        { right: "I study Portuguese." }
+      ]
+    },
+    {
+      question: "Which question fits the answer «O Natal em Portugal é no dia 25 de dezembro»?",
+      explanation: "The answer contains a date (25 de dezembro), so the question must use «Quando» (when)."
+    },
+    {
+      question: "Which construction is characteristic of European Portuguese in questions?",
+      explanation: "The construction «é que» is a typical feature of European Portuguese; it is placed after the interrogative word."
+    }
+  ],
   flashcards: [
     { ru: "Who?", hint: "interrogative pronoun" },
     { ru: "Where?", hint: "interrogative adverb of place" },

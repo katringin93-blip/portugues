@@ -114,5 +114,115 @@ export default {
     { ru: "завжди", hint: "прислівник" },
     { ru: "декілька, різні", hint: "ч.р. мн." },
   ],
+  exercises: [
+    // === Вправа 1: Написати правильний артикль (12 завдань) ===
+    { question: "Напишіть правильний визначений артикль: ___ coração (серце)" },
+    { question: "Напишіть правильний визначений артикль: ___ mão (рука)" },
+    { question: "Який визначений артикль у слова «casa» (будинок)?", explanation: "Casa — жіночого роду: a casa. Більшість слів на -a — жіночого роду." },
+    { question: "Напишіть правильний визначений артикль: ___ mulher (жінка)" },
+    { question: "Напишіть правильний визначений артикль: ___ viagem (подорож)" },
+    { question: "Який визначений артикль у слова «anel» (каблучка)?", explanation: "Anel — чоловічого роду: o anel. Слова на -el, як правило, чоловічого роду." },
+    { question: "Напишіть правильний визначений артикль: ___ cidade (місто)" },
+    { question: "Напишіть правильний визначений артикль: ___ cadeira (стілець)" },
+    { question: "Який визначений артикль у слова «professor» (викладач)?", explanation: "Professor — чоловічого роду: o professor. Слова на -or зазвичай чоловічого роду." },
+    { question: "Напишіть правильний визначений артикль: ___ cão (собака)" },
+    { question: "Напишіть правильний визначений артикль: ___ homem (чоловік)" },
+    { question: "Напишіть правильний визначений артикль: ___ automóvel (автомобіль)" },
 
+    // === Вправа 2: Утворити множину (12 завдань) ===
+    { question: "Утворіть множину: o irmão → os ___" },
+    { question: "Утворіть множину: o professor → os ___" },
+    { question: "Утворіть множину: o perfil → os ___" },
+    { question: "Яка множина у слова «viagem» (подорож)?", explanation: "Слова на -m утворюють множину заміною -m на -ns: viagem → viagens." },
+    { question: "Утворіть множину: a estação → as ___" },
+    { question: "Утворіть множину: a cidade → as ___" },
+    { question: "Утворіть множину: a cor → as ___" },
+    { question: "Яка множина у слова «mulher» (жінка)?", explanation: "Слова на -er утворюють множину додаванням -es: mulher → mulheres." },
+    { question: "Утворіть множину: a opinião → as ___" },
+    { question: "Утворіть множину: o casaco → os ___" },
+    { question: "Утворіть множину: o pai → os ___" },
+    { question: "Утворіть множину: o papel → os ___" },
+
+    // === Вправа 3: Написати жіночий рід (12 завдань) ===
+    { question: "Напишіть форму жіночого роду: o irmão → ___" },
+    { question: "Напишіть форму жіночого роду: o professor → ___" },
+    { question: "Яка форма жіночого роду у слова «contabilista» (бухгалтер)?", explanation: "Слова на -ista не змінюють форму: o contabilista → a contabilista. Змінюється лише артикль." },
+    { question: "Напишіть форму жіночого роду: o pai → ___" },
+    { question: "Напишіть форму жіночого роду: o filho → ___" },
+    { question: "Напишіть форму жіночого роду: o gato → ___" },
+    { question: "Яка форма жіночого роду у слова «cão» (собака)?", explanation: "Слово «cão» має неправильну форму жіночого роду: a cadela." },
+    { question: "Напишіть форму жіночого роду: o homem → ___" },
+    { question: "Напишіть форму жіночого роду: o esposo → ___" },
+    { question: "Напишіть форму жіночого роду: o tio → ___" },
+    { question: "Яка форма жіночого роду у слова «paciente» (пацієнт)?", explanation: "Слова на -ente не змінюють форму: o paciente → a paciente. Змінюється лише артикль." },
+    { question: "Напишіть форму жіночого роду: o avô → ___" },
+
+    // === Вправа 4: Зменшувальна форма (12 завдань) ===
+    { question: "Утворіть зменшувальну форму: o irmão → ___" },
+    { question: "Утворіть зменшувальну форму: o cão → ___" },
+    { question: "Утворіть зменшувальну форму: a filha → ___" },
+    { question: "Яка зменшувальна форма у слова «pai» (батько)?", explanation: "Pai → paizinho. Слова, що закінчуються на голосну або дифтонг, додають -zinho: paizinho." },
+    { question: "Утворіть зменшувальну форму: o filho → ___" },
+    { question: "Утворіть зменшувальну форму: o gato → ___" },
+    { question: "Утворіть зменшувальну форму: o cavalo → ___" },
+    { question: "Утворіть зменшувальну форму: a casa → ___" },
+    { question: "Яка зменшувальна форма у слова «mão» (рука)?", explanation: "Mão → mãozinha. Слова на -ão додають суфікс -zinha/-zinho." },
+    { question: "Утворіть зменшувальну форму: a janela → ___" },
+    { question: "Утворіть зменшувальну форму: a neta → ___" },
+    { question: "Утворіть зменшувальну форму: o avô → ___" },
+
+    // === Вправа 5: Визначити рід (3 завдання) ===
+    {
+      question: "Визначте рід іменників (чоловічий або жіночий):",
+      pairs: [
+        { left: "cão", right: "чоловічий (o cão)" },
+        { left: "sol", right: "чоловічий (o sol)" },
+        { left: "viagem", right: "жіночий (a viagem)" },
+        { left: "cidade", right: "жіночий (a cidade)" }
+      ]
+    },
+    { question: "Які з цих слів чоловічого роду? gato, flor, homem, nação", explanation: "Gato (кіт) — o gato, homem (чоловік) — o homem. Flor (квітка) — a flor, nação (нація) — a nação — жіночого роду." },
+    {
+      question: "Визначте рід: чоловічий (M) або жіночий (F):",
+      pairs: [
+        { left: "avô", right: "M (o avô)" },
+        { left: "coração", right: "M (o coração)" },
+        { left: "pão", right: "M (o pão)" },
+        { left: "coelho", right: "M (o coelho)" }
+      ]
+    },
+
+    // === Вправа 6: Заповнити текст (родина/школа, 8 завдань) ===
+    { question: "Заповніть текст про родину: O meu ___ é professor. (батько)" },
+    { question: "Заповніть текст: A minha mãe é ___. (вчителька)" },
+    { question: "Яке слово підходить? Na escola há muitas ___ . (діти)", explanation: "Crianças — множина від criança (дитина). У контексті школи використовується саме це слово." },
+    { question: "Заповніть: Na escola trabalham muitos ___. (викладачі)" },
+    { question: "Заповніть: Trabalho cinco ___ por semana. (дні)" },
+    { question: "Заповніть: De ___ levo as crianças à escola. (ранок)" },
+    { question: "Заповніть: Depois do trabalho, volto para ___. (додому)" },
+    { question: "Заповніть: Tenho dois ___. (сини/діти)" },
+
+    // === Вправа 7: Текст про португальську мову (6 завдань) ===
+    { question: "O português é falado em muitos ___. (країни)" },
+    { question: "O português é falado em vários ___. (континенти)" },
+    { question: "Яке слово підходить? Mais de 200 ___ de pessoas falam português. (мільйони)", explanation: "Milhões — множина від milhão (мільйон). Milhão → milhões." },
+    { question: "O português é falado por muitas ___. (люди)" },
+    { question: "O português é língua oficial de várias ___. (організації)" },
+    { question: "O português é uma das ___ oficiais das Nações Unidas. (мови)" },
+
+    // === Додаткові змішані вправи ===
+    { question: "Складіть словосполучення: «маленькі будиночки» (мн. з зменш. формою)." },
+    { source: "Брати і сестри" },
+    {
+      question: "Зіставте однину з множиною:",
+      pairs: [
+        { left: "o irmão", right: "os irmãos" },
+        { left: "o papel", right: "os papéis" },
+        { left: "a estação", right: "as estações" },
+        { left: "a cor", right: "as cores" }
+      ]
+    },
+    { question: "Складіть речення: «Жінки працюють у місті»." },
+    { source: "Мій батько має двох синів і одну доньку." },
+  ],
 };

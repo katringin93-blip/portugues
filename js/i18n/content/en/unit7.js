@@ -157,5 +157,163 @@ export default {
     { ru: "to translate", hint: "verb" },
     { ru: "sadness", hint: "feminine" },
   ],
+  exercises: [
+    // Ex1: Rewrite in negative (12 items)
+    // 1. translate
+    { source: "Rewrite in the negative form: O Sr António viaja para Lisboa todas as semanas." },
+    // 2. order
+    { question: "Rewrite in the negative form: «O Sr António viaja para Lisboa todas as semanas.»" },
+    // 3. choice
+    {
+      question: "How do you correctly write in the negative form: «A Ana e a Isabel sempre vão ao Porto.»?",
+      explanation: "«Sempre» (always) is replaced by «nunca» (never): «A Ana e a Isabel nunca vão ao Porto.»"
+    },
+    // 4. order
+    { question: "Rewrite in the negative form: «Alguém trabalha hoje.» → Nobody works today." },
+    // 5. translate
+    { source: "The hall is not full of people." },
+    // 6. choice
+    {
+      question: "Rewrite in the negative form: «Ela sempre chega atrasada ao trabalho.»",
+      explanation: "«Sempre» (always) is replaced by «nunca» (never): «Ela nunca chega atrasada ao trabalho.»"
+    },
+    // 7. translate
+    { source: "He does nothing." },
+    // 8. order
+    { question: "Rewrite in the negative form: «Alguém mora com o João.» → Nobody lives with João." },
+    // 9. translate
+    { source: "We never do gymnastics on Saturday." },
+    // 10. fill
+    { question: "Rewrite in the negative form: «Tu sabes tudo.» → Tu não sabes ___." },
+    // 11. order
+    { question: "Rewrite in the negative form: «Vocês estudam na universidade.»" },
+    // 12. choice
+    {
+      question: "Rewrite in the negative form: «Todos entram à mesma hora.»",
+      explanation: "«Todos» (everyone) is replaced by «Ninguém» (nobody): «Ninguém entra à mesma hora.»"
+    },
+
+    // Ex2: Fill nenhum/nenhuma/nenhuns/nenhumas (12 items)
+    // 13. choice
+    {
+      question: "Não tenho ___ amigos aqui. (I have no friends here.)",
+      explanation: "«Amigos» is masculine plural, so «nenhuns»."
+    },
+    // 14. fill
+    { question: "Não há ___ problema. (There is no problem.)" },
+    // 15. fill
+    { question: "Não compro ___ livro hoje. (I'm not buying any book today.)" },
+    // 16. choice
+    {
+      question: "Não conheço ___ pessoa nesta cidade. (I don't know a single person in this city.)",
+      explanation: "«Pessoa» is feminine singular, so «nenhuma»."
+    },
+    // 17. fill
+    { question: "Não há ___ autocarros à noite. (There are no buses at night.)" },
+    // 18. fill
+    { question: "Não tem ___ sentido. (It makes no sense.)" },
+    // 19. choice
+    {
+      question: "Não existe ___ razão para isso. (There is no reason for that.)",
+      explanation: "«Razão» is feminine singular, so «nenhuma»."
+    },
+    // 20. fill
+    { question: "Não há ___ cartas para ti. (There are no letters for you.)" },
+    // 21. fill
+    { question: "Não tenho ___ sapatos novos. (I have no new shoes.)" },
+    // 22. fill
+    { question: "Não recebi ___ recado. (I didn't receive any message.)" },
+    // 23. choice
+    {
+      question: "Não temos ___ ideia do que fazer. (We have no idea what to do.)",
+      explanation: "«Ideia» is feminine singular, so «nenhuma»."
+    },
+    // 24. fill
+    { question: "Não há ___ alunas na sala. (There are no female students in the room.)" },
+
+    // Ex3: Match sentence halves (10 pairs — 2 exercises)
+    // 25. match
+    {
+      question: "Match the sentence beginnings with their endings:",
+      pairs: [
+        { right: "nothing for breakfast." },
+        { right: "where the key is." },
+        { right: "to the cinema alone." },
+        { right: "money for the holidays." },
+        { right: "want to go to the party." }
+      ]
+    },
+    // 26. match
+    {
+      question: "Match the sentence beginnings with their endings:",
+      pairs: [
+        { right: "any of these colours." },
+        { right: "what I say." },
+        { right: "to work on Sundays." },
+        { right: "nor patience." },
+        { right: "anything at night." }
+      ]
+    },
+
+    // Ex4: Fill negatives (8 items)
+    // 27. fill
+    { question: "___ knows the answer to the question. (Nobody knows the answer.)" },
+    // 28. fill
+    { question: "Não sei ___ sobre esse assunto. (I know nothing about this topic.)" },
+    // 29. fill
+    { question: "Hoje ___ vou trabalhar. (Today I'm not going to work.)" },
+    // 30. fill
+    { question: "Eu ___ como peixe cru. (I never eat raw fish.)" },
+    // 31. choice
+    {
+      question: "Eles ___ gostam de viajar de avião. (They don't like travelling by plane.)",
+      explanation: "Simple negation: «não» before the verb."
+    },
+    // 32. fill
+    { question: "Não como ___ de manhã. (I eat nothing in the morning.)" },
+    // 33. translate
+    { source: "He doesn't drink either coffee or tea." },
+    // 34. fill
+    { question: "Ele não fala ___ português! (He doesn't even speak Portuguese!)" },
+
+    // Ex6: Fill negatives in text (8 items)
+    // 35. fill
+    { question: "Não tenho ___ experiência com computadores. (I have no experience with computers.)" },
+    // 36. choice
+    {
+      question: "Fill in the blank: «Ela ___ quer sair.» (She doesn't want to go out.)",
+      explanation: "Simple negation: «não» before the verb."
+    },
+    // 37. fill
+    { question: "Não gosta ___ de carne ___ de peixe. (Doesn't like either meat or fish.)" },
+    // 38. fill
+    { question: "___ me ajuda com este trabalho. (Nobody helps me with this work.)" },
+    // 39. fill
+    { question: "Não percebo ___ do que dizes. (I understand nothing of what you're saying.)" },
+    // 40. choice
+    {
+      question: "Eles ___ vão ao teatro. (They don't go to the theatre.)",
+      explanation: "Simple negation: «não» before the verb."
+    },
+    // 41. fill
+    { question: "Não temos ___ planos para o verão. (We have no plans for the summer.)" },
+    // 42. fill
+    { question: "Ele ___ chega a horas. (He never arrives on time.)" },
+
+    // Additional mixed exercises
+    // 43. match
+    {
+      question: "Match negative words with their translation:",
+      pairs: [
+        { right: "nothing" },
+        { right: "nobody" },
+        { right: "never" },
+        { right: "none, not any" },
+        { right: "neither...nor" }
+      ]
+    },
+    // 44. order
+    { question: "Form a negative sentence: «The children don't cry much.»" }
+  ],
 
 };

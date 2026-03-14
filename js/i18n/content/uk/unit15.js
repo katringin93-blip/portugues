@@ -116,5 +116,69 @@ export default {
     { ru: "сіль", hint: "ч.р." },
     { ru: "землетрус", hint: "ч.р." },
   ],
+  exercises: [
+    // Ex1: Вставте присвійний займенник
+    { question: "Вставте присвійний: O ___ carro é novo. (мій)" },
+    { question: "Вставте: A casa ___ é grande. (їхній, жін.р.)" },
+    { question: "Вставте: As ___ amigas são simpáticas. (твої)" },
+    { question: "Вставте: O ___ jardim é bonito. (наш)" },
+    { question: "Вставте: A ___ casa fica no centro. (моя)" },
+    {
+      question: "Як сказати «його машина», уточнивши, що саме його (а не її)?",
+      explanation: "Для уточнення вживають «dele» (його): o carro dele."
+    },
+    { question: "Вставте два присвійних: Os ___ livros são diferentes dos ___. (її власні; її подруги — dela)" },
+    { question: "Вставте: A ___ mãe é professora. (його, формальне — sua)" },
+    { question: "Вставте: A ___ família é grande. (його, формальне — sua)" },
+    { question: "Вставте: O escritório ___ é moderno. (її — dela)" },
+    { question: "Вставте: As ___ irmãs vivem no Porto. (мої)" },
+    { question: "Вставте: Os ___ amigos são portugueses. (твої)" },
+    // Ex2: Перепишіть з присвійними формами (тип translate — лише source)
+    { source: "Мій будинок знаходиться в Лісабоні." },
+    { source: "Наші діти навчаються в школі." },
+    { source: "Твоя сестра красива." },
+    { source: "Її чоловік працює в банку. (використайте «dela»)" },
+    // Ex3: Присвійні в діалозі
+    { question: "— Onde estão os ___ livros? (твої) — O ___ está aqui. (мій)" },
+    { question: "— A ___ casa é grande? (твоя) — Sim, o ___ jardim também. (мій)" },
+    {
+      question: "— De quem é este carro? — É o carro ___. (його — dele)",
+      explanation: "Для уточнення «його» вживають «dele»: É o carro dele."
+    },
+    { question: "— Os ___ pais moram aqui? (твої) — Sim, a ___ mãe está em casa. (моя)" },
+    { question: "— O ___ carro é novo? (твій) — Não, a ___ bicicleta é que é nova. (моя)" },
+    { question: "— Este é o ___ apartamento? (Ваш, формальне) — Sim, a cadeira ___ é bonita. (її — dela)" },
+    { question: "— A ___ filha estuda em Coimbra? (моя) — Sim, o ___ irmão também. (наш)" },
+    { question: "— Os ___ amigos vêm à festa? (мої) — Sim, a ___ amiga Ana também vem. (наша)" },
+    // Ex4: Переклад речень з присвійними (тип translate — лише source)
+    { source: "Де твої ключі?" },
+    { source: "Наш собака більший, ніж ваш." },
+    { source: "Моя мати — лікар." },
+    { source: "Їхній (чол.р.) будинок знаходиться поруч з нашим." },
+    // Ex5: seu/sua проти dele/dela
+    { question: "Контекст зрозумілий (формальне «Ви»): A ___ encomenda chegou. (Ваше замовлення прибуло.)" },
+    { question: "Уточнення: A casa ___ é moderna. (її, саме її)" },
+    { question: "Контекст зрозумілий (формальне «Ви»): O ___ bilhete está aqui. (Ваш квиток тут.)" },
+    {
+      question: "Коли потрібно вживати «dele/dela» замість «seu/sua»?",
+      explanation: "«Seu/sua» може означати його/її/Ваш. «Dele/dela» уточнює, про кого йдеться."
+    },
+    { question: "Формальне: A ___ família é grande. (Ваша сім'я велика.)" },
+    { question: "Формальне: O ___ trabalho é interessante. (Ваша робота цікава.)" },
+    { question: "Формальне: O ___ nome, por favor? (Ваше ім'я, будь ласка?)" },
+    { question: "Множина: Os ___ filhos estudam bem. (Ваші діти добре навчаються.)" },
+    {
+      question: "Зіставте присвійні займенники (жін.р. одн.):",
+      pairs: [
+        { right: "моя" },
+        { right: "твоя" },
+        { right: "його / її / Ваша" },
+        { right: "наша" },
+        { right: "ваша (мн.ч.)" }
+      ]
+    },
+    { question: "Складіть речення: «Його дружина працює в лікарні.»" },
+    { question: "Складіть речення: «Наш будинок знаходиться поруч з вашим.»" }
+  ],
 
 };

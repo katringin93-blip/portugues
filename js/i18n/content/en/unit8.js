@@ -130,5 +130,101 @@ export default {
     { ru: "windy", hint: "f.; m.: ventoso" },
     { ru: "to enjoy, to benefit from", hint: "verb + prep." },
   ],
+  exercises: [
+    // Ex1: Conjugate ser (10 items)
+    { question: "The Azores ___ (ser) islands in the Atlantic. (The Azores are islands in the Atlantic.)" },
+    { question: "These shoes ___ (ser) very expensive. (These shoes are very expensive.)" },
+    { question: "Joana ___ (ser) an English teacher. (Joana is an English teacher.)" },
+    { question: "You ___ (ser) very nice. (You are very nice.)", explanation: "For 'tu' the form of 'ser' is 'és'." },
+    { question: "That building ___ (ser) very old. (That building is very old.)" },
+    { question: "I ___ (ser) a medical student. (I am a medical student.)" },
+    { question: "The beaches of the Algarve ___ (ser) famous. (The Algarve beaches are famous.)" },
+    { question: "We ___ (ser) from Lisbon. (We are from Lisbon.)" },
+    { question: "Where are you ___ (ser) from? (Where are you from?)", explanation: "For 'tu' the form of 'ser' is 'és'." },
+    { question: "The weather ___ (ser) good in summer. (The weather is good in summer.)" },
+
+    // Ex2: Conjugate estar (10 items)
+    { question: "The children ___ (estar) in the garden. (The children are in the garden.)" },
+    { question: "We ___ (estar) tired from the trip. (We are tired from the trip.)" },
+    { question: "The museums ___ (estar) closed on Mondays. (The museums are closed on Mondays.)" },
+    { question: "Are you ___ (estar) well? (Are you well?)", explanation: "For 'tu' the form of 'estar' is 'estás'." },
+    { question: "Maria ___ (estar) sick today. (Maria is sick today.)" },
+    { question: "The coffee ___ (estar) cold. (The coffee is cold.)" },
+    { question: "The students ___ (estar) in the library. (The students are in the library.)" },
+    { question: "The windows ___ (estar) open. (The windows are open.)" },
+    { question: "I ___ (estar) pleased with the result. (I am pleased with the result.)" },
+    { question: "The flowers ___ (estar) very beautiful. (The flowers are very beautiful — right now.)" },
+
+    // Ex3: Choose ser or estar (10 items)
+    { question: "Pedro ___ sick. (Pedro is sick — right now.)", explanation: "Illness is a temporary state, so 'estar': 'O Pedro está doente.'" },
+    { question: "Her parents ___ doctors. (Her parents are doctors.)", explanation: "Profession is a permanent characteristic, so 'ser': 'Os pais dela são médicos.'" },
+    { question: "Lisbon ___ (ser/estar) the capital of Portugal. (Lisbon is the capital of Portugal.)" },
+    { question: "Today ___ (ser/estar) very hot. (It is very hot today.)" },
+    { question: "You ___ very elegant today! (You are very elegant today!)", explanation: "'És' — although 'estás' is also possible in the context of 'today', here the textbook uses 'és'." },
+    { question: "We ___ (ser/estar) in agreement. (We are in agreement.)" },
+    { question: "The film ___ (ser/estar) very interesting. (The film is very interesting — in general.)" },
+    { question: "You ___ very thin! (You are very thin! — meaning permanently.)", explanation: "Permanent characteristic — 'ser': 'Tu és muito magro.'" },
+    { question: "The soup ___ (ser/estar) hot. (The soup is hot — right now.)" },
+    { question: "The prices ___ (ser/estar) high. (The prices are high — at the moment.)" },
+
+    // Ex4: Ser/estar/ficar (14 items)
+    { question: "The books ___ (ser/estar/ficar) on the shelf. (The books are on the shelf — right now.)" },
+    { question: "Porto ___ (ser/estar/ficar) a beautiful city. (Porto is a beautiful city.)" },
+    { question: "She ___ a teacher. (She is a teacher.)", explanation: "Profession is a permanent characteristic, so 'ser'." },
+    { question: "The university ___ (ser/estar/ficar) in the city centre. (The university is located in the city centre — permanently.)" },
+    { question: "The weather ___ (ser/estar/ficar) very bad today. (The weather is very bad today.)" },
+    { question: "We ___ (ser/estar/ficar) Portuguese. (We are Portuguese.)" },
+    { question: "The house ___ (ser/estar/ficar) empty at the moment. (The house is empty right now.)", explanation: "Temporary state — 'estar': 'A casa está vazia neste momento.'" },
+    { question: "Pedro ___ (ser/estar/ficar) tired. (Pedro is tired — right now.)" },
+    { question: "The Azores ___ (ser/estar/ficar) Portuguese islands. (The Azores are Portuguese islands.)" },
+    { question: "Coimbra ___ (ser/estar/ficar) a university city. (Coimbra is a university city.)" },
+    { question: "You ___ very tired lately. (You are very tired lately.)", explanation: "Temporary state of tiredness — 'estar': 'Tu estás muito cansado.'" },
+    { question: "The supermarket ___ (ser/estar/ficar) near my house. (The supermarket is located near my house — permanently.)" },
+    { question: "The train station ___ (ser/estar/ficar) at the end of the street. (The train station is at the end of the street — permanently.)" },
+    { question: "Are you ___ happy with the result? (Are you happy with the result?)", explanation: "'Ficar' is used to mean 'to become/be' with an emotional state: 'Tu ficas contente.'" },
+
+    // Ex5: Ser/estar/ficar (more) (14 items)
+    { question: "Dinner ___ (ser/estar/ficar) ready. (Dinner is ready — right now.)" },
+    { question: "The Tagus ___ (ser/estar/ficar) the largest river in Portugal. (The Tagus is the largest river in Portugal.)" },
+    { question: "Portugal ___ a small country. (Portugal is a small country.)", explanation: "Permanent characteristic — 'ser': 'Portugal é um país pequeno.'" },
+    { question: "The pharmacy ___ (ser/estar/ficar) on the main square. (The pharmacy is located on the main square — permanently.)" },
+    { question: "These oranges ___ (ser/estar/ficar) from the Algarve. (These oranges are from the Algarve.)" },
+    { question: "The Portuguese ___ (ser/estar/ficar) friendly. (The Portuguese are friendly.)" },
+    { question: "The hotel ___ (ser/estar/ficar) near the beach. (The hotel is near the beach — permanently.)" },
+    { question: "Fado ___ (ser/estar/ficar) traditional Portuguese music. (Fado is traditional Portuguese music.)" },
+    { question: "She ___ (ser/estar/ficar) very nervous before the exam. (She is very nervous before the exam.)" },
+    { question: "The prices ___ (ser/estar/ficar) higher this year. (The prices are higher this year.)" },
+    { question: "The restaurant ___ (ser/estar/ficar) on the corner. (The restaurant is on the corner — permanently.)" },
+    { question: "Braga ___ (ser/estar/ficar) in the north of Portugal. (Braga is located in the north of Portugal.)" },
+    { question: "The beach ___ (ser/estar/ficar) 5 km from here. (The beach is 5 km from here.)" },
+    { question: "The post office ___ (ser/estar/ficar) right next door. (The post office is right next door — permanently.)" },
+
+    // Ex6: Match + dialogue (9 items)
+    {
+      question: "Match the usage with the verb:",
+      pairs: [
+        { right: "ser" },
+        { right: "estar" },
+        { right: "ser" },
+        { right: "estar" },
+        { right: "ficar" }
+      ]
+    },
+    { question: "Dialogue: — How ___ (estar, tu) doing? — How are you?", explanation: "Question about wellbeing with 'tu': 'Como estás?'" },
+    { question: "Dialogue: — ___ (estar, eu) fine, thank you. — I'm fine, thank you." },
+    { question: "Dialogue: — What ___ (ser) that? — What is that?" },
+    { question: "Dialogue: — ___ (ser/estar) a gift for you. — It's a gift for you.", explanation: "Defining an object — 'ser': 'É um presente para ti.'" },
+    { question: "Dialogue: — Where ___ (ser, tu) from? — Where are you from?" },
+    { question: "Dialogue: — ___ (ser, eu) from Coimbra. — I'm from Coimbra." },
+    { question: "Dialogue: — Are you ___ (ser/estar) happy? — Are you happy?", explanation: "Emotional state — 'estar': 'Tu estás contente?'" },
+    { question: "Dialogue: — What time ___ (ser)? — What time is it?" },
+
+    // Ex7: Fill in text about Lisbon (5 items)
+    { question: "Lisbon ___ (ser/estar/ficar) on the bank of the Tagus river. (Lisbon is situated on the bank of the Tagus.)" },
+    { question: "The city ___ full of tourists in summer. (The city is full of tourists in summer.)", explanation: "Temporary state (in summer) — 'estar': 'A cidade está cheia de turistas.'" },
+    { question: "Lisbon ___ (ser/estar) the largest city in Portugal. (Lisbon is the largest city in Portugal.)" },
+    { question: "Put the words in order: 'Lisbon is situated on the bank of the Tagus river.'" },
+    { source: "The sights of Lisbon are very interesting." },
+  ],
 
 };

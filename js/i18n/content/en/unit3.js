@@ -240,5 +240,151 @@ export default {
     { ru: "to have a day off", hint: "expression with ter" },
     { ru: "it is compulsory", hint: "expression" },
   ],
+  exercises: [
+    // 1
+    { question: "Write the number in words in Portuguese: 45 = quarenta e ___" },
+    // 2
+    { question: "Write the number in words in Portuguese: 90 = ___" },
+    // 3
+    {
+      question: "How is the number 16 written in European Portuguese?",
+      explanation: "In European Portuguese, 16 is «dezasseis» (with «a»), while in Brazilian Portuguese it is «dezesseis» (with «e»)."
+    },
+    // 4
+    { question: "Write the number in words: 2014 = dois mil e ___" },
+    // 5
+    { question: "Write the number in words: 2000 = dois ___" },
+    // 6
+    { question: "Write the number in words: 38 = trinta e ___" },
+    // 7
+    {
+      question: "How is the number 365 written?",
+      explanation: "365 = trezentos e sessenta e cinco. Note the «e» between each part."
+    },
+    // 8
+    { question: "Write the number in words: 500 = ___" },
+    // 9
+    {
+      question: "Match activities to seasons:",
+      pairs: [
+        { left: "nadar no mar", right: "Verão (summer)" },
+        { left: "apanhar folhas", right: "Outono (autumn)" },
+        { left: "fazer esqui", right: "Inverno (winter)" },
+        { left: "ver flores", right: "Primavera (spring)" }
+      ]
+    },
+    // 10
+    {
+      question: "In which season do people usually «fazer esqui» (go skiing)?",
+      explanation: "Fazer esqui (go skiing) is a winter activity: Inverno."
+    },
+    // 11
+    { question: "Write the time (24h format): 9:15 = nove horas e quinze ___" },
+    // 12
+    {
+      question: "How do you say 10:00 in 24-hour format?",
+      explanation: "For times other than one o'clock, use «São»: São dez horas (Ten o'clock)."
+    },
+    // 13
+    { question: "Write the time: 12:00 (noon) = ___ horas" },
+    // 14
+    { question: "Write the time: 13:10 = treze e ___" },
+    // 15
+    { question: "Write the time: 14:35 = catorze e trinta e ___" },
+    // 16
+    {
+      question: "How do you say 17:55 in 24-hour format?",
+      explanation: "17:55 = São dezassete e cinquenta e cinco. In European Portuguese «dezassete» (with «a»)."
+    },
+    // 17
+    { question: "Write the time: 21:00 = vinte e uma ___" },
+    // 18
+    { question: "Write the time: 24:00 = vinte e quatro ___" },
+    // 19
+    { source: "7:15 in the morning (informal time)" },
+    // 20
+    {
+      question: "How do you say 8:00 in the morning informally?",
+      explanation: "Informally: São oito horas da manhã. «Da manhã» is added to indicate morning."
+    },
+    // 21
+    { question: "Write informally: 11:45 = um quarto para o ___" },
+    // 22
+    { question: "Write informally: 12:30 = meio-dia e ___" },
+    // 23
+    {
+      question: "Match holidays to dates:",
+      pairs: [
+        { left: "Natal (Рождество)", right: "25 de dezembro" },
+        { left: "Ano Novo (Новый год)", right: "1 de janeiro" },
+        { left: "Dia do Trabalhador", right: "1 de maio" },
+        { left: "Dia de Portugal", right: "10 de junho" }
+      ]
+    },
+    // 24
+    {
+      question: "What date does «vinte e cinco de abril» correspond to?",
+      explanation: "Vinte e cinco de abril = 25 April. This is Freedom Day in Portugal (anniversary of the Carnation Revolution of 1974)."
+    },
+    // 25
+    {
+      question: "Match months to their ordinal number:",
+      pairs: [
+        { left: "janeiro", right: "1st month" },
+        { left: "março", right: "3rd month" },
+        { left: "agosto", right: "8th month" },
+        { left: "dezembro", right: "12th month" }
+      ]
+    },
+    // 26
+    { question: "Fill in: As aulas começam na ___-feira. (Monday)" },
+    // 27
+    { question: "Fill in: As aulas começam às ___ horas. (9)" },
+    // 28
+    {
+      question: "Which number fits? O almoço é às ___ horas. (13)",
+      explanation: "13 = treze. O almoço é às treze horas (Lunch is at 13:00)."
+    },
+    // 29
+    { question: "Fill in: As aulas da tarde começam às ___ horas. (14)" },
+    // 30
+    { question: "Fill in: As aulas terminam às ___ horas. (18)" },
+    // 31
+    { question: "Fill in: Não há aulas no ___. (Saturday)" },
+    // 32
+    { question: "Fill in: As aulas recomeçam na ___-feira. (Monday)" },
+    // 33
+    { question: "Fill in: O fim de semana começa na ___-feira. (Friday)" },
+    // 34
+    {
+      question: "Match days of the week with their translation:",
+      pairs: [
+        { left: "segunda-feira", right: "Monday" },
+        { left: "quarta-feira", right: "Wednesday" },
+        { left: "sexta-feira", right: "Friday" },
+        { left: "domingo", right: "Sunday" }
+      ]
+    },
+    // 35
+    { question: "Build the sentence: «It's three o'clock in the afternoon»." },
+    // 36
+    { source: "Today is Monday, the tenth of March." },
+    // 37
+    {
+      question: "How do you correctly say the date «1 January»?",
+      explanation: "For the first day of the month, an ordinal number is used: «Primeiro de janeiro» (the first of January)."
+    },
+    // 38
+    { question: "Build: «the twenty-fifth of December» in Portuguese." },
+    // 39
+    {
+      question: "How do you say «Thursday» in Portuguese?",
+      explanation: "Quinta-feira — Thursday. Literally «the fifth day» (from Sunday)."
+    },
+    // 40
+    { question: "Write the number in words: 1000 = ___" },
+    // 41
+    { source: "My birthday is on the twentieth of August." },
+  ],
 
 };

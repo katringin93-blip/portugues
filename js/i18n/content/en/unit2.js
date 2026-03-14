@@ -150,5 +150,123 @@ export default {
     { ru: "university", hint: "feminine" },
     { ru: "zone, area", hint: "feminine" },
   ],
+  exercises: [
+    // === Ex2: Fill a/o/um/uma (12 items) ===
+    { question: "Insert the correct article: ___ casa é grande. (definite)" },
+    { question: "Insert the correct article: ___ carro é novo. (definite)" },
+    {
+      question: "Which article fits? Eu tenho ___ livro. (indefinite)",
+      explanation: "Livro is masculine, the indefinite masculine article is «um»: um livro."
+    },
+    { question: "Insert the correct article: Ela comprou ___ mesa. (indefinite)" },
+    {
+      question: "Which articles fit? ___ João tem ___ carro novo. (definite + indefinite)",
+      explanation: "Before masculine names the article «O» is used: O João. Carro is masculine, indefinite article — «um»."
+    },
+    { question: "Insert the correct article: Há ___ escola perto daqui. (indefinite)" },
+    { question: "Insert the correct article: Ele tem ___ irmã mais nova. (indefinite)" },
+    { question: "Insert the correct article: ___ tempo está bom. (definite)" },
+    { question: "Insert the correct article: ___ Maria é professora. (definite)" },
+    { question: "Insert the correct article: ___ Porto é uma cidade bonita. (definite)" },
+    { question: "Insert the correct article: ___ Rio Tejo é longo. (definite)" },
+    { question: "Insert the correct article: ___ comida está pronta. (definite)" },
 
+    // === Ex3: Match (8 items) ===
+    {
+      question: "Match the expressions with the correct article (definite or indefinite):",
+      pairs: [
+        { right: "o menino" },
+        { right: "uma casa" },
+        { right: "os livros" },
+        { right: "uma cidade" }
+      ]
+    },
+    {
+      question: "Match the nouns with the correct definite article:",
+      pairs: [
+        { right: "o" },
+        { right: "a" },
+        { right: "os" },
+        { right: "as" }
+      ]
+    },
+
+    // === Ex4: Fill contractions (11 items) ===
+    { question: "Insert the contraction: Ele mora ___ cidade pequena. (em + uma)" },
+    { question: "Insert the contraction: Ela trabalha ___ hospital. (em + um)" },
+    {
+      question: "Which contraction is correct? O livro está ___ mesa. (em + a)",
+      explanation: "Preposition «em» + definite article «a» = «na»: na mesa (on the table)."
+    },
+    { question: "Insert the contraction: Estou ___ cozinha. (em + a)" },
+    { question: "Insert the contraction: O carro ___ Pedro é vermelho. (de + o)" },
+    { question: "Insert the contraction: Ele saiu ___ casa velha. (de + uma)" },
+    {
+      question: "Which contraction is correct? Passámos ___ parque. (por + o)",
+      explanation: "Preposition «por» + definite article «o» = «pelo»: pelo parque (through the park)."
+    },
+    { question: "Insert the contraction: As crianças brincam ___ ruas. (em + as)" },
+    { question: "Insert the contraction: Estamos ___ centro da cidade. (em + o)" },
+    { question: "Insert the contraction: Vivemos ___ arredores de Lisboa. (em + os)" },
+    { question: "Insert the contraction: Andámos ___ cidade toda. (por + a)" },
+
+    // === Ex5: Fill article/contraction in text (partial set, mixed types) ===
+    { question: "Fill in: ___ Pedro é estudante. (definite article, masculine)" },
+    {
+      question: "Which article/contraction fits? Ele é ___ Brasil. (de + o)",
+      explanation: "«De» + «o» contract to «do»: Ele é do Brasil (He is from Brazil)."
+    },
+    { question: "Fill in: Ele estuda ___ Universidade de Lisboa. (em + a)" },
+    { question: "Fill in: ___ curso é interessante. (definite article, masculine)" },
+    { question: "Fill in: As aulas ___ Pedro começam às nove. (de + o)" },
+    { question: "Fill in: Ele gosta ___ cidade. (de + a)" },
+
+    // === Additional mixed exercises ===
+    {
+      question: "Match the preposition contractions with articles:",
+      pairs: [
+        { right: "do" },
+        { right: "na" },
+        { right: "pelo" },
+        { right: "à" }
+      ]
+    },
+    {
+      question: "Match the contractions of preposition «em» with indefinite articles:",
+      pairs: [
+        { right: "num" },
+        { right: "numa" },
+        { right: "nuns" },
+        { right: "numas" }
+      ]
+    },
+    { question: "Build the sentence: \"The teacher's book is on the table\"." },
+    { source: "The children are playing in the park." },
+    {
+      question: "When is the definite article NOT used in Portuguese?",
+      explanation: "After the verb «falar», the article before a language name is usually omitted: Falo português (I speak Portuguese)."
+    },
+    { source: "We live in Portugal." },
+    { question: "Build the sentence: \"I am going to university\"." },
+    {
+      question: "Which contraction is correct for «de + as»?",
+      explanation: "Preposition «de» + article «as» = «das». For example: das flores (of the flowers)."
+    },
+    { question: "Insert the contraction: Vou ___ praia amanhã. (a + a)" },
+    {
+      question: "Which contraction is correct for «a + os»?",
+      explanation: "Preposition «a» + article «os» = «aos». For example: aos domingos (on Sundays)."
+    },
+    {
+      question: "Match the contractions of preposition «de» with articles:",
+      pairs: [
+        { right: "do" },
+        { right: "da" },
+        { right: "dos" },
+        { right: "das" }
+      ]
+    },
+    { question: "Insert the contraction: Ele vem ___ escola. (de + a)" },
+    { source: "She works in a hospital." },
+  ],
 };

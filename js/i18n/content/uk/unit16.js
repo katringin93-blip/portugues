@@ -191,5 +191,125 @@ export default {
     { ru: "зарплата", hint: "ч.р." },
     { ru: "життя", hint: "ж.р." },
   ],
+  exercises: [
+    // === Ex1: Перепишіть у Pretérito Perfeito Composto (10 items) ===
+    { question: "Перепишіть у Pretérito Perfeito Composto: Eles não têm tempo. → Eles ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Eu vou ao cinema. → Eu ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Tu ouves música? → Tu ___?" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Eles estão bem. → Eles ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Nós não temos sorte. → Nós ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Tu adoras viajar. → Tu ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Nós chegamos cedo. → Nós ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Eles não pensam nisso. → Eles ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Ele traz flores. → Ele ___" },
+    { question: "Перепишіть у Pretérito Perfeito Composto: Eu ponho a mesa. → Eu ___" },
+    // === Ex2: Впишіть правильну форму Pret. Perf. Composto (12 items) ===
+    { question: "Eu ___ ___ o João frequentemente. (ver — Pret. Perf. Composto)" },
+    { question: "Ela ___ ___ doente ultimamente. (estar — Pret. Perf. Composto)" },
+    { question: "O Pedro ___ ___ em Lisboa há muitos anos. (viver — Pret. Perf. Composto)" },
+    { question: "Nós ___ ___ muito dinheiro. (gastar — Pret. Perf. Composto)" },
+    { question: "Eles ___ ___ sobre o assunto. (falar — Pret. Perf. Composto)" },
+    { question: "A Maria ___ ___ o confronto. (evitar — Pret. Perf. Composto)" },
+    { question: "O governo ___ ___ para melhorar a situação. (trabalhar — Pret. Perf. Composto)" },
+    { question: "A crise ___ ___ muitas famílias. (afetar — Pret. Perf. Composto)" },
+    { question: "O tempo ___ ___ bom. (estar — Pret. Perf. Composto)" },
+    { question: "O presidente ___ ___ as suas promessas. (cumprir — Pret. Perf. Composto)" },
+    { question: "Tu ___ ___ as contas a tempo? (pagar — Pret. Perf. Composto)" },
+    { question: "O que é que o João ___ ___? (fazer — Pret. Perf. Composto)" },
+    // === Ex3: Оберіть правильний дієприкметник (choice, 12 items) ===
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: pagar → ___",
+      explanation: "З «ter» у Pretérito Perfeito Composto використовується «pagado» (правильна форма)."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: ter → ___",
+      explanation: "Дієприкметник від «ter» — «tido»."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: tocar → ___",
+      explanation: "Дієслова на -ar утворюють дієприкметник з -ado: tocar → tocado."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: abrir → ___",
+      explanation: "Abrir має неправильний дієприкметник: aberto."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: prender → ___",
+      explanation: "З «ter» використовується правильна форма дієприкметника: prendido."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: emigrar → ___",
+      explanation: "Дієслова на -ar: emigrar → emigrado."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: ver → ___",
+      explanation: "Ver має неправильний дієприкметник: visto."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: fazer → ___",
+      explanation: "Fazer має неправильний дієприкметник: feito."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: cobrir → ___",
+      explanation: "Cobrir має неправильний дієприкметник: coberto."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: vir → ___",
+      explanation: "Vir має неправильний дієприкметник: vindo."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: concorrer → ___",
+      explanation: "Дієслова на -er: concorrer → concorrido."
+    },
+    {
+      question: "Оберіть правильний дієприкметник для Pret. Perf. Composto: escrever → ___",
+      explanation: "Escrever має неправильний дієприкметник: escrito."
+    },
+    // === Ex4: Поєднайте займенники з Pret. Perf. Composto (8 items) ===
+    { question: "Nós prometemos-lha → Nós ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Ele faz-lhos → Ele ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Ela dá-no-lo → Ela ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Tu ofereces-lhos → Tu ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Eles enviam-no-las → Eles ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Eu digo-lho → Eu ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Eu ofereço-lhos → Eu ___. (Pret. Perf. Composto із займенниками)" },
+    { question: "Elas entregam-lhas → Elas ___. (Pret. Perf. Composto із займенниками)" },
+    // === Ex5: Перекладіть португальською (12 items) ===
+    { source: "Жуана купувала надто багато суконь (останнім часом)." },
+    { source: "Я працював до пізна (останнім часом)." },
+    { source: "Він оплачував усі мої витрати (останнім часом)." },
+    { source: "У них було багато проблем (останнім часом)." },
+    { source: "Мій батько мало подорожував (останнім часом)." },
+    { source: "Його брат займався щодня (останнім часом)." },
+    { source: "Ми вкладали багато грошей у твою компанію (останнім часом)." },
+    { source: "Багато літніх людей помирало від спеки (останнім часом)." },
+    { source: "Він не приймав мої поради (останнім часом)." },
+    { source: "Ця школа виключала багато учнів (останнім часом)." },
+    { source: "Моя тітка дивилася багато португальських фільмів (останнім часом)." },
+    { source: "Моя начальниця хворіла останнім часом." },
+    // === Ex6: Заповніть текст про португальську еміграцію (7 items) ===
+    { question: "A emigração ___ ___ um tema importante na sociedade portuguesa. (ser — Pret. Perf. Composto)" },
+    { question: "Os investigadores ___ ___ novas tendências migratórias. (observar — Pret. Perf. Composto)" },
+    { question: "O fluxo migratório ___ ___ ___ nos últimos anos. (intensificar-se — Pret. Perf. Composto)" },
+    { question: "Ultimamente ___ ___ ___ um aumento de jovens a emigrar. (ver-se — Pret. Perf. Composto)" },
+    { question: "Muitos portugueses ___ ___ países europeus como destino. (escolher — Pret. Perf. Composto)" },
+    { question: "Os emigrantes ___ ___ consigo a cultura portuguesa. (levar — Pret. Perf. Composto)" },
+    { question: "A diáspora portuguesa ___-___ ___ cada vez mais ativa. (revelar-se — Pret. Perf. Composto)" },
+    // === Додаткові вправи: match, order, choice ===
+    { question: "Зіставте дієслово з його неправильним дієприкметником:" },
+    { question: "Складіть речення: «Останнім часом ми багато подорожували.»" },
+    { question: "Зіставте займенник з формою «ter» у Presente (для Pret. Perf. Composto):" },
+    {
+      question: "Що позначає Pretérito Perfeito Composto у європейській португальській?",
+      options: [
+        "Одноразова завершена дія в минулому",
+        "Дія, що повторюється або триває від минулого до теперішнього",
+        "Дія, що передує іншій у минулому",
+        "Звична дія у далекому минулому"
+      ],
+      explanation: "У європейській португальській Pret. Perf. Composto позначає дію, яка почалася в минулому і повторюється або продовжується до теперішнього моменту."
+    },
+    { question: "Складіть речення: «Вона багато працювала останнім часом.»" },
+  ],
 
 };

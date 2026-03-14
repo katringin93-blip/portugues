@@ -245,6 +245,110 @@ export default {
     { ru: "швидко (прислівник)" },
     { ru: "повільно (прислівник)" }
   ],
+  exercises: [
+    // Ex1: Утворення прислівників на -mente (16 вправ)
+    { question: "Утворіть прислівник від «lento» (повільний): ___" },
+    { question: "Утворіть прислівник від «rápido» (швидкий): ___" },
+    { question: "Утворіть прислівник від «alegre» (веселий): ___" },
+    { question: "Утворіть прислівник від «distinto» (виразний): ___" },
+    {
+      question: "Який прислівник утворюється від «claro» (ясний)?",
+      explanation: "Беремо жіночу форму «clara» + «-mente» = «claramente»."
+    },
+    { question: "Утворіть прислівник від «intenso» (інтенсивний): ___" },
+    { question: "Утворіть прислівник від «infeliz» (нещасний): ___" },
+    { question: "Утворіть прислівник від «divino» (божественний): ___" },
+    {
+      question: "Який прислівник утворюється від «antigo» (старовинний)?",
+      explanation: "Беремо жіночу форму «antiga» + «-mente» = «antigamente»."
+    },
+    { question: "Утворіть прислівник від «novo» (новий): ___" },
+    { question: "Утворіть прислівник від «eficaz» (ефективний): ___" },
+    { question: "Утворіть прислівник від «delicioso» (чудовий): ___" },
+    { question: "Утворіть прислівник від «decidido» (рішучий): ___" },
+    { question: "Утворіть прислівник від «habitual» (звичайний): ___" },
+    {
+      question: "Який прислівник утворюється від «simples» (простий)?",
+      explanation: "«Simples» не змінюється за родом: simples + «-mente» = «simplesmente»."
+    },
+    { question: "Утворіть прислівник від «franco» (відвертий): ___" },
+
+    // Ex2: Антоніми прикметників (2 вправи на зіставлення)
+    { question: "Зіставте прикметники з їхніми антонімами:" },
+    { question: "Зіставте прикметники з їхніми антонімами:" },
+
+    // Ex3: Вставте прикметник/прислівник (12 вправ)
+    { question: "As casas em Lisboa são muito ___. (Будинки в Лісабоні дуже дорогі. — ж.р. мн.)" },
+    { question: "As ruas do centro são ___. (Вулиці центру маленькі/вузькі. — ж.р. мн.)" },
+    {
+      question: "Ele está muito ___ com a notícia. (Він дуже радий новині.)",
+      explanation: "«Feliz» — прикметник, що не змінюється за родом: «Ele está feliz.»"
+    },
+    { question: "O comboio é muito ___. (Поїзд дуже повільний. — ч.р. одн.)" },
+    { question: "O professor é muito ___. (Учитель дуже приємний. — ч.р. одн.)" },
+    { question: "As vizinhas são ___. (Сусідки неприємні. — ж.р. мн.)" },
+    { question: "As noites de inverno são ___. (Зимові ночі короткі. — ж.р. мн.)" },
+    {
+      question: "A criança está muito ___. (Дитина дуже весела.)",
+      explanation: "«Alegre» — прикметник, однаковий для ч.р. і ж.р."
+    },
+    { question: "O apartamento é ___. (Квартира сучасна. — ч.р. одн.)" },
+    { question: "A rapariga é muito ___. (Дівчина дуже розумна.)" },
+    { question: "A igreja é muito ___. (Церква дуже стара. — ж.р.)" },
+    { question: "A sala está ___. (Кімната темна. — ж.р.)" },
+
+    // Ex4: Вставте прикметник/прислівник у текст (16 вправ)
+    { question: "Sintra é uma ___ cidade. (Сінтра — гарне місто. — ж.р.)" },
+    { question: "Tem um ___ palácio. (Там великий палац. — ч.р.)" },
+    { question: "O clima é ___. (Клімат приємний.)" },
+    { question: "O ar é ___. (Повітря свіже. — ч.р.)" },
+    {
+      question: "As praias têm ___ extensões de areia. (Пляжі мають довгі смуги піску. — ж.р. мн.)",
+      explanation: "«Extensões» — ж.р. мн., тому «longas»."
+    },
+    { question: "O tempo passa ___. (Час минає швидко. — прислівник)" },
+    { question: "A fadiga ___ desaparece. (Накопичена втома зникає. — ж.р.)" },
+    { question: "As ruas ___ são encantadoras. (Старовинні вулиці чарівні. — ж.р. мн.)" },
+    { question: "A vila é ___. (Містечко чарівне. — ж.р.)" },
+    { question: "Ficamos ___. (Ми втомилися. — ч.р. мн.)" },
+    { question: "Comemos num restaurante ___. (Ми їли в типовому ресторані. — ч.р.)" },
+    { question: "A comida era ___ boa. (Їжа була особливо смачною. — прислівник)" },
+    { question: "O pão era ___. (Хліб був домашній. — ч.р.)" },
+    { question: "A fruta era ___. (Фрукти були свіжими. — ж.р.)" },
+    { question: "Os produtos eram ___ produzidos. (Продукти були вироблені на місці. — прислівник)" },
+    {
+      question: "As visitas foram muito ___. (Відвідини були дуже цікавими. — ж.р. мн.)",
+      explanation: "«Visitas» — ж.р. мн.; прикметник на «-e» у мн. отримує «-s»: «interessantes»."
+    },
+
+    // Ex5: Переклад речень
+    { source: "Португальські міста дуже гарні." },
+    { source: "Вона говорить швидко і чітко." },
+    { source: "Старі будинки в Лісабоні гарні." },
+
+    // Ex6: Вставте прикметник/прислівник у текст про португальську сім'ю (15 вправ)
+    { question: "A família é muito ___ em Portugal. (Сім'я дуже важлива в Португалії.)" },
+    { question: "A família ___ é grande. (Португальська сім'я велика. — ж.р.)" },
+    { question: "É ___ na sociedade. (Вона фундаментальна в суспільстві.)" },
+    { question: "Os laços ___ são fortes. (Сімейні зв'язки міцні. — ч.р. мн.)" },
+    { question: "Os idosos são muito ___. (Людей похилого віку дуже цінують. — ч.р. мн.)" },
+    {
+      question: "___, a família almoça junta ao domingo. (Традиційно сім'я обідає разом у неділю.)",
+      explanation: "Тут потрібен прислівник «tradicionalmente» (традиційно), а не прикметник."
+    },
+    { question: "O grupo familiar é ___. (Сімейна група згуртована. — ч.р.)" },
+    { question: "O ambiente é ___. (Атмосфера гостинна. — ч.р.)" },
+    { question: "Uma família ___ portuguesa tem muitos membros. (Типова португальська сім'я має багато членів. — ж.р.)" },
+    { question: "Os laços são ___. (Зв'язки тісні. — ч.р. мн.)" },
+    { question: "Visitam-se ___. (Вони навідують одне одного регулярно. — прислівник)" },
+    { question: "___ nos feriados. (Особливо у свята. — прислівник)" },
+    { question: "É ___ verdade no Natal. (Це особливо вірно на Різдво. — прислівник)" },
+    { question: "O jantar ___ é importante. (Сімейна вечеря важлива. — ч.р.)" },
+    {
+      question: "Os jovens são mais ___. (Молоді люди більш незалежні. — ч.р. мн.)",
+      explanation: "Прикметник на «-e» у мн. отримує «-s»: «independentes»."
+    },
+  ],
   flashcards: [
     { ru: "гарний/а", hint: "жін. р.: bonita, мн.: bonitos/as" },
     { ru: "великий", hint: "одна форма для обох родів" },

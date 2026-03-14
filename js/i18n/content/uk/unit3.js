@@ -240,5 +240,151 @@ export default {
     { ru: "мати вихідний", hint: "вираз з ter" },
     { ru: "обов'язково", hint: "вираз" },
   ],
+  exercises: [
+    // 1
+    { question: "Напишіть число словами по-португальськи: 45 = quarenta e ___" },
+    // 2
+    { question: "Напишіть число словами по-португальськи: 90 = ___" },
+    // 3
+    {
+      question: "Як пишеться число 16 у європейській португальській?",
+      explanation: "У європейській португальській 16 — «dezasseis» (з «a»), а в бразильській — «dezesseis» (з «e»)."
+    },
+    // 4
+    { question: "Напишіть число словами: 2014 = dois mil e ___" },
+    // 5
+    { question: "Напишіть число словами: 2000 = dois ___" },
+    // 6
+    { question: "Напишіть число словами: 38 = trinta e ___" },
+    // 7
+    {
+      question: "Як пишеться число 365?",
+      explanation: "365 = trezentos e sessenta e cinco. Зверніть увагу на «e» між кожною частиною."
+    },
+    // 8
+    { question: "Напишіть число словами: 500 = ___" },
+    // 9
+    {
+      question: "Зіставте заняття з порами року:",
+      pairs: [
+        { left: "nadar no mar", right: "Verão (літо)" },
+        { left: "apanhar folhas", right: "Outono (осінь)" },
+        { left: "fazer esqui", right: "Inverno (зима)" },
+        { left: "ver flores", right: "Primavera (весна)" }
+      ]
+    },
+    // 10
+    {
+      question: "У яку пору року зазвичай «fazer esqui» (кататися на лижах)?",
+      explanation: "Fazer esqui (кататися на лижах) — зимове заняття: Inverno."
+    },
+    // 11
+    { question: "Напишіть час (формат 24г): 9:15 = nove horas e quinze ___" },
+    // 12
+    {
+      question: "Як сказати 10:00 у 24-годинному форматі?",
+      explanation: "Для годин, більших за одну, використовується «São»: São dez horas (Десята година)."
+    },
+    // 13
+    { question: "Напишіть час: 12:00 (полудень) = ___ horas" },
+    // 14
+    { question: "Напишіть час: 13:10 = treze e ___" },
+    // 15
+    { question: "Напишіть час: 14:35 = catorze e trinta e ___" },
+    // 16
+    {
+      question: "Як сказати 17:55 у 24-годинному форматі?",
+      explanation: "17:55 = São dezassete e cinquenta e cinco. У європейській португальській «dezassete» (з «a»)."
+    },
+    // 17
+    { question: "Напишіть час: 21:00 = vinte e uma ___" },
+    // 18
+    { question: "Напишіть час: 24:00 = vinte e quatro ___" },
+    // 19
+    { source: "7:15 ранку (неформальний час)" },
+    // 20
+    {
+      question: "Як сказати 8:00 ранку в неформальному стилі?",
+      explanation: "Неформально: São oito horas da manhã. «Da manhã» додається для позначення ранку."
+    },
+    // 21
+    { question: "Напишіть час неформально: 11:45 = um quarto para o ___" },
+    // 22
+    { question: "Напишіть час неформально: 12:30 = meio-dia e ___" },
+    // 23
+    {
+      question: "Зіставте свята з датами:",
+      pairs: [
+        { left: "Natal (Рождество)", right: "25 de dezembro" },
+        { left: "Ano Novo (Новий рік)", right: "1 de janeiro" },
+        { left: "Dia do Trabalhador", right: "1 de maio" },
+        { left: "Dia de Portugal", right: "10 de junho" }
+      ]
+    },
+    // 24
+    {
+      question: "Якій даті відповідає «vinte e cinco de abril»?",
+      explanation: "Vinte e cinco de abril = 25 квітня. Це День свободи в Португалії (річниця Революції гвоздик 1974 р.)."
+    },
+    // 25
+    {
+      question: "Зіставте місяці з порядковим номером:",
+      pairs: [
+        { left: "janeiro", right: "1-й місяць" },
+        { left: "março", right: "3-й місяць" },
+        { left: "agosto", right: "8-й місяць" },
+        { left: "dezembro", right: "12-й місяць" }
+      ]
+    },
+    // 26
+    { question: "Заповніть: As aulas começam na ___-feira. (понеділок)" },
+    // 27
+    { question: "Заповніть: As aulas começam às ___ horas. (9)" },
+    // 28
+    {
+      question: "Яке число підходить? O almoço é às ___ horas. (13)",
+      explanation: "13 = treze. O almoço é às treze horas (Обід о 13:00)."
+    },
+    // 29
+    { question: "Заповніть: As aulas da tarde começam às ___ horas. (14)" },
+    // 30
+    { question: "Заповніть: As aulas terminam às ___ horas. (18)" },
+    // 31
+    { question: "Заповніть: Não há aulas no ___. (субота)" },
+    // 32
+    { question: "Заповніть: As aulas recomeçam na ___-feira. (понеділок)" },
+    // 33
+    { question: "Заповніть: O fim de semana começa na ___-feira. (п'ятниця)" },
+    // 34
+    {
+      question: "Зіставте дні тижня з перекладом:",
+      pairs: [
+        { left: "segunda-feira", right: "понеділок" },
+        { left: "quarta-feira", right: "середа" },
+        { left: "sexta-feira", right: "п'ятниця" },
+        { left: "domingo", right: "неділя" }
+      ]
+    },
+    // 35
+    { question: "Складіть речення: «Зараз третя година дня»." },
+    // 36
+    { source: "Сьогодні понеділок, десяте березня." },
+    // 37
+    {
+      question: "Як правильно сказати дату «1 січня»?",
+      explanation: "Для першого числа місяця використовується порядковий числівник: «Primeiro de janeiro» (перше січня)."
+    },
+    // 38
+    { question: "Складіть: «двадцять п'яте грудня» по-португальськи." },
+    // 39
+    {
+      question: "Як по-португальськи «четвер»?",
+      explanation: "Quinta-feira — четвер. Буквально «п'ятий день» (від неділі)."
+    },
+    // 40
+    { question: "Напишіть число словами: 1000 = ___" },
+    // 41
+    { source: "Мій день народження двадцятого серпня." },
+  ],
 
 };

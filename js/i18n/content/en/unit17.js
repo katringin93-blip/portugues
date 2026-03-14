@@ -101,5 +101,105 @@ export default {
     { ru: "vase", hint: "masculine" },
     { ru: "violence", hint: "feminine" },
   ],
+  exercises: [
+    // Ex1: Conjugate in Pretérito Perfeito Simples (13 fill)
+    { question: "The teacher ___ the lesson. (ensinar — Pretérito Perfeito)" },
+    { question: "Did you ___ home early? (sair — Pretérito Perfeito)" },
+    { question: "We ___ to the cinema yesterday. (ir — Pretérito Perfeito)" },
+    { question: "She ___ a new dress. (comprar — Pretérito Perfeito)" },
+    { question: "They ___ the project on time. (terminar — Pretérito Perfeito)" },
+    { question: "João ___ in Lisbon for two years. (estar — Pretérito Perfeito)" },
+    { question: "I ___ a coffee from the waiter. (pedir — Pretérito Perfeito)" },
+    { question: "The mother ___ her son. (chamar — Pretérito Perfeito)" },
+    { question: "The concert ___ fantastic. (ser — Pretérito Perfeito)" },
+    { question: "I ___ up early. (levantar-se — Pretérito Perfeito, 1st pers. sg.)" },
+    { question: "My father ___ a lot yesterday. (trabalhar — Pretérito Perfeito)" },
+    { question: "Maria ___ abroad. (viajar — Pretérito Perfeito)" },
+    { question: "He ___ that he couldn't come. (dizer — Pretérito Perfeito)" },
+    // Ex2: Fill in Pretérito Perfeito (10 fill)
+    { question: "I ___ with the director yesterday. (falar — Pretérito Perfeito)" },
+    { question: "I ___ an interesting film. (ver — Pretérito Perfeito)" },
+    { question: "Did you ___ to the party? (ir — Pretérito Perfeito)" },
+    { question: "The train ___ late. (chegar — Pretérito Perfeito)" },
+    { question: "They ___ home very early. (sair — Pretérito Perfeito)" },
+    { question: "Did you (pl.) ___ the new teacher? (conhecer — Pretérito Perfeito)" },
+    { question: "She ___ the whole book. (ler — Pretérito Perfeito)" },
+    { question: "The plane ___ at ten. (partir — Pretérito Perfeito)" },
+    { question: "The journalist ___ the news. (relatar — Pretérito Perfeito)" },
+    { question: "What did he ___? (fazer — Pretérito Perfeito)" },
+    // Ex3: Fill in the narrative (10 items)
+    {
+      question: "Narrative: Last summer I ___ a trip to the Algarve. (fazer)",
+      explanation: "«Eu fiz» — 1st person singular form of «fazer» in Pretérito Perfeito."
+    },
+    { question: "My friends ___ the trip a lot. (gostar — Pretérito Perfeito)" },
+    { question: "I ___ the Algarve by car. (chegar — Pretérito Perfeito)" },
+    { question: "First I ___ to the beach. (ir — Pretérito Perfeito, 1st pers. sg.)" },
+    { question: "There I ___ many nice people. (conhecer — Pretérito Perfeito, 1st pers. sg.)" },
+    { question: "We ___ to a typical restaurant. (ir — Pretérito Perfeito)" },
+    { question: "I ___ beautiful landscapes. (ver — Pretérito Perfeito)" },
+    { question: "I ___ there for a week. (estar — Pretérito Perfeito)" },
+    { question: "I ___ unforgettable moments. (passar — Pretérito Perfeito)" },
+    { question: "I didn't ___ much for the hotel. (pagar — Pretérito Perfeito, 1st pers. sg.)" },
+    // Ex4: Fill in the text (11 items)
+    {
+      question: "The birthday party ___ on Saturday. (ser — Pretérito Perfeito)",
+      explanation: "A specific event in the past uses Pretérito Perfeito: foi."
+    },
+    { question: "Maria ___ at the party until midnight. (estar — Pretérito Perfeito)" },
+    { question: "She ___ great luck with the gift. (ter — Pretérito Perfeito)" },
+    { question: "The party ___ very fun. (ser — Pretérito Perfeito)" },
+    { question: "The DJ ___ great success. (ter — Pretérito Perfeito)" },
+    { question: "All the guests ___ satisfied. (ficar — Pretérito Perfeito)" },
+    { question: "The party ___ until three in the morning. (durar — Pretérito Perfeito)" },
+    { question: "Friends ___ João to dance. (convidar — Pretérito Perfeito)" },
+    { question: "She ___ the music very much. (gostar — Pretérito Perfeito)" },
+    { question: "There she ___ many new people. (conhecer — Pretérito Perfeito, 3rd pers. sg.)" },
+    { question: "Maria ___ many friends at the party. (fazer — Pretérito Perfeito)" },
+    // Ex5: Translate into Portuguese (12 translate)
+    { source: "Yesterday was an interesting day." },
+    { source: "Did she like the party?" },
+    { source: "They broke a vase yesterday." },
+    { source: "I left home early last Sunday." },
+    { source: "The guest wrote him a letter." },
+    { source: "He made a new girlfriend." },
+    { source: "The train arrived late." },
+    { source: "Uncle Paulo bought a newspaper." },
+    { source: "I woke up at six this morning." },
+    { source: "You came home very late." },
+    { source: "We finished the project." },
+    { source: "My grandfather stayed home yesterday evening." },
+    // Ex6: Fill in the historical text (11 fill)
+    { question: "The Carnation Revolution ___ on 25 April 1974. (acontecer — Pret. Perfeito)" },
+    { question: "Portugal ___ a democratic country. (tornar-se — Pret. Perfeito)" },
+    { question: "That day ___ the end of the dictatorship. (assinalar — Pret. Perfeito)" },
+    { question: "The revolution ___ the beginning of a new era. (significar — Pret. Perfeito)" },
+    { question: "The change ___. (dar-se — Pret. Perfeito)" },
+    { question: "The soldiers ___ the protagonists. (ser — Pret. Perfeito)" },
+    { question: "They ___ the revolt. (instigar — Pret. Perfeito)" },
+    { question: "The radio ___ the password. (transmitir — Pret. Perfeito)" },
+    { question: "The revolution ___ peaceful. (ser — Pret. Perfeito)" },
+    { question: "Many people ___ into the street. (vir — Pret. Perfeito)" },
+    { question: "The 25th of April ___ in the collective memory. (ficar — Pret. Perfeito)" },
+    // Additional: match, order, choice, order
+    {
+      question: "Match the irregular verbs with the «eu» form in Pretérito Perfeito:",
+      pairs: [
+        { right: "fui" },
+        { right: "tive" },
+        { right: "estive" },
+        { right: "fiz" },
+        { right: "disse" },
+        { right: "dei" },
+        { right: "vim" }
+      ]
+    },
+    { question: "Build the sentence: «Yesterday I spoke with the director.»" },
+    {
+      question: "In European Portuguese, the «nós» form for -ar verbs in Pretérito Perfeito differs from the present tense in that:",
+      explanation: "In European Portuguese: falámos (Pretérito Perfeito) vs falamos (Presente). The accent helps distinguish the tenses."
+    },
+    { question: "Build the sentence: «She bought a new dress.»" }
+  ],
 
 };

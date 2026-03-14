@@ -245,6 +245,110 @@ export default {
     { ru: "quickly (adverb)" },
     { ru: "slowly (adverb)" }
   ],
+  exercises: [
+    // Ex1: Form adverbs with -mente (16 items)
+    { question: "Form the adverb from «lento» (slow): ___" },
+    { question: "Form the adverb from «rápido» (fast): ___" },
+    { question: "Form the adverb from «alegre» (cheerful): ___" },
+    { question: "Form the adverb from «distinto» (distinct): ___" },
+    {
+      question: "Which adverb is formed from «claro» (clear)?",
+      explanation: "Take the feminine form «clara» + «-mente» = «claramente»."
+    },
+    { question: "Form the adverb from «intenso» (intense): ___" },
+    { question: "Form the adverb from «infeliz» (unhappy): ___" },
+    { question: "Form the adverb from «divino» (divine): ___" },
+    {
+      question: "Which adverb is formed from «antigo» (ancient)?",
+      explanation: "Take the feminine form «antiga» + «-mente» = «antigamente»."
+    },
+    { question: "Form the adverb from «novo» (new): ___" },
+    { question: "Form the adverb from «eficaz» (effective): ___" },
+    { question: "Form the adverb from «delicioso» (delicious): ___" },
+    { question: "Form the adverb from «decidido» (determined): ___" },
+    { question: "Form the adverb from «habitual» (usual): ___" },
+    {
+      question: "Which adverb is formed from «simples» (simple)?",
+      explanation: "«Simples» does not change for gender: simples + «-mente» = «simplesmente»."
+    },
+    { question: "Form the adverb from «franco» (frank): ___" },
+
+    // Ex2: Match adjective opposites (2 match exercises)
+    { question: "Match the adjectives with their antonyms:" },
+    { question: "Match the adjectives with their antonyms:" },
+
+    // Ex3: Fill adj/adverb (12 items)
+    { question: "As casas em Lisboa são muito ___. (Houses in Lisbon are very expensive. — f. pl.)" },
+    { question: "As ruas do centro são ___. (The streets of the centre are small/narrow. — f. pl.)" },
+    {
+      question: "Ele está muito ___ com a notícia. (He is very happy about the news.)",
+      explanation: "«Feliz» is an adjective that does not change for gender: «Ele está feliz.»"
+    },
+    { question: "O comboio é muito ___. (The train is very slow. — m. sg.)" },
+    { question: "O professor é muito ___. (The teacher is very pleasant. — m. sg.)" },
+    { question: "As vizinhas são ___. (The neighbours are unpleasant. — f. pl.)" },
+    { question: "As noites de inverno são ___. (Winter nights are short. — f. pl.)" },
+    {
+      question: "A criança está muito ___. (The child is very cheerful.)",
+      explanation: "«Alegre» is an adjective with the same form for masculine and feminine."
+    },
+    { question: "O apartamento é ___. (The apartment is modern. — m. sg.)" },
+    { question: "A rapariga é muito ___. (The girl is very intelligent.)" },
+    { question: "A igreja é muito ___. (The church is very old. — f.)" },
+    { question: "A sala está ___. (The room is dark. — f.)" },
+
+    // Ex4: Fill adj/adverb in text (16 items)
+    { question: "Sintra é uma ___ cidade. (Sintra is a beautiful city. — f.)" },
+    { question: "Tem um ___ palácio. (It has a big palace. — m.)" },
+    { question: "O clima é ___. (The climate is pleasant.)" },
+    { question: "O ar é ___. (The air is fresh. — m.)" },
+    {
+      question: "As praias têm ___ extensões de areia. (The beaches have long stretches of sand. — f. pl.)",
+      explanation: "«Extensões» is f. pl., so «longas»."
+    },
+    { question: "O tempo passa ___. (Time passes quickly. — adverb)" },
+    { question: "A fadiga ___ desaparece. (Accumulated fatigue disappears. — f.)" },
+    { question: "As ruas ___ são encantadoras. (The old streets are charming. — f. pl.)" },
+    { question: "A vila é ___. (The village is charming. — f.)" },
+    { question: "Ficamos ___. (We got tired. — m. pl.)" },
+    { question: "Comemos num restaurante ___. (We ate at a typical restaurant. — m.)" },
+    { question: "A comida era ___ boa. (The food was especially good. — adverb)" },
+    { question: "O pão era ___. (The bread was homemade. — m.)" },
+    { question: "A fruta era ___. (The fruit was fresh. — f.)" },
+    { question: "Os produtos eram ___ produzidos. (The products were locally produced. — adverb)" },
+    {
+      question: "As visitas foram muito ___. (The visits were very interesting. — f. pl.)",
+      explanation: "«Visitas» is f. pl.; an adjective ending in «-e» takes «-s»: «interessantes»."
+    },
+
+    // Ex5: Translate sentences
+    { source: "Portuguese cities are very beautiful." },
+    { source: "She speaks quickly and clearly." },
+    { source: "The old houses in Lisbon are beautiful." },
+
+    // Ex6: Fill adj/adverb in text about Portuguese family (15 items)
+    { question: "A família é muito ___ em Portugal. (The family is very important in Portugal.)" },
+    { question: "A família ___ é grande. (The Portuguese family is large. — f.)" },
+    { question: "É ___ na sociedade. (It is fundamental in society.)" },
+    { question: "Os laços ___ são fortes. (Family ties are strong. — m. pl.)" },
+    { question: "Os idosos são muito ___. (The elderly are very valued. — m. pl.)" },
+    {
+      question: "___, a família almoça junta ao domingo. (Traditionally the family has lunch together on Sundays.)",
+      explanation: "An adverb is needed here — «tradicionalmente» (traditionally), not an adjective."
+    },
+    { question: "O grupo familiar é ___. (The family group is close-knit. — m.)" },
+    { question: "O ambiente é ___. (The atmosphere is welcoming. — m.)" },
+    { question: "Uma família ___ portuguesa tem muitos membros. (A typical Portuguese family has many members. — f.)" },
+    { question: "Os laços são ___. (The ties are close. — m. pl.)" },
+    { question: "Visitam-se ___. (They visit each other regularly. — adverb)" },
+    { question: "___ nos feriados. (Especially on public holidays. — adverb)" },
+    { question: "É ___ verdade no Natal. (It is particularly true at Christmas. — adverb)" },
+    { question: "O jantar ___ é importante. (The family dinner is important. — m.)" },
+    {
+      question: "Os jovens são mais ___. (Young people are more independent. — m. pl.)",
+      explanation: "An adjective ending in «-e» takes «-s» in the plural: «independentes»."
+    },
+  ],
   flashcards: [
     { ru: "beautiful", hint: "fem.: bonita, pl.: bonitos/as" },
     { ru: "big", hint: "one form for both genders" },

@@ -157,5 +157,163 @@ export default {
     { ru: "перекладати", hint: "дієслово" },
     { ru: "сум, печаль", hint: "жіночий рід" },
   ],
+  exercises: [
+    // Ex1: Перепишіть у заперечній формі (12 вправ)
+    // 1. translate
+    { source: "Перепишіть у заперечній формі: O Sr António viaja para Lisboa todas as semanas." },
+    // 2. order
+    { question: "Перепишіть у заперечній формі: «O Sr António viaja para Lisboa todas as semanas.»" },
+    // 3. choice
+    {
+      question: "Як правильно написати у заперечній формі: «A Ana e a Isabel sempre vão ao Porto.»?",
+      explanation: "«Sempre» (завжди) замінюється на «nunca» (ніколи): «A Ana e a Isabel nunca vão ao Porto.»"
+    },
+    // 4. order
+    { question: "Перепишіть у заперечній формі: «Alguém trabalha hoje.» → Ніхто не працює сьогодні." },
+    // 5. translate
+    { source: "Зал не повний людей." },
+    // 6. choice
+    {
+      question: "Перепишіть у заперечній формі: «Ela sempre chega atrasada ao trabalho.»",
+      explanation: "«Sempre» (завжди) замінюється на «nunca» (ніколи): «Ela nunca chega atrasada ao trabalho.»"
+    },
+    // 7. translate
+    { source: "Він нічого не робить." },
+    // 8. order
+    { question: "Перепишіть у заперечній формі: «Alguém mora com o João.» → Ніхто не живе з Жуаном." },
+    // 9. translate
+    { source: "Ми ніколи не займаємося гімнастикою в суботу." },
+    // 10. fill
+    { question: "Перепишіть у заперечній формі: «Tu sabes tudo.» → Tu não sabes ___." },
+    // 11. order
+    { question: "Перепишіть у заперечній формі: «Vocês estudam na universidade.»" },
+    // 12. choice
+    {
+      question: "Перепишіть у заперечній формі: «Todos entram à mesma hora.»",
+      explanation: "«Todos» (всі) замінюється на «Ninguém» (ніхто): «Ninguém entra à mesma hora.»"
+    },
+
+    // Ex2: Вставте nenhum/nenhuma/nenhuns/nenhumas (12 вправ)
+    // 13. choice
+    {
+      question: "Não tenho ___ amigos aqui. (У мене немає жодних друзів тут.)",
+      explanation: "«Amigos» — ч.р. мн., тому «nenhuns»."
+    },
+    // 14. fill
+    { question: "Não há ___ problema. (Немає жодної проблеми.)" },
+    // 15. fill
+    { question: "Não compro ___ livro hoje. (Я не купую жодної книги сьогодні.)" },
+    // 16. choice
+    {
+      question: "Não conheço ___ pessoa nesta cidade. (Я не знаю жодної людини в цьому місті.)",
+      explanation: "«Pessoa» — ж.р. одн., тому «nenhuma»."
+    },
+    // 17. fill
+    { question: "Não há ___ autocarros à noite. (Вночі немає жодних автобусів.)" },
+    // 18. fill
+    { question: "Não tem ___ sentido. (Це не має жодного сенсу.)" },
+    // 19. choice
+    {
+      question: "Não existe ___ razão para isso. (Немає жодної причини для цього.)",
+      explanation: "«Razão» — ж.р. одн., тому «nenhuma»."
+    },
+    // 20. fill
+    { question: "Não há ___ cartas para ti. (Немає жодних листів для тебе.)" },
+    // 21. fill
+    { question: "Não tenho ___ sapatos novos. (У мене немає жодного нового взуття.)" },
+    // 22. fill
+    { question: "Não recebi ___ recado. (Я не отримав жодного повідомлення.)" },
+    // 23. choice
+    {
+      question: "Não temos ___ ideia do que fazer. (Ми не маємо жодного уявлення.)",
+      explanation: "«Ideia» — ж.р. одн., тому «nenhuma»."
+    },
+    // 24. fill
+    { question: "Não há ___ alunas na sala. (У залі немає жодної учениці.)" },
+
+    // Ex3: Зіставте частини речень (10 пар — 2 вправи)
+    // 25. match
+    {
+      question: "Зіставте початок і кінець речень:",
+      pairs: [
+        { right: "нічого на сніданок." },
+        { right: "де знаходиться ключ." },
+        { right: "до кінотеатру сама." },
+        { right: "грошей на відпустку." },
+        { right: "хочуть іти на вечірку." }
+      ]
+    },
+    // 26. match
+    {
+      question: "Зіставте початок і кінець речень:",
+      pairs: [
+        { right: "жодного з цих кольорів." },
+        { right: "того, що я кажу." },
+        { right: "працювати в неділю." },
+        { right: "ні терпіння." },
+        { right: "нічого вночі." }
+      ]
+    },
+
+    // Ex4: Вставте заперечення (8 вправ)
+    // 27. fill
+    { question: "___ знає відповіді на запитання. (Ніхто не знає відповіді.)" },
+    // 28. fill
+    { question: "Não sei ___ sobre esse assunto. (Я нічого не знаю про цю тему.)" },
+    // 29. fill
+    { question: "Hoje ___ vou trabalhar. (Сьогодні я не піду працювати.)" },
+    // 30. fill
+    { question: "Eu ___ como peixe cru. (Я ніколи не їм сиру рибу.)" },
+    // 31. choice
+    {
+      question: "Eles ___ gostam de viajar de avião. (Вони не люблять подорожувати літаком.)",
+      explanation: "Просте заперечення: «não» перед дієсловом."
+    },
+    // 32. fill
+    { question: "Não como ___ de manhã. (Я нічого не їм вранці.)" },
+    // 33. translate
+    { source: "Він не п'є ні кави, ні чаю." },
+    // 34. fill
+    { question: "Ele não fala ___ português! (Він навіть не говорить португальською!)" },
+
+    // Ex6: Вставте заперечення в тексті (8 вправ)
+    // 35. fill
+    { question: "Não tenho ___ experiência com computadores. (Немає жодного досвіду.)" },
+    // 36. choice
+    {
+      question: "Заповніть пропуск: «Ela ___ quer sair.» (Вона не хоче виходити.)",
+      explanation: "Просте заперечення: «não» перед дієсловом."
+    },
+    // 37. fill
+    { question: "Não gosta ___ de carne ___ de peixe. (Не любить ні м'яса, ні риби.)" },
+    // 38. fill
+    { question: "___ me ajuda com este trabalho. (Ніхто мені не допомагає з цією роботою.)" },
+    // 39. fill
+    { question: "Não percebo ___ do que dizes. (Я нічого не розумію з того, що ти говориш.)" },
+    // 40. choice
+    {
+      question: "Eles ___ vão ao teatro. (Вони не ходять до театру.)",
+      explanation: "Просте заперечення: «não» перед дієсловом."
+    },
+    // 41. fill
+    { question: "Não temos ___ planos para o verão. (У нас немає жодних планів на літо.)" },
+    // 42. fill
+    { question: "Ele ___ chega a horas. (Він ніколи не приходить вчасно.)" },
+
+    // Додаткові змішані вправи
+    // 43. match
+    {
+      question: "Зіставте заперечні слова з їхнім перекладом:",
+      pairs: [
+        { right: "нічого" },
+        { right: "ніхто" },
+        { right: "ніколи" },
+        { right: "жодний" },
+        { right: "ні...ні" }
+      ]
+    },
+    // 44. order
+    { question: "Складіть заперечне речення: «Діти не плачуть багато.»" }
+  ],
 
 };
