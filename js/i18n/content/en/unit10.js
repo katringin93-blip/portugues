@@ -48,6 +48,7 @@ export default {
     },
     {
       table: {
+        equalCols: true,
         headers: ["After noun (literal)", "Before noun (figurative)"],
         rows: [
           ["um homem rico — a rich man", "um rico homem — a great guy"],

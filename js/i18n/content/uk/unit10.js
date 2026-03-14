@@ -48,6 +48,7 @@ export default {
     },
     {
       table: {
+        equalCols: true,
         headers: ["Після іменника (буквально)", "Перед іменником (переносно)"],
         rows: [
           ["um homem rico — багатий чоловік", "um rico homem — чудовий хлопець"],

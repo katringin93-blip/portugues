@@ -1686,6 +1686,7 @@ export const units = [
       },
       {
         table: {
+          equalCols: true,
           headers: ["После сущ. (буквально)", "Перед сущ. (переносно)"],
           rows: [
             ["um homem rico — богатый человек", "um rico homem — отличный парень"],
