@@ -178,8 +178,8 @@ export default {
     { question: "Replace: O teu vestido novo é muito lindo. Vais ___ na tua festa? (usar + o → ?)" },
     // === Ex3: Replacement in everyday actions ===
     { source: "He tidies up the apartment every day. (Replace «the apartment» with a pronoun: o apartamento → o arruma)" },
-    { question: "Ela lava as mãos. → Ela ___" },
-    { question: "Ele lava a roupa. → Ele ___" },
+    { question: "Replace the direct object with a pronoun: Ela lava as mãos. → Ela ___" },
+    { question: "Replace the direct object with a pronoun: Ele lava a roupa. → Ele ___" },
     { question: "Replace: Ela põe a mesa. → Ela ___", explanation: "After the nasal form «põe», the pronoun «a» becomes «na»: põe-na." },
     { question: "Replace: Ela faz a comida. → Ela ___" },
     { question: "Replace: Ele organiza a festa. → Ele ___" },
@@ -210,14 +210,14 @@ export default {
     { question: "«Paula, você conhece o Francisco?» — «Sim, ___ muito bem.» (enclisis — affirmative sentence)" },
     // === Ex5: Wine production text ===
     { question: "Fill in: Colhem as uvas e ___ (uvas → pronoun) para a adega. (transport them)" },
-    { question: "Na adega, não ___ (o vinho) imediatamente. (don't store it right away — proclisis)" },
+    { question: "Complete the text: Na adega, não ___ (o vinho) imediatamente. (don't store it right away — proclisis)" },
     { question: "Put in order: «They produce it with great care.» (Produzem-no com muito cuidado.)" },
-    { question: "As caves são atrações turísticas. Os turistas ___ (as caves, enclisis). (visit them)" },
+    { question: "Complete the text: As caves são atrações turísticas. Os turistas ___ (as caves, enclisis). (visit them)" },
     { source: "They sell it (wine) all over the world." },
-    { question: "Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (proclisis after «não»)" },
+    { question: "Complete the text: Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (proclisis after «não»)" },
     { question: "As barcas são muito bonitas e as companhias agora ___ (as barcas) no rio para efeitos turísticos. (expôr + as → ?)", explanation: "After the nasal form «expôem» (diphthong -em), the pronoun «as» becomes «nas»: expôem-nas." },
-    { question: "As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)" },
-    { question: "Também ___ (o vinho) em barris de madeira. (proclisis after «também»: armazenar)" },
-    { question: "E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)" }
+    { question: "Complete the text: As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)" },
+    { question: "Complete the text: Também ___ (o vinho) em barris de madeira. (proclisis after «também»: armazenar)" },
+    { question: "Complete the text: E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)" }
   ],
 };

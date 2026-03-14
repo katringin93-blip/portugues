@@ -54,62 +54,62 @@ export const exercises = [
   // === Ex2: Впишите правильную форму Pret. Perf. Composto (12 items) ===
   {
     type: "fill",
-    question: "Eu ___ ___ o João frequentemente. (ver — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: Eu ___ ___ o João frequentemente. (ver)",
     answer: ["tenho", "visto"]
   },
   {
     type: "fill",
-    question: "Ela ___ ___ doente ultimamente. (estar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: Ela ___ ___ doente ultimamente. (estar)",
     answer: ["tem", "estado"]
   },
   {
     type: "fill",
-    question: "O Pedro ___ ___ em Lisboa há muitos anos. (viver — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: O Pedro ___ ___ em Lisboa há muitos anos. (viver)",
     answer: ["tem", "vivido"]
   },
   {
     type: "fill",
-    question: "Nós ___ ___ muito dinheiro. (gastar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: Nós ___ ___ muito dinheiro. (gastar)",
     answer: ["temos", "gastado"]
   },
   {
     type: "fill",
-    question: "Eles ___ ___ sobre o assunto. (falar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: Eles ___ ___ sobre o assunto. (falar)",
     answer: ["têm", "falado"]
   },
   {
     type: "fill",
-    question: "A Maria ___ ___ o confronto. (evitar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: A Maria ___ ___ o confronto. (evitar)",
     answer: ["tem", "evitado"]
   },
   {
     type: "fill",
-    question: "O governo ___ ___ para melhorar a situação. (trabalhar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: O governo ___ ___ para melhorar a situação. (trabalhar)",
     answer: ["tem", "trabalhado"]
   },
   {
     type: "fill",
-    question: "A crise ___ ___ muitas famílias. (afetar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: A crise ___ ___ muitas famílias. (afetar)",
     answer: ["tem", "afetado"]
   },
   {
     type: "fill",
-    question: "O tempo ___ ___ bom. (estar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: O tempo ___ ___ bom. (estar)",
     answer: ["tem", "estado"]
   },
   {
     type: "fill",
-    question: "O presidente ___ ___ as suas promessas. (cumprir — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: O presidente ___ ___ as suas promessas. (cumprir)",
     answer: ["tem", "cumprido"]
   },
   {
     type: "fill",
-    question: "Tu ___ ___ as contas a tempo? (pagar — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: Tu ___ ___ as contas a tempo? (pagar)",
     answer: ["tens", "pagado"]
   },
   {
     type: "fill",
-    question: "O que é que o João ___ ___? (fazer — Pret. Perf. Composto)",
+    question: "Впишите правильную форму Pret. Perf. Composto: O que é que o João ___ ___? (fazer)",
     answer: ["tem", "feito"]
   },
 
@@ -202,42 +202,42 @@ export const exercises = [
   // === Ex4: Объедините местоимения с Pret. Perf. Composto (match/fill, 8 items) ===
   {
     type: "fill",
-    question: "Nós prometemos-lha → Nós ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Nós prometemos-lha → Nós ___",
     answer: "temos-lha prometido"
   },
   {
     type: "fill",
-    question: "Ele faz-lhos → Ele ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Ele faz-lhos → Ele ___",
     answer: "tem-lhos feito"
   },
   {
     type: "fill",
-    question: "Ela dá-no-lo → Ela ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Ela dá-no-lo → Ela ___",
     answer: "tem-no-lo dado"
   },
   {
     type: "fill",
-    question: "Tu ofereces-lhos → Tu ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Tu ofereces-lhos → Tu ___",
     answer: "tens-lhos oferecido"
   },
   {
     type: "fill",
-    question: "Eles enviam-no-las → Eles ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Eles enviam-no-las → Eles ___",
     answer: "têm-no-las enviado"
   },
   {
     type: "fill",
-    question: "Eu digo-lho → Eu ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Eu digo-lho → Eu ___",
     answer: "tenho-lho dito"
   },
   {
     type: "fill",
-    question: "Eu ofereço-lhos → Eu ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Eu ofereço-lhos → Eu ___",
     answer: "tenho-lhos oferecido"
   },
   {
     type: "fill",
-    question: "Elas entregam-lhas → Elas ___. (Pret. Perf. Composto с местоимениями)",
+    question: "Перепишите в Pret. Perf. Composto: Elas entregam-lhas → Elas ___",
     answer: "têm-lhas entregado"
   },
 
@@ -318,37 +318,37 @@ export const exercises = [
   // === Ex6: Заполните текст о португальской эмиграции (7 items) ===
   {
     type: "fill",
-    question: "A emigração ___ ___ um tema importante na sociedade portuguesa. (ser — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): A emigração ___ ___ um tema importante na sociedade portuguesa. (ser)",
     answer: ["tem", "sido"]
   },
   {
     type: "fill",
-    question: "Os investigadores ___ ___ novas tendências migratórias. (observar — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): Os investigadores ___ ___ novas tendências migratórias. (observar)",
     answer: ["têm", "observado"]
   },
   {
     type: "fill",
-    question: "O fluxo migratório ___ ___ ___ nos últimos anos. (intensificar-se — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): O fluxo migratório ___ ___ ___ nos últimos anos. (intensificar-se)",
     answer: ["se tem intensificado"]
   },
   {
     type: "fill",
-    question: "Ultimamente ___ ___ ___ um aumento de jovens a emigrar. (ver-se — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): Ultimamente ___ ___ ___ um aumento de jovens a emigrar. (ver-se)",
     answer: ["se tem visto"]
   },
   {
     type: "fill",
-    question: "Muitos portugueses ___ ___ países europeus como destino. (escolher — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): Muitos portugueses ___ ___ países europeus como destino. (escolher)",
     answer: ["têm", "escolhido"]
   },
   {
     type: "fill",
-    question: "Os emigrantes ___ ___ consigo a cultura portuguesa. (levar — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): Os emigrantes ___ ___ consigo a cultura portuguesa. (levar)",
     answer: ["têm", "levado"]
   },
   {
     type: "fill",
-    question: "A diáspora portuguesa ___-___ ___ cada vez mais ativa. (revelar-se — Pret. Perf. Composto)",
+    question: "Заполните текст (Pret. Perf. Composto): A diáspora portuguesa ___-___ ___ cada vez mais ativa. (revelar-se)",
     answer: "tem-se revelado"
   },
 

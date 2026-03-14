@@ -115,78 +115,78 @@ export default {
   exercises: [
     // === Ex1: Choose Pretérito Perfeito or Imperfeito (12 items) ===
     {
-      question: "When he ___ (chegar) home, Maria ___ (estar) sleeping. (Perfeito / Imperfeito)"
+      question: "Choose Perfeito or Imperfeito: Quando ele ___ (chegar) a casa, a Maria ___ (estar) a dormir. (Perfeito / Imperfeito)"
     },
     {
-      question: "They ___ (estar) in the garden when they ___ (ver) the accident. (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Eles ___ (estar) no jardim quando ___ (ver) o acidente. (Imperfeito / Perfeito)"
     },
     {
-      question: "I ___ (caminhar) in the street when I ___ (encontrar) Pedro. (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Eu ___ (caminhar) na rua quando ___ (encontrar) o Pedro. (Imperfeito / Perfeito)"
     },
     {
-      question: "Were you ___ (ter) hungry when you ___ (comprar) the bread? (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Tu ___ (ter) fome quando ___ (comprar) o pão? (Imperfeito / Perfeito)"
     },
     {
-      question: "She ___ (sentir-se) unwell and ___ (ir) to the doctor. (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Ela ___ (sentir-se) mal e ___ (ir) ao médico. (Imperfeito / Perfeito)"
     },
     {
-      question: "The weather ___ (estar) good when we ___ (sair). (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: O tempo ___ (estar) bom quando nós ___ (sair). (Imperfeito / Perfeito)"
     },
     {
-      question: "I ___ (estar) reading when it ___ (começar) to rain. (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Eu ___ (estar) a ler quando ___ (começar) a chover. (Imperfeito / Perfeito)"
     },
     {
-      question: "I ___ (acordar) and the sun ___ (estar) shining. (Perfeito / Imperfeito)"
+      question: "Choose Perfeito or Imperfeito: Eu ___ (acordar) e ___ (estar) sol. (Perfeito / Imperfeito)"
     },
     {
-      question: "The phone ___ (tocar) while I ___ (fazer) dinner. (Perfeito / Imperfeito)"
+      question: "Choose Perfeito or Imperfeito: O telefone ___ (tocar) enquanto eu ___ (fazer) o jantar. (Perfeito / Imperfeito)"
     },
     {
-      question: "The teacher ___ (expulsar) the student because he ___ (pagar) no tuition fees. (Perfeito / Imperfeito)"
+      question: "Choose Perfeito or Imperfeito: O professor ___ (expulsar) o aluno porque ele não ___ (pagar) as propinas. (Perfeito / Imperfeito)"
     },
     {
-      question: "I ___ (estar) at the café when I ___ (ver) Ana. (Imperfeito / Perfeito)"
+      question: "Choose Perfeito or Imperfeito: Eu ___ (estar) no café quando ___ (ver) a Ana. (Imperfeito / Perfeito)"
     },
     {
-      question: "Did you ___ (desligar) the TV? — Yes, it ___ (estar) on. (Perfeito / Imperfeito)"
+      question: "Choose Perfeito or Imperfeito: Tu ___ (desligar) a televisão? — Sim, ___ (estar) ligada. (Perfeito / Imperfeito)"
     },
 
     // === Ex2: Fill in the correct tense (10 items) ===
     {
-      question: "Ela ___ comprar um carro novo. (querer — state/wish in the past)",
+      question: "Write the correct tense: Ela ___ comprar um carro novo. (querer — state/desire in the past)",
       explanation: "A state or wish in the past — Imperfeito: queria."
     },
     {
-      question: "Eles ___ de praia. (gostar — habit/characteristic in the past)",
+      question: "Write the correct tense: Eles ___ de praia. (gostar — habit/characteristic in the past)",
       explanation: "A habit or characteristic — Imperfeito: gostavam."
     },
     {
-      question: "O tempo ___ sempre bom naquela região. (ser — description)",
+      question: "Write the correct tense: O tempo ___ sempre bom naquela região. (ser — description)",
       explanation: "Description of a permanent state in the past — Imperfeito: era."
     },
     {
-      question: "No domingo passado nós ___ ao museu. (ir — completed action)",
+      question: "Write the correct tense: No domingo passado nós ___ ao museu. (ir — completed action)",
       explanation: "Completed action with a specific time marker (no domingo passado) — Perfeito: fomos."
     },
     {
-      question: "A Maria ___ o avô no hospital. (visitar — single past action)"
+      question: "Write the correct tense: A Maria ___ o avô no hospital. (visitar — single action in the past)"
     },
     {
-      question: "Eles ___ a comida para a festa. (fazer — completed action)"
+      question: "Write the correct tense: Eles ___ a comida para a festa. (fazer — completed action)"
     },
     {
-      question: "Tu ___ em casa ontem? (estar — state/setting)",
+      question: "Write the correct tense: Tu ___ em casa ontem? (estar — state/setting)",
       explanation: "Question about setting/state — Imperfeito: estavas."
     },
     {
-      question: "Eles não ___ nada sobre o assunto. (saber — state)",
+      question: "Write the correct tense: Eles não ___ nada sobre o assunto. (saber — state)",
       explanation: "State of not knowing in the past — Imperfeito: sabiam."
     },
     {
-      question: "A aula ___ às nove da manhã. (começar — specific event)"
+      question: "Write the correct tense: A aula ___ às nove da manhã. (começar — specific event)"
     },
     {
-      question: "Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)"
+      question: "Write the correct tense: Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)"
     },
 
     // === Ex3: Put events in the correct order ===
@@ -196,40 +196,40 @@ export default {
 
     // === Ex4: Fill in the travel narrative (12 items) ===
     {
-      question: "No mês passado ___ férias. (ter — Perfeito, 1st sg.)"
+      question: "Complete the narrative: No mês passado ___ férias. (ter — Perfeito, 1st sg.)"
     },
     {
-      question: "Antes das férias ___ muito. (trabalhar — Perfeito, 1st sg.)"
+      question: "Complete the narrative: Antes das férias ___ muito. (trabalhar — Perfeito, 1st sg.)"
     },
     {
-      question: "Eu ___ exausto. (estar — Imperfeito)"
+      question: "Complete the narrative: Eu ___ exausto. (estar — Imperfeito)"
     },
     {
-      question: "Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)"
+      question: "Complete the narrative: Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)"
     },
     {
-      question: "___ as malas e partimos. (fazer — Perfeito, 1st pl.)"
+      question: "Complete the narrative: ___ as malas e partimos. (fazer — Perfeito, 1st pl.)"
     },
     {
-      question: "As praias ___ lindas. (estar — Imperfeito)"
+      question: "Complete the narrative: As praias ___ lindas. (estar — Imperfeito)"
     },
     {
-      question: "Os dias ___ longos e quentes. (ser — Imperfeito)"
+      question: "Complete the narrative: Os dias ___ longos e quentes. (ser — Imperfeito)"
     },
     {
-      question: "___ com muita gente interessante. (conversar — Perfeito, 1st pl.)"
+      question: "Complete the narrative: ___ com muita gente interessante. (conversar — Perfeito, 1st pl.)"
     },
     {
-      question: "Nós ___ a um restaurante típico. (ir — Perfeito)"
+      question: "Complete the narrative: Nós ___ a um restaurante típico. (ir — Perfeito)"
     },
     {
-      question: "___ toda a costa algarvia. (percorrer — Perfeito, 1st pl.)"
+      question: "Complete the narrative: ___ toda a costa algarvia. (percorrer — Perfeito, 1st pl.)"
     },
     {
-      question: "___ de descanso. (precisar — Imperfeito, 1st pl.)"
+      question: "Complete the narrative: ___ de descanso. (precisar — Imperfeito, 1st pl.)"
     },
     {
-      question: "___ um hotel tranquilo. (escolher — Perfeito, 1st pl.)"
+      question: "Complete the narrative: ___ um hotel tranquilo. (escolher — Perfeito, 1st pl.)"
     },
 
     // === Ex5: Translate the questions (5 items) ===
@@ -277,31 +277,31 @@ export default {
 
     // === Ex7: Fill in the historical text (9 items) ===
     {
-      question: "Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)"
+      question: "Complete the historical text: Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)"
     },
     {
-      question: "Eles ___ grande parte do território. (ocupar — Perfeito)"
+      question: "Complete the historical text: Eles ___ grande parte do território. (ocupar — Perfeito)"
     },
     {
-      question: "As cidades ___ centros de cultura e comércio. (ser — Imperfeito)"
+      question: "Complete the historical text: As cidades ___ centros de cultura e comércio. (ser — Imperfeito)"
     },
     {
-      question: "Os mouros ___ na península durante séculos. (permanecer — Perfeito)"
+      question: "Complete the historical text: Os mouros ___ na península durante séculos. (permanecer — Perfeito)"
     },
     {
-      question: "Eles ___ a arquitetura e a língua. (influenciar — Perfeito)"
+      question: "Complete the historical text: Eles ___ a arquitetura e a língua. (influenciar — Perfeito)"
     },
     {
-      question: "A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)"
+      question: "Complete the historical text: A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)"
     },
     {
-      question: "A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)"
+      question: "Complete the historical text: A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)"
     },
     {
-      question: "Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)"
+      question: "Complete the historical text: Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)"
     },
     {
-      question: "As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)"
+      question: "Complete the historical text: As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)"
     },
 
     // === Additional exercises: match, choice, order ===

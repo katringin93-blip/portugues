@@ -183,7 +183,7 @@ export default {
     { question: "Провідміняйте: Tu ___ o quê? (trazer — приносити)" },
     { question: "Провідміняйте: Ela ___ onde fica a estação. (saber — знати)" },
     // Ex2: Перепишіть з іншим займенником (4 items)
-    { source: "Ele conhece Lisboa. → Eu ___" },
+    { question: "Перепишіть з іншим займенником: Ele conhece Lisboa. → Eu ___" },
     { question: "Перепишіть з іншим займенником: Eu sei a resposta. → Nós ___ a resposta." },
     { question: "Перепишіть: Ele vai ao Porto. → Tu ___ ao Porto." },
     { question: "Перепишіть: Nós vemos o mar. → Ela só ___ o mar." },

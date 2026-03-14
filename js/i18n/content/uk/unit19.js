@@ -115,78 +115,78 @@ export default {
   exercises: [
     // === Впр1: Оберіть Pretérito Perfeito або Imperfeito (12 пунктів) ===
     {
-      question: "Коли він ___ (chegar) додому, Марія ___ (estar) спала. (Perfeito / Imperfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Quando ele ___ (chegar) a casa, a Maria ___ (estar) a dormir. (Perfeito / Imperfeito)"
     },
     {
-      question: "Вони ___ (estar) у саду, коли ___ (ver) аварію. (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Eles ___ (estar) no jardim quando ___ (ver) o acidente. (Imperfeito / Perfeito)"
     },
     {
-      question: "Я ___ (caminhar) вулицею, коли ___ (encontrar) Педру. (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Eu ___ (caminhar) na rua quando ___ (encontrar) o Pedro. (Imperfeito / Perfeito)"
     },
     {
-      question: "Ти ___ (ter) голодний, коли ___ (comprar) хліб? (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Tu ___ (ter) fome quando ___ (comprar) o pão? (Imperfeito / Perfeito)"
     },
     {
-      question: "Вона ___ (sentir-se) погано і ___ (ir) до лікаря. (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Ela ___ (sentir-se) mal e ___ (ir) ao médico. (Imperfeito / Perfeito)"
     },
     {
-      question: "Погода ___ (estar) гарна, коли ми ___ (sair). (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: O tempo ___ (estar) bom quando nós ___ (sair). (Imperfeito / Perfeito)"
     },
     {
-      question: "Я ___ (estar) читав, коли ___ (começar) іти дощ. (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Eu ___ (estar) a ler quando ___ (começar) a chover. (Imperfeito / Perfeito)"
     },
     {
-      question: "Я ___ (acordar), і ___ (estar) сонячно. (Perfeito / Imperfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Eu ___ (acordar) e ___ (estar) sol. (Perfeito / Imperfeito)"
     },
     {
-      question: "Телефон ___ (tocar), поки я ___ (fazer) вечерю. (Perfeito / Imperfeito)"
+      question: "Оберіть Perfeito або Imperfeito: O telefone ___ (tocar) enquanto eu ___ (fazer) o jantar. (Perfeito / Imperfeito)"
     },
     {
-      question: "Викладач ___ (expulsar) студента, бо той не ___ (pagar) за навчання. (Perfeito / Imperfeito)"
+      question: "Оберіть Perfeito або Imperfeito: O professor ___ (expulsar) o aluno porque ele não ___ (pagar) as propinas. (Perfeito / Imperfeito)"
     },
     {
-      question: "Я ___ (estar) у кафе, коли ___ (ver) Ану. (Imperfeito / Perfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Eu ___ (estar) no café quando ___ (ver) a Ana. (Imperfeito / Perfeito)"
     },
     {
-      question: "Ти ___ (desligar) телевізор? — Так, він ___ (estar) увімкнений. (Perfeito / Imperfeito)"
+      question: "Оберіть Perfeito або Imperfeito: Tu ___ (desligar) a televisão? — Sim, ___ (estar) ligada. (Perfeito / Imperfeito)"
     },
 
     // === Впр2: Вставте правильний час (10 пунктів) ===
     {
-      question: "Ela ___ comprar um carro novo. (querer — стан/бажання в минулому)",
+      question: "Впишіть правильний час: Ela ___ comprar um carro novo. (querer — стан/бажання в минулому)",
       explanation: "Стан або бажання в минулому — Imperfeito: queria."
     },
     {
-      question: "Eles ___ de praia. (gostar — звичка/характеристика в минулому)",
+      question: "Впишіть правильний час: Eles ___ de praia. (gostar — звичка/характеристика в минулому)",
       explanation: "Звичка або характеристика — Imperfeito: gostavam."
     },
     {
-      question: "O tempo ___ sempre bom naquela região. (ser — опис)",
+      question: "Впишіть правильний час: O tempo ___ sempre bom naquela região. (ser — опис)",
       explanation: "Опис постійного стану в минулому — Imperfeito: era."
     },
     {
-      question: "No domingo passado nós ___ ao museu. (ir — завершена дія)",
+      question: "Впишіть правильний час: No domingo passado nós ___ ao museu. (ir — завершена дія)",
       explanation: "Завершена дія з конкретним маркером часу (no domingo passado) — Perfeito: fomos."
     },
     {
-      question: "A Maria ___ o avô no hospital. (visitar — одноразова дія в минулому)"
+      question: "Впишіть правильний час: A Maria ___ o avô no hospital. (visitar — одноразова дія в минулому)"
     },
     {
-      question: "Eles ___ a comida para a festa. (fazer — завершена дія)"
+      question: "Впишіть правильний час: Eles ___ a comida para a festa. (fazer — завершена дія)"
     },
     {
-      question: "Tu ___ em casa ontem? (estar — стан/обстановка)",
+      question: "Впишіть правильний час: Tu ___ em casa ontem? (estar — стан/обстановка)",
       explanation: "Питання про обстановку/стан — Imperfeito: estavas."
     },
     {
-      question: "Eles não ___ nada sobre o assunto. (saber — стан)",
+      question: "Впишіть правильний час: Eles não ___ nada sobre o assunto. (saber — стан)",
       explanation: "Стан незнання в минулому — Imperfeito: sabiam."
     },
     {
-      question: "A aula ___ às nove da manhã. (começar — конкретна подія)"
+      question: "Впишіть правильний час: A aula ___ às nove da manhã. (começar — конкретна подія)"
     },
     {
-      question: "Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)"
+      question: "Впишіть правильний час: Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)"
     },
 
     // === Впр3: Розставте події у правильному порядку ===
@@ -196,40 +196,40 @@ export default {
 
     // === Впр4: Заповніть розповідь про подорож (12 пунктів) ===
     {
-      question: "No mês passado ___ férias. (ter — Perfeito, 1 ос. од.)"
+      question: "Заповніть наратив: No mês passado ___ férias. (ter — Perfeito, 1 ос. од.)"
     },
     {
-      question: "Antes das férias ___ muito. (trabalhar — Perfeito, 1 ос. од.)"
+      question: "Заповніть наратив: Antes das férias ___ muito. (trabalhar — Perfeito, 1 ос. од.)"
     },
     {
-      question: "Eu ___ exausto. (estar — Imperfeito)"
+      question: "Заповніть наратив: Eu ___ exausto. (estar — Imperfeito)"
     },
     {
-      question: "Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)"
+      question: "Заповніть наратив: Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)"
     },
     {
-      question: "___ as malas e partimos. (fazer — Perfeito, 1 ос. мн.)"
+      question: "Заповніть наратив: ___ as malas e partimos. (fazer — Perfeito, 1 ос. мн.)"
     },
     {
-      question: "As praias ___ lindas. (estar — Imperfeito)"
+      question: "Заповніть наратив: As praias ___ lindas. (estar — Imperfeito)"
     },
     {
-      question: "Os dias ___ longos e quentes. (ser — Imperfeito)"
+      question: "Заповніть наратив: Os dias ___ longos e quentes. (ser — Imperfeito)"
     },
     {
-      question: "___ com muita gente interessante. (conversar — Perfeito, 1 ос. мн.)"
+      question: "Заповніть наратив: ___ com muita gente interessante. (conversar — Perfeito, 1 ос. мн.)"
     },
     {
-      question: "Nós ___ a um restaurante típico. (ir — Perfeito)"
+      question: "Заповніть наратив: Nós ___ a um restaurante típico. (ir — Perfeito)"
     },
     {
-      question: "___ toda a costa algarvia. (percorrer — Perfeito, 1 ос. мн.)"
+      question: "Заповніть наратив: ___ toda a costa algarvia. (percorrer — Perfeito, 1 ос. мн.)"
     },
     {
-      question: "___ de descanso. (precisar — Imperfeito, 1 ос. мн.)"
+      question: "Заповніть наратив: ___ de descanso. (precisar — Imperfeito, 1 ос. мн.)"
     },
     {
-      question: "___ um hotel tranquilo. (escolher — Perfeito, 1 ос. мн.)"
+      question: "Заповніть наратив: ___ um hotel tranquilo. (escolher — Perfeito, 1 ос. мн.)"
     },
 
     // === Впр5: Перекладіть запитання (5 пунктів) ===
@@ -277,31 +277,31 @@ export default {
 
     // === Впр7: Заповніть історичний текст (9 пунктів) ===
     {
-      question: "Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)"
+      question: "Заповніть історичний текст: Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)"
     },
     {
-      question: "Eles ___ grande parte do território. (ocupar — Perfeito)"
+      question: "Заповніть історичний текст: Eles ___ grande parte do território. (ocupar — Perfeito)"
     },
     {
-      question: "As cidades ___ centros de cultura e comércio. (ser — Imperfeito)"
+      question: "Заповніть історичний текст: As cidades ___ centros de cultura e comércio. (ser — Imperfeito)"
     },
     {
-      question: "Os mouros ___ na península durante séculos. (permanecer — Perfeito)"
+      question: "Заповніть історичний текст: Os mouros ___ na península durante séculos. (permanecer — Perfeito)"
     },
     {
-      question: "Eles ___ a arquitetura e a língua. (influenciar — Perfeito)"
+      question: "Заповніть історичний текст: Eles ___ a arquitetura e a língua. (influenciar — Perfeito)"
     },
     {
-      question: "A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)"
+      question: "Заповніть історичний текст: A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)"
     },
     {
-      question: "A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)"
+      question: "Заповніть історичний текст: A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)"
     },
     {
-      question: "Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)"
+      question: "Заповніть історичний текст: Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)"
     },
     {
-      question: "As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)"
+      question: "Заповніть історичний текст: As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)"
     },
 
     // === Додаткові вправи: match, choice, order ===

@@ -2,119 +2,119 @@ export const exercises = [
   // === Ex1: Спрягайте в Pretérito Perfeito Simples (13 items) ===
   {
     type: "fill",
-    question: "O professor ___ a lição. (ensinar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O professor ___ a lição. (ensinar)",
     answer: "ensinou"
   },
   {
     type: "fill",
-    question: "Tu ___ de casa cedo? (sair — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Tu ___ de casa cedo? (sair)",
     answer: "saíste"
   },
   {
     type: "fill",
-    question: "Nós ___ ao cinema ontem. (ir — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Nós ___ ao cinema ontem. (ir)",
     answer: "fomos"
   },
   {
     type: "fill",
-    question: "Ela ___ um vestido novo. (comprar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Ela ___ um vestido novo. (comprar)",
     answer: "comprou"
   },
   {
     type: "fill",
-    question: "Eles ___ o projeto a tempo. (terminar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Eles ___ o projeto a tempo. (terminar)",
     answer: "terminaram"
   },
   {
     type: "fill",
-    question: "O João ___ em Lisboa durante dois anos. (estar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O João ___ em Lisboa durante dois anos. (estar)",
     answer: "esteve"
   },
   {
     type: "fill",
-    question: "Eu ___ um café ao empregado. (pedir — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Eu ___ um café ao empregado. (pedir)",
     answer: "pedi"
   },
   {
     type: "fill",
-    question: "A mãe ___ o filho. (chamar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: A mãe ___ o filho. (chamar)",
     answer: "chamou"
   },
   {
     type: "fill",
-    question: "O concerto ___ fantástico. (ser — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O concerto ___ fantástico. (ser)",
     answer: "foi"
   },
   {
     type: "fill",
-    question: "Eu ___ cedo. (levantar-se — Pretérito Perfeito, 1 л. ед.ч.)",
+    question: "Проспрягайте в Pretérito Perfeito: Eu ___ cedo. (levantar-se, 1 л. ед.ч.)",
     answer: "levantei-me"
   },
   {
     type: "fill",
-    question: "O meu pai ___ muito ontem. (trabalhar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O meu pai ___ muito ontem. (trabalhar)",
     answer: "trabalhou"
   },
   {
     type: "fill",
-    question: "A Maria ___ para o estrangeiro. (viajar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: A Maria ___ para o estrangeiro. (viajar)",
     answer: "viajou"
   },
   {
     type: "fill",
-    question: "Ele ___ que não podia vir. (dizer — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Ele ___ que não podia vir. (dizer)",
     answer: "disse"
   },
 
   // === Ex2: Заполните Pretérito Perfeito (10 items) ===
   {
     type: "fill",
-    question: "Eu ___ com o diretor ontem. (falar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Eu ___ com o diretor ontem. (falar)",
     answer: "falei"
   },
   {
     type: "fill",
-    question: "Eu ___ um filme interessante. (ver — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Eu ___ um filme interessante. (ver)",
     answer: "vi"
   },
   {
     type: "fill",
-    question: "Tu ___ à festa? (ir — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Tu ___ à festa? (ir)",
     answer: "foste"
   },
   {
     type: "fill",
-    question: "O comboio ___ atrasado. (chegar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O comboio ___ atrasado. (chegar)",
     answer: "chegou"
   },
   {
     type: "fill",
-    question: "Eles ___ de casa muito cedo. (sair — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Eles ___ de casa muito cedo. (sair)",
     answer: "saíram"
   },
   {
     type: "fill",
-    question: "Vocês ___ o novo professor? (conhecer — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Vocês ___ o novo professor? (conhecer)",
     answer: "conheceram"
   },
   {
     type: "fill",
-    question: "Ela ___ o livro todo. (ler — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: Ela ___ o livro todo. (ler)",
     answer: "leu"
   },
   {
     type: "fill",
-    question: "O avião ___ às dez. (partir — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O avião ___ às dez. (partir)",
     answer: "partiu"
   },
   {
     type: "fill",
-    question: "O jornalista ___ a notícia. (relatar — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O jornalista ___ a notícia. (relatar)",
     answer: "relatou"
   },
   {
     type: "fill",
-    question: "O que é que ele ___? (fazer — Pretérito Perfeito)",
+    question: "Проспрягайте в Pretérito Perfeito: O que é que ele ___? (fazer)",
     answer: "fez"
   },
 
@@ -128,106 +128,106 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Os meus amigos ___ muito da viagem. (gostar — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Os meus amigos ___ muito da viagem. (gostar)",
     answer: "gostaram"
   },
   {
     type: "fill",
-    question: "Eu ___ ao Algarve de carro. (chegar — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Eu ___ ao Algarve de carro. (chegar)",
     answer: "cheguei"
   },
   {
     type: "fill",
-    question: "Primeiro ___ à praia. (ir — Pretérito Perfeito, 1 л. ед.ч.)",
+    question: "Заполните нарратив (Pretérito Perfeito): Primeiro ___ à praia. (ir, 1 л. ед.ч.)",
     answer: "fui"
   },
   {
     type: "fill",
-    question: "Lá ___ muitas pessoas simpáticas. (conhecer — Pretérito Perfeito, 1 л. ед.ч.)",
+    question: "Заполните нарратив (Pretérito Perfeito): Lá ___ muitas pessoas simpáticas. (conhecer, 1 л. ед.ч.)",
     answer: "conheci"
   },
   {
     type: "fill",
-    question: "Nós ___ a um restaurante típico. (ir — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Nós ___ a um restaurante típico. (ir)",
     answer: "fomos"
   },
   {
     type: "fill",
-    question: "Eu ___ paisagens lindas. (ver — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Eu ___ paisagens lindas. (ver)",
     answer: "vi"
   },
   {
     type: "fill",
-    question: "Eu ___ lá uma semana. (estar — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Eu ___ lá uma semana. (estar)",
     answer: "estive"
   },
   {
     type: "fill",
-    question: "Eu ___ momentos inesquecíveis. (passar — Pretérito Perfeito)",
+    question: "Заполните нарратив (Pretérito Perfeito): Eu ___ momentos inesquecíveis. (passar)",
     answer: "passei"
   },
   {
     type: "fill",
-    question: "Não ___ muito pelo hotel. (pagar — Pretérito Perfeito, 1 л. ед.ч.)",
+    question: "Заполните нарратив (Pretérito Perfeito): Não ___ muito pelo hotel. (pagar, 1 л. ед.ч.)",
     answer: "paguei"
   },
 
   // === Ex4: Заполните текст (11 items) ===
   {
     type: "choice",
-    question: "A festa de aniversário ___ no sábado. (ser — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): A festa de aniversário ___ no sábado. (ser)",
     options: ["foi", "era", "é", "será"],
     correct: 0,
     explanation: "Конкретное событие в прошлом — Pretérito Perfeito: foi."
   },
   {
     type: "fill",
-    question: "A Maria ___ na festa até à meia-noite. (estar — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): A Maria ___ na festa até à meia-noite. (estar)",
     answer: "esteve"
   },
   {
     type: "fill",
-    question: "Ela ___ muita sorte com o presente. (ter — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): Ela ___ muita sorte com o presente. (ter)",
     answer: "teve"
   },
   {
     type: "fill",
-    question: "A festa ___ muito divertida. (ser — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): A festa ___ muito divertida. (ser)",
     answer: "foi"
   },
   {
     type: "fill",
-    question: "O DJ ___ muito sucesso. (ter — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): O DJ ___ muito sucesso. (ter)",
     answer: "teve"
   },
   {
     type: "fill",
-    question: "Todos os convidados ___ satisfeitos. (ficar — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): Todos os convidados ___ satisfeitos. (ficar)",
     answer: "ficaram"
   },
   {
     type: "fill",
-    question: "A festa ___ até às três da manhã. (durar — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): A festa ___ até às três da manhã. (durar)",
     answer: "durou"
   },
   {
     type: "fill",
-    question: "Os amigos ___ o João para dançar. (convidar — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): Os amigos ___ o João para dançar. (convidar)",
     answer: "convidaram"
   },
   {
     type: "fill",
-    question: "Ela ___ muito da música. (gostar — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): Ela ___ muito da música. (gostar)",
     answer: "gostou"
   },
   {
     type: "fill",
-    question: "Lá ___ muitas pessoas novas. (conhecer — Pretérito Perfeito, 3 л. ед.ч.)",
+    question: "Заполните текст (Pretérito Perfeito): Lá ___ muitas pessoas novas. (conhecer, 3 л. ед.ч.)",
     answer: "conheceu"
   },
   {
     type: "fill",
-    question: "A Maria ___ muitos amigos na festa. (fazer — Pretérito Perfeito)",
+    question: "Заполните текст (Pretérito Perfeito): A Maria ___ muitos amigos na festa. (fazer)",
     answer: "fez"
   },
 
@@ -308,57 +308,57 @@ export const exercises = [
   // === Ex6: Заполните исторический текст (11 items) ===
   {
     type: "fill",
-    question: "A Revolução dos Cravos ___ a 25 de abril de 1974. (acontecer — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): A Revolução dos Cravos ___ a 25 de abril de 1974. (acontecer)",
     answer: "aconteceu"
   },
   {
     type: "fill",
-    question: "Portugal ___ um país democrático. (tornar-se — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): Portugal ___ um país democrático. (tornar-se)",
     answer: "tornou-se"
   },
   {
     type: "fill",
-    question: "Esse dia ___ o fim da ditadura. (assinalar — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): Esse dia ___ o fim da ditadura. (assinalar)",
     answer: "assinalou"
   },
   {
     type: "fill",
-    question: "A revolução ___ o início de uma nova era. (significar — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): A revolução ___ o início de uma nova era. (significar)",
     answer: "significou"
   },
   {
     type: "fill",
-    question: "A mudança ___. (dar-se — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): A mudança ___. (dar-se)",
     answer: "deu-se"
   },
   {
     type: "fill",
-    question: "Os militares ___ os protagonistas. (ser — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): Os militares ___ os protagonistas. (ser)",
     answer: "foram"
   },
   {
     type: "fill",
-    question: "Eles ___ a revolta. (instigar — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): Eles ___ a revolta. (instigar)",
     answer: "instigaram"
   },
   {
     type: "fill",
-    question: "A rádio ___ a senha. (transmitir — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): A rádio ___ a senha. (transmitir)",
     answer: "transmitiu"
   },
   {
     type: "fill",
-    question: "A revolução ___ pacífica. (ser — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): A revolução ___ pacífica. (ser)",
     answer: "foi"
   },
   {
     type: "fill",
-    question: "Muitas pessoas ___ para a rua. (vir — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): Muitas pessoas ___ para a rua. (vir)",
     answer: "vieram"
   },
   {
     type: "fill",
-    question: "O 25 de abril ___ na memória coletiva. (ficar — Pret. Perfeito)",
+    question: "Заполните исторический текст (Pretérito Perfeito): O 25 de abril ___ na memória coletiva. (ficar)",
     answer: "ficou"
   },
 

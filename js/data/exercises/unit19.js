@@ -2,126 +2,126 @@ export const exercises = [
   // === Ex1: Выберите Pretérito Perfeito или Imperfeito (12 items) ===
   {
     type: "fill",
-    question: "Quando ele ___ (chegar) a casa, a Maria ___ (estar) a dormir. (Perfeito / Imperfeito)",
+    question: "Выберите Perfeito или Imperfeito: Quando ele ___ (chegar) a casa, a Maria ___ (estar) a dormir. (Perfeito / Imperfeito)",
     answer: ["chegou", "estava"]
   },
   {
     type: "fill",
-    question: "Eles ___ (estar) no jardim quando ___ (ver) o acidente. (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Eles ___ (estar) no jardim quando ___ (ver) o acidente. (Imperfeito / Perfeito)",
     answer: ["estavam", "viram"]
   },
   {
     type: "fill",
-    question: "Eu ___ (caminhar) na rua quando ___ (encontrar) o Pedro. (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Eu ___ (caminhar) na rua quando ___ (encontrar) o Pedro. (Imperfeito / Perfeito)",
     answer: ["caminhava", "encontrei"]
   },
   {
     type: "fill",
-    question: "Tu ___ (ter) fome quando ___ (comprar) o pão? (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Tu ___ (ter) fome quando ___ (comprar) o pão? (Imperfeito / Perfeito)",
     answer: ["tinhas", "compraste"]
   },
   {
     type: "fill",
-    question: "Ela ___ (sentir-se) mal e ___ (ir) ao médico. (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Ela ___ (sentir-se) mal e ___ (ir) ao médico. (Imperfeito / Perfeito)",
     answer: ["sentia", "foi"]
   },
   {
     type: "fill",
-    question: "O tempo ___ (estar) bom quando nós ___ (sair). (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: O tempo ___ (estar) bom quando nós ___ (sair). (Imperfeito / Perfeito)",
     answer: ["estava", "saímos"]
   },
   {
     type: "fill",
-    question: "Eu ___ (estar) a ler quando ___ (começar) a chover. (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Eu ___ (estar) a ler quando ___ (começar) a chover. (Imperfeito / Perfeito)",
     answer: ["estava", "começou"]
   },
   {
     type: "fill",
-    question: "Eu ___ (acordar) e ___ (estar) sol. (Perfeito / Imperfeito)",
+    question: "Выберите Perfeito или Imperfeito: Eu ___ (acordar) e ___ (estar) sol. (Perfeito / Imperfeito)",
     answer: ["acordei", "estava"]
   },
   {
     type: "fill",
-    question: "O telefone ___ (tocar) enquanto eu ___ (fazer) o jantar. (Perfeito / Imperfeito)",
+    question: "Выберите Perfeito или Imperfeito: O telefone ___ (tocar) enquanto eu ___ (fazer) o jantar. (Perfeito / Imperfeito)",
     answer: ["tocou", "fazia"]
   },
   {
     type: "fill",
-    question: "O professor ___ (expulsar) o aluno porque ele não ___ (pagar) as propinas. (Perfeito / Imperfeito)",
+    question: "Выберите Perfeito или Imperfeito: O professor ___ (expulsar) o aluno porque ele não ___ (pagar) as propinas. (Perfeito / Imperfeito)",
     answer: ["expulsou", "pagava"]
   },
   {
     type: "fill",
-    question: "Eu ___ (estar) no café quando ___ (ver) a Ana. (Imperfeito / Perfeito)",
+    question: "Выберите Perfeito или Imperfeito: Eu ___ (estar) no café quando ___ (ver) a Ana. (Imperfeito / Perfeito)",
     answer: ["estava", "vi"]
   },
   {
     type: "fill",
-    question: "Tu ___ (desligar) a televisão? — Sim, ___ (estar) ligada. (Perfeito / Imperfeito)",
+    question: "Выберите Perfeito или Imperfeito: Tu ___ (desligar) a televisão? — Sim, ___ (estar) ligada. (Perfeito / Imperfeito)",
     answer: ["desligaste", "estava"]
   },
 
   // === Ex2: Впишите правильное время (10 items) ===
   {
     type: "choice",
-    question: "Ela ___ comprar um carro novo. (querer — состояние/желание в прошлом)",
+    question: "Впишите правильное время: Ela ___ comprar um carro novo. (querer — состояние/желание в прошлом)",
     options: ["quis", "queria", "quer", "quererá"],
     correct: 1,
     explanation: "Состояние или желание в прошлом — Imperfeito: queria."
   },
   {
     type: "choice",
-    question: "Eles ___ de praia. (gostar — привычка/характеристика в прошлом)",
+    question: "Впишите правильное время: Eles ___ de praia. (gostar — привычка/характеристика в прошлом)",
     options: ["gostaram", "gostavam", "gostam", "gostarão"],
     correct: 1,
     explanation: "Привычка или характеристика — Imperfeito: gostavam."
   },
   {
     type: "choice",
-    question: "O tempo ___ sempre bom naquela região. (ser — описание)",
+    question: "Впишите правильное время: O tempo ___ sempre bom naquela região. (ser — описание)",
     options: ["foi", "era", "é", "será"],
     correct: 1,
     explanation: "Описание постоянного состояния в прошлом — Imperfeito: era."
   },
   {
     type: "choice",
-    question: "No domingo passado nós ___ ao museu. (ir — завершённое действие)",
+    question: "Впишите правильное время: No domingo passado nós ___ ao museu. (ir — завершённое действие)",
     options: ["íamos", "fomos", "imos", "vamos"],
     correct: 1,
     explanation: "Завершённое действие с конкретным маркером (no domingo passado) — Perfeito: fomos."
   },
   {
     type: "fill",
-    question: "A Maria ___ o avô no hospital. (visitar — однократное действие в прошлом)",
+    question: "Впишите правильное время: A Maria ___ o avô no hospital. (visitar — однократное действие в прошлом)",
     answer: "visitou"
   },
   {
     type: "fill",
-    question: "Eles ___ a comida para a festa. (fazer — завершённое действие)",
+    question: "Впишите правильное время: Eles ___ a comida para a festa. (fazer — завершённое действие)",
     answer: "fizeram"
   },
   {
     type: "choice",
-    question: "Tu ___ em casa ontem? (estar — состояние/обстановка)",
+    question: "Впишите правильное время: Tu ___ em casa ontem? (estar — состояние/обстановка)",
     options: ["estiveste", "estavas", "estás", "estarás"],
     correct: 1,
     explanation: "Вопрос об обстановке/состоянии — Imperfeito: estavas."
   },
   {
     type: "choice",
-    question: "Eles não ___ nada sobre o assunto. (saber — состояние)",
+    question: "Впишите правильное время: Eles não ___ nada sobre o assunto. (saber — состояние)",
     options: ["souberam", "sabiam", "sabem", "saberão"],
     correct: 1,
     explanation: "Состояние незнания в прошлом — Imperfeito: sabiam."
   },
   {
     type: "fill",
-    question: "A aula ___ às nove da manhã. (começar — конкретное событие)",
+    question: "Впишите правильное время: A aula ___ às nove da manhã. (começar — конкретное событие)",
     answer: "começou"
   },
   {
     type: "fill",
-    question: "Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)",
+    question: "Впишите правильное время: Ele ___ um bolo, mas ___ muito cheio. (comer / estar — Perfeito + Imperfeito)",
     answer: ["comeu", "estava"]
   },
 
@@ -136,62 +136,62 @@ export const exercises = [
   // === Ex4: Заполните нарратив о поездке (12 items) ===
   {
     type: "fill",
-    question: "No mês passado ___ férias. (ter — Perfeito, 1 л. ед.ч.)",
+    question: "Заполните нарратив: No mês passado ___ férias. (ter — Perfeito, 1 л. ед.ч.)",
     answer: "tive"
   },
   {
     type: "fill",
-    question: "Antes das férias ___ muito. (trabalhar — Perfeito, 1 л. ед.ч.)",
+    question: "Заполните нарратив: Antes das férias ___ muito. (trabalhar — Perfeito, 1 л. ед.ч.)",
     answer: "trabalhei"
   },
   {
     type: "fill",
-    question: "Eu ___ exausto. (estar — Imperfeito)",
+    question: "Заполните нарратив: Eu ___ exausto. (estar — Imperfeito)",
     answer: "estava"
   },
   {
     type: "fill",
-    question: "Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)",
+    question: "Заполните нарратив: Eu e a minha mulher ___ ir ao Algarve. (decidir — Perfeito)",
     answer: "decidimos"
   },
   {
     type: "fill",
-    question: "___ as malas e partimos. (fazer — Perfeito, 1 л. мн.ч.)",
+    question: "Заполните нарратив: ___ as malas e partimos. (fazer — Perfeito, 1 л. мн.ч.)",
     answer: "Fizemos"
   },
   {
     type: "fill",
-    question: "As praias ___ lindas. (estar — Imperfeito)",
+    question: "Заполните нарратив: As praias ___ lindas. (estar — Imperfeito)",
     answer: "estavam"
   },
   {
     type: "fill",
-    question: "Os dias ___ longos e quentes. (ser — Imperfeito)",
+    question: "Заполните нарратив: Os dias ___ longos e quentes. (ser — Imperfeito)",
     answer: "eram"
   },
   {
     type: "fill",
-    question: "___ com muita gente interessante. (conversar — Perfeito, 1 л. мн.ч.)",
+    question: "Заполните нарратив: ___ com muita gente interessante. (conversar — Perfeito, 1 л. мн.ч.)",
     answer: "Conversámos"
   },
   {
     type: "fill",
-    question: "Nós ___ a um restaurante típico. (ir — Perfeito)",
+    question: "Заполните нарратив: Nós ___ a um restaurante típico. (ir — Perfeito)",
     answer: "fomos"
   },
   {
     type: "fill",
-    question: "___ toda a costa algarvia. (percorrer — Perfeito, 1 л. мн.ч.)",
+    question: "Заполните нарратив: ___ toda a costa algarvia. (percorrer — Perfeito, 1 л. мн.ч.)",
     answer: "Percorremos"
   },
   {
     type: "fill",
-    question: "___ de descanso. (precisar — Imperfeito, 1 л. мн.ч.)",
+    question: "Заполните нарратив: ___ de descanso. (precisar — Imperfeito, 1 л. мн.ч.)",
     answer: "Precisávamos"
   },
   {
     type: "fill",
-    question: "___ um hotel tranquilo. (escolher — Perfeito, 1 л. мн.ч.)",
+    question: "Заполните нарратив: ___ um hotel tranquilo. (escolher — Perfeito, 1 л. мн.ч.)",
     answer: "Escolhemos"
   },
 
@@ -280,47 +280,47 @@ export const exercises = [
   // === Ex7: Заполните исторический текст (9 items) ===
   {
     type: "fill",
-    question: "Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)",
+    question: "Заполните исторический текст: Os mouros ___ uma presença significativa na Península Ibérica. (ter — Perfeito)",
     answer: "tiveram"
   },
   {
     type: "fill",
-    question: "Eles ___ grande parte do território. (ocupar — Perfeito)",
+    question: "Заполните исторический текст: Eles ___ grande parte do território. (ocupar — Perfeito)",
     answer: "ocuparam"
   },
   {
     type: "fill",
-    question: "As cidades ___ centros de cultura e comércio. (ser — Imperfeito)",
+    question: "Заполните исторический текст: As cidades ___ centros de cultura e comércio. (ser — Imperfeito)",
     answer: "eram"
   },
   {
     type: "fill",
-    question: "Os mouros ___ na península durante séculos. (permanecer — Perfeito)",
+    question: "Заполните исторический текст: Os mouros ___ na península durante séculos. (permanecer — Perfeito)",
     answer: "permaneceram"
   },
   {
     type: "fill",
-    question: "Eles ___ a arquitetura e a língua. (influenciar — Perfeito)",
+    question: "Заполните исторический текст: Eles ___ a arquitetura e a língua. (influenciar — Perfeito)",
     answer: "influenciaram"
   },
   {
     type: "fill",
-    question: "A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)",
+    question: "Заполните исторический текст: A arqueologia ___ muitas provas dessa presença. (revelar — Perfeito)",
     answer: "revelou"
   },
   {
     type: "fill",
-    question: "A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)",
+    question: "Заполните исторический текст: A cultura árabe ___ para a ciência europeia. (contribuir — Perfeito)",
     answer: "contribuiu"
   },
   {
     type: "fill",
-    question: "Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)",
+    question: "Заполните исторический текст: Os mouros ___ novas técnicas agrícolas. (introduzir — Perfeito)",
     answer: "introduziram"
   },
   {
     type: "fill",
-    question: "As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)",
+    question: "Заполните исторический текст: As tradições islâmicas e cristãs ___ nesta região. (contrastar — Imperfeito)",
     answer: "contrastavam"
   },
 

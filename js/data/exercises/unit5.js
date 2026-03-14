@@ -69,10 +69,9 @@ export const exercises = [
 
   // === Ex2: Rewrite with different pronoun (selected items) ===
   {
-    type: "translate",
-    source: "Ele conhece Lisboa. → Eu ___",
-    direction: "pt-ru",
-    answer: ["Eu conheço Lisboa."]
+    type: "fill",
+    question: "Перепишите с другим местоимением: Ele conhece Lisboa. → Eu ___",
+    answer: "conheço"
   },
   {
     type: "fill",

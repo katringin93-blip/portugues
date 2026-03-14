@@ -54,62 +54,62 @@ export const exercises = [
   // === Ex2: Заполните Imperfeito (12 items) ===
   {
     type: "fill",
-    question: "O professor ___ muito bem. (ensinar — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: O professor ___ muito bem. (ensinar)",
     answer: "ensinava"
   },
   {
     type: "fill",
-    question: "Tu ___ ao cinema todos os sábados. (ir — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Tu ___ ao cinema todos os sábados. (ir)",
     answer: "ias"
   },
   {
     type: "fill",
-    question: "Eu não ___ a resposta. (saber — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Eu não ___ a resposta. (saber)",
     answer: "sabia"
   },
   {
     type: "fill",
-    question: "Ele ___ toda a gente na cidade. (conhecer — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Ele ___ toda a gente na cidade. (conhecer)",
     answer: "conhecia"
   },
   {
     type: "fill",
-    question: "Ela ___ sempre cansada. (estar — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Ela ___ sempre cansada. (estar)",
     answer: "estava"
   },
   {
     type: "fill",
-    question: "O João ___ muito inteligente. (ser — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: O João ___ muito inteligente. (ser)",
     answer: "era"
   },
   {
     type: "fill",
-    question: "Ninguém ___ o que fazer. (saber — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Ninguém ___ o que fazer. (saber)",
     answer: "sabia"
   },
   {
     type: "fill",
-    question: "Ela ___ mudar de emprego. (querer — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Ela ___ mudar de emprego. (querer)",
     answer: "queria"
   },
   {
     type: "fill",
-    question: "Os dias ___ mais curtos no inverno. (ser — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Os dias ___ mais curtos no inverno. (ser)",
     answer: "eram"
   },
   {
     type: "fill",
-    question: "O bebé ___ muito durante o dia. (dormir — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: O bebé ___ muito durante o dia. (dormir)",
     answer: "dormia"
   },
   {
     type: "fill",
-    question: "O meu avô ___ na fábrica. (trabalhar — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: O meu avô ___ na fábrica. (trabalhar)",
     answer: "trabalhava"
   },
   {
     type: "fill",
-    question: "Eu ___ muito de chocolate. (gostar — Imperfeito)",
+    question: "Проспрягайте в Imperfeito: Eu ___ muito de chocolate. (gostar)",
     answer: "gostava"
   },
 
@@ -166,74 +166,74 @@ export const exercises = [
   // === Ex4: Заполните диалог (14 items) ===
   {
     type: "choice",
-    question: "— Como é que tu ___ no antigo trabalho? (estar — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Como é que tu ___ no antigo trabalho? (estar)",
     options: ["estava", "estive", "estou", "estavas"],
     correct: 3,
     explanation: "С «tu» в Imperfeito: estavas. Но в данном контексте допускается «estava» (разговорная форма)."
   },
   {
     type: "fill",
-    question: "— O trabalho ___ muito. (cansar — Imperfeito, 3 л. ед.ч.)",
+    question: "Заполните диалог (Imperfeito): — O trabalho ___ muito. (cansar)",
     answer: "cansava"
   },
   {
     type: "fill",
-    question: "— O que os colegas ___ durante o almoço? (fazer — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — O que os colegas ___ durante o almoço? (fazer)",
     answer: "faziam"
   },
   {
     type: "fill",
-    question: "— Eu não ___ muito tempo livre. (ter — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Eu não ___ muito tempo livre. (ter)",
     answer: "tinha"
   },
   {
     type: "fill",
-    question: "— Tu ___ mudar de emprego? (querer — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Tu ___ mudar de emprego? (querer)",
     answer: "querias"
   },
   {
     type: "fill",
-    question: "— Eu ___ do ambiente de trabalho. (gostar — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Eu ___ do ambiente de trabalho. (gostar)",
     answer: "gostava"
   },
   {
     type: "fill",
-    question: "— Tu ___ a pé para o escritório? (ir — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Tu ___ a pé para o escritório? (ir)",
     answer: "ias"
   },
   {
     type: "fill",
-    question: "— Tu ___ muitas horas? (trabalhar — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Tu ___ muitas horas? (trabalhar)",
     answer: "trabalhavas"
   },
   {
     type: "fill",
-    question: "— O chefe ___ exigente? (ser — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — O chefe ___ exigente? (ser)",
     answer: "era"
   },
   {
     type: "fill",
-    question: "— Ele ___ a equipa com rigor. (gerir — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Ele ___ a equipa com rigor. (gerir)",
     answer: "geria"
   },
   {
     type: "fill",
-    question: "— Tu ___-te bem lá? (sentir — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Tu ___-te bem lá? (sentir)",
     answer: "sentias"
   },
   {
     type: "fill",
-    question: "— Eu ___ ter mais liberdade. (querer — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Eu ___ ter mais liberdade. (querer)",
     answer: "queria"
   },
   {
     type: "fill",
-    question: "— Tu ___ os colegas frequentemente? (ver — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Tu ___ os colegas frequentemente? (ver)",
     answer: "vias"
   },
   {
     type: "fill",
-    question: "— Ele ___ com muita gente. (falar — Imperfeito)",
+    question: "Заполните диалог (Imperfeito): — Ele ___ com muita gente. (falar)",
     answer: "falava"
   },
 
@@ -302,52 +302,52 @@ export const exercises = [
   // === Ex6: Заполните исторический текст (10 items) ===
   {
     type: "fill",
-    question: "No início do século XX, Portugal ___ um país rural. (ser — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): No início do século XX, Portugal ___ um país rural. (ser)",
     answer: "era"
   },
   {
     type: "fill",
-    question: "As condições de vida ___ difíceis. (ser — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): As condições de vida ___ difíceis. (ser)",
     answer: "eram"
   },
   {
     type: "fill",
-    question: "O povo ___ ___ oprimido. (sentir-se — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): O povo ___ ___ oprimido. (sentir-se)",
     answer: ["se", "sentia"]
   },
   {
     type: "fill",
-    question: "O país ___ muitos problemas económicos. (ter — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): O país ___ muitos problemas económicos. (ter)",
     answer: "tinha"
   },
   {
     type: "fill",
-    question: "A população ___ ___ com o campo. (identificar-se — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): A população ___ ___ com o campo. (identificar-se)",
     answer: ["se", "identificava"]
   },
   {
     type: "fill",
-    question: "Não ___ muita indústria. (existir — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): Não ___ muita indústria. (existir)",
     answer: "existia"
   },
   {
     type: "fill",
-    question: "As famílias ___-___ com dificuldades diárias. (confrontar-se — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): As famílias ___-___ com dificuldades diárias. (confrontar-se)",
     answer: "confrontavam-se"
   },
   {
     type: "fill",
-    question: "A pobreza ___ muitos a emigrar. (levar — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): A pobreza ___ muitos a emigrar. (levar)",
     answer: "levava"
   },
   {
     type: "fill",
-    question: "As viagens ___-___ longas e perigosas. (tornar-se — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): As viagens ___-___ longas e perigosas. (tornar-se)",
     answer: "tornavam-se"
   },
   {
     type: "fill",
-    question: "O Brasil ___-___ como destino principal. (destacar-se — Imperfeito)",
+    question: "Заполните исторический текст (Imperfeito): O Brasil ___-___ como destino principal. (destacar-se)",
     answer: "destacava-se"
   },
 

@@ -183,7 +183,7 @@ export default {
     { question: "Conjugate: Tu ___ o quê? (trazer — to bring)" },
     { question: "Conjugate: Ela ___ onde fica a estação. (saber — to know)" },
     // Ex2: Rewrite with different pronoun (4 items)
-    { source: "Ele conhece Lisboa. → Eu ___" },
+    { question: "Rewrite with a different pronoun: Ele conhece Lisboa. → Eu ___" },
     { question: "Rewrite with a different pronoun: Eu sei a resposta. → Nós ___ a resposta." },
     { question: "Rewrite: Ele vai ao Porto. → Tu ___ ao Porto." },
     { question: "Rewrite: Nós vemos o mar. → Ela só ___ o mar." },

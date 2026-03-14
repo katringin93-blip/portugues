@@ -128,12 +128,12 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Ela lava as mãos. → Ela ___",
+    question: "Замените прямое дополнение местоимением: Ela lava as mãos. → Ela ___",
     answer: "lava-as"
   },
   {
     type: "fill",
-    question: "Ele lava a roupa. → Ele ___",
+    question: "Замените прямое дополнение местоимением: Ele lava a roupa. → Ele ___",
     answer: "lava-a"
   },
   {
@@ -255,7 +255,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Na adega, não ___ (o vinho) imediatamente. (не хранят его сразу — проклиза)",
+    question: "Заполните текст: Na adega, não ___ (o vinho) imediatamente. (не хранят его сразу — проклиза)",
     answer: "o armazenam"
   },
   {
@@ -266,7 +266,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "As caves são atrações turísticas. Os turistas ___ (as caves, энклиза). (посещают их)",
+    question: "Заполните текст: As caves são atrações turísticas. Os turistas ___ (as caves, энклиза). (посещают их)",
     answer: "visitam-nas"
   },
   {
@@ -277,7 +277,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (проклиза после «não»)",
+    question: "Заполните текст: Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (проклиза после «não»)",
     answer: "o transportam"
   },
   {
@@ -289,17 +289,17 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)",
+    question: "Заполните текст: As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)",
     answer: "produzem-no"
   },
   {
     type: "fill",
-    question: "Também ___ (o vinho) em barris de madeira. (проклиза после «também»: armazenar)",
+    question: "Заполните текст: Também ___ (o vinho) em barris de madeira. (проклиза после «também»: armazenar)",
     answer: "o armazenam"
   },
   {
     type: "fill",
-    question: "E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)",
+    question: "Заполните текст: E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)",
     answer: "protegem-no"
   }
 ];

@@ -178,8 +178,8 @@ export default {
     { question: "Замініть: O teu vestido novo é muito lindo. Vais ___ na tua festa? (usar + o → ?)" },
     // === Вправа 3: Заміна у повсякденних діях ===
     { source: "Він прибирає квартиру щодня. (Замініть «квартиру» займенником: o apartamento → o arruma)" },
-    { question: "Ela lava as mãos. → Ela ___" },
-    { question: "Ele lava a roupa. → Ele ___" },
+    { question: "Замініть пряме доповнення займенником: Ela lava as mãos. → Ela ___" },
+    { question: "Замініть пряме доповнення займенником: Ele lava a roupa. → Ele ___" },
     { question: "Замініть: Ela põe a mesa. → Ela ___", explanation: "Після назальної форми «põe» займенник «a» → «na»: põe-na." },
     { question: "Замініть: Ela faz a comida. → Ela ___" },
     { question: "Замініть: Ele organiza a festa. → Ele ___" },
@@ -210,14 +210,14 @@ export default {
     { question: "«Paula, você conhece o Francisco?» — «Sim, ___ muito bem.» (енклізис — стверджувальне речення)" },
     // === Вправа 5: Текст про виробництво вина ===
     { question: "Заповніть: Colhem as uvas e ___ (uvas → займенник) para a adega. (перевозять їх)" },
-    { question: "Na adega, não ___ (o vinho) imediatamente. (не зберігають його відразу — прокліза)" },
+    { question: "Заповніть текст: Na adega, não ___ (o vinho) imediatamente. (не зберігають його відразу — прокліза)" },
     { question: "Складіть: «Вони його виробляють з великою дбайливістю.» (Produzem-no com muito cuidado.)" },
-    { question: "As caves são atrações turísticas. Os turistas ___ (as caves, енклізис). (відвідують їх)" },
+    { question: "Заповніть текст: As caves são atrações turísticas. Os turistas ___ (as caves, енклізис). (відвідують їх)" },
     { source: "Вони продають його (вино) по всьому світу." },
-    { question: "Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (прокліза після «não»)" },
+    { question: "Заповніть текст: Hoje-em-dia, já não ___ (o vinho) pelo Rio Douro nas barcas típicas. (прокліза після «não»)" },
     { question: "As barcas são muito bonitas e as companhias agora ___ (as barcas) no rio para efeitos turísticos. (expôr + as → ?)", explanation: "Після назальної форми «expôem» (дифтонг -em) займенник «as» → «nas»: expôem-nas." },
-    { question: "As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)" },
-    { question: "Também ___ (o vinho) em barris de madeira. (прокліза після «também»: armazenar)" },
-    { question: "E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)" }
+    { question: "Заповніть текст: As companhias especializadas em vinho da Madeira ___ (o vinho) no arquipélago da Madeira. (produzem + o → ?)" },
+    { question: "Заповніть текст: Também ___ (o vinho) em barris de madeira. (прокліза після «também»: armazenar)" },
+    { question: "Заповніть текст: E ___ (o vinho) do calor em caves com temperaturas reguladas. (protegem + o → ?)" }
   ],
 };

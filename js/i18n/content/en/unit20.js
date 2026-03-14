@@ -141,42 +141,42 @@ export default {
   ],
   exercises: [
     // === Ex1: Write Mais-que-Perfeito Composto (tinha + particípio) (12 items) ===
-    { question: "He ___ ___ the work before leaving. (acabar — M-q-P Composto)" },
-    { question: "I ___ ___ with her yesterday. (falar — M-q-P Composto)" },
-    { question: "We ___ ___ about moving house. (pensar — M-q-P Composto)" },
-    { question: "The train ___ ___ when I arrived at the station. (partir — M-q-P Composto)" },
-    { question: "She ___ ___ dinner before eight. (comer — M-q-P Composto)" },
-    { question: "He ___ ___ the film before. (ver — M-q-P Composto)" },
-    { question: "I ___ ___ to help her. (prometer — M-q-P Composto)" },
-    { question: "Maria ___ ___ at home. (ficar — M-q-P Composto)" },
-    { question: "João ___ ___ many problems. (ter — M-q-P Composto)" },
-    { question: "They ___ ___ the books on the shelf. (pôr — M-q-P Composto)" },
-    { question: "Had you ___ ___ the letter? (escrever — M-q-P Composto)" },
-    { question: "You (pl.) ___ ___ very nervous. (estar — M-q-P Composto)" },
+    { question: "Conjugate in M-q-P Composto: Ele ___ ___ o trabalho antes de sair. (acabar)" },
+    { question: "Conjugate in M-q-P Composto: Eu ___ ___ com ela ontem. (falar)" },
+    { question: "Conjugate in M-q-P Composto: Nós ___ ___ em mudar de casa. (pensar)" },
+    { question: "Conjugate in M-q-P Composto: O comboio ___ ___ quando cheguei à estação. (partir)" },
+    { question: "Conjugate in M-q-P Composto: Ela ___ ___ o jantar antes das oito. (comer)" },
+    { question: "Conjugate in M-q-P Composto: Ele ___ ___ o filme antes. (ver)" },
+    { question: "Conjugate in M-q-P Composto: Eu ___ ___ ajudá-la. (prometer)" },
+    { question: "Conjugate in M-q-P Composto: A Maria ___ ___ em casa. (ficar)" },
+    { question: "Conjugate in M-q-P Composto: O João ___ ___ muitos problemas. (ter)" },
+    { question: "Conjugate in M-q-P Composto: Eles ___ ___ os livros na estante. (pôr)" },
+    { question: "Conjugate in M-q-P Composto: Tu ___ ___ a carta? (escrever)" },
+    { question: "Conjugate in M-q-P Composto: Vocês ___ ___ muito nervosos. (estar)" },
 
     // === Ex2: Rewrite with pronouns + M-q-P Composto (10 items) ===
-    { question: "Eles levantaram-se → Eles ___. (M-q-P Composto)" },
-    { question: "Eu comprei-te um presente → Eu ___. (M-q-P Composto)" },
-    { question: "Eles observaram-se → Eles ___. (M-q-P Composto, inversion with negation: se tinham...)" },
-    { question: "Ela lembrou-se do nome → Ela ___. (M-q-P Composto)" },
-    { question: "Eles distraíram-se → Eles ___. (M-q-P Composto)" },
-    { question: "Tu enganaste-te → Tu ___. (M-q-P Composto)" },
-    { question: "Eu vi-o → Eu também ___. (M-q-P Composto, with «também»)" },
-    { question: "Nós vimos a Maria → Nós ___. (M-q-P Composto with pronoun -la)" },
-    { question: "Ele comprou o carro → Ele ___. (M-q-P Composto, without pronoun)" },
-    { question: "Ele aceitou o convite → Ele ___. (M-q-P Composto with pronoun -o)" },
+    { question: "Rewrite in M-q-P Composto: Eles levantaram-se → Eles ___" },
+    { question: "Rewrite in M-q-P Composto: Eu comprei-te um presente → Eu ___" },
+    { question: "Rewrite in M-q-P Composto: Eles observaram-se → Eles ___" },
+    { question: "Rewrite in M-q-P Composto: Ela lembrou-se do nome → Ela ___" },
+    { question: "Rewrite in M-q-P Composto: Eles distraíram-se → Eles ___" },
+    { question: "Rewrite in M-q-P Composto: Tu enganaste-te → Tu ___" },
+    { question: "Rewrite in M-q-P Composto: Eu vi-o → Eu também ___" },
+    { question: "Rewrite in M-q-P Composto: Nós vimos a Maria → Nós ___" },
+    { question: "Rewrite in M-q-P Composto: Ele comprou o carro → Ele ___" },
+    { question: "Rewrite in M-q-P Composto: Ele aceitou o convite → Ele ___" },
 
     // === Ex3: Rewrite in Mais-que-Perfeito Simples (10 items) ===
-    { question: "Nós tínhamo-nos levantado → Nós ___. (M-q-P Simples)" },
-    { question: "Tu tinhas recebido → Tu ___. (M-q-P Simples, receber)" },
-    { question: "Ele nunca se tinha esquecido → Ele nunca ___. (M-q-P Simples, esquecer-se)" },
-    { question: "Eu tinha visto → Eu ___. (M-q-P Simples, ver)" },
-    { question: "Ele tinha feito → Ele ___. (M-q-P Simples, fazer)" },
-    { question: "Tu tinhas esperado → Tu ___. (M-q-P Simples, esperar)" },
-    { question: "Ele tinha sido → Ele ___. (M-q-P Simples, ser)" },
-    { question: "Nós tínhamos conhecido → Nós ___. (M-q-P Simples, conhecer)" },
-    { question: "Ele tinha dito → Ele ___. (M-q-P Simples, dizer)" },
-    { question: "Ele tinha vindo → Ele ___. (M-q-P Simples, vir)" },
+    { question: "Rewrite in M-q-P Simples: Nós tínhamo-nos levantado → Nós ___" },
+    { question: "Rewrite in M-q-P Simples: Tu tinhas recebido → Tu ___" },
+    { question: "Rewrite in M-q-P Simples: Ele nunca se tinha esquecido → Ele nunca ___" },
+    { question: "Rewrite in M-q-P Simples: Eu tinha visto → Eu ___" },
+    { question: "Rewrite in M-q-P Simples: Ele tinha feito → Ele ___" },
+    { question: "Rewrite in M-q-P Simples: Tu tinhas esperado → Tu ___" },
+    { question: "Rewrite in M-q-P Simples: Ele tinha sido → Ele ___" },
+    { question: "Rewrite in M-q-P Simples: Nós tínhamos conhecido → Nós ___" },
+    { question: "Rewrite in M-q-P Simples: Ele tinha dito → Ele ___" },
+    { question: "Rewrite in M-q-P Simples: Ele tinha vindo → Ele ___" },
 
     // === Ex4: Write questions in M-q-P Composto (10 items) ===
     { source: "What had they bought?" },
@@ -203,11 +203,11 @@ export default {
     },
 
     // === Ex6: Translate into Portuguese (both forms) (5 fill items) ===
-    { question: "Translate: 'You had seen' — duas formas: ___ / ___. (ver — M-q-P Composto / Simples)" },
-    { question: "Translate: 'He had gone' — duas formas: ___ / ___. (ir — M-q-P Composto / Simples)" },
-    { question: "Translate: 'We had visited' — duas formas: ___ / ___. (visitar — M-q-P Composto / Simples)" },
-    { question: "Translate: 'He had arrived' — duas formas: ___ / ___. (chegar — M-q-P Composto / Simples)" },
-    { question: "Translate: 'He had done' — duas formas: ___ / ___. (fazer — M-q-P Composto / Simples)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «Ты видел» — ___ / ___. (ver)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «Он ходил (уходил)» — ___ / ___. (ir)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «Мы посетили» — ___ / ___. (visitar)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «Он приехал» — ___ / ___. (chegar)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «Он сделал» — ___ / ___. (fazer)" },
 
     // === Ex6: Translate sentences (5 translate items) ===
     { source: "She said that she had already read the book. (both forms)" },
@@ -217,15 +217,15 @@ export default {
     { source: "They had already finished the work when the boss arrived." },
 
     // === Ex7: Fill in the historical text (9 items) ===
-    { question: "In the 15th century, the court ___-___ in Lisbon. (estabelecer-se — M-q-P Simples)" },
-    { question: "The Discoveries ___ ___ possible thanks to navigation. (ser — M-q-P Composto)" },
-    { question: "The storms ___ ___ several vessels. (afetar — M-q-P Composto)" },
-    { question: "Ambition ___ Portugal to explore new territories. (levar — M-q-P Simples)" },
-    { question: "D. Manuel I ___ the throne in 1495. (assumir — M-q-P Simples)" },
-    { question: "Vasco da Gama ___ the expedition to India. (comandar — M-q-P Simples)" },
-    { question: "The navigators ___ ___ to find the sea route. (ajudar — M-q-P Composto)" },
-    { question: "The voyage ___ a success. (ser — M-q-P Simples)" },
-    { question: "The arrival in India ___ a new era of trade. (assinalar — M-q-P Simples)" },
+    { question: "Complete the historical text: No século XV, a corte ___-___ em Lisboa. (estabelecer-se — M-q-P Simples)" },
+    { question: "Complete the historical text: As Descobertas ___ ___ possíveis graças à navegação. (ser — M-q-P Composto)" },
+    { question: "Complete the historical text: As tempestades ___ ___ várias embarcações. (afetar — M-q-P Composto)" },
+    { question: "Complete the historical text: A ambição ___ Portugal a explorar novos territórios. (levar — M-q-P Simples)" },
+    { question: "Complete the historical text: D. Manuel I ___ o trono em 1495. (assumir — M-q-P Simples)" },
+    { question: "Complete the historical text: Vasco da Gama ___ a expedição à Índia. (comandar — M-q-P Simples)" },
+    { question: "Complete the historical text: Os navegadores ___ ___ a encontrar a rota marítima. (ajudar — M-q-P Composto)" },
+    { question: "Complete the historical text: A viagem ___ um sucesso. (ser — M-q-P Simples)" },
+    { question: "Complete the historical text: A chegada à Índia ___ uma nova era de comércio. (assinalar — M-q-P Simples)" },
 
     // === Additional exercises ===
     {
@@ -241,6 +241,12 @@ export default {
     },
     {
       question: "How is M-q-P Composto formed?",
+      options: [
+        "ter in Presente + participle",
+        "ter in Imperfeito + participle",
+        "ter in Perfeito + participle",
+        "haver in Imperfeito + participle"
+      ],
       explanation: "M-q-P Composto = ter in Imperfeito (tinha, tinhas...) + past participle."
     },
     {

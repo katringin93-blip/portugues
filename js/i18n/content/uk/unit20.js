@@ -141,42 +141,42 @@ export default {
   ],
   exercises: [
     // === Впр.1: Напишіть Mais-que-Perfeito Composto (tinha + particípio) (12 завдань) ===
-    { question: "Він ___ ___ роботу до відходу. (acabar — M-q-P Composto)" },
-    { question: "Я ___ ___ з нею вчора. (falar — M-q-P Composto)" },
-    { question: "Ми ___ ___ про переїзд. (pensar — M-q-P Composto)" },
-    { question: "Потяг ___ ___, коли я прибув на станцію. (partir — M-q-P Composto)" },
-    { question: "Вона ___ ___ вечерю до восьмої. (comer — M-q-P Composto)" },
-    { question: "Він ___ ___ цей фільм раніше. (ver — M-q-P Composto)" },
-    { question: "Я ___ ___ допомогти їй. (prometer — M-q-P Composto)" },
-    { question: "Марія ___ ___ вдома. (ficar — M-q-P Composto)" },
-    { question: "Жоан ___ ___ багато проблем. (ter — M-q-P Composto)" },
-    { question: "Вони ___ ___ книги на полиці. (pôr — M-q-P Composto)" },
-    { question: "Ти ___ ___ листа? (escrever — M-q-P Composto)" },
-    { question: "Ви ___ ___ дуже нервовими. (estar — M-q-P Composto)" },
+    { question: "Провідміняйте в M-q-P Composto: Ele ___ ___ o trabalho antes de sair. (acabar)" },
+    { question: "Провідміняйте в M-q-P Composto: Eu ___ ___ com ela ontem. (falar)" },
+    { question: "Провідміняйте в M-q-P Composto: Nós ___ ___ em mudar de casa. (pensar)" },
+    { question: "Провідміняйте в M-q-P Composto: O comboio ___ ___ quando cheguei à estação. (partir)" },
+    { question: "Провідміняйте в M-q-P Composto: Ela ___ ___ o jantar antes das oito. (comer)" },
+    { question: "Провідміняйте в M-q-P Composto: Ele ___ ___ o filme antes. (ver)" },
+    { question: "Провідміняйте в M-q-P Composto: Eu ___ ___ ajudá-la. (prometer)" },
+    { question: "Провідміняйте в M-q-P Composto: A Maria ___ ___ em casa. (ficar)" },
+    { question: "Провідміняйте в M-q-P Composto: O João ___ ___ muitos problemas. (ter)" },
+    { question: "Провідміняйте в M-q-P Composto: Eles ___ ___ os livros na estante. (pôr)" },
+    { question: "Провідміняйте в M-q-P Composto: Tu ___ ___ a carta? (escrever)" },
+    { question: "Провідміняйте в M-q-P Composto: Vocês ___ ___ muito nervosos. (estar)" },
 
     // === Впр.2: Перепишіть із займенниками + M-q-P Composto (10 завдань) ===
-    { question: "Eles levantaram-se → Eles ___. (M-q-P Composto)" },
-    { question: "Eu comprei-te um presente → Eu ___. (M-q-P Composto)" },
-    { question: "Eles observaram-se → Eles ___. (M-q-P Composto, інверсія з запереченням: se tinham...)" },
-    { question: "Ela lembrou-se do nome → Ela ___. (M-q-P Composto)" },
-    { question: "Eles distraíram-se → Eles ___. (M-q-P Composto)" },
-    { question: "Tu enganaste-te → Tu ___. (M-q-P Composto)" },
-    { question: "Eu vi-o → Eu também ___. (M-q-P Composto, із «também»)" },
-    { question: "Nós vimos a Maria → Nós ___. (M-q-P Composto із займенником -la)" },
-    { question: "Ele comprou o carro → Ele ___. (M-q-P Composto, без займенника)" },
-    { question: "Ele aceitou o convite → Ele ___. (M-q-P Composto із займенником -o)" },
+    { question: "Перепишіть у M-q-P Composto: Eles levantaram-se → Eles ___" },
+    { question: "Перепишіть у M-q-P Composto: Eu comprei-te um presente → Eu ___" },
+    { question: "Перепишіть у M-q-P Composto: Eles observaram-se → Eles ___" },
+    { question: "Перепишіть у M-q-P Composto: Ela lembrou-se do nome → Ela ___" },
+    { question: "Перепишіть у M-q-P Composto: Eles distraíram-se → Eles ___" },
+    { question: "Перепишіть у M-q-P Composto: Tu enganaste-te → Tu ___" },
+    { question: "Перепишіть у M-q-P Composto: Eu vi-o → Eu também ___" },
+    { question: "Перепишіть у M-q-P Composto: Nós vimos a Maria → Nós ___" },
+    { question: "Перепишіть у M-q-P Composto: Ele comprou o carro → Ele ___" },
+    { question: "Перепишіть у M-q-P Composto: Ele aceitou o convite → Ele ___" },
 
     // === Впр.3: Перепишіть у Mais-que-Perfeito Simples (10 завдань) ===
-    { question: "Nós tínhamo-nos levantado → Nós ___. (M-q-P Simples)" },
-    { question: "Tu tinhas recebido → Tu ___. (M-q-P Simples, receber)" },
-    { question: "Ele nunca se tinha esquecido → Ele nunca ___. (M-q-P Simples, esquecer-se)" },
-    { question: "Eu tinha visto → Eu ___. (M-q-P Simples, ver)" },
-    { question: "Ele tinha feito → Ele ___. (M-q-P Simples, fazer)" },
-    { question: "Tu tinhas esperado → Tu ___. (M-q-P Simples, esperar)" },
-    { question: "Ele tinha sido → Ele ___. (M-q-P Simples, ser)" },
-    { question: "Nós tínhamos conhecido → Nós ___. (M-q-P Simples, conhecer)" },
-    { question: "Ele tinha dito → Ele ___. (M-q-P Simples, dizer)" },
-    { question: "Ele tinha vindo → Ele ___. (M-q-P Simples, vir)" },
+    { question: "Перепишіть у M-q-P Simples: Nós tínhamo-nos levantado → Nós ___" },
+    { question: "Перепишіть у M-q-P Simples: Tu tinhas recebido → Tu ___" },
+    { question: "Перепишіть у M-q-P Simples: Ele nunca se tinha esquecido → Ele nunca ___" },
+    { question: "Перепишіть у M-q-P Simples: Eu tinha visto → Eu ___" },
+    { question: "Перепишіть у M-q-P Simples: Ele tinha feito → Ele ___" },
+    { question: "Перепишіть у M-q-P Simples: Tu tinhas esperado → Tu ___" },
+    { question: "Перепишіть у M-q-P Simples: Ele tinha sido → Ele ___" },
+    { question: "Перепишіть у M-q-P Simples: Nós tínhamos conhecido → Nós ___" },
+    { question: "Перепишіть у M-q-P Simples: Ele tinha dito → Ele ___" },
+    { question: "Перепишіть у M-q-P Simples: Ele tinha vindo → Ele ___" },
 
     // === Впр.4: Напишіть запитання у M-q-P Composto (10 завдань) ===
     { source: "Що вони купили?" },
@@ -203,11 +203,11 @@ export default {
     },
 
     // === Впр.6: Перекладіть португальською (обидві форми) (5 завдань fill) ===
-    { question: "Перекладіть: «Ти бачив» — duas formas: ___ / ___. (ver — M-q-P Composto / Simples)" },
-    { question: "Перекладіть: «Він ходив (пішов)» — duas formas: ___ / ___. (ir — M-q-P Composto / Simples)" },
-    { question: "Перекладіть: «Ми відвідали» — duas formas: ___ / ___. (visitar — M-q-P Composto / Simples)" },
-    { question: "Перекладіть: «Він приїхав» — duas formas: ___ / ___. (chegar — M-q-P Composto / Simples)" },
-    { question: "Перекладіть: «Він зробив» — duas formas: ___ / ___. (fazer — M-q-P Composto / Simples)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Ты видел» — ___ / ___. (ver)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он ходил (уходил)» — ___ / ___. (ir)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Мы посетили» — ___ / ___. (visitar)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он приехал» — ___ / ___. (chegar)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он сделал» — ___ / ___. (fazer)" },
 
     // === Впр.6: Перекладіть речення (5 завдань translate) ===
     { source: "Вона сказала, що вже прочитала книгу. (обидві форми)" },
@@ -217,15 +217,15 @@ export default {
     { source: "Вони вже закінчили роботу, коли приїхав начальник." },
 
     // === Впр.7: Заповніть історичний текст (9 завдань) ===
-    { question: "У XV столітті двір ___-___ у Лісабоні. (estabelecer-se — M-q-P Simples)" },
-    { question: "Відкриття ___ ___ можливими завдяки мореплавству. (ser — M-q-P Composto)" },
-    { question: "Шторми ___ ___ кілька суден. (afetar — M-q-P Composto)" },
-    { question: "Амбіції ___ Португалію досліджувати нові території. (levar — M-q-P Simples)" },
-    { question: "Д. Мануел I ___ трон у 1495 році. (assumir — M-q-P Simples)" },
-    { question: "Васко да Гама ___ експедицію до Індії. (comandar — M-q-P Simples)" },
-    { question: "Мореплавці ___ ___ знайти морський шлях. (ajudar — M-q-P Composto)" },
-    { question: "Подорож ___ успішною. (ser — M-q-P Simples)" },
-    { question: "Прибуття до Індії ___ нову еру торгівлі. (assinalar — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: No século XV, a corte ___-___ em Lisboa. (estabelecer-se — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: As Descobertas ___ ___ possíveis graças à navegação. (ser — M-q-P Composto)" },
+    { question: "Заповніть історичний текст: As tempestades ___ ___ várias embarcações. (afetar — M-q-P Composto)" },
+    { question: "Заповніть історичний текст: A ambição ___ Portugal a explorar novos territórios. (levar — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: D. Manuel I ___ o trono em 1495. (assumir — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: Vasco da Gama ___ a expedição à Índia. (comandar — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: Os navegadores ___ ___ a encontrar a rota marítima. (ajudar — M-q-P Composto)" },
+    { question: "Заповніть історичний текст: A viagem ___ um sucesso. (ser — M-q-P Simples)" },
+    { question: "Заповніть історичний текст: A chegada à Índia ___ uma nova era de comércio. (assinalar — M-q-P Simples)" },
 
     // === Додаткові вправи ===
     {
@@ -241,6 +241,12 @@ export default {
     },
     {
       question: "Як утворюється M-q-P Composto?",
+      options: [
+        "ter у Presente + дієприкметник",
+        "ter у Imperfeito + дієприкметник",
+        "ter у Perfeito + дієприкметник",
+        "haver у Imperfeito + дієприкметник"
+      ],
       explanation: "M-q-P Composto = ter в Imperfeito (tinha, tinhas...) + дієприкметник минулого часу."
     },
     {

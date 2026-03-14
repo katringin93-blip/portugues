@@ -2,166 +2,166 @@ export const exercises = [
   // === Ex1: Напишите Mais-que-Perfeito Composto (tinha + particípio) (12 items) ===
   {
     type: "fill",
-    question: "Ele ___ ___ o trabalho antes de sair. (acabar — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Ele ___ ___ o trabalho antes de sair. (acabar)",
     answer: ["tinha", "acabado"]
   },
   {
     type: "fill",
-    question: "Eu ___ ___ com ela ontem. (falar — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Eu ___ ___ com ela ontem. (falar)",
     answer: ["tinha", "falado"]
   },
   {
     type: "fill",
-    question: "Nós ___ ___ em mudar de casa. (pensar — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Nós ___ ___ em mudar de casa. (pensar)",
     answer: ["tínhamos", "pensado"]
   },
   {
     type: "fill",
-    question: "O comboio ___ ___ quando cheguei à estação. (partir — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: O comboio ___ ___ quando cheguei à estação. (partir)",
     answer: ["tinha", "partido"]
   },
   {
     type: "fill",
-    question: "Ela ___ ___ o jantar antes das oito. (comer — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Ela ___ ___ o jantar antes das oito. (comer)",
     answer: ["tinha", "comido"]
   },
   {
     type: "fill",
-    question: "Ele ___ ___ o filme antes. (ver — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Ele ___ ___ o filme antes. (ver)",
     answer: ["tinha", "visto"]
   },
   {
     type: "fill",
-    question: "Eu ___ ___ ajudá-la. (prometer — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Eu ___ ___ ajudá-la. (prometer)",
     answer: ["tinha", "prometido"]
   },
   {
     type: "fill",
-    question: "A Maria ___ ___ em casa. (ficar — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: A Maria ___ ___ em casa. (ficar)",
     answer: ["tinha", "ficado"]
   },
   {
     type: "fill",
-    question: "O João ___ ___ muitos problemas. (ter — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: O João ___ ___ muitos problemas. (ter)",
     answer: ["tinha", "tido"]
   },
   {
     type: "fill",
-    question: "Eles ___ ___ os livros na estante. (pôr — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Eles ___ ___ os livros na estante. (pôr)",
     answer: ["tinham", "posto"]
   },
   {
     type: "fill",
-    question: "Tu ___ ___ a carta? (escrever — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Tu ___ ___ a carta? (escrever)",
     answer: ["tinhas", "escrito"]
   },
   {
     type: "fill",
-    question: "Vocês ___ ___ muito nervosos. (estar — M-q-P Composto)",
+    question: "Проспрягайте в M-q-P Composto: Vocês ___ ___ muito nervosos. (estar)",
     answer: ["tinham", "estado"]
   },
 
   // === Ex2: Перепишите с местоимениями + M-q-P Composto (10 items) ===
   {
     type: "fill",
-    question: "Eles levantaram-se → Eles ___. (M-q-P Composto)",
+    question: "Перепишите в M-q-P Composto: Eles levantaram-se → Eles ___",
     answer: "tinham-se levantado"
   },
   {
     type: "fill",
-    question: "Eu comprei-te um presente → Eu ___. (M-q-P Composto)",
+    question: "Перепишите в M-q-P Composto: Eu comprei-te um presente → Eu ___",
     answer: "tinha-te comprado"
   },
   {
     type: "fill",
-    question: "Eles observaram-se → Eles ___. (M-q-P Composto, inversão с отрицанием: se tinham...)",
+    question: "Перепишите в M-q-P Composto: Eles observaram-se → Eles ___",
     answer: "se tinham observado"
   },
   {
     type: "fill",
-    question: "Ela lembrou-se do nome → Ela ___. (M-q-P Composto)",
+    question: "Перепишите в M-q-P Composto: Ela lembrou-se do nome → Ela ___",
     answer: "tinha-se lembrado"
   },
   {
     type: "fill",
-    question: "Eles distraíram-se → Eles ___. (M-q-P Composto)",
+    question: "Перепишите в M-q-P Composto: Eles distraíram-se → Eles ___",
     answer: "tinham-se distraído"
   },
   {
     type: "fill",
-    question: "Tu enganaste-te → Tu ___. (M-q-P Composto)",
+    question: "Перепишите в M-q-P Composto: Tu enganaste-te → Tu ___",
     answer: "te tinhas enganado"
   },
   {
     type: "fill",
-    question: "Eu vi-o → Eu também ___. (M-q-P Composto, com «também»)",
+    question: "Перепишите в M-q-P Composto: Eu vi-o → Eu também ___",
     answer: "o tinha visto"
   },
   {
     type: "fill",
-    question: "Nós vimos a Maria → Nós ___. (M-q-P Composto com pronome -la)",
+    question: "Перепишите в M-q-P Composto: Nós vimos a Maria → Nós ___",
     answer: "tínhamo-la visto"
   },
   {
     type: "fill",
-    question: "Ele comprou o carro → Ele ___. (M-q-P Composto, sem pronome)",
+    question: "Перепишите в M-q-P Composto: Ele comprou o carro → Ele ___",
     answer: "tinha comprado"
   },
   {
     type: "fill",
-    question: "Ele aceitou o convite → Ele ___. (M-q-P Composto com pronome -o)",
+    question: "Перепишите в M-q-P Composto: Ele aceitou o convite → Ele ___",
     answer: "tinha-o aceitado"
   },
 
   // === Ex3: Перепишите в Mais-que-Perfeito Simples (10 items) ===
   {
     type: "fill",
-    question: "Nós tínhamo-nos levantado → Nós ___. (M-q-P Simples)",
+    question: "Перепишите в M-q-P Simples: Nós tínhamo-nos levantado → Nós ___",
     answer: "levantáramo-nos"
   },
   {
     type: "fill",
-    question: "Tu tinhas recebido → Tu ___. (M-q-P Simples, receber)",
+    question: "Перепишите в M-q-P Simples: Tu tinhas recebido → Tu ___",
     answer: "receberas"
   },
   {
     type: "fill",
-    question: "Ele nunca se tinha esquecido → Ele nunca ___. (M-q-P Simples, esquecer-se)",
+    question: "Перепишите в M-q-P Simples: Ele nunca se tinha esquecido → Ele nunca ___",
     answer: "se esquecera"
   },
   {
     type: "fill",
-    question: "Eu tinha visto → Eu ___. (M-q-P Simples, ver)",
+    question: "Перепишите в M-q-P Simples: Eu tinha visto → Eu ___",
     answer: "vira"
   },
   {
     type: "fill",
-    question: "Ele tinha feito → Ele ___. (M-q-P Simples, fazer)",
+    question: "Перепишите в M-q-P Simples: Ele tinha feito → Ele ___",
     answer: "fizera"
   },
   {
     type: "fill",
-    question: "Tu tinhas esperado → Tu ___. (M-q-P Simples, esperar)",
+    question: "Перепишите в M-q-P Simples: Tu tinhas esperado → Tu ___",
     answer: "esperaras"
   },
   {
     type: "fill",
-    question: "Ele tinha sido → Ele ___. (M-q-P Simples, ser)",
+    question: "Перепишите в M-q-P Simples: Ele tinha sido → Ele ___",
     answer: "fora"
   },
   {
     type: "fill",
-    question: "Nós tínhamos conhecido → Nós ___. (M-q-P Simples, conhecer)",
+    question: "Перепишите в M-q-P Simples: Nós tínhamos conhecido → Nós ___",
     answer: "conhecêramos"
   },
   {
     type: "fill",
-    question: "Ele tinha dito → Ele ___. (M-q-P Simples, dizer)",
+    question: "Перепишите в M-q-P Simples: Ele tinha dito → Ele ___",
     answer: "dissera"
   },
   {
     type: "fill",
-    question: "Ele tinha vindo → Ele ___. (M-q-P Simples, vir)",
+    question: "Перепишите в M-q-P Simples: Ele tinha vindo → Ele ___",
     answer: "viera"
   },
 
@@ -243,27 +243,27 @@ export const exercises = [
   // === Ex6: Переведите на португальский (обе формы) (10 items) ===
   {
     type: "fill",
-    question: "Переведите: «Ты видел» — duas formas: ___ / ___. (ver — M-q-P Composto / Simples)",
+    question: "Переведите (две формы — M-q-P Composto / Simples): «Ты видел» — ___ / ___. (ver)",
     answer: ["tinhas visto", "viras"]
   },
   {
     type: "fill",
-    question: "Переведите: «Он ходил (уходил)» — duas formas: ___ / ___. (ir — M-q-P Composto / Simples)",
+    question: "Переведите (две формы — M-q-P Composto / Simples): «Он ходил (уходил)» — ___ / ___. (ir)",
     answer: ["tinha ido", "fora"]
   },
   {
     type: "fill",
-    question: "Переведите: «Мы посетили» — duas formas: ___ / ___. (visitar — M-q-P Composto / Simples)",
+    question: "Переведите (две формы — M-q-P Composto / Simples): «Мы посетили» — ___ / ___. (visitar)",
     answer: ["tínhamos visitado", "visitáramos"]
   },
   {
     type: "fill",
-    question: "Переведите: «Он приехал» — duas formas: ___ / ___. (chegar — M-q-P Composto / Simples)",
+    question: "Переведите (две формы — M-q-P Composto / Simples): «Он приехал» — ___ / ___. (chegar)",
     answer: ["tinha chegado", "chegara"]
   },
   {
     type: "fill",
-    question: "Переведите: «Он сделал» — duas formas: ___ / ___. (fazer — M-q-P Composto / Simples)",
+    question: "Переведите (две формы — M-q-P Composto / Simples): «Он сделал» — ___ / ___. (fazer)",
     answer: ["tinha feito", "fizera"]
   },
   {
@@ -300,47 +300,47 @@ export const exercises = [
   // === Ex7: Заполните исторический текст (9 items) ===
   {
     type: "fill",
-    question: "No século XV, a corte ___-___ em Lisboa. (estabelecer-se — M-q-P Simples)",
+    question: "Заполните исторический текст: No século XV, a corte ___-___ em Lisboa. (estabelecer-se — M-q-P Simples)",
     answer: "estabelecera-se"
   },
   {
     type: "fill",
-    question: "As Descobertas ___ ___ possíveis graças à navegação. (ser — M-q-P Composto)",
+    question: "Заполните исторический текст: As Descobertas ___ ___ possíveis graças à navegação. (ser — M-q-P Composto)",
     answer: ["tinham", "sido"]
   },
   {
     type: "fill",
-    question: "As tempestades ___ ___ várias embarcações. (afetar — M-q-P Composto)",
+    question: "Заполните исторический текст: As tempestades ___ ___ várias embarcações. (afetar — M-q-P Composto)",
     answer: ["tinham", "afetado"]
   },
   {
     type: "fill",
-    question: "A ambição ___ Portugal a explorar novos territórios. (levar — M-q-P Simples)",
+    question: "Заполните исторический текст: A ambição ___ Portugal a explorar novos territórios. (levar — M-q-P Simples)",
     answer: "levara"
   },
   {
     type: "fill",
-    question: "D. Manuel I ___ o trono em 1495. (assumir — M-q-P Simples)",
+    question: "Заполните исторический текст: D. Manuel I ___ o trono em 1495. (assumir — M-q-P Simples)",
     answer: "assumira"
   },
   {
     type: "fill",
-    question: "Vasco da Gama ___ a expedição à Índia. (comandar — M-q-P Simples)",
+    question: "Заполните исторический текст: Vasco da Gama ___ a expedição à Índia. (comandar — M-q-P Simples)",
     answer: "comandara"
   },
   {
     type: "fill",
-    question: "Os navegadores ___ ___ a encontrar a rota marítima. (ajudar — M-q-P Composto)",
+    question: "Заполните исторический текст: Os navegadores ___ ___ a encontrar a rota marítima. (ajudar — M-q-P Composto)",
     answer: ["tinham", "ajudado"]
   },
   {
     type: "fill",
-    question: "A viagem ___ um sucesso. (ser — M-q-P Simples)",
+    question: "Заполните исторический текст: A viagem ___ um sucesso. (ser — M-q-P Simples)",
     answer: "fora"
   },
   {
     type: "fill",
-    question: "A chegada à Índia ___ uma nova era de comércio. (assinalar — M-q-P Simples)",
+    question: "Заполните исторический текст: A chegada à Índia ___ uma nova era de comércio. (assinalar — M-q-P Simples)",
     answer: "assinalara"
   },
 
@@ -361,10 +361,10 @@ export const exercises = [
     type: "choice",
     question: "Как образуется M-q-P Composto?",
     options: [
-      "ter (Presente) + particípio",
-      "ter (Imperfeito) + particípio",
-      "ter (Perfeito) + particípio",
-      "haver (Imperfeito) + particípio"
+      "ter в Presente + причастие",
+      "ter в Imperfeito + причастие",
+      "ter в Perfeito + причастие",
+      "haver в Imperfeito + причастие"
     ],
     correct: 1,
     explanation: "M-q-P Composto = ter в Imperfeito (tinha, tinhas...) + причастие прошедшего времени."
