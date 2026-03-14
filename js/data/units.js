@@ -1709,27 +1709,166 @@ export const units = [
       },
       {
         heading: "Наречия (Advérbios)",
-        text: "Наречия образуются от прилагательных женского рода + суффикс -mente. Если прилагательное одинаково для обоих родов, -mente добавляется к основной форме."
+        text: "Наречия — неизменяемые слова, которые могут определять глагол, прилагательное, другое наречие или целое предложение."
+      },
+      {
+        examples: [
+          { pt: "Amanhã temos de ir trabalhar.", ru: "Завтра мы должны идти на работу. (наречие → глагол)" },
+          { pt: "O Pedro é bastante profissional.", ru: "Педру достаточно профессионален. (наречие → прилагательное)" },
+          { pt: "Os aviões voam muito alto.", ru: "Самолёты летают очень высоко. (наречие → наречие)" },
+          { pt: "Felizmente, ele ganha suficiente para sustentar a família.", ru: "К счастью, он зарабатывает достаточно, чтобы содержать семью. (наречие → предложение)" }
+        ]
+      },
+      {
+        heading: "Наречия времени (Advérbios de tempo)",
+        text: "Обозначают когда происходит действие."
+      },
+      {
+        table: {
+          equalCols: true,
+          headers: ["Português", "Перевод"],
+          rows: [
+            ["ontem", "вчера"],
+            ["hoje", "сегодня"],
+            ["amanhã", "завтра"],
+            ["agora ≠ logo", "сейчас ≠ потом"],
+            ["antes ≠ depois", "до ≠ после"],
+            ["cedo ≠ tarde", "рано ≠ поздно"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Hoje ficamos em casa porque é domingo.", ru: "Сегодня мы остаёмся дома, потому что воскресенье." },
+          { pt: "Tenho de ir às compras agora.", ru: "Мне нужно сейчас идти за покупками." },
+          { pt: "Amanhã vamos sair de casa cedo.", ru: "Завтра мы выйдем из дома рано." }
+        ]
+      },
+      {
+        heading: "Наречия места (Advérbios de lugar)",
+        text: "Обозначают где происходит действие. Португальский различает несколько степеней удалённости."
+      },
+      {
+        table: {
+          equalCols: true,
+          headers: ["Português", "Перевод"],
+          rows: [
+            ["aqui, cá", "здесь"],
+            ["aí", "там (где ты)"],
+            ["ali, acolá", "там (вон там)"],
+            ["lá", "там (далеко, о чём уже шла речь)"],
+            ["perto ≠ longe", "близко ≠ далеко"],
+            ["aqui/cá dentro ≠ lá fora", "внутри ≠ снаружи"],
+            ["dentro ≠ fora", "внутрь ≠ наружу"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Esse lápis que tens aí na mão pertence ao João.", ru: "Тот карандаш, что у тебя в руке, принадлежит Жуану." },
+          { pt: "O David vai para Lisboa e fica lá duas semanas.", ru: "Давид едет в Лиссабон и остаётся там на две недели." },
+          { pt: "Vamos a casa do Pedro, pois fica perto.", ru: "Мы идём к Педру домой — это близко." },
+          { pt: "Está muita gente lá fora.", ru: "На улице много людей." }
+        ]
+      },
+      {
+        heading: "Наречия образа действия (Advérbios de modo)",
+        text: "Обозначают как происходит действие."
+      },
+      {
+        table: {
+          equalCols: true,
+          headers: ["Português", "Перевод"],
+          rows: [
+            ["bem ≠ mal", "хорошо ≠ плохо"],
+            ["depressa ≠ devagar", "быстро ≠ медленно"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Ela conduz depressa.", ru: "Она водит быстро." },
+          { pt: "Ele fala bem português.", ru: "Он хорошо говорит по-португальски." }
+        ]
+      },
+      {
+        heading: "Наречия степени (Advérbios de intensidade)",
+        text: "Обозначают насколько, в какой степени."
+      },
+      {
+        table: {
+          equalCols: true,
+          headers: ["Português", "Перевод"],
+          rows: [
+            ["pouco ≠ muito", "мало ≠ очень, много"],
+            ["menos ≠ mais", "меньше ≠ больше"],
+            ["demasiado", "слишком"],
+            ["demais", "слишком много"]
+          ]
+        }
+      },
+      {
+        examples: [
+          { pt: "Ela trabalha muito.", ru: "Она много работает." },
+          { pt: "Tu comes demasiado.", ru: "Ты слишком много ешь." },
+          { pt: "Tenho sapatos demais.", ru: "У меня слишком много обуви." },
+          { pt: "Vocês falam pouco.", ru: "Вы мало говорите." }
+        ]
+      },
+      {
+        heading: "Образование наречий с -mente",
+        text: "Многие наречия образуются добавлением суффикса -mente к прилагательному. Если прилагательное оканчивается на -o, оно сначала принимает форму женского рода на -a. Графические ударения при этом опускаются."
       },
       {
         table: {
           headers: ["Прилагательное", "Наречие", "Перевод"],
           rows: [
-            ["rápido/a", "rapidamente", "быстро"],
-            ["lento/a", "lentamente", "медленно"],
+            ["normal", "normalmente", "обычно"],
+            ["individual", "individualmente", "индивидуально"],
             ["fácil", "facilmente", "легко"],
-            ["feliz", "felizmente", "к счастью"],
-            ["normal", "normalmente", "обычно"]
+            ["(in)feliz", "(in)felizmente", "(не)к счастью"],
+            ["alegre", "alegremente", "радостно"],
+            ["semanal", "semanalmente", "еженедельно"],
+            ["mensal", "mensalmente", "ежемесячно"],
+            ["anual", "anualmente", "ежегодно"],
+            ["lento → lenta", "lentamente", "медленно"],
+            ["rápido → rápida", "rapidamente", "быстро"],
+            ["óbvio → óbvia", "obviamente", "очевидно"],
+            ["cuidadoso → cuidadosa", "cuidadosamente", "осторожно"],
+            ["curioso → curiosa", "curiosamente", "любопытно"],
+            ["diário → diária", "diariamente", "ежедневно"]
           ]
         }
       },
       {
-        note: "Некоторые наречия не образуются по правилу: bem (хорошо), mal (плохо), muito (очень), pouco (мало), sempre (всегда), depressa (быстро), devagar (медленно)."
+        examples: [
+          { pt: "Num dia normal a Joana vai trabalhar.", ru: "В обычный день Жуана идёт на работу." },
+          { pt: "Normalmente a Joana vai trabalhar.", ru: "Обычно Жуана идёт на работу." },
+          { pt: "A avó da Paula caminha lentamente.", ru: "Бабушка Паулы идёт медленно." }
+        ]
+      },
+      {
+        note: "Если два наречия на -mente стоят рядом, суффикс получает только второе: Na minha empresa fazemos relatórios mensal e trimestralmente (В моей компании мы пишем отчёты ежемесячно и ежеквартально)."
+      },
+      {
+        heading: "Позиция наречия в предложении",
+        text: "Наречия времени и места могут стоять до или после глагола. Остальные наречия обычно стоят перед прилагательным или после глагола. Наречия на -mente часто ставятся в начало предложения для выразительности."
+      },
+      {
+        examples: [
+          { pt: "Amanhã vamos ao cinema.", ru: "Завтра мы идём в кино. (время — до глагола)" },
+          { pt: "Eles não trabalham hoje.", ru: "Они сегодня не работают. (время — после глагола)" },
+          { pt: "A filha do Pedro é muito bonita.", ru: "Дочь Педру очень красивая. (степень — перед прилагательным)" },
+          { pt: "Ela corre depressa.", ru: "Она бежит быстро. (образ действия — после глагола)" },
+          { pt: "Infelizmente, está a chover.", ru: "К сожалению, идёт дождь. (-mente — начало предложения)" },
+          { pt: "Raramente tenho tempo para ir ao cinema.", ru: "Я редко нахожу время ходить в кино. (-mente — начало предложения)" }
+        ]
       }
     ],
     lessons: [
-      { title: "Согласование и формы прилагательных", theoryRange: [0, 5] },
-      { title: "Позиция прилагательного и наречия", theoryRange: [5, 11] }
+      { title: "Прилагательные", theoryRange: [0, 8] },
+      { title: "Типы наречий", theoryRange: [8, 22] },
+      { title: "Образование и позиция наречий", theoryRange: [22, 28] }
     ],
     exercises: ex10,
     vocabulary: [

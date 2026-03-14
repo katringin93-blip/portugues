@@ -71,27 +71,166 @@ export default {
     },
     {
       heading: "Adverbs (Advérbios)",
-      text: "Adverbs are formed from the feminine form of the adjective + the suffix -mente. If the adjective is the same for both genders, -mente is added to the base form."
+      text: "Adverbs are invariable words that can modify a verb, an adjective, another adverb, or a whole sentence."
+    },
+    {
+      examples: [
+        { ru: "Tomorrow we have to go to work. (adverb → verb)" },
+        { ru: "Pedro is quite professional. (adverb → adjective)" },
+        { ru: "Planes fly very high. (adverb → adverb)" },
+        { ru: "Fortunately, he earns enough to support his family. (adverb → sentence)" }
+      ]
+    },
+    {
+      heading: "Adverbs of time (Advérbios de tempo)",
+      text: "Express when an action takes place."
+    },
+    {
+      table: {
+        equalCols: true,
+        headers: ["Português", "Translation"],
+        rows: [
+          ["ontem", "yesterday"],
+          ["hoje", "today"],
+          ["amanhã", "tomorrow"],
+          ["agora ≠ logo", "now ≠ later"],
+          ["antes ≠ depois", "before ≠ after"],
+          ["cedo ≠ tarde", "early ≠ late"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "Today we stay home because it is Sunday." },
+        { ru: "I have to go shopping now." },
+        { ru: "Tomorrow we're going to leave home early." }
+      ]
+    },
+    {
+      heading: "Adverbs of place (Advérbios de lugar)",
+      text: "Express where an action takes place. Portuguese distinguishes several degrees of distance."
+    },
+    {
+      table: {
+        equalCols: true,
+        headers: ["Português", "Translation"],
+        rows: [
+          ["aqui, cá", "here"],
+          ["aí", "there (where you are)"],
+          ["ali, acolá", "there (over there)"],
+          ["lá", "there (far away, previously mentioned)"],
+          ["perto ≠ longe", "near ≠ far"],
+          ["aqui/cá dentro ≠ lá fora", "inside ≠ outside"],
+          ["dentro ≠ fora", "in ≠ out"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "That pencil you have there in your hand belongs to João." },
+        { ru: "David is going to Lisbon and stays there two weeks." },
+        { ru: "We are going to Pedro's house, as it is near." },
+        { ru: "There are a lot of people outside." }
+      ]
+    },
+    {
+      heading: "Adverbs of manner (Advérbios de modo)",
+      text: "Express how an action takes place."
+    },
+    {
+      table: {
+        equalCols: true,
+        headers: ["Português", "Translation"],
+        rows: [
+          ["bem ≠ mal", "well ≠ badly"],
+          ["depressa ≠ devagar", "fast ≠ slowly"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "She drives fast." },
+        { ru: "He speaks Portuguese well." }
+      ]
+    },
+    {
+      heading: "Adverbs of intensity (Advérbios de intensidade)",
+      text: "Express how much or to what degree."
+    },
+    {
+      table: {
+        equalCols: true,
+        headers: ["Português", "Translation"],
+        rows: [
+          ["pouco ≠ muito", "little ≠ very, a lot"],
+          ["menos ≠ mais", "less ≠ more"],
+          ["demasiado", "too much"],
+          ["demais", "too much, too many"]
+        ]
+      }
+    },
+    {
+      examples: [
+        { ru: "She works a lot." },
+        { ru: "You eat too much." },
+        { ru: "I have too many shoes." },
+        { ru: "You don't speak much." }
+      ]
+    },
+    {
+      heading: "Formation of adverbs with -mente",
+      text: "Many adverbs are formed by adding the suffix -mente to the adjective. If the adjective ends in -o, it first changes to the feminine form -a. Any graphic accent on the adjective is dropped."
     },
     {
       table: {
         headers: ["Adjective", "Adverb", "Translation"],
         rows: [
-          ["rápido/a", "rapidamente", "quickly"],
-          ["lento/a", "lentamente", "slowly"],
+          ["normal", "normalmente", "normally"],
+          ["individual", "individualmente", "individually"],
           ["fácil", "facilmente", "easily"],
-          ["feliz", "felizmente", "fortunately"],
-          ["normal", "normalmente", "usually"]
+          ["(in)feliz", "(in)felizmente", "(un)happily"],
+          ["alegre", "alegremente", "cheerfully"],
+          ["semanal", "semanalmente", "weekly"],
+          ["mensal", "mensalmente", "monthly"],
+          ["anual", "anualmente", "annually"],
+          ["lento → lenta", "lentamente", "slowly"],
+          ["rápido → rápida", "rapidamente", "rapidly"],
+          ["óbvio → óbvia", "obviamente", "obviously"],
+          ["cuidadoso → cuidadosa", "cuidadosamente", "carefully"],
+          ["curioso → curiosa", "curiosamente", "curiously"],
+          ["diário → diária", "diariamente", "daily"]
         ]
       }
     },
     {
-      note: "Some adverbs are not formed by the rule: bem (well), mal (badly), muito (very), pouco (little), sempre (always), depressa (quickly), devagar (slowly)."
+      examples: [
+        { ru: "On a normal day Joana goes to work." },
+        { ru: "Normally Joana goes to work." },
+        { ru: "Paula's grandmother walks slowly." }
+      ]
+    },
+    {
+      note: "When two adverbs ending in -mente are used together, only the second takes the suffix: Na minha empresa fazemos relatórios mensal e trimestralmente (In my company we write reports monthly and quarterly)."
+    },
+    {
+      heading: "Position of adverbs",
+      text: "Adverbs of time and place can come before or after the verb. Other adverbs usually come before the adjective or after the verb. Adverbs ending in -mente tend to come at the beginning of a sentence for stress."
+    },
+    {
+      examples: [
+        { ru: "Tomorrow we are going to the cinema. (time — before verb)" },
+        { ru: "They don't work today. (time — after verb)" },
+        { ru: "Pedro's daughter is very beautiful. (intensity — before adjective)" },
+        { ru: "She runs fast. (manner — after verb)" },
+        { ru: "Unfortunately, it is raining. (-mente — beginning of sentence)" },
+        { ru: "Rarely do I have time to go to the cinema. (-mente — beginning of sentence)" }
+      ]
     }
   ],
   lessons: [
-    { title: "Agreement and forms of adjectives" },
-    { title: "Position of adjectives and adverbs" }
+    { title: "Adjectives" },
+    { title: "Types of adverbs" },
+    { title: "Formation and position of adverbs" }
   ],
   vocabulary: [
     { ru: "beautiful" },
