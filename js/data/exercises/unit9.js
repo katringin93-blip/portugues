@@ -47,9 +47,8 @@ export const exercises = [
 
   // Ex2: Rewrite with different noun (agreement changes)
   {
-    type: "translate",
-    source: "Перепишите во мн.ч.: «Esta caneta pertence àquela professora.»",
-    direction: "ru-pt",
+    type: "fill",
+    question: "Перепишите во мн.ч.: «Esta caneta pertence àquela professora.» → ___",
     answer: ["Estas canetas pertencem àquelas professoras."]
   },
   {
