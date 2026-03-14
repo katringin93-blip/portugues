@@ -211,26 +211,31 @@ export default {
     // 13
     {
       question: "Which verbs are reflexive?\n1) Ele come o bolo.\n2) Ele deita-se cedo.\n3) Ela penteia a filha.\n4) Ela penteia-se.",
+      options: ["1 and 3", "2 and 4", "1 and 4", "2 and 3"],
       explanation: "Reflexive verbs: deita-se (goes to bed) and penteia-se (combs her hair). The others are transitive."
     },
     // 14
     {
       question: "Which sentences contain reflexive pronouns?\n1) Ela não sabe se vai trabalhar.\n2) O Pedro não se levanta cedo.\n3) Nós conhecemo-lo bem.\n4) Eles sabem-no melhor.",
+      options: ["1 and 3", "2 and 4", "Only 2", "Only 1"],
       explanation: "Only «O Pedro não se levanta cedo» — reflexive verb (levantar-se). In (1) «se» is the conjunction «if». In (3) «-lo» and (4) «-no» are direct object pronouns (him)."
     },
     // 15
     {
       question: "Which sentences contain reflexive pronouns?\n1) Eu sinto-me bem.\n2) Eu sento-me nesta cadeira.\n3) Elas penteiam-se de manhã.\n4) Eu não me rio muito.",
+      options: ["All four", "1, 2 and 3", "1 and 4", "2 and 3"],
       explanation: "All four sentences contain reflexive verbs: sentir-se, sentar-se, pentear-se, rir-se."
     },
     // 16
     {
       question: "Which sentences contain reflexive pronouns?\n1) Eles lavam-se frequentemente.\n2) Elas levam-nas frequentemente.\n3) Tu interrogas-te muito.\n4) Ela diz-lhe tudo.",
+      options: ["1 and 2", "1 and 3", "2 and 4", "3 and 4"],
       explanation: "Reflexive: «lavam-se» (lavar-se — to wash oneself) and «interrogas-te» (interrogar-se — to question oneself). «Levam-nas» means «they take them» (direct pronoun), «diz-lhe» means «says to him/her» (indirect pronoun)."
     },
     // 17
     {
       question: "Which sentences contain reflexive pronouns?\n1) Vocês não se lembram?\n2) Vocês não o libertam?\n3) Ela despede-se.\n4) Ela despede-o.",
+      options: ["1 and 3", "2 and 4", "1 and 4", "2 and 3"],
       explanation: "Reflexive: «se lembram» (lembrar-se — to remember) and «despede-se» (despedir-se — to say goodbye). «O libertam» and «despede-o» contain the direct pronoun «o» (him)."
     },
     // 18

@@ -227,7 +227,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Tu ___ muito cansado ultimamente. (Ты очень устал в последнее время.)",
-    options: ["és", "estás", "ficas", "és"],
+    options: ["és", "estás", "ficas", "somos"],
     correct: 1,
     explanation: "Временное состояние усталости — «estar»: «Tu estás muito cansado.»"
   },

@@ -43,7 +43,7 @@ export default {
   'lesson.question': 'Вопрос {current} из {total}',
   'lesson.enterAnswer': 'Введите ответ...',
   'lesson.translateToRu': 'Перевод на русский...',
-  'lesson.translateToPt': 'Traduca para portugues...',
+  'lesson.translateToPt': 'Переведите на португальский...',
   'lesson.translatePrompt': 'Переведите:',
   'lesson.check': 'Проверить',
   'lesson.correct': 'Правильно!',

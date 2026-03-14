@@ -86,7 +86,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Какое множественное число у слова «viagem» (путешествие)?",
-    options: ["viagems", "viagems", "viagens", "viagenes"],
+    options: ["viagems", "viajens", "viagens", "viagenes"],
     correct: 2,
     explanation: "Слова на -m образуют множественное число заменой -m на -ns: viagem → viagens."
   },
@@ -191,7 +191,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Какая форма женского рода у слова «paciente» (пациент)?",
-    options: ["a pacienta", "a pacientа", "a paciente", "a pacientesa"],
+    options: ["a pacienta", "a pacienteira", "a paciente", "a pacientesa"],
     correct: 2,
     explanation: "Слова на -ente не меняют форму: o paciente → a paciente. Меняется только артикль."
   },
@@ -247,7 +247,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Какая уменьшительная форма у слова «mão» (рука)?",
-    options: ["a mãoinha", "a mãozinha", "a mãoinha", "a mãzinha"],
+    options: ["a mãoinha", "a mãozinha", "a mãosinha", "a mãzinha"],
     correct: 1,
     explanation: "Mão → mãozinha. Слова на -ão добавляют суффикс -zinha/-zinho."
   },

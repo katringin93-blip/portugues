@@ -315,8 +315,8 @@ export default {
     {
       question: "Match holidays to dates:",
       pairs: [
-        { left: "Natal (Рождество)", right: "25 de dezembro" },
-        { left: "Ano Novo (Новый год)", right: "1 de janeiro" },
+        { left: "Natal (Christmas)", right: "25 de dezembro" },
+        { left: "Ano Novo (New Year)", right: "1 de janeiro" },
         { left: "Dia do Trabalhador", right: "1 de maio" },
         { left: "Dia de Portugal", right: "10 de junho" }
       ]

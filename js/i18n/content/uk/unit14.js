@@ -211,26 +211,31 @@ export default {
     // 13
     {
       question: "Які дієслова є зворотними?\n1) Ele come o bolo.\n2) Ele deita-se cedo.\n3) Ela penteia a filha.\n4) Ela penteia-se.",
+      options: ["1 і 3", "2 і 4", "1 і 4", "2 і 3"],
       explanation: "Зворотні дієслова: deita-se (лягає) та penteia-se (зачісується). Решта — перехідні."
     },
     // 14
     {
       question: "Які речення містять зворотні займенники?\n1) Ela não sabe se vai trabalhar.\n2) O Pedro não se levanta cedo.\n3) Nós conhecemo-lo bem.\n4) Eles sabem-no melhor.",
+      options: ["1 і 3", "2 і 4", "Тільки 2", "Тільки 1"],
       explanation: "Тільки «O Pedro não se levanta cedo» — зворотне дієслово (levantar-se). У (1) «se» — сполучник «якщо». У (3) «-lo» та (4) «-no» — прямі займенники (його)."
     },
     // 15
     {
       question: "Які речення містять зворотні займенники?\n1) Eu sinto-me bem.\n2) Eu sento-me nesta cadeira.\n3) Elas penteiam-se de manhã.\n4) Eu não me rio muito.",
+      options: ["Усі чотири", "1, 2 і 3", "1 і 4", "2 і 3"],
       explanation: "Усі чотири речення містять зворотні дієслова: sentir-se, sentar-se, pentear-se, rir-se."
     },
     // 16
     {
       question: "Які речення містять зворотні займенники?\n1) Eles lavam-se frequentemente.\n2) Elas levam-nas frequentemente.\n3) Tu interrogas-te muito.\n4) Ela diz-lhe tudo.",
+      options: ["1 і 2", "1 і 3", "2 і 4", "3 і 4"],
       explanation: "Зворотні: «lavam-se» (lavar-se — митися) та «interrogas-te» (interrogar-se — запитувати себе). «Levam-nas» — «їх везуть» (прямий займенник), «diz-lhe» — «говорить йому/їй» (непрямий займенник)."
     },
     // 17
     {
       question: "Які речення містять зворотні займенники?\n1) Vocês não se lembram?\n2) Vocês não o libertam?\n3) Ela despede-se.\n4) Ela despede-o.",
+      options: ["1 і 3", "2 і 4", "1 і 4", "2 і 3"],
       explanation: "Зворотні: «se lembram» (lembrar-se — пам'ятати) та «despede-se» (despedir-se — прощатися). «O libertam» та «despede-o» містять прямий займенник «o» (його)."
     },
     // 18
