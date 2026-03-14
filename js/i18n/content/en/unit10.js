@@ -20,14 +20,28 @@ export default {
     },
     {
       heading: "Position of adjectives",
-      text: "Usually adjectives come after the noun: um carro vermelho (a red car). Some short and common adjectives can come before the noun, changing the shade of meaning: bom, mau, grande, pequeno."
+      text: "Usually adjectives come after the noun: um carro vermelho (a red car). Some short and common adjectives can come before the noun, taking on a figurative or intensified meaning."
+    },
+    {
+      table: {
+        headers: ["After noun (literal)", "Before noun (figurative)"],
+        rows: [
+          ["um homem rico — a rich man", "um rico homem — a great guy"],
+          ["pessoas velhas — old people", "velhos amigos — old friends (long-time)"],
+          ["uma mulher bela — a beautiful woman", "uma bela mulher — a wonderful woman"],
+          ["uma casa grande — a big house", "um grande homem — a great man"],
+          ["um carro novo — a new car", "um novo problema — yet another problem"]
+        ]
+      }
     },
     {
       examples: [
-        { ru: "A big house (literal)" },
-        { ru: "A great man (figurative meaning)" },
-        { ru: "A new car" },
-        { ru: "Portuguese food is delicious." }
+        { ru: "He is a rich man." },
+        { ru: "He is a great guy." },
+        { ru: "They are old people." },
+        { ru: "They are old friends (long-time)." },
+        { ru: "She is a beautiful woman." },
+        { ru: "She is a wonderful woman." }
       ]
     },
     {
