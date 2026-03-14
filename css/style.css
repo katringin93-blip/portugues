@@ -164,6 +164,14 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: -webkit-inline-flex; display: inline-flex;
+  -webkit-align-items: center; align-items: center;
+  gap: .5rem;
+}
+.logo-icon {
+  width: 28px; height: 28px;
+  flex-shrink: 0;
+  -webkit-text-fill-color: initial;
 }
 .logo:hover { text-decoration: none; }
 /* M3 nav — pill-style active indicator */

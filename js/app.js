@@ -131,7 +131,7 @@ export async function createApp() {
         <template v-else>
           <header class="app-header">
             <div class="header-inner">
-              <router-link to="/" class="logo">Portugues</router-link>
+              <router-link to="/" class="logo"><img src="favicon.svg" alt="" class="logo-icon">Portugues</router-link>
               <nav class="main-nav">
                 <router-link to="/">{{ t('nav.lessons') }}</router-link>
                 <router-link to="/flashcards">{{ t('nav.flashcards') }}</router-link>
