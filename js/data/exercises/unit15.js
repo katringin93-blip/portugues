@@ -34,22 +34,22 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Вставьте два притяжательных: Os ___ livros são diferentes dos ___. (её собственные; её подруги — dela)",
+    question: "Вставьте два притяжательных: Os ___ livros são diferentes dos ___. (её собственные; её подруги)",
     answer: ["seus", "dela"]
   },
   {
     type: "fill",
-    question: "Вставьте: A ___ mãe é professora. (его, формальное — sua)",
+    question: "Вставьте: A ___ mãe é professora. (его, формальное)",
     answer: "sua"
   },
   {
     type: "fill",
-    question: "Вставьте: A ___ família é grande. (его, формальное — sua)",
+    question: "Вставьте: A ___ família é grande. (его, формальное)",
     answer: "sua"
   },
   {
     type: "fill",
-    question: "Вставьте: O escritório ___ é moderno. (её — dela)",
+    question: "Вставьте: O escritório ___ é moderno. (её, уточнение)",
     answer: "dela"
   },
   {
@@ -100,7 +100,7 @@ export const exercises = [
   },
   {
     type: "choice",
-    question: "— De quem é este carro? — É o carro ___. (его — dele)",
+    question: "— De quem é este carro? — É o carro ___. (его, уточнение)",
     options: ["seu", "dele", "meu", "nosso"],
     correct: 1,
     explanation: "Для уточнения «его» используют «dele»: É o carro dele."
@@ -117,7 +117,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "— Este é o ___ apartamento? (Ваш, формальное) — Sim, a cadeira ___ é bonita. (её — dela)",
+    question: "— Este é o ___ apartamento? (Ваш, формальное) — Sim, a cadeira ___ é bonita. (её, уточнение)",
     answer: ["seu", "dela"]
   },
   {

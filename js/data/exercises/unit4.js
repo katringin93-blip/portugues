@@ -170,7 +170,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Проспрягайте: Eu ___ água de um poço. (fornecer — поставлять, eu → forneço)",
+    question: "Проспрягайте: Eu ___ água de um poço. (fornecer — поставлять, eu)",
     answer: "forneço"
   },
 
@@ -194,7 +194,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Проспрягайте: Eu ___ frio. (sentir — чувствовать, eu → sinto)",
+    question: "Проспрягайте: Eu ___ frio. (sentir — чувствовать, eu)",
     answer: "sinto"
   },
   {
@@ -329,7 +329,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Заполните: Ele ___ o «tu» com os amigos. (omitir — опускать, ele → omite)",
+    question: "Заполните: Ele ___ o «tu» com os amigos. (omitir — опускать, ele)",
     answer: "omite"
   },
   {

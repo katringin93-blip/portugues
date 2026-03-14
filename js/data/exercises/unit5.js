@@ -109,7 +109,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Заполните: O sol ___ muitos visitantes. (trazer — приносить/привлекать, ele → traz)",
+    question: "Заполните: O sol ___ muitos visitantes. (trazer — приносить/привлекать, ele)",
     answer: "traz"
   },
   {
@@ -258,7 +258,7 @@ export const exercises = [
   // === Ex6: Conjugate in text about tourism (10 items) ===
   {
     type: "fill",
-    question: "Заполните: Quem ___ Portugal, adora o país. (ver — видеть/посещать, ele → vê)",
+    question: "Заполните: Quem ___ Portugal, adora o país. (ver — видеть/посещать, ele)",
     answer: "vê"
   },
   {
@@ -275,7 +275,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Заполните: Quem ___ ao Algarve, não quer sair. (ir — идти, ele → vai)",
+    question: "Заполните: Quem ___ ao Algarve, não quer sair. (ir — идти, ele)",
     answer: "vai"
   },
   {
@@ -307,7 +307,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Заполните: Os visitantes ___ paisagens incríveis. (ver — видеть, eles → vêem)",
+    question: "Заполните: Os visitantes ___ paisagens incríveis. (ver — видеть, eles)",
     answer: "vêem"
   },
 
