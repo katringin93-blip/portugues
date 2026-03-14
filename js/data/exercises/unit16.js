@@ -3,7 +3,7 @@ export const exercises = [
   {
     type: "fill",
     question: "Перепишите в Pretérito Perfeito Composto: Eles não têm tempo. → Eles ___",
-    answer: "não têm estado"
+    answer: "não têm tido tempo"
   },
   {
     type: "fill",
@@ -23,7 +23,7 @@ export const exercises = [
   {
     type: "fill",
     question: "Перепишите в Pretérito Perfeito Composto: Nós não temos sorte. → Nós ___",
-    answer: "não temos tido"
+    answer: "não temos tido sorte"
   },
   {
     type: "fill",
@@ -43,12 +43,12 @@ export const exercises = [
   {
     type: "fill",
     question: "Перепишите в Pretérito Perfeito Composto: Ele traz flores. → Ele ___",
-    answer: "tem trazido"
+    answer: "tem trazido flores"
   },
   {
     type: "fill",
     question: "Перепишите в Pretérito Perfeito Composto: Eu ponho a mesa. → Eu ___",
-    answer: "tenho posto"
+    answer: "tenho posto a mesa"
   },
 
   // === Ex2: Впишите правильную форму Pret. Perf. Composto (12 items) ===
@@ -277,6 +277,42 @@ export const exercises = [
     source: "Его брат занимался каждый день (в последнее время).",
     direction: "ru-pt",
     answer: ["O seu irmão tem estudado todos os dias."]
+  },
+  {
+    type: "translate",
+    source: "Мы вкладывали много денег в твою компанию (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Nós temos posto muito dinheiro na tua empresa."]
+  },
+  {
+    type: "translate",
+    source: "Много пожилых людей умирало от жары (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Muitos idosos têm morrido com o calor."]
+  },
+  {
+    type: "translate",
+    source: "Он не принимал мои советы (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Ele não tem aceitado os meus conselhos."]
+  },
+  {
+    type: "translate",
+    source: "Эта школа исключала много учеников (в последнее время).",
+    direction: "ru-pt",
+    answer: ["Esta escola tem expulsado muitos alunos."]
+  },
+  {
+    type: "translate",
+    source: "Моя тётя смотрела много португальских фильмов (в последнее время).",
+    direction: "ru-pt",
+    answer: ["A minha tia tem visto muitos filmes portugueses."]
+  },
+  {
+    type: "translate",
+    source: "Моя начальница болела в последнее время.",
+    direction: "ru-pt",
+    answer: ["A minha chefe tem estado doente."]
   },
 
   // === Ex6: Заполните текст о португальской эмиграции (7 items) ===

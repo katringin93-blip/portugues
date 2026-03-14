@@ -1954,24 +1954,41 @@ export const units = [
         table: {
           headers: ["Конструкция", "Значение", "Пример"],
           rows: [
-            ["mais + прил. + do que", "более ... чем", "Lisboa é mais grande do que o Porto."],
+            ["mais + прил. + do que", "более ... чем", "Lisboa é maior do que o Porto."],
             ["menos + прил. + do que", "менее ... чем", "O Porto é menos quente do que Lisboa."],
-            ["tão + прил. + como", "такой же ... как", "Coimbra é tão bonita como o Porto."]
+            ["tão + прил. + como/quanto", "такой же ... как", "Coimbra é tão bonita como o Porto."],
+            ["tanto(s)/tanta(s) + сущ. + como", "столько же ... сколько", "Tenho tanto vinho como sumo."]
           ]
         }
       },
       {
-        heading: "Неправильные формы сравнения",
-        text: "Некоторые прилагательные имеют особые формы сравнительной степени."
+        note: "Конструкция tão ... como используется с прилагательными и наречиями, а tanto(s)/tanta(s) ... como — с существительными."
+      },
+      {
+        heading: "Усиление сравнений",
+        text: "Сравнительные конструкции можно усилить наречиями muito (гораздо), bem (значительно) и ainda (ещё)."
+      },
+      {
+        examples: [
+          { pt: "A Ana é muito mais bonita do que a Paula.", ru: "Ана гораздо красивее Паулы." },
+          { pt: "Eu acho o Porto bem mais interessante do que Lisboa.", ru: "Я считаю Порту значительно интереснее Лиссабона." },
+          { pt: "A Sofia é ainda menos faladora do que a Suzana.", ru: "София ещё менее разговорчива, чем Сузана." }
+        ]
+      },
+      {
+        heading: "Неправильные формы сравнения и превосходной степени",
+        text: "Некоторые прилагательные имеют особые формы сравнительной и превосходной степени."
       },
       {
         table: {
-          headers: ["Прилагательное", "Сравнительная степень"],
+          headers: ["Прилагательное", "Сравнит. степень", "Относит. превосх.", "Абсолют. превосх."],
           rows: [
-            ["bom (хороший)", "melhor (лучше)"],
-            ["mau (плохой)", "pior (хуже)"],
-            ["grande (большой)", "maior (больше)"],
-            ["pequeno (маленький)", "menor (меньше)"]
+            ["bom (хороший)", "melhor", "o melhor", "ótimo"],
+            ["mau (плохой)", "pior", "o pior", "péssimo"],
+            ["grande (большой)", "maior", "o maior", "máximo"],
+            ["pequeno (маленький)", "menor", "o menor", "mínimo"],
+            ["muito (очень)", "mais", "o mais", "muitíssimo"],
+            ["pouco (мало)", "menos", "o menos", "pouquíssimo"]
           ]
         }
       },
@@ -1983,24 +2000,64 @@ export const units = [
         table: {
           headers: ["Тип", "Конструкция", "Пример"],
           rows: [
-            ["Относительная", "o/a mais + прил.", "Ela é a mais inteligente da turma."],
+            ["Относительная (более)", "o/a mais + прил.", "Ela é a mais inteligente da turma."],
+            ["Относительная (менее)", "o/a menos + прил.", "O José é o rapaz menos inteligente."],
             ["Относительная (нерег.)", "o/a melhor / pior", "Este é o melhor restaurante."],
-            ["Абсолютная (-íssimo)", "прил. + -íssimo/a", "A comida está boníssima."],
+            ["Абсолютная (-íssimo)", "прил. + -íssimo/a", "A comida está ótima."],
             ["Абсолютная (muito)", "muito + прил.", "A comida está muito boa."]
           ]
         }
+      },
+      {
+        heading: "Правила образования абсолютной превосходной степени (-íssimo)",
+        text: "Суффикс -íssimo/-a/-os/-as добавляется к основе прилагательного. При этом графические ударения снимаются."
+      },
+      {
+        table: {
+          headers: ["Окончание прилаг.", "Правило", "Примеры"],
+          rows: [
+            ["-a, -e, -o", "Гласная отпадает + -íssimo", "lento → lentíssimo, triste → tristíssimo"],
+            ["-l, -r, -s", "Просто добавляется -íssimo", "original → originalíssimo, vulgar → vulgaríssimo"],
+            ["-co", "-c меняется на -qu + íssimo", "fraco → fraquíssimo, rico → riquíssimo"]
+          ]
+        }
+      },
+      {
+        heading: "Неправильные абсолютные превосходные степени",
+        text: "Некоторые прилагательные имеют особые формы абсолютной превосходной степени (латинского происхождения)."
+      },
+      {
+        table: {
+          headers: ["Прилагательное", "Абсолютная превосходная степень"],
+          rows: [
+            ["amigo (дружеский)", "amicíssimo"],
+            ["antigo (старинный)", "antiquíssimo"],
+            ["difícil (трудный)", "dificílimo"],
+            ["pobre (бедный)", "paupérrimo"]
+          ]
+        }
+      },
+      {
+        heading: "Неформальные альтернативы",
+        text: "В разговорном португальском вместо суффикса -íssimo часто используются наречия muitíssimo, extremamente или super перед прилагательным."
       },
       {
         examples: [
           { pt: "O Porto é mais frio do que Lisboa.", ru: "Порту холоднее Лиссабона." },
           { pt: "Este vinho é melhor do que aquele.", ru: "Это вино лучше того." },
           { pt: "Ela é a aluna mais inteligente da turma.", ru: "Она — самая умная ученица в классе." },
-          { pt: "O exame foi facílimo.", ru: "Экзамен был очень лёгким." }
+          { pt: "O exame foi facílimo.", ru: "Экзамен был очень лёгким." },
+          { pt: "O Filipe está muitíssimo triste.", ru: "Филипе чрезвычайно грустный." },
+          { pt: "O apartamento dele é super moderno.", ru: "Его квартира суперсовременная." }
         ]
       },
       {
         note: "В европейском португальском «do que» часто сокращается до «que» в разговорной речи: «É mais alto que eu» (Он выше меня)."
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Сравнительная степень", theoryRange: [0, 7] },
+      { title: "Часть 2: Превосходная степень", theoryRange: [7, 16] }
     ],
     exercises: ex11,
     vocabulary: [
@@ -2576,6 +2633,7 @@ export const units = [
             ["ver", "visto", "увиденный"],
             ["escrever", "escrito", "написанный"],
             ["abrir", "aberto", "открытый"],
+            ["cobrir", "coberto", "покрытый"],
             ["pôr", "posto", "положенный"],
             ["vir", "vindo", "пришедший"]
           ]
@@ -2738,16 +2796,34 @@ export const units = [
         }
       },
       {
+        table: {
+          headers: ["Лицо", "pôr", "trazer", "ver"],
+          rows: [
+            ["eu", "pus", "trouxe", "vi"],
+            ["tu", "puseste", "trouxeste", "viste"],
+            ["ele/ela/você", "pôs", "trouxe", "viu"],
+            ["nós", "pusemos", "trouxemos", "vimos"],
+            ["eles/elas/vocês", "puseram", "trouxeram", "viram"]
+          ]
+        }
+      },
+      {
         examples: [
           { pt: "Ontem falei com o João.", ru: "Вчера я поговорил с Жуау." },
           { pt: "Eles foram ao cinema.", ru: "Они пошли в кино." },
           { pt: "Tu fizeste o trabalho?", ru: "Ты сделал работу?" },
-          { pt: "Nós estivemos em Lisboa.", ru: "Мы были в Лиссабоне." }
+          { pt: "Nós estivemos em Lisboa.", ru: "Мы были в Лиссабоне." },
+          { pt: "Já puseste a mesa, filha?", ru: "Ты уже накрыла на стол, дочка?" },
+          { pt: "Esta manhã vimos um acidente.", ru: "Сегодня утром мы видели аварию." }
         ]
       },
       {
         note: "Обратите внимание: в европейском португальском форма «nós» для -ar глаголов в Pretérito Perfeito имеет ударение: falámos (с акцентом!), в отличие от настоящего времени: falamos (без акцента). В бразильском эта разница не отмечается."
       }
+    ],
+    lessons: [
+      { title: "Часть 1: Правильные глаголы", theoryRange: [0, 3] },
+      { title: "Часть 2: Неправильные глаголы", theoryRange: [3, 10] }
     ],
     exercises: ex17,
     vocabulary: [
@@ -2842,6 +2918,9 @@ export const units = [
             ["eles/elas", "eram", "tinham", "vinham", "punham"]
           ]
         }
+      },
+      {
+        note: "Важно: глаголы dar, dizer, fazer, ir, saber, trazer, ver — неправильные в других временах, но в Imperfeito они спрягаются по обычным правилам: dava, dizia, fazia, ia, sabia, trazia, via."
       },
       {
         heading: "Маркеры Imperfeito",
@@ -2986,6 +3065,18 @@ export const units = [
         ]
       },
       {
+        heading: "Estar a + инфинитив для описания фона",
+        text: "Вместо простого Imperfeito для описания фонового действия часто используется конструкция estar (в Imperfeito) + a + инфинитив. Это подчёркивает, что действие происходило именно в тот момент."
+      },
+      {
+        examples: [
+          { pt: "Eu estava a ler quando ela chegou.", ru: "Я читал (в тот момент), когда она приехала." },
+          { pt: "Eles estavam a jantar quando o telefone tocou.", ru: "Они ужинали, когда зазвонил телефон." },
+          { pt: "O que estavas a fazer quando te telefonei?", ru: "Что ты делал, когда я тебе позвонил?" },
+          { pt: "Estava a chover quando saímos do cinema.", ru: "Шёл дождь, когда мы вышли из кино." }
+        ]
+      },
+      {
         note: "Ключевое правило: если можно заменить на «обычно делал» или «в тот момент делал» — используйте Imperfeito. Если можно заменить на «сделал», «произошло» — используйте Perfeito."
       }
     ],
@@ -3089,11 +3180,14 @@ export const units = [
         table: {
           headers: ["Глагол", "eu", "ele/ela", "eles/elas"],
           rows: [
-            ["ser", "fora", "fora", "foram"],
+            ["ser/ir", "fora", "fora", "foram"],
             ["ter", "tivera", "tivera", "tiveram"],
             ["estar", "estivera", "estivera", "estiveram"],
             ["fazer", "fizera", "fizera", "fizeram"],
             ["dizer", "dissera", "dissera", "disseram"],
+            ["dar", "dera", "dera", "deram"],
+            ["pôr", "pusera", "pusera", "puseram"],
+            ["trazer", "trouxera", "trouxera", "trouxeram"],
             ["vir", "viera", "viera", "vieram"]
           ]
         }
@@ -3131,8 +3225,12 @@ export const units = [
         examples: [
           { pt: "Ele tinha-me telefonado antes do jantar.", ru: "Он позвонил мне перед ужином." },
           { pt: "Nós não lhe tínhamos dito nada.", ru: "Мы ему/ей ничего не сказали." },
-          { pt: "Ela já se tinha levantado quando cheguei.", ru: "Она уже встала, когда я пришёл." }
+          { pt: "Ela já se tinha levantado quando cheguei.", ru: "Она уже встала, когда я пришёл." },
+          { pt: "Eu tinha-lhos pedido.", ru: "Я попросил у него/неё их (lhe + os = lhos)." }
         ]
+      },
+      {
+        note: "Форма 3-го лица множественного числа M-q-P Simples совпадает с Pretérito Perfeito (falaram = falaram). Поэтому для 3-го лица мн.ч. предпочтительно использовать составную форму (tinham falado), чтобы избежать двусмысленности."
       }
     ],
     exercises: ex20,

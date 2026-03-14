@@ -35,7 +35,7 @@ export const exercises = [
   {
     type: "fill",
     question: "Замените: Ele ajuda as colegas. → Ele ___",
-    answer: "ajuda-las"
+    answer: "ajuda-as"
   },
   {
     type: "choice",
@@ -134,10 +134,10 @@ export const exercises = [
   // === Ex4: Позиция местоимения (проклиза/энклиза) ===
   {
     type: "choice",
-    question: "Как правильно: Tu ___ (os bolos) — «Ты их (торты) покупаешь?» (с вопросительным словом опущено)",
+    question: "Как правильно: Tu não ___ (os bolos) — «Ты их (торты) не покупаешь.» (проклиза после «não»)",
     options: ["compras-os", "os compras", "compra-os", "los compras"],
     correct: 1,
-    explanation: "В данном контексте (подразумевается вопрос) может использоваться проклиза: os compras."
+    explanation: "После «não» используется проклиза: Tu não os compras."
   },
   {
     type: "fill",
@@ -146,7 +146,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "Ele sempre ___ (os jornais) — Он всегда их читает. (проклиза после «sempre»)",
+    question: "Ele nunca ___ (os jornais) — Он никогда их не читает. (проклиза после «nunca»)",
     answer: "os lê"
   },
   {

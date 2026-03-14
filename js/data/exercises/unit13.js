@@ -29,7 +29,7 @@ export const exercises = [
   },
   {
     type: "fill",
-    question: "A avó ___ (a eles) presentes. (бабушка им даёт подарки — проклиза после союза)",
+    question: "A avó, que ___ (a eles) presentes, é muito generosa. (бабушка, которая им даёт подарки — проклиза после «que»)",
     answer: "lhes dá"
   },
   {
@@ -55,7 +55,7 @@ export const exercises = [
   // === Ex2: Контракция прямого + косвенного местоимения ===
   {
     type: "choice",
-    question: "Как объединяются «me» + «o» в контракции? Eu digo + o livro + a ti = Eu ___",
+    question: "Как объединяются «te» + «o» в контракции? Eu digo + o livro + a ti = Eu ___",
     options: ["digo-te-o", "digo-to", "digo-lho", "te-o digo"],
     correct: 1,
     explanation: "Te + o = to. «Eu digo-to» (Я тебе это говорю)."

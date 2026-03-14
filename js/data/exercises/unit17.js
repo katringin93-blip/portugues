@@ -122,7 +122,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Нарратив: No verão passado eu ___ uma viagem ao Algarve. (fazer)",
-    options: ["fiz", "fez", "fez", "fizemos"],
+    options: ["fiz", "fez", "fizeste", "fizemos"],
     correct: 0,
     explanation: "«Eu fiz» — форма 1-го лица ед.ч. глагола «fazer» в Pretérito Perfeito."
   },
