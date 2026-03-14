@@ -133,13 +133,13 @@ export function speak(text, rate) {
   if (!text) return Promise.resolve();
 
   // 1. Always try Edge TTS first (pt-PT-RaquelNeural — guaranteed European Portuguese)
-  // 2. If Edge TTS fails — fall back to system pt-PT voice, then any Portuguese voice
+  // 2. If Edge TTS fails — fall back to system pt-PT voice only (never pt-BR)
   return speakWithEdgeTTS(text, rate).catch(function() {
-    var fallback = webVoice || anyPtVoice;
-    if (fallback) {
-      console.log('TTS: falling back to Web Speech API:', fallback.name);
-      return speakWithWebAPI(text, rate, fallback);
+    if (webVoice) {
+      console.log('TTS: falling back to Web Speech API:', webVoice.name);
+      return speakWithWebAPI(text, rate, webVoice);
     }
+    // No pt-PT system voice available — fail silently rather than play pt-BR
   });
 }
 
