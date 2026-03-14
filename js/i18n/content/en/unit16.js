@@ -8,7 +8,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "ter + particípio"]
+        headers: ["Person", "ter + particípio"],
+        rows: [
+          ["eu", "tenho falado"],
+          ["tu", "tens falado"],
+          ["ele/ela/você", "tem falado"],
+          ["nós", "temos falado"],
+          ["eles/elas/vocês", "têm falado"]
+        ]
       }
     },
     {

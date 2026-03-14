@@ -32,7 +32,22 @@ export default {
       heading: "Contractions with prepositions",
       text: "Demonstrative pronouns contract with the prepositions «de» and «em»."
     },
-    {},
+    {
+      table: {
+        headers: ["", "de + ...", "em + ..."],
+        rows: [
+          ["este", "deste", "neste"],
+          ["esta", "desta", "nesta"],
+          ["esse", "desse", "nesse"],
+          ["essa", "dessa", "nessa"],
+          ["aquele", "daquele", "naquele"],
+          ["aquela", "daquela", "naquela"],
+          ["isto", "disto", "nisto"],
+          ["isso", "disso", "nisso"],
+          ["aquilo", "daquilo", "naquilo"]
+        ]
+      }
+    },
     {
       examples: [
         { ru: "This book is mine. (book in my hands)" },
@@ -71,7 +86,16 @@ export default {
       heading: "Contraction with the preposition «a»",
       text: "Unlike the prepositions «de» and «em», the preposition «a» only contracts with the forms aquele/aquela/aquilo."
     },
-    {},
+    {
+      table: {
+        headers: ["", "a + ..."],
+        rows: [
+          ["aquele(s)", "àquele(s)"],
+          ["aquela(s)", "àquela(s)"],
+          ["aquilo", "àquilo"]
+        ]
+      }
+    },
     {
       examples: [
         { ru: "João always gives a coin to that beggar on the corner over there." }

@@ -8,7 +8,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "ser"]
+        headers: ["Person", "ser"],
+        rows: [
+          ["eu", "sou"],
+          ["tu", "és"],
+          ["ele/ela/você", "é"],
+          ["nós", "somos"],
+          ["eles/elas/vocês", "são"]
+        ]
       }
     },
     {
@@ -17,7 +24,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "estar"]
+        headers: ["Person", "estar"],
+        rows: [
+          ["eu", "estou"],
+          ["tu", "estás"],
+          ["ele/ela/você", "está"],
+          ["nós", "estamos"],
+          ["eles/elas/vocês", "estão"]
+        ]
       }
     },
     {

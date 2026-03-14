@@ -3,10 +3,12 @@ export default {
   description: "Forms and usage of indirect object pronouns (pronomes de complemento indireto)",
   theory: [
     {
+      // [0]
       heading: "Forms of indirect object pronouns",
       text: "Indirect object pronouns answer the question \u00abto whom?\u00bb and replace a noun with the preposition \u00aba\u00bb."
     },
     {
+      // [1]
       table: {
         headers: ["Person", "Pronoun", "Translation"],
         rows: [
@@ -19,14 +21,46 @@ export default {
       }
     },
     {
+      // [2]
       heading: "Position in the sentence",
-      text: "The position rules are the same as for direct object pronouns: enclisis (after the verb) by default, proclisis (before) after negation, interrogative words, and conjunctions."
+      text: "The position rules are the same as for direct object pronouns: enclisis (after the verb) by default, proclisis (before) after trigger words such as negations, interrogative words, conjunctions, and adverbs."
     },
     {
+      // [3]
+      heading: "Enclisis with indirect pronouns",
+      text: "In affirmative sentences without trigger words, the indirect object pronoun follows the verb, joined by a hyphen (enclisis). Trigger words \u2014 negations, question words, conjunctions, and adverbs \u2014 pull the pronoun to the position before the verb."
+    },
+    {
+      // [4]
+      examples: [
+        { ru: "Filipa gives me many pens." },
+        { ru: "They give you very little affection." },
+        { ru: "(They) give you very little affection." },
+        { ru: "Pedro needs guidance and his father gives him good advice." },
+        { ru: "My aunt sells us her car very cheaply." },
+        { ru: "They like sweet things and you always give them chocolates." }
+      ]
+    },
+    {
+      // [5]
+      heading: "Proclisis with indirect pronouns",
+      text: "After a negation, question word, conjunction, or adverb, the indirect object pronoun moves to the position before the verb (proclisis)."
+    },
+    {
+      // [6]
+      examples: [
+        { ru: "Filipa never gives me pens." },
+        { ru: "Who buys you school supplies?" },
+        { ru: "Since you are bringing them national products, bring past\u00e9is de nata." }
+      ]
+    },
+    {
+      // [7]
       heading: "Combining direct and indirect objects",
       text: "When a sentence has both a direct and an indirect pronoun, they merge."
     },
     {
+      // [8]
       table: {
         headers: ["", "o", "a", "os", "as"],
         rows: [
@@ -39,14 +73,34 @@ export default {
       }
     },
     {
+      // [9]
+      heading: "The 'nos' contraction rule",
+      text: "When \u00abnos\u00bb combines with the direct object pronouns o/a/os/as, the letter \u00abs\u00bb is dropped and a hyphen is inserted: nos + o \u2192 no-lo, nos + a \u2192 no-la, nos + os \u2192 no-los, nos + as \u2192 no-las. This is a phonological rule to avoid a double \u00abs\u00bb sound."
+    },
+    {
+      // [10]
+      examples: [
+        { ru: "Our parents give us gifts, but they only give them to us at Christmas." },
+        { ru: "The teacher tells us what will be on the test, but she tells it to us indirectly." },
+        { ru: "Dad lends us the car, but he never lends it to us at night." },
+        { ru: "Auntie buys us a lot of clothes, but she only buys them for us at the market." }
+      ]
+    },
+    {
+      // [11]
+      note: "With proclisis, the contracted forms also move before the verb: \u00abnunca no-lo empresta\u00bb, \u00abs\u00f3 no-la compra\u00bb, etc. The hyphenated contracted form remains intact; only its position in the sentence changes."
+    },
+    {
+      // [12]
       examples: [
         { ru: "I give him/her the book." },
         { ru: "I won't tell him/her anything." },
-        { ru: "He gives it to me." },
+        { ru: "He gives it to me. (= gives me + it)" },
         { ru: "I call him/her every day." }
       ]
     },
     {
+      // [13]
       note: "The verb \u00abtelefonar\u00bb in Portuguese requires an indirect object (telefonar a algu\u00e9m), so \u00ablhe\u00bb is used, not \u00abo/a\u00bb. Also: \u00abpedir a\u00bb (to ask), \u00abdizer a\u00bb (to tell), \u00abdar a\u00bb (to give to)."
     }
   ],
@@ -108,48 +162,48 @@ export default {
   exercises: [
     // Ex1: Add the indirect object pronoun
     { question: "Add the indirect object pronoun: Quero ___ (a ela) um presente. (give her)" },
-    { question: "O pai ___ (a eles) que não podem sair. (tells them)" },
+    { question: "O pai ___ (a eles) que n\u00e3o podem sair. (tells them)" },
     { question: "Vou ___ (a ele) o meu carro. (sell him)" },
-    { question: "A mãe ___ (a ela) o almoço. (makes her lunch)" },
-    { question: "Replace «a nós»: Ele traz ___ (a nós) flores.", explanation: "«A nós» is replaced by «nos»: traz-nos." },
-    { question: "A avó, que ___ (a eles) presentes, é muito generosa. (grandmother who gives them gifts — proclisis after «que»)" },
-    { question: "A professora ___ (a ele) uma história. (reads him)" },
+    { question: "A m\u00e3e ___ (a ela) o almo\u00e7o. (makes her lunch)" },
+    { question: "Replace \u00aba n\u00f3s\u00bb: Ele traz ___ (a n\u00f3s) flores.", explanation: "\u00abA n\u00f3s\u00bb is replaced by \u00abnos\u00bb: traz-nos." },
+    { question: "A av\u00f3, que ___ (a eles) presentes, \u00e9 muito generosa. (grandmother who gives them gifts \u2014 proclisis after \u00abque\u00bb)" },
+    { question: "A professora ___ (a ele) uma hist\u00f3ria. (reads him)" },
     { question: "Ela ___ (a eles) bolos. (makes them)" },
-    { question: "Ele ___ (a vocês) sapatos novos. (buys you)" },
-    { question: "O professor ___ (a ela) português. (teaches her)" },
+    { question: "Ele ___ (a voc\u00eas) sapatos novos. (buys you)" },
+    { question: "O professor ___ (a ela) portugu\u00eas. (teaches her)" },
     // Ex2: Direct + indirect pronoun contraction
-    { question: "How do «te» + «o» contract? Eu digo + o livro + a ti = Eu ___", explanation: "Te + o = to. «Eu digo-to» (I tell you this)." },
-    { question: "Contraction: Ela dá as flores a nós. → Ela ___ (nos + as)" },
-    { question: "Contraction with negation: Ele nunca dá o livro a ela. → Ele nunca ___ (lhe + o)" },
-    { question: "Contraction: Eu levo a mala a ela. → Eu ___ (lhe + a)" },
-    { question: "Contraction: Ele entrega os documentos a mim. → Ele ___ (me + os)" },
+    { question: "How do \u00abte\u00bb + \u00abo\u00bb contract? Eu digo + o livro + a ti = Eu ___", explanation: "Te + o = to. \u00abEu digo-to\u00bb (I tell you this)." },
+    { question: "Contraction: Ela d\u00e1 as flores a n\u00f3s. \u2192 Ela ___ (nos + as)" },
+    { question: "Contraction with negation: Ele nunca d\u00e1 o livro a ela. \u2192 Ele nunca ___ (lhe + o)" },
+    { question: "Contraction: Eu levo a mala a ela. \u2192 Eu ___ (lhe + a)" },
+    { question: "Contraction: Ele entrega os documentos a mim. \u2192 Ele ___ (me + os)" },
     { question: "What is the contraction of nos + as?", explanation: "Nos + as = no-las. Example: Ela faz-no-las (She makes them for us)." },
-    { question: "Contraction: Ela leva o livro a ele. → Ela ___ (lhe + o)" },
-    { question: "Contraction: Eles limpam a casa a ti. → Eles ___ (te + a)" },
-    { question: "Contraction: Eu empresto o dinheiro a ele. → Eu ___ (lhe + o)" },
-    { question: "Contraction: Ele traz as revistas a mim. → Ele ___ (me + as)" },
+    { question: "Contraction: Ela leva o livro a ele. \u2192 Ela ___ (lhe + o)" },
+    { question: "Contraction: Eles limpam a casa a ti. \u2192 Eles ___ (te + a)" },
+    { question: "Contraction: Eu empresto o dinheiro a ele. \u2192 Eu ___ (lhe + o)" },
+    { question: "Contraction: Ele traz as revistas a mim. \u2192 Ele ___ (me + as)" },
     // Ex3: Pronoun position with adverbs/negation
-    { question: "Rewrite with negation: Ele leva-to. → Ele não ___" },
-    { question: "Rewrite with «também»: Tu levas-lhas. → Tu também ___" },
-    { question: "Rewrite with «nunca»: Eles dizem-lhe. → Eles nunca ___" },
-    { question: "Rewrite with «só»: Ela lê-lhe. → Ela só ___", explanation: "«Só» triggers proclisis: só lhe lê (only reads to him/her)." },
-    { question: "Rewrite with «não»: Ele autoriza-me. → Ele não ___" },
-    { question: "Rewrite with «também»: Ela telefona-lhe. → Ela também ___" },
-    { question: "Rewrite with «nem»: Ele envia-me emails. → Ele nem ___" },
-    { question: "Rewrite with «só»: Tu dás-no-las hoje à noite. → Tu só ___" },
-    { question: "Rewrite with «também»: Ela fala-lhes todos os dias. → Ela também ___" },
-    { question: "Rewrite with «só»: Eu pergunto-lhe o que ela precisa. → Eu só ___" },
+    { question: "Rewrite with negation: Ele leva-to. \u2192 Ele n\u00e3o ___" },
+    { question: "Rewrite with \u00abtamb\u00e9m\u00bb: Tu levas-lhas. \u2192 Tu tamb\u00e9m ___" },
+    { question: "Rewrite with \u00abnunca\u00bb: Eles dizem-lhe. \u2192 Eles nunca ___" },
+    { question: "Rewrite with \u00abs\u00f3\u00bb: Ela l\u00ea-lhe. \u2192 Ela s\u00f3 ___", explanation: "\u00abS\u00f3\u00bb triggers proclisis: s\u00f3 lhe l\u00ea (only reads to him/her)." },
+    { question: "Rewrite with \u00abn\u00e3o\u00bb: Ele autoriza-me. \u2192 Ele n\u00e3o ___" },
+    { question: "Rewrite with \u00abtamb\u00e9m\u00bb: Ela telefona-lhe. \u2192 Ela tamb\u00e9m ___" },
+    { question: "Rewrite with \u00abnem\u00bb: Ele envia-me emails. \u2192 Ele nem ___" },
+    { question: "Rewrite with \u00abs\u00f3\u00bb: Tu d\u00e1s-no-las hoje \u00e0 noite. \u2192 Tu s\u00f3 ___" },
+    { question: "Rewrite with \u00abtamb\u00e9m\u00bb: Ela fala-lhes todos os dias. \u2192 Ela tamb\u00e9m ___" },
+    { question: "Rewrite with \u00abs\u00f3\u00bb: Eu pergunto-lhe o que ela precisa. \u2192 Eu s\u00f3 ___" },
     // Ex4: Replace underlined parts (advanced pronoun placement)
-    { question: "Replace the underlined part with the word in brackets: Amanhã eles levam-te ao aeroporto? → (quando é que) ___ te levam ao aeroporto?" },
-    { question: "Replace the underlined part: O meu pai autoriza-me a ir ao cinema. → (eu acho que ele) Eu acho que ele ___ a ir ao cinema logo à noite." },
-    { question: "Replace the underlined part: Você diz-lhe a verdade. → (ninguém) ___ lhe diz a verdade." },
-    { question: "Replace the underlined part: A avó escreve-nos muitas cartas. → (quem é que) Quem é que ___ muitas cartas?" },
-    { question: "Replace the underlined part: Os alunos compreendem-te perfeitamente. → (todos) ___ te compreendem perfeitamente." },
-    { question: "Replace the underlined part: Só ao sábado é que a Filipa me telefona. → (em que dia) Em que dia é que a Filipa ___ para dar notícias?" },
-    { question: "Replace «ninguém» with «alguém»: Ninguém te envia cartas agora. → ___ te envia cartas agora?", explanation: "«Alguém» is an indefinite pronoun that triggers proclisis: Alguém te envia." },
-    { question: "Replace the underlined part: O Pedro dá-no-las no fim-de-semana. → (quem) Quem ___ no fim-de-semana?" },
-    { question: "Replace the underlined part: A Maria faz-lhes muitos favores. → (ela ainda) Ela ainda ___?", explanation: "«Ainda» triggers proclisis: Ela ainda lhes faz muitos favores." },
-    { question: "Replace the underlined part: À terça-feira eu empresto-lhes o meu automóvel. → (nunca) Eu nunca ___ o meu automóvel." },
+    { question: "Replace the underlined part with the word in brackets: Amanh\u00e3 eles levam-te ao aeroporto? \u2192 (quando \u00e9 que) ___ te levam ao aeroporto?" },
+    { question: "Replace the underlined part: O meu pai autoriza-me a ir ao cinema. \u2192 (eu acho que ele) Eu acho que ele ___ a ir ao cinema logo \u00e0 noite." },
+    { question: "Replace the underlined part: Voc\u00ea diz-lhe a verdade. \u2192 (ningu\u00e9m) ___ lhe diz a verdade." },
+    { question: "Replace the underlined part: A av\u00f3 escreve-nos muitas cartas. \u2192 (quem \u00e9 que) Quem \u00e9 que ___ muitas cartas?" },
+    { question: "Replace the underlined part: Os alunos compreendem-te perfeitamente. \u2192 (todos) ___ te compreendem perfeitamente." },
+    { question: "Replace the underlined part: S\u00f3 ao s\u00e1bado \u00e9 que a Filipa me telefona. \u2192 (em que dia) Em que dia \u00e9 que a Filipa ___ para dar not\u00edcias?" },
+    { question: "Replace \u00abningu\u00e9m\u00bb with \u00abalgu\u00e9m\u00bb: Ningu\u00e9m te envia cartas agora. \u2192 ___ te envia cartas agora?", explanation: "\u00abAlgu\u00e9m\u00bb is an indefinite pronoun that triggers proclisis: Algu\u00e9m te envia." },
+    { question: "Replace the underlined part: O Pedro d\u00e1-no-las no fim-de-semana. \u2192 (quem) Quem ___ no fim-de-semana?" },
+    { question: "Replace the underlined part: A Maria faz-lhes muitos favores. \u2192 (ela ainda) Ela ainda ___?", explanation: "\u00abAinda\u00bb triggers proclisis: Ela ainda lhes faz muitos favores." },
+    { question: "Replace the underlined part: \u00c0 ter\u00e7a-feira eu empresto-lhes o meu autom\u00f3vel. \u2192 (nunca) Eu nunca ___ o meu autom\u00f3vel." },
     // Ex5: Translate sentences with indirect objects
     { source: "I want to tell you something." },
     { source: "She gives him a gift." },
@@ -164,14 +218,14 @@ export default {
     { source: "You don't give them chocolates." },
     { source: "Isabel calls me on Sunday evening." },
     { source: "We always tell them the truth." },
-    // Ex6: Text about fado / Camões
-    { question: "Os portugueses ___ (considerar + o fado) a alma do país. (they consider it)" },
-    { question: "Put in order: «The poet writes the poetry and concludes it.» (O poeta escreve-a e a finaliza.)" },
-    { question: "Text about Camões: Este poeta português é muito admirado. Muitos ___ (comparam + o poeta) a grandes poetas estrangeiros. (compare him)" },
-    { question: "Text about Camões: A história da literatura portuguesa ___ (reservar + a ele) um lugar especial. (reserves for him)" },
-    { question: "Text about Camões: Camões apresenta Os Lusíadas ao Rei D. Sebastião, que ___ (oferecer + a ele) uma pensão. (proclisis after «que»: offers him)" },
-    { question: "Text about Camões: Camões sofre um naufrágio e a sua amante morre afogada, porque ele não ___ (dar + a ela) ajuda. (proclisis after «não»: doesn't give her)" },
-    { question: "Text about Camões: O poeta conta a história dos portugueses e ___ (dedicar + a eles) estes poemas épicos. (dedicates to them)" },
+    // Ex6: Text about fado / Cam\u00f5es
+    { question: "Os portugueses ___ (considerar + o fado) a alma do pa\u00eds. (they consider it)" },
+    { question: "Put in order: \u00abThe poet writes the poetry and concludes it.\u00bb (O poeta escreve-a e a finaliza.)" },
+    { question: "Text about Cam\u00f5es: Este poeta portugu\u00eas \u00e9 muito admirado. Muitos ___ (comparam + o poeta) a grandes poetas estrangeiros. (compare him)" },
+    { question: "Text about Cam\u00f5es: A hist\u00f3ria da literatura portuguesa ___ (reservar + a ele) um lugar especial. (reserves for him)" },
+    { question: "Text about Cam\u00f5es: Cam\u00f5es apresenta Os Lus\u00edadas ao Rei D. Sebasti\u00e3o, que ___ (oferecer + a ele) uma pens\u00e3o. (proclisis after \u00abque\u00bb: offers him)" },
+    { question: "Text about Cam\u00f5es: Cam\u00f5es sofre um naufr\u00e1gio e a sua amante morre afogada, porque ele n\u00e3o ___ (dar + a ela) ajuda. (proclisis after \u00abn\u00e3o\u00bb: doesn't give her)" },
+    { question: "Text about Cam\u00f5es: O poeta conta a hist\u00f3ria dos portugueses e ___ (dedicar + a eles) estes poemas \u00e9picos. (dedicates to them)" },
     {
       question: "Match the indirect object pronouns:",
       pairs: [

@@ -42,6 +42,21 @@ export default {
       note: "Важливо: дієслова dar, dizer, fazer, ir, saber, trazer, ver — неправильні в інших часах, але в Imperfeito вони відмінюються за звичайними правилами: dava, dizia, fazia, ia, sabia, trazia, via."
     },
     {
+      text: "Примітка: у деяких граматиках pôr відносять до 4-ї групи відмінювання поряд із -ar/-er/-ir. В Imperfeito дієслово pôr відмінюється за власною схемою (punha, punhas...), але ця схема цілком передбачувана."
+    },
+    {
+      heading: "Приклади з ser, ter, vir в Imperfeito",
+      text: "Приклади з підручника, що ілюструють вживання неправильних дієслів ser, ter та vir в Imperfeito."
+    },
+    {
+      examples: [
+        { pt: "O Fernando era muito gordo.", ru: "Фернандо був дуже повним." },
+        { pt: "No ano passado tínhamos um automóvel muito velho.", ru: "Минулого року у нас був дуже старий автомобіль." },
+        { pt: "O meu tio tinha uma namorada alemã. Era muito simpática.", ru: "У мого дядька була подруга-німкеня. Вона була дуже симпатичною." },
+        { pt: "Vinhas a nossa casa muitas vezes, quando vivias aqui perto.", ru: "Ти часто приходив до нас, коли жив тут поруч." }
+      ]
+    },
+    {
       heading: "Маркери Imperfeito",
       text: "Слова-маркери, які вказують на використання Imperfeito."
     },

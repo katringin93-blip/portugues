@@ -12,7 +12,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "-ar (falar)", "-er (comer)", "-ir (partir)"]
+        headers: ["Person", "-ar (falar)", "-er (comer)", "-ir (partir)"],
+        rows: [
+          ["eu", "falei", "comi", "parti"],
+          ["tu", "falaste", "comeste", "partiste"],
+          ["ele/ela/você", "falou", "comeu", "partiu"],
+          ["nós", "falámos", "comemos", "partimos"],
+          ["eles/elas/vocês", "falaram", "comeram", "partiram"]
+        ]
       }
     },
     {
@@ -21,17 +28,38 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "ser/ir", "ter", "estar", "fazer"]
+        headers: ["Person", "ser/ir", "ter", "estar", "fazer"],
+        rows: [
+          ["eu", "fui", "tive", "estive", "fiz"],
+          ["tu", "foste", "tiveste", "estiveste", "fizeste"],
+          ["ele/ela", "foi", "teve", "esteve", "fez"],
+          ["nós", "fomos", "tivemos", "estivemos", "fizemos"],
+          ["eles/elas", "foram", "tiveram", "estiveram", "fizeram"]
+        ]
       }
     },
     {
       table: {
-        headers: ["Person", "poder", "querer", "saber", "dizer", "dar", "vir"]
+        headers: ["Person", "poder", "querer", "saber", "dizer", "dar", "vir"],
+        rows: [
+          ["eu", "pude", "quis", "soube", "disse", "dei", "vim"],
+          ["tu", "pudeste", "quiseste", "soubeste", "disseste", "deste", "vieste"],
+          ["ele/ela", "pôde", "quis", "soube", "disse", "deu", "veio"],
+          ["nós", "pudemos", "quisemos", "soubemos", "dissemos", "demos", "viemos"],
+          ["eles/elas", "puderam", "quiseram", "souberam", "disseram", "deram", "vieram"]
+        ]
       }
     },
     {
       table: {
-        headers: ["Person", "pôr", "trazer", "ver"]
+        headers: ["Person", "pôr", "trazer", "ver"],
+        rows: [
+          ["eu", "pus", "trouxe", "vi"],
+          ["tu", "puseste", "trouxeste", "viste"],
+          ["ele/ela/você", "pôs", "trouxe", "viu"],
+          ["nós", "pusemos", "trouxemos", "vimos"],
+          ["eles/elas/vocês", "puseram", "trouxeram", "viram"]
+        ]
       }
     },
     {

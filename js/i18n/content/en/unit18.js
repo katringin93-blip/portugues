@@ -12,7 +12,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "-ar (falar)", "-er (comer)", "-ir (partir)"]
+        headers: ["Person", "-ar (falar)", "-er (comer)", "-ir (partir)"],
+        rows: [
+          ["eu", "falava", "comia", "partia"],
+          ["tu", "falavas", "comias", "partias"],
+          ["ele/ela/você", "falava", "comia", "partia"],
+          ["nós", "falávamos", "comíamos", "partíamos"],
+          ["eles/elas/vocês", "falavam", "comiam", "partiam"]
+        ]
       }
     },
     {
@@ -21,11 +28,33 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "ser", "ter", "vir", "pôr"]
+        headers: ["Person", "ser", "ter", "vir", "pôr"],
+        rows: [
+          ["eu", "era", "tinha", "vinha", "punha"],
+          ["tu", "eras", "tinhas", "vinhas", "punhas"],
+          ["ele/ela", "era", "tinha", "vinha", "punha"],
+          ["nós", "éramos", "tínhamos", "vínhamos", "púnhamos"],
+          ["eles/elas", "eram", "tinham", "vinham", "punham"]
+        ]
       }
     },
     {
       note: "Important: the verbs dar, dizer, fazer, ir, saber, trazer, ver are irregular in other tenses, but in the Imperfeito they conjugate according to regular rules: dava, dizia, fazia, ia, sabia, trazia, via."
+    },
+    {
+      text: "Note: in some grammars, pôr is classified as a 4th conjugation group alongside -ar/-er/-ir. In the Imperfeito, pôr follows its own pattern (punha, punhas...), but this pattern is fully predictable."
+    },
+    {
+      heading: "Examples with ser, ter, vir in the Imperfeito",
+      text: "Textbook examples illustrating the use of the irregular verbs ser, ter, and vir in the Imperfeito."
+    },
+    {
+      examples: [
+        { pt: "O Fernando era muito gordo.", ru: "Fernando used to be very overweight." },
+        { pt: "No ano passado tínhamos um automóvel muito velho.", ru: "Last year we had a very old car." },
+        { pt: "O meu tio tinha uma namorada alemã. Era muito simpática.", ru: "My uncle had a German girlfriend. She was very nice." },
+        { pt: "Vinhas a nossa casa muitas vezes, quando vivias aqui perto.", ru: "You used to come to our house often, when you lived nearby." }
+      ]
     },
     {
       heading: "Imperfeito markers",

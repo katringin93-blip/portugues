@@ -8,7 +8,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "ter (Imperfeito) + particípio"]
+        headers: ["Person", "ter (Imperfeito) + particípio"],
+        rows: [
+          ["eu", "tinha falado"],
+          ["tu", "tinhas falado"],
+          ["ele/ela/você", "tinha falado"],
+          ["nós", "tínhamos falado"],
+          ["eles/elas/vocês", "tinham falado"]
+        ]
       }
     },
     {
@@ -17,7 +24,14 @@ export default {
     },
     {
       table: {
-        headers: ["Person", "falar", "comer", "partir"]
+        headers: ["Person", "falar", "comer", "partir"],
+        rows: [
+          ["eu", "falara", "comera", "partira"],
+          ["tu", "falaras", "comeras", "partiras"],
+          ["ele/ela/você", "falara", "comera", "partira"],
+          ["nós", "faláramos", "comêramos", "partíramos"],
+          ["eles/elas/vocês", "falaram", "comeram", "partiram"]
+        ]
       }
     },
     {
@@ -26,7 +40,18 @@ export default {
     },
     {
       table: {
-        headers: ["Verb", "eu", "ele/ela", "eles/elas"]
+        headers: ["Verb", "eu", "ele/ela", "eles/elas"],
+        rows: [
+          ["ser/ir", "fora", "fora", "foram"],
+          ["ter", "tivera", "tivera", "tiveram"],
+          ["estar", "estivera", "estivera", "estiveram"],
+          ["fazer", "fizera", "fizera", "fizeram"],
+          ["dizer", "dissera", "dissera", "disseram"],
+          ["dar", "dera", "dera", "deram"],
+          ["pôr", "pusera", "pusera", "puseram"],
+          ["trazer", "trouxera", "trouxera", "trouxeram"],
+          ["vir", "viera", "viera", "vieram"]
+        ]
       }
     },
     {
