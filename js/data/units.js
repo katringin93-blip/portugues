@@ -1652,9 +1652,33 @@ export const units = [
             ["на -e (общий)", "grande", "grande", "grandes", "grandes"],
             ["на согл. (общий)", "difícil", "difícil", "difíceis", "difíceis"],
             ["на -ês", "português", "portuguesa", "portugueses", "portuguesas"],
-            ["на -or", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"]
+            ["на -or", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"],
+            ["на -eu → -eia", "europeu", "europeia", "europeus", "europeias"],
+            ["на -ão → -ã/-ona", "anfitrião", "anfitriã", "anfitriões", "anfitriãs"],
+            ["неправильные", "bom", "boa", "bons", "boas"],
+            ["неправильные", "mau", "má", "maus", "más"]
           ]
         }
+      },
+      {
+        heading: "Неизменяемые по роду прилагательные",
+        text: "Прилагательные на -a, -e, -ar, -l, -m и -z не изменяются по роду — одна форма для мужского и женского. Во множественном числе они изменяются по обычным правилам существительных."
+      },
+      {
+        table: {
+          headers: ["Окончание", "Пример", "Муж.", "Жен.", "Мн. ч."],
+          rows: [
+            ["-a", "pessimista", "Ele é pessimista", "Ela é pessimista", "pessimistas"],
+            ["-e", "forte", "Ele é forte", "Ela é forte", "fortes"],
+            ["-ar", "vulgar", "Ele é vulgar", "Ela é vulgar", "vulgares"],
+            ["-l", "essencial", "O dinheiro é essencial", "A comida é essencial", "essenciais"],
+            ["-m", "jovem", "Ele é jovem", "Ela é jovem", "jovens"],
+            ["-z", "feliz", "Ele é feliz", "Ela é feliz", "felizes"]
+          ]
+        }
+      },
+      {
+        note: "Также не меняются по роду пары: anterior / posterior, interior / exterior, inferior / superior, menor / maior, melhor / pior. Исключение: simples не меняется и во множественном числе (São ambos simples)."
       },
       {
         heading: "Позиция прилагательного",
@@ -1701,6 +1725,10 @@ export const units = [
       {
         note: "Некоторые наречия не образуются по правилу: bem (хорошо), mal (плохо), muito (очень), pouco (мало), sempre (всегда), depressa (быстро), devagar (медленно)."
       }
+    ],
+    lessons: [
+      { title: "Согласование и формы прилагательных", theoryRange: [0, 5] },
+      { title: "Позиция прилагательного и наречия", theoryRange: [5, 11] }
     ],
     exercises: ex10,
     vocabulary: [

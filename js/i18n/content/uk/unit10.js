@@ -14,9 +14,33 @@ export default {
           ["на -e (спільний)", "grande", "grande", "grandes", "grandes"],
           ["на приголосну (спільний)", "difícil", "difícil", "difíceis", "difíceis"],
           ["на -ês", "português", "portuguesa", "portugueses", "portuguesas"],
-          ["на -or", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"]
+          ["на -or", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"],
+          ["на -eu → -eia", "europeu", "europeia", "europeus", "europeias"],
+          ["на -ão → -ã/-ona", "anfitrião", "anfitriã", "anfitriões", "anfitriãs"],
+          ["неправильні", "bom", "boa", "bons", "boas"],
+          ["неправильні", "mau", "má", "maus", "más"]
         ]
       }
+    },
+    {
+      heading: "Незмінні за родом прикметники",
+      text: "Прикметники на -a, -e, -ar, -l, -m та -z не змінюються за родом — одна форма для чоловічого та жіночого. У множині змінюються за звичайними правилами іменників."
+    },
+    {
+      table: {
+        headers: ["Закінчення", "Приклад", "Чол.", "Жін.", "Мн."],
+        rows: [
+          ["-a", "pessimista", "Ele é pessimista", "Ela é pessimista", "pessimistas"],
+          ["-e", "forte", "Ele é forte", "Ela é forte", "fortes"],
+          ["-ar", "vulgar", "Ele é vulgar", "Ela é vulgar", "vulgares"],
+          ["-l", "essencial", "O dinheiro é essencial", "A comida é essencial", "essenciais"],
+          ["-m", "jovem", "Ele é jovem", "Ela é jovem", "jovens"],
+          ["-z", "feliz", "Ele é feliz", "Ela é feliz", "felizes"]
+        ]
+      }
+    },
+    {
+      note: "Також незмінні за родом пари: anterior / posterior, interior / exterior, inferior / superior, menor / maior, melhor / pior. Виняток: simples не змінюється і в множині (São ambos simples)."
     },
     {
       heading: "Позиція прикметника",
@@ -63,6 +87,10 @@ export default {
     {
       note: "Деякі прислівники не утворюються за правилом: bem (добре), mal (погано), muito (дуже), pouco (мало), sempre (завжди), depressa (швидко), devagar (повільно)."
     }
+  ],
+  lessons: [
+    { title: "Узгодження та форми прикметників" },
+    { title: "Позиція прикметника та прислівники" }
   ],
   vocabulary: [
     { ru: "гарний" },

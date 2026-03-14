@@ -14,9 +14,33 @@ export default {
           ["-e type (invariable)", "grande", "grande", "grandes", "grandes"],
           ["consonant (invariable)", "difícil", "difícil", "difíceis", "difíceis"],
           ["-ês type", "português", "portuguesa", "portugueses", "portuguesas"],
-          ["-or type", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"]
+          ["-or type", "trabalhador", "trabalhadora", "trabalhadores", "trabalhadoras"],
+          ["-eu → -eia", "europeu", "europeia", "europeus", "europeias"],
+          ["-ão → -ã/-ona", "anfitrião", "anfitriã", "anfitriões", "anfitriãs"],
+          ["irregular", "bom", "boa", "bons", "boas"],
+          ["irregular", "mau", "má", "maus", "más"]
         ]
       }
+    },
+    {
+      heading: "Gender-invariable adjectives",
+      text: "Adjectives ending in -a, -e, -ar, -l, -m and -z do not change for gender — the same form is used for masculine and feminine. They still change for plural following normal noun rules."
+    },
+    {
+      table: {
+        headers: ["Ending", "Example", "Masc.", "Fem.", "Plural"],
+        rows: [
+          ["-a", "pessimista", "Ele é pessimista", "Ela é pessimista", "pessimistas"],
+          ["-e", "forte", "Ele é forte", "Ela é forte", "fortes"],
+          ["-ar", "vulgar", "Ele é vulgar", "Ela é vulgar", "vulgares"],
+          ["-l", "essencial", "O dinheiro é essencial", "A comida é essencial", "essenciais"],
+          ["-m", "jovem", "Ele é jovem", "Ela é jovem", "jovens"],
+          ["-z", "feliz", "Ele é feliz", "Ela é feliz", "felizes"]
+        ]
+      }
+    },
+    {
+      note: "Also gender-invariable pairs: anterior / posterior, interior / exterior, inferior / superior, menor / maior, melhor / pior. Exception: simples doesn't change in plural either (São ambos simples)."
     },
     {
       heading: "Position of adjectives",
@@ -63,6 +87,10 @@ export default {
     {
       note: "Some adverbs are not formed by the rule: bem (well), mal (badly), muito (very), pouco (little), sempre (always), depressa (quickly), devagar (slowly)."
     }
+  ],
+  lessons: [
+    { title: "Agreement and forms of adjectives" },
+    { title: "Position of adjectives and adverbs" }
   ],
   vocabulary: [
     { ru: "beautiful" },
