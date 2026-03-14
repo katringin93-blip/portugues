@@ -213,13 +213,13 @@ export default {
     {
       question: "Match the irregular verbs with the «eu» form in Pretérito Perfeito:",
       pairs: [
-        { right: "fui" },
-        { right: "tive" },
-        { right: "estive" },
-        { right: "fiz" },
-        { right: "disse" },
-        { right: "dei" },
-        { right: "vim" }
+        { left: "ser/ir", right: "fui" },
+        { left: "ter", right: "tive" },
+        { left: "estar", right: "estive" },
+        { left: "fazer", right: "fiz" },
+        { left: "dizer", right: "disse" },
+        { left: "dar", right: "dei" },
+        { left: "vir", right: "vim" }
       ]
     },
     { question: "Build the sentence: «Yesterday I spoke with the director.»" },

@@ -236,22 +236,22 @@ export default {
     {
       question: "Match the sentence beginnings with their endings:",
       pairs: [
-        { right: "nothing for breakfast." },
-        { right: "where the key is." },
-        { right: "to the cinema alone." },
-        { right: "money for the holidays." },
-        { right: "want to go to the party." }
+        { left: "O João não come", right: "nothing for breakfast." },
+        { left: "Ninguém sabe", right: "where the key is." },
+        { left: "Ela nunca vai", right: "to the cinema alone." },
+        { left: "Não temos nenhum", right: "money for the holidays." },
+        { left: "Nem o Pedro nem a Ana", right: "want to go to the party." }
       ]
     },
     // 26. match
     {
       question: "Match the sentence beginnings with their endings:",
       pairs: [
-        { right: "any of these colours." },
-        { right: "what I say." },
-        { right: "to work on Sundays." },
-        { right: "nor patience." },
-        { right: "anything at night." }
+        { left: "Não gosto de", right: "any of these colours." },
+        { left: "Tu nunca ouves", right: "what I say." },
+        { left: "Ninguém quer", right: "to work on Sundays." },
+        { left: "Não tenho nem tempo", right: "nor patience." },
+        { left: "Eles não fazem", right: "anything at night." }
       ]
     },
 
@@ -305,11 +305,11 @@ export default {
     {
       question: "Match negative words with their translation:",
       pairs: [
-        { right: "nothing" },
-        { right: "nobody" },
-        { right: "never" },
-        { right: "none, not any" },
-        { right: "neither...nor" }
+        { left: "nada", right: "nothing" },
+        { left: "ninguém", right: "nobody" },
+        { left: "nunca", right: "never" },
+        { left: "nenhum", right: "none, not any" },
+        { left: "nem...nem", right: "neither...nor" }
       ]
     },
     // 44. order

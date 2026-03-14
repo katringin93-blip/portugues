@@ -242,12 +242,12 @@ export default {
     {
       question: "Match the reflexive verbs with their meanings:",
       pairs: [
-        { right: "to get angry" },
-        { right: "to remember" },
-        { right: "to forget" },
-        { right: "to fall in love" },
-        { right: "to make a mistake" },
-        { right: "to feel" }
+        { left: "zangar-se", right: "to get angry" },
+        { left: "lembrar-se", right: "to remember" },
+        { left: "esquecer-se", right: "to forget" },
+        { left: "apaixonar-se", right: "to fall in love" },
+        { left: "enganar-se", right: "to make a mistake" },
+        { left: "sentir-se", right: "to feel" }
       ]
     },
     // === Ex3: Pronoun position ===
@@ -314,11 +314,11 @@ export default {
     {
       question: "Match the reflexive verbs with morning routine actions:",
       pairs: [
-        { right: "to wake up" },
-        { right: "to get up" },
-        { right: "to wash oneself" },
-        { right: "to get dressed" },
-        { right: "to comb one's hair" }
+        { left: "acordar-se", right: "to wake up" },
+        { left: "levantar-se", right: "to get up" },
+        { left: "lavar-se", right: "to wash oneself" },
+        { left: "vestir-se", right: "to get dressed" },
+        { left: "pentear-se", right: "to comb one's hair" }
       ]
     },
     // 44

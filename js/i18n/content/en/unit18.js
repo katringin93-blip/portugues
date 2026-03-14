@@ -122,7 +122,13 @@ export default {
     { ru: "garden" },
     { ru: "countryside; field" },
     { ru: "child" },
-    { ru: "television" }
+    { ru: "television" },
+    { ru: "holiday resort" },
+    { ru: "microclimates" },
+    { ru: "originating from" },
+    { ru: "in adolescence" },
+    { ru: "all, every" },
+    { ru: "fabric sample" }
   ],
   flashcards: [
     { ru: "used to speak (habitually)", hint: "Imperfeito of falar" },
@@ -239,11 +245,11 @@ export default {
     {
       question: "Match the Imperfeito markers with their translations:",
       pairs: [
-        { right: "always" },
-        { right: "every day" },
-        { right: "usually" },
-        { right: "formerly, in the old days" },
-        { right: "while, whereas" }
+        { left: "sempre", right: "always" },
+        { left: "todos os dias", right: "every day" },
+        { left: "normalmente", right: "usually" },
+        { left: "antigamente", right: "formerly, in the old days" },
+        { left: "enquanto", right: "while, whereas" }
       ]
     },
     { question: "Build the sentence: 'The children usually played in the garden.'" }

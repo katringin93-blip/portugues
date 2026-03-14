@@ -217,11 +217,11 @@ export default {
     {
       question: "Match the usage with the verb:",
       pairs: [
-        { right: "ser" },
-        { right: "estar" },
-        { right: "ser" },
-        { right: "estar" },
-        { right: "ficar" }
+        { left: "Nationality", right: "ser" },
+        { left: "Object location", right: "estar" },
+        { left: "Profession", right: "ser" },
+        { left: "Well-being", right: "estar" },
+        { left: "Permanent location", right: "ficar" }
       ]
     },
     { question: "Dialogue: — How ___ (estar, tu) doing? — How are you?", explanation: "Question about wellbeing with 'tu': 'Como estás?'" },

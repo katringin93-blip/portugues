@@ -170,11 +170,11 @@ export default {
     {
       question: "Зіставте присвійні займенники (жін.р. одн.):",
       pairs: [
-        { right: "моя" },
-        { right: "твоя" },
-        { right: "його / її / Ваша" },
-        { right: "наша" },
-        { right: "ваша (мн.ч.)" }
+        { left: "моя", right: "minha" },
+        { left: "твоя", right: "tua" },
+        { left: "його/її/Ваша", right: "sua" },
+        { left: "наша", right: "nossa" },
+        { left: "ваша (мн.ч.)", right: "vossa" }
       ]
     },
     { question: "Складіть речення: «Його дружина працює в лікарні.»" },

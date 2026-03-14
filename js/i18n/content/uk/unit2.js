@@ -175,19 +175,19 @@ export default {
     {
       question: "Зіставте вирази з правильним артиклем (означений або неозначений):",
       pairs: [
-        { right: "o menino" },
-        { right: "uma casa" },
-        { right: "os livros" },
-        { right: "uma cidade" }
+        { left: "___ menino (конкретний хлопець)", right: "o menino" },
+        { left: "___ casa (якийсь будинок)", right: "uma casa" },
+        { left: "___ livros (конкретні книжки)", right: "os livros" },
+        { left: "___ cidade (якесь місто)", right: "uma cidade" }
       ]
     },
     {
       question: "Зіставте іменники з правильним означеним артиклем:",
       pairs: [
-        { right: "o" },
-        { right: "a" },
-        { right: "os" },
-        { right: "as" }
+        { left: "professor", right: "o" },
+        { left: "escola", right: "a" },
+        { left: "carros", right: "os" },
+        { left: "cidades", right: "as" }
       ]
     },
 
@@ -225,19 +225,19 @@ export default {
     {
       question: "Зіставте злиття прийменників з артиклями:",
       pairs: [
-        { right: "do" },
-        { right: "na" },
-        { right: "pelo" },
-        { right: "à" }
+        { left: "de + o", right: "do" },
+        { left: "em + a", right: "na" },
+        { left: "por + o", right: "pelo" },
+        { left: "a + a", right: "à" }
       ]
     },
     {
       question: "Зіставте злиття прийменника «em» з неозначеними артиклями:",
       pairs: [
-        { right: "num" },
-        { right: "numa" },
-        { right: "nuns" },
-        { right: "numas" }
+        { left: "em + um", right: "num" },
+        { left: "em + uma", right: "numa" },
+        { left: "em + uns", right: "nuns" },
+        { left: "em + umas", right: "numas" }
       ]
     },
     { question: "Складіть речення: «Книжка викладача лежить на столі»." },
@@ -260,10 +260,10 @@ export default {
     {
       question: "Зіставте злиття прийменника «de» з артиклями:",
       pairs: [
-        { right: "do" },
-        { right: "da" },
-        { right: "dos" },
-        { right: "das" }
+        { left: "de + o", right: "do" },
+        { left: "de + a", right: "da" },
+        { left: "de + os", right: "dos" },
+        { left: "de + as", right: "das" }
       ]
     },
     { question: "Вставте злиття: Ele vem ___ escola. (de + a)" },

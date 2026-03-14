@@ -308,12 +308,12 @@ export default {
     {
       question: "Зіставте маркер із часом (Perfeito або Imperfeito):",
       pairs: [
-        { right: "Perfeito" },
-        { right: "Imperfeito" },
-        { right: "Perfeito" },
-        { right: "Imperfeito" },
-        { right: "Imperfeito" },
-        { right: "Perfeito" }
+        { left: "ontem", right: "Perfeito" },
+        { left: "todos os dias", right: "Imperfeito" },
+        { left: "na semana passada", right: "Perfeito" },
+        { left: "normalmente", right: "Imperfeito" },
+        { left: "enquanto", right: "Imperfeito" },
+        { left: "de repente", right: "Perfeito" }
       ]
     },
     {

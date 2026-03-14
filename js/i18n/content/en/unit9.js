@@ -213,16 +213,16 @@ export default {
     { question: "The history ___ (de + este) archipelago is fascinating. (The history of this archipelago is fascinating.)" },
     // Match exercises
     { question: "Match the demonstrative pronouns with distance:", pairs: [
-      { right: "near the speaker" },
-      { right: "near the listener" },
-      { right: "far from both" }
+      { left: "este/esta/isto", right: "near the speaker" },
+      { left: "esse/essa/isso", right: "near the listener" },
+      { left: "aquele/aquela/aquilo", right: "far from both" }
     ]},
     { question: "Match the contractions with prepositions:", pairs: [
-      { right: "em + este" },
-      { right: "de + esse" },
-      { right: "em + aquele" },
-      { right: "de + isto" },
-      { right: "em + essa" }
+      { left: "neste", right: "em + este" },
+      { left: "desse", right: "de + esse" },
+      { left: "naquele", right: "em + aquele" },
+      { left: "disto", right: "de + isto" },
+      { left: "nessa", right: "em + essa" }
     ]},
   ],
 

@@ -241,10 +241,10 @@ export default {
     {
       question: "Оберіть правильне дієслово — saber або conhecer:",
       pairs: [
-        { right: "saber" },
-        { right: "conhecer" },
-        { right: "saber" },
-        { right: "conhecer" }
+        { left: "falar inglês (вміти)", right: "saber" },
+        { left: "a cidade (бути знайомим)", right: "conhecer" },
+        { left: "a resposta (знати факт)", right: "saber" },
+        { left: "o professor (бути знайомим)", right: "conhecer" }
       ]
     }
   ],

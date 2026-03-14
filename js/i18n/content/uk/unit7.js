@@ -236,22 +236,22 @@ export default {
     {
       question: "Зіставте початок і кінець речень:",
       pairs: [
-        { right: "нічого на сніданок." },
-        { right: "де знаходиться ключ." },
-        { right: "до кінотеатру сама." },
-        { right: "грошей на відпустку." },
-        { right: "хочуть іти на вечірку." }
+        { left: "O João não come", right: "нічого на сніданок." },
+        { left: "Ninguém sabe", right: "де знаходиться ключ." },
+        { left: "Ela nunca vai", right: "до кінотеатру сама." },
+        { left: "Não temos nenhum", right: "грошей на відпустку." },
+        { left: "Nem o Pedro nem a Ana", right: "хочуть іти на вечірку." }
       ]
     },
     // 26. match
     {
       question: "Зіставте початок і кінець речень:",
       pairs: [
-        { right: "жодного з цих кольорів." },
-        { right: "того, що я кажу." },
-        { right: "працювати в неділю." },
-        { right: "ні терпіння." },
-        { right: "нічого вночі." }
+        { left: "Não gosto de", right: "жодного з цих кольорів." },
+        { left: "Tu nunca ouves", right: "того, що я кажу." },
+        { left: "Ninguém quer", right: "працювати в неділю." },
+        { left: "Não tenho nem tempo", right: "ні терпіння." },
+        { left: "Eles não fazem", right: "нічого вночі." }
       ]
     },
 
@@ -305,11 +305,11 @@ export default {
     {
       question: "Зіставте заперечні слова з їхнім перекладом:",
       pairs: [
-        { right: "нічого" },
-        { right: "ніхто" },
-        { right: "ніколи" },
-        { right: "жодний" },
-        { right: "ні...ні" }
+        { left: "nada", right: "нічого" },
+        { left: "ninguém", right: "ніхто" },
+        { left: "nunca", right: "ніколи" },
+        { left: "nenhum", right: "жодний" },
+        { left: "nem...nem", right: "ні...ні" }
       ]
     },
     // 44. order

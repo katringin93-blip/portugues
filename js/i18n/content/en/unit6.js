@@ -146,21 +146,21 @@ export default {
     {
       question: "Match the interrogative words with their translations:",
       pairs: [
-        { right: "How" },
-        { right: "Where" },
-        { right: "When" },
-        { right: "Who" },
-        { right: "How much" }
+        { left: "Como", right: "How" },
+        { left: "Onde", right: "Where" },
+        { left: "Quando", right: "When" },
+        { left: "Quem", right: "Who" },
+        { left: "Quanto", right: "How much" }
       ]
     },
     {
       question: "Match the question with the appropriate answer:",
       pairs: [
-        { right: "In Lisbon." },
-        { right: "Tomorrow." },
-        { right: "The teacher." },
-        { right: "By bus." },
-        { right: "I study Portuguese." }
+        { left: "Onde mora?", right: "In Lisbon." },
+        { left: "Quando chega?", right: "Tomorrow." },
+        { left: "Quem é?", right: "The teacher." },
+        { left: "Como vai?", right: "By bus." },
+        { left: "Que faz?", right: "I study Portuguese." }
       ]
     },
     {

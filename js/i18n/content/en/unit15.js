@@ -170,11 +170,11 @@ export default {
     {
       question: "Match the possessive pronouns (fem. sg.):",
       pairs: [
-        { right: "my" },
-        { right: "your (informal)" },
-        { right: "his / her / your (formal)" },
-        { right: "our" },
-        { right: "your (plural)" }
+        { left: "my", right: "minha" },
+        { left: "your (singular)", right: "tua" },
+        { left: "his/her/Your (formal)", right: "sua" },
+        { left: "our", right: "nossa" },
+        { left: "your (plural)", right: "vossa" }
       ]
     },
     { question: "Form a sentence: 'His wife works at the hospital.'" },

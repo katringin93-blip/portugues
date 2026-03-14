@@ -146,21 +146,21 @@ export default {
     {
       question: "Зіставте питальні слова з їх перекладом:",
       pairs: [
-        { right: "Як" },
-        { right: "Де" },
-        { right: "Коли" },
-        { right: "Хто" },
-        { right: "Скільки" }
+        { left: "Como", right: "Як" },
+        { left: "Onde", right: "Де" },
+        { left: "Quando", right: "Коли" },
+        { left: "Quem", right: "Хто" },
+        { left: "Quanto", right: "Скільки" }
       ]
     },
     {
       question: "Зіставте питання з підходящою відповіддю:",
       pairs: [
-        { right: "У Лісабоні." },
-        { right: "Завтра." },
-        { right: "Вчитель." },
-        { right: "На автобусі." },
-        { right: "Я вивчаю португальську." }
+        { left: "Onde mora?", right: "У Лісабоні." },
+        { left: "Quando chega?", right: "Завтра." },
+        { left: "Quem é?", right: "Вчитель." },
+        { left: "Como vai?", right: "На автобусі." },
+        { left: "Que faz?", right: "Я вивчаю португальську." }
       ]
     },
     {

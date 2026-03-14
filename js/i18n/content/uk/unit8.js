@@ -217,11 +217,11 @@ export default {
     {
       question: "Зіставте випадки вживання з дієсловом:",
       pairs: [
-        { right: "ser" },
-        { right: "estar" },
-        { right: "ser" },
-        { right: "estar" },
-        { right: "ficar" }
+        { left: "Національність", right: "ser" },
+        { left: "Місцезнаходження предмета", right: "estar" },
+        { left: "Професія", right: "ser" },
+        { left: "Самопочуття", right: "estar" },
+        { left: "Постійне розташування", right: "ficar" }
       ]
     },
     { question: "Діалог: — Як ти ___ (estar, tu)? — Як справи?", explanation: "Запитання про самопочуття з «tu»: «Como estás?»" },

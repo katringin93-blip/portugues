@@ -195,10 +195,10 @@ export default {
     {
       question: "Match the proclisis-triggering words with their examples:",
       pairs: [
-        { right: "Não o vejo." },
-        { right: "Nunca a compro." },
-        { right: "Sempre os lê." },
-        { right: "Também a compra." }
+        { left: "não", right: "Não o vejo." },
+        { left: "nunca", right: "Nunca a compro." },
+        { left: "sempre", right: "Sempre os lê." },
+        { left: "também", right: "Também a compra." }
       ]
     },
     { question: "«O senhor toma o chá agora ou ___ mais tarde?» (enclisis — no attracting word)" },

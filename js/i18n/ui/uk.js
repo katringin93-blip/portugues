@@ -42,7 +42,7 @@ export default {
   'lesson.start': 'Почати',
   'lesson.question': 'Питання {current} з {total}',
   'lesson.enterAnswer': 'Введіть відповідь...',
-  'lesson.translateToRu': 'Переклад українською...',
+  'lesson.translateToSupport': 'Переклад українською...',
   'lesson.translateToPt': 'Перекладіть португальською...',
   'lesson.translatePrompt': 'Перекладіть:',
   'lesson.check': 'Перевірити',

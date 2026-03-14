@@ -175,19 +175,19 @@ export default {
     {
       question: "Match the expressions with the correct article (definite or indefinite):",
       pairs: [
-        { right: "o menino" },
-        { right: "uma casa" },
-        { right: "os livros" },
-        { right: "uma cidade" }
+        { left: "___ menino (a specific boy)", right: "o menino" },
+        { left: "___ casa (some house)", right: "uma casa" },
+        { left: "___ livros (specific books)", right: "os livros" },
+        { left: "___ cidade (some city)", right: "uma cidade" }
       ]
     },
     {
       question: "Match the nouns with the correct definite article:",
       pairs: [
-        { right: "o" },
-        { right: "a" },
-        { right: "os" },
-        { right: "as" }
+        { left: "professor", right: "o" },
+        { left: "escola", right: "a" },
+        { left: "carros", right: "os" },
+        { left: "cidades", right: "as" }
       ]
     },
 
@@ -225,19 +225,19 @@ export default {
     {
       question: "Match the preposition contractions with articles:",
       pairs: [
-        { right: "do" },
-        { right: "na" },
-        { right: "pelo" },
-        { right: "à" }
+        { left: "de + o", right: "do" },
+        { left: "em + a", right: "na" },
+        { left: "por + o", right: "pelo" },
+        { left: "a + a", right: "à" }
       ]
     },
     {
       question: "Match the contractions of preposition «em» with indefinite articles:",
       pairs: [
-        { right: "num" },
-        { right: "numa" },
-        { right: "nuns" },
-        { right: "numas" }
+        { left: "em + um", right: "num" },
+        { left: "em + uma", right: "numa" },
+        { left: "em + uns", right: "nuns" },
+        { left: "em + umas", right: "numas" }
       ]
     },
     { question: "Build the sentence: \"The teacher's book is on the table\"." },
@@ -260,10 +260,10 @@ export default {
     {
       question: "Match the contractions of preposition «de» with articles:",
       pairs: [
-        { right: "do" },
-        { right: "da" },
-        { right: "dos" },
-        { right: "das" }
+        { left: "de + o", right: "do" },
+        { left: "de + a", right: "da" },
+        { left: "de + os", right: "dos" },
+        { left: "de + as", right: "das" }
       ]
     },
     { question: "Insert the contraction: Ele vem ___ escola. (de + a)" },

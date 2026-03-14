@@ -287,7 +287,7 @@ export const Lesson = {
               </div>
               <div class="exercise-input-row">
                 <input class="input" v-model="textAnswer" @keyup.enter="answerTranslate"
-                  :disabled="answered" :placeholder="currentBatchExercise.direction === 'pt-ru' ? t('lesson.translateToRu') : t('lesson.translateToPt')" ref="translateInput"
+                  :disabled="answered" :placeholder="currentBatchExercise.direction === 'pt-ru' ? t('lesson.translateToSupport') : t('lesson.translateToPt')" ref="translateInput"
                   autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
                 <button class="btn btn-primary" @click="answerTranslate" :disabled="answered || !textAnswer.trim()">
                   {{ t('lesson.check') }}

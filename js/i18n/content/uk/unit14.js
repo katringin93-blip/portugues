@@ -242,12 +242,12 @@ export default {
     {
       question: "Зіставте зворотні дієслова з їх значеннями:",
       pairs: [
-        { right: "злитися" },
-        { right: "згадувати" },
-        { right: "забувати" },
-        { right: "закохуватися" },
-        { right: "помилятися" },
-        { right: "почуватися" }
+        { left: "zangar-se", right: "злитися" },
+        { left: "lembrar-se", right: "згадувати" },
+        { left: "esquecer-se", right: "забувати" },
+        { left: "apaixonar-se", right: "закохуватися" },
+        { left: "enganar-se", right: "помилятися" },
+        { left: "sentir-se", right: "почуватися" }
       ]
     },
     // === Ex3: Переміщення займенника ===
@@ -314,11 +314,11 @@ export default {
     {
       question: "Зіставте зворотні дієслова з діями ранкового розпорядку:",
       pairs: [
-        { right: "прокидатися" },
-        { right: "вставати" },
-        { right: "митися" },
-        { right: "одягатися" },
-        { right: "зачісуватися" }
+        { left: "acordar-se", right: "прокидатися" },
+        { left: "levantar-se", right: "вставати" },
+        { left: "lavar-se", right: "митися" },
+        { left: "vestir-se", right: "одягатися" },
+        { left: "pentear-se", right: "зачісуватися" }
       ]
     },
     // 44

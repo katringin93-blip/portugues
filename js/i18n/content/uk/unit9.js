@@ -204,16 +204,16 @@ export default {
     { question: "Історія ___ (de + este) архіпелагу захоплює. (Історія цього архіпелагу захоплива.)" },
     // Match exercises
     { question: "Зіставте вказівні займенники з відстанню:", pairs: [
-      { right: "біля мовця" },
-      { right: "біля слухача" },
-      { right: "далеко від обох" }
+      { left: "este/esta/isto", right: "біля мовця" },
+      { left: "esse/essa/isso", right: "біля слухача" },
+      { left: "aquele/aquela/aquilo", right: "далеко від обох" }
     ]},
     { question: "Зіставте злиття з прийменниками:", pairs: [
-      { right: "em + este" },
-      { right: "de + esse" },
-      { right: "em + aquele" },
-      { right: "de + isto" },
-      { right: "em + essa" }
+      { left: "neste", right: "em + este" },
+      { left: "desse", right: "de + esse" },
+      { left: "naquele", right: "em + aquele" },
+      { left: "disto", right: "de + isto" },
+      { left: "nessa", right: "em + essa" }
     ]},
   ],
 

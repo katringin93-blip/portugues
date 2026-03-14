@@ -214,21 +214,21 @@ export default {
     {
       question: "Зіставте займенники непрямого додатка:",
       pairs: [
-        { right: "me" },
-        { right: "te" },
-        { right: "lhe" },
-        { right: "nos" },
-        { right: "lhes" }
+        { left: "a mim", right: "me" },
+        { left: "a ti", right: "te" },
+        { left: "a ele/ela", right: "lhe" },
+        { left: "a nós", right: "nos" },
+        { left: "a eles/elas", right: "lhes" }
       ]
     },
     {
       question: "Зіставте контракції прямого + непрямого займенників:",
       pairs: [
-        { right: "mo" },
-        { right: "to" },
-        { right: "lho" },
-        { right: "no-lo" },
-        { right: "ma" }
+        { left: "me + o", right: "mo" },
+        { left: "te + o", right: "to" },
+        { left: "lhe + o", right: "lho" },
+        { left: "nos + o", right: "no-lo" },
+        { left: "me + a", right: "ma" }
       ]
     }
   ],
