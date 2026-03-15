@@ -156,11 +156,11 @@ export default {
     {
       question: "Match the question with the appropriate answer:",
       pairs: [
-        { left: "Onde mora?", right: "In Lisbon." },
-        { left: "Quando chega?", right: "Tomorrow." },
-        { left: "Quem é?", right: "The teacher." },
-        { left: "Como vai?", right: "By bus." },
-        { left: "Que faz?", right: "I study Portuguese." }
+        { left: "Onde mora?", right: "Em Lisboa." },
+        { left: "Quando chega?", right: "Amanhã." },
+        { left: "Quem é?", right: "O professor." },
+        { left: "Como vai?", right: "De autocarro." },
+        { left: "Que faz?", right: "Estudo português." }
       ]
     },
     {

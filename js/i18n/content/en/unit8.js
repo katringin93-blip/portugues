@@ -238,7 +238,7 @@ export default {
     { question: "The city ___ full of tourists in summer. (The city is full of tourists in summer.)", explanation: "Temporary state (in summer) — 'estar': 'A cidade está cheia de turistas.'" },
     { question: "Lisbon ___ (ser/estar) the largest city in Portugal. (Lisbon is the largest city in Portugal.)" },
     { question: "Put the words in order: 'Lisbon is situated on the bank of the Tagus river.'" },
-    { source: "The sights of Lisbon are very interesting." },
+    { source: "The sights of Lisbon are very interesting.", direction: "en-pt" },
   ],
 
 };

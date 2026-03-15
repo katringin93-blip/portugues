@@ -236,22 +236,22 @@ export default {
     {
       question: "Match the sentence beginnings with their endings:",
       pairs: [
-        { left: "O João não come", right: "nothing for breakfast." },
-        { left: "Ninguém sabe", right: "where the key is." },
-        { left: "Ela nunca vai", right: "to the cinema alone." },
-        { left: "Não temos nenhum", right: "money for the holidays." },
-        { left: "Nem o Pedro nem a Ana", right: "want to go to the party." }
+        { left: "O João não come", right: "nada ao pequeno-almoço." },
+        { left: "Ninguém sabe", right: "onde fica a chave." },
+        { left: "Ela nunca vai", right: "ao cinema sozinha." },
+        { left: "Não temos nenhum", right: "dinheiro para as férias." },
+        { left: "Nem o Pedro nem a Ana", right: "querem ir à festa." }
       ]
     },
     // 26. match
     {
       question: "Match the sentence beginnings with their endings:",
       pairs: [
-        { left: "Não gosto de", right: "any of these colours." },
-        { left: "Tu nunca ouves", right: "what I say." },
-        { left: "Ninguém quer", right: "to work on Sundays." },
-        { left: "Não tenho nem tempo", right: "nor patience." },
-        { left: "Eles não fazem", right: "anything at night." }
+        { left: "Não gosto de", right: "nenhuma destas cores." },
+        { left: "Tu nunca ouves", right: "o que eu digo." },
+        { left: "Ninguém quer", right: "trabalhar ao domingo." },
+        { left: "Não tenho nem tempo", right: "nem paciência." },
+        { left: "Eles não fazem", right: "nada à noite." }
       ]
     },
 

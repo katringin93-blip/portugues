@@ -312,7 +312,7 @@ export const exercises = [
   {
     type: "choice",
     question: "___, a família almoça junta ao domingo. (Традиционно семья обедает вместе по воскресеньям.)",
-    options: ["Tradicional", "Tradicionalmente", "Tradicionales", "Tradicionais"],
+    options: ["Tradicional", "Tradicionalmente", "Tradição", "Tradicionais"],
     correct: 1,
     explanation: "Здесь нужно наречие «tradicionalmente» (традиционно), а не прилагательное."
   },

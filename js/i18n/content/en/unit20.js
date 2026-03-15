@@ -194,11 +194,11 @@ export default {
     {
       question: "Match the sentence beginnings with their endings:",
       pairs: [
-        { left: "Quando cheguei ao aeroporto,", right: "the plane had already left." },
-        { left: "Ele disse que", right: "he had already read the book." },
-        { left: "Percebi que", right: "I had forgotten the keys." },
-        { left: "Quando voltámos para casa,", right: "someone had broken the window." },
-        { left: "A Maria contou-me que", right: "she had been to the doctor." }
+        { left: "Quando cheguei ao aeroporto,", right: "o avião já tinha partido." },
+        { left: "Ele disse que", right: "já tinha lido o livro." },
+        { left: "Percebi que", right: "tinha esquecido as chaves." },
+        { left: "Quando voltámos para casa,", right: "alguém tinha partido a janela." },
+        { left: "A Maria contou-me que", right: "tinha ido ao médico." }
       ]
     },
 

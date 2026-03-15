@@ -236,22 +236,22 @@ export default {
     {
       question: "Зіставте початок і кінець речень:",
       pairs: [
-        { left: "O João não come", right: "нічого на сніданок." },
-        { left: "Ninguém sabe", right: "де знаходиться ключ." },
-        { left: "Ela nunca vai", right: "до кінотеатру сама." },
-        { left: "Não temos nenhum", right: "грошей на відпустку." },
-        { left: "Nem o Pedro nem a Ana", right: "хочуть іти на вечірку." }
+        { left: "O João não come", right: "nada ao pequeno-almoço." },
+        { left: "Ninguém sabe", right: "onde fica a chave." },
+        { left: "Ela nunca vai", right: "ao cinema sozinha." },
+        { left: "Não temos nenhum", right: "dinheiro para as férias." },
+        { left: "Nem o Pedro nem a Ana", right: "querem ir à festa." }
       ]
     },
     // 26. match
     {
       question: "Зіставте початок і кінець речень:",
       pairs: [
-        { left: "Não gosto de", right: "жодного з цих кольорів." },
-        { left: "Tu nunca ouves", right: "того, що я кажу." },
-        { left: "Ninguém quer", right: "працювати в неділю." },
-        { left: "Não tenho nem tempo", right: "ні терпіння." },
-        { left: "Eles não fazem", right: "нічого вночі." }
+        { left: "Não gosto de", right: "nenhuma destas cores." },
+        { left: "Tu nunca ouves", right: "o que eu digo." },
+        { left: "Ninguém quer", right: "trabalhar ao domingo." },
+        { left: "Não tenho nem tempo", right: "nem paciência." },
+        { left: "Eles não fazem", right: "nada à noite." }
       ]
     },
 

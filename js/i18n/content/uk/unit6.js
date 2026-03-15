@@ -156,11 +156,11 @@ export default {
     {
       question: "Зіставте питання з підходящою відповіддю:",
       pairs: [
-        { left: "Onde mora?", right: "У Лісабоні." },
-        { left: "Quando chega?", right: "Завтра." },
-        { left: "Quem é?", right: "Вчитель." },
-        { left: "Como vai?", right: "На автобусі." },
-        { left: "Que faz?", right: "Я вивчаю португальську." }
+        { left: "Onde mora?", right: "Em Lisboa." },
+        { left: "Quando chega?", right: "Amanhã." },
+        { left: "Quem é?", right: "O professor." },
+        { left: "Como vai?", right: "De autocarro." },
+        { left: "Que faz?", right: "Estudo português." }
       ]
     },
     {
