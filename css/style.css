@@ -837,6 +837,7 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 
   /* Lesson body: single column on mobile */
   .lesson-body { -webkit-flex-direction: column; flex-direction: column; }
+  .lesson-main { max-width: 100%; }
   .lesson-sidebar { display: none; }
   .practice-card {
     -webkit-flex-direction: column; flex-direction: column;
