@@ -754,6 +754,8 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 }
 @-webkit-keyframes tapHintPulse { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
 @keyframes tapHintPulse { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+@-webkit-keyframes scrollHintPulse { 0%, 100% { width: 24px; opacity: .8; } 50% { width: 40px; opacity: 1; } }
+@keyframes scrollHintPulse { 0%, 100% { width: 24px; opacity: .8; } 50% { width: 40px; opacity: 1; } }
 
 /* ===== Exercise Batching ===== */
 .batch-label {
@@ -873,12 +875,30 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   .grammar-table.table-wide tr:nth-child(even) td:first-child {
     background: var(--gray-50);
   }
-  /* Fade hint on right edge */
+  /* Dynamic scroll shadows — appear only when content is hidden */
+  .table-wrap-wide::before,
   .table-wrap-wide::after {
-    content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 28px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,.85));
-    pointer-events: none; z-index: 2;
-    border-radius: 0 var(--radius) var(--radius) 0;
+    content: ''; position: absolute; top: 0; bottom: 0; width: 24px;
+    pointer-events: none; z-index: 3;
+    opacity: 0; -webkit-transition: opacity .25s ease; transition: opacity .25s ease;
+  }
+  .table-wrap-wide::before {
+    left: 0;
+    background: -webkit-linear-gradient(left, rgba(0,0,0,.1), transparent);
+    background: linear-gradient(to right, rgba(0,0,0,.1), transparent);
+  }
+  .table-wrap-wide::after {
+    right: 0;
+    background: -webkit-linear-gradient(right, rgba(0,0,0,.1), transparent);
+    background: linear-gradient(to left, rgba(0,0,0,.1), transparent);
+  }
+  .table-wrap-wide.can-scroll-left::before { opacity: 1; }
+  .table-wrap-wide.can-scroll-right::after { opacity: 1; }
+  /* Scroll hint: bouncing arrow on first appearance */
+  .table-wrap-wide.scroll-hint-visible::after {
+    opacity: 1;
+    -webkit-animation: scrollHintPulse 1s ease-in-out 3;
+    animation: scrollHintPulse 1s ease-in-out 3;
   }
 
   /* === Row cards for comparison tables (equalCols 4 cols) === */
@@ -1112,7 +1132,8 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 [data-theme="dark"] .grammar-table.table-wide td:first-child { background: #1e293b; }
 [data-theme="dark"] .grammar-table.table-wide tr:nth-child(even) td:first-child { background: #283548; }
 [data-theme="dark"] .grammar-table.table-wide th:first-child { border-right-color: #475569; }
-[data-theme="dark"] .table-wrap-wide::after { background: linear-gradient(to right, transparent, rgba(15,23,42,.85)); }
+[data-theme="dark"] .table-wrap-wide::before { background: linear-gradient(to right, rgba(0,0,0,.25), transparent); }
+[data-theme="dark"] .table-wrap-wide::after { background: linear-gradient(to left, rgba(0,0,0,.25), transparent); }
 [data-theme="dark"] .grammar-table.table-cards tr { background: #1e293b; border-color: #334155; }
 [data-theme="dark"] .grammar-table.table-cards td::before { color: #94a3b8; }
 [data-theme="dark"] .order-word { background: rgba(59,130,246,.15); }
@@ -1199,7 +1220,8 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   :root:not([data-theme="light"]) .grammar-table.table-wide td:first-child { background: #1e293b; }
   :root:not([data-theme="light"]) .grammar-table.table-wide tr:nth-child(even) td:first-child { background: #283548; }
   :root:not([data-theme="light"]) .grammar-table.table-wide th:first-child { border-right-color: #475569; }
-  :root:not([data-theme="light"]) .table-wrap-wide::after { background: linear-gradient(to right, transparent, rgba(15,23,42,.85)); }
+  :root:not([data-theme="light"]) .table-wrap-wide::before { background: linear-gradient(to right, rgba(0,0,0,.25), transparent); }
+  :root:not([data-theme="light"]) .table-wrap-wide::after { background: linear-gradient(to left, rgba(0,0,0,.25), transparent); }
   :root:not([data-theme="light"]) .grammar-table.table-cards tr { background: #1e293b; border-color: #334155; }
   :root:not([data-theme="light"]) .grammar-table.table-cards td::before { color: #94a3b8; }
   :root:not([data-theme="light"]) .order-word { background: rgba(59,130,246,.15); }

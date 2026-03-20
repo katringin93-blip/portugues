@@ -597,7 +597,44 @@ export const Lesson = {
     this.markLessonVisited(this.currentLesson);
   },
 
+  mounted() { var self = this; this.$nextTick(function() { self.initScrollHints(); }); },
+  updated() { var self = this; this.$nextTick(function() { self.initScrollHints(); }); },
+
   methods: {
+    initScrollHints() {
+      var wraps = this.$el ? this.$el.querySelectorAll('.table-wrap-wide') : [];
+      for (var i = 0; i < wraps.length; i++) {
+        var wrap = wraps[i];
+        if (wrap._shInit) continue;
+        wrap._shInit = true;
+        (function(w) {
+          function update() {
+            var sl = w.scrollLeft;
+            var max = w.scrollWidth - w.clientWidth;
+            if (max <= 0) {
+              w.classList.remove('can-scroll-left', 'can-scroll-right', 'scroll-hint-visible');
+              return;
+            }
+            w.classList.toggle('can-scroll-right', sl < max - 1);
+            w.classList.toggle('can-scroll-left', sl > 1);
+          }
+          w.addEventListener('scroll', update);
+          update();
+          // Show hint on first appearance if scrollable
+          if (w.scrollWidth > w.clientWidth) {
+            w.classList.add('scroll-hint-visible');
+            var dismissed = false;
+            w.addEventListener('scroll', function() {
+              if (!dismissed) { dismissed = true; w.classList.remove('scroll-hint-visible'); }
+            });
+            setTimeout(function() {
+              if (!dismissed) { dismissed = true; w.classList.remove('scroll-hint-visible'); }
+            }, 3000);
+          }
+        })(wrap);
+      }
+    },
+
     tableClass(table) {
       var cls = ['grammar-table'];
       if (table.equalCols) cls.push('equal-cols');
