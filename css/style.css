@@ -859,6 +859,52 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   .grammar-table { font-size: .8125rem; }
   .grammar-table th, .grammar-table td { padding: .375rem .5rem; }
 
+  /* === Sticky first column for wide tables (4+ cols) === */
+  .table-wrap-wide { position: relative; }
+  .grammar-table.table-wide th:first-child,
+  .grammar-table.table-wide td:first-child {
+    position: -webkit-sticky; position: sticky; left: 0; z-index: 1;
+    background: var(--gray-100);
+    border-right: 2px solid var(--gray-200);
+  }
+  .grammar-table.table-wide td:first-child {
+    background: #fff;
+  }
+  .grammar-table.table-wide tr:nth-child(even) td:first-child {
+    background: var(--gray-50);
+  }
+  /* Fade hint on right edge */
+  .table-wrap-wide::after {
+    content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 28px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,.85));
+    pointer-events: none; z-index: 2;
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+
+  /* === Row cards for comparison tables (equalCols 4 cols) === */
+  .grammar-table.table-cards thead { display: none; }
+  .grammar-table.table-cards { border: none; }
+  .grammar-table.table-cards tbody { display: -webkit-flex; display: flex; -webkit-flex-direction: column; flex-direction: column; gap: .625rem; }
+  .grammar-table.table-cards tr {
+    display: block;
+    background: #fff; border: 1px solid var(--gray-200); border-radius: var(--radius);
+    padding: .75rem; box-shadow: var(--shadow-xs);
+  }
+  .grammar-table.table-cards tr:nth-child(even) td { background: transparent; }
+  .grammar-table.table-cards td {
+    display: -webkit-flex; display: flex; -webkit-align-items: baseline; align-items: baseline;
+    gap: .5rem; padding: .25rem 0; border: none;
+    font-weight: inherit; color: inherit;
+  }
+  .grammar-table.table-cards td:first-child { font-weight: 600; color: var(--primary); }
+  .grammar-table.table-cards td::before {
+    content: attr(data-label);
+    -webkit-flex-shrink: 0; flex-shrink: 0;
+    width: 5.5rem; font-size: .6875rem; font-weight: 600;
+    color: var(--gray-500); text-transform: uppercase; letter-spacing: .03em;
+  }
+  .table-wrap-cards { overflow: visible; }
+
   /* Match grid stacks vertically on mobile */
   .match-grid { -webkit-flex-direction: column; flex-direction: column; }
 
@@ -877,9 +923,13 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   /* FIX: Lesson tabs smaller padding to fit more on mobile */
   .lesson-tab { padding: .625rem .625rem; font-size: .8125rem; }
 
-  /* FIX: Results buttons should wrap on mobile */
-  .exercise-results .flex { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-  .exercise-results .flex .btn { -webkit-flex: 1; flex: 1; min-width: 120px; }
+  /* FIX: All button groups should wrap on mobile */
+  .flex { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+  .flex .btn { -webkit-flex: 1; flex: 1; min-width: 120px; }
+  .exercise-results .flex .btn { min-width: 120px; }
+
+  /* FIX: Sub-lesson buttons allow text wrap on narrow screens */
+  .sub-lesson-btn { white-space: normal; text-align: center; }
 
   /* FIX: Mobile nav safe area padding */
   .mobile-nav {
@@ -1059,6 +1109,12 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 [data-theme="dark"] .example-sentence { background: rgba(59,130,246,.1); }
 [data-theme="dark"] .grammar-table th { background: #334155; color: #cbd5e1; }
 [data-theme="dark"] .grammar-table tr:nth-child(even) td { background: rgba(30,41,59,.5); }
+[data-theme="dark"] .grammar-table.table-wide td:first-child { background: #1e293b; }
+[data-theme="dark"] .grammar-table.table-wide tr:nth-child(even) td:first-child { background: #283548; }
+[data-theme="dark"] .grammar-table.table-wide th:first-child { border-right-color: #475569; }
+[data-theme="dark"] .table-wrap-wide::after { background: linear-gradient(to right, transparent, rgba(15,23,42,.85)); }
+[data-theme="dark"] .grammar-table.table-cards tr { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .grammar-table.table-cards td::before { color: #94a3b8; }
 [data-theme="dark"] .order-word { background: rgba(59,130,246,.15); }
 [data-theme="dark"] .order-word.placed { background: #1e293b; }
 [data-theme="dark"] .exercise-feedback.correct { background: rgba(34,197,94,.15); color: #4ade80; }
@@ -1140,6 +1196,12 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
   :root:not([data-theme="light"]) .example-sentence { background: rgba(59,130,246,.1); }
   :root:not([data-theme="light"]) .grammar-table th { background: #334155; color: #cbd5e1; }
   :root:not([data-theme="light"]) .grammar-table tr:nth-child(even) td { background: rgba(30,41,59,.5); }
+  :root:not([data-theme="light"]) .grammar-table.table-wide td:first-child { background: #1e293b; }
+  :root:not([data-theme="light"]) .grammar-table.table-wide tr:nth-child(even) td:first-child { background: #283548; }
+  :root:not([data-theme="light"]) .grammar-table.table-wide th:first-child { border-right-color: #475569; }
+  :root:not([data-theme="light"]) .table-wrap-wide::after { background: linear-gradient(to right, transparent, rgba(15,23,42,.85)); }
+  :root:not([data-theme="light"]) .grammar-table.table-cards tr { background: #1e293b; border-color: #334155; }
+  :root:not([data-theme="light"]) .grammar-table.table-cards td::before { color: #94a3b8; }
   :root:not([data-theme="light"]) .order-word { background: rgba(59,130,246,.15); }
   :root:not([data-theme="light"]) .order-word.placed { background: #1e293b; }
   :root:not([data-theme="light"]) .exercise-feedback.correct { background: rgba(34,197,94,.15); color: #4ade80; }

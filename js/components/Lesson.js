@@ -35,14 +35,14 @@ export const Lesson = {
               <h3 v-if="section.heading">{{ section.heading }}</h3>
               <p v-if="section.text" v-html="section.text"></p>
               <div v-if="section.note" class="grammar-note">{{ section.note }}</div>
-              <div v-if="section.table" class="grammar-table-wrap">
-                <table :class="['grammar-table', section.table.equalCols ? 'equal-cols' : '']">
+              <div v-if="section.table" :class="['grammar-table-wrap', tableWrapClass(section.table)]">
+                <table :class="tableClass(section.table)">
                   <thead>
                     <tr><th v-for="(h, hi) in section.table.headers" :key="hi">{{ h }}</th></tr>
                   </thead>
                   <tbody>
                     <tr v-for="(row, ri) in section.table.rows" :key="ri">
-                      <td v-for="(cell, ci) in row" :key="ci">{{ cell }}</td>
+                      <td v-for="(cell, ci) in row" :key="ci" :data-label="section.table.headers[ci]">{{ cell }}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -598,6 +598,21 @@ export const Lesson = {
   },
 
   methods: {
+    tableClass(table) {
+      var cls = ['grammar-table'];
+      if (table.equalCols) cls.push('equal-cols');
+      var cols = table.headers.length;
+      if (cols >= 4 && table.equalCols) cls.push('table-cards');
+      else if (cols >= 4) cls.push('table-wide');
+      return cls;
+    },
+    tableWrapClass(table) {
+      var cols = table.headers.length;
+      if (cols >= 4 && table.equalCols) return 'table-wrap-cards';
+      if (cols >= 4) return 'table-wrap-wide';
+      return '';
+    },
+
     markLessonVisited(idx) {
       if (!this.visitedLessons[idx]) {
         this.visitedLessons = Object.assign({}, this.visitedLessons, { [idx]: true });
