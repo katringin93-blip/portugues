@@ -229,7 +229,7 @@ export default {
     { question: "Build the sentence: 'In the old days he worked at a bank.'" },
     {
       question: "How many irregular verbs are there in the Imperfeito?",
-      options: ["Two (ser, ir)", "Three (ser, ter, vir)", "Four (ser, ter, vir, pôr)", "Five"],
+      options: ["Two", "Three", "Four", "Five"],
       explanation: "There are exactly four irregular verbs in the Imperfeito: ser, ter, vir, pôr."
     },
     {

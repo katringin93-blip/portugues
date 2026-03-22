@@ -360,10 +360,10 @@ export const exercises = [
     type: "match",
     question: "Выберите правильный глагол — saber или conhecer:",
     pairs: [
-      { left: "falar inglês (уметь)", right: "saber" },
-      { left: "a cidade (быть знакомым)", right: "conhecer" },
-      { left: "a resposta (знать факт)", right: "saber" },
-      { left: "o professor (быть знакомым)", right: "conhecer" }
+      { left: "falar inglês", right: "saber" },
+      { left: "a cidade", right: "conhecer" },
+      { left: "a resposta", right: "saber" },
+      { left: "o professor", right: "conhecer" }
     ]
   }
 ];

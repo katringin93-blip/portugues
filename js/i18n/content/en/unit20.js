@@ -203,11 +203,11 @@ export default {
     },
 
     // === Ex6: Translate into Portuguese (both forms) (5 fill items) ===
-    { question: "Translate (two forms — M-q-P Composto / Simples): «Ты видел» — ___ / ___. (ver)" },
-    { question: "Translate (two forms — M-q-P Composto / Simples): «Он ходил (уходил)» — ___ / ___. (ir)" },
-    { question: "Translate (two forms — M-q-P Composto / Simples): «Мы посетили» — ___ / ___. (visitar)" },
-    { question: "Translate (two forms — M-q-P Composto / Simples): «Он приехал» — ___ / ___. (chegar)" },
-    { question: "Translate (two forms — M-q-P Composto / Simples): «Он сделал» — ___ / ___. (fazer)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «You had seen» — ___ / ___. (ver)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «He had gone (left)» — ___ / ___. (ir)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «We had visited» — ___ / ___. (visitar)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «He had arrived» — ___ / ___. (chegar)" },
+    { question: "Translate (two forms — M-q-P Composto / Simples): «He had done» — ___ / ___. (fazer)" },
 
     // === Ex6: Translate sentences (5 translate items) ===
     { source: "She said that she had already read the book. (both forms)" },

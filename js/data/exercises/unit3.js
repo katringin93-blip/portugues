@@ -50,16 +50,16 @@ export const exercises = [
     type: "match",
     question: "Соотнесите занятия с временами года:",
     pairs: [
-      { left: "nadar no mar", right: "Verão (лето)" },
-      { left: "apanhar folhas", right: "Outono (осень)" },
-      { left: "fazer esqui", right: "Inverno (зима)" },
-      { left: "ver flores", right: "Primavera (весна)" }
+      { left: "nadar no mar", right: "Verão" },
+      { left: "apanhar folhas", right: "Outono" },
+      { left: "fazer esqui", right: "Inverno" },
+      { left: "ver flores", right: "Primavera" }
     ]
   },
   {
     type: "choice",
     question: "В какое время года обычно делают «fazer esqui» (кататься на лыжах)?",
-    options: ["Primavera (весна)", "Verão (лето)", "Outono (осень)", "Inverno (зима)"],
+    options: ["Primavera", "Verão", "Outono", "Inverno"],
     correct: 3,
     explanation: "Fazer esqui (кататься на лыжах) — зимнее занятие: Inverno."
   },

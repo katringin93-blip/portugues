@@ -93,24 +93,24 @@ export default {
   ],
   exercises: [
     // Ex1: Fill correct interrogative (12 items)
-    { question: "___ se chama o seu amigo? (What is your friend's name?)" },
-    { question: "___ é aquela rapariga? (Who is that girl?)" },
-    { question: "___ há para o jantar? (What is for dinner?)" },
-    { question: "___ estuda o Paulo? (What does Paulo study?)" },
-    { question: "___ é que chegam os teus pais? (When will your parents arrive?)" },
-    { question: "___ é o director da escola? (Who is the school director?)" },
+    { question: "___ se chama o seu amigo? (asking about a friend's name)" },
+    { question: "___ é aquela rapariga? (asking about identity)" },
+    { question: "___ há para o jantar? (asking about dinner)" },
+    { question: "___ estuda o Paulo? (asking about a subject of study)" },
+    { question: "___ é que chegam os teus pais? (asking about arrival time)" },
+    { question: "___ é o director da escola? (asking about identity)" },
     {
       question: "Choose the correct interrogative word: ___ fazem no fim-de-semana?",
       explanation: "«Que» (what) is used for questions about actions: «What do they do at the weekend?»"
     },
-    { question: "___ é que vocês convidam para a festa? (Who do you invite to the party?)" },
-    { question: "___ é que fica a farmácia? (Where is the pharmacy?)" },
-    { question: "___ é que a Ana traz na mala? (What does Ana carry in her bag?)" },
+    { question: "___ é que vocês convidam para a festa? (asking about party guests)" },
+    { question: "___ é que fica a farmácia? (asking about location)" },
+    { question: "___ é que a Ana traz na mala? (asking about bag contents)" },
     {
       question: "Choose the correct interrogative word: ___ fala ao telefone?",
       explanation: "«Quem» (who) — a question about a person: «Who is speaking on the phone?»"
     },
-    { question: "___ é que ela vai para o trabalho — de carro ou de autocarro? (How does she get to work?)" },
+    { question: "___ é que ela vai para o trabalho — de carro ou de autocarro? (asking about means of transport)" },
 
     // Ex2: Full answers using elements (8 items)
     { source: "Where is Idalina?" },

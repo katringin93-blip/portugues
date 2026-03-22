@@ -241,10 +241,10 @@ export default {
     {
       question: "Choose the correct verb — saber or conhecer:",
       pairs: [
-        { left: "falar inglês (to know how to)", right: "saber" },
-        { left: "a cidade (to be acquainted with)", right: "conhecer" },
-        { left: "a resposta (to know a fact)", right: "saber" },
-        { left: "o professor (to be acquainted with)", right: "conhecer" }
+        { left: "falar inglês", right: "saber" },
+        { left: "a cidade", right: "conhecer" },
+        { left: "a resposta", right: "saber" },
+        { left: "o professor", right: "conhecer" }
       ]
     }
   ],

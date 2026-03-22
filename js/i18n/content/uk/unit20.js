@@ -203,11 +203,11 @@ export default {
     },
 
     // === Впр.6: Перекладіть португальською (обидві форми) (5 завдань fill) ===
-    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Ты видел» — ___ / ___. (ver)" },
-    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он ходил (уходил)» — ___ / ___. (ir)" },
-    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Мы посетили» — ___ / ___. (visitar)" },
-    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он приехал» — ___ / ___. (chegar)" },
-    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Он сделал» — ___ / ___. (fazer)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Ти бачив» — ___ / ___. (ver)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Він ходив (йшов)» — ___ / ___. (ir)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Ми відвідали» — ___ / ___. (visitar)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Він приїхав» — ___ / ___. (chegar)" },
+    { question: "Перекладіть (дві форми — M-q-P Composto / Simples): «Він зробив» — ___ / ___. (fazer)" },
 
     // === Впр.6: Перекладіть речення (5 завдань translate) ===
     { source: "Вона сказала, що вже прочитала книгу. (обидві форми)" },

@@ -233,10 +233,10 @@ export default {
     {
       question: "What type of comparison is used in «O bacalhau é o prato mais famoso de Portugal»?",
       options: [
-        "Comparative (comparativo)",
-        "Absolute superlative (superlativo absoluto)",
-        "Relative superlative (superlativo relativo)",
-        "Equality (igualdade)"
+        "Comparative",
+        "Absolute superlative",
+        "Relative superlative",
+        "Equality"
       ],
       explanation: "«O mais famoso de Portugal» — relative superlative, comparing within a defined group."
     },

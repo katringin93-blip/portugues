@@ -257,7 +257,7 @@ export default {
 
     // Ex4: Fill negatives (8 items)
     // 27. fill
-    { question: "___ knows the answer to the question. (Nobody knows the answer.)" },
+    { question: "___ sabe a resposta à pergunta. (Nobody knows the answer.)" },
     // 28. fill
     { question: "Não sei ___ sobre esse assunto. (I know nothing about this topic.)" },
     // 29. fill

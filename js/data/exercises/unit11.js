@@ -265,10 +265,10 @@ export const exercises = [
     type: "choice",
     question: "Какой тип степени сравнения в предложении «O bacalhau é o prato mais famoso de Portugal»?",
     options: [
-      "Сравнительная (comparativo)",
-      "Абсолютная превосходная (superlativo absoluto)",
-      "Относительная превосходная (superlativo relativo)",
-      "Степень равенства (igualdade)"
+      "Сравнительная",
+      "Абсолютная превосходная",
+      "Относительная превосходная",
+      "Степень равенства"
     ],
     correct: 2,
     explanation: "«O mais famoso de Portugal» — относительная превосходная степень, сравнение внутри определённой группы."

@@ -371,7 +371,7 @@ export const exercises = [
   {
     type: "choice",
     question: "Сколько неправильных глаголов в Imperfeito?",
-    options: ["Два (ser, ir)", "Три (ser, ter, vir)", "Четыре (ser, ter, vir, pôr)", "Пять"],
+    options: ["Два", "Три", "Четыре", "Пять"],
     correct: 2,
     explanation: "В Imperfeito всего четыре неправильных глагола: ser, ter, vir, pôr."
   },

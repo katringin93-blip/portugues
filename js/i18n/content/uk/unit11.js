@@ -233,10 +233,10 @@ export default {
     {
       question: "Який тип ступеня порівняння в реченні «O bacalhau é o prato mais famoso de Portugal»?",
       options: [
-        "Вищий ступінь (comparativo)",
-        "Абсолютний найвищий (superlativo absoluto)",
-        "Відносний найвищий (superlativo relativo)",
-        "Рівність (igualdade)"
+        "Вищий ступінь",
+        "Абсолютний найвищий",
+        "Відносний найвищий",
+        "Рівність"
       ],
       explanation: "«O mais famoso de Portugal» — відносний найвищий ступінь, порівняння в межах певної групи."
     },

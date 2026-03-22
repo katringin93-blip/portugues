@@ -229,7 +229,7 @@ export default {
     { question: "Складіть речення: «Раніше він працював у банку.»" },
     {
       question: "Скільки неправильних дієслів в Imperfeito?",
-      options: ["Два (ser, ir)", "Три (ser, ter, vir)", "Чотири (ser, ter, vir, pôr)", "П'ять"],
+      options: ["Два", "Три", "Чотири", "П'ять"],
       explanation: "В Imperfeito рівно чотири неправильних дієслова: ser, ter, vir, pôr."
     },
     {
