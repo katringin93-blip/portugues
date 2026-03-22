@@ -272,10 +272,10 @@ export const exercises = [
     type: "match",
     question: "Определите род существительных (мужской или женский):",
     pairs: [
-      { left: "cão", right: "мужской (o cão)" },
-      { left: "sol", right: "мужской (o sol)" },
-      { left: "viagem", right: "женский (a viagem)" },
-      { left: "cidade", right: "женский (a cidade)" }
+      { left: "cão", right: "мужской" },
+      { left: "sol", right: "мужской" },
+      { left: "viagem", right: "женский" },
+      { left: "cidade", right: "женский" }
     ]
   },
   {
@@ -289,10 +289,10 @@ export const exercises = [
     type: "match",
     question: "Определите род: мужской (M) или женский (F):",
     pairs: [
-      { left: "avô", right: "M (o avô)" },
-      { left: "coração", right: "M (o coração)" },
-      { left: "pão", right: "M (o pão)" },
-      { left: "coelho", right: "M (o coelho)" }
+      { left: "avô", right: "M" },
+      { left: "coração", right: "M" },
+      { left: "pão", right: "M" },
+      { left: "coelho", right: "M" }
     ]
   },
 

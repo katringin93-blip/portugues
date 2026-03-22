@@ -175,20 +175,20 @@ export default {
     {
       question: "Identify the gender of each noun (masculine or feminine):",
       pairs: [
-        { left: "cão", right: "masculine (o cão)" },
-        { left: "sol", right: "masculine (o sol)" },
-        { left: "viagem", right: "feminine (a viagem)" },
-        { left: "cidade", right: "feminine (a cidade)" }
+        { left: "cão", right: "masculine" },
+        { left: "sol", right: "masculine" },
+        { left: "viagem", right: "feminine" },
+        { left: "cidade", right: "feminine" }
       ]
     },
     { question: "Which of these words are masculine? gato, flor, homem, nação", explanation: "Gato (cat) — o gato, homem (man) — o homem. Flor (flower) — a flor, nação (nation) — a nação — are feminine." },
     {
       question: "Identify the gender: masculine (M) or feminine (F):",
       pairs: [
-        { left: "avô", right: "M (o avô)" },
-        { left: "coração", right: "M (o coração)" },
-        { left: "pão", right: "M (o pão)" },
-        { left: "coelho", right: "M (o coelho)" }
+        { left: "avô", right: "M" },
+        { left: "coração", right: "M" },
+        { left: "pão", right: "M" },
+        { left: "coelho", right: "M" }
       ]
     },
 

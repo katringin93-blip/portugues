@@ -175,20 +175,20 @@ export default {
     {
       question: "Визначте рід іменників (чоловічий або жіночий):",
       pairs: [
-        { left: "cão", right: "чоловічий (o cão)" },
-        { left: "sol", right: "чоловічий (o sol)" },
-        { left: "viagem", right: "жіночий (a viagem)" },
-        { left: "cidade", right: "жіночий (a cidade)" }
+        { left: "cão", right: "чоловічий" },
+        { left: "sol", right: "чоловічий" },
+        { left: "viagem", right: "жіночий" },
+        { left: "cidade", right: "жіночий" }
       ]
     },
     { question: "Які з цих слів чоловічого роду? gato, flor, homem, nação", explanation: "Gato (кіт) — o gato, homem (чоловік) — o homem. Flor (квітка) — a flor, nação (нація) — a nação — жіночого роду." },
     {
       question: "Визначте рід: чоловічий (M) або жіночий (F):",
       pairs: [
-        { left: "avô", right: "M (o avô)" },
-        { left: "coração", right: "M (o coração)" },
-        { left: "pão", right: "M (o pão)" },
-        { left: "coelho", right: "M (o coelho)" }
+        { left: "avô", right: "M" },
+        { left: "coração", right: "M" },
+        { left: "pão", right: "M" },
+        { left: "coelho", right: "M" }
       ]
     },
 

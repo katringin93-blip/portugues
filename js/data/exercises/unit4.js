@@ -358,9 +358,9 @@ export const exercises = [
     type: "match",
     question: "Соотнесите окончания глаголов для «tu» по группам спряжения:",
     pairs: [
-      { left: "-ar (falar)", right: "-as (falas)" },
-      { left: "-er (comer)", right: "-es (comes)" },
-      { left: "-ir (partir)", right: "-es (partes)" }
+      { left: "-ar (falar)", right: "-as" },
+      { left: "-er (comer)", right: "-es" },
+      { left: "-ir (partir)", right: "-es" }
     ]
   },
   {

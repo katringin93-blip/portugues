@@ -267,10 +267,10 @@ export default {
     {
       question: "Match activities to seasons:",
       pairs: [
-        { left: "nadar no mar", right: "Verão (summer)" },
-        { left: "apanhar folhas", right: "Outono (autumn)" },
-        { left: "fazer esqui", right: "Inverno (winter)" },
-        { left: "ver flores", right: "Primavera (spring)" }
+        { left: "nadar no mar", right: "Verão" },
+        { left: "apanhar folhas", right: "Outono" },
+        { left: "fazer esqui", right: "Inverno" },
+        { left: "ver flores", right: "Primavera" }
       ]
     },
     // 10

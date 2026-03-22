@@ -267,10 +267,10 @@ export default {
     {
       question: "Зіставте заняття з порами року:",
       pairs: [
-        { left: "nadar no mar", right: "Verão (літо)" },
-        { left: "apanhar folhas", right: "Outono (осінь)" },
-        { left: "fazer esqui", right: "Inverno (зима)" },
-        { left: "ver flores", right: "Primavera (весна)" }
+        { left: "nadar no mar", right: "Verão" },
+        { left: "apanhar folhas", right: "Outono" },
+        { left: "fazer esqui", right: "Inverno" },
+        { left: "ver flores", right: "Primavera" }
       ]
     },
     // 10
