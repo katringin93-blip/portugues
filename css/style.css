@@ -446,8 +446,11 @@ p { margin-bottom: .75rem; overflow-wrap: break-word; }
 .audio-btn:hover { background: var(--primary); color: #fff; }
 .audio-btn:active { -webkit-transform: scale(.9); transform: scale(.9); }
 .audio-btn.playing { background: var(--primary); color: #fff; -webkit-animation: pulse .8s infinite; animation: pulse .8s infinite; }
+.audio-btn.audio-error { background: #fee2e2; color: #dc2626; -webkit-animation: shake .4s; animation: shake .4s; }
 @-webkit-keyframes pulse { 0%, 100% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } }
 @keyframes pulse { 0%, 100% { -webkit-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(1.1); transform: scale(1.1); } }
+@-webkit-keyframes shake { 0%,100%{-webkit-transform:translateX(0);transform:translateX(0)} 25%{-webkit-transform:translateX(-4px);transform:translateX(-4px)} 75%{-webkit-transform:translateX(4px);transform:translateX(4px)} }
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-4px)} 75%{transform:translateX(4px)} }
 
 /* ===== Exercises ===== */
 .exercise-container { margin: 1rem 0; }

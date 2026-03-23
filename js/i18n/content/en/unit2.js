@@ -244,6 +244,7 @@ export default {
     { source: "The children are playing in the park." },
     {
       question: "When is the definite article NOT used in Portuguese?",
+      options: ["Before names: O João é alto", "With days of the week: na segunda-feira", "After the verb falar with a language: Falo português", "Before countries: O Brasil é grande"],
       explanation: "After the verb «falar», the article before a language name is usually omitted: Falo português (I speak Portuguese)."
     },
     { source: "We live in Portugal." },

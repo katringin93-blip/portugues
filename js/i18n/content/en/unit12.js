@@ -191,7 +191,7 @@ export default {
     { question: "Which is correct: Tu não ___ (os bolos) — «You don't buy them (the cakes).» (proclisis after «não»)", explanation: "After «não», proclisis is used: Tu não os compras." },
     { question: "Eu não ___ (os amigos) — I don't see them. (proclisis after «não»)" },
     { question: "Ele nunca ___ (os jornais) — He never reads them. (proclisis after «nunca»)" },
-    { question: "Where does the pronoun go in an affirmative sentence without «attracting» words?", explanation: "In a simple affirmative sentence (without não, nunca, sempre, etc.), enclisis is used: toma-o." },
+    { question: "Where does the pronoun go in an affirmative sentence without «attracting» words?", options: ["Before the verb", "After the verb", "Between two verbs", "At the beginning of the sentence"], explanation: "In a simple affirmative sentence (without não, nunca, sempre, etc.), enclisis is used: toma-o." },
     {
       question: "Match the proclisis-triggering words with their examples:",
       pairs: [

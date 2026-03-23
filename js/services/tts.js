@@ -1,13 +1,31 @@
 // TTS for European Portuguese (pt-PT)
-// Primary: Edge TTS via Netlify Function (neural pt-PT-RaquelNeural voice)
+// Primary: Edge TTS via Cloudflare Pages Function (neural pt-PT-RaquelNeural voice)
 // Fallback: Web Speech API (system voices)
 
 var webVoice = null;
 var anyPtVoice = null;
 var hasPtPTVoice = false;
+var edgeTTSAvailable = true; // assume available, set false on first failure
 
-// In-memory audio cache: "text|rate" → blobURL
+// In-memory LRU audio cache: "text|rate" → blobURL (max 100 entries)
 var audioCache = {};
+var audioCacheKeys = [];
+var CACHE_MAX = 100;
+
+function cacheSet(key, blobUrl) {
+  if (audioCache[key]) return; // already cached
+  if (audioCacheKeys.length >= CACHE_MAX) {
+    var oldest = audioCacheKeys.shift();
+    URL.revokeObjectURL(audioCache[oldest]);
+    delete audioCache[oldest];
+  }
+  audioCache[key] = blobUrl;
+  audioCacheKeys.push(key);
+}
+
+function cacheGet(key) {
+  return audioCache[key] || null;
+}
 
 // ---- Web Speech API setup ----
 
@@ -76,13 +94,14 @@ function speakWithEdgeTTS(text, rate) {
     }
 
     // Serve from cache if available
-    if (audioCache[cacheKey]) {
-      playBlob(audioCache[cacheKey]);
+    var cached = cacheGet(cacheKey);
+    if (cached) {
+      playBlob(cached);
       return;
     }
 
     // Fetch from Cloudflare Pages Function (relative URL works on any host)
-    var apiUrl = '/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + rate;
+    var apiUrl = '/api/tts?text=' + encodeURIComponent(text.substring(0, 300)) + '&rate=' + (rate || 0.9);
 
     fetch(apiUrl).then(function(res) {
       if (!res.ok) throw new Error('TTS API ' + res.status);
@@ -90,7 +109,7 @@ function speakWithEdgeTTS(text, rate) {
     }).then(function(blob) {
       if (blob.size < 100) throw new Error('TTS response too small');
       var blobUrl = URL.createObjectURL(blob);
-      audioCache[cacheKey] = blobUrl;
+      cacheSet(cacheKey, blobUrl);
       playBlob(blobUrl);
     }).catch(function(err) {
       console.warn('Edge TTS failed:', err.message);
@@ -134,15 +153,18 @@ export function speak(text, rate) {
 
   // 1. Always try Edge TTS first (pt-PT-RaquelNeural — guaranteed European Portuguese)
   // 2. If Edge TTS fails — fall back to system pt-PT voice only (never pt-BR)
-  return speakWithEdgeTTS(text, rate).catch(function() {
+  return speakWithEdgeTTS(text, rate).catch(function(err) {
+    edgeTTSAvailable = false;
     if (webVoice) {
       console.log('TTS: falling back to Web Speech API:', webVoice.name);
       return speakWithWebAPI(text, rate, webVoice);
     }
-    // No pt-PT system voice available — fail silently rather than play pt-BR
+    // No pt-PT system voice available — reject so AudioButton can show error
+    return Promise.reject(err || new Error('TTS unavailable'));
   });
 }
 
 export function isTTSAvailable() {
-  return true;
+  // Available if Edge TTS hasn't permanently failed, or if we have a system voice
+  return edgeTTSAvailable || !!webVoice;
 }

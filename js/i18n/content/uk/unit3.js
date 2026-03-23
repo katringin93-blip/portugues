@@ -324,6 +324,7 @@ export default {
     // 24
     {
       question: "Якій даті відповідає «vinte e cinco de abril»?",
+      options: ["25 березня", "25 квітня", "25 травня", "25 червня"],
       explanation: "Vinte e cinco de abril = 25 квітня. Це День свободи в Португалії (річниця Революції гвоздик 1974 р.)."
     },
     // 25

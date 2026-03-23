@@ -324,6 +324,7 @@ export default {
     // 24
     {
       question: "What date does «vinte e cinco de abril» correspond to?",
+      options: ["25 March", "25 April", "25 May", "25 June"],
       explanation: "Vinte e cinco de abril = 25 April. This is Freedom Day in Portugal (anniversary of the Carnation Revolution of 1974)."
     },
     // 25

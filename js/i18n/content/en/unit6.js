@@ -169,6 +169,7 @@ export default {
     },
     {
       question: "Which construction is characteristic of European Portuguese in questions?",
+      options: ["what is this", "é que", "o que é", "quem está"],
       explanation: "The construction «é que» is a typical feature of European Portuguese; it is placed after the interrogative word."
     }
   ],

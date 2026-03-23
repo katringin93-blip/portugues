@@ -225,6 +225,7 @@ export default {
     { question: "Build the sentence: «Yesterday I spoke with the director.»" },
     {
       question: "In European Portuguese, the «nós» form for -ar verbs in Pretérito Perfeito differs from the present tense in that:",
+      options: ["the stem changes", "an accent is added: falámos", "the ending is different: -emos", "there is no difference"],
       explanation: "In European Portuguese: falámos (Pretérito Perfeito) vs falamos (Presente). The accent helps distinguish the tenses."
     },
     { question: "Build the sentence: «She bought a new dress.»" }

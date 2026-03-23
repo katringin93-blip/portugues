@@ -251,6 +251,7 @@ export default {
     },
     {
       question: "The simple form of Mais-que-Perfeito is used...",
+      options: ["in everyday spoken language", "only with irregular verbs", "in literary language and formal writing", "only in Brazil"],
       explanation: "The simple form (falara, comera) is found in literature, newspapers, and formal texts."
     },
     {
@@ -266,6 +267,7 @@ export default {
     { question: "Put the words in order: 'He had never been to Portugal before.'" },
     {
       question: "In the sentence 'Quando cheguei, ele já tinha saído', which happened first?",
+      options: ["I arrived", "He left", "Both at the same time", "Impossible to determine"],
       explanation: "M-q-P (tinha saído) denotes an action that happened BEFORE another action in the past."
     }
   ],

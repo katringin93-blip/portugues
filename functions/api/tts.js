@@ -5,6 +5,35 @@
 // Implements the Edge TTS WebSocket protocol directly (no npm packages needed).
 // Cloudflare Workers use fetch() with Upgrade:websocket for outgoing WS connections.
 
+// --- Simple in-memory rate limiter (per-IP, sliding window) ---
+var rateLimitMap = {};
+var RATE_LIMIT_MAX = 30;      // max requests per window
+var RATE_LIMIT_WINDOW = 60000; // 1 minute
+
+function checkRateLimit(ip) {
+  var now = Date.now();
+  if (!rateLimitMap[ip]) rateLimitMap[ip] = [];
+  // Remove expired entries
+  rateLimitMap[ip] = rateLimitMap[ip].filter(function(t) { return now - t < RATE_LIMIT_WINDOW; });
+  if (rateLimitMap[ip].length >= RATE_LIMIT_MAX) return false;
+  rateLimitMap[ip].push(now);
+  return true;
+}
+
+// Clean up stale IPs every 5 minutes to prevent memory leak
+var lastCleanup = Date.now();
+function cleanupRateLimits() {
+  var now = Date.now();
+  if (now - lastCleanup < 300000) return;
+  lastCleanup = now;
+  Object.keys(rateLimitMap).forEach(function(ip) {
+    rateLimitMap[ip] = rateLimitMap[ip].filter(function(t) { return now - t < RATE_LIMIT_WINDOW; });
+    if (rateLimitMap[ip].length === 0) delete rateLimitMap[ip];
+  });
+}
+
+var MAX_TEXT_LENGTH = 300;
+
 export async function onRequest(context) {
   var request = context.request;
 
@@ -20,11 +49,21 @@ export async function onRequest(context) {
     });
   }
 
+  // Rate limiting
+  cleanupRateLimits();
+  var clientIP = request.headers.get('CF-Connecting-IP') || request.headers.get('X-Forwarded-For') || 'unknown';
+  if (!checkRateLimit(clientIP)) {
+    return new Response(JSON.stringify({ error: 'Rate limit exceeded. Try again in a minute.' }), {
+      status: 429,
+      headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Retry-After': '60' },
+    });
+  }
+
   var url = new URL(request.url);
   var text = url.searchParams.get('text');
 
-  if (!text || text.length > 500) {
-    return new Response(JSON.stringify({ error: 'Missing or too long text (max 500 chars)' }), {
+  if (!text || text.length > MAX_TEXT_LENGTH) {
+    return new Response(JSON.stringify({ error: 'Missing or too long text (max ' + MAX_TEXT_LENGTH + ' chars)' }), {
       status: 400,
       headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
     });
@@ -36,7 +75,7 @@ export async function onRequest(context) {
   var rateStr = (ratePercent >= 0 ? '+' : '') + ratePercent + '%';
 
   try {
-    var audioBuffer = await synthesizeEdgeTTS(text.substring(0, 300), rateStr);
+    var audioBuffer = await synthesizeEdgeTTS(text, rateStr);
     return new Response(audioBuffer, {
       headers: {
         'Content-Type': 'audio/mpeg',
@@ -112,6 +151,9 @@ function buildSsmlMessage(text, rate) {
 
 // Microsoft's anti-abuse check: SHA-256 of rounded timestamp + token.
 // See: https://github.com/rany2/edge-tts (DRM.generate_sec_ms_gec)
+// Chromium version for Edge TTS auth headers.
+// If TTS stops working, update to match latest stable Edge version.
+// Check: https://github.com/nicsinc/edge-tts or https://chromiumdash.appspot.com/releases
 var CHROMIUM_FULL_VERSION = '143.0.3650.75';
 var CHROMIUM_MAJOR_VERSION = '143';
 var SEC_MS_GEC_VERSION = '1-' + CHROMIUM_FULL_VERSION;

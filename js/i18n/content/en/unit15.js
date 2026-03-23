@@ -161,6 +161,7 @@ export default {
     { question: "Context is clear (formal 'you'): O ___ bilhete está aqui. (Your ticket is here.)" },
     {
       question: "When should you use 'dele/dela' instead of 'seu/sua'?",
+      options: ["Always", "When the context is ambiguous", "Only in formal speech", "Only with plural nouns"],
       explanation: "'Seu/sua' can mean his/her/your. 'Dele/dela' clarifies who is being referred to."
     },
     { question: "Formal: A ___ família é grande. (Your family is large.)" },
