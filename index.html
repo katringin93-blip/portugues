@@ -1,38 +1,376 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Portugues - Curso de Portugues Europeu</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Европейский португальский — бесплатный курс с нуля до A2</title>
+  <meta name="description" content="20 уроков, 1 060 упражнений, 768 карточек с интервальным повторением. Европейский португальский для жизни в Португалии. Бесплатно.">
+  <meta property="og:title" content="Европейский португальский — курс с нуля до A2">
+  <meta property="og:description" content="Полная программа: грамматика, упражнения, флешкарты, аудио от носителя. Бесплатно.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://learn-portugues.pages.dev/images/hero.png">
+  <meta property="og:url" content="https://learn-portugues.pages.dev/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="ru" href="/">
+  <link rel="alternate" hreflang="x-default" href="/">
+  <link rel="canonical" href="https://learn-portugues.pages.dev/">
+  <link rel="icon" type="image/svg+xml" href="course/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Lunaris Design System — v2.pen tokens */
+    :root {
+      --primary: #2563EB;
+      --primary-foreground: #FFFFFF;
+      --background: #F2F3F0;
+      --foreground: #111111;
+      --card: #FFFFFF;
+      --card-foreground: #111111;
+      --muted: #F2F3F0;
+      --muted-foreground: #666666;
+      --secondary: #E7E8E5;
+      --secondary-foreground: #111111;
+      --accent: #F2F3F0;
+      --accent-foreground: #111111;
+      --border: #CBCCC9;
+      --input: #CBCCC9;
+      --destructive: #D93C15;
+      --black: #000000;
+      --white: #FFFFFF;
+      --color-error: #E5DCDA;
+      --color-error-foreground: #8C1C00;
+      --color-warning: #E9E3D8;
+      --color-warning-foreground: #804200;
+      --color-info: #DFDFE6;
+      --color-info-foreground: #000066;
+      --color-success: #DFE6E1;
+      --color-success-foreground: #004D1A;
+      --radius-m: 16px;
+      --radius-none: 0px;
+      --radius-pill: 999px;
+      --font-primary: 'JetBrains Mono', monospace;
+      --font-secondary: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111111;
+        --foreground: #FFFFFF;
+        --card: #1A1A1A;
+        --card-foreground: #FFFFFF;
+        --muted: #2E2E2E;
+        --muted-foreground: #B8B9B6;
+        --secondary: #2E2E2E;
+        --secondary-foreground: #FFFFFF;
+        --accent: #111111;
+        --accent-foreground: #F2F3F0;
+        --border: #2E2E2E;
+        --input: #2E2E2E;
+        --destructive: #FF5C33;
+        --color-error: #24100B;
+        --color-error-foreground: #FF5C33;
+        --color-warning: #291C0F;
+        --color-warning-foreground: #FF8400;
+        --color-info: #222229;
+        --color-info-foreground: #B2B2FF;
+        --color-success: #222924;
+        --color-success-foreground: #B6FFCE;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-secondary); color: var(--foreground); background: var(--background); line-height: 1.6; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Layout */
+    .section { padding: 80px; width: 100%; }
+    .section--bg { background: var(--background); }
+    .section--card { background: var(--card); }
+    .section--primary { background: var(--primary); color: var(--primary-foreground); }
+    .section--black { background: var(--black); color: #fff; }
+    .section__inner { max-width: 1280px; margin: 0 auto; }
+    .text-center { text-align: center; }
+    .flex-center { display: flex; flex-direction: column; align-items: center; }
+
+    /* Typography */
+    .label { font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; color: var(--primary); font-weight: 500; }
+    .label--white { color: #fff; }
+    h1 { font-family: var(--font-primary); font-size: 56px; font-weight: 700; line-height: 1.2; }
+    h2 { font-family: var(--font-primary); font-size: 36px; font-weight: 700; line-height: 1.2; }
+    h3 { font-family: var(--font-primary); font-size: 20px; font-weight: 700; }
+    h4 { font-family: var(--font-primary); font-size: 16px; font-weight: 700; }
+    .subtitle { font-size: 18px; color: var(--muted-foreground); max-width: 700px; }
+    .body-text { font-size: 16px; color: var(--muted-foreground); max-width: 800px; line-height: 1.6; }
+    .body-sm { font-size: 14px; color: var(--muted-foreground); line-height: 1.5; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-primary); font-size: 14px; font-weight: 500; padding: 12px 24px; border-radius: var(--radius-pill); border: none; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+    .btn--primary { background: var(--primary); color: var(--primary-foreground); }
+    .btn--primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+
+    /* Chips */
+    .chips { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .chip { font-family: var(--font-secondary); font-size: 14px; padding: 8px 16px; border-radius: var(--radius-pill); background: var(--card); border: 1px solid var(--border); }
+
+    /* Cards */
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 28px; text-align: left; }
+    .card--alt { background: var(--muted); }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; width: 100%; }
+    .card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+    /* Icon circle */
+    .icon-circle { width: 44px; height: 44px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .icon-circle--sm { width: 36px; height: 36px; }
+    .icon-circle svg { width: 22px; height: 22px; color: var(--primary-foreground); }
+    .icon-circle--sm svg { width: 16px; height: 16px; color: var(--primary-foreground); }
+
+    /* Hero */
+    .hero { padding: 120px 80px 80px; gap: 32px; }
+    .hero-image { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-m); }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; gap: 0; max-width: 800px; width: 100%; text-align: left; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; cursor: pointer; font-family: var(--font-primary); font-size: 16px; font-weight: 500; line-height: 1.5; gap: 16px; }
+    .faq-q .faq-chevron { width: 16px; height: 16px; flex-shrink: 0; transition: transform 0.2s; color: var(--foreground); }
+    .faq-item.open .faq-q .faq-chevron { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; }
+    .faq-a p { padding: 0 0 16px; font-size: 14px; color: var(--muted-foreground); line-height: 1.5; }
+
+    /* Comparison */
+    .comp-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 28px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .comp-badge { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; width: fit-content; }
+    .comp-badge--red { background: var(--color-error); color: var(--color-error-foreground); }
+    .comp-badge--orange { background: var(--color-warning); color: var(--color-warning-foreground); }
+    .comp-badge--blue { background: var(--color-info); color: var(--color-info-foreground); }
+    .comp-card h4 { font-size: 18px; min-height: 48px; }
+    .comp-sub { font-size: 13px; font-weight: 600; }
+    .comp-sub--red { color: var(--color-error-foreground); }
+    .comp-sub--orange { color: var(--color-warning-foreground); }
+    .comp-sub--blue { color: var(--color-info-foreground); }
+
+    .highlight-card { background: var(--primary); color: var(--primary-foreground); border-radius: var(--radius-m); padding: 40px 48px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .highlight-badge { background: rgba(255,255,255,0.13); color: #fff; font-family: var(--font-primary); font-size: 12px; font-weight: 700; letter-spacing: 2px; padding: 6px 16px; border-radius: var(--radius-pill); }
+    .highlight-card h3 { font-size: 24px; max-width: 700px; }
+    .highlight-card p { font-size: 16px; opacity: 0.85; max-width: 640px; line-height: 1.6; }
+
+    /* CTA */
+    .cta-section { gap: 32px; }
+    .cta-section h2 { font-size: 44px; max-width: 800px; }
+    .cta-closing { font-size: 14px; font-style: italic; color: var(--muted-foreground); max-width: 560px; line-height: 1.5; }
+    .cta-section .subtitle { max-width: 640px; }
+
+    /* Footer */
+    .footer { background: var(--black); color: #fff; padding: 48px 80px; }
+    .footer__inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+    .footer__top { display: flex; justify-content: space-between; align-items: center; }
+    .footer__brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-primary); font-size: 18px; font-weight: 700; }
+    .footer__brand-icon { width: 28px; height: 28px; border-radius: 50%; background: #F8ACFF; position: relative; display: flex; align-items: center; justify-content: center; }
+    .footer__brand-icon svg { width: 16px; height: 16px; color: var(--black); }
+    .footer__divider { height: 1px; background: var(--border); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted-foreground); }
+    .footer__legal { display: flex; gap: 20px; }
+    .footer__legal a:hover { color: #fff; }
+
+    /* Stack helpers */
+    .stack { display: flex; flex-direction: column; }
+    .stack--16 { gap: 16px; }
+    .stack--24 { gap: 24px; }
+    .stack--32 { gap: 32px; }
+    .stack--48 { gap: 48px; }
+    .w-full { width: 100%; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .section { padding: 48px 24px; }
+      .hero { padding: 64px 24px 48px; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 24px; }
+      .cta-section h2 { font-size: 24px; }
+      .card-grid, .card-grid--2, .card-grid--4 { grid-template-columns: 1fr; gap: 16px; }
+      .card { padding: 20px; }
+      .comp-card { padding: 20px; }
+      .comp-card h4 { min-height: auto; }
+      .highlight-card { padding: 32px 24px; }
+      .hero-image { height: 200px; }
+      .chips { gap: 6px; }
+      .chip { font-size: 12px; }
+      .body-text { font-size: 14px; }
+      .footer { padding: 32px 24px; }
+      .footer__top, .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .footer__legal { flex-direction: column; align-items: center; gap: 8px; }
+    }
+  </style>
   <script>
-    // Apply theme early to avoid flash
-    (function(){try{var t=localStorage.getItem('pt_course_theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();
+    // Backward compat: redirect hash routes from old pages.dev URLs
+    if (window.location.hash && window.location.hash.startsWith('#/')) {
+      window.location.href = '/course/' + window.location.hash;
+    }
   </script>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-  <div id="app"></div>
 
-  <script type="module">
-    import { createApp } from './js/app.js';
-    createApp();
-  </script>
-  <script nomodule>
-    document.getElementById('app').innerHTML =
-      '<div style="text-align:center;padding:3rem 1rem;font-family:sans-serif;">' +
-      '<h2>Browser not supported / Браузер не поддерживается / Браузер не підтримується</h2>' +
-      '<p>Please update your browser. / Обновите браузер. / Оновіть браузер.</p>' +
-      '</div>';
+  <!-- Hero -->
+  <header class="hero section section--bg flex-center text-center">
+    <span class="label">ИНТЕРАКТИВНЫЙ КУРС</span>
+    <h1>Европейский португальский</h1>
+    <p class="subtitle">Полная программа с нуля до A2</p>
+    <a href="/course/" class="btn btn--primary">Открыть первый урок &rarr;</a>
+    <div class="chips">
+      <span class="chip">20 уроков</span>
+      <span class="chip">1 060 упражнений</span>
+      <span class="chip">768 карточек</span>
+    </div>
+    <img src="images/hero.png" alt="Изучение европейского португальского — интерактивный курс" class="hero-image" loading="eager" width="1280" height="400">
+  </header>
+
+  <main>
+    <!-- Core Value -->
+    <section class="section section--card flex-center text-center stack--24">
+      <span class="label">ЦЕННОСТЬ КУРСА</span>
+      <h2>Выучите европейский португальский так, чтобы жить в Португалии полноценно</h2>
+      <p class="body-text">20 структурированных уроков с 1 060 упражнениями, 768 карточками и аудио от носителя европейского португальского. Всё на русском языке, с вашего телефона или компьютера.</p>
+      <div class="card-grid w-full">
+        <article class="card stack--16">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h4>Перестаньте зависеть от посредников</h4>
+          <p class="body-sm">Понимайте, что говорит адвокат, что написано в письме из Finanças, о чём спорят на собрании кондоминиума — без чужой помощи.</p>
+        </article>
+        <article class="card stack--16">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h4>Подготовьтесь к обязательному A2</h4>
+          <p class="body-sm">Новый португальский закон требует уровень A2 для ПМЖ. Курс покрывает всю грамматику от нуля до A2 — с упражнениями по каждой теме.</p>
+        </article>
+        <article class="card stack--16">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          </div>
+          <h4>Заговорите в бытовых ситуациях</h4>
+          <p class="body-sm">Ресторан, аптека, рынок, кондитерская, вызов электрика — отработайте фразы до того, как они понадобятся.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--card">
+      <div class="section__inner flex-center text-center stack--48">
+        <h2>Знаем ваши сомнения</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q">«У меня нет времени — работа, семья, быт»<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+            <div class="faq-a"><p>15-30 минут в день. Без расписания. Упражнения разбиты на блоки по 10 штук — можно закончить один блок за 5 минут в очереди за кофе. Прогресс сохраняется автоматически.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">«Я уже пробовал учить — бросил через две недели»<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+            <div class="faq-a"><p>Потому что начинали не с того. Duolingo учит бразильскому — бесполезно в Португалии. Репетитор — дорого и без системы. YouTube — хаотично. Здесь — структура: от простого к сложному, с понятным прогрессом и целью (A2).</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">«Мне 40/45/50 лет — поздно учить язык»<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+            <div class="faq-a"><p>Курс рассчитан на взрослых. Не нужна «детская память» — нужна система. Грамматика объясняется логикой, а не зубрёжкой. Интервальное повторение компенсирует любую «плохую память».</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">«Я не знаю, хватит ли этого для A2»<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+            <div class="faq-a"><p>Курс покрывает весь грамматический объём A1-A2 по учебнику «Basic Portuguese». 1 060 упражнений — это больше, чем в любом стандартном курсе подготовки к CIPLE.</p></div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">«А если мне не подойдёт?»<svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+            <div class="faq-a"><p>Курс бесплатный. Все 20 уроков, все упражнения, все карточки — без оплаты, без привязки карты, без ограничений. Откройте и попробуйте прямо сейчас.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section section--bg">
+      <div class="section__inner flex-center text-center stack--48">
+        <span class="label">СРАВНЕНИЕ</span>
+        <h2>Почему не другие варианты</h2>
+        <div class="card-grid card-grid--4 w-full" style="text-align:left">
+          <div class="comp-card">
+            <span class="comp-badge comp-badge--red">Не подходит</span>
+            <h4>Duolingo</h4>
+            <p class="comp-sub comp-sub--red">Учит бразильскому</p>
+            <p class="body-sm">В Duolingo нет европейского португальского. Вы выучите «você» вместо «tu», «ônibus» вместо «autocarro». Через полгода обнаружите, что португальцы вас не понимают.</p>
+          </div>
+          <div class="comp-card">
+            <span class="comp-badge comp-badge--orange">Дорого</span>
+            <h4>Репетитор на Preply или iTalki</h4>
+            <p class="comp-sub comp-sub--orange">€120-240/мес, без системы</p>
+            <p class="body-sm">€15-30 за час. 8 занятий в месяц = €120-240. За год — €1 500-3 000. Нет учебного плана: каждый урок — «а давайте поговорим».</p>
+          </div>
+          <div class="comp-card">
+            <span class="comp-badge comp-badge--orange">Неудобно</span>
+            <h4>Языковые школы</h4>
+            <p class="comp-sub comp-sub--orange">€200-400/мес + расписание</p>
+            <p class="body-sm">Занятия 2 раза в неделю в 18:00. Пропустил — потерял тему. Группа из 15 человек — 3 минуты говорения за урок. Дорога до школы + обратно = час.</p>
+          </div>
+          <div class="comp-card">
+            <span class="comp-badge comp-badge--blue">Хаос</span>
+            <h4>YouTube</h4>
+            <p class="comp-sub comp-sub--blue">Без структуры и проверки</p>
+            <p class="body-sm">Десятки каналов, сотни видео — но какое смотреть первым? Где упражнения? Где проверка? Как понять, что ты уже A1, а что ещё нет?</p>
+          </div>
+        </div>
+        <div class="highlight-card w-full">
+          <span class="highlight-badge">НАШ КУРС</span>
+          <h3>Только европейский португальский. €0.<br>Полная программа.</h3>
+          <p>20 уроков в правильном порядке, с теорией, 1 060 упражнениями, 768 карточками с интервальным повторением и прогресс-трекингом. Не нужно составлять программу самому.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--card">
+      <div class="section__inner flex-center text-center cta-section">
+        <h2>Начните сейчас — это бесплатно</h2>
+        <p class="subtitle">Все 20 уроков. 1 060 упражнений. 768 карточек. Аудио от носителя европейского португальского. Интерфейс на русском языке.</p>
+        <p style="font-weight:500">Без оплаты. Без ограничений.</p>
+        <a href="/course/" class="btn btn--primary">Открыть первый урок &rarr;</a>
+        <p class="cta-closing">Через 6 месяцев вы либо будете понимать португальцев — либо будете жалеть, что не начали сегодня.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__brand-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg></span>
+          Portugues
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Portugues. Все права защищены.</span>
+        <nav class="footer__legal">
+          <a href="/privacy">Политика конфиденциальности</a>
+          <a href="/terms">Условия использования</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('open');
+      });
+    });
   </script>
 </body>
 </html>

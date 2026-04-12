@@ -18,6 +18,10 @@ export default {
   'auth.wrongCredentials': 'Неверный email или пароль',
   'auth.userExists': 'Пользователь уже существует',
   'auth.genericError': 'Ошибка авторизации',
+  'auth.consent': 'Я принимаю',
+  'auth.termsOfUse': 'Условия использования',
+  'auth.privacyPolicy': 'Политику конфиденциальности',
+  'auth.and': 'и',
 
   // Dashboard
   'dashboard.subtitle': 'Курс европейского португальского: 20 уроков с упражнениями',

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /course/js/
+Disallow: /course/css/
+
+Sitemap: https://learn-portugues.pages.dev/sitemap.xml

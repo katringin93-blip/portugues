@@ -26,9 +26,16 @@ export const Auth = {
               minlength="6" :autocomplete="isLogin ? 'current-password' : 'new-password'">
           </div>
 
+          <div v-if="!isLogin" class="form-group consent-group">
+            <label class="consent-label">
+              <input type="checkbox" v-model="consent" class="consent-checkbox">
+              <span>{{ t('auth.consent') }} <a href="/terms" target="_blank">{{ t('auth.termsOfUse') }}</a> {{ t('auth.and') }} <a href="/privacy" target="_blank">{{ t('auth.privacyPolicy') }}</a></span>
+            </label>
+          </div>
+
           <div v-if="error" class="form-error mb-2">{{ error }}</div>
 
-          <button class="btn btn-primary btn-lg" style="width:100%" :disabled="loading">
+          <button class="btn btn-primary btn-lg" style="width:100%" :disabled="loading || (!isLogin && !consent)">
             <span v-if="loading" class="spinner" style="width:20px;height:20px;border-width:2px"></span>
             {{ isLogin ? t('auth.login') : t('auth.register') }}
           </button>
@@ -61,6 +68,7 @@ export const Auth = {
       password: '',
       error: '',
       loading: false,
+      consent: false,
     };
   },
 

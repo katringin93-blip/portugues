@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Portugues - Curso de Portugues Europeu</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Apply theme early to avoid flash
+    (function(){try{var t=localStorage.getItem('pt_course_theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}})();
+  </script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="app"></div>
+
+  <script type="module">
+    import { createApp } from './js/app.js';
+    createApp();
+  </script>
+  <script nomodule>
+    document.getElementById('app').innerHTML =
+      '<div style="text-align:center;padding:3rem 1rem;font-family:sans-serif;">' +
+      '<h2>Browser not supported / Браузер не поддерживается / Браузер не підтримується</h2>' +
+      '<p>Please update your browser. / Обновите браузер. / Оновіть браузер.</p>' +
+      '</div>';
+  </script>
+</body>
+</html>

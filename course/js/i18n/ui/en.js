@@ -18,6 +18,10 @@ export default {
   'auth.wrongCredentials': 'Invalid email or password',
   'auth.userExists': 'User already exists',
   'auth.genericError': 'Authentication error',
+  'auth.consent': 'I accept the',
+  'auth.termsOfUse': 'Terms of Use',
+  'auth.privacyPolicy': 'Privacy Policy',
+  'auth.and': 'and',
 
   // Dashboard
   'dashboard.subtitle': 'European Portuguese course: 20 lessons with exercises',
