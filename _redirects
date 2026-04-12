@@ -1,3 +1,2 @@
-# Legal pages (clean URLs)
-/privacy    /privacy.html   200
-/terms      /terms.html     200
+# Cloudflare Pages handles clean URLs automatically
+# /privacy serves privacy.html, /terms serves terms.html
