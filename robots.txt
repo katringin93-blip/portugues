@@ -3,4 +3,4 @@ Allow: /
 Disallow: /course/js/
 Disallow: /course/css/
 
-Sitemap: https://learn-portugues.pages.dev/sitemap.xml
+Sitemap: https://learn-portugues.ru/sitemap.xml
