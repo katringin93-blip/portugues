@@ -12,9 +12,8 @@
   <meta property="og:locale" content="ru_RU">
   <meta property="og:image" content="https://learn-portugues.ru/images/hero.png">
   <meta property="og:url" content="https://learn-portugues.ru/">
-  <link rel="alternate" hreflang="en" href="/en/">
-  <link rel="alternate" hreflang="ru" href="/">
-  <link rel="alternate" hreflang="x-default" href="/">
+  <link rel="alternate" hreflang="ru" href="https://learn-portugues.ru/">
+  <link rel="alternate" hreflang="x-default" href="https://learn-portugues.ru/">
   <link rel="canonical" href="https://learn-portugues.ru/">
   <link rel="icon" type="image/svg+xml" href="course/favicon.svg">
   <!-- Yandex.Metrika counter -->
@@ -29,6 +28,7 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/108518143" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -251,7 +251,10 @@
       <span class="chip">1 060 упражнений</span>
       <span class="chip">768 карточек</span>
     </div>
-    <img src="images/hero.png" alt="Изучение европейского португальского — интерактивный курс" class="hero-image" loading="eager" width="1280" height="400">
+    <picture>
+      <source srcset="images/hero.webp" type="image/webp">
+      <img src="images/hero.png" alt="Изучение европейского португальского — интерактивный курс" class="hero-image" loading="eager" width="1280" height="400">
+    </picture>
   </header>
 
   <main>
