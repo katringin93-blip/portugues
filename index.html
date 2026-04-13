@@ -118,8 +118,11 @@
     .chips { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
     .chip { font-family: var(--font-secondary); font-size: 14px; padding: 8px 16px; border-radius: var(--radius-pill); background: var(--card); border: 1px solid var(--border); }
 
-    /* Cards */
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 28px; text-align: left; }
+    /* Cards — M3 Elevated */
+    .card { background: var(--card); border: none; border-radius: 12px; padding: 24px; text-align: left; box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15); transition: box-shadow 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+    .card:hover { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15); transform: translateY(-2px); }
+    .card::after { content: ''; position: absolute; inset: 0; border-radius: 12px; background: currentColor; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+    .card:hover::after { opacity: 0.04; }
     .card--alt { background: var(--muted); }
     .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; width: 100%; }
     .card-grid--2 { grid-template-columns: repeat(2, 1fr); }
@@ -147,7 +150,10 @@
     .faq-a p { padding: 0 0 16px; font-size: 14px; color: var(--muted-foreground); line-height: 1.5; }
 
     /* Comparison */
-    .comp-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-m); padding: 28px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .comp-card { background: var(--card); border: none; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15); transition: box-shadow 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+    .comp-card:hover { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15); transform: translateY(-2px); }
+    .comp-card::after { content: ''; position: absolute; inset: 0; border-radius: 12px; background: currentColor; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+    .comp-card:hover::after { opacity: 0.04; }
     .comp-badge { font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; width: fit-content; }
     .comp-badge--red { background: var(--color-error); color: var(--color-error-foreground); }
     .comp-badge--orange { background: var(--color-warning); color: var(--color-warning-foreground); }
@@ -323,7 +329,7 @@
             <span class="comp-badge comp-badge--blue">Хаос</span>
             <h4>YouTube</h4>
             <p class="comp-sub comp-sub--blue">Без структуры и проверки</p>
-            <p class="body-sm">Десятки каналов, сотни видео — но какое смотреть первым? Где упражнения? Где проверка? Как понять, что ты уже A1, а что ещё нет?</p>
+            <p class="body-sm">Десятки каналов, сотни видео — но какое смотреть первым? Где упражнения? Где проверка? Как понять — ты уже A1 или нет?</p>
           </div>
         </div>
         <div class="highlight-card w-full">
