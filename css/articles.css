@@ -205,7 +205,16 @@ a:hover { text-decoration: underline; }
 }
 .article-content tr:hover { background: var(--muted); }
 
-/* ── Info card (highlight block) ── */
+/* ── Info / warning / success cards ──
+   СТРУКТУРА: первый <strong> — заголовок карточки (display: block, отдельная строка).
+   Любые <strong> после — обычный inline-bold в теле текста. Селектор `:first-child`
+   применяет block-стиль ТОЛЬКО к заголовку, чтобы inline-bold в теле не ломал верстку.
+   Пример:
+     <div class="warning-card">
+       <strong>Заголовок карточки</strong>            ← станет блочным
+       Тело текста с <strong>inline-bold</strong>.    ← останется inline
+     </div>
+*/
 .info-card {
   background: var(--color-info);
   color: var(--color-info-foreground);
@@ -215,7 +224,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   line-height: 1.6;
 }
-.info-card strong { display: block; margin-bottom: 8px; }
+.info-card > strong:first-child { display: block; margin-bottom: 8px; }
 
 .warning-card {
   background: var(--color-warning);
@@ -226,7 +235,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   line-height: 1.6;
 }
-.warning-card strong { display: block; margin-bottom: 8px; }
+.warning-card > strong:first-child { display: block; margin-bottom: 8px; }
 
 .success-card {
   background: var(--color-success);
@@ -237,7 +246,7 @@ a:hover { text-decoration: underline; }
   font-size: 15px;
   line-height: 1.6;
 }
-.success-card strong { display: block; margin-bottom: 8px; }
+.success-card > strong:first-child { display: block; margin-bottom: 8px; }
 
 /* ── Table of Contents ── */
 .toc {
