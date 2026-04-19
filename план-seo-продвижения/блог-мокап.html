@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мокап — вход в блог с лендинга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --primary: #2563EB;
+      --primary-foreground: #FFFFFF;
+      --background: #F2F3F0;
+      --foreground: #111111;
+      --card: #FFFFFF;
+      --card-foreground: #111111;
+      --muted: #F2F3F0;
+      --muted-foreground: #666666;
+      --secondary: #E7E8E5;
+      --border: #CBCCC9;
+      --black: #000000;
+      --white: #FFFFFF;
+      --color-error: #E5DCDA;
+      --color-error-foreground: #8C1C00;
+      --color-warning: #E9E3D8;
+      --color-warning-foreground: #804200;
+      --color-info: #DFDFE6;
+      --color-info-foreground: #000066;
+      --color-success: #DFE6E1;
+      --color-success-foreground: #004D1A;
+      --radius-m: 16px;
+      --radius-pill: 999px;
+      --font-primary: 'JetBrains Mono', monospace;
+      --font-secondary: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #111111;
+        --foreground: #FFFFFF;
+        --card: #1A1A1A;
+        --muted: #2E2E2E;
+        --muted-foreground: #B8B9B6;
+        --border: #2E2E2E;
+        --color-error: #24100B;
+        --color-error-foreground: #FF5C33;
+        --color-warning: #291C0F;
+        --color-warning-foreground: #FF8400;
+        --color-info: #222229;
+        --color-info-foreground: #B2B2FF;
+        --color-success: #222924;
+        --color-success-foreground: #B6FFCE;
+      }
+    }
+
+    body { font-family: var(--font-secondary); color: var(--foreground); background: var(--background); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+
+    .mockup-banner { background: #fff3cd; color: #664d03; padding: 12px 24px; text-align: center; font-family: var(--font-primary); font-size: 13px; border-bottom: 1px solid #ffecb5; }
+    @media (prefers-color-scheme: dark) { .mockup-banner { background: #2a2410; color: #ffecb5; } }
+
+    /* Layout */
+    .section { padding: 80px; width: 100%; }
+    .section--bg { background: var(--background); }
+    .section--card { background: var(--card); }
+    .section__inner { max-width: 1280px; margin: 0 auto; }
+    .text-center { text-align: center; }
+    .flex-center { display: flex; flex-direction: column; align-items: center; }
+
+    /* Typography */
+    .label { font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; color: var(--primary); font-weight: 500; }
+    h2 { font-family: var(--font-primary); font-size: 36px; font-weight: 700; line-height: 1.2; }
+    h4 { font-family: var(--font-primary); font-size: 16px; font-weight: 700; }
+    .subtitle { font-size: 18px; color: var(--muted-foreground); max-width: 700px; }
+    .body-sm { font-size: 14px; color: var(--muted-foreground); line-height: 1.5; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-primary); font-size: 14px; font-weight: 500; padding: 12px 24px; border-radius: var(--radius-pill); border: none; cursor: pointer; }
+    .btn--primary { background: var(--primary); color: var(--primary-foreground); }
+
+    /* Stack */
+    .stack { display: flex; flex-direction: column; }
+    .stack--16 { gap: 16px; }
+    .stack--24 { gap: 24px; }
+    .stack--48 { gap: 48px; }
+    .w-full { width: 100%; }
+
+    /* Phase label */
+    .phase-label { background: var(--black); color: #fff; padding: 16px 80px; font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; }
+    .phase-label strong { color: var(--primary); }
+
+    /* CTA section context (reduced) */
+    .cta-section { gap: 32px; }
+    .cta-section h2 { font-size: 44px; max-width: 800px; }
+    .cta-closing { font-size: 14px; font-style: italic; color: var(--muted-foreground); max-width: 560px; line-height: 1.5; }
+
+    /* ===== ФАЗА 1 — тонкая полоска "ДАЛЬШЕ ПО ТЕМЕ" ===== */
+    .further-strip { padding: 48px 80px; background: var(--muted); border-top: 1px solid var(--border); }
+    .further-strip__inner { max-width: 1280px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .further-strip__label { font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; color: var(--primary); font-weight: 500; flex-shrink: 0; }
+    .further-strip__divider { width: 1px; height: 16px; background: var(--border); }
+    .further-strip__links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+    .further-strip__link { font-family: var(--font-secondary); font-size: 15px; color: var(--foreground); display: inline-flex; align-items: center; gap: 6px; transition: color 0.15s; }
+    .further-strip__link:hover { color: var(--primary); }
+    .further-strip__link::after { content: '→'; font-family: var(--font-primary); }
+
+    /* ===== ФАЗА 2 — полноценная секция "Читать по теме" ===== */
+    .articles-section { padding: 80px; background: var(--background); border-top: 1px solid var(--border); }
+    .articles-section__inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 48px; }
+    .articles-section__head { display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+    .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; }
+
+    .article-card { background: var(--card); border: none; border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 3px 1px rgba(0,0,0,0.15); transition: box-shadow 0.2s, transform 0.2s; position: relative; overflow: hidden; text-align: left; color: inherit; }
+    .article-card:hover { box-shadow: 0 1px 2px rgba(0,0,0,0.3), 0 2px 6px 2px rgba(0,0,0,0.15); transform: translateY(-2px); }
+    .article-card::after { content: ''; position: absolute; inset: 0; border-radius: 12px; background: currentColor; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+    .article-card:hover::after { opacity: 0.04; }
+
+    .article-badge { font-family: var(--font-primary); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; padding: 4px 12px; border-radius: var(--radius-pill); display: inline-block; width: fit-content; }
+    .article-badge--blue { background: var(--color-info); color: var(--color-info-foreground); }
+    .article-badge--orange { background: var(--color-warning); color: var(--color-warning-foreground); }
+    .article-badge--green { background: var(--color-success); color: var(--color-success-foreground); }
+    .article-badge--red { background: var(--color-error); color: var(--color-error-foreground); }
+
+    .article-card h4 { font-size: 18px; line-height: 1.3; }
+    .article-card .body-sm { flex-grow: 1; }
+    .article-read { font-family: var(--font-primary); font-size: 13px; font-weight: 500; color: var(--primary); margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; }
+
+    /* Footer (mini) */
+    .footer { background: var(--black); color: #fff; padding: 48px 80px; }
+    .footer__inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+    .footer__top { display: flex; justify-content: space-between; align-items: center; }
+    .footer__brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-primary); font-size: 18px; font-weight: 700; }
+    .footer__brand-icon { width: 28px; height: 28px; border-radius: 50%; background: #F8ACFF; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+    .footer__divider { height: 1px; background: var(--border); }
+    .footer__bottom { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--muted-foreground); }
+    .footer__legal { display: flex; gap: 20px; }
+
+    /* Divider between phases */
+    .phase-divider { height: 60px; background: repeating-linear-gradient(45deg, var(--secondary), var(--secondary) 10px, var(--background) 10px, var(--background) 20px); display: flex; align-items: center; justify-content: center; font-family: var(--font-primary); font-size: 11px; letter-spacing: 2px; color: var(--muted-foreground); }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .section, .articles-section { padding: 48px 24px; }
+      .further-strip { padding: 32px 24px; }
+      .phase-label { padding: 12px 24px; }
+      h2 { font-size: 24px; }
+      .cta-section h2 { font-size: 24px; }
+      .articles-grid { grid-template-columns: 1fr; gap: 16px; }
+      .article-card { padding: 20px; }
+      .further-strip__inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .further-strip__divider { display: none; }
+      .footer { padding: 32px 24px; }
+      .footer__top, .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .footer__legal { flex-direction: column; align-items: center; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mockup-banner">
+    МОКАП ДЛЯ СОГЛАСОВАНИЯ — показаны обе фазы блог-секции на лендинге learn-portugues.ru
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ФАЗА 1 — сейчас, 1 статья — тонкая полоска над футером        -->
+  <!-- ============================================================ -->
+
+  <div class="phase-label"><strong>ФАЗА 1</strong> · сейчас (1 статья) · тонкая полоска между CTA и футером</div>
+
+  <!-- CTA context (сокращённая) -->
+  <section class="section section--card">
+    <div class="section__inner flex-center text-center cta-section">
+      <h2>Начните сейчас — это бесплатно</h2>
+      <p class="subtitle">Все 20 уроков. 1 060 упражнений. 768 карточек.</p>
+      <a href="#" class="btn btn--primary">Открыть первый урок →</a>
+      <p class="cta-closing">Через 6 месяцев вы либо будете понимать португальцев — либо будете жалеть, что не начали сегодня.</p>
+    </div>
+  </section>
+
+  <!-- ФАЗА 1 — блог-полоска -->
+  <div class="further-strip">
+    <div class="further-strip__inner">
+      <span class="further-strip__label">ДАЛЬШЕ ПО ТЕМЕ</span>
+      <span class="further-strip__divider"></span>
+      <div class="further-strip__links">
+        <a href="/ciple-a2/" class="further-strip__link">CIPLE A2 — как сдать на ПМЖ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__brand-icon">P</span>
+          Portugues
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>© 2026 Portugues. Все права защищены.</span>
+        <nav class="footer__legal">
+          <a href="/privacy">Политика конфиденциальности</a>
+          <a href="/terms">Условия использования</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- ФАЗА 2 — при 3-5 статьях — полноценная секция                 -->
+  <!-- ============================================================ -->
+
+  <div class="phase-divider">── ФАЗА 2 НИЖЕ ──</div>
+
+  <div class="phase-label"><strong>ФАЗА 2</strong> · при 3-5 статьях · полноценная секция с карточками</div>
+
+  <!-- CTA context (сокращённая, чтобы увидеть соседство) -->
+  <section class="section section--card">
+    <div class="section__inner flex-center text-center cta-section">
+      <h2>Начните сейчас — это бесплатно</h2>
+      <p class="subtitle">Все 20 уроков. 1 060 упражнений. 768 карточек.</p>
+      <a href="#" class="btn btn--primary">Открыть первый урок →</a>
+      <p class="cta-closing">Через 6 месяцев вы либо будете понимать португальцев — либо будете жалеть, что не начали сегодня.</p>
+    </div>
+  </section>
+
+  <!-- ФАЗА 2 — полноценная секция -->
+  <section class="articles-section">
+    <div class="articles-section__inner">
+      <div class="articles-section__head">
+        <span class="label">МАТЕРИАЛЫ</span>
+        <h2>Читать по теме</h2>
+        <p class="subtitle">Разборы экзамена, грамматика, сравнения языков и практические фразы — всё, что помогает выйти на A2 быстрее</p>
+      </div>
+
+      <div class="articles-grid">
+        <!-- ЭКЗАМЕН (blue) -->
+        <a href="/ciple-a2/" class="article-card" aria-label="Читать статью: CIPLE A2 — как сдать на ПМЖ">
+          <span class="article-badge article-badge--blue">ЭКЗАМЕН</span>
+          <h4>CIPLE A2 — как сдать на ПМЖ</h4>
+          <p class="body-sm">Структура экзамена, регистрация, стоимость и план подготовки за 3 месяца. С чего начать и какие ловушки у CIPLE.</p>
+          <span class="article-read">Читать →</span>
+        </a>
+
+        <!-- ВЫБОР ЯЗЫКА (orange) -->
+        <a href="/portugalskij-ili-ispanskij/" class="article-card" aria-label="Читать статью: Португальский или испанский">
+          <span class="article-badge article-badge--orange">ВЫБОР ЯЗЫКА</span>
+          <h4>Португальский или испанский — что выбрать</h4>
+          <p class="body-sm">Разбираем по пунктам: сложность, работа, путешествия, произношение. Честное сравнение без «оба прекрасны».</p>
+          <span class="article-read">Читать →</span>
+        </a>
+
+        <!-- ГРАММАТИКА (green) -->
+        <a href="/grammatika/" class="article-card" aria-label="Читать статью: Грамматика португальского">
+          <span class="article-badge article-badge--green">ГРАММАТИКА</span>
+          <h4>Грамматика португальского — с чего начинать</h4>
+          <p class="body-sm">Карта грамматики A1-A2: артикли, глаголы ser/estar, спряжения, времена. Порядок изучения и что точно не зубрить.</p>
+          <span class="article-read">Читать →</span>
+        </a>
+
+        <!-- ПРАКТИКА (red) -->
+        <a href="/frazy-na-portugalskom/" class="article-card" aria-label="Читать статью: Фразы для жизни">
+          <span class="article-badge article-badge--red">ПРАКТИКА</span>
+          <h4>Фразы на португальском для жизни</h4>
+          <p class="body-sm">Ресторан, аптека, Finanças, звонок электрику — готовые фразы с произношением. Учите то, что нужно завтра.</p>
+          <span class="article-read">Читать →</span>
+        </a>
+
+        <!-- ВЫБОР ЯЗЫКА (orange) — 2-й -->
+        <a href="/evropejskij-vs-brazilskij/" class="article-card" aria-label="Читать статью: Европейский vs бразильский">
+          <span class="article-badge article-badge--orange">ВЫБОР ЯЗЫКА</span>
+          <h4>Европейский vs бразильский португальский</h4>
+          <p class="body-sm">Чем отличается речь в Лиссабоне и Рио. Почему Duolingo не подходит для Португалии и что это значит для экзамена.</p>
+          <span class="article-read">Читать →</span>
+        </a>
+
+        <!-- ПРАКТИКА (red) — 2-й -->
+        <a href="/kak-vyuchit-portugalskij/" class="article-card" aria-label="Читать статью: Как выучить португальский">
+          <span class="article-badge article-badge--red">ПРАКТИКА</span>
+          <h4>Как выучить португальский с нуля</h4>
+          <p class="body-sm">План на 6 месяцев: сколько минут в день, какие ресурсы, как отслеживать прогресс. Без «волшебных» обещаний за 30 дней.</p>
+          <span class="article-read">Читать →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__brand-icon">P</span>
+          Portugues
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <span>© 2026 Portugues. Все права защищены.</span>
+        <nav class="footer__legal">
+          <a href="/privacy">Политика конфиденциальности</a>
+          <a href="/terms">Условия использования</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

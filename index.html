@@ -194,6 +194,16 @@
     .cta-closing { font-size: 14px; font-style: italic; color: var(--muted-foreground); max-width: 560px; line-height: 1.5; }
     .cta-section .subtitle { max-width: 640px; }
 
+    /* Further reading strip (Phase 1 — blog entrance) */
+    .further-strip { padding: 48px 80px; background: var(--muted); border-top: 1px solid var(--border); }
+    .further-strip__inner { max-width: 1280px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .further-strip__label { font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; color: var(--primary); font-weight: 500; flex-shrink: 0; }
+    .further-strip__divider { width: 1px; height: 16px; background: var(--border); }
+    .further-strip__links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+    .further-strip__link { font-family: var(--font-secondary); font-size: 15px; color: var(--foreground); display: inline-flex; align-items: center; gap: 6px; transition: color 0.15s; }
+    .further-strip__link:hover { color: var(--primary); }
+    .further-strip__link::after { content: '→'; font-family: var(--font-primary); }
+
     /* Footer */
     .footer { background: var(--black); color: #fff; padding: 48px 80px; }
     .footer__inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
@@ -235,6 +245,9 @@
       .footer { padding: 32px 24px; }
       .footer__top, .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
       .footer__legal { flex-direction: column; align-items: center; gap: 8px; }
+      .further-strip { padding: 32px 24px; }
+      .further-strip__inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .further-strip__divider { display: none; }
     }
   </style>
   <script>
@@ -373,6 +386,17 @@
       </div>
     </section>
   </main>
+
+  <!-- Further reading strip (Phase 1 blog entrance) -->
+  <div class="further-strip">
+    <div class="further-strip__inner">
+      <span class="further-strip__label">ДАЛЬШЕ ПО ТЕМЕ</span>
+      <span class="further-strip__divider"></span>
+      <div class="further-strip__links">
+        <a href="/ciple-a2/" class="further-strip__link">CIPLE A2 — как сдать на ПМЖ</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
