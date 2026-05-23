@@ -355,6 +355,16 @@ a:hover { text-decoration: underline; }
 .faq-item.open .faq-a { max-height: 500px; }
 .faq-a p { padding: 0 0 16px; font-size: 14px; color: var(--muted-foreground); line-height: 1.6; }
 
+/* ── Further reading strip (same pattern as landing) ── */
+.further-strip { padding: 48px 80px; background: var(--muted); border-top: 1px solid var(--border); }
+.further-strip__inner { max-width: 1280px; margin: 0 auto; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.further-strip__label { font-family: var(--font-primary); font-size: 12px; letter-spacing: 2px; color: var(--primary); font-weight: 500; flex-shrink: 0; }
+.further-strip__divider { width: 1px; height: 16px; background: var(--border); }
+.further-strip__links { display: flex; flex-wrap: wrap; gap: 16px 24px; }
+.further-strip__link { font-family: var(--font-secondary); font-size: 15px; color: var(--foreground); display: inline-flex; align-items: center; gap: 6px; transition: color 0.15s; text-decoration: none; }
+.further-strip__link:hover { color: var(--primary); }
+.further-strip__link::after { content: '→'; font-family: var(--font-primary); }
+
 /* ── Footer (same as landing) ── */
 .footer { background: var(--black); color: #fff; padding: 48px 80px; }
 .footer__inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
@@ -382,4 +392,7 @@ a:hover { text-decoration: underline; }
   .footer__legal { flex-direction: column; align-items: center; gap: 8px; }
   .article-content table { font-size: 13px; }
   .article-content th, .article-content td { padding: 8px 10px; }
+  .further-strip { padding: 32px 24px; }
+  .further-strip__inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .further-strip__divider { display: none; }
 }
