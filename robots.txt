@@ -1,6 +1,6 @@
-User-agent: *
-Allow: /
-Disallow: /course/js/
-Disallow: /course/css/
+# Cloudflare injects a managed block (User-agent: * + AI-bot rules) above this
+# content automatically. We intentionally keep no User-agent: * group here to
+# avoid a duplicate group, and we do NOT disallow /course/js/ or /course/css/
+# so Google can render the SPA. Only the sitemap is declared.
 
 Sitemap: https://learn-portugues.ru/sitemap.xml
